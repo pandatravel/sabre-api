@@ -10,11 +10,6 @@ use Ammonkc\Sabre\HttpClient\HttpClientInterface;
 /**
  * Simple PHP Sabre API client.
  *
- * @method Api\CurrentUser currentUser()
- * @method Api\CurrentUser me()
- * @method Api\Tour tour()
- * @method Api\Tour tours()
- *
  * @author Ammon Casey <ammon@caseyohana.com>
  *
  * Website: http://github.com/ammonkc/ptpkg-api
@@ -217,7 +212,7 @@ class Client
     public function __call($endpoint, array $args)
     {
         if (!isset($this->endPoints[$endpoint])) {
-            $class = 'Ammonkc\\Sabre\Api\\' . ucfirst($endpoint);
+            $class = 'Ammonkc\\Sabre\\Api\\' . ucfirst($endpoint);
             if (class_exists($class)) {
                 if (! empty($args)) {
                     $this->endPoints[$endpoint] = new $class($this, $args);
