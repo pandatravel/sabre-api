@@ -1,11 +1,11 @@
 <?php
 
-namespace Ammonkc\Sabre;
+namespace Ammonkc\SabreApi;
 
-use Ammonkc\Sabre\Exception\InvalidArgumentException;
-use Ammonkc\Sabre\Exception\RuntimeException;
-use Ammonkc\Sabre\HttpClient\HttpClient;
-use Ammonkc\Sabre\HttpClient\HttpClientInterface;
+use Ammonkc\SabreApi\Exception\InvalidArgumentException;
+use Ammonkc\SabreApi\Exception\RuntimeException;
+use Ammonkc\SabreApi\HttpClient\HttpClient;
+use Ammonkc\SabreApi\HttpClient\HttpClientInterface;
 
 /**
  * Simple PHP Sabre API client.
@@ -56,9 +56,9 @@ class Client
      * @var array
      */
     private $options = [
-        'base_uri'    => 'https://ptpkg.com/',
+        'base_uri'    => 'https://api-crt.cert.havail.sabre.com/',
 
-        'user_agent'  => 'ptpkg-api (https://github.com/pandatravel/ptpk-api)',
+        'user_agent'  => 'sabre-api (https://github.com/pandatravel/sabre-api)',
         'timeout'     => 10,
 
         'api_limit'   => 5000,
@@ -131,9 +131,7 @@ class Client
      */
     public function authenticateClientCredentials($clientId, $clientSecret = null, $token = null, $method = self::OAUTH_CLIENT_CREDENTIALS)
     {
-        $access_token = $this->getHttpClient()->getAccessToken($clientId, $clientSecret, $token, $method);
-
-        return $access_token;
+        return $this->getHttpClient()->getAccessToken($clientId, $clientSecret, $token, $method);
     }
 
     /**
@@ -212,7 +210,7 @@ class Client
     public function __call($endpoint, array $args)
     {
         if (!isset($this->endPoints[$endpoint])) {
-            $class = 'Ammonkc\\Sabre\\Api\\' . ucfirst($endpoint);
+            $class = 'Ammonkc\\SabreApi\\Api\\' . ucfirst($endpoint);
             if (class_exists($class)) {
                 if (! empty($args)) {
                     $this->endPoints[$endpoint] = new $class($this, $args);

@@ -1,10 +1,10 @@
 <?php
 
-namespace Ammonkc\Sabre\Middleware;
+namespace Ammonkc\SabreApi\Middleware;
 
 use Psr\Http\Message\RequestInterface;
-use Ammonkc\Sabre\Client;
-use Ammonkc\Sabre\Exception\RuntimeException;
+use Ammonkc\SabreApi\Client;
+use Ammonkc\SabreApi\Exception\RuntimeException;
 
 class AuthMiddleware
 {

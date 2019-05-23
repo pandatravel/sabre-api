@@ -1,9 +1,9 @@
 <?php
 
-namespace Ammonkc\Sabre\HttpClient;
+namespace Ammonkc\SabreApi\HttpClient;
 
-use Ammonkc\Sabre\HttpClient\Auth\Authenticator;
-use Ammonkc\Sabre\Middleware\AuthMiddleware;
+use Ammonkc\SabreApi\HttpClient\Auth\Authenticator;
+use Ammonkc\SabreApi\Middleware\AuthMiddleware;
 use GuzzleHttp\Client as GuzzleClient;
 use GuzzleHttp\ClientInterface;
 use GuzzleHttp\Psr7\Request;
@@ -17,9 +17,9 @@ use GuzzleHttp\Psr7\Response;
 class HttpClient implements HttpClientInterface
 {
     protected $options = [
-        'base_uri'    => 'https://ptpkg.com/',
+        'base_uri'    => 'https://api-crt.cert.havail.sabre.com/v2/',
 
-        'user_agent'  => 'ptpkg-api (https://github.com/pandatravel/ptpk-api)',
+        'user_agent'  => 'sabre-api (https://github.com/pandatravel/sabre-api)',
         'timeout'     => 10,
 
         'api_limit'   => 5000,

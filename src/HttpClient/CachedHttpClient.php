@@ -1,9 +1,9 @@
 <?php
 
-namespace Ammonkc\Sabre\HttpClient;
+namespace Ammonkc\SabreApi\HttpClient;
 
-use Ammonkc\Sabre\HttpClient\Cache\CacheInterface;
-use Ammonkc\Sabre\HttpClient\Cache\FilesystemCache;
+use Ammonkc\SabreApi\HttpClient\Cache\CacheInterface;
+use Ammonkc\SabreApi\HttpClient\Cache\FilesystemCache;
 
 /**
  * Performs requests on GitHub API using If-Modified-Since headers.

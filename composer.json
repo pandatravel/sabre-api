@@ -26,12 +26,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Ammonkc\\Sabre\\": "src"
+            "Ammonkc\\SabreApi\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Ammonkc\\Sabre\\Tests\\": "tests"
+            "Ammonkc\\SabreApi\\Tests\\": "tests"
         }
     },
     "minimum-stability": "dev",

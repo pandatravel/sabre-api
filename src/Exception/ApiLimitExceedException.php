@@ -1,6 +1,6 @@
 <?php
 
-namespace Ammonkc\Sabre\Exception;
+namespace Ammonkc\SabreApi\Exception;
 
 /**
  * ApiLimitExceedException.

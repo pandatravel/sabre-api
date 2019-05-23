@@ -1,8 +1,8 @@
 <?php
 
-namespace Ammonkc\Sabre\HttpClient\Message;
+namespace Ammonkc\SabreApi\HttpClient\Message;
 
-use Ammonkc\Sabre\Exception\ApiLimitExceedException;
+use Ammonkc\SabreApi\Exception\ApiLimitExceedException;
 use Psr\Http\Message\ResponseInterface;
 
 class ResponseMediator

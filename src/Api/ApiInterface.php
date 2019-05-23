@@ -1,6 +1,6 @@
 <?php
 
-namespace Ammonkc\Sabre\Api;
+namespace Ammonkc\SabreApi\Api;
 
 /**
  * Api interface.

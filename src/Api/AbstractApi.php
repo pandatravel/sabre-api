@@ -1,9 +1,9 @@
 <?php
 
-namespace Ammonkc\Sabre\Api;
+namespace Ammonkc\SabreApi\Api;
 
-use Ammonkc\Sabre\Client;
-use Ammonkc\Sabre\HttpClient\Message\ResponseMediator;
+use Ammonkc\SabreApi\Client;
+use Ammonkc\SabreApi\HttpClient\Message\ResponseMediator;
 
 /**
  * Abstract class for Api classes.
@@ -38,7 +38,7 @@ abstract class AbstractApi implements ApiInterface
      *
      * @var string
      */
-    protected $endpoint_base = '/api/v1';
+    protected $endpoint_base = '/v1';
 
     /**
      * @param Client $client

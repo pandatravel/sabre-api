@@ -1,8 +1,8 @@
 <?php
 
-namespace Ammonkc\Sabre\HttpClient;
+namespace Ammonkc\SabreApi\HttpClient;
 
-use Ammonkc\Sabre\Exception\InvalidArgumentException;
+use Ammonkc\SabreApi\Exception\InvalidArgumentException;
 use GuzzleHttp\Psr7\Response;
 
 /**

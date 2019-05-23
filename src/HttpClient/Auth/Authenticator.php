@@ -1,12 +1,13 @@
 <?php
 
-namespace Ammonkc\Sabre\HttpClient\Auth;
+namespace Ammonkc\SabreApi\HttpClient\Auth;
 
-use Ammonkc\Sabre\Client;
+use Ammonkc\SabreApi\Client;
+use Ammonkc\SabreApi\HttpClient\Auth\Provider\SabreProvider;
 use GuzzleHttp\ClientInterface;
-use League\OAuth2\Client\Provider\GenericProvider;
 use League\OAuth2\Client\Token\AccessToken;
-use Somoza\Psr7\OAuth2Middleware;
+use Somoza\OAuth2Middleware\OAuth2Middleware;
+use Somoza\OAuth2Middleware\TokenService\Bearer;
 
 class Authenticator
 {
@@ -19,6 +20,7 @@ class Authenticator
     protected $urlAccesstoken;
     protected $urlResourceOwnerDetails;
     protected $oauthClient;
+    protected $tokenStore;
 
     public function __construct(ClientInterface $client = null, $clientId, $clientSecret = null, $token = null, $method = null, $tokenStore = null)
     {
@@ -40,22 +42,22 @@ class Authenticator
         } else {
             $this->clientId = $clientId;
             $this->clientSecret = $clientSecret;
-            $this->token = $token;
+            $this->token = is_null($token) ? $token : new AccessToken($token);
         }
 
         $this->method = $method;
         $this->tokenStore = $tokenStore;
         $this->oauthClient = $client;
         $this->base_uri = (string) $client->getConfig('base_uri');
-        $this->urlAuthorize = $this->base_uri . 'oauth/authorize';
-        $this->urlAccesstoken = $this->base_uri . 'oauth/token';
-        $this->urlResourceOwnerDetails = $this->base_uri . 'oauth/resource';
+        $this->urlAuthorize = $this->base_uri . 'v2/auth/authorize';
+        $this->urlAccesstoken = $this->base_uri . 'v2/auth/token';
+        $this->urlResourceOwnerDetails = $this->base_uri . 'v2/auth/resource';
     }
 
     public function authenticate()
     {
         $tokenStore = $this->tokenStore;
-        $provider = new GenericProvider([
+        $provider = new SabreProvider([
             'clientId'                => $this->clientId,    // The client ID assigned to you by the provider
             'clientSecret'            => $this->clientSecret,    // The client password assigned to you by the provider
             'urlAuthorize'            => $this->urlAuthorize,
@@ -63,14 +65,16 @@ class Authenticator
             'urlResourceOwnerDetails' => null,
         ], ['httpClient' => $this->oauthClient]);
 
-        $oauth = new OAuth2Middleware\Bearer(
-            $provider,
-            $this->token,
-            function (AccessToken $newToken) use ($tokenStore) {
-                if (! is_null($tokenStore)) {
-                    $tokenStore->handleStoreAccessToken($newToken->jsonSerialize());
+        $oauth = new OAuth2Middleware(
+            new Bearer(
+                $provider,
+                $this->token,
+                function (AccessToken $newToken, AccessToken $oldToken) use ($tokenStore) {
+                    if (! is_null($tokenStore)) {
+                        $tokenStore->save($newToken->jsonSerialize());
+                    }
                 }
-            }
+            )
         );
 
         return $oauth;
@@ -78,7 +82,7 @@ class Authenticator
 
     public function getAccessToken()
     {
-        $provider = new GenericProvider([
+        $provider = new SabreProvider([
             'clientId'                => $this->clientId,    // The client ID assigned to you by the provider
             'clientSecret'            => $this->clientSecret,    // The client password assigned to you by the provider
             'urlAuthorize'            => $this->urlAuthorize,
