@@ -3,7 +3,6 @@
 namespace Ammonkc\SabreApi\Api;
 
 use Ammonkc\SabreApi\AbstractRequest;
-use Ammonkc\SabreApi\Client;
 use Ammonkc\SabreApi\Model\BargainFinderMax\BargainFinderMaxRequest;
 use Ammonkc\SabreApi\Model\BargainFinderMax\BargainFinderMaxRequestOTAAirLowFareSearchRQ;
 use Ammonkc\SabreApi\Model\BargainFinderMax\GroupedItineraryResponse;
@@ -130,7 +129,7 @@ class CreateBargainFinderMax extends AbstractRequest
     {
         $response = $this->post($this->getUri(), $data, [], ['timeout' => 20]);
 
-        return $this->parseResponse($response, Client::FETCH_JSON);
+        return $this->parseResponse($response);
     }
 
     /**

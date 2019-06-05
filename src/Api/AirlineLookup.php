@@ -3,7 +3,6 @@
 namespace Ammonkc\SabreApi\Api;
 
 use Ammonkc\SabreApi\AbstractRequest;
-use Ammonkc\SabreApi\Client;
 use Ammonkc\SabreApi\Exception\AirlinesLookupBadRequestException;
 use Ammonkc\SabreApi\Model\AirlineLookup\AirlinesLookupResponse;
 use Ammonkc\SabreApi\Model\AirlineLookup\Normalizer\NormalizerFactory;
@@ -69,7 +68,7 @@ class AirlineLookup extends AbstractRequest
     {
         $response = $this->get($this->getUri(), $data);
 
-        return $this->parseResponse($response, Client::FETCH_JSON);
+        return $this->parseResponse($response);
     }
 
     /**

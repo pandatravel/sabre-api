@@ -76,11 +76,19 @@ abstract class AbstractRequest implements RequestInterface
     protected $responseType;
 
     /**
+     * Fetch mode
+     *
+     * @var string
+     */
+    protected $fetchMode;
+
+    /**
      * @param Client $client
      */
-    public function __construct(Client $client)
+    public function __construct(Client $client, $fetchMode)
     {
         $this->client = $client;
+        $this->fetchMode = $fetchMode;
         $this->parameters = new ParameterBag;
         $this->queryParameters = new ParameterBag;
         $this->pathParameters = new ParameterBag;
@@ -559,17 +567,17 @@ abstract class AbstractRequest implements RequestInterface
      *
      * @return null|string
      */
-    protected function parseResponse(ResponseInterface $response, string $fetchMode = Client::FETCH_OBJECT)
+    protected function parseResponse(ResponseInterface $response)
     {
-        if ($fetchMode === Client::FETCH_OBJECT) {
+        if ($this->fetchMode === Client::FETCH_OBJECT) {
             return $this->deserializeResponseBody((string) $response->getBody(), $response->getStatusCode());
         }
 
-        if ($fetchMode === Client::FETCH_JSON) {
+        if ($this->fetchMode === Client::FETCH_JSON) {
             return ResponseMediator::getContent($response);
         }
 
-        if ($fetchMode === Client::FETCH_RESPONSE) {
+        if ($this->fetchMode === Client::FETCH_RESPONSE) {
             return $response;
         }
 

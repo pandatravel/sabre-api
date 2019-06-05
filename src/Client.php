@@ -218,7 +218,9 @@ class Client
             throw new RuntimeException('Endpoint "' . $endpoint . '" does not exist"');
         }
 
-        $obj = new $class($this);
+        $fetchMode = isset($args[1]) ? $args[1] : self::FETCH_JSON;
+
+        $obj = new $class($this, $fetchMode);
 
         if (isset($args[0])) {
             return $obj->initialize($args[0])->send();

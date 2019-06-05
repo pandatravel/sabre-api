@@ -3,7 +3,6 @@
 namespace Ammonkc\SabreApi\Api;
 
 use Ammonkc\SabreApi\AbstractRequest;
-use Ammonkc\SabreApi\Client;
 use Ammonkc\SabreApi\Exception\DestinationFinderBadRequestException;
 use Ammonkc\SabreApi\Exception\DestinationFinderNotFoundException;
 use Ammonkc\SabreApi\Exception\DestinationFinderRequestEntityTooLargeException;
@@ -91,7 +90,7 @@ class DestinationFinder extends AbstractRequest
     {
         $response = $this->get($this->getUri(), $data);
 
-        return $this->parseResponse($response, Client::FETCH_JSON);
+        return $this->parseResponse($response);
     }
 
     /**

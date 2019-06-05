@@ -3,7 +3,6 @@
 namespace Ammonkc\SabreApi\Api;
 
 use Ammonkc\SabreApi\AbstractRequest;
-use Ammonkc\SabreApi\Client;
 use Ammonkc\SabreApi\Exception\ThemeAirportLookupBadRequestException;
 use Ammonkc\SabreApi\Exception\ThemeAirportLookupNotFoundException;
 use Ammonkc\SabreApi\Model\ThemeAirportLookup\Normalizer\NormalizerFactory;
@@ -90,7 +89,7 @@ class ThemeAirportLookup extends AbstractRequest
     {
         $response = $this->get($this->getUri());
 
-        return $this->parseResponse($response, Client::FETCH_JSON);
+        return $this->parseResponse($response);
     }
 
     /**
