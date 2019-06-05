@@ -367,7 +367,7 @@ class DestinationFinder extends AbstractRequest
      */
     public function setTheme($value)
     {
-        return $this->setQueryParameter('theme', $value);
+        return $this->setQueryParameter('theme', strtoupper($value));
     }
 
     /**
