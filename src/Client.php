@@ -52,11 +52,15 @@ class Client
      */
     const OAUTH_ACCESS_TOKEN = 'oauth_token';
 
+    public const FETCH_RESPONSE = 'response';
+    public const FETCH_OBJECT = 'object';
+    public const FETCH_JSON = 'json';
+
     /**
      * @var array
      */
     private $options = [
-        'base_uri'    => 'https://api-crt.cert.havail.sabre.com/',
+        'base_uri'    => 'https://api.havail.sabre.com/',
 
         'user_agent'  => 'sabre-api (https://github.com/pandatravel/sabre-api)',
         'timeout'     => 10,
@@ -209,19 +213,17 @@ class Client
      */
     public function __call($endpoint, array $args)
     {
-        if (!isset($this->endPoints[$endpoint])) {
-            $class = 'Ammonkc\\SabreApi\\Api\\' . ucfirst($endpoint);
-            if (class_exists($class)) {
-                if (! empty($args)) {
-                    $this->endPoints[$endpoint] = new $class($this, $args);
-                } else {
-                    $this->endPoints[$endpoint] = new $class($this);
-                }
-            } else {
-                throw new RuntimeException('Endpoint "' . $endpoint . '" does not exist"');
-            }
+        $class = 'Ammonkc\\SabreApi\\Api\\' . ucfirst($endpoint);
+        if (! class_exists($class)) {
+            throw new RuntimeException('Endpoint "' . $endpoint . '" does not exist"');
         }
 
-        return $this->endPoints[$endpoint];
+        $obj = new $class($this);
+
+        if (isset($args[0])) {
+            return $obj->initialize($args[0])->send();
+        } else {
+            return $obj->initialize()->send();
+        }
     }
 }

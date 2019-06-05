@@ -16,6 +16,9 @@ class ResponseMediator
     {
         $body = $response->getBody()->__toString();
         if (strpos($response->getHeaderLine('Content-Type'), 'application/json') === 0) {
+            // The body will be JSON, but *may* have a Byte Order Mark (BOM) prefix.
+            // Remove the BOM.
+            $body = preg_replace('/^[\x00-\x1F\x80-\xFF]{1,3}/', '', $body);
             $content = json_decode($body, true);
             if (JSON_ERROR_NONE === json_last_error()) {
                 return $content;
@@ -30,7 +33,7 @@ class ResponseMediator
      *
      * @return array|string
      */
-    public static function getData(ResponseInterface $response)
+    public static function getBody(ResponseInterface $response)
     {
         $content = $this->getContent($response);
 
@@ -89,5 +92,16 @@ class ResponseMediator
         $headers = $response->getHeader($name);
 
         return array_shift($headers);
+    }
+
+    /**
+     * Strip a Byte Order Mark (BOM) from the start of a string.
+     *
+     * @param string $string A string with a potential BOM prefix.
+     * @return string The string with the BOM removed.
+     */
+    public function removeBOM($string)
+    {
+        return preg_replace('/^[\x00-\x1F\x80-\xFF]{1,3}/', '', $string);
     }
 }

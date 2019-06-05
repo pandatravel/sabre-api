@@ -17,7 +17,7 @@ use GuzzleHttp\Psr7\Response;
 class HttpClient implements HttpClientInterface
 {
     protected $options = [
-        'base_uri'    => 'https://api-crt.cert.havail.sabre.com/v2/',
+        'base_uri'    => 'https://api.havail.sabre.com/',
 
         'user_agent'  => 'sabre-api (https://github.com/pandatravel/sabre-api)',
         'timeout'     => 10,
@@ -76,41 +76,41 @@ class HttpClient implements HttpClientInterface
     /**
      * {@inheritDoc}
      */
-    public function get($path, array $parameters = [], array $headers = [])
+    public function get($path, array $parameters = [], array $headers = [], array $options = [])
     {
-        return $this->request($path, null, 'GET', $headers, ['query' => $parameters]);
+        return $this->request($path, null, 'GET', $headers, $options);
     }
 
     /**
      * {@inheritDoc}
      */
-    public function post($path, $body = null, array $headers = [])
+    public function post($path, $body = null, array $headers = [], array $options = [])
     {
-        return $this->request($path, $body, 'POST', $headers);
+        return $this->request($path, $body, 'POST', $headers, $options);
     }
 
     /**
      * {@inheritDoc}
      */
-    public function patch($path, $body = null, array $headers = [])
+    public function patch($path, $body = null, array $headers = [], array $options = [])
     {
-        return $this->request($path, $body, 'PATCH', $headers);
+        return $this->request($path, $body, 'PATCH', $headers, $options);
     }
 
     /**
      * {@inheritDoc}
      */
-    public function delete($path, $body = null, array $headers = [])
+    public function delete($path, $body = null, array $headers = [], array $options = [])
     {
-        return $this->request($path, $body, 'DELETE', $headers);
+        return $this->request($path, $body, 'DELETE', $headers, $options);
     }
 
     /**
      * {@inheritDoc}
      */
-    public function put($path, $body, array $headers = [])
+    public function put($path, $body, array $headers = [], array $options = [])
     {
-        return $this->request($path, $body, 'PUT', $headers);
+        return $this->request($path, $body, 'PUT', $headers, $options);
     }
 
     /**
