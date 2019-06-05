@@ -3,6 +3,7 @@ composer.lock
 docs
 vendor
 coverage
+composer.lock
 .DS_Store
 .php_cs.cache
 .jane-openapi
