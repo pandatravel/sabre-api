@@ -63,6 +63,7 @@ class Client
         'base_uri'    => 'https://api.havail.sabre.com/',
 
         'user_agent'  => 'sabre-api (https://github.com/pandatravel/sabre-api)',
+
         'timeout'     => 10,
 
         'api_limit'   => 5000,
