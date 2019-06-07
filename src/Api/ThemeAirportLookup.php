@@ -48,7 +48,6 @@ class ThemeAirportLookup extends AbstractRequest
      */
     protected $responseType = ThemeAirportLookupResponse::class;
 
-
     /**
      * Available Themes
      *
