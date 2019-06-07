@@ -60,12 +60,12 @@ class FlightsByRequestId extends AbstractRequest
     public function sendData($data)
     {
         try {
-        $response = $this->get($this->getUri());
+            $response = $this->get($this->getUri());
         } catch (RequestException $e) {
             if ($e->getCode() === 400) {
                 throw new FlightsByRequestIdBadRequestException($e);
             }
-            if ($->getCode() === 404) {
+            if ($e->getCode() === 404) {
                 throw new FlightsByRequestIdNotFoundException($e);
             }
             throw $e;
@@ -86,12 +86,6 @@ class FlightsByRequestId extends AbstractRequest
     {
         if (200 === $status) {
             return $this->deserialize($body, $this->responseType, 'json');
-        }
-        if (400 === $status) {
-            throw new FlightsByRequestIdBadRequestException();
-        }
-        if (404 === $status) {
-            throw new FlightsByRequestIdNotFoundException();
         }
     }
 

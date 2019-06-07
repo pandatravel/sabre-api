@@ -93,8 +93,5 @@ class TravelThemeLookup extends AbstractRequest
         if (200 === $status) {
             return $this->deserialize($body, $this->responseType, 'json');
         }
-        if (404 === $status) {
-            throw new TravelThemeLookupNotFoundException();
-        }
     }
 }

@@ -116,12 +116,6 @@ class ThemeAirportLookup extends AbstractRequest
         if (200 === $status) {
             return $this->deserialize($body, $this->responseType, 'json');
         }
-        if (400 === $status) {
-            throw new ThemeAirportLookupBadRequestException();
-        }
-        if (404 === $status) {
-            throw new ThemeAirportLookupNotFoundException();
-        }
     }
 
     /**

@@ -95,12 +95,6 @@ class FlightsByTagId extends AbstractRequest
         if (200 === $status) {
             return $this->deserialize($body, $this->responseType, 'json');
         }
-        if (400 === $status) {
-            throw new FlightsByTagIdBadRequestException();
-        }
-        if (404 === $status) {
-            throw new FlightsByTagIdNotFoundException();
-        }
     }
 
     /**
