@@ -12,11 +12,11 @@ namespace Ammonkc\SabreApi\Exception;
 
 class ThemeAirportLookupBadRequestException extends \RuntimeException implements ClientException
 {
-    public function __construct()
+    public function __construct($previous = null)
     {
         parent::__construct('Bad Request
 
 - Parameter \'theme\' must be one of \'{BEACH,DISNEY,GAMBLING,HISTORIC,MOUNTAINS,NATIONAL-PARKS,OUTDOORS,ROMANTIC,SHOPPING,SKIING,THEME-PARK,CARIBBEAN}\'.
-', 400);
+', 400, $previous);
     }
 }

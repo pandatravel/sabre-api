@@ -12,11 +12,11 @@ namespace Ammonkc\SabreApi\Exception;
 
 class DestinationFinderNotFoundException extends \RuntimeException implements ClientException
 {
-    public function __construct()
+    public function __construct($previous = null)
     {
         parent::__construct('Not Found
 
 - The service cannot find data to fulfill the parameters in the request. For example, data is not available for the origin or dates.
-', 404);
+', 404, $previous);
     }
 }

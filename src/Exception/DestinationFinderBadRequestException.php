@@ -12,7 +12,7 @@ namespace Ammonkc\SabreApi\Exception;
 
 class DestinationFinderBadRequestException extends \RuntimeException implements ClientException
 {
-    public function __construct()
+    public function __construct($previous = null)
     {
         parent::__construct('Bad Request
 
@@ -65,6 +65,6 @@ class DestinationFinderBadRequestException extends \RuntimeException implements 
   - Parameter \'topdestinations\' must be between 1 and 50.
   - Parameter \'lengthofstay\' must not have more than 10 elements.
   - Parameter \'theme\' must be a valid value.
-', 400);
+', 400, $previous);
     }
 }

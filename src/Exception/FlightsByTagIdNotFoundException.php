@@ -12,11 +12,11 @@ namespace Ammonkc\SabreApi\Exception;
 
 class FlightsByTagIdNotFoundException extends \RuntimeException implements ClientException
 {
-    public function __construct()
+    public function __construct($previous = null)
     {
         parent::__construct('Not Found
 
 - No tag ID named \'tagid\' is defined
-', 404);
+', 404, $previous);
     }
 }

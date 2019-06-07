@@ -12,11 +12,11 @@ namespace Ammonkc\SabreApi\Exception;
 
 class FlightsByTagIdBadRequestException extends \RuntimeException implements ClientException
 {
-    public function __construct()
+    public function __construct($previous = null)
     {
         parent::__construct('Bad Request
 
 - View does not exist.
-', 400);
+', 400, $previous);
     }
 }

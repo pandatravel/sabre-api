@@ -12,11 +12,11 @@ namespace Ammonkc\SabreApi\Exception;
 
 class AdvancedCalendarSearchNotFoundException extends \RuntimeException implements ClientException
 {
-    public function __construct()
+    public function __construct($previous = null)
     {
         parent::__construct('Not Found
 
 - No results were found.
-', 404);
+', 404, $previous);
     }
 }

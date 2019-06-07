@@ -12,7 +12,7 @@ namespace Ammonkc\SabreApi\Exception;
 
 class FlightsByRequestIdBadRequestException extends \RuntimeException implements ClientException
 {
-    public function __construct()
+    public function __construct($previous = null)
     {
         parent::__construct('Bad Request
 
@@ -21,6 +21,6 @@ class FlightsByRequestIdBadRequestException extends \RuntimeException implements
 - Parameter \'offset\' must be of type \'number\'.
 - Parameter \'offset\' must be between 1 and 2147483647.
 - View does not exist.
-', 400);
+', 400, $previous);
     }
 }

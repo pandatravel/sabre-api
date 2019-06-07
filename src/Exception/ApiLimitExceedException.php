@@ -17,7 +17,7 @@ class ApiLimitExceedException extends RuntimeException
         $this->limit = (int) $limit;
         $this->reset = (int) $reset;
 
-        parent::__construct(sprintf('You have reached PTPKG hourly limit! Actual limit is: %d', $limit), $code, $previous);
+        parent::__construct(sprintf('You have reached PTAgent hourly limit! Actual limit is: %d', $limit), $code, $previous);
     }
 
     public function getLimit()
