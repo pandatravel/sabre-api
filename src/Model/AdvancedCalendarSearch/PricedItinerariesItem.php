@@ -22,17 +22,17 @@ class PricedItinerariesItem extends AbstractModel
     /**
      * @return PricedItinerariesItemPricedItinerary
      */
-    public function getPricedItinerary(): ?PricedItinerariesItemPricedItinerary
+    public function getPricedItinerary(): ?array
     {
         return $this->pricedItinerary;
     }
 
     /**
-     * @param PricedItinerariesItemPricedItinerary $pricedItinerary
+     * @param pricedItinerary[] $PricedItinerariesItemPricedItinerary
      *
      * @return self
      */
-    public function setPricedItinerary(?PricedItinerariesItemPricedItinerary $pricedItinerary): self
+    public function setPricedItinerary(?array $pricedItinerary): self
     {
         $this->pricedItinerary = $pricedItinerary;
 

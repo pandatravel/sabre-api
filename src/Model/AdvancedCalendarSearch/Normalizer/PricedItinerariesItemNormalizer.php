@@ -35,15 +35,15 @@ class PricedItinerariesItemNormalizer implements DenormalizerInterface, Normaliz
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
-        if (!is_object($data)) {
+        if (! is_array($data)) {
             throw new InvalidArgumentException();
         }
         $object = new \Ammonkc\SabreApi\Model\AdvancedCalendarSearch\PricedItinerariesItem();
-        if (property_exists($data, 'PricedItinerary')) {
-            $object->setPricedItinerary($this->denormalizer->denormalize($data->{'PricedItinerary'}, 'Ammonkc\\SabreApi\\Model\\AdvancedCalendarSearch\\PricedItinerariesItemPricedItinerary', 'json', $context));
+        $values = [];
+        foreach ($data as $value) {
+            $values[] = $this->denormalizer->denormalize($value, 'Ammonkc\\SabreApi\\Model\\AdvancedCalendarSearch\\PricedItinerariesItemPricedItinerary', 'json', $context);
         }
-
-        return $object;
+        return $object->setPricedItinerary($values);
     }
 
     public function normalize($object, $format = null, array $context = [])

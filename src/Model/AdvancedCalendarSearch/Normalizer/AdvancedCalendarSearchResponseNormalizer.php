@@ -42,6 +42,16 @@ class AdvancedCalendarSearchResponseNormalizer implements DenormalizerInterface,
         if (property_exists($data, 'OTA_AirLowFareSearchRS')) {
             $object->setOTAAirLowFareSearchRS($this->denormalizer->denormalize($data->{'OTA_AirLowFareSearchRS'}, 'Ammonkc\\SabreApi\\Model\\AdvancedCalendarSearch\\AdvancedCalendarSearchResponseOTAAirLowFareSearchRS', 'json', $context));
         }
+        if (property_exists($data, 'RequestID')) {
+            $object->setRequestId($data->{'RequestID'});
+        }
+        if (property_exists($data, 'Page')) {
+            $values = [];
+            foreach ($data->{'Page'} as $key => $value) {
+                $values[$key] = $value;
+            }
+            $object->setPage($values);
+        }
         if (property_exists($data, 'Links')) {
             $values = [];
             foreach ($data->{'Links'} as $value) {
@@ -58,6 +68,12 @@ class AdvancedCalendarSearchResponseNormalizer implements DenormalizerInterface,
         $data = new \stdClass();
         if (null !== $object->getOTAAirLowFareSearchRS()) {
             $data->{'OTA_AirLowFareSearchRS'} = $this->normalizer->normalize($object->getOTAAirLowFareSearchRS(), 'json', $context);
+        }
+        if (null !== $object->getRequestId()) {
+            $data->{'RequestID'} = $object->getRequestId();
+        }
+        if (null !== $object->getPage()) {
+            $data->{'Page'} = $object->getPage();
         }
         if (null !== $object->getLinks()) {
             $values = [];

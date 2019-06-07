@@ -24,6 +24,19 @@ class AdvancedCalendarSearchResponse extends AbstractModel
      * @var AdvancedCalendarSearchResponseLinksItem[]
      */
     protected $links;
+    /**
+     * Array of page stats
+     *
+     * @var array
+     */
+    protected $page;
+
+    /**
+     * RequestID
+     *
+     * @var requestId
+     */
+    protected $requestId;
 
     /**
      * @return AdvancedCalendarSearchResponseOTAAirLowFareSearchRS
@@ -67,5 +80,61 @@ class AdvancedCalendarSearchResponse extends AbstractModel
         $this->links = $links;
 
         return $this;
+    }
+
+    /**
+     * Array of page stats
+     *
+     * @return array
+     */
+    public function getPage(): ?array
+    {
+        return $this->page;
+    }
+
+    /**
+     * Array of page stats
+     *
+     * @param array $page
+     *
+     * @return self
+     */
+    public function setPage(?array $page): self
+    {
+        $this->page = $page;
+
+        return $this;
+    }
+
+    /**
+     * RequestID
+     *
+     * @return requestId
+     */
+    public function getRequestId(): ?string
+    {
+        return $this->requestId;
+    }
+
+    /**
+     * RequestId
+     *
+     * @param string $requestId
+     *
+     * @return self
+     */
+    public function setRequestId($requestId): self
+    {
+        $this->requestId = $requestId;
+
+        return $this;
+    }
+
+    /**
+     * @return PricedItinerariesItem[]
+     */
+    public function getPricedItineraries()
+    {
+        return $this->oTAAirLowFareSearchRS->getPricedItineraries();
     }
 }
