@@ -6,6 +6,7 @@ use Ammonkc\SabreApi\AbstractRequest;
 use Ammonkc\SabreApi\Exception\TravelThemeLookupNotFoundException;
 use Ammonkc\SabreApi\Model\TravelThemeLookup\Normalizer\NormalizerFactory;
 use Ammonkc\SabreApi\Model\TravelThemeLookup\TravelThemeLookupResponse;
+use GuzzleHttp\Exception\RequestException;
 
 /**
  * The Travel Theme Lookup API returns a list of supported Sabre themes.
@@ -68,7 +69,14 @@ class TravelThemeLookup extends AbstractRequest
      */
     public function sendData($data)
     {
-        $response = $this->get($this->getUri(), $data);
+        try {
+            $response = $this->get($this->getUri(), $data);
+        } catch (RequestException $e) {
+            if ($e->getCode() === 404) {
+                throw new TravelThemeLookupNotFoundException($e);
+            }
+            throw $e;
+        }
 
         return $this->parseResponse($response);
     }

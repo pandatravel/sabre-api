@@ -6,6 +6,7 @@ use Ammonkc\SabreApi\AbstractRequest;
 use Ammonkc\SabreApi\Exception\AirlinesLookupBadRequestException;
 use Ammonkc\SabreApi\Model\AirlineLookup\AirlinesLookupResponse;
 use Ammonkc\SabreApi\Model\AirlineLookup\Normalizer\NormalizerFactory;
+use GuzzleHttp\Exception\RequestException;
 
 /**
  * The Airline Lookup API returns the airline name associated with
@@ -66,7 +67,14 @@ class AirlineLookup extends AbstractRequest
      */
     public function sendData($data)
     {
-        $response = $this->get($this->getUri(), $data);
+        try {
+            $response = $this->get($this->getUri(), $data);
+        } catch (RequestException $e) {
+            if ($e->getCode() === 400) {
+                throw new AirlinesLookupBadRequestException($e);
+            }
+            throw $e;
+        }
 
         return $this->parseResponse($response);
     }

@@ -30,6 +30,7 @@ use Ammonkc\SabreApi\Model\AdvancedCalendarSearch\AdvancedCalendarSearchRequestO
 use Ammonkc\SabreApi\Model\AdvancedCalendarSearch\AdvancedCalendarSearchResponse;
 use Ammonkc\SabreApi\Model\AdvancedCalendarSearch\Normalizer\NormalizerFactory;
 use Carbon\Carbon;
+use GuzzleHttp\Exception\RequestException;
 
 /**
  * The Airline Lookup API returns the airline name associated with
@@ -72,10 +73,9 @@ class AdvancedCalendarSearch extends AbstractRequest
 
 
     /**
-     * Return the complete request object which will later be wrapped in
-     * a \Academe\AuthorizeNet\Request\CreateTransaction object.
+     * Return the complete request object
      *
-     * @returns \Academe\AuthorizeNet\TransactionRequestInterface
+     * @returns \Ammonkc\SabreApi\Model\AdvancedCalendarSearch\AdvancedCalendarSearchRequest
      */
     protected function getData()
     {
@@ -144,7 +144,17 @@ class AdvancedCalendarSearch extends AbstractRequest
      */
     public function sendData($data)
     {
-        $response = $this->post($this->getUri(), $data);
+        try {
+            $response = $this->post($this->getUri(), $data);
+        } catch (RequestException $e) {
+            if ($e->getCode() === 400) {
+                throw new AdvancedCalendarSearchBadRequestException($e);
+            }
+            if ($e->getCode() === 404) {
+                throw new AdvancedCalendarSearchNotFoundException($e);
+            }
+            throw $e;
+        }
 
         return $this->parseResponse($response);
     }
@@ -181,7 +191,7 @@ class AdvancedCalendarSearch extends AbstractRequest
                         ->setDefaults(['pointofsalecountry' => 'US', 'enabletagging' => false, 'limit' => 50, 'offset' => 1])
                         ->setAllowedTypes('pointofsalecountry', ['string'])
                         ->setAllowedTypes('view', ['string'])
-                        ->setAllowedTypes('enabletagging', ['bool'])
+                        ->setAllowedTypes('enabletagging', ['bool', 'string'])
                         ->setAllowedTypes('limit', ['int'])
                         ->setAllowedTypes('offset', ['int']);
 
@@ -348,7 +358,7 @@ class AdvancedCalendarSearch extends AbstractRequest
      */
     public function setEnabletagging($value)
     {
-        return $this->setQueryParameter('enabletagging', $value);
+        return $this->setQueryParameter('enabletagging', $value ? 'true' : 'false');
     }
 
     /**

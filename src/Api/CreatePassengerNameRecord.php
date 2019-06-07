@@ -34,7 +34,7 @@ class CreatePassengerNameRecord extends AbstractRequest
     /**
      * NormalizerFactory
      *
-     * @var Ammonkc\SabreApi\Model\DestinationFinder\Normalizer\NormalizerFactory $normalizer
+     * @var Ammonkc\SabreApi\Model\CreatePassengerNameRecord\Normalizer\NormalizerFactory $normalizer
      */
     protected $normalizer = NormalizerFactory::class;
 
@@ -60,7 +60,6 @@ class CreatePassengerNameRecord extends AbstractRequest
         $responseData = $this->post($this->getUri(), $data);
 
         return $responseData;
-        // return new AuthorizeResponse($this, $responseData);
     }
 
     /**

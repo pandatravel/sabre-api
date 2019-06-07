@@ -15,6 +15,7 @@ use Ammonkc\SabreApi\Exception\FlightsByTagIdBadRequestException;
 use Ammonkc\SabreApi\Exception\FlightsByTagIdNotFoundException;
 use Ammonkc\SabreApi\Model\AdvancedCalendarSearch\AdvancedCalendarSearchByTagIDResponse;
 use Ammonkc\SabreApi\Model\AdvancedCalendarSearch\Normalizer\NormalizerFactory;
+use GuzzleHttp\Exception\RequestException;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
 class FlightsByTagId extends AbstractRequest
@@ -66,9 +67,40 @@ class FlightsByTagId extends AbstractRequest
      */
     public function sendData($data)
     {
-        $response = $this->get($this->getUri());
+        try {
+            $response = $this->get($this->getUri());
+        } catch (RequestException $e) {
+            if ($e->getCode() === 400) {
+                throw new FlightsByTagIdBadRequestException($e);
+            }
+            if ($e->getCode() === 404) {
+                throw new FlightsByTagIdNotFoundException($e);
+            }
+            throw $e;
+        }
 
         return $this->parseResponse($response);
+    }
+
+    /**
+     * Deserialze Respose Body
+     *
+     * @throws \Ammonkc\SabreApi\ApiException\FlightsByTagIdBadRequestException
+     * @throws \Ammonkc\SabreApi\ApiException\FlightsByTagIdNotFoundException
+     *
+     * @return \Ammonkc\SabreApi\Model\AdvancedCalendarSearch\AdvancedCalendarSearchByTagIDResponse|null
+     */
+    protected function deserializeResponseBody(string $body, int $status)
+    {
+        if (200 === $status) {
+            return $this->deserialize($body, $this->responseType, 'json');
+        }
+        if (400 === $status) {
+            throw new FlightsByTagIdBadRequestException();
+        }
+        if (404 === $status) {
+            throw new FlightsByTagIdNotFoundException();
+        }
     }
 
     /**
@@ -94,27 +126,6 @@ class FlightsByTagId extends AbstractRequest
                         ->setAllowedTypes('view', ['string']);
 
         return $optionsResolver;
-    }
-
-    /**
-     * Deserialze Respose Body
-     *
-     * @throws \Ammonkc\SabreApi\ApiException\FlightsByTagIdBadRequestException
-     * @throws \Ammonkc\SabreApi\ApiException\FlightsByTagIdNotFoundException
-     *
-     * @return \Ammonkc\SabreApi\Model\AdvancedCalendarSearch\AdvancedCalendarSearchByTagIDResponse|null
-     */
-    protected function deserializeResponseBody(string $body, int $status)
-    {
-        if (200 === $status) {
-            return $this->deserialize($body, $this->responseType, 'json');
-        }
-        if (400 === $status) {
-            throw new FlightsByTagIdBadRequestException();
-        }
-        if (404 === $status) {
-            throw new FlightsByTagIdNotFoundException();
-        }
     }
 
     /**

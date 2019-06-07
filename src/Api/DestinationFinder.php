@@ -8,6 +8,7 @@ use Ammonkc\SabreApi\Exception\DestinationFinderNotFoundException;
 use Ammonkc\SabreApi\Exception\DestinationFinderRequestEntityTooLargeException;
 use Ammonkc\SabreApi\Model\DestinationFinder\DestinationFinderResponse;
 use Ammonkc\SabreApi\Model\DestinationFinder\Normalizer\NormalizerFactory;
+use GuzzleHttp\Exception\RequestException;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
 /**
@@ -88,9 +89,47 @@ class DestinationFinder extends AbstractRequest
      */
     public function sendData($data)
     {
-        $response = $this->get($this->getUri(), $data);
+        try {
+            $response = $this->get($this->getUri(), $data);
+        } catch (RequestException $e) {
+            if ($e->getCode() === 400) {
+                throw new DestinationFinderBadRequestException($e);
+            }
+            if ($e->getCode() === 404) {
+                throw new DestinationFinderNotFoundException($e);
+            }
+            if ($e->getCode() === 413) {
+                throw new DestinationFinderRequestEntityTooLargeException($e);
+            }
+            throw $e;
+        }
 
         return $this->parseResponse($response);
+    }
+
+    /**
+     * Deserialze Respose Body
+     *
+     * @throws \Ammonkc\SabreApi\Exception\DestinationFinderBadRequestException
+     * @throws \Ammonkc\SabreApi\Exception\DestinationFinderNotFoundException
+     * @throws \Ammonkc\SabreApi\Exception\DestinationFinderRequestEntityTooLargeException
+     *
+     * @return \Ammonkc\SabreApi\Model\DestinationFinder\DestinationFinderResponse|null
+     */
+    protected function deserializeResponseBody(string $body, int $status)
+    {
+        if (200 === $status) {
+            return $this->deserialize($body, $this->responseType, 'json');
+        }
+        if (400 === $status) {
+            throw new DestinationFinderBadRequestException();
+        }
+        if (404 === $status) {
+            throw new DestinationFinderNotFoundException();
+        }
+        if (413 === $status) {
+            throw new DestinationFinderRequestEntityTooLargeException();
+        }
     }
 
     /**
@@ -119,31 +158,6 @@ class DestinationFinder extends AbstractRequest
                         ->setAllowedTypes('pricepermile', ['float']);
 
         return $optionsResolver;
-    }
-
-    /**
-     * Deserialze Respose Body
-     *
-     * @throws \Ammonkc\SabreApi\Exception\DestinationFinderBadRequestException
-     * @throws \Ammonkc\SabreApi\Exception\DestinationFinderNotFoundException
-     * @throws \Ammonkc\SabreApi\Exception\DestinationFinderRequestEntityTooLargeException
-     *
-     * @return \Ammonkc\SabreApi\Model\DestinationFinder\DestinationFinderResponse|null
-     */
-    protected function deserializeResponseBody(string $body, int $status)
-    {
-        if (200 === $status) {
-            return $this->deserialize($body, $this->responseType, 'json');
-        }
-        if (400 === $status) {
-            throw new DestinationFinderBadRequestException();
-        }
-        if (404 === $status) {
-            throw new DestinationFinderNotFoundException();
-        }
-        if (413 === $status) {
-            throw new DestinationFinderRequestEntityTooLargeException();
-        }
     }
 
     /**

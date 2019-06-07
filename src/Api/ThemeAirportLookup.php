@@ -7,6 +7,7 @@ use Ammonkc\SabreApi\Exception\ThemeAirportLookupBadRequestException;
 use Ammonkc\SabreApi\Exception\ThemeAirportLookupNotFoundException;
 use Ammonkc\SabreApi\Model\ThemeAirportLookup\Normalizer\NormalizerFactory;
 use Ammonkc\SabreApi\Model\ThemeAirportLookup\ThemeAirportLookupResponse;
+use GuzzleHttp\Exception\RequestException;
 
 /**
  * The Theme Airport Lookup API returns a list of airport and
@@ -87,7 +88,17 @@ class ThemeAirportLookup extends AbstractRequest
      */
     public function sendData($data)
     {
-        $response = $this->get($this->getUri());
+        try {
+            $response = $this->get($this->getUri());
+        } catch (RequestException $e) {
+            if ($e->getCode() === 400) {
+                throw new ThemeAirportLookupBadRequestException($e);
+            }
+            if ($e->getCode() === 404) {
+                throw new ThemeAirportLookupNotFoundException($e);
+            }
+            throw $e;
+        }
 
         return $this->parseResponse($response);
     }
