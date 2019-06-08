@@ -4,9 +4,12 @@ namespace Ammonkc\SabreApi\Api;
 
 use Ammonkc\SabreApi\AbstractRequest;
 use Ammonkc\SabreApi\Exception\AirportsAtCityLookupNotFoundException;
+use Ammonkc\SabreApi\Exception\ApiNotAuthorizedException;
 use Ammonkc\SabreApi\Exception\ApiTimedOutException;
 use Ammonkc\SabreApi\Model\AirportsAtCitiesLookup\AirportsAtCitiesLookupResponse;
 use Ammonkc\SabreApi\Model\AirportsAtCitiesLookup\Normalizer\NormalizerFactory;
+use GuzzleHttp\Exception\ClientException;
+use GuzzleHttp\Exception\ConnectException;
 use GuzzleHttp\Exception\RequestException;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
@@ -64,6 +67,8 @@ class AirportsAtCitiesLookup extends AbstractRequest
      *
      * @param $data
      *
+     * @throws \Ammonkc\SabreApi\Exception\ApiTimedOutException
+     * @throws \Ammonkc\SabreApi\Exception\ApiNotAuthorizedException
      * @throws \Ammonkc\SabreApi\Exception\AirportsAtCityLookupNotFoundException
      *
      * @returns \Ammonkc\SabreApi\Model\AirportsAtCitiesLookup\AirportsAtCitiesLookupResponse|null
@@ -73,7 +78,15 @@ class AirportsAtCitiesLookup extends AbstractRequest
         try {
             $response = $this->get($this->getUri());
         } catch (ConnectException $e) {
-            throw new ApiTimedOutException($e);
+            if ($e->getHandlerContext()['errno'] === 28) {
+                throw new ApiTimedOutException($e);
+            }
+            throw $e;
+        } catch (ClientException $e) {
+            if ($e->getCode() === 403) {
+                throw new ApiNotAuthorizedException($e);
+            }
+            throw $e;
         } catch (RequestException $e) {
             if ($e->getCode() === 404) {
                 throw new AirportsAtCityLookupNotFoundException($e);
@@ -114,6 +127,8 @@ class AirportsAtCitiesLookup extends AbstractRequest
 
     /**
      * Value must be the MAC code.
+     *
+     * Retrieves the airport, rail station and other codes associated with the MAC code.
      *
      * @param string $value
      * @return $this

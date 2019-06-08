@@ -4,9 +4,14 @@ namespace Ammonkc\SabreApi\Api;
 
 use Ammonkc\SabreApi\AbstractRequest;
 use Ammonkc\SabreApi\Exception\AirlinesLookupBadRequestException;
+use Ammonkc\SabreApi\Exception\ApiNotAuthorizedException;
+use Ammonkc\SabreApi\Exception\ApiTimedOutException;
 use Ammonkc\SabreApi\Model\AirlineLookup\AirlinesLookupResponse;
 use Ammonkc\SabreApi\Model\AirlineLookup\Normalizer\NormalizerFactory;
+use GuzzleHttp\Exception\ClientException;
+use GuzzleHttp\Exception\ConnectException;
 use GuzzleHttp\Exception\RequestException;
+use Symfony\Component\OptionsResolver\OptionsResolver;
 
 /**
  * The Airline Lookup API returns the airline name associated with
@@ -60,15 +65,30 @@ class AirlineLookup extends AbstractRequest
     }
 
     /**
-     * Accept a transaction and sends it as a request.
+     * Accept a data and sends it as a request.
      *
-     * @param $data TransactionRequestInterface
-     * @returns TransactionResponse
+     * @param array $data
+     *
+     * @throws \Ammonkc\SabreApi\Exception\ApiTimedOutException
+     * @throws \Ammonkc\SabreApi\Exception\ApiNotAuthorizedException
+     * @throws \Ammonkc\SabreApi\Exception\AirlinesLookupBadRequestException
+     *
+     * @returns \Ammonkc\SabreApi\Model\AirlineLookup\AirlinesLookupResponse
      */
     public function sendData($data)
     {
         try {
             $response = $this->get($this->getUri(), $data);
+        } catch (ConnectException $e) {
+            if ($e->getHandlerContext()['errno'] === 28) {
+                throw new ApiTimedOutException($e);
+            }
+            throw $e;
+        } catch (ClientException $e) {
+            if ($e->getCode() === 403) {
+                throw new ApiNotAuthorizedException($e);
+            }
+            throw $e;
         } catch (RequestException $e) {
             if ($e->getCode() === 400) {
                 throw new AirlinesLookupBadRequestException($e);
@@ -96,7 +116,7 @@ class AirlineLookup extends AbstractRequest
     /**
      * @return \Symfony\Component\OptionsResolver\OptionsResolver
      */
-    protected function getQueryOptionsResolver(): \Symfony\Component\OptionsResolver\OptionsResolver
+    protected function getQueryOptionsResolver(): OptionsResolver
     {
         $optionsResolver = parent::getQueryOptionsResolver();
         $optionsResolver->setDefined(['airlinecode'])

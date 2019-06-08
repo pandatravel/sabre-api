@@ -3,9 +3,13 @@
 namespace Ammonkc\SabreApi\Api;
 
 use Ammonkc\SabreApi\AbstractRequest;
+use Ammonkc\SabreApi\Exception\ApiNotAuthorizedException;
+use Ammonkc\SabreApi\Exception\ApiTimedOutException;
 use Ammonkc\SabreApi\Exception\TravelThemeLookupNotFoundException;
 use Ammonkc\SabreApi\Model\TravelThemeLookup\Normalizer\NormalizerFactory;
 use Ammonkc\SabreApi\Model\TravelThemeLookup\TravelThemeLookupResponse;
+use GuzzleHttp\Exception\ClientException;
+use GuzzleHttp\Exception\ConnectException;
 use GuzzleHttp\Exception\RequestException;
 
 /**
@@ -49,7 +53,6 @@ class TravelThemeLookup extends AbstractRequest
      */
     protected $responseType = TravelThemeLookupResponse::class;
 
-
     /**
      * Return the complete request object|array
      *
@@ -61,9 +64,13 @@ class TravelThemeLookup extends AbstractRequest
     }
 
     /**
-     * Accept a transaction and sends it as a request.
+     * Accept a data and sends it as a request.
      *
      * @param $data
+     *
+     * @throws \Ammonkc\SabreApi\Exception\ApiTimedOutException
+     * @throws \Ammonkc\SabreApi\Exception\ApiNotAuthorizedException
+     * @throws \Ammonkc\SabreApi\Exception\TravelThemeLookupNotFoundException
      *
      * @return \Ammonkc\SabreApi\Model\TravelThemeLookup\TravelThemeLookupResponse|null
      */
@@ -71,6 +78,16 @@ class TravelThemeLookup extends AbstractRequest
     {
         try {
             $response = $this->get($this->getUri(), $data);
+        } catch (ConnectException $e) {
+            if ($e->getHandlerContext()['errno'] === 28) {
+                throw new ApiTimedOutException($e);
+            }
+            throw $e;
+        } catch (ClientException $e) {
+            if ($e->getCode() === 403) {
+                throw new ApiNotAuthorizedException($e);
+            }
+            throw $e;
         } catch (RequestException $e) {
             if ($e->getCode() === 404) {
                 throw new TravelThemeLookupNotFoundException($e);
@@ -83,8 +100,6 @@ class TravelThemeLookup extends AbstractRequest
 
     /**
      * Deserialze Respose Body
-     *
-     * @throws \Ammonkc\SabreApi\Exception\TravelThemeLookupNotFoundException
      *
      * @return \Ammonkc\SabreApi\Model\TravelThemeLookup\TravelThemeLookupResponse|null
      */

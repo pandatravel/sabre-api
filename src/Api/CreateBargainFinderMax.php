@@ -3,6 +3,8 @@
 namespace Ammonkc\SabreApi\Api;
 
 use Ammonkc\SabreApi\AbstractRequest;
+use Ammonkc\SabreApi\Exception\ApiNotAuthorizedException;
+use Ammonkc\SabreApi\Exception\ApiTimedOutException;
 use Ammonkc\SabreApi\Model\BargainFinderMax\BargainFinderMaxRequest;
 use Ammonkc\SabreApi\Model\BargainFinderMax\BargainFinderMaxRequestOTAAirLowFareSearchRQ;
 use Ammonkc\SabreApi\Model\BargainFinderMax\GroupedItineraryResponse;
@@ -25,6 +27,8 @@ use Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305TravelerInfoSu
 use Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305TravelerInformationType;
 use Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305UniqueIDType;
 use Carbon\Carbon;
+use GuzzleHttp\Exception\ClientException;
+use GuzzleHttp\Exception\ConnectException;
 
 /**
  * Bargain Finder Max (BFM), our best-in-class low fare search product,
@@ -123,11 +127,26 @@ class CreateBargainFinderMax extends AbstractRequest
      *
      * @param $data
      *
+     * @throws \Ammonkc\SabreApi\Exception\ApiTimedOutException
+     * @throws \Ammonkc\SabreApi\Exception\ApiNotAuthorizedException
+     *
      * @returns \Ammonkc\SabreApi\Model\BargainFinderMax\GroupedItineraryResponse
      */
     public function sendData($data)
     {
-        $response = $this->post($this->getUri(), $data, [], ['timeout' => 20]);
+        try {
+            $response = $this->post($this->getUri(), $data, [], ['timeout' => 1]);
+        } catch (ConnectException $e) {
+            if ($e->getHandlerContext()['errno'] === 28) {
+                throw new ApiTimedOutException($e);
+            }
+            throw $e;
+        } catch (ClientException $e) {
+            if ($e->getCode() === 403) {
+                throw new ApiNotAuthorizedException($e);
+            }
+            throw $e;
+        }
 
         return $this->parseResponse($response);
     }

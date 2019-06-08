@@ -3,11 +3,15 @@
 namespace Ammonkc\SabreApi\Api;
 
 use Ammonkc\SabreApi\AbstractRequest;
+use Ammonkc\SabreApi\Exception\ApiNotAuthorizedException;
+use Ammonkc\SabreApi\Exception\ApiTimedOutException;
 use Ammonkc\SabreApi\Exception\DestinationFinderBadRequestException;
 use Ammonkc\SabreApi\Exception\DestinationFinderNotFoundException;
 use Ammonkc\SabreApi\Exception\DestinationFinderRequestEntityTooLargeException;
 use Ammonkc\SabreApi\Model\DestinationFinder\DestinationFinderResponse;
 use Ammonkc\SabreApi\Model\DestinationFinder\Normalizer\NormalizerFactory;
+use GuzzleHttp\Exception\ClientException;
+use GuzzleHttp\Exception\ConnectException;
 use GuzzleHttp\Exception\RequestException;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
@@ -81,9 +85,15 @@ class DestinationFinder extends AbstractRequest
     }
 
     /**
-     * Accept a transaction and sends it as a request.
+     * Accept a data and sends it as a request.
      *
      * @param $data
+     *
+     * @throws \Ammonkc\SabreApi\Exception\ApiTimedOutException
+     * @throws \Ammonkc\SabreApi\Exception\ApiNotAuthorizedException
+     * @throws \Ammonkc\SabreApi\Exception\DestinationFinderBadRequestException
+     * @throws \Ammonkc\SabreApi\Exception\DestinationFinderNotFoundException
+     * @throws \Ammonkc\SabreApi\Exception\DestinationFinderRequestEntityTooLargeException
      *
      * @returns @return \Ammonkc\SabreApi\Model\DestinationFinder\DestinationFinderResponse|null
      */
@@ -91,6 +101,16 @@ class DestinationFinder extends AbstractRequest
     {
         try {
             $response = $this->get($this->getUri(), $data);
+        } catch (ConnectException $e) {
+            if ($e->getHandlerContext()['errno'] === 28) {
+                throw new ApiTimedOutException($e);
+            }
+            throw $e;
+        } catch (ClientException $e) {
+            if ($e->getCode() === 403) {
+                throw new ApiNotAuthorizedException($e);
+            }
+            throw $e;
         } catch (RequestException $e) {
             if ($e->getCode() === 400) {
                 throw new DestinationFinderBadRequestException($e);
@@ -109,10 +129,6 @@ class DestinationFinder extends AbstractRequest
 
     /**
      * Deserialze Respose Body
-     *
-     * @throws \Ammonkc\SabreApi\Exception\DestinationFinderBadRequestException
-     * @throws \Ammonkc\SabreApi\Exception\DestinationFinderNotFoundException
-     * @throws \Ammonkc\SabreApi\Exception\DestinationFinderRequestEntityTooLargeException
      *
      * @return \Ammonkc\SabreApi\Model\DestinationFinder\DestinationFinderResponse|null
      */

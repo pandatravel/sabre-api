@@ -11,10 +11,14 @@ declare(strict_types=1);
 namespace Ammonkc\SabreApi\Api;
 
 use Ammonkc\SabreApi\AbstractRequest;
+use Ammonkc\SabreApi\Exception\ApiNotAuthorizedException;
+use Ammonkc\SabreApi\Exception\ApiTimedOutException;
 use Ammonkc\SabreApi\Exception\FlightsByTagIdBadRequestException;
 use Ammonkc\SabreApi\Exception\FlightsByTagIdNotFoundException;
 use Ammonkc\SabreApi\Model\AdvancedCalendarSearch\AdvancedCalendarSearchByTagIDResponse;
 use Ammonkc\SabreApi\Model\AdvancedCalendarSearch\Normalizer\NormalizerFactory;
+use GuzzleHttp\Exception\ClientException;
+use GuzzleHttp\Exception\ConnectException;
 use GuzzleHttp\Exception\RequestException;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
@@ -63,12 +67,27 @@ class FlightsByTagId extends AbstractRequest
      *
      * @param $data
      *
+     * @throws \Ammonkc\SabreApi\Exception\ApiTimedOutException
+     * @throws \Ammonkc\SabreApi\Exception\ApiNotAuthorizedException
+     * @throws \Ammonkc\SabreApi\Exception\FlightsByTagIdBadRequestException
+     * @throws \Ammonkc\SabreApi\Exception\FlightsByTagIdNotFoundException
+     *
      * @returns \Ammonkc\SabreApi\Model\ThemeAirportLookup\ThemeAirportLookupResponse|null
      */
     public function sendData($data)
     {
         try {
             $response = $this->get($this->getUri());
+        } catch (ConnectException $e) {
+            if ($e->getHandlerContext()['errno'] === 28) {
+                throw new ApiTimedOutException($e);
+            }
+            throw $e;
+        } catch (ClientException $e) {
+            if ($e->getCode() === 403) {
+                throw new ApiNotAuthorizedException($e);
+            }
+            throw $e;
         } catch (RequestException $e) {
             if ($e->getCode() === 400) {
                 throw new FlightsByTagIdBadRequestException($e);
@@ -84,9 +103,6 @@ class FlightsByTagId extends AbstractRequest
 
     /**
      * Deserialze Respose Body
-     *
-     * @throws \Ammonkc\SabreApi\ApiException\FlightsByTagIdBadRequestException
-     * @throws \Ammonkc\SabreApi\ApiException\FlightsByTagIdNotFoundException
      *
      * @return \Ammonkc\SabreApi\Model\AdvancedCalendarSearch\AdvancedCalendarSearchByTagIDResponse|null
      */

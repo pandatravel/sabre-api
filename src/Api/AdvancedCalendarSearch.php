@@ -5,6 +5,8 @@ namespace Ammonkc\SabreApi\Api;
 use Ammonkc\SabreApi\AbstractRequest;
 use Ammonkc\SabreApi\Exception\AdvancedCalendarSearchBadRequestException;
 use Ammonkc\SabreApi\Exception\AdvancedCalendarSearchNotFoundException;
+use Ammonkc\SabreApi\Exception\ApiNotAuthorizedException;
+use Ammonkc\SabreApi\Exception\ApiTimedOutException;
 use Ammonkc\SabreApi\Model\AdvancedCalendarSearch\AdvancedCalendarSearchRequest;
 use Ammonkc\SabreApi\Model\AdvancedCalendarSearch\AdvancedCalendarSearchRequestOTAAirLowFareSearchRQ;
 use Ammonkc\SabreApi\Model\AdvancedCalendarSearch\AdvancedCalendarSearchRequestOTAAirLowFareSearchRQOriginDestinationInformationItem;
@@ -30,6 +32,8 @@ use Ammonkc\SabreApi\Model\AdvancedCalendarSearch\AdvancedCalendarSearchRequestO
 use Ammonkc\SabreApi\Model\AdvancedCalendarSearch\AdvancedCalendarSearchResponse;
 use Ammonkc\SabreApi\Model\AdvancedCalendarSearch\Normalizer\NormalizerFactory;
 use Carbon\Carbon;
+use GuzzleHttp\Exception\ClientException;
+use GuzzleHttp\Exception\ConnectException;
 use GuzzleHttp\Exception\RequestException;
 
 /**
@@ -70,7 +74,6 @@ class AdvancedCalendarSearch extends AbstractRequest
      * @var Ammonkc\SabreApi\Contracts\ResponseInterface $responseType
      */
     protected $responseType = AdvancedCalendarSearchResponse::class;
-
 
     /**
      * Return the complete request object
@@ -137,15 +140,31 @@ class AdvancedCalendarSearch extends AbstractRequest
     }
 
     /**
-     * Accept a transaction and sends it as a request.
+     * Accept a advancedCalendarSearch object and sends it as a request.
      *
-     * @param $data TransactionRequestInterface
-     * @returns TransactionResponse
+     * @param \Ammonkc\SabreApi\Model\AdvancedCalendarSearch\AdvancedCalendarSearchRequest $data
+     *
+     * @throws \Ammonkc\SabreApi\Exception\ApiTimedOutException
+     * @throws \Ammonkc\SabreApi\Exception\ApiNotAuthorizedException
+     * @throws \Ammonkc\SabreApi\Exception\AdvancedCalendarSearchBadRequestException
+     * @throws \Ammonkc\SabreApi\Exception\AdvancedCalendarSearchNotFoundException
+     *
+     * @returns \Ammonkc\SabreApi\Model\AdvancedCalendarSearch\AdvancedCalendarSearchResponse|null
      */
     public function sendData($data)
     {
         try {
             $response = $this->post($this->getUri(), $data);
+        } catch (ConnectException $e) {
+            if ($e->getHandlerContext()['errno'] === 28) {
+                throw new ApiTimedOutException($e);
+            }
+            throw $e;
+        } catch (ClientException $e) {
+            if ($e->getCode() === 403) {
+                throw new ApiNotAuthorizedException($e);
+            }
+            throw $e;
         } catch (RequestException $e) {
             if ($e->getCode() === 400) {
                 throw new AdvancedCalendarSearchBadRequestException($e);

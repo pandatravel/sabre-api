@@ -3,10 +3,14 @@
 namespace Ammonkc\SabreApi\Api;
 
 use Ammonkc\SabreApi\AbstractRequest;
+use Ammonkc\SabreApi\Exception\ApiNotAuthorizedException;
+use Ammonkc\SabreApi\Exception\ApiTimedOutException;
 use Ammonkc\SabreApi\Exception\ThemeAirportLookupBadRequestException;
 use Ammonkc\SabreApi\Exception\ThemeAirportLookupNotFoundException;
 use Ammonkc\SabreApi\Model\ThemeAirportLookup\Normalizer\NormalizerFactory;
 use Ammonkc\SabreApi\Model\ThemeAirportLookup\ThemeAirportLookupResponse;
+use GuzzleHttp\Exception\ClientException;
+use GuzzleHttp\Exception\ConnectException;
 use GuzzleHttp\Exception\RequestException;
 
 /**
@@ -83,12 +87,27 @@ class ThemeAirportLookup extends AbstractRequest
      *
      * @param $data
      *
+     * @throws \Ammonkc\SabreApi\Exception\ApiTimedOutException
+     * @throws \Ammonkc\SabreApi\Exception\ApiNotAuthorizedException
+     * @throws \Ammonkc\SabreApi\Exception\ThemeAirportLookupBadRequestException
+     * @throws \Ammonkc\SabreApi\Exception\ThemeAirportLookupNotFoundException
+     *
      * @returns \Ammonkc\SabreApi\Model\ThemeAirportLookup\ThemeAirportLookupResponse|null
      */
     public function sendData($data)
     {
         try {
             $response = $this->get($this->getUri());
+        } catch (ConnectException $e) {
+            if ($e->getHandlerContext()['errno'] === 28) {
+                throw new ApiTimedOutException($e);
+            }
+            throw $e;
+        } catch (ClientException $e) {
+            if ($e->getCode() === 403) {
+                throw new ApiNotAuthorizedException($e);
+            }
+            throw $e;
         } catch (RequestException $e) {
             if ($e->getCode() === 400) {
                 throw new ThemeAirportLookupBadRequestException($e);
