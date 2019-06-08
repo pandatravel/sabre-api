@@ -3,11 +3,11 @@
 namespace Ammonkc\SabreApi\Api;
 
 use Ammonkc\SabreApi\AbstractRequest;
-use Ammonkc\SabreApi\Exception\AircraftEquipmentLookupBadRequestException;
+use Ammonkc\SabreApi\Exception\AirlinesAlliancesLookupBadRequestException;
 use Ammonkc\SabreApi\Exception\ApiNotAuthorizedException;
 use Ammonkc\SabreApi\Exception\ApiTimedOutException;
-use Ammonkc\SabreApi\Model\AircraftEquipmentLookup\AircraftEquipmentLookupResponse;
-use Ammonkc\SabreApi\Model\AircraftEquipmentLookup\Normalizer\NormalizerFactory;
+use Ammonkc\SabreApi\Model\AirlinesAlliancesLookup\AirlinesAlliancesLookupResponse;
+use Ammonkc\SabreApi\Model\AirlinesAlliancesLookup\Normalizer\NormalizerFactory;
 use GuzzleHttp\Exception\ClientException;
 use GuzzleHttp\Exception\ConnectException;
 use GuzzleHttp\Exception\RequestException;
@@ -21,14 +21,14 @@ use Symfony\Component\OptionsResolver\OptionsResolver;
  *
  * @author Ammon Casey <ammon@caseyohana.com>
  */
-class AircraftEquipmentLookup extends AbstractRequest
+class AirlinesAlliancesLookup extends AbstractRequest
 {
     /**
      * Endpoint
      *
      * @var string
      */
-    protected $uri = '/lists/utilities/aircraft/equipment';
+    protected $uri = '/lists/utilities/airlines/alliances';
 
     /**
      * Endpoint Base uri
@@ -40,17 +40,16 @@ class AircraftEquipmentLookup extends AbstractRequest
     /**
      * NormalizerFactory
      *
-     * @var Ammonkc\SabreApi\Model\AircraftEquipmentLookup\Normalizer\NormalizerFactory $normalizer
+     * @var Ammonkc\SabreApi\Model\AirlinesAlliancesLookup\Normalizer\NormalizerFactory $normalizer
      */
     protected $normalizer = NormalizerFactory::class;
 
     /**
      * Response Type
      *
-     * @var Ammonkc\SabreApi\Model\AircraftEquipmentLookup\AircraftEquipmentLookupResponse $responseType
+     * @var Ammonkc\SabreApi\Model\AirlinesAlliancesLookup\AirlinesAlliancesLookupResponse $responseType
      */
-    protected $responseType = AircraftEquipmentLookupResponse::class;
-
+    protected $responseType = AirlinesAlliancesLookupResponse::class;
 
     /**
      * Return the complete request object|array
@@ -69,9 +68,9 @@ class AircraftEquipmentLookup extends AbstractRequest
      *
      * @throws \Ammonkc\SabreApi\Exception\ApiTimedOutException
      * @throws \Ammonkc\SabreApi\Exception\ApiNotAuthorizedException
-     * @throws \Ammonkc\SabreApi\Exception\AircraftEquipmentLookupBadRequestException
+     * @throws \Ammonkc\SabreApi\Exception\AirlinesAlliancesLookupBadRequestException
      *
-     * @return \Ammonkc\SabreApi\Model\AircraftEquipmentLookup\AircraftEquipmentLookupResponse|null
+     * @return \Ammonkc\SabreApi\Model\AirlinesAlliancesLookup\AirlinesAlliancesLookupResponse|null
      */
     public function sendData($data)
     {
@@ -89,7 +88,7 @@ class AircraftEquipmentLookup extends AbstractRequest
             throw $e;
         } catch (RequestException $e) {
             if ($e->getCode() === 400) {
-                throw new AircraftEquipmentLookupBadRequestException($e);
+                throw new AirlinesAlliancesLookupBadRequestException($e);
             }
             throw $e;
         }
@@ -103,10 +102,10 @@ class AircraftEquipmentLookup extends AbstractRequest
     protected function getQueryOptionsResolver(): OptionsResolver
     {
         $optionsResolver = parent::getQueryOptionsResolver();
-        $optionsResolver->setDefined(['aircraftcode'])
+        $optionsResolver->setDefined(['alliancecode'])
                         ->setRequired([])
                         ->setDefaults([])
-                        ->setAllowedTypes('aircraftcode', ['string']);
+                        ->setAllowedTypes('alliancecode', ['string']);
 
         return $optionsResolver;
     }
@@ -116,7 +115,7 @@ class AircraftEquipmentLookup extends AbstractRequest
      *
      * @throws \Ammonkc\SabreApi\Exception\AircraftEquipmentLookupBadRequestException
      *
-     * @return \Ammonkc\SabreApi\Model\AircraftEquipmentLookup\AircraftEquipmentLookupResponse|null
+     * @return \Ammonkc\SabreApi\Model\AirlinesAlliancesLookup\AirlinesAlliancesLookupResponse|null
      */
     protected function deserializeResponseBody(string $body, int $status)
     {
@@ -126,27 +125,30 @@ class AircraftEquipmentLookup extends AbstractRequest
     }
 
     /**
-     * 3-character IATA aircraft equipment code.
+     * 2-character airline alliance group code.
      *
-     * Multiple values are accepted, delimited with commas.
-     * Default: all codes and their corresponding names.
+     * Multiple values are accepted.
+     * Default: All airline alliance groups and their corresponding member information.
+     * *A (Star Alliance™), *O (oneworld®), *S (SkyTeam).
+     *
+     * Available values : *A, *O, *S
      *
      * @param string $value
      * @return $this
      */
-    public function setAircraftcode($value)
+    public function setAlliancecode($value)
     {
         if (is_array($value)) {
-            $value = implode(',', strtoupper($value));
+            $value = implode(',', $value);
         }
-        return $this->setQueryParameter('aircraftcode', $value);
+        return $this->setQueryParameter('alliancecode', strtoupper($value));
     }
 
     /**
      * @return string
      */
-    public function getAircraftcode()
+    public function getAlliancecode()
     {
-        return $this->getQueryParameter('aircraftcode');
+        return $this->getQueryParameter('alliancecode');
     }
 }

@@ -55,7 +55,7 @@ class ThemeAirportLookup extends AbstractRequest
     /**
      * Available Themes
      *
-     * @var string
+     * @var array
      */
     protected $available_themes = [
         'BEACH',

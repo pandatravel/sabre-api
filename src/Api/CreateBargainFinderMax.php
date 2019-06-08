@@ -135,7 +135,7 @@ class CreateBargainFinderMax extends AbstractRequest
     public function sendData($data)
     {
         try {
-            $response = $this->post($this->getUri(), $data, [], ['timeout' => 1]);
+            $response = $this->post($this->getUri(), $data, [], ['timeout' => 10]);
         } catch (ConnectException $e) {
             if ($e->getHandlerContext()['errno'] === 28) {
                 throw new ApiTimedOutException($e);
