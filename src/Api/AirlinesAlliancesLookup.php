@@ -14,8 +14,11 @@ use GuzzleHttp\Exception\RequestException;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
 /**
- * The Aircraft Equipment Lookup API returns the aircraft name
- * associated with a specified IATA aircraft equipment code.
+ * The Airline Alliance Lookup API returns the airline alliance member
+ * information associated with a specified airline alliance
+ * 'group code'. If no code is specified, the API returns
+ * all airline alliance groups and their corresponding
+ * member information.
  *
  * @link   https://ptpkg.com/api/v1/packages/
  *
