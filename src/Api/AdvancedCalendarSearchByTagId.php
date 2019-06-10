@@ -3,25 +3,25 @@
 namespace Ammonkc\SabreApi\Api;
 
 use Ammonkc\SabreApi\AbstractRequest;
+use Ammonkc\SabreApi\Exception\AdvancedCalendarSearchByTagIdBadRequestException;
+use Ammonkc\SabreApi\Exception\AdvancedCalendarSearchByTagIdNotFoundException;
 use Ammonkc\SabreApi\Exception\ApiNotAuthorizedException;
 use Ammonkc\SabreApi\Exception\ApiTimedOutException;
-use Ammonkc\SabreApi\Exception\FlightsByRequestIdBadRequestException;
-use Ammonkc\SabreApi\Exception\FlightsByRequestIdNotFoundException;
-use Ammonkc\SabreApi\Model\AdvancedCalendarSearch\AdvancedCalendarSearchByRequestIDResponse;
+use Ammonkc\SabreApi\Model\AdvancedCalendarSearch\AdvancedCalendarSearchByTagIDResponse;
 use Ammonkc\SabreApi\Model\AdvancedCalendarSearch\Normalizer\NormalizerFactory;
 use GuzzleHttp\Exception\ClientException;
 use GuzzleHttp\Exception\ConnectException;
 use GuzzleHttp\Exception\RequestException;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
-class FlightsByRequestId extends AbstractRequest
+class AdvancedCalendarSearchByTagId extends AbstractRequest
 {
     /**
      * Endpoint
      *
      * @var string
      */
-    protected $uri = '/shop/calendar/flights/{requestid}';
+    protected $uri = '/shop/calendar/flights/tags/{tagid}';
 
     /**
      * Endpoint Base uri
@@ -40,9 +40,9 @@ class FlightsByRequestId extends AbstractRequest
     /**
      * Response Type
      *
-     * @var Ammonkc\SabreApi\Contracts\ResponseInterface $responseType
+     * @var \Ammonkc\SabreApi\Model\AdvancedCalendarSearch\AdvancedCalendarSearchByTagIDResponse $responseType
      */
-    protected $responseType = AdvancedCalendarSearchByRequestIDResponse::class;
+    protected $responseType = AdvancedCalendarSearchByTagIDResponse::class;
 
     /**
      * Return the complete request object|array
@@ -61,10 +61,10 @@ class FlightsByRequestId extends AbstractRequest
      *
      * @throws \Ammonkc\SabreApi\Exception\ApiTimedOutException
      * @throws \Ammonkc\SabreApi\Exception\ApiNotAuthorizedException
-     * @throws \Ammonkc\SabreApi\Exception\FlightsByRequestIdBadRequestException
-     * @throws \Ammonkc\SabreApi\Exception\FlightsByRequestIdNotFoundException
+     * @throws \Ammonkc\SabreApi\Exception\AdvancedCalendarSearchByTagIdBadRequestException
+     * @throws \Ammonkc\SabreApi\Exception\AdvancedCalendarSearchByTagIdNotFoundException
      *
-     * @returns \Ammonkc\SabreApi\Model\ThemeAirportLookup\ThemeAirportLookupResponse|null
+     * @return \Ammonkc\SabreApi\Model\AdvancedCalendarSearch\AdvancedCalendarSearchByTagIDResponse|null
      */
     public function sendData($data)
     {
@@ -82,10 +82,10 @@ class FlightsByRequestId extends AbstractRequest
             throw $e;
         } catch (RequestException $e) {
             if ($e->getCode() === 400) {
-                throw new FlightsByRequestIdBadRequestException($e);
+                throw new AdvancedCalendarSearchByTagIdBadRequestException($e);
             }
             if ($e->getCode() === 404) {
-                throw new FlightsByRequestIdNotFoundException($e);
+                throw new AdvancedCalendarSearchByTagIdNotFoundException($e);
             }
             throw $e;
         }
@@ -96,7 +96,7 @@ class FlightsByRequestId extends AbstractRequest
     /**
      * Deserialze Respose Body
      *
-     * @return \Ammonkc\SabreApi\Model\AdvancedCalendarSearch\AdvancedCalendarSearchByRequestIDResponse|null
+     * @return \Ammonkc\SabreApi\Model\AdvancedCalendarSearch\AdvancedCalendarSearchByTagIDResponse|null
      */
     protected function deserializeResponseBody(string $body, int $status)
     {
@@ -111,47 +111,42 @@ class FlightsByRequestId extends AbstractRequest
     protected function getPathOptionsResolver(): OptionsResolver
     {
         $optionsResolver = parent::getPathOptionsResolver();
-        $optionsResolver->setDefined(['{requestid}'])
-                        ->setRequired(['{requestid}'])
+        $optionsResolver->setDefined(['{tagid}'])
+                        ->setRequired(['{tagid}'])
                         ->setDefaults([])
-                        ->setAllowedTypes('{requestid}', ['string']);
+                        ->setAllowedTypes('{tagid}', ['string']);
 
         return $optionsResolver;
     }
 
-    /**
-     * @return \Symfony\Component\OptionsResolver\OptionsResolver
-     */
     protected function getQueryOptionsResolver(): OptionsResolver
     {
         $optionsResolver = parent::getQueryOptionsResolver();
-        $optionsResolver->setDefined(['view', 'limit', 'offset'])
+        $optionsResolver->setDefined(['view'])
                         ->setRequired([])
-                        ->setDefaults(['limit' => 50, 'offset' => 1])
-                        ->setAllowedTypes('view', ['string'])
-                        ->setAllowedTypes('limit', ['int'])
-                        ->setAllowedTypes('offset', ['int']);
+                        ->setDefaults([])
+                        ->setAllowedTypes('view', ['string']);
 
         return $optionsResolver;
     }
 
     /**
-     * Set {requestid} Value
+     * Set {tagid} Value
      *
      * @param string $value
      * @return $this
      */
-    public function setRequestid($value)
+    public function setTagid($value)
     {
-        return $this->setPathParameter('{requestid}', $value);
+        return $this->setPathParameter('{tagid}', $value);
     }
 
     /**
      * @return string
      */
-    public function getRequestid()
+    public function getTagid()
     {
-        return $this->getPathParameter('{requestid}');
+        return $this->getPathParameter('{tagid}');
     }
 
     /**
@@ -171,43 +166,5 @@ class FlightsByRequestId extends AbstractRequest
     public function getView()
     {
         return $this->getQueryParameter('view');
-    }
-
-    /**
-     * Set limit Value
-     *
-     * @param int $value
-     * @return $this
-     */
-    public function setLimit($value)
-    {
-        return $this->setQueryParameter('limit', $value);
-    }
-
-    /**
-     * @return int
-     */
-    public function getLimit()
-    {
-        return $this->getQueryParameter('limit');
-    }
-
-    /**
-     * Set offset Value
-     *
-     * @param int $value
-     * @return $this
-     */
-    public function setOffset($value)
-    {
-        return $this->setQueryParameter('offset', $value);
-    }
-
-    /**
-     * @return int
-     */
-    public function getOffset()
-    {
-        return $this->getQueryParameter('offset');
     }
 }

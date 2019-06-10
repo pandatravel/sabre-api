@@ -4,7 +4,7 @@ namespace Ammonkc\SabreApi\Exception;
 
 use GuzzleHttp\Exception\RequestException;
 
-class FlightsByRequestIdNotFoundException extends ApiRequestException implements ClientException
+class AdvancedCalendarSearchByTagIdNotFoundException extends ApiRequestException implements ClientException
 {
     public function __construct(RequestException $previous)
     {
