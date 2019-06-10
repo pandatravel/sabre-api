@@ -1,6 +1,6 @@
 <?php
 
-namespace Ammonkc\SabreApi\Model\CreatePassengerNameRecord\Exception;
+namespace Ammonkc\SabreApi\Exception;
 
 use GuzzleHttp\Exception\RequestException;
 

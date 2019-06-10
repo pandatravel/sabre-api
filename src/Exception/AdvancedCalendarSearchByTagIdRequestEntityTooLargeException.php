@@ -1,6 +1,6 @@
 <?php
 
-namespace Ammonkc\SabreApi\Model\InstaFlightsSearch\Exception;
+namespace Ammonkc\SabreApi\Exception;
 
 use GuzzleHttp\Exception\RequestException;
 
