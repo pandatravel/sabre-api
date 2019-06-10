@@ -80,7 +80,7 @@ class ThemeAirportLookup extends AbstractRequest
      */
     protected function getData()
     {
-        return $this->getPathParameters();
+        //
     }
 
     /**

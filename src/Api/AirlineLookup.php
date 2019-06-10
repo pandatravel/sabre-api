@@ -61,7 +61,7 @@ class AirlineLookup extends AbstractRequest
      */
     protected function getData()
     {
-        return $this->getParameters();
+        //
     }
 
     /**
@@ -78,7 +78,7 @@ class AirlineLookup extends AbstractRequest
     public function sendData($data)
     {
         try {
-            $response = $this->get($this->getUri(), $data);
+            $response = $this->get($this->getUri());
         } catch (ConnectException $e) {
             if ($e->getHandlerContext()['errno'] === 28) {
                 throw new ApiTimedOutException($e);

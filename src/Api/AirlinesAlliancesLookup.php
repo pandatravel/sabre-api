@@ -61,7 +61,7 @@ class AirlinesAlliancesLookup extends AbstractRequest
      */
     protected function getData()
     {
-        return $this->getParameters();
+        //
     }
 
     /**

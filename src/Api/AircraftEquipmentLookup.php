@@ -59,7 +59,7 @@ class AircraftEquipmentLookup extends AbstractRequest
      */
     protected function getData()
     {
-        return $this->getParameters();
+        //
     }
 
     /**

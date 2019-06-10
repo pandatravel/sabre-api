@@ -59,7 +59,7 @@ class AirportsAtCitiesLookup extends AbstractRequest
      */
     protected function getData()
     {
-        return $this->getPathParameters();
+        //
     }
 
     /**
