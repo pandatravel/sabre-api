@@ -126,7 +126,7 @@ class InstaFlightsSearch extends AbstractRequest
         $optionsResolver = parent::getQueryOptionsResolver();
         $optionsResolver->setDefined(['origin', 'destination', 'departuredate', 'returndate', 'includedcarriers', 'excludedcarriers', 'outboundflightstops', 'inboundflightstops', 'includedconnectpoints', 'excludedconnectpoints', 'outboundstopduration', 'inboundstopduration', 'outbounddeparturewindow', 'inbounddeparturewindow', 'outboundarrivalwindow', 'inboundarrivalwindow', 'onlineitinerariesonly', 'eticketsonly', 'minfare', 'maxfare', 'limit', 'offset', 'sortby', 'order', 'sortby2', 'order2', 'pointofsalecountry', 'passengercount', 'view', 'enabletagging'])
                         ->setRequired(['origin', 'destination', 'departuredate'])
-                        ->setDefaults(['limit' => '50', 'offset' => 1, 'sortby' => 'totalfare', 'order' => 'asc', 'order2' => 'asc', 'pointofsalecountry' => 'US', 'enabletagging' => false])
+                        ->setDefaults(['limit' => '50', 'offset' => (float) 1, 'sortby' => 'totalfare', 'order' => 'asc', 'order2' => 'asc', 'pointofsalecountry' => 'US', 'enabletagging' => false])
                         ->setAllowedTypes('origin', ['string'])
                         ->setAllowedTypes('destination', ['string'])
                         ->setAllowedTypes('departuredate', ['string'])
