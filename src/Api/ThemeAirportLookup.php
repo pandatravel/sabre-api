@@ -12,6 +12,7 @@ use Ammonkc\SabreApi\Model\ThemeAirportLookup\ThemeAirportLookupResponse;
 use GuzzleHttp\Exception\ClientException;
 use GuzzleHttp\Exception\ConnectException;
 use GuzzleHttp\Exception\RequestException;
+use Symfony\Component\OptionsResolver\OptionsResolver;
 
 /**
  * The Theme Airport Lookup API returns a list of airport and
@@ -139,7 +140,7 @@ class ThemeAirportLookup extends AbstractRequest
     /**
      * @return \Symfony\Component\OptionsResolver\OptionsResolver
      */
-    protected function getPathOptionsResolver(): \Symfony\Component\OptionsResolver\OptionsResolver
+    protected function getPathOptionsResolver(): OptionsResolver
     {
         $optionsResolver = parent::getPathOptionsResolver();
         $optionsResolver->setDefined(['{theme}'])
