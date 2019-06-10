@@ -3,6 +3,15 @@
 namespace Ammonkc\SabreApi\Api;
 
 use Ammonkc\SabreApi\AbstractRequest;
+use Ammonkc\SabreApi\Exception\ApiNotAuthorizedException;
+use Ammonkc\SabreApi\Exception\ApiTimedOutException;
+use Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordRequest;
+use Ammonkc\SabreApi\Model\CreatePassengerNameRecord\Exception\CreatePassengerNameRecordBadRequestException;
+use Ammonkc\SabreApi\Model\CreatePassengerNameRecord\Normalizer\NormalizerFactory;
+use GuzzleHttp\Exception\ClientException;
+use GuzzleHttp\Exception\ConnectException;
+use GuzzleHttp\Exception\RequestException;
+use Symfony\Component\OptionsResolver\OptionsResolver;
 
 /**
  * The Create Passenger Name Record API is an orchestrated API that
@@ -29,7 +38,7 @@ class CreatePassengerNameRecord extends AbstractRequest
      *
      * @var string
      */
-    protected $api_version = '/v2.1.0';
+    protected $api_version = '/v2.2.0';
 
     /**
      * NormalizerFactory
@@ -39,27 +48,66 @@ class CreatePassengerNameRecord extends AbstractRequest
     protected $normalizer = NormalizerFactory::class;
 
     /**
-     * Return the complete request object which will later be wrapped in
-     * a \Academe\AuthorizeNet\Request\CreateTransaction object.
+     * Return the complete request object
      *
-     * @returns \Academe\AuthorizeNet\TransactionRequestInterface
+     * @returns \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordRequest
      */
     protected function getData()
     {
-        return $this->getParameters();
+        $createPassengerNameRecord = new CreatePassengerNameRecordRequest();
+
+        // build request object
+
+        return $createPassengerNameRecord;
     }
 
     /**
-     * Accept a transaction and sends it as a request.
+     * Accept a advancedCalendarSearch object and sends it as a request.
      *
-     * @param $data TransactionRequestInterface
-     * @returns TransactionResponse
+     * @param \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordRequest $data
+     *
+     * @throws \Ammonkc\SabreApi\Exception\ApiTimedOutException
+     * @throws \Ammonkc\SabreApi\Exception\ApiNotAuthorizedException
+     * @throws \Ammonkc\SabreApi\Exception\CreatePassengerNameRecordBadRequestException
+     *
+     * @returns \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordResponse|null
      */
     public function sendData($data)
     {
-        $responseData = $this->post($this->getUri(), $data);
+        try {
+            $response = $this->post($this->getUri(), $data);
+        } catch (ConnectException $e) {
+            if ($e->getHandlerContext()['errno'] === 28) {
+                throw new ApiTimedOutException($e);
+            }
+            throw $e;
+        } catch (ClientException $e) {
+            if ($e->getCode() === 403) {
+                throw new ApiNotAuthorizedException($e);
+            }
+            throw $e;
+        } catch (RequestException $e) {
+            if ($e->getCode() === 400) {
+                throw new CreatePassengerNameRecordBadRequestException($e);
+            }
+            throw $e;
+        }
 
-        return $responseData;
+        return $this->parseResponse($response);
+    }
+
+    /**
+     * @return \Symfony\Component\OptionsResolver\OptionsResolver
+     */
+    protected function getQueryOptionsResolver(): OptionsResolver
+    {
+        $optionsResolver = parent::getQueryOptionsResolver();
+        $optionsResolver->setDefined(['mode'])
+                        ->setRequired(['mode'])
+                        ->setDefaults(['mode' => 'create'])
+                        ->setAllowedTypes('mode', ['string']);
+
+        return $optionsResolver;
     }
 
     /**
@@ -71,7 +119,7 @@ class CreatePassengerNameRecord extends AbstractRequest
     }
 
     /**
-     * Set mode Value
+     * Set an optional search string for looking up inventory
      *
      * @param string $value
      * @return $this
