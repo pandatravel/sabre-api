@@ -29,7 +29,6 @@ use Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305UniqueIDType;
 use Carbon\Carbon;
 use GuzzleHttp\Exception\ClientException;
 use GuzzleHttp\Exception\ConnectException;
-use Symfony\Component\OptionsResolver\OptionsResolver;
 
 /**
  * Bargain Finder Max (BFM), our best-in-class low fare search product,
@@ -152,41 +151,6 @@ class CreateBargainFinderMax extends AbstractRequest
         }
 
         return $this->parseResponse($response);
-    }
-
-    /**
-     * @return \Symfony\Component\OptionsResolver\OptionsResolver
-     */
-    protected function getOptionsResolver(): OptionsResolver
-    {
-        $optionsResolver = parent::getOptionsResolver();
-        $optionsResolver->setDefined([
-                            'departDate',
-                            'returnDate',
-                            'destinationLocation',
-                            'originLocation',
-                            'pseudoCityCode',
-                            'maxResponses',
-                            'availableFlightsOnly',
-                        ])
-                        ->setRequired([
-                            'departDate',
-                            'returnDate',
-                            'destinationLocation',
-                            'originLocation',
-                            'pseudoCityCode',
-                            'maxResponses',
-                            'availableFlightsOnly',
-                        ])
-                        ->setAllowedTypes('departDate', ['string'])
-                        ->setAllowedTypes('returnDate', ['string'])
-                        ->setAllowedTypes('destinationLocation', ['string'])
-                        ->setAllowedTypes('originLocation', ['string'])
-                        ->setAllowedTypes('pseudoCityCode', ['string'])
-                        ->setAllowedTypes('availableFlightsOnly', ['bool'])
-                        ->setAllowedTypes('maxResponses', ['string']);
-
-        return $optionsResolver;
     }
 
     /**
