@@ -123,6 +123,10 @@ class EnhancedAirTicket extends AbstractRequest
     }
 
     /**
+     * To reduce network latency for large responses, request a compressed response.
+     *
+     * Available values : gzip
+     *
      * @return array
      */
     public function getDefaultHeaderParameters()
