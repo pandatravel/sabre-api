@@ -29,6 +29,7 @@ use Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305UniqueIDType;
 use Carbon\Carbon;
 use GuzzleHttp\Exception\ClientException;
 use GuzzleHttp\Exception\ConnectException;
+use Symfony\Component\OptionsResolver\OptionsResolver;
 
 /**
  * Bargain Finder Max (BFM), our best-in-class low fare search product,
@@ -106,11 +107,13 @@ class CreateBargainFinderMax extends AbstractRequest
         $requestorID->setCompanyName($companyName->setCode("TN"))
                     ->setID("1")
                     ->setType("1");
-        $source->setPseudoCityCode('T6C0')
+        $source->setPseudoCityCode($this->getParameter('pseudoCityCode'))
                ->setRequestorID($requestorID);
         $pOS->setSource([$source]);
         $airTravelerAvail->setPassengerTypeQuantity([$passengerTypeQuantity->setCode('ADT')->setQuantity(1)]);
         $oTAAirLowFareSearchRQ->setOriginDestinationInformation([$departInfo, $returnInfo])
+                              ->setMaxResponses($this->getParameter('maxResponses'))
+                              ->setAvailableFlightsOnly($this->getParameter('availableFlightsOnly'))
                               ->setPOS($pOS)
                               ->setTPAExtensions($tPAExtensions->withIntelliSellTransaction($intelliSellTransaction->setRequestType($requestType->setName("200ITINS"))))
                               ->setTravelPreferences($travelPreferences->setTPAExtensions($travelPrefsTPAExtensions->setDataSources($tPADataSources->setATPCO("Enable")->setLCC("Disable")->setNDC("Disable"))->setNumTrips(new OrgOpentravelOta200305NumTripsType())))
@@ -149,6 +152,55 @@ class CreateBargainFinderMax extends AbstractRequest
         }
 
         return $this->parseResponse($response);
+    }
+
+    /**
+     * @return \Symfony\Component\OptionsResolver\OptionsResolver
+     */
+    protected function getOptionsResolver(): OptionsResolver
+    {
+        $optionsResolver = parent::getOptionsResolver();
+        $optionsResolver->setDefined([
+                            'departDate',
+                            'returnDate',
+                            'destinationLocation',
+                            'originLocation',
+                            'pseudoCityCode',
+                            'maxResponses',
+                            'availableFlightsOnly',
+                        ])
+                        ->setRequired([
+                            'departDate',
+                            'returnDate',
+                            'destinationLocation',
+                            'originLocation',
+                            'pseudoCityCode',
+                            'maxResponses',
+                            'availableFlightsOnly',
+                        ])
+                        ->setAllowedTypes('departDate', ['string'])
+                        ->setAllowedTypes('returnDate', ['string'])
+                        ->setAllowedTypes('destinationLocation', ['string'])
+                        ->setAllowedTypes('originLocation', ['string'])
+                        ->setAllowedTypes('pseudoCityCode', ['string'])
+                        ->setAllowedTypes('availableFlightsOnly', ['bool'])
+                        ->setAllowedTypes('maxResponses', ['string']);
+
+        return $optionsResolver;
+    }
+
+    /**
+     * Get default parameters as an associative array.
+     *
+     * @return array
+     */
+    protected function getDefaultParameters()
+    {
+        return [
+            'pseudoCityCode'        => 'T6C0',
+            'maxResponses'          => '10',
+            'availableFlightsOnly'  => true,
+        ];
     }
 
     /**
@@ -225,5 +277,43 @@ class CreateBargainFinderMax extends AbstractRequest
     public function getOriginLocation()
     {
         return $this->getParameter('originLocation');
+    }
+
+    /**
+     * Set pseudoCityCode Value
+     *
+     * @param string $value
+     * @return $this
+     */
+    public function setPseudoCityCode($value)
+    {
+        return $this->setParameter('pseudoCityCode', $value);
+    }
+
+    /**
+     * @return string
+     */
+    public function getPseudoCityCode()
+    {
+        return $this->getParameter('pseudoCityCode');
+    }
+
+    /**
+     * Set availableFlightsOnly Value
+     *
+     * @param string $value
+     * @return $this
+     */
+    public function setAvailableFlightsOnly($value)
+    {
+        return $this->setParameter('availableFlightsOnly', $value);
+    }
+
+    /**
+     * @return string
+     */
+    public function getAvailableFlightsOnly()
+    {
+        return $this->getParameter('availableFlightsOnly');
     }
 }

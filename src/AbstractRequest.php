@@ -390,6 +390,14 @@ abstract class AbstractRequest implements RequestInterface
     /**
      * @return \Symfony\Component\OptionsResolver\OptionsResolver
      */
+    protected function getOptionsResolver(): OptionsResolver
+    {
+        return new OptionsResolver();
+    }
+
+    /**
+     * @return \Symfony\Component\OptionsResolver\OptionsResolver
+     */
     protected function getQueryOptionsResolver(): OptionsResolver
     {
         return new OptionsResolver();
