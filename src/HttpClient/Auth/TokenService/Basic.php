@@ -7,9 +7,9 @@ use Psr\Http\Message\RequestInterface;
 use Somoza\OAuth2Middleware\TokenService\AbstractTokenService;
 
 /**
- * Bearer PSR7 Middleware
+ * Basic PSR7 Middleware
  *
- * @author Gabriel Somoza <gabriel@somoza.me>
+ * @author Ammon Casey <ammon@caseyohana.com>
  *
  * @see https://tools.ietf.org/html/rfc6750
  */

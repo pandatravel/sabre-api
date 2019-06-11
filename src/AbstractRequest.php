@@ -13,7 +13,7 @@ use Symfony\Component\Serializer\Encoder\JsonEncoder;
 use Symfony\Component\Serializer\Serializer;
 
 /**
- * Abstract class for Api classes.
+ * Abstract class for Api Response classes.
  *
  * @author Ammon Casey <ammon@caseyohana.com>
  */

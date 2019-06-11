@@ -6,11 +6,11 @@ use Ammonkc\SabreApi\HttpClient\Cache\CacheInterface;
 use Ammonkc\SabreApi\HttpClient\Cache\FilesystemCache;
 
 /**
- * Performs requests on GitHub API using If-Modified-Since headers.
+ * Performs requests on Sabre API using If-Modified-Since headers.
  * Returns a cached version if not modified
  * Avoids increasing the X-Rate-Limit, which is cool.
  *
- * @author Florian Klein <florian.klein@free.fr>
+ * @author Ammon Casey <ammon@caseyohana.com>
  */
 class CachedHttpClient extends HttpClient
 {

@@ -12,7 +12,7 @@ use Ammonkc\SabreApi\HttpClient\HttpClientInterface;
  *
  * @author Ammon Casey <ammon@caseyohana.com>
  *
- * Website: http://github.com/ammonkc/ptpkg-api
+ * Website: http://github.com/ammonkc/sabre-api
  */
 class Client
 {

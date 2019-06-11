@@ -9,6 +9,11 @@ use League\OAuth2\Client\Token\AccessToken;
 use Somoza\OAuth2Middleware\OAuth2Middleware;
 use Somoza\OAuth2Middleware\TokenService\Bearer;
 
+/**
+ * OAuth 2.0 client authenticator
+ *
+ * @author Ammon Casey <ammon@caseyohana.com>
+ */
 class Authenticator
 {
     protected $clientId;

@@ -10,6 +10,8 @@ use Symfony\Component\PropertyAccess\PropertyAccessor;
 
 /**
  * The features of the basic envelope for all responses.
+ *
+ * @author Ammon Casey <ammon@caseyohana.com>
  */
 abstract class AbstractResponse extends AbstractModel implements ResponseInterface
 {
