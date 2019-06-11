@@ -55,6 +55,20 @@ abstract class AbstractRequest implements RequestInterface
     protected $pathParameters;
 
     /**
+     * The request headerParameters
+     *
+     * @var \Symfony\Component\HttpFoundation\ParameterBag
+     */
+    protected $headerParameters;
+
+    /**
+     * The request formParameters
+     *
+     * @var \Symfony\Component\HttpFoundation\ParameterBag
+     */
+    protected $formParameters;
+
+    /**
      * The normalizer
      *
      * @var \Symfony\Component\HttpFoundation\ParameterBag
@@ -92,6 +106,8 @@ abstract class AbstractRequest implements RequestInterface
         $this->parameters = new ParameterBag;
         $this->queryParameters = new ParameterBag;
         $this->pathParameters = new ParameterBag;
+        $this->headerParameters = new ParameterBag;
+        $this->formParameters = new ParameterBag;
     }
 
     /**
@@ -100,7 +116,7 @@ abstract class AbstractRequest implements RequestInterface
      * @param  array $parameters
      * @return $this
      */
-    public function initialize(array $parameters = [], array $queryParameters = [])
+    public function initialize(array $parameters = [], array $queryParameters = [], array $pathParameters = [], array $headerParameters = [])
     {
         // set default parameters
         foreach ($this->getDefaultParameters() as $key => $value) {
@@ -126,9 +142,19 @@ abstract class AbstractRequest implements RequestInterface
                 $this->pathParameters->set($key, $value);
             }
         }
+        // set default header parameters
+        foreach ($this->getDefaultHeaderParameters() as $key => $value) {
+            if (is_array($value)) {
+                $this->headerParameters->set($key, reset($value));
+            } else {
+                $this->headerParameters->set($key, $value);
+            }
+        }
 
         $this->setParams($this, $parameters);
         $this->setParams($this, $queryParameters);
+        $this->setParams($this, $pathParameters);
+        $this->setParams($this, $headerParameters);
 
         $this->setSerializer();
 
@@ -283,6 +309,62 @@ abstract class AbstractRequest implements RequestInterface
     }
 
     /**
+     * Get default header parameters as an associative array.
+     *
+     * @return array
+     */
+    protected function getDefaultHeaderParameters()
+    {
+        return [];
+    }
+
+    /**
+     * Get extra headers as an associative array.
+     *
+     * @return array
+     */
+    protected function getExtraHeaders(): array
+    {
+        return [];
+    }
+
+    /**
+     * Get all header parameters as an associative array.
+     *
+     * @return array
+     */
+    public function getHeaderParameters()
+    {
+        return $this->headerParameters->all();
+    }
+
+    /**
+     * Get a header single parameter.
+     *
+     * @param string $key The parameter key
+     * @return mixed
+     */
+    protected function getHeaderParameter($key)
+    {
+        return $this->headerParameters->get($key);
+    }
+
+    /**
+     * Set a header single parameter
+     *
+     * @param string $key The parameter key
+     * @param mixed $value The value to set
+     * @return $this
+     * @throws RuntimeException if a request parameter is modified after the request has been sent.
+     */
+    protected function setHeaderParameter($key, $value)
+    {
+        $this->headerParameters->set($key, $value);
+
+        return $this;
+    }
+
+    /**
      * Get the query string
      *
      * @param array $queryParameters
@@ -292,6 +374,17 @@ abstract class AbstractRequest implements RequestInterface
     {
         $this->setParams($this, $queryParameters);
         return http_build_query($this->getQueryOptionsResolver()->resolve($this->getQueryParameters()), null, '&', PHP_QUERY_RFC3986);
+    }
+
+    /**
+     * Get the headers
+     *
+     * @param array $headersParameters
+     * @return string
+     */
+    public function getHeaders(array $baseHeaders = []): array
+    {
+        return array_merge($this->getExtraHeaders(), $baseHeaders, $this->getHeadersOptionsResolver()->resolve($this->headerParameters));
     }
 
     /**
@@ -306,6 +399,22 @@ abstract class AbstractRequest implements RequestInterface
      * @return \Symfony\Component\OptionsResolver\OptionsResolver
      */
     protected function getPathOptionsResolver(): OptionsResolver
+    {
+        return new OptionsResolver();
+    }
+
+    /**
+     * @return \Symfony\Component\OptionsResolver\OptionsResolver
+     */
+    protected function getFormOptionsResolver(): OptionsResolver
+    {
+        return new OptionsResolver();
+    }
+
+    /**
+     * @return \Symfony\Component\OptionsResolver\OptionsResolver
+     */
+    protected function getHeadersOptionsResolver(): OptionsResolver
     {
         return new OptionsResolver();
     }
