@@ -7,6 +7,7 @@ use Ammonkc\SabreApi\Exception\ApiNotAuthorizedException;
 use Ammonkc\SabreApi\Exception\ApiTimedOutException;
 use Ammonkc\SabreApi\Exception\CreatePassengerNameRecordBadRequestException;
 use Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordRequest;
+use Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordResponse;
 use Ammonkc\SabreApi\Model\CreatePassengerNameRecord\Normalizer\NormalizerFactory;
 use GuzzleHttp\Exception\ClientException;
 use GuzzleHttp\Exception\ConnectException;
@@ -46,6 +47,13 @@ class CreatePassengerNameRecord extends AbstractRequest
      * @var Ammonkc\SabreApi\Model\CreatePassengerNameRecord\Normalizer\NormalizerFactory $normalizer
      */
     protected $normalizer = NormalizerFactory::class;
+
+    /**
+     * Response Type
+     *
+     * @var Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordResponse $responseType
+     */
+    protected $responseType = CreatePassengerNameRecordResponse::class;
 
     /**
      * Return the complete request object
@@ -94,6 +102,18 @@ class CreatePassengerNameRecord extends AbstractRequest
         }
 
         return $this->parseResponse($response);
+    }
+
+    /**
+     * Deserialze Respose Body
+     *
+     * @return \Ammonkc\SabreApi\Model\EnhancedAirTicket\EnhancedAirTicketResponse|null
+     */
+    protected function deserializeResponseBody(string $body, int $status)
+    {
+        if (200 === $status) {
+            return $this->deserialize($body, $this->responseType, 'json');
+        }
     }
 
     /**
