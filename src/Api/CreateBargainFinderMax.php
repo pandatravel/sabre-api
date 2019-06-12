@@ -35,6 +35,7 @@ use GuzzleHttp\Exception\ConnectException;
  * is used to search for the lowest available priced itineraries
  * based upon a specific date.
  *
+ * @link   https://beta.developer.sabre.com/sites/default/files/eLxEZO8J.yaml OpenApi spec
  * @link   https://api-crt.cert.havail.sabre.com/v1/offers/shop
  *
  * @author Ammon Casey <ammon@caseyohana.com>
@@ -76,7 +77,7 @@ class CreateBargainFinderMax extends AbstractRequest
      */
     protected function getData()
     {
-        $bargainFinderMax = new BargainFinderMaxRequest();
+        $bargainFinderMaxRequest = new BargainFinderMaxRequest();
         $oTAAirLowFareSearchRQ = new BargainFinderMaxRequestOTAAirLowFareSearchRQ();
         $originDestinationInformation = new OrgOpentravelOta200305OTAAirLowFareSearchRQOriginDestinationInformation();
         $originLocation = new OrgOpentravelOta200305OriginDestinationInformationTypeOriginLocation();
@@ -119,9 +120,9 @@ class CreateBargainFinderMax extends AbstractRequest
                               ->setTravelerInfoSummary($travelerInfoSummary->setAirTravelerAvail([$airTravelerAvail])
                                                                            ->setSeatsRequested([1]))
                               ->setVersion(1);
-        $bargainFinderMax->setOTAAirLowFareSearchRQ($oTAAirLowFareSearchRQ);
+        $bargainFinderMaxRequest->setOTAAirLowFareSearchRQ($oTAAirLowFareSearchRQ);
 
-        return $bargainFinderMax;
+        return $bargainFinderMaxRequest;
     }
 
     /**

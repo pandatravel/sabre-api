@@ -20,6 +20,7 @@ use Symfony\Component\OptionsResolver\OptionsResolver;
  * (paper or electronic), and electronic miscellaneous
  * documents (EMDs) in one request.
  *
+ * @link   https://beta.developer.sabre.com/sites/default/files/oQFCUHDB.yaml OpenApi spec
  * @link   https://ptagent.com/api/v1/packages/
  *
  * @author Ammon Casey <ammon@caseyohana.com>
@@ -61,11 +62,11 @@ class EnhancedAirTicket extends AbstractRequest
      */
     protected function getData()
     {
-        $enhancedAirTicket = new EnhancedAirTicketRequest();
+        $enhancedAirTicketRequest = new EnhancedAirTicketRequest();
 
         // build request object
 
-        return $enhancedAirTicket;
+        return $enhancedAirTicketRequest;
     }
 
     /**
