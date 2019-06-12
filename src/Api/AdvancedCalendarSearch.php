@@ -41,6 +41,7 @@ use GuzzleHttp\Exception\RequestException;
  * a specified IATA airline code. If no code is specified, the
  * API returns all codes and their corresponding names.
  *
+ * @link   https://beta.developer.sabre.com/sites/default/files/lUDUUr0S.yaml OpenApi Spec
  * @link   https://ptagent.com/api/v1/packages/
  *
  * @author Ammon Casey <ammon@caseyohana.com>

@@ -14,6 +14,16 @@ use GuzzleHttp\Exception\ConnectException;
 use GuzzleHttp\Exception\RequestException;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
+/**
+ * The Airline Lookup API returns the airline name associated with
+ * a specified IATA airline code. If no code is specified, the
+ * API returns all codes and their corresponding names.
+ *
+ * @link   https://beta.developer.sabre.com/sites/default/files/lUDUUr0S.yaml OpenApi Spec
+ * @link   https://ptagent.com/api/v1/packages/
+ *
+ * @author Ammon Casey <ammon@caseyohana.com>
+ */
 class AdvancedCalendarSearchByRequestId extends AbstractRequest
 {
     /**

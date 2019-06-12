@@ -19,6 +19,7 @@ use Symfony\Component\OptionsResolver\OptionsResolver;
  * multi-airport city (MAC) codes that are associated with
  * a given Sabre travel theme.
  *
+ * @link   https://beta.developer.sabre.com/sites/default/files/bfDmGdfJ.yaml OpenApi Spec
  * @link   https://ptpkg.com/api/v1/packages/
  *
  * @author Ammon Casey <ammon@caseyohana.com>

@@ -21,6 +21,7 @@ use Symfony\Component\OptionsResolver\OptionsResolver;
  * create a Passenger Name Record (PNR) including air
  * segments in a single call.
  *
+ * @link   https://beta.developer.sabre.com/sites/default/files/wvMhNR86.yaml OpenApi Spec
  * @link   https://ptagent.com/api/v1/packages/
  *
  * @author Ammon Casey <ammon@caseyohana.com>

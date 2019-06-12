@@ -22,6 +22,7 @@ use Symfony\Component\OptionsResolver\OptionsResolver;
  *
  * All other air shopping REST APIs city pairs.
  *
+ * @link   https://beta.developer.sabre.com/sites/default/files/avSfJN1T.yaml OpenApi Spec
  * @link   https://ptagent.com/api/v1/packages/
  *
  * @author Ammon Casey <ammon@caseyohana.com>

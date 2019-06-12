@@ -18,6 +18,7 @@ use Symfony\Component\OptionsResolver\OptionsResolver;
  * list of supported point of sale country codes
  * and associated country names.
  *
+ * @link   https://beta.developer.sabre.com/sites/default/files/bE99pTgl.yaml OpenApi Spec
  * @link   https://ptagent.com/api/v1/packages/
  *
  * @author Ammon Casey <ammon@caseyohana.com>

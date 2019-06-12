@@ -14,6 +14,16 @@ use GuzzleHttp\Exception\ConnectException;
 use GuzzleHttp\Exception\RequestException;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
+/**
+ * The InstaFlights Search API retrieves roundtrip or one-way flight
+ * itineraries with published fares and fare breakdowns
+ * for a given city pair and departure date.
+ *
+ * @link   https://beta.developer.sabre.com/sites/default/files/t6Abi4RC.yaml OpenApi Spec
+ * @link   https://ptagent.com/api/v1/packages/
+ *
+ * @author Ammon Casey <ammon@caseyohana.com>
+ */
 class InstaFlightsSearchByTagId extends AbstractRequest
 {
     /**

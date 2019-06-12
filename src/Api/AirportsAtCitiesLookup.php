@@ -18,6 +18,7 @@ use Symfony\Component\OptionsResolver\OptionsResolver;
  * rail station and other codes that are associated with a
  * single a multi-airport city (MAC) code.
  *
+ * @link   https://beta.developer.sabre.com/sites/default/files/wNFnaOgc.yaml OpenApi Spec
  * @link   https://ptpkg.com/api/v1/packages/
  *
  * @author Ammon Casey <ammon@caseyohana.com>

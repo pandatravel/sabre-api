@@ -17,6 +17,7 @@ use Symfony\Component\OptionsResolver\OptionsResolver;
  * The Aircraft Equipment Lookup API returns the aircraft name
  * associated with a specified IATA aircraft equipment code.
  *
+ * @link   https://beta.developer.sabre.com/sites/default/files/itkzpsYF.yaml OpenApi Spec
  * @link   https://ptpkg.com/api/v1/packages/
  *
  * @author Ammon Casey <ammon@caseyohana.com>

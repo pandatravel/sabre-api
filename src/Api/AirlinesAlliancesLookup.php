@@ -20,6 +20,7 @@ use Symfony\Component\OptionsResolver\OptionsResolver;
  * all airline alliance groups and their corresponding
  * member information.
  *
+ * @link   https://beta.developer.sabre.com/sites/default/files/qi91U6nF.yaml OpenApi Spec
  * @link   https://ptpkg.com/api/v1/packages/
  *
  * @author Ammon Casey <ammon@caseyohana.com>

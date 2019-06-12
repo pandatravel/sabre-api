@@ -19,6 +19,7 @@ use Symfony\Component\OptionsResolver\OptionsResolver;
  * The Countries Lookup API returns a list of origin and
  * destination countries.
  *
+ * @link   https://beta.developer.sabre.com/sites/default/files/wTWqkIny.yaml OpenApi Spec
  * @link   https://ptagent.com/api/v1/packages/
  *
  * @author Ammon Casey <ammon@caseyohana.com>

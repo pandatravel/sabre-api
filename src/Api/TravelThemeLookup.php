@@ -19,6 +19,7 @@ use GuzzleHttp\Exception\RequestException;
  * geography, point of interest, or recreational activity. For
  * Example: Beaches, National Parks and Skiing.
  *
+ * @link   https://beta.developer.sabre.com/sites/default/files/qMR9gogg.yaml OpenApi Spec
  * @link   https://ptpkg.com/api/v1/packages/
  *
  * @author Ammon Casey <ammon@caseyohana.com>

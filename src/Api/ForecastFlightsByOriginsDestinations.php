@@ -22,6 +22,7 @@ use Symfony\Component\OptionsResolver\OptionsResolver;
  *
  * Low Fare Forecast API supported city pairs.
  *
+ * @link   https://beta.developer.sabre.com/sites/default/files/avSfJN1T.yaml OpenApi Spec
  * @link   https://ptagent.com/api/v1/packages/
  *
  * @author Ammon Casey <ammon@caseyohana.com>

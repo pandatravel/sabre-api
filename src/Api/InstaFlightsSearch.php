@@ -20,6 +20,7 @@ use Symfony\Component\OptionsResolver\OptionsResolver;
  * itineraries with published fares and fare breakdowns
  * for a given city pair and departure date.
  *
+ * @link   https://beta.developer.sabre.com/sites/default/files/t6Abi4RC.yaml OpenApi Spec
  * @link   https://ptagent.com/api/v1/packages/
  *
  * @author Ammon Casey <ammon@caseyohana.com>
