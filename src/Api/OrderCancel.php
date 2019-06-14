@@ -24,7 +24,7 @@ use GuzzleHttp\Exception\RequestException;
  *
  * @author Ammon Casey <ammon@caseyohana.com>
  */
-class ChangeOrder extends AbstractRequest
+class OrderCancel extends AbstractRequest
 {
     /**
      * Endpoint
