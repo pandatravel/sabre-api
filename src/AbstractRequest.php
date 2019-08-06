@@ -97,12 +97,20 @@ abstract class AbstractRequest implements RequestInterface
     protected $fetchMode;
 
     /**
+     * Dev mode
+     *
+     * @var string
+     */
+    protected $devMode = false;
+
+    /**
      * @param Client $client
      */
-    public function __construct(Client $client, $fetchMode)
+    public function __construct(Client $client, $fetchMode = null)
     {
         $this->client = $client;
-        $this->fetchMode = $fetchMode;
+        $this->fetchMode = $fetchMode ?: $client::FETCH_JSON;
+        $this->devMode = $client->getDevMode();
         $this->parameters = new ParameterBag;
         $this->queryParameters = new ParameterBag;
         $this->pathParameters = new ParameterBag;
@@ -365,6 +373,73 @@ abstract class AbstractRequest implements RequestInterface
     }
 
     /**
+     * Set pseudoCityCode Value
+     *
+     * @param string $value
+     * @return $this
+     */
+    protected function setPseudoCityCode($value)
+    {
+        return $this->setParameter('pseudoCityCode', $value);
+    }
+
+    /**
+     * @return string
+     */
+    protected function getPseudoCityCode()
+    {
+        return $this->getParameter('pseudoCityCode');
+    }
+
+    /**
+     * Set a fetchMode
+     *
+     * @param string $value
+     * @return $this
+     */
+    public function setFetchMode($value)
+    {
+        $this->fetchMode = $value;
+
+        return $this;
+    }
+
+    /**
+     * Get a fetchMode
+     *
+     * @param string $fetchMode
+     * @return mixed
+     */
+    public function getFetchMode()
+    {
+        return $this->fetchMode;
+    }
+
+    /**
+     * Set a devMode
+     *
+     * @param bool $value
+     * @return $this
+     */
+    public function setDevMode($value)
+    {
+        $this->devMode = $value;
+
+        return $this;
+    }
+
+    /**
+     * Get a devMode
+     *
+     * @param string $devMode
+     * @return mixed
+     */
+    public function getDevMode()
+    {
+        return $this->devMode;
+    }
+
+    /**
      * Get the query string
      *
      * @param array $queryParameters
@@ -382,7 +457,7 @@ abstract class AbstractRequest implements RequestInterface
      * @param array $headersParameters
      * @return string
      */
-    public function getHeaders(array $baseHeaders = []): array
+    protected function getHeaders(array $baseHeaders = []): array
     {
         return array_merge($this->getExtraHeaders(), $baseHeaders, $this->getHeadersOptionsResolver()->resolve($this->headerParameters));
     }

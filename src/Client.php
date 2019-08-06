@@ -74,6 +74,18 @@ class Client
     /**
      * @var array
      */
+    private $parameters = [];
+
+    /**
+     * Dev mode
+     *
+     * @var bool $devMode
+     */
+    protected $devMode = false;
+
+    /**
+     * @var array
+     */
     private $endPoints = [];
 
     /**
@@ -208,6 +220,56 @@ class Client
     }
 
     /**
+     * @param string $name
+     *
+     * @return mixed
+     */
+    public function getParameter($name)
+    {
+        return $this->parameters[$name];
+    }
+
+    /**
+     * @param string $name
+     *
+     * @return array
+     */
+    public function getParameters()
+    {
+        return $this->parameters;
+    }
+
+    /**
+     * @param string $name
+     * @param mixed  $value
+     */
+    public function setParameter($name, $value)
+    {
+        $this->parameters[$name] = $value;
+    }
+
+    /**
+     * Set devMode
+     *
+     * @param string $value
+     * @return $this
+     */
+    public function setDevMode($value)
+    {
+        $this->devMode = $value;
+
+        return $this;
+    }
+
+    /**
+     * @return bool $devMode
+     */
+    public function getDevMode()
+    {
+        return $this->devMode;
+    }
+
+    /**
      * @param $endpoint
      * @param array $args
      * @return Endpoint\AbstractWpEndpoint
@@ -219,14 +281,17 @@ class Client
             throw new RuntimeException('Endpoint "' . $endpoint . '" does not exist"');
         }
 
-        $fetchMode = isset($args[1]) ? $args[1] : self::FETCH_JSON;
-
-        $obj = new $class($this, $fetchMode);
-
-        if (isset($args[0])) {
-            return $obj->initialize($args[0])->send();
+        if (isset($args[0]) && is_string($args[0] && in_array($args[0], [self::FETCH_JSON, self::FETCH_OBJECT, self::FETCH_RESPONSE]))) {
+            $fetchMode = $args[0];
+            unset($args[0]);
         } else {
-            return $obj->initialize()->send();
+            $fetchMode = isset($args[1]) ? $args[1] : self::FETCH_JSON;
         }
+
+        $parameters = isset($args[0]) && is_array($args[0]) ? array_merge($args[0], $this->getParameters()) : $this->getParameters();
+
+        $api = new $class($this, $fetchMode);
+
+        return $api->initialize($parameters)->send();
     }
 }
