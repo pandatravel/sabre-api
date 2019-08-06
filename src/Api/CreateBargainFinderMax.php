@@ -12,9 +12,13 @@ use Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer\NormalizerFactory;
 use Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305AirSearchPrefsType;
 use Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions;
 use Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsDataSources;
+use Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305CabinPrefType;
+use Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305ClassOfServiceElemType;
 use Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305CompanyNameType;
+use Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeSegmentType;
 use Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305NumTripsType;
 use Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305OTAAirLowFareSearchRQOriginDestinationInformation;
+use Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305OTAAirLowFareSearchRQOriginDestinationInformationTPAExtensions;
 use Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensions;
 use Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305OriginDestinationInformationTypeDestinationLocation;
 use Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305OriginDestinationInformationTypeOriginLocation;
@@ -82,6 +86,10 @@ class CreateBargainFinderMax extends AbstractRequest
         $originDestinationInformation = new OrgOpentravelOta200305OTAAirLowFareSearchRQOriginDestinationInformation();
         $originLocation = new OrgOpentravelOta200305OriginDestinationInformationTypeOriginLocation();
         $destinationLocation = new OrgOpentravelOta200305OriginDestinationInformationTypeDestinationLocation();
+        $originDestinationTpaExtentions = new OrgOpentravelOta200305OTAAirLowFareSearchRQOriginDestinationInformationTPAExtensions();
+        $originDestinationSegmentType = new OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeSegmentType();
+        $originDestinationClassOfServiceElemType = new OrgOpentravelOta200305ClassOfServiceElemType();
+        $cabinPrefType = new OrgOpentravelOta200305CabinPrefType();
         $pOS = new OrgOpentravelOta200305POSType();
         $source = new OrgOpentravelOta200305SourceType();
         $requestorID = new OrgOpentravelOta200305UniqueIDType();
@@ -95,31 +103,66 @@ class CreateBargainFinderMax extends AbstractRequest
         $travelerInfoSummary = new OrgOpentravelOta200305TravelerInfoSummaryType();
         $airTravelerAvail = new OrgOpentravelOta200305TravelerInformationType();
         $passengerTypeQuantity = new OrgOpentravelOta200305PassengerTypeQuantityType();
+        $numTrips = new OrgOpentravelOta200305NumTripsType();
 
-        $departInfo = $originDestinationInformation->withDepartureDateTime($this->getParameter('departDate'))
-                                                   ->withDestinationLocation($destinationLocation->withLocationCode($this->getParameter('destinationLocation')))
-                                                   ->withOriginLocation($originLocation->withLocationCode($this->getParameter('originLocation')))
-                                                   ->withRPH("0");
-        $returnInfo = $originDestinationInformation->withDepartureDateTime($this->getParameter('returnDate'))
-                                                   ->withDestinationLocation($destinationLocation->withLocationCode($this->getParameter('originLocation')))
-                                                   ->withOriginLocation($originLocation->withLocationCode($this->getParameter('destinationLocation')))
-                                                   ->withRPH("1");
-        $requestorID->setCompanyName($companyName->setCode("TN"))
-                    ->setID("1")
-                    ->setType("1");
-        $source->setPseudoCityCode($this->getParameter('pseudoCityCode'))
-               ->setRequestorID($requestorID);
+        /* ************************ POS ************************ */
+
+        $source->setPseudoCityCode($this->getPseudoCityCode())
+               ->setRequestorID($requestorID->setType("0.AAA.X")
+                                            ->setID("REQ.ID")
+                                            ->setCompanyName($companyName->setCode("TN")));
         $pOS->setSource([$source]);
-        $airTravelerAvail->setPassengerTypeQuantity([$passengerTypeQuantity->setCode('ADT')->setQuantity(1)]);
-        $oTAAirLowFareSearchRQ->setOriginDestinationInformation([$departInfo, $returnInfo])
-                              ->setMaxResponses($this->getParameter('maxResponses'))
-                              ->setAvailableFlightsOnly($this->getParameter('availableFlightsOnly'))
+
+        /* ************************ OriginDestination ************************ */
+
+        $departInfo = $originDestinationInformation->withDepartureDateTime($this->getDepartDate())
+                                                   ->withDestinationLocation($destinationLocation->withLocationCode($this->getDestinationLocation()))
+                                                   ->withOriginLocation($originLocation->withLocationCode($this->getOriginLocation()))
+                                                   ->withRPH("1")
+                                                   ->withTPAExtensions($originDestinationTpaExtentions->withSegmentType($originDestinationSegmentType->setCode("O")));
+        $origDestInfo = [$departInfo];
+        if ($this->getTripType() === static::ROUND_TRIP) {
+            $returnInfo = $originDestinationInformation->withDepartureDateTime($this->getReturnDate())
+                                                       ->withDestinationLocation($destinationLocation->withLocationCode($this->getOriginLocation()))
+                                                       ->withOriginLocation($originLocation->withLocationCode($this->getDestinationLocation()))
+                                                       ->withRPH("2")
+                                                       ->withTPAExtensions($originDestinationTpaExtentions->withSegmentType($originDestinationSegmentType->setCode("O")));
+            array_push($origDestInfo, $returnInfo);
+        }
+
+        /* ************************ PassengerType ************************ */
+
+        $passengers = [];
+        if ($this->getAdultCount() > 0) {
+            $passengers[] = $passengerTypeQuantity->withCode('ADT')->withQuantity($this->getAdultCount());
+        }
+        if ($this->getChildCount() > 0) {
+            $passengers[] = $passengerTypeQuantity->withCode('CNN')->withQuantity($this->getChildCount());
+        }
+        $airTravelerAvail->setPassengerTypeQuantity($passengers);
+
+        /* ************************ TravelPreferences ************************ */
+
+        $travelPreferences->setCabinPref([$cabinPrefType->withCabin($this->getCabinPref())->withPreferLevel("Preferred")])
+                          ->setTPAExtensions($travelPrefsTPAExtensions->setNumTrips($numTrips)
+                                                                      ->setDataSources($tPADataSources->setATPCO("Enable")
+                                                                                                      ->setLCC("Disable")
+                                                                                                      ->setNDC("Disable")));
+
+        /* ************************ OTAAirLowFareSearchRQ ************************ */
+
+        $oTAAirLowFareSearchRQ->setTruncateMessages(false)
+                              ->setVersion('1')
+                              ->setTarget($this->getTarget())
+                              ->setMaxResponses($this->getMaxResponses())
+                              ->setAvailableFlightsOnly($this->getAvailableFlightsOnly())
+                              ->setDirectFlightsOnly($this->getDirectFlightsOnly())
                               ->setPOS($pOS)
-                              ->setTPAExtensions($tPAExtensions->withIntelliSellTransaction($intelliSellTransaction->setRequestType($requestType->setName("200ITINS"))))
-                              ->setTravelPreferences($travelPreferences->setTPAExtensions($travelPrefsTPAExtensions->setDataSources($tPADataSources->setATPCO("Enable")->setLCC("Disable")->setNDC("Disable"))->setNumTrips(new OrgOpentravelOta200305NumTripsType())))
+                              ->setOriginDestinationInformation($origDestInfo)
+                              ->setTravelPreferences($travelPreferences)
                               ->setTravelerInfoSummary($travelerInfoSummary->setAirTravelerAvail([$airTravelerAvail])
-                                                                           ->setSeatsRequested([1]))
-                              ->setVersion(1);
+                                                                           ->setSeatsRequested([$this->getPassengerCount()]))
+                              ->setTPAExtensions($tPAExtensions->withIntelliSellTransaction($intelliSellTransaction->setRequestType($requestType->setName("200ITINS"))));
         $bargainFinderMaxRequest->setOTAAirLowFareSearchRQ($oTAAirLowFareSearchRQ);
 
         return $bargainFinderMaxRequest;
@@ -162,9 +205,10 @@ class CreateBargainFinderMax extends AbstractRequest
     protected function getDefaultParameters()
     {
         return [
-            'pseudoCityCode'        => 'T6C0',
-            'maxResponses'          => '10',
+            'maxResponses'          => 10,
             'availableFlightsOnly'  => true,
+            'directFlightsOnly'     => true,
+            'cabinPref'             => 'Y',
         ];
     }
 
@@ -264,6 +308,90 @@ class CreateBargainFinderMax extends AbstractRequest
     }
 
     /**
+     * Set adultCount Value
+     *
+     * @param string $value
+     * @return $this
+     */
+    public function setAdultCount($value)
+    {
+        return $this->setParameter('adultCount', $value);
+    }
+
+    /**
+     * @return string
+     */
+    public function getAdultCount()
+    {
+        return (int) $this->getParameter('adultCount');
+    }
+
+    /**
+     * Set childCount Value
+     *
+     * @param string $value
+     * @return $this
+     */
+    public function setChildCount($value)
+    {
+        return $this->setParameter('childCount', $value);
+    }
+
+    /**
+     * @return string
+     */
+    public function getChildCount()
+    {
+        return (int) $this->getParameter('childCount');
+    }
+
+    /**
+     * @return int
+     */
+    public function getPassengerCount()
+    {
+        return (int) $this->getAdultCount() + $this->getChildCount();
+    }
+
+    /**
+     * Set maxResponses Value
+     *
+     * @param string $value
+     * @return $this
+     */
+    public function setMaxResponses($value)
+    {
+        return $this->setParameter('maxResponses', $value);
+    }
+
+    /**
+     * @return string
+     */
+    public function getMaxResponses(): int
+    {
+        return (int) $this->getParameter('maxResponses');
+    }
+
+    /**
+     * Set cabinPref Value
+     *
+     * @param string $value
+     * @return $this
+     */
+    public function setCabinPref($value)
+    {
+        return $this->setParameter('cabinPref', $value);
+    }
+
+    /**
+     * @return string
+     */
+    public function getCabinPref()
+    {
+        return $this->getParameter('cabinPref');
+    }
+
+    /**
      * Set availableFlightsOnly Value
      *
      * @param string $value
@@ -280,5 +408,51 @@ class CreateBargainFinderMax extends AbstractRequest
     public function getAvailableFlightsOnly()
     {
         return $this->getParameter('availableFlightsOnly');
+    }
+
+    /**
+     * Set directFlightsOnly Value
+     *
+     * @param string $value
+     * @return $this
+     */
+    public function setDirectFlightsOnly($value)
+    {
+        return $this->setParameter('directFlightsOnly', $value);
+    }
+
+    /**
+     * @return string
+     */
+    public function getDirectFlightsOnly()
+    {
+        return $this->getParameter('directFlightsOnly');
+    }
+
+    /**
+     * Set tripType Value
+     *
+     * @param string $value
+     * @return $this
+     */
+    public function setTripType($value)
+    {
+        return $this->setParameter('tripType', $value);
+    }
+
+    /**
+     * @return string
+     */
+    public function getTripType()
+    {
+        return $this->getParameter('tripType');
+    }
+
+    /**
+     * @return string
+     */
+    public function getTarget()
+    {
+        return $this->getDevMode() ? 'Test' : 'Production';
     }
 }
