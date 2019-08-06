@@ -1,10 +1,10 @@
 <?php
 
-namespace Ammonkc\SabreApi\Model\CityPairsLookup;
+namespace Ammonkc\SabreApi\Model\CityPairLookup;
 
 use Ammonkc\SabreApi\AbstractModel;
 
-class HistoricalCityPairLookupResponse extends AbstractModel
+class ForecastCityPairLookupResponse extends AbstractModel
 {
     /**
      * @var CommonLinksItem[]

@@ -8,8 +8,8 @@ use Ammonkc\SabreApi\Exception\ApiTimedOutException;
 use Ammonkc\SabreApi\Exception\ForecastFlightsByOriginsDestinationsBadRequestException;
 use Ammonkc\SabreApi\Exception\ForecastFlightsByOriginsDestinationsNotFoundException;
 use Ammonkc\SabreApi\Exception\ForecastFlightsByOriginsDestinationsRequestEntityTooLargeException;
-use Ammonkc\SabreApi\Model\CityPairsLookup\ForecastCityPairLookupResponse;
-use Ammonkc\SabreApi\Model\CityPairsLookup\Normalizer\NormalizerFactory;
+use Ammonkc\SabreApi\Model\CityPairLookup\ForecastCityPairLookupResponse;
+use Ammonkc\SabreApi\Model\CityPairLookup\Normalizer\NormalizerFactory;
 use GuzzleHttp\Exception\ClientException;
 use GuzzleHttp\Exception\ConnectException;
 use GuzzleHttp\Exception\RequestException;
@@ -46,14 +46,14 @@ class ForecastFlightsByOriginsDestinations extends AbstractRequest
     /**
      * NormalizerFactory
      *
-     * @var Ammonkc\SabreApi\Model\CityPairsLookup\Normalizer\NormalizerFactory $normalizer
+     * @var Ammonkc\SabreApi\Model\CityPairLookup\Normalizer\NormalizerFactory $normalizer
      */
     protected $normalizer = NormalizerFactory::class;
 
     /**
      * Response Type
      *
-     * @var Ammonkc\SabreApi\Model\CityPairsLookup\ForecastCityPairLookupResponse $responseType
+     * @var Ammonkc\SabreApi\Model\CityPairLookup\ForecastCityPairLookupResponse $responseType
      */
     protected $responseType = ForecastCityPairLookupResponse::class;
 
@@ -92,7 +92,7 @@ class ForecastFlightsByOriginsDestinations extends AbstractRequest
      * @throws \Ammonkc\SabreApi\Exception\ForecastFlightsByOriginsDestinationsNotFoundException
      * @throws \Ammonkc\SabreApi\Exception\ForecastFlightsByOriginsDestinationsRequestEntityTooLargeException
      *
-     * @returns \Ammonkc\SabreApi\Model\CityPairsLookup\ForecastCityPairLookupResponse
+     * @returns \Ammonkc\SabreApi\Model\CityPairLookup\ForecastCityPairLookupResponse
      */
     public function sendData($data)
     {
@@ -127,7 +127,7 @@ class ForecastFlightsByOriginsDestinations extends AbstractRequest
     /**
      * Deserialze Respose Body
      *
-     * @return \Ammonkc\SabreApi\Model\CityPairsLookup\ForecastCityPairLookupResponse|null
+     * @return \Ammonkc\SabreApi\Model\CityPairLookup\ForecastCityPairLookupResponse|null
      */
     protected function deserializeResponseBody(string $body, int $status)
     {

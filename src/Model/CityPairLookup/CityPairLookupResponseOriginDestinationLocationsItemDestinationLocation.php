@@ -1,10 +1,10 @@
 <?php
 
-namespace Ammonkc\SabreApi\Model\CityPairsLookup;
+namespace Ammonkc\SabreApi\Model\CityPairLookup;
 
 use Ammonkc\SabreApi\AbstractModel;
 
-class CityPairLookupResponseOriginDestinationLocationsItemOriginLocation extends AbstractModel
+class CityPairLookupResponseOriginDestinationLocationsItemDestinationLocation extends AbstractModel
 {
     /**
      * 3-letter IATA airport code.

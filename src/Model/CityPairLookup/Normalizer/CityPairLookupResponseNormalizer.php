@@ -1,6 +1,6 @@
 <?php
 
-namespace Ammonkc\SabreApi\Model\CityPairsLookup\Normalizer;
+namespace Ammonkc\SabreApi\Model\CityPairLookup\Normalizer;
 
 use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
@@ -17,12 +17,12 @@ class CityPairLookupResponseNormalizer implements DenormalizerInterface, Normali
 
     public function supportsDenormalization($data, $type, $format = null)
     {
-        return $type === 'Ammonkc\\SabreApi\\Model\\CityPairsLookup\\CityPairLookupResponse';
+        return $type === 'Ammonkc\\SabreApi\\Model\\CityPairLookup\\CityPairLookupResponse';
     }
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\CityPairsLookup\CityPairLookupResponse;
+        return $data instanceof \Ammonkc\SabreApi\Model\CityPairLookup\CityPairLookupResponse;
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
@@ -30,18 +30,18 @@ class CityPairLookupResponseNormalizer implements DenormalizerInterface, Normali
         if (!is_object($data)) {
             throw new InvalidArgumentException();
         }
-        $object = new \Ammonkc\SabreApi\Model\CityPairsLookup\CityPairLookupResponse();
+        $object = new \Ammonkc\SabreApi\Model\CityPairLookup\CityPairLookupResponse();
         if (property_exists($data, 'OriginDestinationLocations')) {
             $values = [];
             foreach ($data->{'OriginDestinationLocations'} as $value) {
-                $values[] = $this->denormalizer->denormalize($value, 'Ammonkc\\SabreApi\\Model\\CityPairsLookup\\CityPairLookupResponseOriginDestinationLocationsItem', 'json', $context);
+                $values[] = $this->denormalizer->denormalize($value, 'Ammonkc\\SabreApi\\Model\\CityPairLookup\\CityPairLookupResponseOriginDestinationLocationsItem', 'json', $context);
             }
             $object->setOriginDestinationLocations($values);
         }
         if (property_exists($data, 'Links')) {
             $values_1 = [];
             foreach ($data->{'Links'} as $value_1) {
-                $values_1[] = $this->denormalizer->denormalize($value_1, 'Ammonkc\\SabreApi\\Model\\CityPairsLookup\\CommonLinksItem', 'json', $context);
+                $values_1[] = $this->denormalizer->denormalize($value_1, 'Ammonkc\\SabreApi\\Model\\CityPairLookup\\CommonLinksItem', 'json', $context);
             }
             $object->setLinks($values_1);
         }

@@ -8,8 +8,8 @@ use Ammonkc\SabreApi\Exception\ApiTimedOutException;
 use Ammonkc\SabreApi\Exception\ShopFlightsByOriginsDestinationsBadRequestException;
 use Ammonkc\SabreApi\Exception\ShopFlightsByOriginsDestinationsNotFoundException;
 use Ammonkc\SabreApi\Exception\ShopFlightsByOriginsDestinationsRequestEntityTooLargeException;
-use Ammonkc\SabreApi\Model\CityPairsLookup\Normalizer\NormalizerFactory;
-use Ammonkc\SabreApi\Model\CityPairsLookup\ShopCityPairLookupResponse;
+use Ammonkc\SabreApi\Model\CityPairLookup\Normalizer\NormalizerFactory;
+use Ammonkc\SabreApi\Model\CityPairLookup\ShopCityPairLookupResponse;
 use GuzzleHttp\Exception\ClientException;
 use GuzzleHttp\Exception\ConnectException;
 use GuzzleHttp\Exception\RequestException;
@@ -46,14 +46,14 @@ class ShopFlightsByOriginsDestinations extends AbstractRequest
     /**
      * NormalizerFactory
      *
-     * @var Ammonkc\SabreApi\Model\CityPairsLookup\Normalizer\NormalizerFactory $normalizer
+     * @var Ammonkc\SabreApi\Model\CityPairLookup\Normalizer\NormalizerFactory $normalizer
      */
     protected $normalizer = NormalizerFactory::class;
 
     /**
      * Response Type
      *
-     * @var Ammonkc\SabreApi\Model\CityPairsLookup\CountriesLookupResponse $responseType
+     * @var Ammonkc\SabreApi\Model\CityPairLookup\ShopCityPairLookupResponse $responseType
      */
     protected $responseType = ShopCityPairLookupResponse::class;
 
@@ -92,7 +92,7 @@ class ShopFlightsByOriginsDestinations extends AbstractRequest
      * @throws \Ammonkc\SabreApi\Exception\ShopFlightsByOriginsDestinationsNotFoundException
      * @throws \Ammonkc\SabreApi\Exception\ShopFlightsByOriginsDestinationsRequestEntityTooLargeException
      *
-     * @returns \Ammonkc\SabreApi\Model\CountriesLookup\CountriesLookupResponse
+     * @returns \Ammonkc\SabreApi\Model\CityPairLookup\ShopCityPairLookupResponse
      */
     public function sendData($data)
     {

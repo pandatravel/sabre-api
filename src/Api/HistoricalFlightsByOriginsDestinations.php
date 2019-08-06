@@ -8,8 +8,8 @@ use Ammonkc\SabreApi\Exception\ApiTimedOutException;
 use Ammonkc\SabreApi\Exception\HistoricalFlightsByOriginsDestinationsBadRequestException;
 use Ammonkc\SabreApi\Exception\HistoricalFlightsByOriginsDestinationsNotFoundException;
 use Ammonkc\SabreApi\Exception\HistoricalFlightsByOriginsDestinationsRequestEntityTooLargeException;
-use Ammonkc\SabreApi\Model\CityPairsLookup\HistoricalCityPairLookupResponse;
-use Ammonkc\SabreApi\Model\CityPairsLookup\Normalizer\NormalizerFactory;
+use Ammonkc\SabreApi\Model\CityPairLookup\HistoricalCityPairLookupResponse;
+use Ammonkc\SabreApi\Model\CityPairLookup\Normalizer\NormalizerFactory;
 use GuzzleHttp\Exception\ClientException;
 use GuzzleHttp\Exception\ConnectException;
 use GuzzleHttp\Exception\RequestException;
@@ -46,14 +46,14 @@ class HistoricalFlightsByOriginsDestinations extends AbstractRequest
     /**
      * NormalizerFactory
      *
-     * @var Ammonkc\SabreApi\Model\CityPairsLookup\Normalizer\NormalizerFactory $normalizer
+     * @var Ammonkc\SabreApi\Model\CityPairLookup\Normalizer\NormalizerFactory $normalizer
      */
     protected $normalizer = NormalizerFactory::class;
 
     /**
      * Response Type
      *
-     * @var Ammonkc\SabreApi\Model\CityPairsLookup\HistoricalCityPairLookupResponse $responseType
+     * @var Ammonkc\SabreApi\Model\CityPairLookup\HistoricalCityPairLookupResponse $responseType
      */
     protected $responseType = HistoricalCityPairLookupResponse::class;
 
@@ -92,7 +92,7 @@ class HistoricalFlightsByOriginsDestinations extends AbstractRequest
      * @throws \Ammonkc\SabreApi\Exception\HistoricalFlightsByOriginsDestinationsNotFoundException
      * @throws \Ammonkc\SabreApi\Exception\HistoricalFlightsByOriginsDestinationsRequestEntityTooLargeException
      *
-     * @returns \Ammonkc\SabreApi\Model\CityPairsLookup\HistoricalCityPairLookupResponse
+     * @returns \Ammonkc\SabreApi\Model\CityPairLookup\HistoricalCityPairLookupResponse
      */
     public function sendData($data)
     {
@@ -127,7 +127,7 @@ class HistoricalFlightsByOriginsDestinations extends AbstractRequest
     /**
      * Deserialze Respose Body
      *
-     * @return \Ammonkc\SabreApi\Model\CityPairsLookup\HistoricalCityPairLookupResponse|null
+     * @return \Ammonkc\SabreApi\Model\CityPairLookup\HistoricalCityPairLookupResponse|null
      */
     protected function deserializeResponseBody(string $body, int $status)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Ammonkc\SabreApi\Model\CityPairsLookup\Normalizer;
+namespace Ammonkc\SabreApi\Model\CityPairLookup\Normalizer;
 
 use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
@@ -17,12 +17,12 @@ class CommonLinksItemNormalizer implements DenormalizerInterface, NormalizerInte
 
     public function supportsDenormalization($data, $type, $format = null)
     {
-        return $type === 'Ammonkc\\SabreApi\\Model\\CityPairsLookup\\CommonLinksItem';
+        return $type === 'Ammonkc\\SabreApi\\Model\\CityPairLookup\\CommonLinksItem';
     }
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\CityPairsLookup\CommonLinksItem;
+        return $data instanceof \Ammonkc\SabreApi\Model\CityPairLookup\CommonLinksItem;
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
@@ -30,7 +30,7 @@ class CommonLinksItemNormalizer implements DenormalizerInterface, NormalizerInte
         if (!is_object($data)) {
             throw new InvalidArgumentException();
         }
-        $object = new \Ammonkc\SabreApi\Model\CityPairsLookup\CommonLinksItem();
+        $object = new \Ammonkc\SabreApi\Model\CityPairLookup\CommonLinksItem();
         if (property_exists($data, 'rel')) {
             $object->setRel($data->{'rel'});
         }

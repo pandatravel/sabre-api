@@ -8,7 +8,7 @@ declare(strict_types=1);
  * Do no edit it directly.
  */
 
-namespace Ammonkc\SabreApi\Model\CityPairsLookup\Normalizer;
+namespace Ammonkc\SabreApi\Model\CityPairLookup\Normalizer;
 
 class NormalizerFactory
 {

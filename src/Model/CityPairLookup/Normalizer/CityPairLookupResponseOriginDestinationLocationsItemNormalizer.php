@@ -1,6 +1,6 @@
 <?php
 
-namespace Ammonkc\SabreApi\Model\CityPairsLookup\Normalizer;
+namespace Ammonkc\SabreApi\Model\CityPairLookup\Normalizer;
 
 use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
@@ -17,12 +17,12 @@ class CityPairLookupResponseOriginDestinationLocationsItemNormalizer implements 
 
     public function supportsDenormalization($data, $type, $format = null)
     {
-        return $type === 'Ammonkc\\SabreApi\\Model\\CityPairsLookup\\CityPairLookupResponseOriginDestinationLocationsItem';
+        return $type === 'Ammonkc\\SabreApi\\Model\\CityPairLookup\\CityPairLookupResponseOriginDestinationLocationsItem';
     }
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\CityPairsLookup\CityPairLookupResponseOriginDestinationLocationsItem;
+        return $data instanceof \Ammonkc\SabreApi\Model\CityPairLookup\CityPairLookupResponseOriginDestinationLocationsItem;
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
@@ -30,15 +30,15 @@ class CityPairLookupResponseOriginDestinationLocationsItemNormalizer implements 
         if (!is_object($data)) {
             throw new InvalidArgumentException();
         }
-        $object = new \Ammonkc\SabreApi\Model\CityPairsLookup\CityPairLookupResponseOriginDestinationLocationsItem();
+        $object = new \Ammonkc\SabreApi\Model\CityPairLookup\CityPairLookupResponseOriginDestinationLocationsItem();
         if (property_exists($data, 'OriginDestinationLocations')) {
             $object->setOriginDestinationLocations($data->{'OriginDestinationLocations'});
         }
         if (property_exists($data, 'OriginLocation')) {
-            $object->setOriginLocation($this->denormalizer->denormalize($data->{'OriginLocation'}, 'Ammonkc\\SabreApi\\Model\\CityPairsLookup\\CityPairLookupResponseOriginDestinationLocationsItemOriginLocation', 'json', $context));
+            $object->setOriginLocation($this->denormalizer->denormalize($data->{'OriginLocation'}, 'Ammonkc\\SabreApi\\Model\\CityPairLookup\\CityPairLookupResponseOriginDestinationLocationsItemOriginLocation', 'json', $context));
         }
         if (property_exists($data, 'DestinationLocation')) {
-            $object->setDestinationLocation($this->denormalizer->denormalize($data->{'DestinationLocation'}, 'Ammonkc\\SabreApi\\Model\\CityPairsLookup\\CityPairLookupResponseOriginDestinationLocationsItemDestinationLocation', 'json', $context));
+            $object->setDestinationLocation($this->denormalizer->denormalize($data->{'DestinationLocation'}, 'Ammonkc\\SabreApi\\Model\\CityPairLookup\\CityPairLookupResponseOriginDestinationLocationsItemDestinationLocation', 'json', $context));
         }
 
         return $object;
