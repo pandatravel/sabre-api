@@ -26,7 +26,7 @@ class AncillaryFeeType extends AbstractModel
     /**
      * @return string
      */
-    public function getCode(): ?string
+    public function getCode(): string
     {
         return $this->code;
     }
@@ -36,7 +36,7 @@ class AncillaryFeeType extends AbstractModel
      *
      * @return self
      */
-    public function setCode(?string $code): self
+    public function setCode(string $code): self
     {
         $this->code = $code;
 
@@ -46,7 +46,7 @@ class AncillaryFeeType extends AbstractModel
     /**
      * @return AncillaryFeeDetailsType[]
      */
-    public function getDetails(): ?array
+    public function getDetails(): array
     {
         return $this->details;
     }
@@ -56,7 +56,7 @@ class AncillaryFeeType extends AbstractModel
      *
      * @return self
      */
-    public function setDetails(?array $details): self
+    public function setDetails(array $details): self
     {
         $this->details = $details;
 
@@ -66,7 +66,7 @@ class AncillaryFeeType extends AbstractModel
     /**
      * @return string
      */
-    public function getMessage(): ?string
+    public function getMessage(): string
     {
         return $this->message;
     }
@@ -76,7 +76,7 @@ class AncillaryFeeType extends AbstractModel
      *
      * @return self
      */
-    public function setMessage(?string $message): self
+    public function setMessage(string $message): self
     {
         $this->message = $message;
 
@@ -86,7 +86,7 @@ class AncillaryFeeType extends AbstractModel
     /**
      * @return string
      */
-    public function getName(): ?string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -96,7 +96,7 @@ class AncillaryFeeType extends AbstractModel
      *
      * @return self
      */
-    public function setName(?string $name): self
+    public function setName(string $name): self
     {
         $this->name = $name;
 
