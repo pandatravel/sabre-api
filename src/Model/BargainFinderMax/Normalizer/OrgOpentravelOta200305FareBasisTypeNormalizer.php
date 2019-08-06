@@ -30,7 +30,7 @@ class OrgOpentravelOta200305FareBasisTypeNormalizer implements DenormalizerInter
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305FareBasisType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305FareBasisType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
@@ -42,6 +42,9 @@ class OrgOpentravelOta200305FareBasisTypeNormalizer implements DenormalizerInter
         if (property_exists($data, 'Code')) {
             $object->setCode($data->{'Code'});
         }
+        if (property_exists($data, 'PreferLevel')) {
+            $object->setPreferLevel($data->{'PreferLevel'});
+        }
 
         return $object;
     }
@@ -51,6 +54,9 @@ class OrgOpentravelOta200305FareBasisTypeNormalizer implements DenormalizerInter
         $data = new \stdClass();
         if (null !== $object->getCode()) {
             $data->{'Code'} = $object->getCode();
+        }
+        if (null !== $object->getPreferLevel()) {
+            $data->{'PreferLevel'} = $object->getPreferLevel();
         }
 
         return $data;
