@@ -7,6 +7,8 @@ use Ammonkc\SabreApi\AbstractModel;
 class OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeSegmentType extends AbstractModel
 {
     /**
+     * "Code" can be "ARUNK", "O" for normal, or "X" for connection.
+     *
      * @var string
      */
     protected $code;
@@ -20,6 +22,8 @@ class OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeSegmentType 
     }
 
     /**
+     * "Code" can be "ARUNK", "O" for normal, or "X" for connection.
+     *
      * @param string $code
      *
      * @return self
