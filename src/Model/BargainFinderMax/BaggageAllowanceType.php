@@ -34,7 +34,7 @@ class BaggageAllowanceType extends AbstractModel
     /**
      * @return string
      */
-    public function getDescription1(): ?string
+    public function getDescription1(): string
     {
         return $this->description1;
     }
@@ -44,7 +44,7 @@ class BaggageAllowanceType extends AbstractModel
      *
      * @return self
      */
-    public function setDescription1(?string $description1): self
+    public function setDescription1(string $description1): self
     {
         $this->description1 = $description1;
 
@@ -54,7 +54,7 @@ class BaggageAllowanceType extends AbstractModel
     /**
      * @return string
      */
-    public function getDescription2(): ?string
+    public function getDescription2(): string
     {
         return $this->description2;
     }
@@ -64,7 +64,7 @@ class BaggageAllowanceType extends AbstractModel
      *
      * @return self
      */
-    public function setDescription2(?string $description2): self
+    public function setDescription2(string $description2): self
     {
         $this->description2 = $description2;
 
@@ -74,7 +74,7 @@ class BaggageAllowanceType extends AbstractModel
     /**
      * @return int
      */
-    public function getId(): ?int
+    public function getId(): int
     {
         return $this->id;
     }
@@ -84,7 +84,7 @@ class BaggageAllowanceType extends AbstractModel
      *
      * @return self
      */
-    public function setId(?int $id): self
+    public function setId(int $id): self
     {
         $this->id = $id;
 
@@ -94,7 +94,7 @@ class BaggageAllowanceType extends AbstractModel
     /**
      * @return int
      */
-    public function getPieceCount(): ?int
+    public function getPieceCount(): int
     {
         return $this->pieceCount;
     }
@@ -104,7 +104,7 @@ class BaggageAllowanceType extends AbstractModel
      *
      * @return self
      */
-    public function setPieceCount(?int $pieceCount): self
+    public function setPieceCount(int $pieceCount): self
     {
         $this->pieceCount = $pieceCount;
 
@@ -114,7 +114,7 @@ class BaggageAllowanceType extends AbstractModel
     /**
      * @return string
      */
-    public function getUnit(): ?string
+    public function getUnit(): string
     {
         return $this->unit;
     }
@@ -124,7 +124,7 @@ class BaggageAllowanceType extends AbstractModel
      *
      * @return self
      */
-    public function setUnit(?string $unit): self
+    public function setUnit(string $unit): self
     {
         $this->unit = $unit;
 
@@ -134,7 +134,7 @@ class BaggageAllowanceType extends AbstractModel
     /**
      * @return int
      */
-    public function getWeight(): ?int
+    public function getWeight(): int
     {
         return $this->weight;
     }
@@ -144,7 +144,7 @@ class BaggageAllowanceType extends AbstractModel
      *
      * @return self
      */
-    public function setWeight(?int $weight): self
+    public function setWeight(int $weight): self
     {
         $this->weight = $weight;
 

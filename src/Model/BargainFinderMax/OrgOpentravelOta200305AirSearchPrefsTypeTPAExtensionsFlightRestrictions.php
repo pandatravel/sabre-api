@@ -18,7 +18,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsFlightRestrictions ex
      *
      * @return bool
      */
-    public function getAvoidLastFlight(): ?bool
+    public function getAvoidLastFlight(): bool
     {
         return $this->avoidLastFlight;
     }
@@ -30,7 +30,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsFlightRestrictions ex
      *
      * @return self
      */
-    public function setAvoidLastFlight(?bool $avoidLastFlight): self
+    public function setAvoidLastFlight(bool $avoidLastFlight): self
     {
         $this->avoidLastFlight = $avoidLastFlight;
 

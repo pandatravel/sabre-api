@@ -18,7 +18,7 @@ class OrgOpentravelOta200305DiversityControlTypeDimensionsTimeOfDay extends Abst
     /**
      * @return OrgOpentravelOta200305DiversityControlTypeDimensionsTimeOfDayDistribution[]
      */
-    public function getDistribution(): ?array
+    public function getDistribution(): array
     {
         return $this->distribution;
     }
@@ -28,7 +28,7 @@ class OrgOpentravelOta200305DiversityControlTypeDimensionsTimeOfDay extends Abst
      *
      * @return self
      */
-    public function setDistribution(?array $distribution): self
+    public function setDistribution(array $distribution): self
     {
         $this->distribution = $distribution;
 
@@ -38,7 +38,7 @@ class OrgOpentravelOta200305DiversityControlTypeDimensionsTimeOfDay extends Abst
     /**
      * @return float
      */
-    public function getWeight(): ?float
+    public function getWeight(): float
     {
         return $this->weight;
     }
@@ -48,7 +48,7 @@ class OrgOpentravelOta200305DiversityControlTypeDimensionsTimeOfDay extends Abst
      *
      * @return self
      */
-    public function setWeight(?float $weight): self
+    public function setWeight(float $weight): self
     {
         $this->weight = $weight;
 

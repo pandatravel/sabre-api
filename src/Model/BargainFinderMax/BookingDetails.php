@@ -22,7 +22,7 @@ class BookingDetails extends AbstractModel
      *
      * @return string
      */
-    public function getClassOfService(): ?string
+    public function getClassOfService(): string
     {
         return $this->classOfService;
     }
@@ -34,7 +34,7 @@ class BookingDetails extends AbstractModel
      *
      * @return self
      */
-    public function setClassOfService(?string $classOfService): self
+    public function setClassOfService(string $classOfService): self
     {
         $this->classOfService = $classOfService;
 
@@ -44,7 +44,7 @@ class BookingDetails extends AbstractModel
     /**
      * @return string
      */
-    public function getMealCodeList(): ?string
+    public function getMealCodeList(): string
     {
         return $this->mealCodeList;
     }
@@ -54,7 +54,7 @@ class BookingDetails extends AbstractModel
      *
      * @return self
      */
-    public function setMealCodeList(?string $mealCodeList): self
+    public function setMealCodeList(string $mealCodeList): self
     {
         $this->mealCodeList = $mealCodeList;
 

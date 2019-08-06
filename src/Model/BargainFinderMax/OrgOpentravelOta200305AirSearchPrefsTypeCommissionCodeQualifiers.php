@@ -14,7 +14,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeCommissionCodeQualifiers extends A
     /**
      * @return OrgOpentravelOta200305AirSearchPrefsTypeCommissionCodeQualifiersCommissionCodeQualifier[]
      */
-    public function getCommissionCodeQualifier(): ?array
+    public function getCommissionCodeQualifier(): array
     {
         return $this->commissionCodeQualifier;
     }
@@ -24,7 +24,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeCommissionCodeQualifiers extends A
      *
      * @return self
      */
-    public function setCommissionCodeQualifier(?array $commissionCodeQualifier): self
+    public function setCommissionCodeQualifier(array $commissionCodeQualifier): self
     {
         $this->commissionCodeQualifier = $commissionCodeQualifier;
 

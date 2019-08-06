@@ -42,7 +42,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeFareRestrictPref extends AbstractM
      *
      * @return OrgOpentravelOta200305AdvResTicketingType
      */
-    public function getAdvResTicketing(): ?OrgOpentravelOta200305AdvResTicketingType
+    public function getAdvResTicketing(): OrgOpentravelOta200305AdvResTicketingType
     {
         return $this->advResTicketing;
     }
@@ -54,7 +54,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeFareRestrictPref extends AbstractM
      *
      * @return self
      */
-    public function setAdvResTicketing(?OrgOpentravelOta200305AdvResTicketingType $advResTicketing): self
+    public function setAdvResTicketing(OrgOpentravelOta200305AdvResTicketingType $advResTicketing): self
     {
         $this->advResTicketing = $advResTicketing;
 
@@ -66,7 +66,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeFareRestrictPref extends AbstractM
      *
      * @return string
      */
-    public function getFareRestriction(): ?string
+    public function getFareRestriction(): string
     {
         return $this->fareRestriction;
     }
@@ -78,7 +78,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeFareRestrictPref extends AbstractM
      *
      * @return self
      */
-    public function setFareRestriction(?string $fareRestriction): self
+    public function setFareRestriction(string $fareRestriction): self
     {
         $this->fareRestriction = $fareRestriction;
 
@@ -90,7 +90,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeFareRestrictPref extends AbstractM
      *
      * @return string
      */
-    public function getPreferLevel(): ?string
+    public function getPreferLevel(): string
     {
         return $this->preferLevel;
     }
@@ -102,7 +102,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeFareRestrictPref extends AbstractM
      *
      * @return self
      */
-    public function setPreferLevel(?string $preferLevel): self
+    public function setPreferLevel(string $preferLevel): self
     {
         $this->preferLevel = $preferLevel;
 
@@ -114,7 +114,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeFareRestrictPref extends AbstractM
      *
      * @return OrgOpentravelOta200305StayRestrictionsType
      */
-    public function getStayRestrictions(): ?OrgOpentravelOta200305StayRestrictionsType
+    public function getStayRestrictions(): OrgOpentravelOta200305StayRestrictionsType
     {
         return $this->stayRestrictions;
     }
@@ -126,7 +126,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeFareRestrictPref extends AbstractM
      *
      * @return self
      */
-    public function setStayRestrictions(?OrgOpentravelOta200305StayRestrictionsType $stayRestrictions): self
+    public function setStayRestrictions(OrgOpentravelOta200305StayRestrictionsType $stayRestrictions): self
     {
         $this->stayRestrictions = $stayRestrictions;
 
@@ -138,7 +138,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeFareRestrictPref extends AbstractM
      *
      * @return OrgOpentravelOta200305VoluntaryChangesType
      */
-    public function getVoluntaryChanges(): ?OrgOpentravelOta200305VoluntaryChangesType
+    public function getVoluntaryChanges(): OrgOpentravelOta200305VoluntaryChangesType
     {
         return $this->voluntaryChanges;
     }
@@ -150,7 +150,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeFareRestrictPref extends AbstractM
      *
      * @return self
      */
-    public function setVoluntaryChanges(?OrgOpentravelOta200305VoluntaryChangesType $voluntaryChanges): self
+    public function setVoluntaryChanges(OrgOpentravelOta200305VoluntaryChangesType $voluntaryChanges): self
     {
         $this->voluntaryChanges = $voluntaryChanges;
 

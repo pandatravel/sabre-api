@@ -24,7 +24,7 @@ class OrgOpentravelOta200305AwardShoppingType extends AbstractModel
      *
      * @return bool
      */
-    public function getEnable(): ?bool
+    public function getEnable(): bool
     {
         return $this->enable;
     }
@@ -36,7 +36,7 @@ class OrgOpentravelOta200305AwardShoppingType extends AbstractModel
      *
      * @return self
      */
-    public function setEnable(?bool $enable): self
+    public function setEnable(bool $enable): self
     {
         $this->enable = $enable;
 
@@ -48,7 +48,7 @@ class OrgOpentravelOta200305AwardShoppingType extends AbstractModel
      *
      * @return bool
      */
-    public function getUseRAS(): ?bool
+    public function getUseRAS(): bool
     {
         return $this->useRAS;
     }
@@ -60,7 +60,7 @@ class OrgOpentravelOta200305AwardShoppingType extends AbstractModel
      *
      * @return self
      */
-    public function setUseRAS(?bool $useRAS): self
+    public function setUseRAS(bool $useRAS): self
     {
         $this->useRAS = $useRAS;
 

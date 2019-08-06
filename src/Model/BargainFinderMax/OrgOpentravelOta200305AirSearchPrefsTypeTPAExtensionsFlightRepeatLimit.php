@@ -18,7 +18,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsFlightRepeatLimit ext
      *
      * @return int
      */
-    public function getValue(): ?int
+    public function getValue(): int
     {
         return $this->value;
     }
@@ -30,7 +30,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsFlightRepeatLimit ext
      *
      * @return self
      */
-    public function setValue(?int $value): self
+    public function setValue(int $value): self
     {
         $this->value = $value;
 

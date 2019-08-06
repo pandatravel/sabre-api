@@ -44,7 +44,7 @@ class OrgOpentravelOta200305ExchangeSettingsType extends AbstractModel
      *
      * @return bool
      */
-    public function getAttachExchangeInfo(): ?bool
+    public function getAttachExchangeInfo(): bool
     {
         return $this->attachExchangeInfo;
     }
@@ -56,7 +56,7 @@ class OrgOpentravelOta200305ExchangeSettingsType extends AbstractModel
      *
      * @return self
      */
-    public function setAttachExchangeInfo(?bool $attachExchangeInfo): self
+    public function setAttachExchangeInfo(bool $attachExchangeInfo): self
     {
         $this->attachExchangeInfo = $attachExchangeInfo;
 
@@ -68,7 +68,7 @@ class OrgOpentravelOta200305ExchangeSettingsType extends AbstractModel
      *
      * @return bool
      */
-    public function getBrandedResults(): ?bool
+    public function getBrandedResults(): bool
     {
         return $this->brandedResults;
     }
@@ -80,7 +80,7 @@ class OrgOpentravelOta200305ExchangeSettingsType extends AbstractModel
      *
      * @return self
      */
-    public function setBrandedResults(?bool $brandedResults): self
+    public function setBrandedResults(bool $brandedResults): self
     {
         $this->brandedResults = $brandedResults;
 
@@ -92,7 +92,7 @@ class OrgOpentravelOta200305ExchangeSettingsType extends AbstractModel
      *
      * @return float
      */
-    public function getMIPTimeoutThreshold(): ?float
+    public function getMIPTimeoutThreshold(): float
     {
         return $this->mIPTimeoutThreshold;
     }
@@ -104,7 +104,7 @@ class OrgOpentravelOta200305ExchangeSettingsType extends AbstractModel
      *
      * @return self
      */
-    public function setMIPTimeoutThreshold(?float $mIPTimeoutThreshold): self
+    public function setMIPTimeoutThreshold(float $mIPTimeoutThreshold): self
     {
         $this->mIPTimeoutThreshold = $mIPTimeoutThreshold;
 
@@ -114,7 +114,7 @@ class OrgOpentravelOta200305ExchangeSettingsType extends AbstractModel
     /**
      * @return string
      */
-    public function getReissueExchange(): ?string
+    public function getReissueExchange(): string
     {
         return $this->reissueExchange;
     }
@@ -124,7 +124,7 @@ class OrgOpentravelOta200305ExchangeSettingsType extends AbstractModel
      *
      * @return self
      */
-    public function setReissueExchange(?string $reissueExchange): self
+    public function setReissueExchange(string $reissueExchange): self
     {
         $this->reissueExchange = $reissueExchange;
 
@@ -136,7 +136,7 @@ class OrgOpentravelOta200305ExchangeSettingsType extends AbstractModel
      *
      * @return bool
      */
-    public function getRepriceCurrentItin(): ?bool
+    public function getRepriceCurrentItin(): bool
     {
         return $this->repriceCurrentItin;
     }
@@ -148,7 +148,7 @@ class OrgOpentravelOta200305ExchangeSettingsType extends AbstractModel
      *
      * @return self
      */
-    public function setRepriceCurrentItin(?bool $repriceCurrentItin): self
+    public function setRepriceCurrentItin(bool $repriceCurrentItin): self
     {
         $this->repriceCurrentItin = $repriceCurrentItin;
 
@@ -158,7 +158,7 @@ class OrgOpentravelOta200305ExchangeSettingsType extends AbstractModel
     /**
      * @return string
      */
-    public function getRequestType(): ?string
+    public function getRequestType(): string
     {
         return $this->requestType;
     }
@@ -168,7 +168,7 @@ class OrgOpentravelOta200305ExchangeSettingsType extends AbstractModel
      *
      * @return self
      */
-    public function setRequestType(?string $requestType): self
+    public function setRequestType(string $requestType): self
     {
         $this->requestType = $requestType;
 

@@ -22,7 +22,7 @@ class Offer extends AbstractModel
     /**
      * @return string
      */
-    public function getOfferId(): ?string
+    public function getOfferId(): string
     {
         return $this->offerId;
     }
@@ -32,7 +32,7 @@ class Offer extends AbstractModel
      *
      * @return self
      */
-    public function setOfferId(?string $offerId): self
+    public function setOfferId(string $offerId): self
     {
         $this->offerId = $offerId;
 
@@ -42,7 +42,7 @@ class Offer extends AbstractModel
     /**
      * @return string
      */
-    public function getSource(): ?string
+    public function getSource(): string
     {
         return $this->source;
     }
@@ -52,7 +52,7 @@ class Offer extends AbstractModel
      *
      * @return self
      */
-    public function setSource(?string $source): self
+    public function setSource(string $source): self
     {
         $this->source = $source;
 
@@ -62,7 +62,7 @@ class Offer extends AbstractModel
     /**
      * @return int
      */
-    public function getTtl(): ?int
+    public function getTtl(): int
     {
         return $this->ttl;
     }
@@ -72,7 +72,7 @@ class Offer extends AbstractModel
      *
      * @return self
      */
-    public function setTtl(?int $ttl): self
+    public function setTtl(int $ttl): self
     {
         $this->ttl = $ttl;
 

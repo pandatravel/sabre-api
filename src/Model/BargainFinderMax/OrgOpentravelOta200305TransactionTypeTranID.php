@@ -14,7 +14,7 @@ class OrgOpentravelOta200305TransactionTypeTranID extends AbstractModel
     /**
      * @return string
      */
-    public function getValue(): ?string
+    public function getValue(): string
     {
         return $this->value;
     }
@@ -24,7 +24,7 @@ class OrgOpentravelOta200305TransactionTypeTranID extends AbstractModel
      *
      * @return self
      */
-    public function setValue(?string $value): self
+    public function setValue(string $value): self
     {
         $this->value = $value;
 

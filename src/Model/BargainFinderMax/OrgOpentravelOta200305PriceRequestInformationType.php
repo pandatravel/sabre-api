@@ -78,7 +78,7 @@ class OrgOpentravelOta200305PriceRequestInformationType extends AbstractModel
     /**
      * @return OrgOpentravelOta200305PriceRequestInformationTypeAccountCode[]
      */
-    public function getAccountCode(): ?array
+    public function getAccountCode(): array
     {
         return $this->accountCode;
     }
@@ -88,7 +88,7 @@ class OrgOpentravelOta200305PriceRequestInformationType extends AbstractModel
      *
      * @return self
      */
-    public function setAccountCode(?array $accountCode): self
+    public function setAccountCode(array $accountCode): self
     {
         $this->accountCode = $accountCode;
 
@@ -100,7 +100,7 @@ class OrgOpentravelOta200305PriceRequestInformationType extends AbstractModel
      *
      * @return string
      */
-    public function getBypassAdvancePurchase(): ?string
+    public function getBypassAdvancePurchase(): string
     {
         return $this->bypassAdvancePurchase;
     }
@@ -112,7 +112,7 @@ class OrgOpentravelOta200305PriceRequestInformationType extends AbstractModel
      *
      * @return self
      */
-    public function setBypassAdvancePurchase(?string $bypassAdvancePurchase): self
+    public function setBypassAdvancePurchase(string $bypassAdvancePurchase): self
     {
         $this->bypassAdvancePurchase = $bypassAdvancePurchase;
 
@@ -122,7 +122,7 @@ class OrgOpentravelOta200305PriceRequestInformationType extends AbstractModel
     /**
      * @return string
      */
-    public function getCurrencyCode(): ?string
+    public function getCurrencyCode(): string
     {
         return $this->currencyCode;
     }
@@ -132,7 +132,7 @@ class OrgOpentravelOta200305PriceRequestInformationType extends AbstractModel
      *
      * @return self
      */
-    public function setCurrencyCode(?string $currencyCode): self
+    public function setCurrencyCode(string $currencyCode): self
     {
         $this->currencyCode = $currencyCode;
 
@@ -142,7 +142,7 @@ class OrgOpentravelOta200305PriceRequestInformationType extends AbstractModel
     /**
      * @return string
      */
-    public function getFareQualifier(): ?string
+    public function getFareQualifier(): string
     {
         return $this->fareQualifier;
     }
@@ -152,7 +152,7 @@ class OrgOpentravelOta200305PriceRequestInformationType extends AbstractModel
      *
      * @return self
      */
-    public function setFareQualifier(?string $fareQualifier): self
+    public function setFareQualifier(string $fareQualifier): self
     {
         $this->fareQualifier = $fareQualifier;
 
@@ -162,7 +162,7 @@ class OrgOpentravelOta200305PriceRequestInformationType extends AbstractModel
     /**
      * @return OrgOpentravelOta200305PriceRequestInformationTypeNegotiatedFareCode[]
      */
-    public function getNegotiatedFareCode(): ?array
+    public function getNegotiatedFareCode(): array
     {
         return $this->negotiatedFareCode;
     }
@@ -172,7 +172,7 @@ class OrgOpentravelOta200305PriceRequestInformationType extends AbstractModel
      *
      * @return self
      */
-    public function setNegotiatedFareCode(?array $negotiatedFareCode): self
+    public function setNegotiatedFareCode(array $negotiatedFareCode): self
     {
         $this->negotiatedFareCode = $negotiatedFareCode;
 
@@ -184,7 +184,7 @@ class OrgOpentravelOta200305PriceRequestInformationType extends AbstractModel
      *
      * @return bool
      */
-    public function getNegotiatedFaresOnly(): ?bool
+    public function getNegotiatedFaresOnly(): bool
     {
         return $this->negotiatedFaresOnly;
     }
@@ -196,7 +196,7 @@ class OrgOpentravelOta200305PriceRequestInformationType extends AbstractModel
      *
      * @return self
      */
-    public function setNegotiatedFaresOnly(?bool $negotiatedFaresOnly): self
+    public function setNegotiatedFaresOnly(bool $negotiatedFaresOnly): self
     {
         $this->negotiatedFaresOnly = $negotiatedFaresOnly;
 
@@ -208,7 +208,7 @@ class OrgOpentravelOta200305PriceRequestInformationType extends AbstractModel
      *
      * @return bool
      */
-    public function getNetFaresUsed(): ?bool
+    public function getNetFaresUsed(): bool
     {
         return $this->netFaresUsed;
     }
@@ -220,7 +220,7 @@ class OrgOpentravelOta200305PriceRequestInformationType extends AbstractModel
      *
      * @return self
      */
-    public function setNetFaresUsed(?bool $netFaresUsed): self
+    public function setNetFaresUsed(bool $netFaresUsed): self
     {
         $this->netFaresUsed = $netFaresUsed;
 
@@ -232,7 +232,7 @@ class OrgOpentravelOta200305PriceRequestInformationType extends AbstractModel
      *
      * @return string
      */
-    public function getPricingSource(): ?string
+    public function getPricingSource(): string
     {
         return $this->pricingSource;
     }
@@ -244,7 +244,7 @@ class OrgOpentravelOta200305PriceRequestInformationType extends AbstractModel
      *
      * @return self
      */
-    public function setPricingSource(?string $pricingSource): self
+    public function setPricingSource(string $pricingSource): self
     {
         $this->pricingSource = $pricingSource;
 
@@ -256,7 +256,7 @@ class OrgOpentravelOta200305PriceRequestInformationType extends AbstractModel
      *
      * @return bool
      */
-    public function getProcessThruFaresOnly(): ?bool
+    public function getProcessThruFaresOnly(): bool
     {
         return $this->processThruFaresOnly;
     }
@@ -268,7 +268,7 @@ class OrgOpentravelOta200305PriceRequestInformationType extends AbstractModel
      *
      * @return self
      */
-    public function setProcessThruFaresOnly(?bool $processThruFaresOnly): self
+    public function setProcessThruFaresOnly(bool $processThruFaresOnly): self
     {
         $this->processThruFaresOnly = $processThruFaresOnly;
 
@@ -280,7 +280,7 @@ class OrgOpentravelOta200305PriceRequestInformationType extends AbstractModel
      *
      * @return string
      */
-    public function getPurchaseDate(): ?string
+    public function getPurchaseDate(): string
     {
         return $this->purchaseDate;
     }
@@ -292,7 +292,7 @@ class OrgOpentravelOta200305PriceRequestInformationType extends AbstractModel
      *
      * @return self
      */
-    public function setPurchaseDate(?string $purchaseDate): self
+    public function setPurchaseDate(string $purchaseDate): self
     {
         $this->purchaseDate = $purchaseDate;
 
@@ -304,7 +304,7 @@ class OrgOpentravelOta200305PriceRequestInformationType extends AbstractModel
      *
      * @return string
      */
-    public function getPurchaseTime(): ?string
+    public function getPurchaseTime(): string
     {
         return $this->purchaseTime;
     }
@@ -316,7 +316,7 @@ class OrgOpentravelOta200305PriceRequestInformationType extends AbstractModel
      *
      * @return self
      */
-    public function setPurchaseTime(?string $purchaseTime): self
+    public function setPurchaseTime(string $purchaseTime): self
     {
         $this->purchaseTime = $purchaseTime;
 
@@ -326,7 +326,7 @@ class OrgOpentravelOta200305PriceRequestInformationType extends AbstractModel
     /**
      * @return bool
      */
-    public function getReprice(): ?bool
+    public function getReprice(): bool
     {
         return $this->reprice;
     }
@@ -336,7 +336,7 @@ class OrgOpentravelOta200305PriceRequestInformationType extends AbstractModel
      *
      * @return self
      */
-    public function setReprice(?bool $reprice): self
+    public function setReprice(bool $reprice): self
     {
         $this->reprice = $reprice;
 
@@ -348,7 +348,7 @@ class OrgOpentravelOta200305PriceRequestInformationType extends AbstractModel
      *
      * @return OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensions
      */
-    public function getTPAExtensions(): ?OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensions
+    public function getTPAExtensions(): OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensions
     {
         return $this->tPAExtensions;
     }
@@ -360,7 +360,7 @@ class OrgOpentravelOta200305PriceRequestInformationType extends AbstractModel
      *
      * @return self
      */
-    public function setTPAExtensions(?OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensions $tPAExtensions): self
+    public function setTPAExtensions(OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensions $tPAExtensions): self
     {
         $this->tPAExtensions = $tPAExtensions;
 

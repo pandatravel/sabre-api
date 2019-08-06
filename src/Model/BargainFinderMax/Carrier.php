@@ -70,7 +70,7 @@ class Carrier extends AbstractModel
      *
      * @return string
      */
-    public function getAlliances(): ?string
+    public function getAlliances(): string
     {
         return $this->alliances;
     }
@@ -82,7 +82,7 @@ class Carrier extends AbstractModel
      *
      * @return self
      */
-    public function setAlliances(?string $alliances): self
+    public function setAlliances(string $alliances): self
     {
         $this->alliances = $alliances;
 
@@ -94,7 +94,7 @@ class Carrier extends AbstractModel
      *
      * @return bool
      */
-    public function getBasicBookingRequest(): ?bool
+    public function getBasicBookingRequest(): bool
     {
         return $this->basicBookingRequest;
     }
@@ -106,7 +106,7 @@ class Carrier extends AbstractModel
      *
      * @return self
      */
-    public function setBasicBookingRequest(?bool $basicBookingRequest): self
+    public function setBasicBookingRequest(bool $basicBookingRequest): self
     {
         $this->basicBookingRequest = $basicBookingRequest;
 
@@ -118,7 +118,7 @@ class Carrier extends AbstractModel
      *
      * @return bool
      */
-    public function getCallDirect(): ?bool
+    public function getCallDirect(): bool
     {
         return $this->callDirect;
     }
@@ -130,7 +130,7 @@ class Carrier extends AbstractModel
      *
      * @return self
      */
-    public function setCallDirect(?bool $callDirect): self
+    public function setCallDirect(bool $callDirect): self
     {
         $this->callDirect = $callDirect;
 
@@ -142,7 +142,7 @@ class Carrier extends AbstractModel
      *
      * @return string
      */
-    public function getCodeShared(): ?string
+    public function getCodeShared(): string
     {
         return $this->codeShared;
     }
@@ -154,7 +154,7 @@ class Carrier extends AbstractModel
      *
      * @return self
      */
-    public function setCodeShared(?string $codeShared): self
+    public function setCodeShared(string $codeShared): self
     {
         $this->codeShared = $codeShared;
 
@@ -166,7 +166,7 @@ class Carrier extends AbstractModel
      *
      * @return string
      */
-    public function getDisclosure(): ?string
+    public function getDisclosure(): string
     {
         return $this->disclosure;
     }
@@ -178,7 +178,7 @@ class Carrier extends AbstractModel
      *
      * @return self
      */
-    public function setDisclosure(?string $disclosure): self
+    public function setDisclosure(string $disclosure): self
     {
         $this->disclosure = $disclosure;
 
@@ -188,7 +188,7 @@ class Carrier extends AbstractModel
     /**
      * @return Equipment
      */
-    public function getEquipment(): ?Equipment
+    public function getEquipment(): Equipment
     {
         return $this->equipment;
     }
@@ -198,7 +198,7 @@ class Carrier extends AbstractModel
      *
      * @return self
      */
-    public function setEquipment(?Equipment $equipment): self
+    public function setEquipment(Equipment $equipment): self
     {
         $this->equipment = $equipment;
 
@@ -210,7 +210,7 @@ class Carrier extends AbstractModel
      *
      * @return string
      */
-    public function getMarketing(): ?string
+    public function getMarketing(): string
     {
         return $this->marketing;
     }
@@ -222,7 +222,7 @@ class Carrier extends AbstractModel
      *
      * @return self
      */
-    public function setMarketing(?string $marketing): self
+    public function setMarketing(string $marketing): self
     {
         $this->marketing = $marketing;
 
@@ -234,7 +234,7 @@ class Carrier extends AbstractModel
      *
      * @return int
      */
-    public function getMarketingFlightNumber(): ?int
+    public function getMarketingFlightNumber(): int
     {
         return $this->marketingFlightNumber;
     }
@@ -246,7 +246,7 @@ class Carrier extends AbstractModel
      *
      * @return self
      */
-    public function setMarketingFlightNumber(?int $marketingFlightNumber): self
+    public function setMarketingFlightNumber(int $marketingFlightNumber): self
     {
         $this->marketingFlightNumber = $marketingFlightNumber;
 
@@ -258,7 +258,7 @@ class Carrier extends AbstractModel
      *
      * @return string
      */
-    public function getOperating(): ?string
+    public function getOperating(): string
     {
         return $this->operating;
     }
@@ -270,7 +270,7 @@ class Carrier extends AbstractModel
      *
      * @return self
      */
-    public function setOperating(?string $operating): self
+    public function setOperating(string $operating): self
     {
         $this->operating = $operating;
 
@@ -282,7 +282,7 @@ class Carrier extends AbstractModel
      *
      * @return int
      */
-    public function getOperatingFlightNumber(): ?int
+    public function getOperatingFlightNumber(): int
     {
         return $this->operatingFlightNumber;
     }
@@ -294,7 +294,7 @@ class Carrier extends AbstractModel
      *
      * @return self
      */
-    public function setOperatingFlightNumber(?int $operatingFlightNumber): self
+    public function setOperatingFlightNumber(int $operatingFlightNumber): self
     {
         $this->operatingFlightNumber = $operatingFlightNumber;
 

@@ -30,7 +30,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsDataSources extends A
      *
      * @return string
      */
-    public function getATPCO(): ?string
+    public function getATPCO(): string
     {
         return $this->aTPCO;
     }
@@ -42,7 +42,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsDataSources extends A
      *
      * @return self
      */
-    public function setATPCO(?string $aTPCO): self
+    public function setATPCO(string $aTPCO): self
     {
         $this->aTPCO = $aTPCO;
 
@@ -54,7 +54,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsDataSources extends A
      *
      * @return string
      */
-    public function getLCC(): ?string
+    public function getLCC(): string
     {
         return $this->lCC;
     }
@@ -66,7 +66,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsDataSources extends A
      *
      * @return self
      */
-    public function setLCC(?string $lCC): self
+    public function setLCC(string $lCC): self
     {
         $this->lCC = $lCC;
 
@@ -78,7 +78,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsDataSources extends A
      *
      * @return string
      */
-    public function getNDC(): ?string
+    public function getNDC(): string
     {
         return $this->nDC;
     }
@@ -90,7 +90,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsDataSources extends A
      *
      * @return self
      */
-    public function setNDC(?string $nDC): self
+    public function setNDC(string $nDC): self
     {
         $this->nDC = $nDC;
 

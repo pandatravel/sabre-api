@@ -30,7 +30,7 @@ class OrgOpentravelOta200305StopoverType extends AbstractModel
      *
      * @return string
      */
-    public function getDepartureDateTime(): ?string
+    public function getDepartureDateTime(): string
     {
         return $this->departureDateTime;
     }
@@ -42,7 +42,7 @@ class OrgOpentravelOta200305StopoverType extends AbstractModel
      *
      * @return self
      */
-    public function setDepartureDateTime(?string $departureDateTime): self
+    public function setDepartureDateTime(string $departureDateTime): self
     {
         $this->departureDateTime = $departureDateTime;
 
@@ -54,7 +54,7 @@ class OrgOpentravelOta200305StopoverType extends AbstractModel
      *
      * @return string
      */
-    public function getDepartureWindow(): ?string
+    public function getDepartureWindow(): string
     {
         return $this->departureWindow;
     }
@@ -66,7 +66,7 @@ class OrgOpentravelOta200305StopoverType extends AbstractModel
      *
      * @return self
      */
-    public function setDepartureWindow(?string $departureWindow): self
+    public function setDepartureWindow(string $departureWindow): self
     {
         $this->departureWindow = $departureWindow;
 
@@ -78,7 +78,7 @@ class OrgOpentravelOta200305StopoverType extends AbstractModel
      *
      * @return OrgOpentravelOta200305StopoverTypeStopoverPoint
      */
-    public function getStopoverPoint(): ?OrgOpentravelOta200305StopoverTypeStopoverPoint
+    public function getStopoverPoint(): OrgOpentravelOta200305StopoverTypeStopoverPoint
     {
         return $this->stopoverPoint;
     }
@@ -90,7 +90,7 @@ class OrgOpentravelOta200305StopoverType extends AbstractModel
      *
      * @return self
      */
-    public function setStopoverPoint(?OrgOpentravelOta200305StopoverTypeStopoverPoint $stopoverPoint): self
+    public function setStopoverPoint(OrgOpentravelOta200305StopoverTypeStopoverPoint $stopoverPoint): self
     {
         $this->stopoverPoint = $stopoverPoint;
 

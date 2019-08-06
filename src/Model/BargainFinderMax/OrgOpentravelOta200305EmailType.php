@@ -34,7 +34,7 @@ class OrgOpentravelOta200305EmailType extends AbstractModel
     /**
      * @return bool
      */
-    public function getDefaultInd(): ?bool
+    public function getDefaultInd(): bool
     {
         return $this->defaultInd;
     }
@@ -44,7 +44,7 @@ class OrgOpentravelOta200305EmailType extends AbstractModel
      *
      * @return self
      */
-    public function setDefaultInd(?bool $defaultInd): self
+    public function setDefaultInd(bool $defaultInd): self
     {
         $this->defaultInd = $defaultInd;
 
@@ -54,7 +54,7 @@ class OrgOpentravelOta200305EmailType extends AbstractModel
     /**
      * @return string
      */
-    public function getEmailType(): ?string
+    public function getEmailType(): string
     {
         return $this->emailType;
     }
@@ -64,7 +64,7 @@ class OrgOpentravelOta200305EmailType extends AbstractModel
      *
      * @return self
      */
-    public function setEmailType(?string $emailType): self
+    public function setEmailType(string $emailType): self
     {
         $this->emailType = $emailType;
 
@@ -76,7 +76,7 @@ class OrgOpentravelOta200305EmailType extends AbstractModel
      *
      * @return string
      */
-    public function getShareMarketInd(): ?string
+    public function getShareMarketInd(): string
     {
         return $this->shareMarketInd;
     }
@@ -88,7 +88,7 @@ class OrgOpentravelOta200305EmailType extends AbstractModel
      *
      * @return self
      */
-    public function setShareMarketInd(?string $shareMarketInd): self
+    public function setShareMarketInd(string $shareMarketInd): self
     {
         $this->shareMarketInd = $shareMarketInd;
 
@@ -100,7 +100,7 @@ class OrgOpentravelOta200305EmailType extends AbstractModel
      *
      * @return string
      */
-    public function getShareSynchInd(): ?string
+    public function getShareSynchInd(): string
     {
         return $this->shareSynchInd;
     }
@@ -112,7 +112,7 @@ class OrgOpentravelOta200305EmailType extends AbstractModel
      *
      * @return self
      */
-    public function setShareSynchInd(?string $shareSynchInd): self
+    public function setShareSynchInd(string $shareSynchInd): self
     {
         $this->shareSynchInd = $shareSynchInd;
 
@@ -122,7 +122,7 @@ class OrgOpentravelOta200305EmailType extends AbstractModel
     /**
      * @return string
      */
-    public function getContent(): ?string
+    public function getContent(): string
     {
         return $this->content;
     }
@@ -132,7 +132,7 @@ class OrgOpentravelOta200305EmailType extends AbstractModel
      *
      * @return self
      */
-    public function setContent(?string $content): self
+    public function setContent(string $content): self
     {
         $this->content = $content;
 

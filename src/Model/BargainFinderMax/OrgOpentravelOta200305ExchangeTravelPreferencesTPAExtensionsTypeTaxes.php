@@ -18,7 +18,7 @@ class OrgOpentravelOta200305ExchangeTravelPreferencesTPAExtensionsTypeTaxes exte
     /**
      * @return OrgOpentravelOta200305TaxCodeType[]
      */
-    public function getIsRefundable(): ?array
+    public function getIsRefundable(): array
     {
         return $this->isRefundable;
     }
@@ -28,7 +28,7 @@ class OrgOpentravelOta200305ExchangeTravelPreferencesTPAExtensionsTypeTaxes exte
      *
      * @return self
      */
-    public function setIsRefundable(?array $isRefundable): self
+    public function setIsRefundable(array $isRefundable): self
     {
         $this->isRefundable = $isRefundable;
 
@@ -38,7 +38,7 @@ class OrgOpentravelOta200305ExchangeTravelPreferencesTPAExtensionsTypeTaxes exte
     /**
      * @return OrgOpentravelOta200305TaxCodeAmountType[]
      */
-    public function getTax(): ?array
+    public function getTax(): array
     {
         return $this->tax;
     }
@@ -48,7 +48,7 @@ class OrgOpentravelOta200305ExchangeTravelPreferencesTPAExtensionsTypeTaxes exte
      *
      * @return self
      */
-    public function setTax(?array $tax): self
+    public function setTax(array $tax): self
     {
         $this->tax = $tax;
 

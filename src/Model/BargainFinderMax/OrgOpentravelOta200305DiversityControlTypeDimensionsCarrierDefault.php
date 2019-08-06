@@ -14,7 +14,7 @@ class OrgOpentravelOta200305DiversityControlTypeDimensionsCarrierDefault extends
     /**
      * @return string
      */
-    public function getOptions(): ?string
+    public function getOptions(): string
     {
         return $this->options;
     }
@@ -24,7 +24,7 @@ class OrgOpentravelOta200305DiversityControlTypeDimensionsCarrierDefault extends
      *
      * @return self
      */
-    public function setOptions(?string $options): self
+    public function setOptions(string $options): self
     {
         $this->options = $options;
 

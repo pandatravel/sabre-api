@@ -36,7 +36,7 @@ class OrgOpentravelOta200305OptionsPerDatePairType extends AbstractModel
      *
      * @return string
      */
-    public function getDeparture(): ?string
+    public function getDeparture(): string
     {
         return $this->departure;
     }
@@ -48,7 +48,7 @@ class OrgOpentravelOta200305OptionsPerDatePairType extends AbstractModel
      *
      * @return self
      */
-    public function setDeparture(?string $departure): self
+    public function setDeparture(string $departure): self
     {
         $this->departure = $departure;
 
@@ -60,7 +60,7 @@ class OrgOpentravelOta200305OptionsPerDatePairType extends AbstractModel
      *
      * @return int
      */
-    public function getMax(): ?int
+    public function getMax(): int
     {
         return $this->max;
     }
@@ -72,7 +72,7 @@ class OrgOpentravelOta200305OptionsPerDatePairType extends AbstractModel
      *
      * @return self
      */
-    public function setMax(?int $max): self
+    public function setMax(int $max): self
     {
         $this->max = $max;
 
@@ -84,7 +84,7 @@ class OrgOpentravelOta200305OptionsPerDatePairType extends AbstractModel
      *
      * @return int
      */
-    public function getMin(): ?int
+    public function getMin(): int
     {
         return $this->min;
     }
@@ -96,7 +96,7 @@ class OrgOpentravelOta200305OptionsPerDatePairType extends AbstractModel
      *
      * @return self
      */
-    public function setMin(?int $min): self
+    public function setMin(int $min): self
     {
         $this->min = $min;
 
@@ -108,7 +108,7 @@ class OrgOpentravelOta200305OptionsPerDatePairType extends AbstractModel
      *
      * @return string
      */
-    public function getReturn(): ?string
+    public function getReturn(): string
     {
         return $this->return;
     }
@@ -120,7 +120,7 @@ class OrgOpentravelOta200305OptionsPerDatePairType extends AbstractModel
      *
      * @return self
      */
-    public function setReturn(?string $return): self
+    public function setReturn(string $return): self
     {
         $this->return = $return;
 

@@ -18,7 +18,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeSpanishFamilyDiscount extends Abst
      *
      * @return float
      */
-    public function getLevel(): ?float
+    public function getLevel(): float
     {
         return $this->level;
     }
@@ -30,7 +30,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeSpanishFamilyDiscount extends Abst
      *
      * @return self
      */
-    public function setLevel(?float $level): self
+    public function setLevel(float $level): self
     {
         $this->level = $level;
 

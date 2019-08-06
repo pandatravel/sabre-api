@@ -40,7 +40,7 @@ class OrgOpentravelOta200305StayRestrictionsTypeMaximumStay extends AbstractMode
      *
      * @return int
      */
-    public function getMaxStay(): ?int
+    public function getMaxStay(): int
     {
         return $this->maxStay;
     }
@@ -52,7 +52,7 @@ class OrgOpentravelOta200305StayRestrictionsTypeMaximumStay extends AbstractMode
      *
      * @return self
      */
-    public function setMaxStay(?int $maxStay): self
+    public function setMaxStay(int $maxStay): self
     {
         $this->maxStay = $maxStay;
 
@@ -64,7 +64,7 @@ class OrgOpentravelOta200305StayRestrictionsTypeMaximumStay extends AbstractMode
      *
      * @return string
      */
-    public function getMaxStayDate(): ?string
+    public function getMaxStayDate(): string
     {
         return $this->maxStayDate;
     }
@@ -76,7 +76,7 @@ class OrgOpentravelOta200305StayRestrictionsTypeMaximumStay extends AbstractMode
      *
      * @return self
      */
-    public function setMaxStayDate(?string $maxStayDate): self
+    public function setMaxStayDate(string $maxStayDate): self
     {
         $this->maxStayDate = $maxStayDate;
 
@@ -88,7 +88,7 @@ class OrgOpentravelOta200305StayRestrictionsTypeMaximumStay extends AbstractMode
      *
      * @return string
      */
-    public function getReturnTimeOfDay(): ?string
+    public function getReturnTimeOfDay(): string
     {
         return $this->returnTimeOfDay;
     }
@@ -100,7 +100,7 @@ class OrgOpentravelOta200305StayRestrictionsTypeMaximumStay extends AbstractMode
      *
      * @return self
      */
-    public function setReturnTimeOfDay(?string $returnTimeOfDay): self
+    public function setReturnTimeOfDay(string $returnTimeOfDay): self
     {
         $this->returnTimeOfDay = $returnTimeOfDay;
 
@@ -110,7 +110,7 @@ class OrgOpentravelOta200305StayRestrictionsTypeMaximumStay extends AbstractMode
     /**
      * @return string
      */
-    public function getReturnType(): ?string
+    public function getReturnType(): string
     {
         return $this->returnType;
     }
@@ -120,7 +120,7 @@ class OrgOpentravelOta200305StayRestrictionsTypeMaximumStay extends AbstractMode
      *
      * @return self
      */
-    public function setReturnType(?string $returnType): self
+    public function setReturnType(string $returnType): self
     {
         $this->returnType = $returnType;
 
@@ -132,7 +132,7 @@ class OrgOpentravelOta200305StayRestrictionsTypeMaximumStay extends AbstractMode
      *
      * @return string
      */
-    public function getStayUnit(): ?string
+    public function getStayUnit(): string
     {
         return $this->stayUnit;
     }
@@ -144,7 +144,7 @@ class OrgOpentravelOta200305StayRestrictionsTypeMaximumStay extends AbstractMode
      *
      * @return self
      */
-    public function setStayUnit(?string $stayUnit): self
+    public function setStayUnit(string $stayUnit): self
     {
         $this->stayUnit = $stayUnit;
 

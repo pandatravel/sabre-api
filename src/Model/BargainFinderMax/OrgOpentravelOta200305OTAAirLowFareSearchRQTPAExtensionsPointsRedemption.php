@@ -14,7 +14,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsPointsRedemption e
     /**
      * @return bool
      */
-    public function getEnable(): ?bool
+    public function getEnable(): bool
     {
         return $this->enable;
     }
@@ -24,7 +24,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsPointsRedemption e
      *
      * @return self
      */
-    public function setEnable(?bool $enable): self
+    public function setEnable(bool $enable): self
     {
         $this->enable = $enable;
 

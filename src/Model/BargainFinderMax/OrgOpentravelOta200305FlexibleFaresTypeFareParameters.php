@@ -134,7 +134,7 @@ class OrgOpentravelOta200305FlexibleFaresTypeFareParameters extends AbstractMode
     /**
      * @return OrgOpentravelOta200305FlexibleFaresTypeFareParametersAccountCode[]
      */
-    public function getAccountCode(): ?array
+    public function getAccountCode(): array
     {
         return $this->accountCode;
     }
@@ -144,7 +144,7 @@ class OrgOpentravelOta200305FlexibleFaresTypeFareParameters extends AbstractMode
      *
      * @return self
      */
-    public function setAccountCode(?array $accountCode): self
+    public function setAccountCode(array $accountCode): self
     {
         $this->accountCode = $accountCode;
 
@@ -156,7 +156,7 @@ class OrgOpentravelOta200305FlexibleFaresTypeFareParameters extends AbstractMode
      *
      * @return OrgOpentravelOta200305BaggageType
      */
-    public function getBaggage(): ?OrgOpentravelOta200305BaggageType
+    public function getBaggage(): OrgOpentravelOta200305BaggageType
     {
         return $this->baggage;
     }
@@ -168,7 +168,7 @@ class OrgOpentravelOta200305FlexibleFaresTypeFareParameters extends AbstractMode
      *
      * @return self
      */
-    public function setBaggage(?OrgOpentravelOta200305BaggageType $baggage): self
+    public function setBaggage(OrgOpentravelOta200305BaggageType $baggage): self
     {
         $this->baggage = $baggage;
 
@@ -180,7 +180,7 @@ class OrgOpentravelOta200305FlexibleFaresTypeFareParameters extends AbstractMode
      *
      * @return OrgOpentravelOta200305BrandedFareIndicatorsBase
      */
-    public function getBrandedFareIndicators(): ?OrgOpentravelOta200305BrandedFareIndicatorsBase
+    public function getBrandedFareIndicators(): OrgOpentravelOta200305BrandedFareIndicatorsBase
     {
         return $this->brandedFareIndicators;
     }
@@ -192,7 +192,7 @@ class OrgOpentravelOta200305FlexibleFaresTypeFareParameters extends AbstractMode
      *
      * @return self
      */
-    public function setBrandedFareIndicators(?OrgOpentravelOta200305BrandedFareIndicatorsBase $brandedFareIndicators): self
+    public function setBrandedFareIndicators(OrgOpentravelOta200305BrandedFareIndicatorsBase $brandedFareIndicators): self
     {
         $this->brandedFareIndicators = $brandedFareIndicators;
 
@@ -204,7 +204,7 @@ class OrgOpentravelOta200305FlexibleFaresTypeFareParameters extends AbstractMode
      *
      * @return OrgOpentravelOta200305FlexibleFaresTypeFareParametersCabin
      */
-    public function getCabin(): ?OrgOpentravelOta200305FlexibleFaresTypeFareParametersCabin
+    public function getCabin(): OrgOpentravelOta200305FlexibleFaresTypeFareParametersCabin
     {
         return $this->cabin;
     }
@@ -216,7 +216,7 @@ class OrgOpentravelOta200305FlexibleFaresTypeFareParameters extends AbstractMode
      *
      * @return self
      */
-    public function setCabin(?OrgOpentravelOta200305FlexibleFaresTypeFareParametersCabin $cabin): self
+    public function setCabin(OrgOpentravelOta200305FlexibleFaresTypeFareParametersCabin $cabin): self
     {
         $this->cabin = $cabin;
 
@@ -226,7 +226,7 @@ class OrgOpentravelOta200305FlexibleFaresTypeFareParameters extends AbstractMode
     /**
      * @return OrgOpentravelOta200305ClassOfServiceElemType[]
      */
-    public function getClassOfService(): ?array
+    public function getClassOfService(): array
     {
         return $this->classOfService;
     }
@@ -236,7 +236,7 @@ class OrgOpentravelOta200305FlexibleFaresTypeFareParameters extends AbstractMode
      *
      * @return self
      */
-    public function setClassOfService(?array $classOfService): self
+    public function setClassOfService(array $classOfService): self
     {
         $this->classOfService = $classOfService;
 
@@ -246,7 +246,7 @@ class OrgOpentravelOta200305FlexibleFaresTypeFareParameters extends AbstractMode
     /**
      * @return OrgOpentravelOta200305FlexibleFaresTypeFareParametersCorporateID[]
      */
-    public function getCorporateID(): ?array
+    public function getCorporateID(): array
     {
         return $this->corporateID;
     }
@@ -256,7 +256,7 @@ class OrgOpentravelOta200305FlexibleFaresTypeFareParameters extends AbstractMode
      *
      * @return self
      */
-    public function setCorporateID(?array $corporateID): self
+    public function setCorporateID(array $corporateID): self
     {
         $this->corporateID = $corporateID;
 
@@ -268,7 +268,7 @@ class OrgOpentravelOta200305FlexibleFaresTypeFareParameters extends AbstractMode
      *
      * @return OrgOpentravelOta200305FlexibleFaresTypeFareParametersExcludeRestricted
      */
-    public function getExcludeRestricted(): ?OrgOpentravelOta200305FlexibleFaresTypeFareParametersExcludeRestricted
+    public function getExcludeRestricted(): OrgOpentravelOta200305FlexibleFaresTypeFareParametersExcludeRestricted
     {
         return $this->excludeRestricted;
     }
@@ -280,7 +280,7 @@ class OrgOpentravelOta200305FlexibleFaresTypeFareParameters extends AbstractMode
      *
      * @return self
      */
-    public function setExcludeRestricted(?OrgOpentravelOta200305FlexibleFaresTypeFareParametersExcludeRestricted $excludeRestricted): self
+    public function setExcludeRestricted(OrgOpentravelOta200305FlexibleFaresTypeFareParametersExcludeRestricted $excludeRestricted): self
     {
         $this->excludeRestricted = $excludeRestricted;
 
@@ -290,7 +290,7 @@ class OrgOpentravelOta200305FlexibleFaresTypeFareParameters extends AbstractMode
     /**
      * @return OrgOpentravelOta200305FareBasisType[]
      */
-    public function getFareBasis(): ?array
+    public function getFareBasis(): array
     {
         return $this->fareBasis;
     }
@@ -300,7 +300,7 @@ class OrgOpentravelOta200305FlexibleFaresTypeFareParameters extends AbstractMode
      *
      * @return self
      */
-    public function setFareBasis(?array $fareBasis): self
+    public function setFareBasis(array $fareBasis): self
     {
         $this->fareBasis = $fareBasis;
 
@@ -310,7 +310,7 @@ class OrgOpentravelOta200305FlexibleFaresTypeFareParameters extends AbstractMode
     /**
      * @return OrgOpentravelOta200305FareTypePrefType[]
      */
-    public function getFareType(): ?array
+    public function getFareType(): array
     {
         return $this->fareType;
     }
@@ -320,7 +320,7 @@ class OrgOpentravelOta200305FlexibleFaresTypeFareParameters extends AbstractMode
      *
      * @return self
      */
-    public function setFareType(?array $fareType): self
+    public function setFareType(array $fareType): self
     {
         $this->fareType = $fareType;
 
@@ -330,7 +330,7 @@ class OrgOpentravelOta200305FlexibleFaresTypeFareParameters extends AbstractMode
     /**
      * @return OrgOpentravelOta200305JumpCabinLogicType
      */
-    public function getJumpCabinLogic(): ?OrgOpentravelOta200305JumpCabinLogicType
+    public function getJumpCabinLogic(): OrgOpentravelOta200305JumpCabinLogicType
     {
         return $this->jumpCabinLogic;
     }
@@ -340,7 +340,7 @@ class OrgOpentravelOta200305FlexibleFaresTypeFareParameters extends AbstractMode
      *
      * @return self
      */
-    public function setJumpCabinLogic(?OrgOpentravelOta200305JumpCabinLogicType $jumpCabinLogic): self
+    public function setJumpCabinLogic(OrgOpentravelOta200305JumpCabinLogicType $jumpCabinLogic): self
     {
         $this->jumpCabinLogic = $jumpCabinLogic;
 
@@ -350,7 +350,7 @@ class OrgOpentravelOta200305FlexibleFaresTypeFareParameters extends AbstractMode
     /**
      * @return OrgOpentravelOta200305KeepSameCabinType
      */
-    public function getKeepSameCabin(): ?OrgOpentravelOta200305KeepSameCabinType
+    public function getKeepSameCabin(): OrgOpentravelOta200305KeepSameCabinType
     {
         return $this->keepSameCabin;
     }
@@ -360,7 +360,7 @@ class OrgOpentravelOta200305FlexibleFaresTypeFareParameters extends AbstractMode
      *
      * @return self
      */
-    public function setKeepSameCabin(?OrgOpentravelOta200305KeepSameCabinType $keepSameCabin): self
+    public function setKeepSameCabin(OrgOpentravelOta200305KeepSameCabinType $keepSameCabin): self
     {
         $this->keepSameCabin = $keepSameCabin;
 
@@ -370,7 +370,7 @@ class OrgOpentravelOta200305FlexibleFaresTypeFareParameters extends AbstractMode
     /**
      * @return OrgOpentravelOta200305FlexibleFaresTypeFareParametersLeg[]
      */
-    public function getLeg(): ?array
+    public function getLeg(): array
     {
         return $this->leg;
     }
@@ -380,7 +380,7 @@ class OrgOpentravelOta200305FlexibleFaresTypeFareParameters extends AbstractMode
      *
      * @return self
      */
-    public function setLeg(?array $leg): self
+    public function setLeg(array $leg): self
     {
         $this->leg = $leg;
 
@@ -392,7 +392,7 @@ class OrgOpentravelOta200305FlexibleFaresTypeFareParameters extends AbstractMode
      *
      * @return OrgOpentravelOta200305FlexibleFaresTypeFareParametersMinMaxStay
      */
-    public function getMinMaxStay(): ?OrgOpentravelOta200305FlexibleFaresTypeFareParametersMinMaxStay
+    public function getMinMaxStay(): OrgOpentravelOta200305FlexibleFaresTypeFareParametersMinMaxStay
     {
         return $this->minMaxStay;
     }
@@ -404,7 +404,7 @@ class OrgOpentravelOta200305FlexibleFaresTypeFareParameters extends AbstractMode
      *
      * @return self
      */
-    public function setMinMaxStay(?OrgOpentravelOta200305FlexibleFaresTypeFareParametersMinMaxStay $minMaxStay): self
+    public function setMinMaxStay(OrgOpentravelOta200305FlexibleFaresTypeFareParametersMinMaxStay $minMaxStay): self
     {
         $this->minMaxStay = $minMaxStay;
 
@@ -416,7 +416,7 @@ class OrgOpentravelOta200305FlexibleFaresTypeFareParameters extends AbstractMode
      *
      * @return OrgOpentravelOta200305FlexibleFaresTypeFareParametersNegotiatedFaresOnly
      */
-    public function getNegotiatedFaresOnly(): ?OrgOpentravelOta200305FlexibleFaresTypeFareParametersNegotiatedFaresOnly
+    public function getNegotiatedFaresOnly(): OrgOpentravelOta200305FlexibleFaresTypeFareParametersNegotiatedFaresOnly
     {
         return $this->negotiatedFaresOnly;
     }
@@ -428,7 +428,7 @@ class OrgOpentravelOta200305FlexibleFaresTypeFareParameters extends AbstractMode
      *
      * @return self
      */
-    public function setNegotiatedFaresOnly(?OrgOpentravelOta200305FlexibleFaresTypeFareParametersNegotiatedFaresOnly $negotiatedFaresOnly): self
+    public function setNegotiatedFaresOnly(OrgOpentravelOta200305FlexibleFaresTypeFareParametersNegotiatedFaresOnly $negotiatedFaresOnly): self
     {
         $this->negotiatedFaresOnly = $negotiatedFaresOnly;
 
@@ -438,7 +438,7 @@ class OrgOpentravelOta200305FlexibleFaresTypeFareParameters extends AbstractMode
     /**
      * @return OrgOpentravelOta200305FlexibleFaresTypeFareParametersPassengerType
      */
-    public function getPassengerType(): ?OrgOpentravelOta200305FlexibleFaresTypeFareParametersPassengerType
+    public function getPassengerType(): OrgOpentravelOta200305FlexibleFaresTypeFareParametersPassengerType
     {
         return $this->passengerType;
     }
@@ -448,7 +448,7 @@ class OrgOpentravelOta200305FlexibleFaresTypeFareParameters extends AbstractMode
      *
      * @return self
      */
-    public function setPassengerType(?OrgOpentravelOta200305FlexibleFaresTypeFareParametersPassengerType $passengerType): self
+    public function setPassengerType(OrgOpentravelOta200305FlexibleFaresTypeFareParametersPassengerType $passengerType): self
     {
         $this->passengerType = $passengerType;
 
@@ -458,7 +458,7 @@ class OrgOpentravelOta200305FlexibleFaresTypeFareParameters extends AbstractMode
     /**
      * @return OrgOpentravelOta200305PassengerTypeQuantityType[]
      */
-    public function getPassengerTypeQuantity(): ?array
+    public function getPassengerTypeQuantity(): array
     {
         return $this->passengerTypeQuantity;
     }
@@ -468,7 +468,7 @@ class OrgOpentravelOta200305FlexibleFaresTypeFareParameters extends AbstractMode
      *
      * @return self
      */
-    public function setPassengerTypeQuantity(?array $passengerTypeQuantity): self
+    public function setPassengerTypeQuantity(array $passengerTypeQuantity): self
     {
         $this->passengerTypeQuantity = $passengerTypeQuantity;
 
@@ -480,7 +480,7 @@ class OrgOpentravelOta200305FlexibleFaresTypeFareParameters extends AbstractMode
      *
      * @return OrgOpentravelOta200305FlexibleFaresTypeFareParametersPrivateFare
      */
-    public function getPrivateFare(): ?OrgOpentravelOta200305FlexibleFaresTypeFareParametersPrivateFare
+    public function getPrivateFare(): OrgOpentravelOta200305FlexibleFaresTypeFareParametersPrivateFare
     {
         return $this->privateFare;
     }
@@ -492,7 +492,7 @@ class OrgOpentravelOta200305FlexibleFaresTypeFareParameters extends AbstractMode
      *
      * @return self
      */
-    public function setPrivateFare(?OrgOpentravelOta200305FlexibleFaresTypeFareParametersPrivateFare $privateFare): self
+    public function setPrivateFare(OrgOpentravelOta200305FlexibleFaresTypeFareParametersPrivateFare $privateFare): self
     {
         $this->privateFare = $privateFare;
 
@@ -504,7 +504,7 @@ class OrgOpentravelOta200305FlexibleFaresTypeFareParameters extends AbstractMode
      *
      * @return OrgOpentravelOta200305FlexibleFaresTypeFareParametersPublicFare
      */
-    public function getPublicFare(): ?OrgOpentravelOta200305FlexibleFaresTypeFareParametersPublicFare
+    public function getPublicFare(): OrgOpentravelOta200305FlexibleFaresTypeFareParametersPublicFare
     {
         return $this->publicFare;
     }
@@ -516,7 +516,7 @@ class OrgOpentravelOta200305FlexibleFaresTypeFareParameters extends AbstractMode
      *
      * @return self
      */
-    public function setPublicFare(?OrgOpentravelOta200305FlexibleFaresTypeFareParametersPublicFare $publicFare): self
+    public function setPublicFare(OrgOpentravelOta200305FlexibleFaresTypeFareParametersPublicFare $publicFare): self
     {
         $this->publicFare = $publicFare;
 
@@ -528,7 +528,7 @@ class OrgOpentravelOta200305FlexibleFaresTypeFareParameters extends AbstractMode
      *
      * @return OrgOpentravelOta200305FlexibleFaresTypeFareParametersRefundPenalty
      */
-    public function getRefundPenalty(): ?OrgOpentravelOta200305FlexibleFaresTypeFareParametersRefundPenalty
+    public function getRefundPenalty(): OrgOpentravelOta200305FlexibleFaresTypeFareParametersRefundPenalty
     {
         return $this->refundPenalty;
     }
@@ -540,7 +540,7 @@ class OrgOpentravelOta200305FlexibleFaresTypeFareParameters extends AbstractMode
      *
      * @return self
      */
-    public function setRefundPenalty(?OrgOpentravelOta200305FlexibleFaresTypeFareParametersRefundPenalty $refundPenalty): self
+    public function setRefundPenalty(OrgOpentravelOta200305FlexibleFaresTypeFareParametersRefundPenalty $refundPenalty): self
     {
         $this->refundPenalty = $refundPenalty;
 
@@ -552,7 +552,7 @@ class OrgOpentravelOta200305FlexibleFaresTypeFareParameters extends AbstractMode
      *
      * @return OrgOpentravelOta200305FlexibleFaresTypeFareParametersResTicketing
      */
-    public function getResTicketing(): ?OrgOpentravelOta200305FlexibleFaresTypeFareParametersResTicketing
+    public function getResTicketing(): OrgOpentravelOta200305FlexibleFaresTypeFareParametersResTicketing
     {
         return $this->resTicketing;
     }
@@ -564,7 +564,7 @@ class OrgOpentravelOta200305FlexibleFaresTypeFareParameters extends AbstractMode
      *
      * @return self
      */
-    public function setResTicketing(?OrgOpentravelOta200305FlexibleFaresTypeFareParametersResTicketing $resTicketing): self
+    public function setResTicketing(OrgOpentravelOta200305FlexibleFaresTypeFareParametersResTicketing $resTicketing): self
     {
         $this->resTicketing = $resTicketing;
 
@@ -576,7 +576,7 @@ class OrgOpentravelOta200305FlexibleFaresTypeFareParameters extends AbstractMode
      *
      * @return OrgOpentravelOta200305FlexibleFaresTypeFareParametersUseNegotiatedFares
      */
-    public function getUseNegotiatedFares(): ?OrgOpentravelOta200305FlexibleFaresTypeFareParametersUseNegotiatedFares
+    public function getUseNegotiatedFares(): OrgOpentravelOta200305FlexibleFaresTypeFareParametersUseNegotiatedFares
     {
         return $this->useNegotiatedFares;
     }
@@ -588,7 +588,7 @@ class OrgOpentravelOta200305FlexibleFaresTypeFareParameters extends AbstractMode
      *
      * @return self
      */
-    public function setUseNegotiatedFares(?OrgOpentravelOta200305FlexibleFaresTypeFareParametersUseNegotiatedFares $useNegotiatedFares): self
+    public function setUseNegotiatedFares(OrgOpentravelOta200305FlexibleFaresTypeFareParametersUseNegotiatedFares $useNegotiatedFares): self
     {
         $this->useNegotiatedFares = $useNegotiatedFares;
 
@@ -600,7 +600,7 @@ class OrgOpentravelOta200305FlexibleFaresTypeFareParameters extends AbstractMode
      *
      * @return OrgOpentravelOta200305FlexibleFaresTypeFareParametersUsePassengerFares
      */
-    public function getUsePassengerFares(): ?OrgOpentravelOta200305FlexibleFaresTypeFareParametersUsePassengerFares
+    public function getUsePassengerFares(): OrgOpentravelOta200305FlexibleFaresTypeFareParametersUsePassengerFares
     {
         return $this->usePassengerFares;
     }
@@ -612,7 +612,7 @@ class OrgOpentravelOta200305FlexibleFaresTypeFareParameters extends AbstractMode
      *
      * @return self
      */
-    public function setUsePassengerFares(?OrgOpentravelOta200305FlexibleFaresTypeFareParametersUsePassengerFares $usePassengerFares): self
+    public function setUsePassengerFares(OrgOpentravelOta200305FlexibleFaresTypeFareParametersUsePassengerFares $usePassengerFares): self
     {
         $this->usePassengerFares = $usePassengerFares;
 
@@ -624,7 +624,7 @@ class OrgOpentravelOta200305FlexibleFaresTypeFareParameters extends AbstractMode
      *
      * @return OrgOpentravelOta200305VoluntaryChangesSMPType
      */
-    public function getVoluntaryChanges(): ?OrgOpentravelOta200305VoluntaryChangesSMPType
+    public function getVoluntaryChanges(): OrgOpentravelOta200305VoluntaryChangesSMPType
     {
         return $this->voluntaryChanges;
     }
@@ -636,7 +636,7 @@ class OrgOpentravelOta200305FlexibleFaresTypeFareParameters extends AbstractMode
      *
      * @return self
      */
-    public function setVoluntaryChanges(?OrgOpentravelOta200305VoluntaryChangesSMPType $voluntaryChanges): self
+    public function setVoluntaryChanges(OrgOpentravelOta200305VoluntaryChangesSMPType $voluntaryChanges): self
     {
         $this->voluntaryChanges = $voluntaryChanges;
 
@@ -648,7 +648,7 @@ class OrgOpentravelOta200305FlexibleFaresTypeFareParameters extends AbstractMode
      *
      * @return OrgOpentravelOta200305FlexibleFaresTypeFareParametersXOFares
      */
-    public function getXOFares(): ?OrgOpentravelOta200305FlexibleFaresTypeFareParametersXOFares
+    public function getXOFares(): OrgOpentravelOta200305FlexibleFaresTypeFareParametersXOFares
     {
         return $this->xOFares;
     }
@@ -660,7 +660,7 @@ class OrgOpentravelOta200305FlexibleFaresTypeFareParameters extends AbstractMode
      *
      * @return self
      */
-    public function setXOFares(?OrgOpentravelOta200305FlexibleFaresTypeFareParametersXOFares $xOFares): self
+    public function setXOFares(OrgOpentravelOta200305FlexibleFaresTypeFareParametersXOFares $xOFares): self
     {
         $this->xOFares = $xOFares;
 

@@ -30,7 +30,7 @@ class OrgOpentravelOta200305TravelDateTimeTypeArrivalDatesDaysRange extends Abst
      *
      * @return string
      */
-    public function getFromDate(): ?string
+    public function getFromDate(): string
     {
         return $this->fromDate;
     }
@@ -42,7 +42,7 @@ class OrgOpentravelOta200305TravelDateTimeTypeArrivalDatesDaysRange extends Abst
      *
      * @return self
      */
-    public function setFromDate(?string $fromDate): self
+    public function setFromDate(string $fromDate): self
     {
         $this->fromDate = $fromDate;
 
@@ -54,7 +54,7 @@ class OrgOpentravelOta200305TravelDateTimeTypeArrivalDatesDaysRange extends Abst
      *
      * @return string
      */
-    public function getToDate(): ?string
+    public function getToDate(): string
     {
         return $this->toDate;
     }
@@ -66,7 +66,7 @@ class OrgOpentravelOta200305TravelDateTimeTypeArrivalDatesDaysRange extends Abst
      *
      * @return self
      */
-    public function setToDate(?string $toDate): self
+    public function setToDate(string $toDate): self
     {
         $this->toDate = $toDate;
 
@@ -78,7 +78,7 @@ class OrgOpentravelOta200305TravelDateTimeTypeArrivalDatesDaysRange extends Abst
      *
      * @return string
      */
-    public function getWeekDays(): ?string
+    public function getWeekDays(): string
     {
         return $this->weekDays;
     }
@@ -90,7 +90,7 @@ class OrgOpentravelOta200305TravelDateTimeTypeArrivalDatesDaysRange extends Abst
      *
      * @return self
      */
-    public function setWeekDays(?string $weekDays): self
+    public function setWeekDays(string $weekDays): self
     {
         $this->weekDays = $weekDays;
 

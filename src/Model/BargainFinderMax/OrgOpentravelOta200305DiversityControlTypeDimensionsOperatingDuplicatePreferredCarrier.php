@@ -14,7 +14,7 @@ class OrgOpentravelOta200305DiversityControlTypeDimensionsOperatingDuplicatePref
     /**
      * @return string
      */
-    public function getCode(): ?string
+    public function getCode(): string
     {
         return $this->code;
     }
@@ -24,7 +24,7 @@ class OrgOpentravelOta200305DiversityControlTypeDimensionsOperatingDuplicatePref
      *
      * @return self
      */
-    public function setCode(?string $code): self
+    public function setCode(string $code): self
     {
         $this->code = $code;
 

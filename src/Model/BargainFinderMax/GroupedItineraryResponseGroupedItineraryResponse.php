@@ -74,7 +74,7 @@ class GroupedItineraryResponseGroupedItineraryResponse extends AbstractModel
     /**
      * @return BaggageAllowanceType[]
      */
-    public function getBaggageAllowanceDescs(): ?array
+    public function getBaggageAllowanceDescs(): array
     {
         return $this->baggageAllowanceDescs;
     }
@@ -84,7 +84,7 @@ class GroupedItineraryResponseGroupedItineraryResponse extends AbstractModel
      *
      * @return self
      */
-    public function setBaggageAllowanceDescs(?array $baggageAllowanceDescs): self
+    public function setBaggageAllowanceDescs(array $baggageAllowanceDescs): self
     {
         $this->baggageAllowanceDescs = $baggageAllowanceDescs;
 
@@ -94,7 +94,7 @@ class GroupedItineraryResponseGroupedItineraryResponse extends AbstractModel
     /**
      * @return BaggageChargeType[]
      */
-    public function getBaggageChargeDescs(): ?array
+    public function getBaggageChargeDescs(): array
     {
         return $this->baggageChargeDescs;
     }
@@ -104,7 +104,7 @@ class GroupedItineraryResponseGroupedItineraryResponse extends AbstractModel
      *
      * @return self
      */
-    public function setBaggageChargeDescs(?array $baggageChargeDescs): self
+    public function setBaggageChargeDescs(array $baggageChargeDescs): self
     {
         $this->baggageChargeDescs = $baggageChargeDescs;
 
@@ -114,7 +114,7 @@ class GroupedItineraryResponseGroupedItineraryResponse extends AbstractModel
     /**
      * @return BrandFeatureType[]
      */
-    public function getBrandFeatureDescs(): ?array
+    public function getBrandFeatureDescs(): array
     {
         return $this->brandFeatureDescs;
     }
@@ -124,7 +124,7 @@ class GroupedItineraryResponseGroupedItineraryResponse extends AbstractModel
      *
      * @return self
      */
-    public function setBrandFeatureDescs(?array $brandFeatureDescs): self
+    public function setBrandFeatureDescs(array $brandFeatureDescs): self
     {
         $this->brandFeatureDescs = $brandFeatureDescs;
 
@@ -134,7 +134,7 @@ class GroupedItineraryResponseGroupedItineraryResponse extends AbstractModel
     /**
      * @return CacheSourceDescType[]
      */
-    public function getCacheSourceDescs(): ?array
+    public function getCacheSourceDescs(): array
     {
         return $this->cacheSourceDescs;
     }
@@ -144,7 +144,7 @@ class GroupedItineraryResponseGroupedItineraryResponse extends AbstractModel
      *
      * @return self
      */
-    public function setCacheSourceDescs(?array $cacheSourceDescs): self
+    public function setCacheSourceDescs(array $cacheSourceDescs): self
     {
         $this->cacheSourceDescs = $cacheSourceDescs;
 
@@ -154,7 +154,7 @@ class GroupedItineraryResponseGroupedItineraryResponse extends AbstractModel
     /**
      * @return FareComponentType[]
      */
-    public function getFareComponentDescs(): ?array
+    public function getFareComponentDescs(): array
     {
         return $this->fareComponentDescs;
     }
@@ -164,7 +164,7 @@ class GroupedItineraryResponseGroupedItineraryResponse extends AbstractModel
      *
      * @return self
      */
-    public function setFareComponentDescs(?array $fareComponentDescs): self
+    public function setFareComponentDescs(array $fareComponentDescs): self
     {
         $this->fareComponentDescs = $fareComponentDescs;
 
@@ -174,7 +174,7 @@ class GroupedItineraryResponseGroupedItineraryResponse extends AbstractModel
     /**
      * @return ItineraryGroupType[]
      */
-    public function getItineraryGroups(): ?array
+    public function getItineraryGroups(): array
     {
         return $this->itineraryGroups;
     }
@@ -184,7 +184,7 @@ class GroupedItineraryResponseGroupedItineraryResponse extends AbstractModel
      *
      * @return self
      */
-    public function setItineraryGroups(?array $itineraryGroups): self
+    public function setItineraryGroups(array $itineraryGroups): self
     {
         $this->itineraryGroups = $itineraryGroups;
 
@@ -194,7 +194,7 @@ class GroupedItineraryResponseGroupedItineraryResponse extends AbstractModel
     /**
      * @return LegType[]
      */
-    public function getLegDescs(): ?array
+    public function getLegDescs(): array
     {
         return $this->legDescs;
     }
@@ -204,7 +204,7 @@ class GroupedItineraryResponseGroupedItineraryResponse extends AbstractModel
      *
      * @return self
      */
-    public function setLegDescs(?array $legDescs): self
+    public function setLegDescs(array $legDescs): self
     {
         $this->legDescs = $legDescs;
 
@@ -214,7 +214,7 @@ class GroupedItineraryResponseGroupedItineraryResponse extends AbstractModel
     /**
      * @return MessageType[]
      */
-    public function getMessages(): ?array
+    public function getMessages(): array
     {
         return $this->messages;
     }
@@ -224,7 +224,7 @@ class GroupedItineraryResponseGroupedItineraryResponse extends AbstractModel
      *
      * @return self
      */
-    public function setMessages(?array $messages): self
+    public function setMessages(array $messages): self
     {
         $this->messages = $messages;
 
@@ -234,7 +234,7 @@ class GroupedItineraryResponseGroupedItineraryResponse extends AbstractModel
     /**
      * @return OBFeeType[]
      */
-    public function getObFeeDescs(): ?array
+    public function getObFeeDescs(): array
     {
         return $this->obFeeDescs;
     }
@@ -244,7 +244,7 @@ class GroupedItineraryResponseGroupedItineraryResponse extends AbstractModel
      *
      * @return self
      */
-    public function setObFeeDescs(?array $obFeeDescs): self
+    public function setObFeeDescs(array $obFeeDescs): self
     {
         $this->obFeeDescs = $obFeeDescs;
 
@@ -254,7 +254,7 @@ class GroupedItineraryResponseGroupedItineraryResponse extends AbstractModel
     /**
      * @return ScheduleDescType[]
      */
-    public function getScheduleDescs(): ?array
+    public function getScheduleDescs(): array
     {
         return $this->scheduleDescs;
     }
@@ -264,7 +264,7 @@ class GroupedItineraryResponseGroupedItineraryResponse extends AbstractModel
      *
      * @return self
      */
-    public function setScheduleDescs(?array $scheduleDescs): self
+    public function setScheduleDescs(array $scheduleDescs): self
     {
         $this->scheduleDescs = $scheduleDescs;
 
@@ -274,7 +274,7 @@ class GroupedItineraryResponseGroupedItineraryResponse extends AbstractModel
     /**
      * @return ScheduleMessageType[]
      */
-    public function getScheduleMessages(): ?array
+    public function getScheduleMessages(): array
     {
         return $this->scheduleMessages;
     }
@@ -284,7 +284,7 @@ class GroupedItineraryResponseGroupedItineraryResponse extends AbstractModel
      *
      * @return self
      */
-    public function setScheduleMessages(?array $scheduleMessages): self
+    public function setScheduleMessages(array $scheduleMessages): self
     {
         $this->scheduleMessages = $scheduleMessages;
 
@@ -294,7 +294,7 @@ class GroupedItineraryResponseGroupedItineraryResponse extends AbstractModel
     /**
      * @return StatisticsType
      */
-    public function getStatistics(): ?StatisticsType
+    public function getStatistics(): StatisticsType
     {
         return $this->statistics;
     }
@@ -304,7 +304,7 @@ class GroupedItineraryResponseGroupedItineraryResponse extends AbstractModel
      *
      * @return self
      */
-    public function setStatistics(?StatisticsType $statistics): self
+    public function setStatistics(StatisticsType $statistics): self
     {
         $this->statistics = $statistics;
 
@@ -314,7 +314,7 @@ class GroupedItineraryResponseGroupedItineraryResponse extends AbstractModel
     /**
      * @return TaxType[]
      */
-    public function getTaxDescs(): ?array
+    public function getTaxDescs(): array
     {
         return $this->taxDescs;
     }
@@ -324,7 +324,7 @@ class GroupedItineraryResponseGroupedItineraryResponse extends AbstractModel
      *
      * @return self
      */
-    public function setTaxDescs(?array $taxDescs): self
+    public function setTaxDescs(array $taxDescs): self
     {
         $this->taxDescs = $taxDescs;
 
@@ -334,7 +334,7 @@ class GroupedItineraryResponseGroupedItineraryResponse extends AbstractModel
     /**
      * @return TaxSummaryType[]
      */
-    public function getTaxSummaryDescs(): ?array
+    public function getTaxSummaryDescs(): array
     {
         return $this->taxSummaryDescs;
     }
@@ -344,7 +344,7 @@ class GroupedItineraryResponseGroupedItineraryResponse extends AbstractModel
      *
      * @return self
      */
-    public function setTaxSummaryDescs(?array $taxSummaryDescs): self
+    public function setTaxSummaryDescs(array $taxSummaryDescs): self
     {
         $this->taxSummaryDescs = $taxSummaryDescs;
 
@@ -354,7 +354,7 @@ class GroupedItineraryResponseGroupedItineraryResponse extends AbstractModel
     /**
      * @return ValidatingCarrierType[]
      */
-    public function getValidatingCarrierDescs(): ?array
+    public function getValidatingCarrierDescs(): array
     {
         return $this->validatingCarrierDescs;
     }
@@ -364,7 +364,7 @@ class GroupedItineraryResponseGroupedItineraryResponse extends AbstractModel
      *
      * @return self
      */
-    public function setValidatingCarrierDescs(?array $validatingCarrierDescs): self
+    public function setValidatingCarrierDescs(array $validatingCarrierDescs): self
     {
         $this->validatingCarrierDescs = $validatingCarrierDescs;
 
@@ -374,7 +374,7 @@ class GroupedItineraryResponseGroupedItineraryResponse extends AbstractModel
     /**
      * @return string
      */
-    public function getVersion(): ?string
+    public function getVersion(): string
     {
         return $this->version;
     }
@@ -384,7 +384,7 @@ class GroupedItineraryResponseGroupedItineraryResponse extends AbstractModel
      *
      * @return self
      */
-    public function setVersion(?string $version): self
+    public function setVersion(string $version): self
     {
         $this->version = $version;
 

@@ -24,7 +24,7 @@ class Cat16TextOnly extends AbstractModel
      *
      * @return string
      */
-    public function getFareBasisCode(): ?string
+    public function getFareBasisCode(): string
     {
         return $this->fareBasisCode;
     }
@@ -36,7 +36,7 @@ class Cat16TextOnly extends AbstractModel
      *
      * @return self
      */
-    public function setFareBasisCode(?string $fareBasisCode): self
+    public function setFareBasisCode(string $fareBasisCode): self
     {
         $this->fareBasisCode = $fareBasisCode;
 
@@ -48,7 +48,7 @@ class Cat16TextOnly extends AbstractModel
      *
      * @return int
      */
-    public function getFareComponentId(): ?int
+    public function getFareComponentId(): int
     {
         return $this->fareComponentId;
     }
@@ -60,7 +60,7 @@ class Cat16TextOnly extends AbstractModel
      *
      * @return self
      */
-    public function setFareComponentId(?int $fareComponentId): self
+    public function setFareComponentId(int $fareComponentId): self
     {
         $this->fareComponentId = $fareComponentId;
 

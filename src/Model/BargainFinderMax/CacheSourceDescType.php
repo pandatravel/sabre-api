@@ -36,7 +36,7 @@ class CacheSourceDescType extends AbstractModel
      *
      * @return int
      */
-    public function getId(): ?int
+    public function getId(): int
     {
         return $this->id;
     }
@@ -48,7 +48,7 @@ class CacheSourceDescType extends AbstractModel
      *
      * @return self
      */
-    public function setId(?int $id): self
+    public function setId(int $id): self
     {
         $this->id = $id;
 
@@ -60,7 +60,7 @@ class CacheSourceDescType extends AbstractModel
      *
      * @return string
      */
-    public function getPartition(): ?string
+    public function getPartition(): string
     {
         return $this->partition;
     }
@@ -72,7 +72,7 @@ class CacheSourceDescType extends AbstractModel
      *
      * @return self
      */
-    public function setPartition(?string $partition): self
+    public function setPartition(string $partition): self
     {
         $this->partition = $partition;
 
@@ -84,7 +84,7 @@ class CacheSourceDescType extends AbstractModel
      *
      * @return int
      */
-    public function getPriority(): ?int
+    public function getPriority(): int
     {
         return $this->priority;
     }
@@ -96,7 +96,7 @@ class CacheSourceDescType extends AbstractModel
      *
      * @return self
      */
-    public function setPriority(?int $priority): self
+    public function setPriority(int $priority): self
     {
         $this->priority = $priority;
 
@@ -108,7 +108,7 @@ class CacheSourceDescType extends AbstractModel
      *
      * @return string
      */
-    public function getVersion(): ?string
+    public function getVersion(): string
     {
         return $this->version;
     }
@@ -120,7 +120,7 @@ class CacheSourceDescType extends AbstractModel
      *
      * @return self
      */
-    public function setVersion(?string $version): self
+    public function setVersion(string $version): self
     {
         $this->version = $version;
 

@@ -38,7 +38,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeConnectionTi
      *
      * @return bool
      */
-    public function getEnableExcludedConnection(): ?bool
+    public function getEnableExcludedConnection(): bool
     {
         return $this->enableExcludedConnection;
     }
@@ -50,7 +50,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeConnectionTi
      *
      * @return self
      */
-    public function setEnableExcludedConnection(?bool $enableExcludedConnection): self
+    public function setEnableExcludedConnection(bool $enableExcludedConnection): self
     {
         $this->enableExcludedConnection = $enableExcludedConnection;
 
@@ -62,7 +62,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeConnectionTi
      *
      * @return string
      */
-    public function getExcludedConnectionBegin(): ?string
+    public function getExcludedConnectionBegin(): string
     {
         return $this->excludedConnectionBegin;
     }
@@ -74,7 +74,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeConnectionTi
      *
      * @return self
      */
-    public function setExcludedConnectionBegin(?string $excludedConnectionBegin): self
+    public function setExcludedConnectionBegin(string $excludedConnectionBegin): self
     {
         $this->excludedConnectionBegin = $excludedConnectionBegin;
 
@@ -86,7 +86,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeConnectionTi
      *
      * @return string
      */
-    public function getExcludedConnectionEnd(): ?string
+    public function getExcludedConnectionEnd(): string
     {
         return $this->excludedConnectionEnd;
     }
@@ -98,7 +98,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeConnectionTi
      *
      * @return self
      */
-    public function setExcludedConnectionEnd(?string $excludedConnectionEnd): self
+    public function setExcludedConnectionEnd(string $excludedConnectionEnd): self
     {
         $this->excludedConnectionEnd = $excludedConnectionEnd;
 
@@ -108,7 +108,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeConnectionTi
     /**
      * @return int
      */
-    public function getMax(): ?int
+    public function getMax(): int
     {
         return $this->max;
     }
@@ -118,7 +118,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeConnectionTi
      *
      * @return self
      */
-    public function setMax(?int $max): self
+    public function setMax(int $max): self
     {
         $this->max = $max;
 
@@ -128,7 +128,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeConnectionTi
     /**
      * @return int
      */
-    public function getMin(): ?int
+    public function getMin(): int
     {
         return $this->min;
     }
@@ -138,7 +138,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeConnectionTi
      *
      * @return self
      */
-    public function setMin(?int $min): self
+    public function setMin(int $min): self
     {
         $this->min = $min;
 

@@ -14,7 +14,7 @@ class OrgOpentravelOta200305ConnectionType extends AbstractModel
     /**
      * @return OrgOpentravelOta200305ConnectionTypeConnectionLocation[]
      */
-    public function getConnectionLocation(): ?array
+    public function getConnectionLocation(): array
     {
         return $this->connectionLocation;
     }
@@ -24,7 +24,7 @@ class OrgOpentravelOta200305ConnectionType extends AbstractModel
      *
      * @return self
      */
-    public function setConnectionLocation(?array $connectionLocation): self
+    public function setConnectionLocation(array $connectionLocation): self
     {
         $this->connectionLocation = $connectionLocation;
 

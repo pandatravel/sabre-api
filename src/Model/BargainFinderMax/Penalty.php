@@ -46,7 +46,7 @@ class Penalty extends AbstractModel
     /**
      * @return float
      */
-    public function getAmount(): ?float
+    public function getAmount(): float
     {
         return $this->amount;
     }
@@ -56,7 +56,7 @@ class Penalty extends AbstractModel
      *
      * @return self
      */
-    public function setAmount(?float $amount): self
+    public function setAmount(float $amount): self
     {
         $this->amount = $amount;
 
@@ -66,7 +66,7 @@ class Penalty extends AbstractModel
     /**
      * @return string
      */
-    public function getApplicability(): ?string
+    public function getApplicability(): string
     {
         return $this->applicability;
     }
@@ -76,7 +76,7 @@ class Penalty extends AbstractModel
      *
      * @return self
      */
-    public function setApplicability(?string $applicability): self
+    public function setApplicability(string $applicability): self
     {
         $this->applicability = $applicability;
 
@@ -86,7 +86,7 @@ class Penalty extends AbstractModel
     /**
      * @return bool
      */
-    public function getCat16Info(): ?bool
+    public function getCat16Info(): bool
     {
         return $this->cat16Info;
     }
@@ -96,7 +96,7 @@ class Penalty extends AbstractModel
      *
      * @return self
      */
-    public function setCat16Info(?bool $cat16Info): self
+    public function setCat16Info(bool $cat16Info): self
     {
         $this->cat16Info = $cat16Info;
 
@@ -106,7 +106,7 @@ class Penalty extends AbstractModel
     /**
      * @return Cat16TextOnly[]
      */
-    public function getCat16TextOnly(): ?array
+    public function getCat16TextOnly(): array
     {
         return $this->cat16TextOnly;
     }
@@ -116,7 +116,7 @@ class Penalty extends AbstractModel
      *
      * @return self
      */
-    public function setCat16TextOnly(?array $cat16TextOnly): self
+    public function setCat16TextOnly(array $cat16TextOnly): self
     {
         $this->cat16TextOnly = $cat16TextOnly;
 
@@ -126,7 +126,7 @@ class Penalty extends AbstractModel
     /**
      * @return bool
      */
-    public function getChangeable(): ?bool
+    public function getChangeable(): bool
     {
         return $this->changeable;
     }
@@ -136,7 +136,7 @@ class Penalty extends AbstractModel
      *
      * @return self
      */
-    public function setChangeable(?bool $changeable): self
+    public function setChangeable(bool $changeable): self
     {
         $this->changeable = $changeable;
 
@@ -146,7 +146,7 @@ class Penalty extends AbstractModel
     /**
      * @return bool
      */
-    public function getConditionsApply(): ?bool
+    public function getConditionsApply(): bool
     {
         return $this->conditionsApply;
     }
@@ -156,7 +156,7 @@ class Penalty extends AbstractModel
      *
      * @return self
      */
-    public function setConditionsApply(?bool $conditionsApply): self
+    public function setConditionsApply(bool $conditionsApply): self
     {
         $this->conditionsApply = $conditionsApply;
 
@@ -166,7 +166,7 @@ class Penalty extends AbstractModel
     /**
      * @return string
      */
-    public function getCurrency(): ?string
+    public function getCurrency(): string
     {
         return $this->currency;
     }
@@ -176,7 +176,7 @@ class Penalty extends AbstractModel
      *
      * @return self
      */
-    public function setCurrency(?string $currency): self
+    public function setCurrency(string $currency): self
     {
         $this->currency = $currency;
 
@@ -186,7 +186,7 @@ class Penalty extends AbstractModel
     /**
      * @return bool
      */
-    public function getRefundable(): ?bool
+    public function getRefundable(): bool
     {
         return $this->refundable;
     }
@@ -196,7 +196,7 @@ class Penalty extends AbstractModel
      *
      * @return self
      */
-    public function setRefundable(?bool $refundable): self
+    public function setRefundable(bool $refundable): self
     {
         $this->refundable = $refundable;
 
@@ -206,7 +206,7 @@ class Penalty extends AbstractModel
     /**
      * @return string
      */
-    public function getType(): ?string
+    public function getType(): string
     {
         return $this->type;
     }
@@ -216,7 +216,7 @@ class Penalty extends AbstractModel
      *
      * @return self
      */
-    public function setType(?string $type): self
+    public function setType(string $type): self
     {
         $this->type = $type;
 

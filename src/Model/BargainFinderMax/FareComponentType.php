@@ -142,7 +142,7 @@ class FareComponentType extends AbstractModel
     /**
      * @return string
      */
-    public function getApplicablePricingCategories(): ?string
+    public function getApplicablePricingCategories(): string
     {
         return $this->applicablePricingCategories;
     }
@@ -152,7 +152,7 @@ class FareComponentType extends AbstractModel
      *
      * @return self
      */
-    public function setApplicablePricingCategories(?string $applicablePricingCategories): self
+    public function setApplicablePricingCategories(string $applicablePricingCategories): self
     {
         $this->applicablePricingCategories = $applicablePricingCategories;
 
@@ -162,7 +162,7 @@ class FareComponentType extends AbstractModel
     /**
      * @return string
      */
-    public function getAslRetailerRuleCode(): ?string
+    public function getAslRetailerRuleCode(): string
     {
         return $this->aslRetailerRuleCode;
     }
@@ -172,7 +172,7 @@ class FareComponentType extends AbstractModel
      *
      * @return self
      */
-    public function setAslRetailerRuleCode(?string $aslRetailerRuleCode): self
+    public function setAslRetailerRuleCode(string $aslRetailerRuleCode): self
     {
         $this->aslRetailerRuleCode = $aslRetailerRuleCode;
 
@@ -182,7 +182,7 @@ class FareComponentType extends AbstractModel
     /**
      * @return BrandType
      */
-    public function getBrand(): ?BrandType
+    public function getBrand(): BrandType
     {
         return $this->brand;
     }
@@ -192,7 +192,7 @@ class FareComponentType extends AbstractModel
      *
      * @return self
      */
-    public function setBrand(?BrandType $brand): self
+    public function setBrand(BrandType $brand): self
     {
         $this->brand = $brand;
 
@@ -202,7 +202,7 @@ class FareComponentType extends AbstractModel
     /**
      * @return bool
      */
-    public function getCorporateIdMatched(): ?bool
+    public function getCorporateIdMatched(): bool
     {
         return $this->corporateIdMatched;
     }
@@ -212,7 +212,7 @@ class FareComponentType extends AbstractModel
      *
      * @return self
      */
-    public function setCorporateIdMatched(?bool $corporateIdMatched): self
+    public function setCorporateIdMatched(bool $corporateIdMatched): self
     {
         $this->corporateIdMatched = $corporateIdMatched;
 
@@ -222,7 +222,7 @@ class FareComponentType extends AbstractModel
     /**
      * @return string
      */
-    public function getDirection(): ?string
+    public function getDirection(): string
     {
         return $this->direction;
     }
@@ -232,7 +232,7 @@ class FareComponentType extends AbstractModel
      *
      * @return self
      */
-    public function setDirection(?string $direction): self
+    public function setDirection(string $direction): self
     {
         $this->direction = $direction;
 
@@ -242,7 +242,7 @@ class FareComponentType extends AbstractModel
     /**
      * @return string
      */
-    public function getDirectionality(): ?string
+    public function getDirectionality(): string
     {
         return $this->directionality;
     }
@@ -252,7 +252,7 @@ class FareComponentType extends AbstractModel
      *
      * @return self
      */
-    public function setDirectionality(?string $directionality): self
+    public function setDirectionality(string $directionality): self
     {
         $this->directionality = $directionality;
 
@@ -262,7 +262,7 @@ class FareComponentType extends AbstractModel
     /**
      * @return string
      */
-    public function getDisplayCategoryType(): ?string
+    public function getDisplayCategoryType(): string
     {
         return $this->displayCategoryType;
     }
@@ -272,7 +272,7 @@ class FareComponentType extends AbstractModel
      *
      * @return self
      */
-    public function setDisplayCategoryType(?string $displayCategoryType): self
+    public function setDisplayCategoryType(string $displayCategoryType): self
     {
         $this->displayCategoryType = $displayCategoryType;
 
@@ -282,7 +282,7 @@ class FareComponentType extends AbstractModel
     /**
      * @return float
      */
-    public function getFareAmount(): ?float
+    public function getFareAmount(): float
     {
         return $this->fareAmount;
     }
@@ -292,7 +292,7 @@ class FareComponentType extends AbstractModel
      *
      * @return self
      */
-    public function setFareAmount(?float $fareAmount): self
+    public function setFareAmount(float $fareAmount): self
     {
         $this->fareAmount = $fareAmount;
 
@@ -302,7 +302,7 @@ class FareComponentType extends AbstractModel
     /**
      * @return string
      */
-    public function getFareBasisCode(): ?string
+    public function getFareBasisCode(): string
     {
         return $this->fareBasisCode;
     }
@@ -312,7 +312,7 @@ class FareComponentType extends AbstractModel
      *
      * @return self
      */
-    public function setFareBasisCode(?string $fareBasisCode): self
+    public function setFareBasisCode(string $fareBasisCode): self
     {
         $this->fareBasisCode = $fareBasisCode;
 
@@ -322,7 +322,7 @@ class FareComponentType extends AbstractModel
     /**
      * @return int
      */
-    public function getFareComponentReferenceId(): ?int
+    public function getFareComponentReferenceId(): int
     {
         return $this->fareComponentReferenceId;
     }
@@ -332,7 +332,7 @@ class FareComponentType extends AbstractModel
      *
      * @return self
      */
-    public function setFareComponentReferenceId(?int $fareComponentReferenceId): self
+    public function setFareComponentReferenceId(int $fareComponentReferenceId): self
     {
         $this->fareComponentReferenceId = $fareComponentReferenceId;
 
@@ -342,7 +342,7 @@ class FareComponentType extends AbstractModel
     /**
      * @return string
      */
-    public function getFareCurrency(): ?string
+    public function getFareCurrency(): string
     {
         return $this->fareCurrency;
     }
@@ -352,7 +352,7 @@ class FareComponentType extends AbstractModel
      *
      * @return self
      */
-    public function setFareCurrency(?string $fareCurrency): self
+    public function setFareCurrency(string $fareCurrency): self
     {
         $this->fareCurrency = $fareCurrency;
 
@@ -362,7 +362,7 @@ class FareComponentType extends AbstractModel
     /**
      * @return string
      */
-    public function getFarePassengerType(): ?string
+    public function getFarePassengerType(): string
     {
         return $this->farePassengerType;
     }
@@ -372,7 +372,7 @@ class FareComponentType extends AbstractModel
      *
      * @return self
      */
-    public function setFarePassengerType(?string $farePassengerType): self
+    public function setFarePassengerType(string $farePassengerType): self
     {
         $this->farePassengerType = $farePassengerType;
 
@@ -382,7 +382,7 @@ class FareComponentType extends AbstractModel
     /**
      * @return string
      */
-    public function getFareTypeBitmap(): ?string
+    public function getFareTypeBitmap(): string
     {
         return $this->fareTypeBitmap;
     }
@@ -392,7 +392,7 @@ class FareComponentType extends AbstractModel
      *
      * @return self
      */
-    public function setFareTypeBitmap(?string $fareTypeBitmap): self
+    public function setFareTypeBitmap(string $fareTypeBitmap): self
     {
         $this->fareTypeBitmap = $fareTypeBitmap;
 
@@ -402,7 +402,7 @@ class FareComponentType extends AbstractModel
     /**
      * @return string
      */
-    public function getGeneralRetailerRuleCode(): ?string
+    public function getGeneralRetailerRuleCode(): string
     {
         return $this->generalRetailerRuleCode;
     }
@@ -412,7 +412,7 @@ class FareComponentType extends AbstractModel
      *
      * @return self
      */
-    public function setGeneralRetailerRuleCode(?string $generalRetailerRuleCode): self
+    public function setGeneralRetailerRuleCode(string $generalRetailerRuleCode): self
     {
         $this->generalRetailerRuleCode = $generalRetailerRuleCode;
 
@@ -422,7 +422,7 @@ class FareComponentType extends AbstractModel
     /**
      * @return string
      */
-    public function getGoverningCarrier(): ?string
+    public function getGoverningCarrier(): string
     {
         return $this->governingCarrier;
     }
@@ -432,7 +432,7 @@ class FareComponentType extends AbstractModel
      *
      * @return self
      */
-    public function setGoverningCarrier(?string $governingCarrier): self
+    public function setGoverningCarrier(string $governingCarrier): self
     {
         $this->governingCarrier = $governingCarrier;
 
@@ -442,7 +442,7 @@ class FareComponentType extends AbstractModel
     /**
      * @return HandlingMarkupDetailType[]
      */
-    public function getHandlingMarkupDetails(): ?array
+    public function getHandlingMarkupDetails(): array
     {
         return $this->handlingMarkupDetails;
     }
@@ -452,7 +452,7 @@ class FareComponentType extends AbstractModel
      *
      * @return self
      */
-    public function setHandlingMarkupDetails(?array $handlingMarkupDetails): self
+    public function setHandlingMarkupDetails(array $handlingMarkupDetails): self
     {
         $this->handlingMarkupDetails = $handlingMarkupDetails;
 
@@ -462,7 +462,7 @@ class FareComponentType extends AbstractModel
     /**
      * @return HigherIntermediatePointType[]
      */
-    public function getHigherIntermediatePoints(): ?array
+    public function getHigherIntermediatePoints(): array
     {
         return $this->higherIntermediatePoints;
     }
@@ -472,7 +472,7 @@ class FareComponentType extends AbstractModel
      *
      * @return self
      */
-    public function setHigherIntermediatePoints(?array $higherIntermediatePoints): self
+    public function setHigherIntermediatePoints(array $higherIntermediatePoints): self
     {
         $this->higherIntermediatePoints = $higherIntermediatePoints;
 
@@ -482,7 +482,7 @@ class FareComponentType extends AbstractModel
     /**
      * @return int
      */
-    public function getId(): ?int
+    public function getId(): int
     {
         return $this->id;
     }
@@ -492,7 +492,7 @@ class FareComponentType extends AbstractModel
      *
      * @return self
      */
-    public function setId(?int $id): self
+    public function setId(int $id): self
     {
         $this->id = $id;
 
@@ -502,7 +502,7 @@ class FareComponentType extends AbstractModel
     /**
      * @return string
      */
-    public function getMatchedAccountCode(): ?string
+    public function getMatchedAccountCode(): string
     {
         return $this->matchedAccountCode;
     }
@@ -512,7 +512,7 @@ class FareComponentType extends AbstractModel
      *
      * @return self
      */
-    public function setMatchedAccountCode(?string $matchedAccountCode): self
+    public function setMatchedAccountCode(string $matchedAccountCode): self
     {
         $this->matchedAccountCode = $matchedAccountCode;
 
@@ -522,7 +522,7 @@ class FareComponentType extends AbstractModel
     /**
      * @return bool
      */
-    public function getMileage(): ?bool
+    public function getMileage(): bool
     {
         return $this->mileage;
     }
@@ -532,7 +532,7 @@ class FareComponentType extends AbstractModel
      *
      * @return self
      */
-    public function setMileage(?bool $mileage): self
+    public function setMileage(bool $mileage): self
     {
         $this->mileage = $mileage;
 
@@ -542,7 +542,7 @@ class FareComponentType extends AbstractModel
     /**
      * @return int
      */
-    public function getMileageSurcharge(): ?int
+    public function getMileageSurcharge(): int
     {
         return $this->mileageSurcharge;
     }
@@ -552,7 +552,7 @@ class FareComponentType extends AbstractModel
      *
      * @return self
      */
-    public function setMileageSurcharge(?int $mileageSurcharge): self
+    public function setMileageSurcharge(int $mileageSurcharge): self
     {
         $this->mileageSurcharge = $mileageSurcharge;
 
@@ -562,7 +562,7 @@ class FareComponentType extends AbstractModel
     /**
      * @return int
      */
-    public function getMilesAmount(): ?int
+    public function getMilesAmount(): int
     {
         return $this->milesAmount;
     }
@@ -572,7 +572,7 @@ class FareComponentType extends AbstractModel
      *
      * @return self
      */
-    public function setMilesAmount(?int $milesAmount): self
+    public function setMilesAmount(int $milesAmount): self
     {
         $this->milesAmount = $milesAmount;
 
@@ -582,7 +582,7 @@ class FareComponentType extends AbstractModel
     /**
      * @return bool
      */
-    public function getNegotiatedFare(): ?bool
+    public function getNegotiatedFare(): bool
     {
         return $this->negotiatedFare;
     }
@@ -592,7 +592,7 @@ class FareComponentType extends AbstractModel
      *
      * @return self
      */
-    public function setNegotiatedFare(?bool $negotiatedFare): self
+    public function setNegotiatedFare(bool $negotiatedFare): self
     {
         $this->negotiatedFare = $negotiatedFare;
 
@@ -602,7 +602,7 @@ class FareComponentType extends AbstractModel
     /**
      * @return string
      */
-    public function getNotValidAfter(): ?string
+    public function getNotValidAfter(): string
     {
         return $this->notValidAfter;
     }
@@ -612,7 +612,7 @@ class FareComponentType extends AbstractModel
      *
      * @return self
      */
-    public function setNotValidAfter(?string $notValidAfter): self
+    public function setNotValidAfter(string $notValidAfter): self
     {
         $this->notValidAfter = $notValidAfter;
 
@@ -622,7 +622,7 @@ class FareComponentType extends AbstractModel
     /**
      * @return string
      */
-    public function getNotValidBefore(): ?string
+    public function getNotValidBefore(): string
     {
         return $this->notValidBefore;
     }
@@ -632,7 +632,7 @@ class FareComponentType extends AbstractModel
      *
      * @return self
      */
-    public function setNotValidBefore(?string $notValidBefore): self
+    public function setNotValidBefore(string $notValidBefore): self
     {
         $this->notValidBefore = $notValidBefore;
 
@@ -642,7 +642,7 @@ class FareComponentType extends AbstractModel
     /**
      * @return bool
      */
-    public function getOneWayFare(): ?bool
+    public function getOneWayFare(): bool
     {
         return $this->oneWayFare;
     }
@@ -652,7 +652,7 @@ class FareComponentType extends AbstractModel
      *
      * @return self
      */
-    public function setOneWayFare(?bool $oneWayFare): self
+    public function setOneWayFare(bool $oneWayFare): self
     {
         $this->oneWayFare = $oneWayFare;
 
@@ -662,7 +662,7 @@ class FareComponentType extends AbstractModel
     /**
      * @return PlusUpInformationType[]
      */
-    public function getPlusUps(): ?array
+    public function getPlusUps(): array
     {
         return $this->plusUps;
     }
@@ -672,7 +672,7 @@ class FareComponentType extends AbstractModel
      *
      * @return self
      */
-    public function setPlusUps(?array $plusUps): self
+    public function setPlusUps(array $plusUps): self
     {
         $this->plusUps = $plusUps;
 
@@ -682,7 +682,7 @@ class FareComponentType extends AbstractModel
     /**
      * @return bool
      */
-    public function getPrivateFare(): ?bool
+    public function getPrivateFare(): bool
     {
         return $this->privateFare;
     }
@@ -692,7 +692,7 @@ class FareComponentType extends AbstractModel
      *
      * @return self
      */
-    public function setPrivateFare(?bool $privateFare): self
+    public function setPrivateFare(bool $privateFare): self
     {
         $this->privateFare = $privateFare;
 
@@ -702,7 +702,7 @@ class FareComponentType extends AbstractModel
     /**
      * @return float
      */
-    public function getPublishedFareAmount(): ?float
+    public function getPublishedFareAmount(): float
     {
         return $this->publishedFareAmount;
     }
@@ -712,7 +712,7 @@ class FareComponentType extends AbstractModel
      *
      * @return self
      */
-    public function setPublishedFareAmount(?float $publishedFareAmount): self
+    public function setPublishedFareAmount(float $publishedFareAmount): self
     {
         $this->publishedFareAmount = $publishedFareAmount;
 
@@ -722,7 +722,7 @@ class FareComponentType extends AbstractModel
     /**
      * @return SegmentsType[]
      */
-    public function getSegments(): ?array
+    public function getSegments(): array
     {
         return $this->segments;
     }
@@ -732,7 +732,7 @@ class FareComponentType extends AbstractModel
      *
      * @return self
      */
-    public function setSegments(?array $segments): self
+    public function setSegments(array $segments): self
     {
         $this->segments = $segments;
 
@@ -742,7 +742,7 @@ class FareComponentType extends AbstractModel
     /**
      * @return string
      */
-    public function getTicketDesignator(): ?string
+    public function getTicketDesignator(): string
     {
         return $this->ticketDesignator;
     }
@@ -752,7 +752,7 @@ class FareComponentType extends AbstractModel
      *
      * @return self
      */
-    public function setTicketDesignator(?string $ticketDesignator): self
+    public function setTicketDesignator(string $ticketDesignator): self
     {
         $this->ticketDesignator = $ticketDesignator;
 
@@ -762,7 +762,7 @@ class FareComponentType extends AbstractModel
     /**
      * @return string
      */
-    public function getVendorCode(): ?string
+    public function getVendorCode(): string
     {
         return $this->vendorCode;
     }
@@ -772,7 +772,7 @@ class FareComponentType extends AbstractModel
      *
      * @return self
      */
-    public function setVendorCode(?string $vendorCode): self
+    public function setVendorCode(string $vendorCode): self
     {
         $this->vendorCode = $vendorCode;
 
@@ -782,7 +782,7 @@ class FareComponentType extends AbstractModel
     /**
      * @return bool
      */
-    public function getWebBasedFare(): ?bool
+    public function getWebBasedFare(): bool
     {
         return $this->webBasedFare;
     }
@@ -792,7 +792,7 @@ class FareComponentType extends AbstractModel
      *
      * @return self
      */
-    public function setWebBasedFare(?bool $webBasedFare): self
+    public function setWebBasedFare(bool $webBasedFare): self
     {
         $this->webBasedFare = $webBasedFare;
 

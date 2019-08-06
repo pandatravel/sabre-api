@@ -42,7 +42,7 @@ class OrgOpentravelOta200305TransactionTypeFareOverridesFareOverride extends Abs
      *
      * @return string
      */
-    public function getCallable(): ?string
+    public function getCallable(): string
     {
         return $this->callable;
     }
@@ -54,7 +54,7 @@ class OrgOpentravelOta200305TransactionTypeFareOverridesFareOverride extends Abs
      *
      * @return self
      */
-    public function setCallable(?string $callable): self
+    public function setCallable(string $callable): self
     {
         $this->callable = $callable;
 
@@ -66,7 +66,7 @@ class OrgOpentravelOta200305TransactionTypeFareOverridesFareOverride extends Abs
      *
      * @return string
      */
-    public function getCorporateID(): ?string
+    public function getCorporateID(): string
     {
         return $this->corporateID;
     }
@@ -78,7 +78,7 @@ class OrgOpentravelOta200305TransactionTypeFareOverridesFareOverride extends Abs
      *
      * @return self
      */
-    public function setCorporateID(?string $corporateID): self
+    public function setCorporateID(string $corporateID): self
     {
         $this->corporateID = $corporateID;
 
@@ -88,7 +88,7 @@ class OrgOpentravelOta200305TransactionTypeFareOverridesFareOverride extends Abs
     /**
      * @return string
      */
-    public function getFareType(): ?string
+    public function getFareType(): string
     {
         return $this->fareType;
     }
@@ -98,7 +98,7 @@ class OrgOpentravelOta200305TransactionTypeFareOverridesFareOverride extends Abs
      *
      * @return self
      */
-    public function setFareType(?string $fareType): self
+    public function setFareType(string $fareType): self
     {
         $this->fareType = $fareType;
 
@@ -108,7 +108,7 @@ class OrgOpentravelOta200305TransactionTypeFareOverridesFareOverride extends Abs
     /**
      * @return string
      */
-    public function getPseudoCityCode(): ?string
+    public function getPseudoCityCode(): string
     {
         return $this->pseudoCityCode;
     }
@@ -118,7 +118,7 @@ class OrgOpentravelOta200305TransactionTypeFareOverridesFareOverride extends Abs
      *
      * @return self
      */
-    public function setPseudoCityCode(?string $pseudoCityCode): self
+    public function setPseudoCityCode(string $pseudoCityCode): self
     {
         $this->pseudoCityCode = $pseudoCityCode;
 
@@ -130,7 +130,7 @@ class OrgOpentravelOta200305TransactionTypeFareOverridesFareOverride extends Abs
      *
      * @return string
      */
-    public function getTPAExtensions(): ?string
+    public function getTPAExtensions(): string
     {
         return $this->tPAExtensions;
     }
@@ -142,7 +142,7 @@ class OrgOpentravelOta200305TransactionTypeFareOverridesFareOverride extends Abs
      *
      * @return self
      */
-    public function setTPAExtensions(?string $tPAExtensions): self
+    public function setTPAExtensions(string $tPAExtensions): self
     {
         $this->tPAExtensions = $tPAExtensions;
 
@@ -152,7 +152,7 @@ class OrgOpentravelOta200305TransactionTypeFareOverridesFareOverride extends Abs
     /**
      * @return OrgOpentravelOta200305CompanyNamePrefType[]
      */
-    public function getVendorPref(): ?array
+    public function getVendorPref(): array
     {
         return $this->vendorPref;
     }
@@ -162,7 +162,7 @@ class OrgOpentravelOta200305TransactionTypeFareOverridesFareOverride extends Abs
      *
      * @return self
      */
-    public function setVendorPref(?array $vendorPref): self
+    public function setVendorPref(array $vendorPref): self
     {
         $this->vendorPref = $vendorPref;
 

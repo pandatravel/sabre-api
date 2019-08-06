@@ -18,7 +18,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeTotalTravelT
     /**
      * @return float
      */
-    public function getMax(): ?float
+    public function getMax(): float
     {
         return $this->max;
     }
@@ -28,7 +28,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeTotalTravelT
      *
      * @return self
      */
-    public function setMax(?float $max): self
+    public function setMax(float $max): self
     {
         $this->max = $max;
 
@@ -38,7 +38,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeTotalTravelT
     /**
      * @return float
      */
-    public function getMin(): ?float
+    public function getMin(): float
     {
         return $this->min;
     }
@@ -48,7 +48,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeTotalTravelT
      *
      * @return self
      */
-    public function setMin(?float $min): self
+    public function setMin(float $min): self
     {
         $this->min = $min;
 

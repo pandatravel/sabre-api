@@ -22,7 +22,7 @@ class OrgOpentravelOta200305StateProvType extends AbstractModel
      *
      * @return string
      */
-    public function getStateCode(): ?string
+    public function getStateCode(): string
     {
         return $this->stateCode;
     }
@@ -34,7 +34,7 @@ class OrgOpentravelOta200305StateProvType extends AbstractModel
      *
      * @return self
      */
-    public function setStateCode(?string $stateCode): self
+    public function setStateCode(string $stateCode): self
     {
         $this->stateCode = $stateCode;
 
@@ -44,7 +44,7 @@ class OrgOpentravelOta200305StateProvType extends AbstractModel
     /**
      * @return string
      */
-    public function getContent(): ?string
+    public function getContent(): string
     {
         return $this->content;
     }
@@ -54,7 +54,7 @@ class OrgOpentravelOta200305StateProvType extends AbstractModel
      *
      * @return self
      */
-    public function setContent(?string $content): self
+    public function setContent(string $content): self
     {
         $this->content = $content;
 

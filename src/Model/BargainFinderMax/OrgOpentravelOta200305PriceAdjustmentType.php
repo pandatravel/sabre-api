@@ -26,7 +26,7 @@ class OrgOpentravelOta200305PriceAdjustmentType extends AbstractModel
     /**
      * @return OrgOpentravelOta200305PriceAdjustmentTypeBaseFare
      */
-    public function getBaseFare(): ?OrgOpentravelOta200305PriceAdjustmentTypeBaseFare
+    public function getBaseFare(): OrgOpentravelOta200305PriceAdjustmentTypeBaseFare
     {
         return $this->baseFare;
     }
@@ -36,7 +36,7 @@ class OrgOpentravelOta200305PriceAdjustmentType extends AbstractModel
      *
      * @return self
      */
-    public function setBaseFare(?OrgOpentravelOta200305PriceAdjustmentTypeBaseFare $baseFare): self
+    public function setBaseFare(OrgOpentravelOta200305PriceAdjustmentTypeBaseFare $baseFare): self
     {
         $this->baseFare = $baseFare;
 
@@ -46,7 +46,7 @@ class OrgOpentravelOta200305PriceAdjustmentType extends AbstractModel
     /**
      * @return OrgOpentravelOta200305PriceAdjustmentTypeEquivFare
      */
-    public function getEquivFare(): ?OrgOpentravelOta200305PriceAdjustmentTypeEquivFare
+    public function getEquivFare(): OrgOpentravelOta200305PriceAdjustmentTypeEquivFare
     {
         return $this->equivFare;
     }
@@ -56,7 +56,7 @@ class OrgOpentravelOta200305PriceAdjustmentType extends AbstractModel
      *
      * @return self
      */
-    public function setEquivFare(?OrgOpentravelOta200305PriceAdjustmentTypeEquivFare $equivFare): self
+    public function setEquivFare(OrgOpentravelOta200305PriceAdjustmentTypeEquivFare $equivFare): self
     {
         $this->equivFare = $equivFare;
 
@@ -66,7 +66,7 @@ class OrgOpentravelOta200305PriceAdjustmentType extends AbstractModel
     /**
      * @return OrgOpentravelOta200305PriceAdjustmentTypeTotalFare
      */
-    public function getTotalFare(): ?OrgOpentravelOta200305PriceAdjustmentTypeTotalFare
+    public function getTotalFare(): OrgOpentravelOta200305PriceAdjustmentTypeTotalFare
     {
         return $this->totalFare;
     }
@@ -76,7 +76,7 @@ class OrgOpentravelOta200305PriceAdjustmentType extends AbstractModel
      *
      * @return self
      */
-    public function setTotalFare(?OrgOpentravelOta200305PriceAdjustmentTypeTotalFare $totalFare): self
+    public function setTotalFare(OrgOpentravelOta200305PriceAdjustmentTypeTotalFare $totalFare): self
     {
         $this->totalFare = $totalFare;
 
@@ -86,7 +86,7 @@ class OrgOpentravelOta200305PriceAdjustmentType extends AbstractModel
     /**
      * @return OrgOpentravelOta200305PriceAdjustmentTypeTotalTax
      */
-    public function getTotalTax(): ?OrgOpentravelOta200305PriceAdjustmentTypeTotalTax
+    public function getTotalTax(): OrgOpentravelOta200305PriceAdjustmentTypeTotalTax
     {
         return $this->totalTax;
     }
@@ -96,7 +96,7 @@ class OrgOpentravelOta200305PriceAdjustmentType extends AbstractModel
      *
      * @return self
      */
-    public function setTotalTax(?OrgOpentravelOta200305PriceAdjustmentTypeTotalTax $totalTax): self
+    public function setTotalTax(OrgOpentravelOta200305PriceAdjustmentTypeTotalTax $totalTax): self
     {
         $this->totalTax = $totalTax;
 

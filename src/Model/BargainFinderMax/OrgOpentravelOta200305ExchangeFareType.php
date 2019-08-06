@@ -48,7 +48,7 @@ class OrgOpentravelOta200305ExchangeFareType extends AbstractModel
      *
      * @return float
      */
-    public function getBaseFareAmount(): ?float
+    public function getBaseFareAmount(): float
     {
         return $this->baseFareAmount;
     }
@@ -60,7 +60,7 @@ class OrgOpentravelOta200305ExchangeFareType extends AbstractModel
      *
      * @return self
      */
-    public function setBaseFareAmount(?float $baseFareAmount): self
+    public function setBaseFareAmount(float $baseFareAmount): self
     {
         $this->baseFareAmount = $baseFareAmount;
 
@@ -72,7 +72,7 @@ class OrgOpentravelOta200305ExchangeFareType extends AbstractModel
      *
      * @return string
      */
-    public function getBaseFareCurrency(): ?string
+    public function getBaseFareCurrency(): string
     {
         return $this->baseFareCurrency;
     }
@@ -84,7 +84,7 @@ class OrgOpentravelOta200305ExchangeFareType extends AbstractModel
      *
      * @return self
      */
-    public function setBaseFareCurrency(?string $baseFareCurrency): self
+    public function setBaseFareCurrency(string $baseFareCurrency): self
     {
         $this->baseFareCurrency = $baseFareCurrency;
 
@@ -96,7 +96,7 @@ class OrgOpentravelOta200305ExchangeFareType extends AbstractModel
      *
      * @return string
      */
-    public function getFareCalcCurrency(): ?string
+    public function getFareCalcCurrency(): string
     {
         return $this->fareCalcCurrency;
     }
@@ -108,7 +108,7 @@ class OrgOpentravelOta200305ExchangeFareType extends AbstractModel
      *
      * @return self
      */
-    public function setFareCalcCurrency(?string $fareCalcCurrency): self
+    public function setFareCalcCurrency(string $fareCalcCurrency): self
     {
         $this->fareCalcCurrency = $fareCalcCurrency;
 
@@ -120,7 +120,7 @@ class OrgOpentravelOta200305ExchangeFareType extends AbstractModel
      *
      * @return float
      */
-    public function getNonRefundableAmount(): ?float
+    public function getNonRefundableAmount(): float
     {
         return $this->nonRefundableAmount;
     }
@@ -132,7 +132,7 @@ class OrgOpentravelOta200305ExchangeFareType extends AbstractModel
      *
      * @return self
      */
-    public function setNonRefundableAmount(?float $nonRefundableAmount): self
+    public function setNonRefundableAmount(float $nonRefundableAmount): self
     {
         $this->nonRefundableAmount = $nonRefundableAmount;
 
@@ -144,7 +144,7 @@ class OrgOpentravelOta200305ExchangeFareType extends AbstractModel
      *
      * @return float
      */
-    public function getROE(): ?float
+    public function getROE(): float
     {
         return $this->rOE;
     }
@@ -156,7 +156,7 @@ class OrgOpentravelOta200305ExchangeFareType extends AbstractModel
      *
      * @return self
      */
-    public function setROE(?float $rOE): self
+    public function setROE(float $rOE): self
     {
         $this->rOE = $rOE;
 
@@ -168,7 +168,7 @@ class OrgOpentravelOta200305ExchangeFareType extends AbstractModel
      *
      * @return string
      */
-    public function getValidatingCarrier(): ?string
+    public function getValidatingCarrier(): string
     {
         return $this->validatingCarrier;
     }
@@ -180,7 +180,7 @@ class OrgOpentravelOta200305ExchangeFareType extends AbstractModel
      *
      * @return self
      */
-    public function setValidatingCarrier(?string $validatingCarrier): self
+    public function setValidatingCarrier(string $validatingCarrier): self
     {
         $this->validatingCarrier = $validatingCarrier;
 

@@ -22,7 +22,7 @@ class OrgOpentravelOta200305VendorPrefPairingTypeVendorPref extends AbstractMode
      *
      * @return string
      */
-    public function getCode(): ?string
+    public function getCode(): string
     {
         return $this->code;
     }
@@ -34,7 +34,7 @@ class OrgOpentravelOta200305VendorPrefPairingTypeVendorPref extends AbstractMode
      *
      * @return self
      */
-    public function setCode(?string $code): self
+    public function setCode(string $code): self
     {
         $this->code = $code;
 
@@ -44,7 +44,7 @@ class OrgOpentravelOta200305VendorPrefPairingTypeVendorPref extends AbstractMode
     /**
      * @return string
      */
-    public function getType(): ?string
+    public function getType(): string
     {
         return $this->type;
     }
@@ -54,7 +54,7 @@ class OrgOpentravelOta200305VendorPrefPairingTypeVendorPref extends AbstractMode
      *
      * @return self
      */
-    public function setType(?string $type): self
+    public function setType(string $type): self
     {
         $this->type = $type;
 

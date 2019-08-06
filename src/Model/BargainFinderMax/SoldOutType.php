@@ -18,7 +18,7 @@ class SoldOutType extends AbstractModel
     /**
      * @return SoldOutLegType[]
      */
-    public function getSoldOutLegs(): ?array
+    public function getSoldOutLegs(): array
     {
         return $this->soldOutLegs;
     }
@@ -28,7 +28,7 @@ class SoldOutType extends AbstractModel
      *
      * @return self
      */
-    public function setSoldOutLegs(?array $soldOutLegs): self
+    public function setSoldOutLegs(array $soldOutLegs): self
     {
         $this->soldOutLegs = $soldOutLegs;
 
@@ -38,7 +38,7 @@ class SoldOutType extends AbstractModel
     /**
      * @return string
      */
-    public function getStatus(): ?string
+    public function getStatus(): string
     {
         return $this->status;
     }
@@ -48,7 +48,7 @@ class SoldOutType extends AbstractModel
      *
      * @return self
      */
-    public function setStatus(?string $status): self
+    public function setStatus(string $status): self
     {
         $this->status = $status;
 

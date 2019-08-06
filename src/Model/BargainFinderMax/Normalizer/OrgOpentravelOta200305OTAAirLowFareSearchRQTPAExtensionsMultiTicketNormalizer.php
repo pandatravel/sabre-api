@@ -42,6 +42,9 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsMultiTicketNormali
         if (property_exists($data, 'DisplayPolicy')) {
             $object->setDisplayPolicy($data->{'DisplayPolicy'});
         }
+        if (property_exists($data, 'RequestedOneWays')) {
+            $object->setRequestedOneWays($data->{'RequestedOneWays'});
+        }
 
         return $object;
     }
@@ -51,6 +54,9 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsMultiTicketNormali
         $data = new \stdClass();
         if (null !== $object->getDisplayPolicy()) {
             $data->{'DisplayPolicy'} = $object->getDisplayPolicy();
+        }
+        if (null !== $object->getRequestedOneWays()) {
+            $data->{'RequestedOneWays'} = $object->getRequestedOneWays();
         }
 
         return $data;

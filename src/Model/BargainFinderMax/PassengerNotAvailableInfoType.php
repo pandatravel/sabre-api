@@ -18,7 +18,7 @@ class PassengerNotAvailableInfoType extends AbstractModel
     /**
      * @return string
      */
-    public function getPassengerType(): ?string
+    public function getPassengerType(): string
     {
         return $this->passengerType;
     }
@@ -28,7 +28,7 @@ class PassengerNotAvailableInfoType extends AbstractModel
      *
      * @return self
      */
-    public function setPassengerType(?string $passengerType): self
+    public function setPassengerType(string $passengerType): self
     {
         $this->passengerType = $passengerType;
 
@@ -38,7 +38,7 @@ class PassengerNotAvailableInfoType extends AbstractModel
     /**
      * @return string
      */
-    public function getReason(): ?string
+    public function getReason(): string
     {
         return $this->reason;
     }
@@ -48,7 +48,7 @@ class PassengerNotAvailableInfoType extends AbstractModel
      *
      * @return self
      */
-    public function setReason(?string $reason): self
+    public function setReason(string $reason): self
     {
         $this->reason = $reason;
 

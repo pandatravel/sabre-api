@@ -46,7 +46,7 @@ class FareComponentIDType extends AbstractModel
     /**
      * @return BrandFeatureIDType[]
      */
-    public function getBrandFeatures(): ?array
+    public function getBrandFeatures(): array
     {
         return $this->brandFeatures;
     }
@@ -56,7 +56,7 @@ class FareComponentIDType extends AbstractModel
      *
      * @return self
      */
-    public function setBrandFeatures(?array $brandFeatures): self
+    public function setBrandFeatures(array $brandFeatures): self
     {
         $this->brandFeatures = $brandFeatures;
 
@@ -68,7 +68,7 @@ class FareComponentIDType extends AbstractModel
      *
      * @return float
      */
-    public function getEffectivePriceDeviation(): ?float
+    public function getEffectivePriceDeviation(): float
     {
         return $this->effectivePriceDeviation;
     }
@@ -80,7 +80,7 @@ class FareComponentIDType extends AbstractModel
      *
      * @return self
      */
-    public function setEffectivePriceDeviation(?float $effectivePriceDeviation): self
+    public function setEffectivePriceDeviation(float $effectivePriceDeviation): self
     {
         $this->effectivePriceDeviation = $effectivePriceDeviation;
 
@@ -92,7 +92,7 @@ class FareComponentIDType extends AbstractModel
      *
      * @return int
      */
-    public function getRef(): ?int
+    public function getRef(): int
     {
         return $this->ref;
     }
@@ -104,7 +104,7 @@ class FareComponentIDType extends AbstractModel
      *
      * @return self
      */
-    public function setRef(?int $ref): self
+    public function setRef(int $ref): self
     {
         $this->ref = $ref;
 
@@ -116,7 +116,7 @@ class FareComponentIDType extends AbstractModel
      *
      * @return FareComponentSegmentsType[]
      */
-    public function getSegments(): ?array
+    public function getSegments(): array
     {
         return $this->segments;
     }
@@ -128,7 +128,7 @@ class FareComponentIDType extends AbstractModel
      *
      * @return self
      */
-    public function setSegments(?array $segments): self
+    public function setSegments(array $segments): self
     {
         $this->segments = $segments;
 
@@ -140,7 +140,7 @@ class FareComponentIDType extends AbstractModel
      *
      * @return TaxSummaryIDType[]
      */
-    public function getTaxSummaries(): ?array
+    public function getTaxSummaries(): array
     {
         return $this->taxSummaries;
     }
@@ -152,7 +152,7 @@ class FareComponentIDType extends AbstractModel
      *
      * @return self
      */
-    public function setTaxSummaries(?array $taxSummaries): self
+    public function setTaxSummaries(array $taxSummaries): self
     {
         $this->taxSummaries = $taxSummaries;
 
@@ -162,7 +162,7 @@ class FareComponentIDType extends AbstractModel
     /**
      * @return TaxIDType[]
      */
-    public function getTaxes(): ?array
+    public function getTaxes(): array
     {
         return $this->taxes;
     }
@@ -172,7 +172,7 @@ class FareComponentIDType extends AbstractModel
      *
      * @return self
      */
-    public function setTaxes(?array $taxes): self
+    public function setTaxes(array $taxes): self
     {
         $this->taxes = $taxes;
 
@@ -182,7 +182,7 @@ class FareComponentIDType extends AbstractModel
     /**
      * @return TotalFareType
      */
-    public function getTotalFare(): ?TotalFareType
+    public function getTotalFare(): TotalFareType
     {
         return $this->totalFare;
     }
@@ -192,7 +192,7 @@ class FareComponentIDType extends AbstractModel
      *
      * @return self
      */
-    public function setTotalFare(?TotalFareType $totalFare): self
+    public function setTotalFare(TotalFareType $totalFare): self
     {
         $this->totalFare = $totalFare;
 

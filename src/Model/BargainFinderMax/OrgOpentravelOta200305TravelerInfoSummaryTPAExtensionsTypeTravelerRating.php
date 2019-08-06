@@ -18,7 +18,7 @@ class OrgOpentravelOta200305TravelerInfoSummaryTPAExtensionsTypeTravelerRating e
     /**
      * @return OrgOpentravelOta200305TravelerInfoSummaryTPAExtensionsTypeTravelerRatingFrequentFlyer[]
      */
-    public function getFrequentFlyer(): ?array
+    public function getFrequentFlyer(): array
     {
         return $this->frequentFlyer;
     }
@@ -28,7 +28,7 @@ class OrgOpentravelOta200305TravelerInfoSummaryTPAExtensionsTypeTravelerRating e
      *
      * @return self
      */
-    public function setFrequentFlyer(?array $frequentFlyer): self
+    public function setFrequentFlyer(array $frequentFlyer): self
     {
         $this->frequentFlyer = $frequentFlyer;
 
@@ -38,7 +38,7 @@ class OrgOpentravelOta200305TravelerInfoSummaryTPAExtensionsTypeTravelerRating e
     /**
      * @return OrgOpentravelOta200305TravelerInfoSummaryTPAExtensionsTypeTravelerRatingScore[]
      */
-    public function getScore(): ?array
+    public function getScore(): array
     {
         return $this->score;
     }
@@ -48,7 +48,7 @@ class OrgOpentravelOta200305TravelerInfoSummaryTPAExtensionsTypeTravelerRating e
      *
      * @return self
      */
-    public function setScore(?array $score): self
+    public function setScore(array $score): self
     {
         $this->score = $score;
 

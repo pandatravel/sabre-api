@@ -68,7 +68,7 @@ class OrgOpentravelOta200305TelephoneType extends AbstractModel
      *
      * @return string
      */
-    public function getAreaCityCode(): ?string
+    public function getAreaCityCode(): string
     {
         return $this->areaCityCode;
     }
@@ -80,7 +80,7 @@ class OrgOpentravelOta200305TelephoneType extends AbstractModel
      *
      * @return self
      */
-    public function setAreaCityCode(?string $areaCityCode): self
+    public function setAreaCityCode(string $areaCityCode): self
     {
         $this->areaCityCode = $areaCityCode;
 
@@ -92,7 +92,7 @@ class OrgOpentravelOta200305TelephoneType extends AbstractModel
      *
      * @return string
      */
-    public function getCountryAccessCode(): ?string
+    public function getCountryAccessCode(): string
     {
         return $this->countryAccessCode;
     }
@@ -104,7 +104,7 @@ class OrgOpentravelOta200305TelephoneType extends AbstractModel
      *
      * @return self
      */
-    public function setCountryAccessCode(?string $countryAccessCode): self
+    public function setCountryAccessCode(string $countryAccessCode): self
     {
         $this->countryAccessCode = $countryAccessCode;
 
@@ -116,7 +116,7 @@ class OrgOpentravelOta200305TelephoneType extends AbstractModel
      *
      * @return string
      */
-    public function getExtension(): ?string
+    public function getExtension(): string
     {
         return $this->extension;
     }
@@ -128,7 +128,7 @@ class OrgOpentravelOta200305TelephoneType extends AbstractModel
      *
      * @return self
      */
-    public function setExtension(?string $extension): self
+    public function setExtension(string $extension): self
     {
         $this->extension = $extension;
 
@@ -140,7 +140,7 @@ class OrgOpentravelOta200305TelephoneType extends AbstractModel
      *
      * @return bool
      */
-    public function getFormattedInd(): ?bool
+    public function getFormattedInd(): bool
     {
         return $this->formattedInd;
     }
@@ -152,7 +152,7 @@ class OrgOpentravelOta200305TelephoneType extends AbstractModel
      *
      * @return self
      */
-    public function setFormattedInd(?bool $formattedInd): self
+    public function setFormattedInd(bool $formattedInd): self
     {
         $this->formattedInd = $formattedInd;
 
@@ -164,7 +164,7 @@ class OrgOpentravelOta200305TelephoneType extends AbstractModel
      *
      * @return string
      */
-    public function getPIN(): ?string
+    public function getPIN(): string
     {
         return $this->pIN;
     }
@@ -176,7 +176,7 @@ class OrgOpentravelOta200305TelephoneType extends AbstractModel
      *
      * @return self
      */
-    public function setPIN(?string $pIN): self
+    public function setPIN(string $pIN): self
     {
         $this->pIN = $pIN;
 
@@ -186,7 +186,7 @@ class OrgOpentravelOta200305TelephoneType extends AbstractModel
     /**
      * @return string
      */
-    public function getPhoneLocationType(): ?string
+    public function getPhoneLocationType(): string
     {
         return $this->phoneLocationType;
     }
@@ -196,7 +196,7 @@ class OrgOpentravelOta200305TelephoneType extends AbstractModel
      *
      * @return self
      */
-    public function setPhoneLocationType(?string $phoneLocationType): self
+    public function setPhoneLocationType(string $phoneLocationType): self
     {
         $this->phoneLocationType = $phoneLocationType;
 
@@ -208,7 +208,7 @@ class OrgOpentravelOta200305TelephoneType extends AbstractModel
      *
      * @return string
      */
-    public function getPhoneNumber(): ?string
+    public function getPhoneNumber(): string
     {
         return $this->phoneNumber;
     }
@@ -220,7 +220,7 @@ class OrgOpentravelOta200305TelephoneType extends AbstractModel
      *
      * @return self
      */
-    public function setPhoneNumber(?string $phoneNumber): self
+    public function setPhoneNumber(string $phoneNumber): self
     {
         $this->phoneNumber = $phoneNumber;
 
@@ -230,7 +230,7 @@ class OrgOpentravelOta200305TelephoneType extends AbstractModel
     /**
      * @return string
      */
-    public function getPhoneTechType(): ?string
+    public function getPhoneTechType(): string
     {
         return $this->phoneTechType;
     }
@@ -240,7 +240,7 @@ class OrgOpentravelOta200305TelephoneType extends AbstractModel
      *
      * @return self
      */
-    public function setPhoneTechType(?string $phoneTechType): self
+    public function setPhoneTechType(string $phoneTechType): self
     {
         $this->phoneTechType = $phoneTechType;
 
@@ -252,7 +252,7 @@ class OrgOpentravelOta200305TelephoneType extends AbstractModel
      *
      * @return string
      */
-    public function getShareMarketInd(): ?string
+    public function getShareMarketInd(): string
     {
         return $this->shareMarketInd;
     }
@@ -264,7 +264,7 @@ class OrgOpentravelOta200305TelephoneType extends AbstractModel
      *
      * @return self
      */
-    public function setShareMarketInd(?string $shareMarketInd): self
+    public function setShareMarketInd(string $shareMarketInd): self
     {
         $this->shareMarketInd = $shareMarketInd;
 
@@ -276,7 +276,7 @@ class OrgOpentravelOta200305TelephoneType extends AbstractModel
      *
      * @return string
      */
-    public function getShareSynchInd(): ?string
+    public function getShareSynchInd(): string
     {
         return $this->shareSynchInd;
     }
@@ -288,7 +288,7 @@ class OrgOpentravelOta200305TelephoneType extends AbstractModel
      *
      * @return self
      */
-    public function setShareSynchInd(?string $shareSynchInd): self
+    public function setShareSynchInd(string $shareSynchInd): self
     {
         $this->shareSynchInd = $shareSynchInd;
 

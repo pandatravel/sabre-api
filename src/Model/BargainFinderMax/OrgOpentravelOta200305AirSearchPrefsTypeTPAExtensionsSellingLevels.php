@@ -18,7 +18,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsSellingLevels extends
     /**
      * @return OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsSellingLevelsSellingLevelRules
      */
-    public function getSellingLevelRules(): ?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsSellingLevelsSellingLevelRules
+    public function getSellingLevelRules(): OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsSellingLevelsSellingLevelRules
     {
         return $this->sellingLevelRules;
     }
@@ -28,7 +28,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsSellingLevels extends
      *
      * @return self
      */
-    public function setSellingLevelRules(?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsSellingLevelsSellingLevelRules $sellingLevelRules): self
+    public function setSellingLevelRules(OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsSellingLevelsSellingLevelRules $sellingLevelRules): self
     {
         $this->sellingLevelRules = $sellingLevelRules;
 
@@ -38,7 +38,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsSellingLevels extends
     /**
      * @return OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsSellingLevelsShowFareAmounts
      */
-    public function getShowFareAmounts(): ?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsSellingLevelsShowFareAmounts
+    public function getShowFareAmounts(): OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsSellingLevelsShowFareAmounts
     {
         return $this->showFareAmounts;
     }
@@ -48,7 +48,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsSellingLevels extends
      *
      * @return self
      */
-    public function setShowFareAmounts(?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsSellingLevelsShowFareAmounts $showFareAmounts): self
+    public function setShowFareAmounts(OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsSellingLevelsShowFareAmounts $showFareAmounts): self
     {
         $this->showFareAmounts = $showFareAmounts;
 

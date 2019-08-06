@@ -14,7 +14,7 @@ class OrgOpentravelOta200305TransactionTypeDiagnostics extends AbstractModel
     /**
      * @return OrgOpentravelOta200305TransactionTypeDiagnosticsDiagnostic[]
      */
-    public function getDiagnostic(): ?array
+    public function getDiagnostic(): array
     {
         return $this->diagnostic;
     }
@@ -24,7 +24,7 @@ class OrgOpentravelOta200305TransactionTypeDiagnostics extends AbstractModel
      *
      * @return self
      */
-    public function setDiagnostic(?array $diagnostic): self
+    public function setDiagnostic(array $diagnostic): self
     {
         $this->diagnostic = $diagnostic;
 

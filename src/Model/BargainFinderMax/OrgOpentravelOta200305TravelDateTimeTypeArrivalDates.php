@@ -18,7 +18,7 @@ class OrgOpentravelOta200305TravelDateTimeTypeArrivalDates extends AbstractModel
     /**
      * @return OrgOpentravelOta200305TravelDateTimeTypeArrivalDatesDay[]
      */
-    public function getDay(): ?array
+    public function getDay(): array
     {
         return $this->day;
     }
@@ -28,7 +28,7 @@ class OrgOpentravelOta200305TravelDateTimeTypeArrivalDates extends AbstractModel
      *
      * @return self
      */
-    public function setDay(?array $day): self
+    public function setDay(array $day): self
     {
         $this->day = $day;
 
@@ -38,7 +38,7 @@ class OrgOpentravelOta200305TravelDateTimeTypeArrivalDates extends AbstractModel
     /**
      * @return OrgOpentravelOta200305TravelDateTimeTypeArrivalDatesDaysRange[]
      */
-    public function getDaysRange(): ?array
+    public function getDaysRange(): array
     {
         return $this->daysRange;
     }
@@ -48,7 +48,7 @@ class OrgOpentravelOta200305TravelDateTimeTypeArrivalDates extends AbstractModel
      *
      * @return self
      */
-    public function setDaysRange(?array $daysRange): self
+    public function setDaysRange(array $daysRange): self
     {
         $this->daysRange = $daysRange;
 

@@ -18,7 +18,7 @@ class OrgOpentravelOta200305TravelDateTimeTypeArrivalDatesDay extends AbstractMo
      *
      * @return string
      */
-    public function getDate(): ?string
+    public function getDate(): string
     {
         return $this->date;
     }
@@ -30,7 +30,7 @@ class OrgOpentravelOta200305TravelDateTimeTypeArrivalDatesDay extends AbstractMo
      *
      * @return self
      */
-    public function setDate(?string $date): self
+    public function setDate(string $date): self
     {
         $this->date = $date;
 

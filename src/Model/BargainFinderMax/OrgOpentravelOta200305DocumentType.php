@@ -78,7 +78,7 @@ class OrgOpentravelOta200305DocumentType extends AbstractModel
      *
      * @return string
      */
-    public function getBirthDate(): ?string
+    public function getBirthDate(): string
     {
         return $this->birthDate;
     }
@@ -90,7 +90,7 @@ class OrgOpentravelOta200305DocumentType extends AbstractModel
      *
      * @return self
      */
-    public function setBirthDate(?string $birthDate): self
+    public function setBirthDate(string $birthDate): self
     {
         $this->birthDate = $birthDate;
 
@@ -102,7 +102,7 @@ class OrgOpentravelOta200305DocumentType extends AbstractModel
      *
      * @return string
      */
-    public function getDocHolderName(): ?string
+    public function getDocHolderName(): string
     {
         return $this->docHolderName;
     }
@@ -114,7 +114,7 @@ class OrgOpentravelOta200305DocumentType extends AbstractModel
      *
      * @return self
      */
-    public function setDocHolderName(?string $docHolderName): self
+    public function setDocHolderName(string $docHolderName): self
     {
         $this->docHolderName = $docHolderName;
 
@@ -126,7 +126,7 @@ class OrgOpentravelOta200305DocumentType extends AbstractModel
      *
      * @return string
      */
-    public function getDocID(): ?string
+    public function getDocID(): string
     {
         return $this->docID;
     }
@@ -138,7 +138,7 @@ class OrgOpentravelOta200305DocumentType extends AbstractModel
      *
      * @return self
      */
-    public function setDocID(?string $docID): self
+    public function setDocID(string $docID): self
     {
         $this->docID = $docID;
 
@@ -150,7 +150,7 @@ class OrgOpentravelOta200305DocumentType extends AbstractModel
      *
      * @return string
      */
-    public function getDocIssueAuthority(): ?string
+    public function getDocIssueAuthority(): string
     {
         return $this->docIssueAuthority;
     }
@@ -162,7 +162,7 @@ class OrgOpentravelOta200305DocumentType extends AbstractModel
      *
      * @return self
      */
-    public function setDocIssueAuthority(?string $docIssueAuthority): self
+    public function setDocIssueAuthority(string $docIssueAuthority): self
     {
         $this->docIssueAuthority = $docIssueAuthority;
 
@@ -174,7 +174,7 @@ class OrgOpentravelOta200305DocumentType extends AbstractModel
      *
      * @return string
      */
-    public function getDocIssueLocation(): ?string
+    public function getDocIssueLocation(): string
     {
         return $this->docIssueLocation;
     }
@@ -186,7 +186,7 @@ class OrgOpentravelOta200305DocumentType extends AbstractModel
      *
      * @return self
      */
-    public function setDocIssueLocation(?string $docIssueLocation): self
+    public function setDocIssueLocation(string $docIssueLocation): self
     {
         $this->docIssueLocation = $docIssueLocation;
 
@@ -196,7 +196,7 @@ class OrgOpentravelOta200305DocumentType extends AbstractModel
     /**
      * @return string[]
      */
-    public function getDocLimitations(): ?array
+    public function getDocLimitations(): array
     {
         return $this->docLimitations;
     }
@@ -206,7 +206,7 @@ class OrgOpentravelOta200305DocumentType extends AbstractModel
      *
      * @return self
      */
-    public function setDocLimitations(?array $docLimitations): self
+    public function setDocLimitations(array $docLimitations): self
     {
         $this->docLimitations = $docLimitations;
 
@@ -216,7 +216,7 @@ class OrgOpentravelOta200305DocumentType extends AbstractModel
     /**
      * @return string
      */
-    public function getDocType(): ?string
+    public function getDocType(): string
     {
         return $this->docType;
     }
@@ -226,7 +226,7 @@ class OrgOpentravelOta200305DocumentType extends AbstractModel
      *
      * @return self
      */
-    public function setDocType(?string $docType): self
+    public function setDocType(string $docType): self
     {
         $this->docType = $docType;
 
@@ -238,7 +238,7 @@ class OrgOpentravelOta200305DocumentType extends AbstractModel
      *
      * @return string
      */
-    public function getEffectiveDate(): ?string
+    public function getEffectiveDate(): string
     {
         return $this->effectiveDate;
     }
@@ -250,7 +250,7 @@ class OrgOpentravelOta200305DocumentType extends AbstractModel
      *
      * @return self
      */
-    public function setEffectiveDate(?string $effectiveDate): self
+    public function setEffectiveDate(string $effectiveDate): self
     {
         $this->effectiveDate = $effectiveDate;
 
@@ -262,7 +262,7 @@ class OrgOpentravelOta200305DocumentType extends AbstractModel
      *
      * @return string
      */
-    public function getExpireDate(): ?string
+    public function getExpireDate(): string
     {
         return $this->expireDate;
     }
@@ -274,7 +274,7 @@ class OrgOpentravelOta200305DocumentType extends AbstractModel
      *
      * @return self
      */
-    public function setExpireDate(?string $expireDate): self
+    public function setExpireDate(string $expireDate): self
     {
         $this->expireDate = $expireDate;
 
@@ -284,7 +284,7 @@ class OrgOpentravelOta200305DocumentType extends AbstractModel
     /**
      * @return string
      */
-    public function getGender(): ?string
+    public function getGender(): string
     {
         return $this->gender;
     }
@@ -294,7 +294,7 @@ class OrgOpentravelOta200305DocumentType extends AbstractModel
      *
      * @return self
      */
-    public function setGender(?string $gender): self
+    public function setGender(string $gender): self
     {
         $this->gender = $gender;
 
@@ -306,7 +306,7 @@ class OrgOpentravelOta200305DocumentType extends AbstractModel
      *
      * @return string
      */
-    public function getShareMarketInd(): ?string
+    public function getShareMarketInd(): string
     {
         return $this->shareMarketInd;
     }
@@ -318,7 +318,7 @@ class OrgOpentravelOta200305DocumentType extends AbstractModel
      *
      * @return self
      */
-    public function setShareMarketInd(?string $shareMarketInd): self
+    public function setShareMarketInd(string $shareMarketInd): self
     {
         $this->shareMarketInd = $shareMarketInd;
 
@@ -330,7 +330,7 @@ class OrgOpentravelOta200305DocumentType extends AbstractModel
      *
      * @return string
      */
-    public function getShareSynchInd(): ?string
+    public function getShareSynchInd(): string
     {
         return $this->shareSynchInd;
     }
@@ -342,7 +342,7 @@ class OrgOpentravelOta200305DocumentType extends AbstractModel
      *
      * @return self
      */
-    public function setShareSynchInd(?string $shareSynchInd): self
+    public function setShareSynchInd(string $shareSynchInd): self
     {
         $this->shareSynchInd = $shareSynchInd;
 

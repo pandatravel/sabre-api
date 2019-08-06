@@ -14,7 +14,7 @@ class PenaltiesType extends AbstractModel
     /**
      * @return Penalty[]
      */
-    public function getPenalties(): ?array
+    public function getPenalties(): array
     {
         return $this->penalties;
     }
@@ -24,7 +24,7 @@ class PenaltiesType extends AbstractModel
      *
      * @return self
      */
-    public function setPenalties(?array $penalties): self
+    public function setPenalties(array $penalties): self
     {
         $this->penalties = $penalties;
 

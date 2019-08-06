@@ -18,7 +18,7 @@ class GroupDescription extends AbstractModel
     /**
      * @return string
      */
-    public function getItineraryType(): ?string
+    public function getItineraryType(): string
     {
         return $this->itineraryType;
     }
@@ -28,7 +28,7 @@ class GroupDescription extends AbstractModel
      *
      * @return self
      */
-    public function setItineraryType(?string $itineraryType): self
+    public function setItineraryType(string $itineraryType): self
     {
         $this->itineraryType = $itineraryType;
 
@@ -38,7 +38,7 @@ class GroupDescription extends AbstractModel
     /**
      * @return LegDescriptionType[]
      */
-    public function getLegDescriptions(): ?array
+    public function getLegDescriptions(): array
     {
         return $this->legDescriptions;
     }
@@ -48,7 +48,7 @@ class GroupDescription extends AbstractModel
      *
      * @return self
      */
-    public function setLegDescriptions(?array $legDescriptions): self
+    public function setLegDescriptions(array $legDescriptions): self
     {
         $this->legDescriptions = $legDescriptions;
 

@@ -60,7 +60,7 @@ class ValidatingCarrierCommissionInfoType extends AbstractModel
      *
      * @return float
      */
-    public function getCommissionAmount(): ?float
+    public function getCommissionAmount(): float
     {
         return $this->commissionAmount;
     }
@@ -72,7 +72,7 @@ class ValidatingCarrierCommissionInfoType extends AbstractModel
      *
      * @return self
      */
-    public function setCommissionAmount(?float $commissionAmount): self
+    public function setCommissionAmount(float $commissionAmount): self
     {
         $this->commissionAmount = $commissionAmount;
 
@@ -84,7 +84,7 @@ class ValidatingCarrierCommissionInfoType extends AbstractModel
      *
      * @return string
      */
-    public function getCommissionContractQualifier(): ?string
+    public function getCommissionContractQualifier(): string
     {
         return $this->commissionContractQualifier;
     }
@@ -96,7 +96,7 @@ class ValidatingCarrierCommissionInfoType extends AbstractModel
      *
      * @return self
      */
-    public function setCommissionContractQualifier(?string $commissionContractQualifier): self
+    public function setCommissionContractQualifier(string $commissionContractQualifier): self
     {
         $this->commissionContractQualifier = $commissionContractQualifier;
 
@@ -108,7 +108,7 @@ class ValidatingCarrierCommissionInfoType extends AbstractModel
      *
      * @return float
      */
-    public function getCommissionPercent(): ?float
+    public function getCommissionPercent(): float
     {
         return $this->commissionPercent;
     }
@@ -120,7 +120,7 @@ class ValidatingCarrierCommissionInfoType extends AbstractModel
      *
      * @return self
      */
-    public function setCommissionPercent(?float $commissionPercent): self
+    public function setCommissionPercent(float $commissionPercent): self
     {
         $this->commissionPercent = $commissionPercent;
 
@@ -132,7 +132,7 @@ class ValidatingCarrierCommissionInfoType extends AbstractModel
      *
      * @return float
      */
-    public function getEarnedCommissionAmount(): ?float
+    public function getEarnedCommissionAmount(): float
     {
         return $this->earnedCommissionAmount;
     }
@@ -144,7 +144,7 @@ class ValidatingCarrierCommissionInfoType extends AbstractModel
      *
      * @return self
      */
-    public function setEarnedCommissionAmount(?float $earnedCommissionAmount): self
+    public function setEarnedCommissionAmount(float $earnedCommissionAmount): self
     {
         $this->earnedCommissionAmount = $earnedCommissionAmount;
 
@@ -156,7 +156,7 @@ class ValidatingCarrierCommissionInfoType extends AbstractModel
      *
      * @return FareComponentBreakdownType[]
      */
-    public function getFareComponentBreakdowns(): ?array
+    public function getFareComponentBreakdowns(): array
     {
         return $this->fareComponentBreakdowns;
     }
@@ -168,7 +168,7 @@ class ValidatingCarrierCommissionInfoType extends AbstractModel
      *
      * @return self
      */
-    public function setFareComponentBreakdowns(?array $fareComponentBreakdowns): self
+    public function setFareComponentBreakdowns(array $fareComponentBreakdowns): self
     {
         $this->fareComponentBreakdowns = $fareComponentBreakdowns;
 
@@ -180,7 +180,7 @@ class ValidatingCarrierCommissionInfoType extends AbstractModel
      *
      * @return string
      */
-    public function getSourcePcc(): ?string
+    public function getSourcePcc(): string
     {
         return $this->sourcePcc;
     }
@@ -192,7 +192,7 @@ class ValidatingCarrierCommissionInfoType extends AbstractModel
      *
      * @return self
      */
-    public function setSourcePcc(?string $sourcePcc): self
+    public function setSourcePcc(string $sourcePcc): self
     {
         $this->sourcePcc = $sourcePcc;
 
@@ -204,7 +204,7 @@ class ValidatingCarrierCommissionInfoType extends AbstractModel
      *
      * @return float
      */
-    public function getTotalAmountIncludingMarkUp(): ?float
+    public function getTotalAmountIncludingMarkUp(): float
     {
         return $this->totalAmountIncludingMarkUp;
     }
@@ -216,7 +216,7 @@ class ValidatingCarrierCommissionInfoType extends AbstractModel
      *
      * @return self
      */
-    public function setTotalAmountIncludingMarkUp(?float $totalAmountIncludingMarkUp): self
+    public function setTotalAmountIncludingMarkUp(float $totalAmountIncludingMarkUp): self
     {
         $this->totalAmountIncludingMarkUp = $totalAmountIncludingMarkUp;
 
@@ -228,7 +228,7 @@ class ValidatingCarrierCommissionInfoType extends AbstractModel
      *
      * @return string
      */
-    public function getValidatingCarrier(): ?string
+    public function getValidatingCarrier(): string
     {
         return $this->validatingCarrier;
     }
@@ -240,7 +240,7 @@ class ValidatingCarrierCommissionInfoType extends AbstractModel
      *
      * @return self
      */
-    public function setValidatingCarrier(?string $validatingCarrier): self
+    public function setValidatingCarrier(string $validatingCarrier): self
     {
         $this->validatingCarrier = $validatingCarrier;
 

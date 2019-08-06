@@ -42,6 +42,9 @@ class OrgOpentravelOta200305ClassOfServiceElemTypeNormalizer implements Denormal
         if (property_exists($data, 'Code')) {
             $object->setCode($data->{'Code'});
         }
+        if (property_exists($data, 'PreferLevel')) {
+            $object->setPreferLevel($data->{'PreferLevel'});
+        }
 
         return $object;
     }
@@ -51,6 +54,9 @@ class OrgOpentravelOta200305ClassOfServiceElemTypeNormalizer implements Denormal
         $data = new \stdClass();
         if (null !== $object->getCode()) {
             $data->{'Code'} = $object->getCode();
+        }
+        if (null !== $object->getPreferLevel()) {
+            $data->{'PreferLevel'} = $object->getPreferLevel();
         }
 
         return $data;

@@ -24,7 +24,7 @@ class OrgOpentravelOta200305AirlineType extends AbstractModel
      *
      * @return string
      */
-    public function getMarketing(): ?string
+    public function getMarketing(): string
     {
         return $this->marketing;
     }
@@ -36,7 +36,7 @@ class OrgOpentravelOta200305AirlineType extends AbstractModel
      *
      * @return self
      */
-    public function setMarketing(?string $marketing): self
+    public function setMarketing(string $marketing): self
     {
         $this->marketing = $marketing;
 
@@ -48,7 +48,7 @@ class OrgOpentravelOta200305AirlineType extends AbstractModel
      *
      * @return string
      */
-    public function getOperating(): ?string
+    public function getOperating(): string
     {
         return $this->operating;
     }
@@ -60,7 +60,7 @@ class OrgOpentravelOta200305AirlineType extends AbstractModel
      *
      * @return self
      */
-    public function setOperating(?string $operating): self
+    public function setOperating(string $operating): self
     {
         $this->operating = $operating;
 

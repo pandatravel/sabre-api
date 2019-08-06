@@ -42,7 +42,7 @@ class CurrencyConversionType extends AbstractModel
      *
      * @return float
      */
-    public function getExchangeRate(): ?float
+    public function getExchangeRate(): float
     {
         return $this->exchangeRate;
     }
@@ -54,7 +54,7 @@ class CurrencyConversionType extends AbstractModel
      *
      * @return self
      */
-    public function setExchangeRate(?float $exchangeRate): self
+    public function setExchangeRate(float $exchangeRate): self
     {
         $this->exchangeRate = $exchangeRate;
 
@@ -66,7 +66,7 @@ class CurrencyConversionType extends AbstractModel
      *
      * @return float
      */
-    public function getExchangeRateUsed(): ?float
+    public function getExchangeRateUsed(): float
     {
         return $this->exchangeRateUsed;
     }
@@ -78,7 +78,7 @@ class CurrencyConversionType extends AbstractModel
      *
      * @return self
      */
-    public function setExchangeRateUsed(?float $exchangeRateUsed): self
+    public function setExchangeRateUsed(float $exchangeRateUsed): self
     {
         $this->exchangeRateUsed = $exchangeRateUsed;
 
@@ -90,7 +90,7 @@ class CurrencyConversionType extends AbstractModel
      *
      * @return string
      */
-    public function getFrom(): ?string
+    public function getFrom(): string
     {
         return $this->from;
     }
@@ -102,7 +102,7 @@ class CurrencyConversionType extends AbstractModel
      *
      * @return self
      */
-    public function setFrom(?string $from): self
+    public function setFrom(string $from): self
     {
         $this->from = $from;
 
@@ -114,7 +114,7 @@ class CurrencyConversionType extends AbstractModel
      *
      * @return bool
      */
-    public function getOverriden(): ?bool
+    public function getOverriden(): bool
     {
         return $this->overriden;
     }
@@ -126,7 +126,7 @@ class CurrencyConversionType extends AbstractModel
      *
      * @return self
      */
-    public function setOverriden(?bool $overriden): self
+    public function setOverriden(bool $overriden): self
     {
         $this->overriden = $overriden;
 
@@ -138,7 +138,7 @@ class CurrencyConversionType extends AbstractModel
      *
      * @return string
      */
-    public function getTo(): ?string
+    public function getTo(): string
     {
         return $this->to;
     }
@@ -150,7 +150,7 @@ class CurrencyConversionType extends AbstractModel
      *
      * @return self
      */
-    public function setTo(?string $to): self
+    public function setTo(string $to): self
     {
         $this->to = $to;
 

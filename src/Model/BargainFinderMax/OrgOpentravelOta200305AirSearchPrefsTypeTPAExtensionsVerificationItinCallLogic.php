@@ -24,7 +24,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsVerificationItinCallL
      *
      * @return bool
      */
-    public function getAlwaysCheckAvailability(): ?bool
+    public function getAlwaysCheckAvailability(): bool
     {
         return $this->alwaysCheckAvailability;
     }
@@ -36,7 +36,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsVerificationItinCallL
      *
      * @return self
      */
-    public function setAlwaysCheckAvailability(?bool $alwaysCheckAvailability): self
+    public function setAlwaysCheckAvailability(bool $alwaysCheckAvailability): self
     {
         $this->alwaysCheckAvailability = $alwaysCheckAvailability;
 
@@ -48,7 +48,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsVerificationItinCallL
      *
      * @return string
      */
-    public function getValue(): ?string
+    public function getValue(): string
     {
         return $this->value;
     }
@@ -60,7 +60,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsVerificationItinCallL
      *
      * @return self
      */
-    public function setValue(?string $value): self
+    public function setValue(string $value): self
     {
         $this->value = $value;
 

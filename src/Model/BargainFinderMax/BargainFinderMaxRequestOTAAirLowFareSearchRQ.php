@@ -135,7 +135,7 @@ class BargainFinderMaxRequestOTAAirLowFareSearchRQ extends AbstractModel
     /**
      * @return string
      */
-    public function getAltLangID(): ?string
+    public function getAltLangID(): string
     {
         return $this->altLangID;
     }
@@ -145,7 +145,7 @@ class BargainFinderMaxRequestOTAAirLowFareSearchRQ extends AbstractModel
      *
      * @return self
      */
-    public function setAltLangID(?string $altLangID): self
+    public function setAltLangID(string $altLangID): self
     {
         $this->altLangID = $altLangID;
 
@@ -157,7 +157,7 @@ class BargainFinderMaxRequestOTAAirLowFareSearchRQ extends AbstractModel
      *
      * @return bool
      */
-    public function getAvailableFlightsOnly(): ?bool
+    public function getAvailableFlightsOnly(): bool
     {
         return $this->availableFlightsOnly;
     }
@@ -169,7 +169,7 @@ class BargainFinderMaxRequestOTAAirLowFareSearchRQ extends AbstractModel
      *
      * @return self
      */
-    public function setAvailableFlightsOnly(?bool $availableFlightsOnly): self
+    public function setAvailableFlightsOnly(bool $availableFlightsOnly): self
     {
         $this->availableFlightsOnly = $availableFlightsOnly;
 
@@ -181,7 +181,7 @@ class BargainFinderMaxRequestOTAAirLowFareSearchRQ extends AbstractModel
      *
      * @return bool
      */
-    public function getDirectFlightsOnly(): ?bool
+    public function getDirectFlightsOnly(): bool
     {
         return $this->directFlightsOnly;
     }
@@ -193,7 +193,7 @@ class BargainFinderMaxRequestOTAAirLowFareSearchRQ extends AbstractModel
      *
      * @return self
      */
-    public function setDirectFlightsOnly(?bool $directFlightsOnly): self
+    public function setDirectFlightsOnly(bool $directFlightsOnly): self
     {
         $this->directFlightsOnly = $directFlightsOnly;
 
@@ -205,7 +205,7 @@ class BargainFinderMaxRequestOTAAirLowFareSearchRQ extends AbstractModel
      *
      * @return string
      */
-    public function getEchoToken(): ?string
+    public function getEchoToken(): string
     {
         return $this->echoToken;
     }
@@ -217,7 +217,7 @@ class BargainFinderMaxRequestOTAAirLowFareSearchRQ extends AbstractModel
      *
      * @return self
      */
-    public function setEchoToken(?string $echoToken): self
+    public function setEchoToken(string $echoToken): self
     {
         $this->echoToken = $echoToken;
 
@@ -229,7 +229,7 @@ class BargainFinderMaxRequestOTAAirLowFareSearchRQ extends AbstractModel
      *
      * @return string
      */
-    public function getMaxResponses(): ?string
+    public function getMaxResponses(): string
     {
         return $this->maxResponses;
     }
@@ -241,7 +241,7 @@ class BargainFinderMaxRequestOTAAirLowFareSearchRQ extends AbstractModel
      *
      * @return self
      */
-    public function setMaxResponses(?string $maxResponses): self
+    public function setMaxResponses(string $maxResponses): self
     {
         $this->maxResponses = $maxResponses;
 
@@ -251,7 +251,7 @@ class BargainFinderMaxRequestOTAAirLowFareSearchRQ extends AbstractModel
     /**
      * @return OrgOpentravelOta200305OTAAirLowFareSearchRQOriginDestinationInformation[]
      */
-    public function getOriginDestinationInformation(): ?array
+    public function getOriginDestinationInformation(): array
     {
         return $this->originDestinationInformation;
     }
@@ -261,7 +261,7 @@ class BargainFinderMaxRequestOTAAirLowFareSearchRQ extends AbstractModel
      *
      * @return self
      */
-    public function setOriginDestinationInformation(?array $originDestinationInformation): self
+    public function setOriginDestinationInformation(array $originDestinationInformation): self
     {
         $this->originDestinationInformation = $originDestinationInformation;
 
@@ -273,7 +273,7 @@ class BargainFinderMaxRequestOTAAirLowFareSearchRQ extends AbstractModel
      *
      * @return OrgOpentravelOta200305POSType
      */
-    public function getPOS(): ?OrgOpentravelOta200305POSType
+    public function getPOS(): OrgOpentravelOta200305POSType
     {
         return $this->pOS;
     }
@@ -285,7 +285,7 @@ class BargainFinderMaxRequestOTAAirLowFareSearchRQ extends AbstractModel
      *
      * @return self
      */
-    public function setPOS(?OrgOpentravelOta200305POSType $pOS): self
+    public function setPOS(OrgOpentravelOta200305POSType $pOS): self
     {
         $this->pOS = $pOS;
 
@@ -297,7 +297,7 @@ class BargainFinderMaxRequestOTAAirLowFareSearchRQ extends AbstractModel
      *
      * @return string
      */
-    public function getPrimaryLangID(): ?string
+    public function getPrimaryLangID(): string
     {
         return $this->primaryLangID;
     }
@@ -309,7 +309,7 @@ class BargainFinderMaxRequestOTAAirLowFareSearchRQ extends AbstractModel
      *
      * @return self
      */
-    public function setPrimaryLangID(?string $primaryLangID): self
+    public function setPrimaryLangID(string $primaryLangID): self
     {
         $this->primaryLangID = $primaryLangID;
 
@@ -319,7 +319,7 @@ class BargainFinderMaxRequestOTAAirLowFareSearchRQ extends AbstractModel
     /**
      * @return string
      */
-    public function getResponseType(): ?string
+    public function getResponseType(): string
     {
         return $this->responseType;
     }
@@ -329,7 +329,7 @@ class BargainFinderMaxRequestOTAAirLowFareSearchRQ extends AbstractModel
      *
      * @return self
      */
-    public function setResponseType(?string $responseType): self
+    public function setResponseType(string $responseType): self
     {
         $this->responseType = $responseType;
 
@@ -339,7 +339,7 @@ class BargainFinderMaxRequestOTAAirLowFareSearchRQ extends AbstractModel
     /**
      * @return string
      */
-    public function getResponseVersion(): ?string
+    public function getResponseVersion(): string
     {
         return $this->responseVersion;
     }
@@ -349,7 +349,7 @@ class BargainFinderMaxRequestOTAAirLowFareSearchRQ extends AbstractModel
      *
      * @return self
      */
-    public function setResponseVersion(?string $responseVersion): self
+    public function setResponseVersion(string $responseVersion): self
     {
         $this->responseVersion = $responseVersion;
 
@@ -361,7 +361,7 @@ class BargainFinderMaxRequestOTAAirLowFareSearchRQ extends AbstractModel
      *
      * @return bool
      */
-    public function getSeparateMessages(): ?bool
+    public function getSeparateMessages(): bool
     {
         return $this->separateMessages;
     }
@@ -373,7 +373,7 @@ class BargainFinderMaxRequestOTAAirLowFareSearchRQ extends AbstractModel
      *
      * @return self
      */
-    public function setSeparateMessages(?bool $separateMessages): self
+    public function setSeparateMessages(bool $separateMessages): self
     {
         $this->separateMessages = $separateMessages;
 
@@ -385,7 +385,7 @@ class BargainFinderMaxRequestOTAAirLowFareSearchRQ extends AbstractModel
      *
      * @return string
      */
-    public function getSequenceNmbr(): ?string
+    public function getSequenceNmbr(): string
     {
         return $this->sequenceNmbr;
     }
@@ -397,7 +397,7 @@ class BargainFinderMaxRequestOTAAirLowFareSearchRQ extends AbstractModel
      *
      * @return self
      */
-    public function setSequenceNmbr(?string $sequenceNmbr): self
+    public function setSequenceNmbr(string $sequenceNmbr): self
     {
         $this->sequenceNmbr = $sequenceNmbr;
 
@@ -409,7 +409,7 @@ class BargainFinderMaxRequestOTAAirLowFareSearchRQ extends AbstractModel
      *
      * @return OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensions
      */
-    public function getTPAExtensions(): ?OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensions
+    public function getTPAExtensions(): OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensions
     {
         return $this->tPAExtensions;
     }
@@ -421,7 +421,7 @@ class BargainFinderMaxRequestOTAAirLowFareSearchRQ extends AbstractModel
      *
      * @return self
      */
-    public function setTPAExtensions(?OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensions $tPAExtensions): self
+    public function setTPAExtensions(OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensions $tPAExtensions): self
     {
         $this->tPAExtensions = $tPAExtensions;
 
@@ -433,7 +433,7 @@ class BargainFinderMaxRequestOTAAirLowFareSearchRQ extends AbstractModel
      *
      * @return string
      */
-    public function getTarget(): ?string
+    public function getTarget(): string
     {
         return $this->target;
     }
@@ -445,7 +445,7 @@ class BargainFinderMaxRequestOTAAirLowFareSearchRQ extends AbstractModel
      *
      * @return self
      */
-    public function setTarget(?string $target): self
+    public function setTarget(string $target): self
     {
         $this->target = $target;
 
@@ -457,7 +457,7 @@ class BargainFinderMaxRequestOTAAirLowFareSearchRQ extends AbstractModel
      *
      * @return string
      */
-    public function getTimeStamp(): ?string
+    public function getTimeStamp(): string
     {
         return $this->timeStamp;
     }
@@ -469,7 +469,7 @@ class BargainFinderMaxRequestOTAAirLowFareSearchRQ extends AbstractModel
      *
      * @return self
      */
-    public function setTimeStamp(?string $timeStamp): self
+    public function setTimeStamp(string $timeStamp): self
     {
         $this->timeStamp = $timeStamp;
 
@@ -481,7 +481,7 @@ class BargainFinderMaxRequestOTAAirLowFareSearchRQ extends AbstractModel
      *
      * @return string
      */
-    public function getTransactionIdentifier(): ?string
+    public function getTransactionIdentifier(): string
     {
         return $this->transactionIdentifier;
     }
@@ -493,7 +493,7 @@ class BargainFinderMaxRequestOTAAirLowFareSearchRQ extends AbstractModel
      *
      * @return self
      */
-    public function setTransactionIdentifier(?string $transactionIdentifier): self
+    public function setTransactionIdentifier(string $transactionIdentifier): self
     {
         $this->transactionIdentifier = $transactionIdentifier;
 
@@ -505,7 +505,7 @@ class BargainFinderMaxRequestOTAAirLowFareSearchRQ extends AbstractModel
      *
      * @return string
      */
-    public function getTransactionStatusCode(): ?string
+    public function getTransactionStatusCode(): string
     {
         return $this->transactionStatusCode;
     }
@@ -517,7 +517,7 @@ class BargainFinderMaxRequestOTAAirLowFareSearchRQ extends AbstractModel
      *
      * @return self
      */
-    public function setTransactionStatusCode(?string $transactionStatusCode): self
+    public function setTransactionStatusCode(string $transactionStatusCode): self
     {
         $this->transactionStatusCode = $transactionStatusCode;
 
@@ -529,7 +529,7 @@ class BargainFinderMaxRequestOTAAirLowFareSearchRQ extends AbstractModel
      *
      * @return OrgOpentravelOta200305AirSearchPrefsType
      */
-    public function getTravelPreferences(): ?OrgOpentravelOta200305AirSearchPrefsType
+    public function getTravelPreferences(): OrgOpentravelOta200305AirSearchPrefsType
     {
         return $this->travelPreferences;
     }
@@ -541,7 +541,7 @@ class BargainFinderMaxRequestOTAAirLowFareSearchRQ extends AbstractModel
      *
      * @return self
      */
-    public function setTravelPreferences(?OrgOpentravelOta200305AirSearchPrefsType $travelPreferences): self
+    public function setTravelPreferences(OrgOpentravelOta200305AirSearchPrefsType $travelPreferences): self
     {
         $this->travelPreferences = $travelPreferences;
 
@@ -553,7 +553,7 @@ class BargainFinderMaxRequestOTAAirLowFareSearchRQ extends AbstractModel
      *
      * @return OrgOpentravelOta200305TravelerInfoSummaryType
      */
-    public function getTravelerInfoSummary(): ?OrgOpentravelOta200305TravelerInfoSummaryType
+    public function getTravelerInfoSummary(): OrgOpentravelOta200305TravelerInfoSummaryType
     {
         return $this->travelerInfoSummary;
     }
@@ -565,7 +565,7 @@ class BargainFinderMaxRequestOTAAirLowFareSearchRQ extends AbstractModel
      *
      * @return self
      */
-    public function setTravelerInfoSummary(?OrgOpentravelOta200305TravelerInfoSummaryType $travelerInfoSummary): self
+    public function setTravelerInfoSummary(OrgOpentravelOta200305TravelerInfoSummaryType $travelerInfoSummary): self
     {
         $this->travelerInfoSummary = $travelerInfoSummary;
 
@@ -577,7 +577,7 @@ class BargainFinderMaxRequestOTAAirLowFareSearchRQ extends AbstractModel
      *
      * @return bool
      */
-    public function getTruncateMessages(): ?bool
+    public function getTruncateMessages(): bool
     {
         return $this->truncateMessages;
     }
@@ -589,7 +589,7 @@ class BargainFinderMaxRequestOTAAirLowFareSearchRQ extends AbstractModel
      *
      * @return self
      */
-    public function setTruncateMessages(?bool $truncateMessages): self
+    public function setTruncateMessages(bool $truncateMessages): self
     {
         $this->truncateMessages = $truncateMessages;
 
@@ -599,7 +599,7 @@ class BargainFinderMaxRequestOTAAirLowFareSearchRQ extends AbstractModel
     /**
      * @return string
      */
-    public function getVersion(): ?string
+    public function getVersion(): string
     {
         return $this->version;
     }
@@ -609,7 +609,7 @@ class BargainFinderMaxRequestOTAAirLowFareSearchRQ extends AbstractModel
      *
      * @return self
      */
-    public function setVersion(?string $version): self
+    public function setVersion(string $version): self
     {
         $this->version = $version;
 

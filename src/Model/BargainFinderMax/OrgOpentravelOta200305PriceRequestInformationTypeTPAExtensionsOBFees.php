@@ -18,7 +18,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsOBFees exten
     /**
      * @return bool
      */
-    public function getRType(): ?bool
+    public function getRType(): bool
     {
         return $this->rType;
     }
@@ -28,7 +28,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsOBFees exten
      *
      * @return self
      */
-    public function setRType(?bool $rType): self
+    public function setRType(bool $rType): self
     {
         $this->rType = $rType;
 
@@ -38,7 +38,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsOBFees exten
     /**
      * @return bool
      */
-    public function getTType(): ?bool
+    public function getTType(): bool
     {
         return $this->tType;
     }
@@ -48,7 +48,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsOBFees exten
      *
      * @return self
      */
-    public function setTType(?bool $tType): self
+    public function setTType(bool $tType): self
     {
         $this->tType = $tType;
 

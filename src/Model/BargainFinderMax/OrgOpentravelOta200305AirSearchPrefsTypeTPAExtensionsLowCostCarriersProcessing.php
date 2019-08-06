@@ -18,7 +18,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsLowCostCarriersProces
      *
      * @return bool
      */
-    public function getDisable(): ?bool
+    public function getDisable(): bool
     {
         return $this->disable;
     }
@@ -30,7 +30,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsLowCostCarriersProces
      *
      * @return self
      */
-    public function setDisable(?bool $disable): self
+    public function setDisable(bool $disable): self
     {
         $this->disable = $disable;
 

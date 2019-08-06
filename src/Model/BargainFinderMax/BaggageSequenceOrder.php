@@ -18,7 +18,7 @@ class BaggageSequenceOrder extends AbstractModel
     /**
      * @return int
      */
-    public function getBaggageRef(): ?int
+    public function getBaggageRef(): int
     {
         return $this->baggageRef;
     }
@@ -28,7 +28,7 @@ class BaggageSequenceOrder extends AbstractModel
      *
      * @return self
      */
-    public function setBaggageRef(?int $baggageRef): self
+    public function setBaggageRef(int $baggageRef): self
     {
         $this->baggageRef = $baggageRef;
 
@@ -38,7 +38,7 @@ class BaggageSequenceOrder extends AbstractModel
     /**
      * @return int
      */
-    public function getStandardBag(): ?int
+    public function getStandardBag(): int
     {
         return $this->standardBag;
     }
@@ -48,7 +48,7 @@ class BaggageSequenceOrder extends AbstractModel
      *
      * @return self
      */
-    public function setStandardBag(?int $standardBag): self
+    public function setStandardBag(int $standardBag): self
     {
         $this->standardBag = $standardBag;
 

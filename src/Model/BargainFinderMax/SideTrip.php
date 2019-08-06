@@ -24,7 +24,7 @@ class SideTrip extends AbstractModel
      *
      * @return bool
      */
-    public function getBegin(): ?bool
+    public function getBegin(): bool
     {
         return $this->begin;
     }
@@ -36,7 +36,7 @@ class SideTrip extends AbstractModel
      *
      * @return self
      */
-    public function setBegin(?bool $begin): self
+    public function setBegin(bool $begin): self
     {
         $this->begin = $begin;
 
@@ -48,7 +48,7 @@ class SideTrip extends AbstractModel
      *
      * @return bool
      */
-    public function getEnd(): ?bool
+    public function getEnd(): bool
     {
         return $this->end;
     }
@@ -60,7 +60,7 @@ class SideTrip extends AbstractModel
      *
      * @return self
      */
-    public function setEnd(?bool $end): self
+    public function setEnd(bool $end): self
     {
         $this->end = $end;
 

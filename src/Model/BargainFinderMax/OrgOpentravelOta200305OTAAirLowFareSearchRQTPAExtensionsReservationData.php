@@ -18,7 +18,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsReservationData ex
      *
      * @return string
      */
-    public function getDKNumber(): ?string
+    public function getDKNumber(): string
     {
         return $this->dKNumber;
     }
@@ -30,7 +30,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsReservationData ex
      *
      * @return self
      */
-    public function setDKNumber(?string $dKNumber): self
+    public function setDKNumber(string $dKNumber): self
     {
         $this->dKNumber = $dKNumber;
 

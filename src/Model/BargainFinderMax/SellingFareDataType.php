@@ -78,7 +78,7 @@ class SellingFareDataType extends AbstractModel
      *
      * @return float
      */
-    public function getBaseFareAmount(): ?float
+    public function getBaseFareAmount(): float
     {
         return $this->baseFareAmount;
     }
@@ -90,7 +90,7 @@ class SellingFareDataType extends AbstractModel
      *
      * @return self
      */
-    public function setBaseFareAmount(?float $baseFareAmount): self
+    public function setBaseFareAmount(float $baseFareAmount): self
     {
         $this->baseFareAmount = $baseFareAmount;
 
@@ -102,7 +102,7 @@ class SellingFareDataType extends AbstractModel
      *
      * @return float
      */
-    public function getConstructedTotalAmount(): ?float
+    public function getConstructedTotalAmount(): float
     {
         return $this->constructedTotalAmount;
     }
@@ -114,7 +114,7 @@ class SellingFareDataType extends AbstractModel
      *
      * @return self
      */
-    public function setConstructedTotalAmount(?float $constructedTotalAmount): self
+    public function setConstructedTotalAmount(float $constructedTotalAmount): self
     {
         $this->constructedTotalAmount = $constructedTotalAmount;
 
@@ -126,7 +126,7 @@ class SellingFareDataType extends AbstractModel
      *
      * @return float
      */
-    public function getEquivalentAmount(): ?float
+    public function getEquivalentAmount(): float
     {
         return $this->equivalentAmount;
     }
@@ -138,7 +138,7 @@ class SellingFareDataType extends AbstractModel
      *
      * @return self
      */
-    public function setEquivalentAmount(?float $equivalentAmount): self
+    public function setEquivalentAmount(float $equivalentAmount): self
     {
         $this->equivalentAmount = $equivalentAmount;
 
@@ -150,7 +150,7 @@ class SellingFareDataType extends AbstractModel
      *
      * @return string
      */
-    public function getFareCalculation(): ?string
+    public function getFareCalculation(): string
     {
         return $this->fareCalculation;
     }
@@ -162,7 +162,7 @@ class SellingFareDataType extends AbstractModel
      *
      * @return self
      */
-    public function setFareCalculation(?string $fareCalculation): self
+    public function setFareCalculation(string $fareCalculation): self
     {
         $this->fareCalculation = $fareCalculation;
 
@@ -174,7 +174,7 @@ class SellingFareDataType extends AbstractModel
      *
      * @return bool
      */
-    public function getFareRetailerRule(): ?bool
+    public function getFareRetailerRule(): bool
     {
         return $this->fareRetailerRule;
     }
@@ -186,7 +186,7 @@ class SellingFareDataType extends AbstractModel
      *
      * @return self
      */
-    public function setFareRetailerRule(?bool $fareRetailerRule): self
+    public function setFareRetailerRule(bool $fareRetailerRule): self
     {
         $this->fareRetailerRule = $fareRetailerRule;
 
@@ -198,7 +198,7 @@ class SellingFareDataType extends AbstractModel
      *
      * @return HandlingMarkupType[]
      */
-    public function getHandlingMarkups(): ?array
+    public function getHandlingMarkups(): array
     {
         return $this->handlingMarkups;
     }
@@ -210,7 +210,7 @@ class SellingFareDataType extends AbstractModel
      *
      * @return self
      */
-    public function setHandlingMarkups(?array $handlingMarkups): self
+    public function setHandlingMarkups(array $handlingMarkups): self
     {
         $this->handlingMarkups = $handlingMarkups;
 
@@ -222,7 +222,7 @@ class SellingFareDataType extends AbstractModel
      *
      * @return TaxSummaryIDType[]
      */
-    public function getTaxSummaries(): ?array
+    public function getTaxSummaries(): array
     {
         return $this->taxSummaries;
     }
@@ -234,7 +234,7 @@ class SellingFareDataType extends AbstractModel
      *
      * @return self
      */
-    public function setTaxSummaries(?array $taxSummaries): self
+    public function setTaxSummaries(array $taxSummaries): self
     {
         $this->taxSummaries = $taxSummaries;
 
@@ -246,7 +246,7 @@ class SellingFareDataType extends AbstractModel
      *
      * @return TaxIDType[]
      */
-    public function getTaxes(): ?array
+    public function getTaxes(): array
     {
         return $this->taxes;
     }
@@ -258,7 +258,7 @@ class SellingFareDataType extends AbstractModel
      *
      * @return self
      */
-    public function setTaxes(?array $taxes): self
+    public function setTaxes(array $taxes): self
     {
         $this->taxes = $taxes;
 
@@ -270,7 +270,7 @@ class SellingFareDataType extends AbstractModel
      *
      * @return float
      */
-    public function getTotalPerPassenger(): ?float
+    public function getTotalPerPassenger(): float
     {
         return $this->totalPerPassenger;
     }
@@ -282,7 +282,7 @@ class SellingFareDataType extends AbstractModel
      *
      * @return self
      */
-    public function setTotalPerPassenger(?float $totalPerPassenger): self
+    public function setTotalPerPassenger(float $totalPerPassenger): self
     {
         $this->totalPerPassenger = $totalPerPassenger;
 
@@ -294,7 +294,7 @@ class SellingFareDataType extends AbstractModel
      *
      * @return float
      */
-    public function getTotalTaxAmount(): ?float
+    public function getTotalTaxAmount(): float
     {
         return $this->totalTaxAmount;
     }
@@ -306,7 +306,7 @@ class SellingFareDataType extends AbstractModel
      *
      * @return self
      */
-    public function setTotalTaxAmount(?float $totalTaxAmount): self
+    public function setTotalTaxAmount(float $totalTaxAmount): self
     {
         $this->totalTaxAmount = $totalTaxAmount;
 
@@ -318,7 +318,7 @@ class SellingFareDataType extends AbstractModel
      *
      * @return string
      */
-    public function getType(): ?string
+    public function getType(): string
     {
         return $this->type;
     }
@@ -330,7 +330,7 @@ class SellingFareDataType extends AbstractModel
      *
      * @return self
      */
-    public function setType(?string $type): self
+    public function setType(string $type): self
     {
         $this->type = $type;
 

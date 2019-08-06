@@ -14,7 +14,7 @@ class Segment extends AbstractModel
     /**
      * @return int
      */
-    public function getId(): ?int
+    public function getId(): int
     {
         return $this->id;
     }
@@ -24,7 +24,7 @@ class Segment extends AbstractModel
      *
      * @return self
      */
-    public function setId(?int $id): self
+    public function setId(int $id): self
     {
         $this->id = $id;
 

@@ -14,7 +14,7 @@ class GroupedItineraryResponse extends AbstractModel
     /**
      * @return GroupedItineraryResponseGroupedItineraryResponse
      */
-    public function getGroupedItineraryResponse(): ?GroupedItineraryResponseGroupedItineraryResponse
+    public function getGroupedItineraryResponse(): GroupedItineraryResponseGroupedItineraryResponse
     {
         return $this->groupedItineraryResponse;
     }
@@ -24,7 +24,7 @@ class GroupedItineraryResponse extends AbstractModel
      *
      * @return self
      */
-    public function setGroupedItineraryResponse(?GroupedItineraryResponseGroupedItineraryResponse $groupedItineraryResponse): self
+    public function setGroupedItineraryResponse(GroupedItineraryResponseGroupedItineraryResponse $groupedItineraryResponse): self
     {
         $this->groupedItineraryResponse = $groupedItineraryResponse;
 

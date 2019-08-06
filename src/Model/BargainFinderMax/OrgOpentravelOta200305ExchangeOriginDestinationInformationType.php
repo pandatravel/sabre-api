@@ -128,7 +128,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationInformationType extends Abs
      *
      * @return OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeAlternateTime
      */
-    public function getAlternateTime(): ?OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeAlternateTime
+    public function getAlternateTime(): OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeAlternateTime
     {
         return $this->alternateTime;
     }
@@ -140,7 +140,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationInformationType extends Abs
      *
      * @return self
      */
-    public function setAlternateTime(?OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeAlternateTime $alternateTime): self
+    public function setAlternateTime(OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeAlternateTime $alternateTime): self
     {
         $this->alternateTime = $alternateTime;
 
@@ -152,7 +152,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationInformationType extends Abs
      *
      * @return string
      */
-    public function getArrivalDateTime(): ?string
+    public function getArrivalDateTime(): string
     {
         return $this->arrivalDateTime;
     }
@@ -164,7 +164,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationInformationType extends Abs
      *
      * @return self
      */
-    public function setArrivalDateTime(?string $arrivalDateTime): self
+    public function setArrivalDateTime(string $arrivalDateTime): self
     {
         $this->arrivalDateTime = $arrivalDateTime;
 
@@ -176,7 +176,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationInformationType extends Abs
      *
      * @return OrgOpentravelOta200305TravelDateTimeTypeArrivalDates
      */
-    public function getArrivalDates(): ?OrgOpentravelOta200305TravelDateTimeTypeArrivalDates
+    public function getArrivalDates(): OrgOpentravelOta200305TravelDateTimeTypeArrivalDates
     {
         return $this->arrivalDates;
     }
@@ -188,7 +188,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationInformationType extends Abs
      *
      * @return self
      */
-    public function setArrivalDates(?OrgOpentravelOta200305TravelDateTimeTypeArrivalDates $arrivalDates): self
+    public function setArrivalDates(OrgOpentravelOta200305TravelDateTimeTypeArrivalDates $arrivalDates): self
     {
         $this->arrivalDates = $arrivalDates;
 
@@ -200,7 +200,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationInformationType extends Abs
      *
      * @return string
      */
-    public function getArrivalWindow(): ?string
+    public function getArrivalWindow(): string
     {
         return $this->arrivalWindow;
     }
@@ -212,7 +212,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationInformationType extends Abs
      *
      * @return self
      */
-    public function setArrivalWindow(?string $arrivalWindow): self
+    public function setArrivalWindow(string $arrivalWindow): self
     {
         $this->arrivalWindow = $arrivalWindow;
 
@@ -224,7 +224,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationInformationType extends Abs
      *
      * @return OrgOpentravelOta200305CabinPrefType
      */
-    public function getCabinPref(): ?OrgOpentravelOta200305CabinPrefType
+    public function getCabinPref(): OrgOpentravelOta200305CabinPrefType
     {
         return $this->cabinPref;
     }
@@ -236,7 +236,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationInformationType extends Abs
      *
      * @return self
      */
-    public function setCabinPref(?OrgOpentravelOta200305CabinPrefType $cabinPref): self
+    public function setCabinPref(OrgOpentravelOta200305CabinPrefType $cabinPref): self
     {
         $this->cabinPref = $cabinPref;
 
@@ -248,7 +248,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationInformationType extends Abs
      *
      * @return OrgOpentravelOta200305ConnectionType
      */
-    public function getConnectionLocations(): ?OrgOpentravelOta200305ConnectionType
+    public function getConnectionLocations(): OrgOpentravelOta200305ConnectionType
     {
         return $this->connectionLocations;
     }
@@ -260,7 +260,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationInformationType extends Abs
      *
      * @return self
      */
-    public function setConnectionLocations(?OrgOpentravelOta200305ConnectionType $connectionLocations): self
+    public function setConnectionLocations(OrgOpentravelOta200305ConnectionType $connectionLocations): self
     {
         $this->connectionLocations = $connectionLocations;
 
@@ -272,7 +272,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationInformationType extends Abs
      *
      * @return OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeConnectionTime
      */
-    public function getConnectionTime(): ?OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeConnectionTime
+    public function getConnectionTime(): OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeConnectionTime
     {
         return $this->connectionTime;
     }
@@ -284,7 +284,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationInformationType extends Abs
      *
      * @return self
      */
-    public function setConnectionTime(?OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeConnectionTime $connectionTime): self
+    public function setConnectionTime(OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeConnectionTime $connectionTime): self
     {
         $this->connectionTime = $connectionTime;
 
@@ -294,7 +294,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationInformationType extends Abs
     /**
      * @return OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeDateFlexibility[]
      */
-    public function getDateFlexibility(): ?array
+    public function getDateFlexibility(): array
     {
         return $this->dateFlexibility;
     }
@@ -304,7 +304,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationInformationType extends Abs
      *
      * @return self
      */
-    public function setDateFlexibility(?array $dateFlexibility): self
+    public function setDateFlexibility(array $dateFlexibility): self
     {
         $this->dateFlexibility = $dateFlexibility;
 
@@ -316,7 +316,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationInformationType extends Abs
      *
      * @return string
      */
-    public function getDepartureDateTime(): ?string
+    public function getDepartureDateTime(): string
     {
         return $this->departureDateTime;
     }
@@ -328,7 +328,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationInformationType extends Abs
      *
      * @return self
      */
-    public function setDepartureDateTime(?string $departureDateTime): self
+    public function setDepartureDateTime(string $departureDateTime): self
     {
         $this->departureDateTime = $departureDateTime;
 
@@ -338,7 +338,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationInformationType extends Abs
     /**
      * @return OrgOpentravelOta200305TravelDateTimeTypeDepartureDates
      */
-    public function getDepartureDates(): ?OrgOpentravelOta200305TravelDateTimeTypeDepartureDates
+    public function getDepartureDates(): OrgOpentravelOta200305TravelDateTimeTypeDepartureDates
     {
         return $this->departureDates;
     }
@@ -348,7 +348,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationInformationType extends Abs
      *
      * @return self
      */
-    public function setDepartureDates(?OrgOpentravelOta200305TravelDateTimeTypeDepartureDates $departureDates): self
+    public function setDepartureDates(OrgOpentravelOta200305TravelDateTimeTypeDepartureDates $departureDates): self
     {
         $this->departureDates = $departureDates;
 
@@ -360,7 +360,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationInformationType extends Abs
      *
      * @return string
      */
-    public function getDepartureWindow(): ?string
+    public function getDepartureWindow(): string
     {
         return $this->departureWindow;
     }
@@ -372,7 +372,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationInformationType extends Abs
      *
      * @return self
      */
-    public function setDepartureWindow(?string $departureWindow): self
+    public function setDepartureWindow(string $departureWindow): self
     {
         $this->departureWindow = $departureWindow;
 
@@ -384,7 +384,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationInformationType extends Abs
      *
      * @return OrgOpentravelOta200305OriginDestinationInformationTypeDestinationLocation
      */
-    public function getDestinationLocation(): ?OrgOpentravelOta200305OriginDestinationInformationTypeDestinationLocation
+    public function getDestinationLocation(): OrgOpentravelOta200305OriginDestinationInformationTypeDestinationLocation
     {
         return $this->destinationLocation;
     }
@@ -396,7 +396,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationInformationType extends Abs
      *
      * @return self
      */
-    public function setDestinationLocation(?OrgOpentravelOta200305OriginDestinationInformationTypeDestinationLocation $destinationLocation): self
+    public function setDestinationLocation(OrgOpentravelOta200305OriginDestinationInformationTypeDestinationLocation $destinationLocation): self
     {
         $this->destinationLocation = $destinationLocation;
 
@@ -406,7 +406,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationInformationType extends Abs
     /**
      * @return OrgOpentravelOta200305ExchangeOriginDestinationFlightType[]
      */
-    public function getFlight(): ?array
+    public function getFlight(): array
     {
         return $this->flight;
     }
@@ -416,7 +416,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationInformationType extends Abs
      *
      * @return self
      */
-    public function setFlight(?array $flight): self
+    public function setFlight(array $flight): self
     {
         $this->flight = $flight;
 
@@ -428,7 +428,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationInformationType extends Abs
      *
      * @return OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeMaxOneWayOptions
      */
-    public function getMaxOneWayOptions(): ?OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeMaxOneWayOptions
+    public function getMaxOneWayOptions(): OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeMaxOneWayOptions
     {
         return $this->maxOneWayOptions;
     }
@@ -440,7 +440,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationInformationType extends Abs
      *
      * @return self
      */
-    public function setMaxOneWayOptions(?OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeMaxOneWayOptions $maxOneWayOptions): self
+    public function setMaxOneWayOptions(OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeMaxOneWayOptions $maxOneWayOptions): self
     {
         $this->maxOneWayOptions = $maxOneWayOptions;
 
@@ -452,7 +452,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationInformationType extends Abs
      *
      * @return OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeNumOneWayOptions
      */
-    public function getNumOneWayOptions(): ?OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeNumOneWayOptions
+    public function getNumOneWayOptions(): OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeNumOneWayOptions
     {
         return $this->numOneWayOptions;
     }
@@ -464,7 +464,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationInformationType extends Abs
      *
      * @return self
      */
-    public function setNumOneWayOptions(?OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeNumOneWayOptions $numOneWayOptions): self
+    public function setNumOneWayOptions(OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeNumOneWayOptions $numOneWayOptions): self
     {
         $this->numOneWayOptions = $numOneWayOptions;
 
@@ -476,7 +476,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationInformationType extends Abs
      *
      * @return OrgOpentravelOta200305OriginDestinationInformationTypeOriginLocation
      */
-    public function getOriginLocation(): ?OrgOpentravelOta200305OriginDestinationInformationTypeOriginLocation
+    public function getOriginLocation(): OrgOpentravelOta200305OriginDestinationInformationTypeOriginLocation
     {
         return $this->originLocation;
     }
@@ -488,7 +488,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationInformationType extends Abs
      *
      * @return self
      */
-    public function setOriginLocation(?OrgOpentravelOta200305OriginDestinationInformationTypeOriginLocation $originLocation): self
+    public function setOriginLocation(OrgOpentravelOta200305OriginDestinationInformationTypeOriginLocation $originLocation): self
     {
         $this->originLocation = $originLocation;
 
@@ -498,7 +498,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationInformationType extends Abs
     /**
      * @return OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeSegmentType
      */
-    public function getSegmentType(): ?OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeSegmentType
+    public function getSegmentType(): OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeSegmentType
     {
         return $this->segmentType;
     }
@@ -508,7 +508,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationInformationType extends Abs
      *
      * @return self
      */
-    public function setSegmentType(?OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeSegmentType $segmentType): self
+    public function setSegmentType(OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeSegmentType $segmentType): self
     {
         $this->segmentType = $segmentType;
 
@@ -518,7 +518,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationInformationType extends Abs
     /**
      * @return OrgOpentravelOta200305RequestSpecifiedLocationType[]
      */
-    public function getSisterDestinationLocation(): ?array
+    public function getSisterDestinationLocation(): array
     {
         return $this->sisterDestinationLocation;
     }
@@ -528,7 +528,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationInformationType extends Abs
      *
      * @return self
      */
-    public function setSisterDestinationLocation(?array $sisterDestinationLocation): self
+    public function setSisterDestinationLocation(array $sisterDestinationLocation): self
     {
         $this->sisterDestinationLocation = $sisterDestinationLocation;
 
@@ -538,7 +538,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationInformationType extends Abs
     /**
      * @return OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeSisterDestinationMileage
      */
-    public function getSisterDestinationMileage(): ?OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeSisterDestinationMileage
+    public function getSisterDestinationMileage(): OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeSisterDestinationMileage
     {
         return $this->sisterDestinationMileage;
     }
@@ -548,7 +548,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationInformationType extends Abs
      *
      * @return self
      */
-    public function setSisterDestinationMileage(?OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeSisterDestinationMileage $sisterDestinationMileage): self
+    public function setSisterDestinationMileage(OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeSisterDestinationMileage $sisterDestinationMileage): self
     {
         $this->sisterDestinationMileage = $sisterDestinationMileage;
 
@@ -558,7 +558,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationInformationType extends Abs
     /**
      * @return OrgOpentravelOta200305RequestSpecifiedLocationType[]
      */
-    public function getSisterOriginLocation(): ?array
+    public function getSisterOriginLocation(): array
     {
         return $this->sisterOriginLocation;
     }
@@ -568,7 +568,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationInformationType extends Abs
      *
      * @return self
      */
-    public function setSisterOriginLocation(?array $sisterOriginLocation): self
+    public function setSisterOriginLocation(array $sisterOriginLocation): self
     {
         $this->sisterOriginLocation = $sisterOriginLocation;
 
@@ -578,7 +578,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationInformationType extends Abs
     /**
      * @return OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeSisterOriginMileage
      */
-    public function getSisterOriginMileage(): ?OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeSisterOriginMileage
+    public function getSisterOriginMileage(): OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeSisterOriginMileage
     {
         return $this->sisterOriginMileage;
     }
@@ -588,7 +588,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationInformationType extends Abs
      *
      * @return self
      */
-    public function setSisterOriginMileage(?OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeSisterOriginMileage $sisterOriginMileage): self
+    public function setSisterOriginMileage(OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeSisterOriginMileage $sisterOriginMileage): self
     {
         $this->sisterOriginMileage = $sisterOriginMileage;
 
@@ -600,7 +600,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationInformationType extends Abs
      *
      * @return OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeTotalTravelTime
      */
-    public function getTotalTravelTime(): ?OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeTotalTravelTime
+    public function getTotalTravelTime(): OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeTotalTravelTime
     {
         return $this->totalTravelTime;
     }
@@ -612,7 +612,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationInformationType extends Abs
      *
      * @return self
      */
-    public function setTotalTravelTime(?OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeTotalTravelTime $totalTravelTime): self
+    public function setTotalTravelTime(OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeTotalTravelTime $totalTravelTime): self
     {
         $this->totalTravelTime = $totalTravelTime;
 

@@ -30,7 +30,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsDiversityParametersTi
      *
      * @return string
      */
-    public function getBegin(): ?string
+    public function getBegin(): string
     {
         return $this->begin;
     }
@@ -42,7 +42,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsDiversityParametersTi
      *
      * @return self
      */
-    public function setBegin(?string $begin): self
+    public function setBegin(string $begin): self
     {
         $this->begin = $begin;
 
@@ -54,7 +54,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsDiversityParametersTi
      *
      * @return string
      */
-    public function getEnd(): ?string
+    public function getEnd(): string
     {
         return $this->end;
     }
@@ -66,7 +66,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsDiversityParametersTi
      *
      * @return self
      */
-    public function setEnd(?string $end): self
+    public function setEnd(string $end): self
     {
         $this->end = $end;
 
@@ -78,7 +78,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsDiversityParametersTi
      *
      * @return int
      */
-    public function getPercentage(): ?int
+    public function getPercentage(): int
     {
         return $this->percentage;
     }
@@ -90,7 +90,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsDiversityParametersTi
      *
      * @return self
      */
-    public function setPercentage(?int $percentage): self
+    public function setPercentage(int $percentage): self
     {
         $this->percentage = $percentage;
 

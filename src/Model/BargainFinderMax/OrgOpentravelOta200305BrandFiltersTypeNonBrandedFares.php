@@ -14,7 +14,7 @@ class OrgOpentravelOta200305BrandFiltersTypeNonBrandedFares extends AbstractMode
     /**
      * @return string
      */
-    public function getPreferLevel(): ?string
+    public function getPreferLevel(): string
     {
         return $this->preferLevel;
     }
@@ -24,7 +24,7 @@ class OrgOpentravelOta200305BrandFiltersTypeNonBrandedFares extends AbstractMode
      *
      * @return self
      */
-    public function setPreferLevel(?string $preferLevel): self
+    public function setPreferLevel(string $preferLevel): self
     {
         $this->preferLevel = $preferLevel;
 

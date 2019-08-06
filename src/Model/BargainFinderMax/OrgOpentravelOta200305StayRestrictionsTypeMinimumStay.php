@@ -36,7 +36,7 @@ class OrgOpentravelOta200305StayRestrictionsTypeMinimumStay extends AbstractMode
      *
      * @return int
      */
-    public function getMinStay(): ?int
+    public function getMinStay(): int
     {
         return $this->minStay;
     }
@@ -48,7 +48,7 @@ class OrgOpentravelOta200305StayRestrictionsTypeMinimumStay extends AbstractMode
      *
      * @return self
      */
-    public function setMinStay(?int $minStay): self
+    public function setMinStay(int $minStay): self
     {
         $this->minStay = $minStay;
 
@@ -60,7 +60,7 @@ class OrgOpentravelOta200305StayRestrictionsTypeMinimumStay extends AbstractMode
      *
      * @return string
      */
-    public function getMinStayDate(): ?string
+    public function getMinStayDate(): string
     {
         return $this->minStayDate;
     }
@@ -72,7 +72,7 @@ class OrgOpentravelOta200305StayRestrictionsTypeMinimumStay extends AbstractMode
      *
      * @return self
      */
-    public function setMinStayDate(?string $minStayDate): self
+    public function setMinStayDate(string $minStayDate): self
     {
         $this->minStayDate = $minStayDate;
 
@@ -84,7 +84,7 @@ class OrgOpentravelOta200305StayRestrictionsTypeMinimumStay extends AbstractMode
      *
      * @return string
      */
-    public function getReturnTimeOfDay(): ?string
+    public function getReturnTimeOfDay(): string
     {
         return $this->returnTimeOfDay;
     }
@@ -96,7 +96,7 @@ class OrgOpentravelOta200305StayRestrictionsTypeMinimumStay extends AbstractMode
      *
      * @return self
      */
-    public function setReturnTimeOfDay(?string $returnTimeOfDay): self
+    public function setReturnTimeOfDay(string $returnTimeOfDay): self
     {
         $this->returnTimeOfDay = $returnTimeOfDay;
 
@@ -108,7 +108,7 @@ class OrgOpentravelOta200305StayRestrictionsTypeMinimumStay extends AbstractMode
      *
      * @return string
      */
-    public function getStayUnit(): ?string
+    public function getStayUnit(): string
     {
         return $this->stayUnit;
     }
@@ -120,7 +120,7 @@ class OrgOpentravelOta200305StayRestrictionsTypeMinimumStay extends AbstractMode
      *
      * @return self
      */
-    public function setStayUnit(?string $stayUnit): self
+    public function setStayUnit(string $stayUnit): self
     {
         $this->stayUnit = $stayUnit;
 

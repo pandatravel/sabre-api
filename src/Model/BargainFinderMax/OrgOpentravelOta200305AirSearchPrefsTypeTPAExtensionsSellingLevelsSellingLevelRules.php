@@ -18,7 +18,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsSellingLevelsSellingL
      *
      * @return bool
      */
-    public function getIgnore(): ?bool
+    public function getIgnore(): bool
     {
         return $this->ignore;
     }
@@ -30,7 +30,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsSellingLevelsSellingL
      *
      * @return self
      */
-    public function setIgnore(?bool $ignore): self
+    public function setIgnore(bool $ignore): self
     {
         $this->ignore = $ignore;
 

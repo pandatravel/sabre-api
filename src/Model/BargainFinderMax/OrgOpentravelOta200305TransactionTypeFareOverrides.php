@@ -14,7 +14,7 @@ class OrgOpentravelOta200305TransactionTypeFareOverrides extends AbstractModel
     /**
      * @return OrgOpentravelOta200305TransactionTypeFareOverridesFareOverride[]
      */
-    public function getFareOverride(): ?array
+    public function getFareOverride(): array
     {
         return $this->fareOverride;
     }
@@ -24,7 +24,7 @@ class OrgOpentravelOta200305TransactionTypeFareOverrides extends AbstractModel
      *
      * @return self
      */
-    public function setFareOverride(?array $fareOverride): self
+    public function setFareOverride(array $fareOverride): self
     {
         $this->fareOverride = $fareOverride;
 

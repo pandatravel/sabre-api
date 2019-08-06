@@ -42,7 +42,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsIndicators e
      *
      * @return OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsIndicatorsMinMaxStay
      */
-    public function getMinMaxStay(): ?OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsIndicatorsMinMaxStay
+    public function getMinMaxStay(): OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsIndicatorsMinMaxStay
     {
         return $this->minMaxStay;
     }
@@ -54,7 +54,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsIndicators e
      *
      * @return self
      */
-    public function setMinMaxStay(?OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsIndicatorsMinMaxStay $minMaxStay): self
+    public function setMinMaxStay(OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsIndicatorsMinMaxStay $minMaxStay): self
     {
         $this->minMaxStay = $minMaxStay;
 
@@ -66,7 +66,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsIndicators e
      *
      * @return OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsIndicatorsRefundPenalty
      */
-    public function getRefundPenalty(): ?OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsIndicatorsRefundPenalty
+    public function getRefundPenalty(): OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsIndicatorsRefundPenalty
     {
         return $this->refundPenalty;
     }
@@ -78,7 +78,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsIndicators e
      *
      * @return self
      */
-    public function setRefundPenalty(?OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsIndicatorsRefundPenalty $refundPenalty): self
+    public function setRefundPenalty(OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsIndicatorsRefundPenalty $refundPenalty): self
     {
         $this->refundPenalty = $refundPenalty;
 
@@ -90,7 +90,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsIndicators e
      *
      * @return OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsIndicatorsResTicketing
      */
-    public function getResTicketing(): ?OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsIndicatorsResTicketing
+    public function getResTicketing(): OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsIndicatorsResTicketing
     {
         return $this->resTicketing;
     }
@@ -102,7 +102,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsIndicators e
      *
      * @return self
      */
-    public function setResTicketing(?OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsIndicatorsResTicketing $resTicketing): self
+    public function setResTicketing(OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsIndicatorsResTicketing $resTicketing): self
     {
         $this->resTicketing = $resTicketing;
 
@@ -114,7 +114,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsIndicators e
      *
      * @return OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsIndicatorsRetainFare
      */
-    public function getRetainFare(): ?OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsIndicatorsRetainFare
+    public function getRetainFare(): OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsIndicatorsRetainFare
     {
         return $this->retainFare;
     }
@@ -126,7 +126,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsIndicators e
      *
      * @return self
      */
-    public function setRetainFare(?OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsIndicatorsRetainFare $retainFare): self
+    public function setRetainFare(OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsIndicatorsRetainFare $retainFare): self
     {
         $this->retainFare = $retainFare;
 
@@ -138,7 +138,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsIndicators e
      *
      * @return OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsIndicatorsTravelPolicy
      */
-    public function getTravelPolicy(): ?OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsIndicatorsTravelPolicy
+    public function getTravelPolicy(): OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsIndicatorsTravelPolicy
     {
         return $this->travelPolicy;
     }
@@ -150,7 +150,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsIndicators e
      *
      * @return self
      */
-    public function setTravelPolicy(?OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsIndicatorsTravelPolicy $travelPolicy): self
+    public function setTravelPolicy(OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsIndicatorsTravelPolicy $travelPolicy): self
     {
         $this->travelPolicy = $travelPolicy;
 

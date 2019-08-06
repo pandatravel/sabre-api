@@ -18,7 +18,7 @@ class OrgOpentravelOta200305DiversityControlTypeDimensionsOperatingDuplicate ext
     /**
      * @return OrgOpentravelOta200305DiversityControlTypeDimensionsOperatingDuplicatePreferredCarrier[]
      */
-    public function getPreferredCarrier(): ?array
+    public function getPreferredCarrier(): array
     {
         return $this->preferredCarrier;
     }
@@ -28,7 +28,7 @@ class OrgOpentravelOta200305DiversityControlTypeDimensionsOperatingDuplicate ext
      *
      * @return self
      */
-    public function setPreferredCarrier(?array $preferredCarrier): self
+    public function setPreferredCarrier(array $preferredCarrier): self
     {
         $this->preferredCarrier = $preferredCarrier;
 
@@ -38,7 +38,7 @@ class OrgOpentravelOta200305DiversityControlTypeDimensionsOperatingDuplicate ext
     /**
      * @return float
      */
-    public function getWeight(): ?float
+    public function getWeight(): float
     {
         return $this->weight;
     }
@@ -48,7 +48,7 @@ class OrgOpentravelOta200305DiversityControlTypeDimensionsOperatingDuplicate ext
      *
      * @return self
      */
-    public function setWeight(?float $weight): self
+    public function setWeight(float $weight): self
     {
         $this->weight = $weight;
 

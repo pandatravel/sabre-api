@@ -26,7 +26,7 @@ class TaxRestrictionsType extends AbstractModel
     /**
      * @return string
      */
-    public function getCurrency(): ?string
+    public function getCurrency(): string
     {
         return $this->currency;
     }
@@ -36,7 +36,7 @@ class TaxRestrictionsType extends AbstractModel
      *
      * @return self
      */
-    public function setCurrency(?string $currency): self
+    public function setCurrency(string $currency): self
     {
         $this->currency = $currency;
 
@@ -46,7 +46,7 @@ class TaxRestrictionsType extends AbstractModel
     /**
      * @return float
      */
-    public function getMaxAmount(): ?float
+    public function getMaxAmount(): float
     {
         return $this->maxAmount;
     }
@@ -56,7 +56,7 @@ class TaxRestrictionsType extends AbstractModel
      *
      * @return self
      */
-    public function setMaxAmount(?float $maxAmount): self
+    public function setMaxAmount(float $maxAmount): self
     {
         $this->maxAmount = $maxAmount;
 
@@ -66,7 +66,7 @@ class TaxRestrictionsType extends AbstractModel
     /**
      * @return float
      */
-    public function getMinAmount(): ?float
+    public function getMinAmount(): float
     {
         return $this->minAmount;
     }
@@ -76,7 +76,7 @@ class TaxRestrictionsType extends AbstractModel
      *
      * @return self
      */
-    public function setMinAmount(?float $minAmount): self
+    public function setMinAmount(float $minAmount): self
     {
         $this->minAmount = $minAmount;
 
@@ -86,7 +86,7 @@ class TaxRestrictionsType extends AbstractModel
     /**
      * @return float
      */
-    public function getRate(): ?float
+    public function getRate(): float
     {
         return $this->rate;
     }
@@ -96,7 +96,7 @@ class TaxRestrictionsType extends AbstractModel
      *
      * @return self
      */
-    public function setRate(?float $rate): self
+    public function setRate(float $rate): self
     {
         $this->rate = $rate;
 

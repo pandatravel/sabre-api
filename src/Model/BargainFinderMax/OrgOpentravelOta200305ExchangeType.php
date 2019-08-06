@@ -70,7 +70,7 @@ class OrgOpentravelOta200305ExchangeType extends AbstractModel
     /**
      * @return OrgOpentravelOta200305ArunkType[]
      */
-    public function getArunk(): ?array
+    public function getArunk(): array
     {
         return $this->arunk;
     }
@@ -80,7 +80,7 @@ class OrgOpentravelOta200305ExchangeType extends AbstractModel
      *
      * @return self
      */
-    public function setArunk(?array $arunk): self
+    public function setArunk(array $arunk): self
     {
         $this->arunk = $arunk;
 
@@ -92,7 +92,7 @@ class OrgOpentravelOta200305ExchangeType extends AbstractModel
      *
      * @return string
      */
-    public function getBypassAdvancePurchaseOption(): ?string
+    public function getBypassAdvancePurchaseOption(): string
     {
         return $this->bypassAdvancePurchaseOption;
     }
@@ -104,7 +104,7 @@ class OrgOpentravelOta200305ExchangeType extends AbstractModel
      *
      * @return self
      */
-    public function setBypassAdvancePurchaseOption(?string $bypassAdvancePurchaseOption): self
+    public function setBypassAdvancePurchaseOption(string $bypassAdvancePurchaseOption): self
     {
         $this->bypassAdvancePurchaseOption = $bypassAdvancePurchaseOption;
 
@@ -116,7 +116,7 @@ class OrgOpentravelOta200305ExchangeType extends AbstractModel
      *
      * @return string
      */
-    public function getExchangedTktIssueDateTime(): ?string
+    public function getExchangedTktIssueDateTime(): string
     {
         return $this->exchangedTktIssueDateTime;
     }
@@ -128,7 +128,7 @@ class OrgOpentravelOta200305ExchangeType extends AbstractModel
      *
      * @return self
      */
-    public function setExchangedTktIssueDateTime(?string $exchangedTktIssueDateTime): self
+    public function setExchangedTktIssueDateTime(string $exchangedTktIssueDateTime): self
     {
         $this->exchangedTktIssueDateTime = $exchangedTktIssueDateTime;
 
@@ -138,7 +138,7 @@ class OrgOpentravelOta200305ExchangeType extends AbstractModel
     /**
      * @return OrgOpentravelOta200305ExchangeFareType
      */
-    public function getFare(): ?OrgOpentravelOta200305ExchangeFareType
+    public function getFare(): OrgOpentravelOta200305ExchangeFareType
     {
         return $this->fare;
     }
@@ -148,7 +148,7 @@ class OrgOpentravelOta200305ExchangeType extends AbstractModel
      *
      * @return self
      */
-    public function setFare(?OrgOpentravelOta200305ExchangeFareType $fare): self
+    public function setFare(OrgOpentravelOta200305ExchangeFareType $fare): self
     {
         $this->fare = $fare;
 
@@ -160,7 +160,7 @@ class OrgOpentravelOta200305ExchangeType extends AbstractModel
      *
      * @return float
      */
-    public function getNumberOfTaxBoxes(): ?float
+    public function getNumberOfTaxBoxes(): float
     {
         return $this->numberOfTaxBoxes;
     }
@@ -172,7 +172,7 @@ class OrgOpentravelOta200305ExchangeType extends AbstractModel
      *
      * @return self
      */
-    public function setNumberOfTaxBoxes(?float $numberOfTaxBoxes): self
+    public function setNumberOfTaxBoxes(float $numberOfTaxBoxes): self
     {
         $this->numberOfTaxBoxes = $numberOfTaxBoxes;
 
@@ -182,7 +182,7 @@ class OrgOpentravelOta200305ExchangeType extends AbstractModel
     /**
      * @return OrgOpentravelOta200305ExchangeOriginDestinationInformationType[]
      */
-    public function getOriginDestinationInformation(): ?array
+    public function getOriginDestinationInformation(): array
     {
         return $this->originDestinationInformation;
     }
@@ -192,7 +192,7 @@ class OrgOpentravelOta200305ExchangeType extends AbstractModel
      *
      * @return self
      */
-    public function setOriginDestinationInformation(?array $originDestinationInformation): self
+    public function setOriginDestinationInformation(array $originDestinationInformation): self
     {
         $this->originDestinationInformation = $originDestinationInformation;
 
@@ -204,7 +204,7 @@ class OrgOpentravelOta200305ExchangeType extends AbstractModel
      *
      * @return string
      */
-    public function getOriginalTktIssueDateTime(): ?string
+    public function getOriginalTktIssueDateTime(): string
     {
         return $this->originalTktIssueDateTime;
     }
@@ -216,7 +216,7 @@ class OrgOpentravelOta200305ExchangeType extends AbstractModel
      *
      * @return self
      */
-    public function setOriginalTktIssueDateTime(?string $originalTktIssueDateTime): self
+    public function setOriginalTktIssueDateTime(string $originalTktIssueDateTime): self
     {
         $this->originalTktIssueDateTime = $originalTktIssueDateTime;
 
@@ -226,7 +226,7 @@ class OrgOpentravelOta200305ExchangeType extends AbstractModel
     /**
      * @return OrgOpentravelOta200305ExchangePOSType
      */
-    public function getPOS(): ?OrgOpentravelOta200305ExchangePOSType
+    public function getPOS(): OrgOpentravelOta200305ExchangePOSType
     {
         return $this->pOS;
     }
@@ -236,7 +236,7 @@ class OrgOpentravelOta200305ExchangeType extends AbstractModel
      *
      * @return self
      */
-    public function setPOS(?OrgOpentravelOta200305ExchangePOSType $pOS): self
+    public function setPOS(OrgOpentravelOta200305ExchangePOSType $pOS): self
     {
         $this->pOS = $pOS;
 
@@ -248,7 +248,7 @@ class OrgOpentravelOta200305ExchangeType extends AbstractModel
      *
      * @return string
      */
-    public function getPreviousExchangeDateTime(): ?string
+    public function getPreviousExchangeDateTime(): string
     {
         return $this->previousExchangeDateTime;
     }
@@ -260,7 +260,7 @@ class OrgOpentravelOta200305ExchangeType extends AbstractModel
      *
      * @return self
      */
-    public function setPreviousExchangeDateTime(?string $previousExchangeDateTime): self
+    public function setPreviousExchangeDateTime(string $previousExchangeDateTime): self
     {
         $this->previousExchangeDateTime = $previousExchangeDateTime;
 
@@ -270,7 +270,7 @@ class OrgOpentravelOta200305ExchangeType extends AbstractModel
     /**
      * @return OrgOpentravelOta200305ExchangeTPAExtensionsType
      */
-    public function getTPAExtensions(): ?OrgOpentravelOta200305ExchangeTPAExtensionsType
+    public function getTPAExtensions(): OrgOpentravelOta200305ExchangeTPAExtensionsType
     {
         return $this->tPAExtensions;
     }
@@ -280,7 +280,7 @@ class OrgOpentravelOta200305ExchangeType extends AbstractModel
      *
      * @return self
      */
-    public function setTPAExtensions(?OrgOpentravelOta200305ExchangeTPAExtensionsType $tPAExtensions): self
+    public function setTPAExtensions(OrgOpentravelOta200305ExchangeTPAExtensionsType $tPAExtensions): self
     {
         $this->tPAExtensions = $tPAExtensions;
 
@@ -290,7 +290,7 @@ class OrgOpentravelOta200305ExchangeType extends AbstractModel
     /**
      * @return OrgOpentravelOta200305ExchangeAirSearchPrefsType
      */
-    public function getTravelPreferences(): ?OrgOpentravelOta200305ExchangeAirSearchPrefsType
+    public function getTravelPreferences(): OrgOpentravelOta200305ExchangeAirSearchPrefsType
     {
         return $this->travelPreferences;
     }
@@ -300,7 +300,7 @@ class OrgOpentravelOta200305ExchangeType extends AbstractModel
      *
      * @return self
      */
-    public function setTravelPreferences(?OrgOpentravelOta200305ExchangeAirSearchPrefsType $travelPreferences): self
+    public function setTravelPreferences(OrgOpentravelOta200305ExchangeAirSearchPrefsType $travelPreferences): self
     {
         $this->travelPreferences = $travelPreferences;
 
@@ -312,7 +312,7 @@ class OrgOpentravelOta200305ExchangeType extends AbstractModel
      *
      * @return OrgOpentravelOta200305TravelerInfoSummaryType
      */
-    public function getTravelerInfoSummary(): ?OrgOpentravelOta200305TravelerInfoSummaryType
+    public function getTravelerInfoSummary(): OrgOpentravelOta200305TravelerInfoSummaryType
     {
         return $this->travelerInfoSummary;
     }
@@ -324,7 +324,7 @@ class OrgOpentravelOta200305ExchangeType extends AbstractModel
      *
      * @return self
      */
-    public function setTravelerInfoSummary(?OrgOpentravelOta200305TravelerInfoSummaryType $travelerInfoSummary): self
+    public function setTravelerInfoSummary(OrgOpentravelOta200305TravelerInfoSummaryType $travelerInfoSummary): self
     {
         $this->travelerInfoSummary = $travelerInfoSummary;
 

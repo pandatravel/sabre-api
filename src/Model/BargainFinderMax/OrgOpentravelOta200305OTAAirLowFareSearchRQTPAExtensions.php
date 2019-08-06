@@ -84,7 +84,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensions extends AbstractM
     /**
      * @return OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsAlternateAirportCities[]
      */
-    public function getAlternateAirportCities(): ?array
+    public function getAlternateAirportCities(): array
     {
         return $this->alternateAirportCities;
     }
@@ -94,7 +94,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensions extends AbstractM
      *
      * @return self
      */
-    public function setAlternateAirportCities(?array $alternateAirportCities): self
+    public function setAlternateAirportCities(array $alternateAirportCities): self
     {
         $this->alternateAirportCities = $alternateAirportCities;
 
@@ -106,7 +106,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensions extends AbstractM
      *
      * @return OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsAlternateAirportMileage
      */
-    public function getAlternateAirportMileage(): ?OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsAlternateAirportMileage
+    public function getAlternateAirportMileage(): OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsAlternateAirportMileage
     {
         return $this->alternateAirportMileage;
     }
@@ -118,7 +118,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensions extends AbstractM
      *
      * @return self
      */
-    public function setAlternateAirportMileage(?OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsAlternateAirportMileage $alternateAirportMileage): self
+    public function setAlternateAirportMileage(OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsAlternateAirportMileage $alternateAirportMileage): self
     {
         $this->alternateAirportMileage = $alternateAirportMileage;
 
@@ -128,7 +128,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensions extends AbstractM
     /**
      * @return OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsAlternateDatesProcessing
      */
-    public function getAlternateDatesProcessing(): ?OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsAlternateDatesProcessing
+    public function getAlternateDatesProcessing(): OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsAlternateDatesProcessing
     {
         return $this->alternateDatesProcessing;
     }
@@ -138,7 +138,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensions extends AbstractM
      *
      * @return self
      */
-    public function setAlternateDatesProcessing(?OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsAlternateDatesProcessing $alternateDatesProcessing): self
+    public function setAlternateDatesProcessing(OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsAlternateDatesProcessing $alternateDatesProcessing): self
     {
         $this->alternateDatesProcessing = $alternateDatesProcessing;
 
@@ -148,7 +148,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensions extends AbstractM
     /**
      * @return OrgOpentravelOta200305AlternatePCCType[]
      */
-    public function getAlternatePCC(): ?array
+    public function getAlternatePCC(): array
     {
         return $this->alternatePCC;
     }
@@ -158,7 +158,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensions extends AbstractM
      *
      * @return self
      */
-    public function setAlternatePCC(?array $alternatePCC): self
+    public function setAlternatePCC(array $alternatePCC): self
     {
         $this->alternatePCC = $alternatePCC;
 
@@ -168,7 +168,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensions extends AbstractM
     /**
      * @return OrgOpentravelOta200305AwardShoppingType
      */
-    public function getAwardShopping(): ?OrgOpentravelOta200305AwardShoppingType
+    public function getAwardShopping(): OrgOpentravelOta200305AwardShoppingType
     {
         return $this->awardShopping;
     }
@@ -178,7 +178,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensions extends AbstractM
      *
      * @return self
      */
-    public function setAwardShopping(?OrgOpentravelOta200305AwardShoppingType $awardShopping): self
+    public function setAwardShopping(OrgOpentravelOta200305AwardShoppingType $awardShopping): self
     {
         $this->awardShopping = $awardShopping;
 
@@ -188,7 +188,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensions extends AbstractM
     /**
      * @return OrgOpentravelOta200305BillingInformationType
      */
-    public function getBilling(): ?OrgOpentravelOta200305BillingInformationType
+    public function getBilling(): OrgOpentravelOta200305BillingInformationType
     {
         return $this->billing;
     }
@@ -198,7 +198,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensions extends AbstractM
      *
      * @return self
      */
-    public function setBilling(?OrgOpentravelOta200305BillingInformationType $billing): self
+    public function setBilling(OrgOpentravelOta200305BillingInformationType $billing): self
     {
         $this->billing = $billing;
 
@@ -210,7 +210,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensions extends AbstractM
      *
      * @return OrgOpentravelOta200305DiversityControlType
      */
-    public function getDiversityControl(): ?OrgOpentravelOta200305DiversityControlType
+    public function getDiversityControl(): OrgOpentravelOta200305DiversityControlType
     {
         return $this->diversityControl;
     }
@@ -222,7 +222,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensions extends AbstractM
      *
      * @return self
      */
-    public function setDiversityControl(?OrgOpentravelOta200305DiversityControlType $diversityControl): self
+    public function setDiversityControl(OrgOpentravelOta200305DiversityControlType $diversityControl): self
     {
         $this->diversityControl = $diversityControl;
 
@@ -232,7 +232,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensions extends AbstractM
     /**
      * @return OrgOpentravelOta200305ExchangeType[]
      */
-    public function getExchange(): ?array
+    public function getExchange(): array
     {
         return $this->exchange;
     }
@@ -242,7 +242,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensions extends AbstractM
      *
      * @return self
      */
-    public function setExchange(?array $exchange): self
+    public function setExchange(array $exchange): self
     {
         $this->exchange = $exchange;
 
@@ -252,7 +252,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensions extends AbstractM
     /**
      * @return OrgOpentravelOta200305ExchangeSettingsType
      */
-    public function getExchangeSettings(): ?OrgOpentravelOta200305ExchangeSettingsType
+    public function getExchangeSettings(): OrgOpentravelOta200305ExchangeSettingsType
     {
         return $this->exchangeSettings;
     }
@@ -262,7 +262,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensions extends AbstractM
      *
      * @return self
      */
-    public function setExchangeSettings(?OrgOpentravelOta200305ExchangeSettingsType $exchangeSettings): self
+    public function setExchangeSettings(OrgOpentravelOta200305ExchangeSettingsType $exchangeSettings): self
     {
         $this->exchangeSettings = $exchangeSettings;
 
@@ -272,7 +272,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensions extends AbstractM
     /**
      * @return OrgOpentravelOta200305TransactionType
      */
-    public function getIntelliSellTransaction(): ?OrgOpentravelOta200305TransactionType
+    public function getIntelliSellTransaction(): OrgOpentravelOta200305TransactionType
     {
         return $this->intelliSellTransaction;
     }
@@ -282,7 +282,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensions extends AbstractM
      *
      * @return self
      */
-    public function setIntelliSellTransaction(?OrgOpentravelOta200305TransactionType $intelliSellTransaction): self
+    public function setIntelliSellTransaction(OrgOpentravelOta200305TransactionType $intelliSellTransaction): self
     {
         $this->intelliSellTransaction = $intelliSellTransaction;
 
@@ -292,7 +292,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensions extends AbstractM
     /**
      * @return OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsItineraryCache
      */
-    public function getItineraryCache(): ?OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsItineraryCache
+    public function getItineraryCache(): OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsItineraryCache
     {
         return $this->itineraryCache;
     }
@@ -302,7 +302,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensions extends AbstractM
      *
      * @return self
      */
-    public function setItineraryCache(?OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsItineraryCache $itineraryCache): self
+    public function setItineraryCache(OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsItineraryCache $itineraryCache): self
     {
         $this->itineraryCache = $itineraryCache;
 
@@ -312,7 +312,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensions extends AbstractM
     /**
      * @return OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsMessagingDetails
      */
-    public function getMessagingDetails(): ?OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsMessagingDetails
+    public function getMessagingDetails(): OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsMessagingDetails
     {
         return $this->messagingDetails;
     }
@@ -322,7 +322,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensions extends AbstractM
      *
      * @return self
      */
-    public function setMessagingDetails(?OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsMessagingDetails $messagingDetails): self
+    public function setMessagingDetails(OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsMessagingDetails $messagingDetails): self
     {
         $this->messagingDetails = $messagingDetails;
 
@@ -332,7 +332,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensions extends AbstractM
     /**
      * @return OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsMultiTicket
      */
-    public function getMultiTicket(): ?OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsMultiTicket
+    public function getMultiTicket(): OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsMultiTicket
     {
         return $this->multiTicket;
     }
@@ -342,7 +342,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensions extends AbstractM
      *
      * @return self
      */
-    public function setMultiTicket(?OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsMultiTicket $multiTicket): self
+    public function setMultiTicket(OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsMultiTicket $multiTicket): self
     {
         $this->multiTicket = $multiTicket;
 
@@ -352,7 +352,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensions extends AbstractM
     /**
      * @return OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsPartitions
      */
-    public function getPartitions(): ?OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsPartitions
+    public function getPartitions(): OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsPartitions
     {
         return $this->partitions;
     }
@@ -362,7 +362,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensions extends AbstractM
      *
      * @return self
      */
-    public function setPartitions(?OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsPartitions $partitions): self
+    public function setPartitions(OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsPartitions $partitions): self
     {
         $this->partitions = $partitions;
 
@@ -374,7 +374,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensions extends AbstractM
      *
      * @return OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsPointsRedemption
      */
-    public function getPointsRedemption(): ?OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsPointsRedemption
+    public function getPointsRedemption(): OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsPointsRedemption
     {
         return $this->pointsRedemption;
     }
@@ -386,7 +386,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensions extends AbstractM
      *
      * @return self
      */
-    public function setPointsRedemption(?OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsPointsRedemption $pointsRedemption): self
+    public function setPointsRedemption(OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsPointsRedemption $pointsRedemption): self
     {
         $this->pointsRedemption = $pointsRedemption;
 
@@ -396,7 +396,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensions extends AbstractM
     /**
      * @return OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsReservationData
      */
-    public function getReservationData(): ?OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsReservationData
+    public function getReservationData(): OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsReservationData
     {
         return $this->reservationData;
     }
@@ -406,7 +406,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensions extends AbstractM
      *
      * @return self
      */
-    public function setReservationData(?OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsReservationData $reservationData): self
+    public function setReservationData(OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsReservationData $reservationData): self
     {
         $this->reservationData = $reservationData;
 
@@ -416,7 +416,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensions extends AbstractM
     /**
      * @return OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsSplitTaxes
      */
-    public function getSplitTaxes(): ?OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsSplitTaxes
+    public function getSplitTaxes(): OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsSplitTaxes
     {
         return $this->splitTaxes;
     }
@@ -426,7 +426,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensions extends AbstractM
      *
      * @return self
      */
-    public function setSplitTaxes(?OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsSplitTaxes $splitTaxes): self
+    public function setSplitTaxes(OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsSplitTaxes $splitTaxes): self
     {
         $this->splitTaxes = $splitTaxes;
 

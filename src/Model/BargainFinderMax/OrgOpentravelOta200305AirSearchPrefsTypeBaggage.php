@@ -32,7 +32,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeBaggage extends AbstractModel
      *
      * @return bool
      */
-    public function getDescription(): ?bool
+    public function getDescription(): bool
     {
         return $this->description;
     }
@@ -44,7 +44,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeBaggage extends AbstractModel
      *
      * @return self
      */
-    public function setDescription(?bool $description): self
+    public function setDescription(bool $description): self
     {
         $this->description = $description;
 
@@ -54,7 +54,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeBaggage extends AbstractModel
     /**
      * @return bool
      */
-    public function getFreePieceRequired(): ?bool
+    public function getFreePieceRequired(): bool
     {
         return $this->freePieceRequired;
     }
@@ -64,7 +64,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeBaggage extends AbstractModel
      *
      * @return self
      */
-    public function setFreePieceRequired(?bool $freePieceRequired): self
+    public function setFreePieceRequired(bool $freePieceRequired): self
     {
         $this->freePieceRequired = $freePieceRequired;
 
@@ -74,7 +74,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeBaggage extends AbstractModel
     /**
      * @return string
      */
-    public function getRequestType(): ?string
+    public function getRequestType(): string
     {
         return $this->requestType;
     }
@@ -84,7 +84,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeBaggage extends AbstractModel
      *
      * @return self
      */
-    public function setRequestType(?string $requestType): self
+    public function setRequestType(string $requestType): self
     {
         $this->requestType = $requestType;
 
@@ -96,7 +96,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeBaggage extends AbstractModel
      *
      * @return int
      */
-    public function getRequestedPieces(): ?int
+    public function getRequestedPieces(): int
     {
         return $this->requestedPieces;
     }
@@ -108,7 +108,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeBaggage extends AbstractModel
      *
      * @return self
      */
-    public function setRequestedPieces(?int $requestedPieces): self
+    public function setRequestedPieces(int $requestedPieces): self
     {
         $this->requestedPieces = $requestedPieces;
 

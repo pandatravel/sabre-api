@@ -30,7 +30,7 @@ class OrgOpentravelOta200305SideTripType extends AbstractModel
      *
      * @return bool
      */
-    public function getEnd(): ?bool
+    public function getEnd(): bool
     {
         return $this->end;
     }
@@ -42,7 +42,7 @@ class OrgOpentravelOta200305SideTripType extends AbstractModel
      *
      * @return self
      */
-    public function setEnd(?bool $end): self
+    public function setEnd(bool $end): self
     {
         $this->end = $end;
 
@@ -54,7 +54,7 @@ class OrgOpentravelOta200305SideTripType extends AbstractModel
      *
      * @return float
      */
-    public function getNumber(): ?float
+    public function getNumber(): float
     {
         return $this->number;
     }
@@ -66,7 +66,7 @@ class OrgOpentravelOta200305SideTripType extends AbstractModel
      *
      * @return self
      */
-    public function setNumber(?float $number): self
+    public function setNumber(float $number): self
     {
         $this->number = $number;
 
@@ -78,7 +78,7 @@ class OrgOpentravelOta200305SideTripType extends AbstractModel
      *
      * @return bool
      */
-    public function getStart(): ?bool
+    public function getStart(): bool
     {
         return $this->start;
     }
@@ -90,7 +90,7 @@ class OrgOpentravelOta200305SideTripType extends AbstractModel
      *
      * @return self
      */
-    public function setStart(?bool $start): self
+    public function setStart(bool $start): self
     {
         $this->start = $start;
 

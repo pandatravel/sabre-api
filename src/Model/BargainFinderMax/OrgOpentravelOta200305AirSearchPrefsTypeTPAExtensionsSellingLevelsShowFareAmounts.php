@@ -24,7 +24,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsSellingLevelsShowFare
      *
      * @return bool
      */
-    public function getAdjusted(): ?bool
+    public function getAdjusted(): bool
     {
         return $this->adjusted;
     }
@@ -36,7 +36,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsSellingLevelsShowFare
      *
      * @return self
      */
-    public function setAdjusted(?bool $adjusted): self
+    public function setAdjusted(bool $adjusted): self
     {
         $this->adjusted = $adjusted;
 
@@ -48,7 +48,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsSellingLevelsShowFare
      *
      * @return bool
      */
-    public function getOriginal(): ?bool
+    public function getOriginal(): bool
     {
         return $this->original;
     }
@@ -60,7 +60,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsSellingLevelsShowFare
      *
      * @return self
      */
-    public function setOriginal(?bool $original): self
+    public function setOriginal(bool $original): self
     {
         $this->original = $original;
 

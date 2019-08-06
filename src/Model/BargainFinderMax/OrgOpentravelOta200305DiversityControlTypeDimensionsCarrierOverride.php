@@ -18,7 +18,7 @@ class OrgOpentravelOta200305DiversityControlTypeDimensionsCarrierOverride extend
     /**
      * @return string
      */
-    public function getCode(): ?string
+    public function getCode(): string
     {
         return $this->code;
     }
@@ -28,7 +28,7 @@ class OrgOpentravelOta200305DiversityControlTypeDimensionsCarrierOverride extend
      *
      * @return self
      */
-    public function setCode(?string $code): self
+    public function setCode(string $code): self
     {
         $this->code = $code;
 
@@ -38,7 +38,7 @@ class OrgOpentravelOta200305DiversityControlTypeDimensionsCarrierOverride extend
     /**
      * @return string
      */
-    public function getOptions(): ?string
+    public function getOptions(): string
     {
         return $this->options;
     }
@@ -48,7 +48,7 @@ class OrgOpentravelOta200305DiversityControlTypeDimensionsCarrierOverride extend
      *
      * @return self
      */
-    public function setOptions(?string $options): self
+    public function setOptions(string $options): self
     {
         $this->options = $options;
 

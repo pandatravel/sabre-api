@@ -22,7 +22,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPriorityLegT
      *
      * @return int
      */
-    public function getLeg(): ?int
+    public function getLeg(): int
     {
         return $this->leg;
     }
@@ -34,7 +34,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPriorityLegT
      *
      * @return self
      */
-    public function setLeg(?int $leg): self
+    public function setLeg(int $leg): self
     {
         $this->leg = $leg;
 
@@ -44,7 +44,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPriorityLegT
     /**
      * @return int
      */
-    public function getPriority(): ?int
+    public function getPriority(): int
     {
         return $this->priority;
     }
@@ -54,7 +54,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPriorityLegT
      *
      * @return self
      */
-    public function setPriority(?int $priority): self
+    public function setPriority(int $priority): self
     {
         $this->priority = $priority;
 

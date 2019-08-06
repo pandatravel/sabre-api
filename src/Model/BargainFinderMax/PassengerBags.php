@@ -18,7 +18,7 @@ class PassengerBags extends AbstractModel
     /**
      * @return BaggageSequenceOrder[]
      */
-    public function getBaggageSequenceOrders(): ?array
+    public function getBaggageSequenceOrders(): array
     {
         return $this->baggageSequenceOrders;
     }
@@ -28,7 +28,7 @@ class PassengerBags extends AbstractModel
      *
      * @return self
      */
-    public function setBaggageSequenceOrders(?array $baggageSequenceOrders): self
+    public function setBaggageSequenceOrders(array $baggageSequenceOrders): self
     {
         $this->baggageSequenceOrders = $baggageSequenceOrders;
 
@@ -38,7 +38,7 @@ class PassengerBags extends AbstractModel
     /**
      * @return string
      */
-    public function getCode(): ?string
+    public function getCode(): string
     {
         return $this->code;
     }
@@ -48,7 +48,7 @@ class PassengerBags extends AbstractModel
      *
      * @return self
      */
-    public function setCode(?string $code): self
+    public function setCode(string $code): self
     {
         $this->code = $code;
 

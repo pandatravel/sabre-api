@@ -20,7 +20,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsAlternateAirportMi
     /**
      * @return bool
      */
-    public function getAllowBorderCross(): ?bool
+    public function getAllowBorderCross(): bool
     {
         return $this->allowBorderCross;
     }
@@ -30,7 +30,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsAlternateAirportMi
      *
      * @return self
      */
-    public function setAllowBorderCross(?bool $allowBorderCross): self
+    public function setAllowBorderCross(bool $allowBorderCross): self
     {
         $this->allowBorderCross = $allowBorderCross;
 
@@ -42,7 +42,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsAlternateAirportMi
      *
      * @return string
      */
-    public function getNumber(): ?string
+    public function getNumber(): string
     {
         return $this->number;
     }
@@ -54,7 +54,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsAlternateAirportMi
      *
      * @return self
      */
-    public function setNumber(?string $number): self
+    public function setNumber(string $number): self
     {
         $this->number = $number;
 

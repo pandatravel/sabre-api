@@ -18,7 +18,7 @@ class OrgOpentravelOta200305GoverningCarrierOverrideType extends AbstractModel
      *
      * @return string
      */
-    public function getAirlineCode(): ?string
+    public function getAirlineCode(): string
     {
         return $this->airlineCode;
     }
@@ -30,7 +30,7 @@ class OrgOpentravelOta200305GoverningCarrierOverrideType extends AbstractModel
      *
      * @return self
      */
-    public function setAirlineCode(?string $airlineCode): self
+    public function setAirlineCode(string $airlineCode): self
     {
         $this->airlineCode = $airlineCode;
 

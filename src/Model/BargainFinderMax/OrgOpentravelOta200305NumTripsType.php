@@ -38,7 +38,7 @@ class OrgOpentravelOta200305NumTripsType extends AbstractModel
     /**
      * @return float
      */
-    public function getNumber(): ?float
+    public function getNumber(): float
     {
         return $this->number;
     }
@@ -48,7 +48,7 @@ class OrgOpentravelOta200305NumTripsType extends AbstractModel
      *
      * @return self
      */
-    public function setNumber(?float $number): self
+    public function setNumber(float $number): self
     {
         $this->number = $number;
 
@@ -60,7 +60,7 @@ class OrgOpentravelOta200305NumTripsType extends AbstractModel
      *
      * @return int
      */
-    public function getPerDateMax(): ?int
+    public function getPerDateMax(): int
     {
         return $this->perDateMax;
     }
@@ -72,7 +72,7 @@ class OrgOpentravelOta200305NumTripsType extends AbstractModel
      *
      * @return self
      */
-    public function setPerDateMax(?int $perDateMax): self
+    public function setPerDateMax(int $perDateMax): self
     {
         $this->perDateMax = $perDateMax;
 
@@ -84,7 +84,7 @@ class OrgOpentravelOta200305NumTripsType extends AbstractModel
      *
      * @return int
      */
-    public function getPerDateMin(): ?int
+    public function getPerDateMin(): int
     {
         return $this->perDateMin;
     }
@@ -96,7 +96,7 @@ class OrgOpentravelOta200305NumTripsType extends AbstractModel
      *
      * @return self
      */
-    public function setPerDateMin(?int $perDateMin): self
+    public function setPerDateMin(int $perDateMin): self
     {
         $this->perDateMin = $perDateMin;
 
@@ -108,7 +108,7 @@ class OrgOpentravelOta200305NumTripsType extends AbstractModel
      *
      * @return int
      */
-    public function getPerMarket(): ?int
+    public function getPerMarket(): int
     {
         return $this->perMarket;
     }
@@ -120,7 +120,7 @@ class OrgOpentravelOta200305NumTripsType extends AbstractModel
      *
      * @return self
      */
-    public function setPerMarket(?int $perMarket): self
+    public function setPerMarket(int $perMarket): self
     {
         $this->perMarket = $perMarket;
 
@@ -132,7 +132,7 @@ class OrgOpentravelOta200305NumTripsType extends AbstractModel
      *
      * @return int
      */
-    public function getPerMonth(): ?int
+    public function getPerMonth(): int
     {
         return $this->perMonth;
     }
@@ -144,7 +144,7 @@ class OrgOpentravelOta200305NumTripsType extends AbstractModel
      *
      * @return self
      */
-    public function setPerMonth(?int $perMonth): self
+    public function setPerMonth(int $perMonth): self
     {
         $this->perMonth = $perMonth;
 

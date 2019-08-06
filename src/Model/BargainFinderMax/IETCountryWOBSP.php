@@ -14,7 +14,7 @@ class IETCountryWOBSP extends AbstractModel
     /**
      * @return Country[]
      */
-    public function getCountry(): ?array
+    public function getCountry(): array
     {
         return $this->country;
     }
@@ -24,7 +24,7 @@ class IETCountryWOBSP extends AbstractModel
      *
      * @return self
      */
-    public function setCountry(?array $country): self
+    public function setCountry(array $country): self
     {
         $this->country = $country;
 

@@ -40,7 +40,7 @@ class OrgOpentravelOta200305ExchangeTravelPreferencesTPAExtensionsType extends A
      *
      * @return OrgOpentravelOta200305ExchangeTravelPreferencesTPAExtensionsTypeExemptAllTaxes
      */
-    public function getExemptAllTaxes(): ?OrgOpentravelOta200305ExchangeTravelPreferencesTPAExtensionsTypeExemptAllTaxes
+    public function getExemptAllTaxes(): OrgOpentravelOta200305ExchangeTravelPreferencesTPAExtensionsTypeExemptAllTaxes
     {
         return $this->exemptAllTaxes;
     }
@@ -52,7 +52,7 @@ class OrgOpentravelOta200305ExchangeTravelPreferencesTPAExtensionsType extends A
      *
      * @return self
      */
-    public function setExemptAllTaxes(?OrgOpentravelOta200305ExchangeTravelPreferencesTPAExtensionsTypeExemptAllTaxes $exemptAllTaxes): self
+    public function setExemptAllTaxes(OrgOpentravelOta200305ExchangeTravelPreferencesTPAExtensionsTypeExemptAllTaxes $exemptAllTaxes): self
     {
         $this->exemptAllTaxes = $exemptAllTaxes;
 
@@ -64,7 +64,7 @@ class OrgOpentravelOta200305ExchangeTravelPreferencesTPAExtensionsType extends A
      *
      * @return OrgOpentravelOta200305ExchangeTravelPreferencesTPAExtensionsTypeExemptAllTaxesAndFees
      */
-    public function getExemptAllTaxesAndFees(): ?OrgOpentravelOta200305ExchangeTravelPreferencesTPAExtensionsTypeExemptAllTaxesAndFees
+    public function getExemptAllTaxesAndFees(): OrgOpentravelOta200305ExchangeTravelPreferencesTPAExtensionsTypeExemptAllTaxesAndFees
     {
         return $this->exemptAllTaxesAndFees;
     }
@@ -76,7 +76,7 @@ class OrgOpentravelOta200305ExchangeTravelPreferencesTPAExtensionsType extends A
      *
      * @return self
      */
-    public function setExemptAllTaxesAndFees(?OrgOpentravelOta200305ExchangeTravelPreferencesTPAExtensionsTypeExemptAllTaxesAndFees $exemptAllTaxesAndFees): self
+    public function setExemptAllTaxesAndFees(OrgOpentravelOta200305ExchangeTravelPreferencesTPAExtensionsTypeExemptAllTaxesAndFees $exemptAllTaxesAndFees): self
     {
         $this->exemptAllTaxesAndFees = $exemptAllTaxesAndFees;
 
@@ -86,7 +86,7 @@ class OrgOpentravelOta200305ExchangeTravelPreferencesTPAExtensionsType extends A
     /**
      * @return OrgOpentravelOta200305TaxCodeType[]
      */
-    public function getExemptTax(): ?array
+    public function getExemptTax(): array
     {
         return $this->exemptTax;
     }
@@ -96,7 +96,7 @@ class OrgOpentravelOta200305ExchangeTravelPreferencesTPAExtensionsType extends A
      *
      * @return self
      */
-    public function setExemptTax(?array $exemptTax): self
+    public function setExemptTax(array $exemptTax): self
     {
         $this->exemptTax = $exemptTax;
 
@@ -108,7 +108,7 @@ class OrgOpentravelOta200305ExchangeTravelPreferencesTPAExtensionsType extends A
      *
      * @return string
      */
-    public function getSettlementMethod(): ?string
+    public function getSettlementMethod(): string
     {
         return $this->settlementMethod;
     }
@@ -120,7 +120,7 @@ class OrgOpentravelOta200305ExchangeTravelPreferencesTPAExtensionsType extends A
      *
      * @return self
      */
-    public function setSettlementMethod(?string $settlementMethod): self
+    public function setSettlementMethod(string $settlementMethod): self
     {
         $this->settlementMethod = $settlementMethod;
 
@@ -132,7 +132,7 @@ class OrgOpentravelOta200305ExchangeTravelPreferencesTPAExtensionsType extends A
      *
      * @return OrgOpentravelOta200305ExchangeTravelPreferencesTPAExtensionsTypeTaxes
      */
-    public function getTaxes(): ?OrgOpentravelOta200305ExchangeTravelPreferencesTPAExtensionsTypeTaxes
+    public function getTaxes(): OrgOpentravelOta200305ExchangeTravelPreferencesTPAExtensionsTypeTaxes
     {
         return $this->taxes;
     }
@@ -144,7 +144,7 @@ class OrgOpentravelOta200305ExchangeTravelPreferencesTPAExtensionsType extends A
      *
      * @return self
      */
-    public function setTaxes(?OrgOpentravelOta200305ExchangeTravelPreferencesTPAExtensionsTypeTaxes $taxes): self
+    public function setTaxes(OrgOpentravelOta200305ExchangeTravelPreferencesTPAExtensionsTypeTaxes $taxes): self
     {
         $this->taxes = $taxes;
 

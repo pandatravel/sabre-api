@@ -13,9 +13,11 @@ class OrgOpentravelOta200305BrandedFareIndicatorsBase extends AbstractModel
      */
     protected $brandFilters;
     /**
-     * @var bool
+     * If set, given parity mode will be forced on the cheapest branded fare solution. If not specified, no parity (None) is forced on the cheapest branded fare solution. It's designed to work with MultipleBrandedFares feature only.
+     *
+     * @var string
      */
-    protected $keepLegParityForLowestSingle;
+    protected $parityModeForLowest;
     /**
      * Return single brand option per itin.
      *
@@ -28,7 +30,7 @@ class OrgOpentravelOta200305BrandedFareIndicatorsBase extends AbstractModel
      *
      * @return OrgOpentravelOta200305BrandFiltersType
      */
-    public function getBrandFilters(): ?OrgOpentravelOta200305BrandFiltersType
+    public function getBrandFilters(): OrgOpentravelOta200305BrandFiltersType
     {
         return $this->brandFilters;
     }
@@ -40,7 +42,7 @@ class OrgOpentravelOta200305BrandedFareIndicatorsBase extends AbstractModel
      *
      * @return self
      */
-    public function setBrandFilters(?OrgOpentravelOta200305BrandFiltersType $brandFilters): self
+    public function setBrandFilters(OrgOpentravelOta200305BrandFiltersType $brandFilters): self
     {
         $this->brandFilters = $brandFilters;
 
@@ -48,21 +50,25 @@ class OrgOpentravelOta200305BrandedFareIndicatorsBase extends AbstractModel
     }
 
     /**
-     * @return bool
+     * If set, given parity mode will be forced on the cheapest branded fare solution. If not specified, no parity (None) is forced on the cheapest branded fare solution. It's designed to work with MultipleBrandedFares feature only.
+     *
+     * @return string
      */
-    public function getKeepLegParityForLowestSingle(): ?bool
+    public function getParityModeForLowest(): string
     {
-        return $this->keepLegParityForLowestSingle;
+        return $this->parityModeForLowest;
     }
 
     /**
-     * @param bool $keepLegParityForLowestSingle
+     * If set, given parity mode will be forced on the cheapest branded fare solution. If not specified, no parity (None) is forced on the cheapest branded fare solution. It's designed to work with MultipleBrandedFares feature only.
+     *
+     * @param string $parityModeForLowest
      *
      * @return self
      */
-    public function setKeepLegParityForLowestSingle(?bool $keepLegParityForLowestSingle): self
+    public function setParityModeForLowest(string $parityModeForLowest): self
     {
-        $this->keepLegParityForLowestSingle = $keepLegParityForLowestSingle;
+        $this->parityModeForLowest = $parityModeForLowest;
 
         return $this;
     }
@@ -72,7 +78,7 @@ class OrgOpentravelOta200305BrandedFareIndicatorsBase extends AbstractModel
      *
      * @return bool
      */
-    public function getSingleBrandedFare(): ?bool
+    public function getSingleBrandedFare(): bool
     {
         return $this->singleBrandedFare;
     }
@@ -84,7 +90,7 @@ class OrgOpentravelOta200305BrandedFareIndicatorsBase extends AbstractModel
      *
      * @return self
      */
-    public function setSingleBrandedFare(?bool $singleBrandedFare): self
+    public function setSingleBrandedFare(bool $singleBrandedFare): self
     {
         $this->singleBrandedFare = $singleBrandedFare;
 

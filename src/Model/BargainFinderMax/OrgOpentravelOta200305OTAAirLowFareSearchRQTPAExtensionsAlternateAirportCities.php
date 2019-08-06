@@ -20,7 +20,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsAlternateAirportCi
     /**
      * @return OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsAlternateAirportCitiesAlternateLocation[]
      */
-    public function getAlternateLocation(): ?array
+    public function getAlternateLocation(): array
     {
         return $this->alternateLocation;
     }
@@ -30,7 +30,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsAlternateAirportCi
      *
      * @return self
      */
-    public function setAlternateLocation(?array $alternateLocation): self
+    public function setAlternateLocation(array $alternateLocation): self
     {
         $this->alternateLocation = $alternateLocation;
 
@@ -42,7 +42,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsAlternateAirportCi
      *
      * @return OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsAlternateAirportCitiesSpecifiedLocation
      */
-    public function getSpecifiedLocation(): ?OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsAlternateAirportCitiesSpecifiedLocation
+    public function getSpecifiedLocation(): OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsAlternateAirportCitiesSpecifiedLocation
     {
         return $this->specifiedLocation;
     }
@@ -54,7 +54,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsAlternateAirportCi
      *
      * @return self
      */
-    public function setSpecifiedLocation(?OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsAlternateAirportCitiesSpecifiedLocation $specifiedLocation): self
+    public function setSpecifiedLocation(OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsAlternateAirportCitiesSpecifiedLocation $specifiedLocation): self
     {
         $this->specifiedLocation = $specifiedLocation;
 

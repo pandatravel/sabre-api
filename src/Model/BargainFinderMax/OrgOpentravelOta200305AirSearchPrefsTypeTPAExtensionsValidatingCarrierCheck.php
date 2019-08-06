@@ -30,7 +30,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsValidatingCarrierChec
     /**
      * @return OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsValidatingCarrierCheckCarrier[]
      */
-    public function getCarrier(): ?array
+    public function getCarrier(): array
     {
         return $this->carrier;
     }
@@ -40,7 +40,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsValidatingCarrierChec
      *
      * @return self
      */
-    public function setCarrier(?array $carrier): self
+    public function setCarrier(array $carrier): self
     {
         $this->carrier = $carrier;
 
@@ -50,7 +50,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsValidatingCarrierChec
     /**
      * @return OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsValidatingCarrierCheckCountry[]
      */
-    public function getCountry(): ?array
+    public function getCountry(): array
     {
         return $this->country;
     }
@@ -60,7 +60,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsValidatingCarrierChec
      *
      * @return self
      */
-    public function setCountry(?array $country): self
+    public function setCountry(array $country): self
     {
         $this->country = $country;
 
@@ -72,7 +72,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsValidatingCarrierChec
      *
      * @return OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsValidatingCarrierCheckIETValidation
      */
-    public function getIETValidation(): ?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsValidatingCarrierCheckIETValidation
+    public function getIETValidation(): OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsValidatingCarrierCheckIETValidation
     {
         return $this->iETValidation;
     }
@@ -84,7 +84,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsValidatingCarrierChec
      *
      * @return self
      */
-    public function setIETValidation(?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsValidatingCarrierCheckIETValidation $iETValidation): self
+    public function setIETValidation(OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsValidatingCarrierCheckIETValidation $iETValidation): self
     {
         $this->iETValidation = $iETValidation;
 
@@ -96,7 +96,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsValidatingCarrierChec
      *
      * @return OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsValidatingCarrierCheckSettlementValidation
      */
-    public function getSettlementValidation(): ?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsValidatingCarrierCheckSettlementValidation
+    public function getSettlementValidation(): OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsValidatingCarrierCheckSettlementValidation
     {
         return $this->settlementValidation;
     }
@@ -108,7 +108,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsValidatingCarrierChec
      *
      * @return self
      */
-    public function setSettlementValidation(?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsValidatingCarrierCheckSettlementValidation $settlementValidation): self
+    public function setSettlementValidation(OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsValidatingCarrierCheckSettlementValidation $settlementValidation): self
     {
         $this->settlementValidation = $settlementValidation;
 

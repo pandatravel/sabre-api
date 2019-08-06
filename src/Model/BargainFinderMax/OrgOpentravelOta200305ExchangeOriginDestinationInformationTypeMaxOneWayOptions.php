@@ -14,7 +14,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeMaxOneWayOpt
     /**
      * @return int
      */
-    public function getValue(): ?int
+    public function getValue(): int
     {
         return $this->value;
     }
@@ -24,7 +24,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeMaxOneWayOpt
      *
      * @return self
      */
-    public function setValue(?int $value): self
+    public function setValue(int $value): self
     {
         $this->value = $value;
 

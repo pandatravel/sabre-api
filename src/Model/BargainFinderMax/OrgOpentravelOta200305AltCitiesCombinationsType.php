@@ -24,7 +24,7 @@ class OrgOpentravelOta200305AltCitiesCombinationsType extends AbstractModel
      *
      * @return string
      */
-    public function getDestinations(): ?string
+    public function getDestinations(): string
     {
         return $this->destinations;
     }
@@ -36,7 +36,7 @@ class OrgOpentravelOta200305AltCitiesCombinationsType extends AbstractModel
      *
      * @return self
      */
-    public function setDestinations(?string $destinations): self
+    public function setDestinations(string $destinations): self
     {
         $this->destinations = $destinations;
 
@@ -48,7 +48,7 @@ class OrgOpentravelOta200305AltCitiesCombinationsType extends AbstractModel
      *
      * @return string
      */
-    public function getOrigins(): ?string
+    public function getOrigins(): string
     {
         return $this->origins;
     }
@@ -60,7 +60,7 @@ class OrgOpentravelOta200305AltCitiesCombinationsType extends AbstractModel
      *
      * @return self
      */
-    public function setOrigins(?string $origins): self
+    public function setOrigins(string $origins): self
     {
         $this->origins = $origins;
 

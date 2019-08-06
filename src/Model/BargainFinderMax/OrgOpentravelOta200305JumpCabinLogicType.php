@@ -18,7 +18,7 @@ class OrgOpentravelOta200305JumpCabinLogicType extends AbstractModel
      *
      * @return bool
      */
-    public function getDisabled(): ?bool
+    public function getDisabled(): bool
     {
         return $this->disabled;
     }
@@ -30,7 +30,7 @@ class OrgOpentravelOta200305JumpCabinLogicType extends AbstractModel
      *
      * @return self
      */
-    public function setDisabled(?bool $disabled): self
+    public function setDisabled(bool $disabled): self
     {
         $this->disabled = $disabled;
 

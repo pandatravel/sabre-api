@@ -36,7 +36,7 @@ class OrgOpentravelOta200305EquipmentTypePref extends AbstractModel
     /**
      * @return string
      */
-    public function getAirEquipType(): ?string
+    public function getAirEquipType(): string
     {
         return $this->airEquipType;
     }
@@ -46,7 +46,7 @@ class OrgOpentravelOta200305EquipmentTypePref extends AbstractModel
      *
      * @return self
      */
-    public function setAirEquipType(?string $airEquipType): self
+    public function setAirEquipType(string $airEquipType): self
     {
         $this->airEquipType = $airEquipType;
 
@@ -58,7 +58,7 @@ class OrgOpentravelOta200305EquipmentTypePref extends AbstractModel
      *
      * @return bool
      */
-    public function getChangeofGauge(): ?bool
+    public function getChangeofGauge(): bool
     {
         return $this->changeofGauge;
     }
@@ -70,7 +70,7 @@ class OrgOpentravelOta200305EquipmentTypePref extends AbstractModel
      *
      * @return self
      */
-    public function setChangeofGauge(?bool $changeofGauge): self
+    public function setChangeofGauge(bool $changeofGauge): self
     {
         $this->changeofGauge = $changeofGauge;
 
@@ -82,7 +82,7 @@ class OrgOpentravelOta200305EquipmentTypePref extends AbstractModel
      *
      * @return string
      */
-    public function getPreferLevel(): ?string
+    public function getPreferLevel(): string
     {
         return $this->preferLevel;
     }
@@ -94,7 +94,7 @@ class OrgOpentravelOta200305EquipmentTypePref extends AbstractModel
      *
      * @return self
      */
-    public function setPreferLevel(?string $preferLevel): self
+    public function setPreferLevel(string $preferLevel): self
     {
         $this->preferLevel = $preferLevel;
 
@@ -106,7 +106,7 @@ class OrgOpentravelOta200305EquipmentTypePref extends AbstractModel
      *
      * @return bool
      */
-    public function getWideBody(): ?bool
+    public function getWideBody(): bool
     {
         return $this->wideBody;
     }
@@ -118,7 +118,7 @@ class OrgOpentravelOta200305EquipmentTypePref extends AbstractModel
      *
      * @return self
      */
-    public function setWideBody(?bool $wideBody): self
+    public function setWideBody(bool $wideBody): self
     {
         $this->wideBody = $wideBody;
 
@@ -128,7 +128,7 @@ class OrgOpentravelOta200305EquipmentTypePref extends AbstractModel
     /**
      * @return string
      */
-    public function getContent(): ?string
+    public function getContent(): string
     {
         return $this->content;
     }
@@ -138,7 +138,7 @@ class OrgOpentravelOta200305EquipmentTypePref extends AbstractModel
      *
      * @return self
      */
-    public function setContent(?string $content): self
+    public function setContent(string $content): self
     {
         $this->content = $content;
 

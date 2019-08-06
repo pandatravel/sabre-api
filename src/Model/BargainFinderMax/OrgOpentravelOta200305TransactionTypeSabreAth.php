@@ -22,7 +22,7 @@ class OrgOpentravelOta200305TransactionTypeSabreAth extends AbstractModel
     /**
      * @return string
      */
-    public function getBinarySecToken(): ?string
+    public function getBinarySecToken(): string
     {
         return $this->binarySecToken;
     }
@@ -32,7 +32,7 @@ class OrgOpentravelOta200305TransactionTypeSabreAth extends AbstractModel
      *
      * @return self
      */
-    public function setBinarySecToken(?string $binarySecToken): self
+    public function setBinarySecToken(string $binarySecToken): self
     {
         $this->binarySecToken = $binarySecToken;
 
@@ -42,7 +42,7 @@ class OrgOpentravelOta200305TransactionTypeSabreAth extends AbstractModel
     /**
      * @return string
      */
-    public function getConversationID(): ?string
+    public function getConversationID(): string
     {
         return $this->conversationID;
     }
@@ -52,7 +52,7 @@ class OrgOpentravelOta200305TransactionTypeSabreAth extends AbstractModel
      *
      * @return self
      */
-    public function setConversationID(?string $conversationID): self
+    public function setConversationID(string $conversationID): self
     {
         $this->conversationID = $conversationID;
 
@@ -62,7 +62,7 @@ class OrgOpentravelOta200305TransactionTypeSabreAth extends AbstractModel
     /**
      * @return string
      */
-    public function getValue(): ?string
+    public function getValue(): string
     {
         return $this->value;
     }
@@ -72,7 +72,7 @@ class OrgOpentravelOta200305TransactionTypeSabreAth extends AbstractModel
      *
      * @return self
      */
-    public function setValue(?string $value): self
+    public function setValue(string $value): self
     {
         $this->value = $value;
 

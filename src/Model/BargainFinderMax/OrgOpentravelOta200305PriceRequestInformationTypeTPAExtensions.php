@@ -142,7 +142,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensions extends Abs
      *
      * @return OrgOpentravelOta200305ApplyResidentDiscountType
      */
-    public function getApplyResidentDiscount(): ?OrgOpentravelOta200305ApplyResidentDiscountType
+    public function getApplyResidentDiscount(): OrgOpentravelOta200305ApplyResidentDiscountType
     {
         return $this->applyResidentDiscount;
     }
@@ -154,7 +154,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensions extends Abs
      *
      * @return self
      */
-    public function setApplyResidentDiscount(?OrgOpentravelOta200305ApplyResidentDiscountType $applyResidentDiscount): self
+    public function setApplyResidentDiscount(OrgOpentravelOta200305ApplyResidentDiscountType $applyResidentDiscount): self
     {
         $this->applyResidentDiscount = $applyResidentDiscount;
 
@@ -164,7 +164,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensions extends Abs
     /**
      * @return OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsBrandedFareIndicators
      */
-    public function getBrandedFareIndicators(): ?OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsBrandedFareIndicators
+    public function getBrandedFareIndicators(): OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsBrandedFareIndicators
     {
         return $this->brandedFareIndicators;
     }
@@ -174,7 +174,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensions extends Abs
      *
      * @return self
      */
-    public function setBrandedFareIndicators(?OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsBrandedFareIndicators $brandedFareIndicators): self
+    public function setBrandedFareIndicators(OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsBrandedFareIndicators $brandedFareIndicators): self
     {
         $this->brandedFareIndicators = $brandedFareIndicators;
 
@@ -184,7 +184,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensions extends Abs
     /**
      * @return OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsCurrency
      */
-    public function getCurrency(): ?OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsCurrency
+    public function getCurrency(): OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsCurrency
     {
         return $this->currency;
     }
@@ -194,7 +194,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensions extends Abs
      *
      * @return self
      */
-    public function setCurrency(?OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsCurrency $currency): self
+    public function setCurrency(OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsCurrency $currency): self
     {
         $this->currency = $currency;
 
@@ -204,7 +204,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensions extends Abs
     /**
      * @return OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsCustomerType
      */
-    public function getCustomerType(): ?OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsCustomerType
+    public function getCustomerType(): OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsCustomerType
     {
         return $this->customerType;
     }
@@ -214,7 +214,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensions extends Abs
      *
      * @return self
      */
-    public function setCustomerType(?OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsCustomerType $customerType): self
+    public function setCustomerType(OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsCustomerType $customerType): self
     {
         $this->customerType = $customerType;
 
@@ -224,7 +224,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensions extends Abs
     /**
      * @return OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsETicketableOverride
      */
-    public function getETicketableOverride(): ?OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsETicketableOverride
+    public function getETicketableOverride(): OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsETicketableOverride
     {
         return $this->eTicketableOverride;
     }
@@ -234,7 +234,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensions extends Abs
      *
      * @return self
      */
-    public function setETicketableOverride(?OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsETicketableOverride $eTicketableOverride): self
+    public function setETicketableOverride(OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsETicketableOverride $eTicketableOverride): self
     {
         $this->eTicketableOverride = $eTicketableOverride;
 
@@ -244,7 +244,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensions extends Abs
     /**
      * @return OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsFareAdjustment[]
      */
-    public function getFareAdjustment(): ?array
+    public function getFareAdjustment(): array
     {
         return $this->fareAdjustment;
     }
@@ -254,7 +254,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensions extends Abs
      *
      * @return self
      */
-    public function setFareAdjustment(?array $fareAdjustment): self
+    public function setFareAdjustment(array $fareAdjustment): self
     {
         $this->fareAdjustment = $fareAdjustment;
 
@@ -266,7 +266,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensions extends Abs
      *
      * @return OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsFareBreaksAtLegs
      */
-    public function getFareBreaksAtLegs(): ?OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsFareBreaksAtLegs
+    public function getFareBreaksAtLegs(): OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsFareBreaksAtLegs
     {
         return $this->fareBreaksAtLegs;
     }
@@ -278,7 +278,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensions extends Abs
      *
      * @return self
      */
-    public function setFareBreaksAtLegs(?OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsFareBreaksAtLegs $fareBreaksAtLegs): self
+    public function setFareBreaksAtLegs(OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsFareBreaksAtLegs $fareBreaksAtLegs): self
     {
         $this->fareBreaksAtLegs = $fareBreaksAtLegs;
 
@@ -290,7 +290,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensions extends Abs
      *
      * @return OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsForceCompanion
      */
-    public function getForceCompanion(): ?OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsForceCompanion
+    public function getForceCompanion(): OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsForceCompanion
     {
         return $this->forceCompanion;
     }
@@ -302,7 +302,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensions extends Abs
      *
      * @return self
      */
-    public function setForceCompanion(?OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsForceCompanion $forceCompanion): self
+    public function setForceCompanion(OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsForceCompanion $forceCompanion): self
     {
         $this->forceCompanion = $forceCompanion;
 
@@ -314,7 +314,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensions extends Abs
      *
      * @return OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsIATAFare
      */
-    public function getIATAFare(): ?OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsIATAFare
+    public function getIATAFare(): OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsIATAFare
     {
         return $this->iATAFare;
     }
@@ -326,7 +326,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensions extends Abs
      *
      * @return self
      */
-    public function setIATAFare(?OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsIATAFare $iATAFare): self
+    public function setIATAFare(OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsIATAFare $iATAFare): self
     {
         $this->iATAFare = $iATAFare;
 
@@ -338,7 +338,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensions extends Abs
      *
      * @return OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsIndicators
      */
-    public function getIndicators(): ?OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsIndicators
+    public function getIndicators(): OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsIndicators
     {
         return $this->indicators;
     }
@@ -350,7 +350,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensions extends Abs
      *
      * @return self
      */
-    public function setIndicators(?OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsIndicators $indicators): self
+    public function setIndicators(OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsIndicators $indicators): self
     {
         $this->indicators = $indicators;
 
@@ -362,7 +362,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensions extends Abs
      *
      * @return OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsMultipleTravelerGroups
      */
-    public function getMultipleTravelerGroups(): ?OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsMultipleTravelerGroups
+    public function getMultipleTravelerGroups(): OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsMultipleTravelerGroups
     {
         return $this->multipleTravelerGroups;
     }
@@ -374,7 +374,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensions extends Abs
      *
      * @return self
      */
-    public function setMultipleTravelerGroups(?OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsMultipleTravelerGroups $multipleTravelerGroups): self
+    public function setMultipleTravelerGroups(OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsMultipleTravelerGroups $multipleTravelerGroups): self
     {
         $this->multipleTravelerGroups = $multipleTravelerGroups;
 
@@ -384,7 +384,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensions extends Abs
     /**
      * @return OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsOBFees
      */
-    public function getOBFees(): ?OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsOBFees
+    public function getOBFees(): OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsOBFees
     {
         return $this->oBFees;
     }
@@ -394,7 +394,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensions extends Abs
      *
      * @return self
      */
-    public function setOBFees(?OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsOBFees $oBFees): self
+    public function setOBFees(OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsOBFees $oBFees): self
     {
         $this->oBFees = $oBFees;
 
@@ -404,7 +404,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensions extends Abs
     /**
      * @return OrgOpentravelOta200305PassengerPriceAdjustmentType[]
      */
-    public function getPassengerPriceAdjustment(): ?array
+    public function getPassengerPriceAdjustment(): array
     {
         return $this->passengerPriceAdjustment;
     }
@@ -414,7 +414,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensions extends Abs
      *
      * @return self
      */
-    public function setPassengerPriceAdjustment(?array $passengerPriceAdjustment): self
+    public function setPassengerPriceAdjustment(array $passengerPriceAdjustment): self
     {
         $this->passengerPriceAdjustment = $passengerPriceAdjustment;
 
@@ -424,7 +424,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensions extends Abs
     /**
      * @return OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPassengerStatus
      */
-    public function getPassengerStatus(): ?OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPassengerStatus
+    public function getPassengerStatus(): OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPassengerStatus
     {
         return $this->passengerStatus;
     }
@@ -434,7 +434,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensions extends Abs
      *
      * @return self
      */
-    public function setPassengerStatus(?OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPassengerStatus $passengerStatus): self
+    public function setPassengerStatus(OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPassengerStatus $passengerStatus): self
     {
         $this->passengerStatus = $passengerStatus;
 
@@ -446,7 +446,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensions extends Abs
      *
      * @return OrgOpentravelOta200305PointOfSaleOverrideType
      */
-    public function getPointOfSaleOverride(): ?OrgOpentravelOta200305PointOfSaleOverrideType
+    public function getPointOfSaleOverride(): OrgOpentravelOta200305PointOfSaleOverrideType
     {
         return $this->pointOfSaleOverride;
     }
@@ -458,7 +458,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensions extends Abs
      *
      * @return self
      */
-    public function setPointOfSaleOverride(?OrgOpentravelOta200305PointOfSaleOverrideType $pointOfSaleOverride): self
+    public function setPointOfSaleOverride(OrgOpentravelOta200305PointOfSaleOverrideType $pointOfSaleOverride): self
     {
         $this->pointOfSaleOverride = $pointOfSaleOverride;
 
@@ -468,7 +468,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensions extends Abs
     /**
      * @return OrgOpentravelOta200305PointOfTicketingOverrideType
      */
-    public function getPointOfTicketingOverride(): ?OrgOpentravelOta200305PointOfTicketingOverrideType
+    public function getPointOfTicketingOverride(): OrgOpentravelOta200305PointOfTicketingOverrideType
     {
         return $this->pointOfTicketingOverride;
     }
@@ -478,7 +478,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensions extends Abs
      *
      * @return self
      */
-    public function setPointOfTicketingOverride(?OrgOpentravelOta200305PointOfTicketingOverrideType $pointOfTicketingOverride): self
+    public function setPointOfTicketingOverride(OrgOpentravelOta200305PointOfTicketingOverrideType $pointOfTicketingOverride): self
     {
         $this->pointOfTicketingOverride = $pointOfTicketingOverride;
 
@@ -490,7 +490,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensions extends Abs
      *
      * @return OrgOpentravelOta200305PriceAdjustmentType
      */
-    public function getPriceAdjustment(): ?OrgOpentravelOta200305PriceAdjustmentType
+    public function getPriceAdjustment(): OrgOpentravelOta200305PriceAdjustmentType
     {
         return $this->priceAdjustment;
     }
@@ -502,7 +502,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensions extends Abs
      *
      * @return self
      */
-    public function setPriceAdjustment(?OrgOpentravelOta200305PriceAdjustmentType $priceAdjustment): self
+    public function setPriceAdjustment(OrgOpentravelOta200305PriceAdjustmentType $priceAdjustment): self
     {
         $this->priceAdjustment = $priceAdjustment;
 
@@ -514,7 +514,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensions extends Abs
      *
      * @return OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPriority
      */
-    public function getPriority(): ?OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPriority
+    public function getPriority(): OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPriority
     {
         return $this->priority;
     }
@@ -526,7 +526,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensions extends Abs
      *
      * @return self
      */
-    public function setPriority(?OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPriority $priority): self
+    public function setPriority(OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPriority $priority): self
     {
         $this->priority = $priority;
 
@@ -538,7 +538,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensions extends Abs
      *
      * @return OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPrivateFare
      */
-    public function getPrivateFare(): ?OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPrivateFare
+    public function getPrivateFare(): OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPrivateFare
     {
         return $this->privateFare;
     }
@@ -550,7 +550,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensions extends Abs
      *
      * @return self
      */
-    public function setPrivateFare(?OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPrivateFare $privateFare): self
+    public function setPrivateFare(OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPrivateFare $privateFare): self
     {
         $this->privateFare = $privateFare;
 
@@ -562,7 +562,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensions extends Abs
      *
      * @return string
      */
-    public function getPromoID(): ?string
+    public function getPromoID(): string
     {
         return $this->promoID;
     }
@@ -574,7 +574,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensions extends Abs
      *
      * @return self
      */
-    public function setPromoID(?string $promoID): self
+    public function setPromoID(string $promoID): self
     {
         $this->promoID = $promoID;
 
@@ -586,7 +586,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensions extends Abs
      *
      * @return OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPublicFare
      */
-    public function getPublicFare(): ?OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPublicFare
+    public function getPublicFare(): OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPublicFare
     {
         return $this->publicFare;
     }
@@ -598,7 +598,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensions extends Abs
      *
      * @return self
      */
-    public function setPublicFare(?OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPublicFare $publicFare): self
+    public function setPublicFare(OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPublicFare $publicFare): self
     {
         $this->publicFare = $publicFare;
 
@@ -610,7 +610,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensions extends Abs
      *
      * @return OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsUseNegotiatedFares
      */
-    public function getUseNegotiatedFares(): ?OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsUseNegotiatedFares
+    public function getUseNegotiatedFares(): OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsUseNegotiatedFares
     {
         return $this->useNegotiatedFares;
     }
@@ -622,7 +622,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensions extends Abs
      *
      * @return self
      */
-    public function setUseNegotiatedFares(?OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsUseNegotiatedFares $useNegotiatedFares): self
+    public function setUseNegotiatedFares(OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsUseNegotiatedFares $useNegotiatedFares): self
     {
         $this->useNegotiatedFares = $useNegotiatedFares;
 
@@ -634,7 +634,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensions extends Abs
      *
      * @return OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsUsePassengerFares
      */
-    public function getUsePassengerFares(): ?OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsUsePassengerFares
+    public function getUsePassengerFares(): OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsUsePassengerFares
     {
         return $this->usePassengerFares;
     }
@@ -646,7 +646,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensions extends Abs
      *
      * @return self
      */
-    public function setUsePassengerFares(?OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsUsePassengerFares $usePassengerFares): self
+    public function setUsePassengerFares(OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsUsePassengerFares $usePassengerFares): self
     {
         $this->usePassengerFares = $usePassengerFares;
 
@@ -658,7 +658,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensions extends Abs
      *
      * @return OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsUseReducedConstructions
      */
-    public function getUseReducedConstructions(): ?OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsUseReducedConstructions
+    public function getUseReducedConstructions(): OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsUseReducedConstructions
     {
         return $this->useReducedConstructions;
     }
@@ -670,7 +670,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensions extends Abs
      *
      * @return self
      */
-    public function setUseReducedConstructions(?OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsUseReducedConstructions $useReducedConstructions): self
+    public function setUseReducedConstructions(OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsUseReducedConstructions $useReducedConstructions): self
     {
         $this->useReducedConstructions = $useReducedConstructions;
 
@@ -680,7 +680,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensions extends Abs
     /**
      * @return OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsWebFare
      */
-    public function getWebFare(): ?OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsWebFare
+    public function getWebFare(): OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsWebFare
     {
         return $this->webFare;
     }
@@ -690,7 +690,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensions extends Abs
      *
      * @return self
      */
-    public function setWebFare(?OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsWebFare $webFare): self
+    public function setWebFare(OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsWebFare $webFare): self
     {
         $this->webFare = $webFare;
 

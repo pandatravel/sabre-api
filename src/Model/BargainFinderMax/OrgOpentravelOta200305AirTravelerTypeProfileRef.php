@@ -18,7 +18,7 @@ class OrgOpentravelOta200305AirTravelerTypeProfileRef extends AbstractModel
      *
      * @return OrgOpentravelOta200305UniqueIDType
      */
-    public function getUniqueID(): ?OrgOpentravelOta200305UniqueIDType
+    public function getUniqueID(): OrgOpentravelOta200305UniqueIDType
     {
         return $this->uniqueID;
     }
@@ -30,7 +30,7 @@ class OrgOpentravelOta200305AirTravelerTypeProfileRef extends AbstractModel
      *
      * @return self
      */
-    public function setUniqueID(?OrgOpentravelOta200305UniqueIDType $uniqueID): self
+    public function setUniqueID(OrgOpentravelOta200305UniqueIDType $uniqueID): self
     {
         $this->uniqueID = $uniqueID;
 

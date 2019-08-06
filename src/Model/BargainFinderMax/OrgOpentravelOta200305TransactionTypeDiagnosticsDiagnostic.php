@@ -28,7 +28,7 @@ class OrgOpentravelOta200305TransactionTypeDiagnosticsDiagnostic extends Abstrac
     /**
      * @return string
      */
-    public function getCode(): ?string
+    public function getCode(): string
     {
         return $this->code;
     }
@@ -38,7 +38,7 @@ class OrgOpentravelOta200305TransactionTypeDiagnosticsDiagnostic extends Abstrac
      *
      * @return self
      */
-    public function setCode(?string $code): self
+    public function setCode(string $code): self
     {
         $this->code = $code;
 
@@ -48,7 +48,7 @@ class OrgOpentravelOta200305TransactionTypeDiagnosticsDiagnostic extends Abstrac
     /**
      * @return OrgOpentravelOta200305TransactionTypeDiagnosticsDiagnosticDiagnosticArgument[]
      */
-    public function getDiagnosticArgument(): ?array
+    public function getDiagnosticArgument(): array
     {
         return $this->diagnosticArgument;
     }
@@ -58,7 +58,7 @@ class OrgOpentravelOta200305TransactionTypeDiagnosticsDiagnostic extends Abstrac
      *
      * @return self
      */
-    public function setDiagnosticArgument(?array $diagnosticArgument): self
+    public function setDiagnosticArgument(array $diagnosticArgument): self
     {
         $this->diagnosticArgument = $diagnosticArgument;
 
@@ -70,7 +70,7 @@ class OrgOpentravelOta200305TransactionTypeDiagnosticsDiagnostic extends Abstrac
      *
      * @return string
      */
-    public function getTPAExtensions(): ?string
+    public function getTPAExtensions(): string
     {
         return $this->tPAExtensions;
     }
@@ -82,7 +82,7 @@ class OrgOpentravelOta200305TransactionTypeDiagnosticsDiagnostic extends Abstrac
      *
      * @return self
      */
-    public function setTPAExtensions(?string $tPAExtensions): self
+    public function setTPAExtensions(string $tPAExtensions): self
     {
         $this->tPAExtensions = $tPAExtensions;
 
@@ -92,7 +92,7 @@ class OrgOpentravelOta200305TransactionTypeDiagnosticsDiagnostic extends Abstrac
     /**
      * @return string
      */
-    public function getTarget(): ?string
+    public function getTarget(): string
     {
         return $this->target;
     }
@@ -102,7 +102,7 @@ class OrgOpentravelOta200305TransactionTypeDiagnosticsDiagnostic extends Abstrac
      *
      * @return self
      */
-    public function setTarget(?string $target): self
+    public function setTarget(string $target): self
     {
         $this->target = $target;
 

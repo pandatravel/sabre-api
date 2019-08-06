@@ -30,7 +30,7 @@ class OrgOpentravelOta200305PositionType extends AbstractModel
      *
      * @return string
      */
-    public function getAltitude(): ?string
+    public function getAltitude(): string
     {
         return $this->altitude;
     }
@@ -42,7 +42,7 @@ class OrgOpentravelOta200305PositionType extends AbstractModel
      *
      * @return self
      */
-    public function setAltitude(?string $altitude): self
+    public function setAltitude(string $altitude): self
     {
         $this->altitude = $altitude;
 
@@ -54,7 +54,7 @@ class OrgOpentravelOta200305PositionType extends AbstractModel
      *
      * @return string
      */
-    public function getLatitude(): ?string
+    public function getLatitude(): string
     {
         return $this->latitude;
     }
@@ -66,7 +66,7 @@ class OrgOpentravelOta200305PositionType extends AbstractModel
      *
      * @return self
      */
-    public function setLatitude(?string $latitude): self
+    public function setLatitude(string $latitude): self
     {
         $this->latitude = $latitude;
 
@@ -78,7 +78,7 @@ class OrgOpentravelOta200305PositionType extends AbstractModel
      *
      * @return string
      */
-    public function getLongitude(): ?string
+    public function getLongitude(): string
     {
         return $this->longitude;
     }
@@ -90,7 +90,7 @@ class OrgOpentravelOta200305PositionType extends AbstractModel
      *
      * @return self
      */
-    public function setLongitude(?string $longitude): self
+    public function setLongitude(string $longitude): self
     {
         $this->longitude = $longitude;
 

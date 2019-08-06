@@ -42,8 +42,8 @@ class OrgOpentravelOta200305BrandedFareIndicatorsBaseNormalizer implements Denor
         if (property_exists($data, 'BrandFilters')) {
             $object->setBrandFilters($this->denormalizer->denormalize($data->{'BrandFilters'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305BrandFiltersType', 'json', $context));
         }
-        if (property_exists($data, 'KeepLegParityForLowestSingle')) {
-            $object->setKeepLegParityForLowestSingle($data->{'KeepLegParityForLowestSingle'});
+        if (property_exists($data, 'ParityModeForLowest')) {
+            $object->setParityModeForLowest($data->{'ParityModeForLowest'});
         }
         if (property_exists($data, 'SingleBrandedFare')) {
             $object->setSingleBrandedFare($data->{'SingleBrandedFare'});
@@ -58,8 +58,8 @@ class OrgOpentravelOta200305BrandedFareIndicatorsBaseNormalizer implements Denor
         if (null !== $object->getBrandFilters()) {
             $data->{'BrandFilters'} = $this->normalizer->normalize($object->getBrandFilters(), 'json', $context);
         }
-        if (null !== $object->getKeepLegParityForLowestSingle()) {
-            $data->{'KeepLegParityForLowestSingle'} = $object->getKeepLegParityForLowestSingle();
+        if (null !== $object->getParityModeForLowest()) {
+            $data->{'ParityModeForLowest'} = $object->getParityModeForLowest();
         }
         if (null !== $object->getSingleBrandedFare()) {
             $data->{'SingleBrandedFare'} = $object->getSingleBrandedFare();

@@ -14,7 +14,7 @@ class OrgOpentravelOta200305AirTravelerTypeFlightSegmentRPHs extends AbstractMod
     /**
      * @return string[]
      */
-    public function getFlightSegmentRPH(): ?array
+    public function getFlightSegmentRPH(): array
     {
         return $this->flightSegmentRPH;
     }
@@ -24,7 +24,7 @@ class OrgOpentravelOta200305AirTravelerTypeFlightSegmentRPHs extends AbstractMod
      *
      * @return self
      */
-    public function setFlightSegmentRPH(?array $flightSegmentRPH): self
+    public function setFlightSegmentRPH(array $flightSegmentRPH): self
     {
         $this->flightSegmentRPH = $flightSegmentRPH;
 

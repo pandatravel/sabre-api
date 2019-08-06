@@ -14,7 +14,7 @@ class OrgOpentravelOta200305DiversityControlTypeDimensionsTravelTime extends Abs
     /**
      * @return float
      */
-    public function getWeight(): ?float
+    public function getWeight(): float
     {
         return $this->weight;
     }
@@ -24,7 +24,7 @@ class OrgOpentravelOta200305DiversityControlTypeDimensionsTravelTime extends Abs
      *
      * @return self
      */
-    public function setWeight(?float $weight): self
+    public function setWeight(float $weight): self
     {
         $this->weight = $weight;
 

@@ -50,7 +50,7 @@ class OrgOpentravelOta200305PassengerTypeQuantityType extends AbstractModel
     /**
      * @return int
      */
-    public function getAge(): ?int
+    public function getAge(): int
     {
         return $this->age;
     }
@@ -60,7 +60,7 @@ class OrgOpentravelOta200305PassengerTypeQuantityType extends AbstractModel
      *
      * @return self
      */
-    public function setAge(?int $age): self
+    public function setAge(int $age): self
     {
         $this->age = $age;
 
@@ -70,7 +70,7 @@ class OrgOpentravelOta200305PassengerTypeQuantityType extends AbstractModel
     /**
      * @return bool
      */
-    public function getChangeable(): ?bool
+    public function getChangeable(): bool
     {
         return $this->changeable;
     }
@@ -80,7 +80,7 @@ class OrgOpentravelOta200305PassengerTypeQuantityType extends AbstractModel
      *
      * @return self
      */
-    public function setChangeable(?bool $changeable): self
+    public function setChangeable(bool $changeable): self
     {
         $this->changeable = $changeable;
 
@@ -90,7 +90,7 @@ class OrgOpentravelOta200305PassengerTypeQuantityType extends AbstractModel
     /**
      * @return string
      */
-    public function getCode(): ?string
+    public function getCode(): string
     {
         return $this->code;
     }
@@ -100,7 +100,7 @@ class OrgOpentravelOta200305PassengerTypeQuantityType extends AbstractModel
      *
      * @return self
      */
-    public function setCode(?string $code): self
+    public function setCode(string $code): self
     {
         $this->code = $code;
 
@@ -110,7 +110,7 @@ class OrgOpentravelOta200305PassengerTypeQuantityType extends AbstractModel
     /**
      * @return string
      */
-    public function getCodeContext(): ?string
+    public function getCodeContext(): string
     {
         return $this->codeContext;
     }
@@ -120,7 +120,7 @@ class OrgOpentravelOta200305PassengerTypeQuantityType extends AbstractModel
      *
      * @return self
      */
-    public function setCodeContext(?string $codeContext): self
+    public function setCodeContext(string $codeContext): self
     {
         $this->codeContext = $codeContext;
 
@@ -130,7 +130,7 @@ class OrgOpentravelOta200305PassengerTypeQuantityType extends AbstractModel
     /**
      * @return int
      */
-    public function getID(): ?int
+    public function getID(): int
     {
         return $this->iD;
     }
@@ -140,7 +140,7 @@ class OrgOpentravelOta200305PassengerTypeQuantityType extends AbstractModel
      *
      * @return self
      */
-    public function setID(?int $iD): self
+    public function setID(int $iD): self
     {
         $this->iD = $iD;
 
@@ -150,7 +150,7 @@ class OrgOpentravelOta200305PassengerTypeQuantityType extends AbstractModel
     /**
      * @return int
      */
-    public function getIndex(): ?int
+    public function getIndex(): int
     {
         return $this->index;
     }
@@ -160,7 +160,7 @@ class OrgOpentravelOta200305PassengerTypeQuantityType extends AbstractModel
      *
      * @return self
      */
-    public function setIndex(?int $index): self
+    public function setIndex(int $index): self
     {
         $this->index = $index;
 
@@ -170,7 +170,7 @@ class OrgOpentravelOta200305PassengerTypeQuantityType extends AbstractModel
     /**
      * @return int
      */
-    public function getQuantity(): ?int
+    public function getQuantity(): int
     {
         return $this->quantity;
     }
@@ -180,7 +180,7 @@ class OrgOpentravelOta200305PassengerTypeQuantityType extends AbstractModel
      *
      * @return self
      */
-    public function setQuantity(?int $quantity): self
+    public function setQuantity(int $quantity): self
     {
         $this->quantity = $quantity;
 
@@ -190,7 +190,7 @@ class OrgOpentravelOta200305PassengerTypeQuantityType extends AbstractModel
     /**
      * @return int
      */
-    public function getRequestedPassengerIndex(): ?int
+    public function getRequestedPassengerIndex(): int
     {
         return $this->requestedPassengerIndex;
     }
@@ -200,7 +200,7 @@ class OrgOpentravelOta200305PassengerTypeQuantityType extends AbstractModel
      *
      * @return self
      */
-    public function setRequestedPassengerIndex(?int $requestedPassengerIndex): self
+    public function setRequestedPassengerIndex(int $requestedPassengerIndex): self
     {
         $this->requestedPassengerIndex = $requestedPassengerIndex;
 
@@ -210,7 +210,7 @@ class OrgOpentravelOta200305PassengerTypeQuantityType extends AbstractModel
     /**
      * @return OrgOpentravelOta200305PassengerTypeQuantityTypeTPAExtensions
      */
-    public function getTPAExtensions(): ?OrgOpentravelOta200305PassengerTypeQuantityTypeTPAExtensions
+    public function getTPAExtensions(): OrgOpentravelOta200305PassengerTypeQuantityTypeTPAExtensions
     {
         return $this->tPAExtensions;
     }
@@ -220,7 +220,7 @@ class OrgOpentravelOta200305PassengerTypeQuantityType extends AbstractModel
      *
      * @return self
      */
-    public function setTPAExtensions(?OrgOpentravelOta200305PassengerTypeQuantityTypeTPAExtensions $tPAExtensions): self
+    public function setTPAExtensions(OrgOpentravelOta200305PassengerTypeQuantityTypeTPAExtensions $tPAExtensions): self
     {
         $this->tPAExtensions = $tPAExtensions;
 
@@ -230,7 +230,7 @@ class OrgOpentravelOta200305PassengerTypeQuantityType extends AbstractModel
     /**
      * @return string
      */
-    public function getURI(): ?string
+    public function getURI(): string
     {
         return $this->uRI;
     }
@@ -240,7 +240,7 @@ class OrgOpentravelOta200305PassengerTypeQuantityType extends AbstractModel
      *
      * @return self
      */
-    public function setURI(?string $uRI): self
+    public function setURI(string $uRI): self
     {
         $this->uRI = $uRI;
 

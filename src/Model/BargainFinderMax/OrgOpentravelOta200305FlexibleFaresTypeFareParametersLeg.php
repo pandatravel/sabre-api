@@ -46,7 +46,7 @@ class OrgOpentravelOta200305FlexibleFaresTypeFareParametersLeg extends AbstractM
      *
      * @return OrgOpentravelOta200305BaggageType
      */
-    public function getBaggage(): ?OrgOpentravelOta200305BaggageType
+    public function getBaggage(): OrgOpentravelOta200305BaggageType
     {
         return $this->baggage;
     }
@@ -58,7 +58,7 @@ class OrgOpentravelOta200305FlexibleFaresTypeFareParametersLeg extends AbstractM
      *
      * @return self
      */
-    public function setBaggage(?OrgOpentravelOta200305BaggageType $baggage): self
+    public function setBaggage(OrgOpentravelOta200305BaggageType $baggage): self
     {
         $this->baggage = $baggage;
 
@@ -70,7 +70,7 @@ class OrgOpentravelOta200305FlexibleFaresTypeFareParametersLeg extends AbstractM
      *
      * @return OrgOpentravelOta200305BrandFiltersType
      */
-    public function getBrandFilters(): ?OrgOpentravelOta200305BrandFiltersType
+    public function getBrandFilters(): OrgOpentravelOta200305BrandFiltersType
     {
         return $this->brandFilters;
     }
@@ -82,7 +82,7 @@ class OrgOpentravelOta200305FlexibleFaresTypeFareParametersLeg extends AbstractM
      *
      * @return self
      */
-    public function setBrandFilters(?OrgOpentravelOta200305BrandFiltersType $brandFilters): self
+    public function setBrandFilters(OrgOpentravelOta200305BrandFiltersType $brandFilters): self
     {
         $this->brandFilters = $brandFilters;
 
@@ -94,7 +94,7 @@ class OrgOpentravelOta200305FlexibleFaresTypeFareParametersLeg extends AbstractM
      *
      * @return OrgOpentravelOta200305FlexibleFaresTypeFareParametersLegCabin
      */
-    public function getCabin(): ?OrgOpentravelOta200305FlexibleFaresTypeFareParametersLegCabin
+    public function getCabin(): OrgOpentravelOta200305FlexibleFaresTypeFareParametersLegCabin
     {
         return $this->cabin;
     }
@@ -106,7 +106,7 @@ class OrgOpentravelOta200305FlexibleFaresTypeFareParametersLeg extends AbstractM
      *
      * @return self
      */
-    public function setCabin(?OrgOpentravelOta200305FlexibleFaresTypeFareParametersLegCabin $cabin): self
+    public function setCabin(OrgOpentravelOta200305FlexibleFaresTypeFareParametersLegCabin $cabin): self
     {
         $this->cabin = $cabin;
 
@@ -116,7 +116,7 @@ class OrgOpentravelOta200305FlexibleFaresTypeFareParametersLeg extends AbstractM
     /**
      * @return OrgOpentravelOta200305ClassOfServiceElemType[]
      */
-    public function getClassOfService(): ?array
+    public function getClassOfService(): array
     {
         return $this->classOfService;
     }
@@ -126,7 +126,7 @@ class OrgOpentravelOta200305FlexibleFaresTypeFareParametersLeg extends AbstractM
      *
      * @return self
      */
-    public function setClassOfService(?array $classOfService): self
+    public function setClassOfService(array $classOfService): self
     {
         $this->classOfService = $classOfService;
 
@@ -136,7 +136,7 @@ class OrgOpentravelOta200305FlexibleFaresTypeFareParametersLeg extends AbstractM
     /**
      * @return OrgOpentravelOta200305FareBasisType[]
      */
-    public function getFareBasis(): ?array
+    public function getFareBasis(): array
     {
         return $this->fareBasis;
     }
@@ -146,7 +146,7 @@ class OrgOpentravelOta200305FlexibleFaresTypeFareParametersLeg extends AbstractM
      *
      * @return self
      */
-    public function setFareBasis(?array $fareBasis): self
+    public function setFareBasis(array $fareBasis): self
     {
         $this->fareBasis = $fareBasis;
 
@@ -156,7 +156,7 @@ class OrgOpentravelOta200305FlexibleFaresTypeFareParametersLeg extends AbstractM
     /**
      * @return OrgOpentravelOta200305FareTypePrefType[]
      */
-    public function getFareType(): ?array
+    public function getFareType(): array
     {
         return $this->fareType;
     }
@@ -166,7 +166,7 @@ class OrgOpentravelOta200305FlexibleFaresTypeFareParametersLeg extends AbstractM
      *
      * @return self
      */
-    public function setFareType(?array $fareType): self
+    public function setFareType(array $fareType): self
     {
         $this->fareType = $fareType;
 
@@ -176,7 +176,7 @@ class OrgOpentravelOta200305FlexibleFaresTypeFareParametersLeg extends AbstractM
     /**
      * @return float
      */
-    public function getNum(): ?float
+    public function getNum(): float
     {
         return $this->num;
     }
@@ -186,7 +186,7 @@ class OrgOpentravelOta200305FlexibleFaresTypeFareParametersLeg extends AbstractM
      *
      * @return self
      */
-    public function setNum(?float $num): self
+    public function setNum(float $num): self
     {
         $this->num = $num;
 

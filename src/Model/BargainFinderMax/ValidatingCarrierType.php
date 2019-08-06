@@ -38,7 +38,7 @@ class ValidatingCarrierType extends AbstractModel
     /**
      * @return ValidatingCarrier[]
      */
-    public function getAlternates(): ?array
+    public function getAlternates(): array
     {
         return $this->alternates;
     }
@@ -48,7 +48,7 @@ class ValidatingCarrierType extends AbstractModel
      *
      * @return self
      */
-    public function setAlternates(?array $alternates): self
+    public function setAlternates(array $alternates): self
     {
         $this->alternates = $alternates;
 
@@ -58,7 +58,7 @@ class ValidatingCarrierType extends AbstractModel
     /**
      * @return string
      */
-    public function getCountry(): ?string
+    public function getCountry(): string
     {
         return $this->country;
     }
@@ -68,7 +68,7 @@ class ValidatingCarrierType extends AbstractModel
      *
      * @return self
      */
-    public function setCountry(?string $country): self
+    public function setCountry(string $country): self
     {
         $this->country = $country;
 
@@ -78,7 +78,7 @@ class ValidatingCarrierType extends AbstractModel
     /**
      * @return ValidatingCarrier
      */
-    public function getDefault(): ?ValidatingCarrier
+    public function getDefault(): ValidatingCarrier
     {
         return $this->default;
     }
@@ -88,7 +88,7 @@ class ValidatingCarrierType extends AbstractModel
      *
      * @return self
      */
-    public function setDefault(?ValidatingCarrier $default): self
+    public function setDefault(ValidatingCarrier $default): self
     {
         $this->default = $default;
 
@@ -98,7 +98,7 @@ class ValidatingCarrierType extends AbstractModel
     /**
      * @return int
      */
-    public function getId(): ?int
+    public function getId(): int
     {
         return $this->id;
     }
@@ -108,7 +108,7 @@ class ValidatingCarrierType extends AbstractModel
      *
      * @return self
      */
-    public function setId(?int $id): self
+    public function setId(int $id): self
     {
         $this->id = $id;
 
@@ -118,7 +118,7 @@ class ValidatingCarrierType extends AbstractModel
     /**
      * @return bool
      */
-    public function getNewVcxProcess(): ?bool
+    public function getNewVcxProcess(): bool
     {
         return $this->newVcxProcess;
     }
@@ -128,7 +128,7 @@ class ValidatingCarrierType extends AbstractModel
      *
      * @return self
      */
-    public function setNewVcxProcess(?bool $newVcxProcess): self
+    public function setNewVcxProcess(bool $newVcxProcess): self
     {
         $this->newVcxProcess = $newVcxProcess;
 
@@ -138,7 +138,7 @@ class ValidatingCarrierType extends AbstractModel
     /**
      * @return ValidatingCarrier[]
      */
-    public function getOtherTicketings(): ?array
+    public function getOtherTicketings(): array
     {
         return $this->otherTicketings;
     }
@@ -148,7 +148,7 @@ class ValidatingCarrierType extends AbstractModel
      *
      * @return self
      */
-    public function setOtherTicketings(?array $otherTicketings): self
+    public function setOtherTicketings(array $otherTicketings): self
     {
         $this->otherTicketings = $otherTicketings;
 
@@ -158,7 +158,7 @@ class ValidatingCarrierType extends AbstractModel
     /**
      * @return string
      */
-    public function getSettlementMethod(): ?string
+    public function getSettlementMethod(): string
     {
         return $this->settlementMethod;
     }
@@ -168,7 +168,7 @@ class ValidatingCarrierType extends AbstractModel
      *
      * @return self
      */
-    public function setSettlementMethod(?string $settlementMethod): self
+    public function setSettlementMethod(string $settlementMethod): self
     {
         $this->settlementMethod = $settlementMethod;
 

@@ -18,7 +18,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsTicketingSumOfLocals 
      *
      * @return bool
      */
-    public function getEnable(): ?bool
+    public function getEnable(): bool
     {
         return $this->enable;
     }
@@ -30,7 +30,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsTicketingSumOfLocals 
      *
      * @return self
      */
-    public function setEnable(?bool $enable): self
+    public function setEnable(bool $enable): self
     {
         $this->enable = $enable;
 

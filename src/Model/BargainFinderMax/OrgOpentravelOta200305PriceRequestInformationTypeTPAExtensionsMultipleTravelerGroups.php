@@ -18,7 +18,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsMultipleTrav
      *
      * @return int
      */
-    public function getItinerariesPerGroup(): ?int
+    public function getItinerariesPerGroup(): int
     {
         return $this->itinerariesPerGroup;
     }
@@ -30,7 +30,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsMultipleTrav
      *
      * @return self
      */
-    public function setItinerariesPerGroup(?int $itinerariesPerGroup): self
+    public function setItinerariesPerGroup(int $itinerariesPerGroup): self
     {
         $this->itinerariesPerGroup = $itinerariesPerGroup;
 

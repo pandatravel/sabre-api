@@ -46,7 +46,7 @@ class ItineraryType extends AbstractModel
     /**
      * @return bool
      */
-    public function getCurrentItinerary(): ?bool
+    public function getCurrentItinerary(): bool
     {
         return $this->currentItinerary;
     }
@@ -56,7 +56,7 @@ class ItineraryType extends AbstractModel
      *
      * @return self
      */
-    public function setCurrentItinerary(?bool $currentItinerary): self
+    public function setCurrentItinerary(bool $currentItinerary): self
     {
         $this->currentItinerary = $currentItinerary;
 
@@ -66,7 +66,7 @@ class ItineraryType extends AbstractModel
     /**
      * @return DiversitySwapperType
      */
-    public function getDiversitySwapper(): ?DiversitySwapperType
+    public function getDiversitySwapper(): DiversitySwapperType
     {
         return $this->diversitySwapper;
     }
@@ -76,7 +76,7 @@ class ItineraryType extends AbstractModel
      *
      * @return self
      */
-    public function setDiversitySwapper(?DiversitySwapperType $diversitySwapper): self
+    public function setDiversitySwapper(DiversitySwapperType $diversitySwapper): self
     {
         $this->diversitySwapper = $diversitySwapper;
 
@@ -86,7 +86,7 @@ class ItineraryType extends AbstractModel
     /**
      * @return FailedType
      */
-    public function getFailed(): ?FailedType
+    public function getFailed(): FailedType
     {
         return $this->failed;
     }
@@ -96,7 +96,7 @@ class ItineraryType extends AbstractModel
      *
      * @return self
      */
-    public function setFailed(?FailedType $failed): self
+    public function setFailed(FailedType $failed): self
     {
         $this->failed = $failed;
 
@@ -106,7 +106,7 @@ class ItineraryType extends AbstractModel
     /**
      * @return int
      */
-    public function getId(): ?int
+    public function getId(): int
     {
         return $this->id;
     }
@@ -116,7 +116,7 @@ class ItineraryType extends AbstractModel
      *
      * @return self
      */
-    public function setId(?int $id): self
+    public function setId(int $id): self
     {
         $this->id = $id;
 
@@ -126,7 +126,7 @@ class ItineraryType extends AbstractModel
     /**
      * @return string
      */
-    public function getItinSource(): ?string
+    public function getItinSource(): string
     {
         return $this->itinSource;
     }
@@ -136,7 +136,7 @@ class ItineraryType extends AbstractModel
      *
      * @return self
      */
-    public function setItinSource(?string $itinSource): self
+    public function setItinSource(string $itinSource): self
     {
         $this->itinSource = $itinSource;
 
@@ -146,7 +146,7 @@ class ItineraryType extends AbstractModel
     /**
      * @return LegIDType[]
      */
-    public function getLegs(): ?array
+    public function getLegs(): array
     {
         return $this->legs;
     }
@@ -156,7 +156,7 @@ class ItineraryType extends AbstractModel
      *
      * @return self
      */
-    public function setLegs(?array $legs): self
+    public function setLegs(array $legs): self
     {
         $this->legs = $legs;
 
@@ -166,7 +166,7 @@ class ItineraryType extends AbstractModel
     /**
      * @return PricingInformationType[]
      */
-    public function getPricingInformation(): ?array
+    public function getPricingInformation(): array
     {
         return $this->pricingInformation;
     }
@@ -176,7 +176,7 @@ class ItineraryType extends AbstractModel
      *
      * @return self
      */
-    public function setPricingInformation(?array $pricingInformation): self
+    public function setPricingInformation(array $pricingInformation): self
     {
         $this->pricingInformation = $pricingInformation;
 
@@ -186,7 +186,7 @@ class ItineraryType extends AbstractModel
     /**
      * @return string
      */
-    public function getPricingSource(): ?string
+    public function getPricingSource(): string
     {
         return $this->pricingSource;
     }
@@ -196,7 +196,7 @@ class ItineraryType extends AbstractModel
      *
      * @return self
      */
-    public function setPricingSource(?string $pricingSource): self
+    public function setPricingSource(string $pricingSource): self
     {
         $this->pricingSource = $pricingSource;
 
@@ -206,7 +206,7 @@ class ItineraryType extends AbstractModel
     /**
      * @return bool
      */
-    public function getRoutingItinerary(): ?bool
+    public function getRoutingItinerary(): bool
     {
         return $this->routingItinerary;
     }
@@ -216,7 +216,7 @@ class ItineraryType extends AbstractModel
      *
      * @return self
      */
-    public function setRoutingItinerary(?bool $routingItinerary): self
+    public function setRoutingItinerary(bool $routingItinerary): self
     {
         $this->routingItinerary = $routingItinerary;
 

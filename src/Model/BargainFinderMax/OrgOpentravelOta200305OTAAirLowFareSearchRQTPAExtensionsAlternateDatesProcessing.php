@@ -18,7 +18,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsAlternateDatesProc
     /**
      * @return bool
      */
-    public function getCalendarMode(): ?bool
+    public function getCalendarMode(): bool
     {
         return $this->calendarMode;
     }
@@ -28,7 +28,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsAlternateDatesProc
      *
      * @return self
      */
-    public function setCalendarMode(?bool $calendarMode): self
+    public function setCalendarMode(bool $calendarMode): self
     {
         $this->calendarMode = $calendarMode;
 
@@ -38,7 +38,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsAlternateDatesProc
     /**
      * @return int
      */
-    public function getNumOptionsPerAlternateDate(): ?int
+    public function getNumOptionsPerAlternateDate(): int
     {
         return $this->numOptionsPerAlternateDate;
     }
@@ -48,7 +48,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsAlternateDatesProc
      *
      * @return self
      */
-    public function setNumOptionsPerAlternateDate(?int $numOptionsPerAlternateDate): self
+    public function setNumOptionsPerAlternateDate(int $numOptionsPerAlternateDate): self
     {
         $this->numOptionsPerAlternateDate = $numOptionsPerAlternateDate;
 

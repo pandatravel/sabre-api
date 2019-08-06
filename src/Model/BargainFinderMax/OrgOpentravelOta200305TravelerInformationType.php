@@ -22,7 +22,7 @@ class OrgOpentravelOta200305TravelerInformationType extends AbstractModel
      *
      * @return OrgOpentravelOta200305AirTravelerType
      */
-    public function getAirTraveler(): ?OrgOpentravelOta200305AirTravelerType
+    public function getAirTraveler(): OrgOpentravelOta200305AirTravelerType
     {
         return $this->airTraveler;
     }
@@ -34,7 +34,7 @@ class OrgOpentravelOta200305TravelerInformationType extends AbstractModel
      *
      * @return self
      */
-    public function setAirTraveler(?OrgOpentravelOta200305AirTravelerType $airTraveler): self
+    public function setAirTraveler(OrgOpentravelOta200305AirTravelerType $airTraveler): self
     {
         $this->airTraveler = $airTraveler;
 
@@ -44,7 +44,7 @@ class OrgOpentravelOta200305TravelerInformationType extends AbstractModel
     /**
      * @return OrgOpentravelOta200305PassengerTypeQuantityType[]
      */
-    public function getPassengerTypeQuantity(): ?array
+    public function getPassengerTypeQuantity(): array
     {
         return $this->passengerTypeQuantity;
     }
@@ -54,7 +54,7 @@ class OrgOpentravelOta200305TravelerInformationType extends AbstractModel
      *
      * @return self
      */
-    public function setPassengerTypeQuantity(?array $passengerTypeQuantity): self
+    public function setPassengerTypeQuantity(array $passengerTypeQuantity): self
     {
         $this->passengerTypeQuantity = $passengerTypeQuantity;
 

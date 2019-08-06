@@ -58,7 +58,7 @@ class HiddenStopType extends AbstractModel
     /**
      * @return int
      */
-    public function getAirMiles(): ?int
+    public function getAirMiles(): int
     {
         return $this->airMiles;
     }
@@ -68,7 +68,7 @@ class HiddenStopType extends AbstractModel
      *
      * @return self
      */
-    public function setAirMiles(?int $airMiles): self
+    public function setAirMiles(int $airMiles): self
     {
         $this->airMiles = $airMiles;
 
@@ -78,7 +78,7 @@ class HiddenStopType extends AbstractModel
     /**
      * @return string
      */
-    public function getAirport(): ?string
+    public function getAirport(): string
     {
         return $this->airport;
     }
@@ -88,7 +88,7 @@ class HiddenStopType extends AbstractModel
      *
      * @return self
      */
-    public function setAirport(?string $airport): self
+    public function setAirport(string $airport): self
     {
         $this->airport = $airport;
 
@@ -98,7 +98,7 @@ class HiddenStopType extends AbstractModel
     /**
      * @return int
      */
-    public function getArrivalDateAdjustment(): ?int
+    public function getArrivalDateAdjustment(): int
     {
         return $this->arrivalDateAdjustment;
     }
@@ -108,7 +108,7 @@ class HiddenStopType extends AbstractModel
      *
      * @return self
      */
-    public function setArrivalDateAdjustment(?int $arrivalDateAdjustment): self
+    public function setArrivalDateAdjustment(int $arrivalDateAdjustment): self
     {
         $this->arrivalDateAdjustment = $arrivalDateAdjustment;
 
@@ -118,7 +118,7 @@ class HiddenStopType extends AbstractModel
     /**
      * @return string
      */
-    public function getArrivalTime(): ?string
+    public function getArrivalTime(): string
     {
         return $this->arrivalTime;
     }
@@ -128,7 +128,7 @@ class HiddenStopType extends AbstractModel
      *
      * @return self
      */
-    public function setArrivalTime(?string $arrivalTime): self
+    public function setArrivalTime(string $arrivalTime): self
     {
         $this->arrivalTime = $arrivalTime;
 
@@ -138,7 +138,7 @@ class HiddenStopType extends AbstractModel
     /**
      * @return string
      */
-    public function getCity(): ?string
+    public function getCity(): string
     {
         return $this->city;
     }
@@ -148,7 +148,7 @@ class HiddenStopType extends AbstractModel
      *
      * @return self
      */
-    public function setCity(?string $city): self
+    public function setCity(string $city): self
     {
         $this->city = $city;
 
@@ -158,7 +158,7 @@ class HiddenStopType extends AbstractModel
     /**
      * @return string
      */
-    public function getCountry(): ?string
+    public function getCountry(): string
     {
         return $this->country;
     }
@@ -168,7 +168,7 @@ class HiddenStopType extends AbstractModel
      *
      * @return self
      */
-    public function setCountry(?string $country): self
+    public function setCountry(string $country): self
     {
         $this->country = $country;
 
@@ -178,7 +178,7 @@ class HiddenStopType extends AbstractModel
     /**
      * @return int
      */
-    public function getDepartureDateAdjustment(): ?int
+    public function getDepartureDateAdjustment(): int
     {
         return $this->departureDateAdjustment;
     }
@@ -188,7 +188,7 @@ class HiddenStopType extends AbstractModel
      *
      * @return self
      */
-    public function setDepartureDateAdjustment(?int $departureDateAdjustment): self
+    public function setDepartureDateAdjustment(int $departureDateAdjustment): self
     {
         $this->departureDateAdjustment = $departureDateAdjustment;
 
@@ -198,7 +198,7 @@ class HiddenStopType extends AbstractModel
     /**
      * @return string
      */
-    public function getDepartureTime(): ?string
+    public function getDepartureTime(): string
     {
         return $this->departureTime;
     }
@@ -208,7 +208,7 @@ class HiddenStopType extends AbstractModel
      *
      * @return self
      */
-    public function setDepartureTime(?string $departureTime): self
+    public function setDepartureTime(string $departureTime): self
     {
         $this->departureTime = $departureTime;
 
@@ -218,7 +218,7 @@ class HiddenStopType extends AbstractModel
     /**
      * @return int
      */
-    public function getElapsedLayoverTime(): ?int
+    public function getElapsedLayoverTime(): int
     {
         return $this->elapsedLayoverTime;
     }
@@ -228,7 +228,7 @@ class HiddenStopType extends AbstractModel
      *
      * @return self
      */
-    public function setElapsedLayoverTime(?int $elapsedLayoverTime): self
+    public function setElapsedLayoverTime(int $elapsedLayoverTime): self
     {
         $this->elapsedLayoverTime = $elapsedLayoverTime;
 
@@ -238,7 +238,7 @@ class HiddenStopType extends AbstractModel
     /**
      * @return int
      */
-    public function getElapsedTime(): ?int
+    public function getElapsedTime(): int
     {
         return $this->elapsedTime;
     }
@@ -248,7 +248,7 @@ class HiddenStopType extends AbstractModel
      *
      * @return self
      */
-    public function setElapsedTime(?int $elapsedTime): self
+    public function setElapsedTime(int $elapsedTime): self
     {
         $this->elapsedTime = $elapsedTime;
 
@@ -258,7 +258,7 @@ class HiddenStopType extends AbstractModel
     /**
      * @return string
      */
-    public function getEquipment(): ?string
+    public function getEquipment(): string
     {
         return $this->equipment;
     }
@@ -268,7 +268,7 @@ class HiddenStopType extends AbstractModel
      *
      * @return self
      */
-    public function setEquipment(?string $equipment): self
+    public function setEquipment(string $equipment): self
     {
         $this->equipment = $equipment;
 
@@ -278,7 +278,7 @@ class HiddenStopType extends AbstractModel
     /**
      * @return string
      */
-    public function getState(): ?string
+    public function getState(): string
     {
         return $this->state;
     }
@@ -288,7 +288,7 @@ class HiddenStopType extends AbstractModel
      *
      * @return self
      */
-    public function setState(?string $state): self
+    public function setState(string $state): self
     {
         $this->state = $state;
 

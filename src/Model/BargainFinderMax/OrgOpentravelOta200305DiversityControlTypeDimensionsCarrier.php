@@ -26,7 +26,7 @@ class OrgOpentravelOta200305DiversityControlTypeDimensionsCarrier extends Abstra
     /**
      * @return OrgOpentravelOta200305DiversityControlTypeDimensionsCarrierDefault
      */
-    public function getDefault(): ?OrgOpentravelOta200305DiversityControlTypeDimensionsCarrierDefault
+    public function getDefault(): OrgOpentravelOta200305DiversityControlTypeDimensionsCarrierDefault
     {
         return $this->default;
     }
@@ -36,7 +36,7 @@ class OrgOpentravelOta200305DiversityControlTypeDimensionsCarrier extends Abstra
      *
      * @return self
      */
-    public function setDefault(?OrgOpentravelOta200305DiversityControlTypeDimensionsCarrierDefault $default): self
+    public function setDefault(OrgOpentravelOta200305DiversityControlTypeDimensionsCarrierDefault $default): self
     {
         $this->default = $default;
 
@@ -46,7 +46,7 @@ class OrgOpentravelOta200305DiversityControlTypeDimensionsCarrier extends Abstra
     /**
      * @return bool
      */
-    public function getOnlineIndicator(): ?bool
+    public function getOnlineIndicator(): bool
     {
         return $this->onlineIndicator;
     }
@@ -56,7 +56,7 @@ class OrgOpentravelOta200305DiversityControlTypeDimensionsCarrier extends Abstra
      *
      * @return self
      */
-    public function setOnlineIndicator(?bool $onlineIndicator): self
+    public function setOnlineIndicator(bool $onlineIndicator): self
     {
         $this->onlineIndicator = $onlineIndicator;
 
@@ -66,7 +66,7 @@ class OrgOpentravelOta200305DiversityControlTypeDimensionsCarrier extends Abstra
     /**
      * @return OrgOpentravelOta200305DiversityControlTypeDimensionsCarrierOverride[]
      */
-    public function getOverride(): ?array
+    public function getOverride(): array
     {
         return $this->override;
     }
@@ -76,7 +76,7 @@ class OrgOpentravelOta200305DiversityControlTypeDimensionsCarrier extends Abstra
      *
      * @return self
      */
-    public function setOverride(?array $override): self
+    public function setOverride(array $override): self
     {
         $this->override = $override;
 
@@ -86,7 +86,7 @@ class OrgOpentravelOta200305DiversityControlTypeDimensionsCarrier extends Abstra
     /**
      * @return float
      */
-    public function getWeight(): ?float
+    public function getWeight(): float
     {
         return $this->weight;
     }
@@ -96,7 +96,7 @@ class OrgOpentravelOta200305DiversityControlTypeDimensionsCarrier extends Abstra
      *
      * @return self
      */
-    public function setWeight(?float $weight): self
+    public function setWeight(float $weight): self
     {
         $this->weight = $weight;
 

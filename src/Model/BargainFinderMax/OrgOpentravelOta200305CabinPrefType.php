@@ -24,7 +24,7 @@ class OrgOpentravelOta200305CabinPrefType extends AbstractModel
      *
      * @return string
      */
-    public function getCabin(): ?string
+    public function getCabin(): string
     {
         return $this->cabin;
     }
@@ -36,7 +36,7 @@ class OrgOpentravelOta200305CabinPrefType extends AbstractModel
      *
      * @return self
      */
-    public function setCabin(?string $cabin): self
+    public function setCabin(string $cabin): self
     {
         $this->cabin = $cabin;
 
@@ -48,7 +48,7 @@ class OrgOpentravelOta200305CabinPrefType extends AbstractModel
      *
      * @return string
      */
-    public function getPreferLevel(): ?string
+    public function getPreferLevel(): string
     {
         return $this->preferLevel;
     }
@@ -60,7 +60,7 @@ class OrgOpentravelOta200305CabinPrefType extends AbstractModel
      *
      * @return self
      */
-    public function setPreferLevel(?string $preferLevel): self
+    public function setPreferLevel(string $preferLevel): self
     {
         $this->preferLevel = $preferLevel;
 

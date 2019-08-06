@@ -14,7 +14,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsOptionsPerDatePairLis
     /**
      * @return OrgOpentravelOta200305OptionsPerDatePairType[]
      */
-    public function getOptionsPerDatePair(): ?array
+    public function getOptionsPerDatePair(): array
     {
         return $this->optionsPerDatePair;
     }
@@ -24,7 +24,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsOptionsPerDatePairLis
      *
      * @return self
      */
-    public function setOptionsPerDatePair(?array $optionsPerDatePair): self
+    public function setOptionsPerDatePair(array $optionsPerDatePair): self
     {
         $this->optionsPerDatePair = $optionsPerDatePair;
 

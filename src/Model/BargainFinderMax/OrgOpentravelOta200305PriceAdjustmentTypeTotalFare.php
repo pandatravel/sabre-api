@@ -14,7 +14,7 @@ class OrgOpentravelOta200305PriceAdjustmentTypeTotalFare extends AbstractModel
     /**
      * @return float
      */
-    public function getAmount(): ?float
+    public function getAmount(): float
     {
         return $this->amount;
     }
@@ -24,7 +24,7 @@ class OrgOpentravelOta200305PriceAdjustmentTypeTotalFare extends AbstractModel
      *
      * @return self
      */
-    public function setAmount(?float $amount): self
+    public function setAmount(float $amount): self
     {
         $this->amount = $amount;
 

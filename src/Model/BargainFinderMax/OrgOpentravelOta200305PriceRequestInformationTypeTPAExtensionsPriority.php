@@ -72,7 +72,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPriority ext
      *
      * @return OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPriorityConnectionTime
      */
-    public function getConnectionTime(): ?OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPriorityConnectionTime
+    public function getConnectionTime(): OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPriorityConnectionTime
     {
         return $this->connectionTime;
     }
@@ -84,7 +84,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPriority ext
      *
      * @return self
      */
-    public function setConnectionTime(?OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPriorityConnectionTime $connectionTime): self
+    public function setConnectionTime(OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPriorityConnectionTime $connectionTime): self
     {
         $this->connectionTime = $connectionTime;
 
@@ -96,7 +96,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPriority ext
      *
      * @return OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPriorityDepartureTime
      */
-    public function getDepartureTime(): ?OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPriorityDepartureTime
+    public function getDepartureTime(): OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPriorityDepartureTime
     {
         return $this->departureTime;
     }
@@ -108,7 +108,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPriority ext
      *
      * @return self
      */
-    public function setDepartureTime(?OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPriorityDepartureTime $departureTime): self
+    public function setDepartureTime(OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPriorityDepartureTime $departureTime): self
     {
         $this->departureTime = $departureTime;
 
@@ -120,7 +120,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPriority ext
      *
      * @return OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPriorityDirectFlights
      */
-    public function getDirectFlights(): ?OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPriorityDirectFlights
+    public function getDirectFlights(): OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPriorityDirectFlights
     {
         return $this->directFlights;
     }
@@ -132,7 +132,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPriority ext
      *
      * @return self
      */
-    public function setDirectFlights(?OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPriorityDirectFlights $directFlights): self
+    public function setDirectFlights(OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPriorityDirectFlights $directFlights): self
     {
         $this->directFlights = $directFlights;
 
@@ -144,7 +144,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPriority ext
      *
      * @return OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPriorityElapsedTime
      */
-    public function getElapsedTime(): ?OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPriorityElapsedTime
+    public function getElapsedTime(): OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPriorityElapsedTime
     {
         return $this->elapsedTime;
     }
@@ -156,7 +156,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPriority ext
      *
      * @return self
      */
-    public function setElapsedTime(?OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPriorityElapsedTime $elapsedTime): self
+    public function setElapsedTime(OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPriorityElapsedTime $elapsedTime): self
     {
         $this->elapsedTime = $elapsedTime;
 
@@ -168,7 +168,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPriority ext
      *
      * @return OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPriorityLegTime
      */
-    public function getLegTime(): ?OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPriorityLegTime
+    public function getLegTime(): OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPriorityLegTime
     {
         return $this->legTime;
     }
@@ -180,7 +180,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPriority ext
      *
      * @return self
      */
-    public function setLegTime(?OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPriorityLegTime $legTime): self
+    public function setLegTime(OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPriorityLegTime $legTime): self
     {
         $this->legTime = $legTime;
 
@@ -192,7 +192,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPriority ext
      *
      * @return OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPriorityMarketingCarrier
      */
-    public function getMarketingCarrier(): ?OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPriorityMarketingCarrier
+    public function getMarketingCarrier(): OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPriorityMarketingCarrier
     {
         return $this->marketingCarrier;
     }
@@ -204,7 +204,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPriority ext
      *
      * @return self
      */
-    public function setMarketingCarrier(?OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPriorityMarketingCarrier $marketingCarrier): self
+    public function setMarketingCarrier(OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPriorityMarketingCarrier $marketingCarrier): self
     {
         $this->marketingCarrier = $marketingCarrier;
 
@@ -216,7 +216,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPriority ext
      *
      * @return OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPriorityOperatingCarrier
      */
-    public function getOperatingCarrier(): ?OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPriorityOperatingCarrier
+    public function getOperatingCarrier(): OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPriorityOperatingCarrier
     {
         return $this->operatingCarrier;
     }
@@ -228,7 +228,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPriority ext
      *
      * @return self
      */
-    public function setOperatingCarrier(?OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPriorityOperatingCarrier $operatingCarrier): self
+    public function setOperatingCarrier(OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPriorityOperatingCarrier $operatingCarrier): self
     {
         $this->operatingCarrier = $operatingCarrier;
 
@@ -240,7 +240,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPriority ext
      *
      * @return OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPriorityPrice
      */
-    public function getPrice(): ?OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPriorityPrice
+    public function getPrice(): OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPriorityPrice
     {
         return $this->price;
     }
@@ -252,7 +252,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPriority ext
      *
      * @return self
      */
-    public function setPrice(?OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPriorityPrice $price): self
+    public function setPrice(OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPriorityPrice $price): self
     {
         $this->price = $price;
 
@@ -264,7 +264,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPriority ext
      *
      * @return OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPriorityTime
      */
-    public function getTime(): ?OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPriorityTime
+    public function getTime(): OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPriorityTime
     {
         return $this->time;
     }
@@ -276,7 +276,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPriority ext
      *
      * @return self
      */
-    public function setTime(?OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPriorityTime $time): self
+    public function setTime(OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPriorityTime $time): self
     {
         $this->time = $time;
 
@@ -288,7 +288,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPriority ext
      *
      * @return OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPriorityVendor
      */
-    public function getVendor(): ?OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPriorityVendor
+    public function getVendor(): OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPriorityVendor
     {
         return $this->vendor;
     }
@@ -300,7 +300,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPriority ext
      *
      * @return self
      */
-    public function setVendor(?OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPriorityVendor $vendor): self
+    public function setVendor(OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPriorityVendor $vendor): self
     {
         $this->vendor = $vendor;
 

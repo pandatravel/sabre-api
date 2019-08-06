@@ -18,7 +18,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeAccountCode extends Abstr
      *
      * @return string
      */
-    public function getCode(): ?string
+    public function getCode(): string
     {
         return $this->code;
     }
@@ -30,7 +30,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeAccountCode extends Abstr
      *
      * @return self
      */
-    public function setCode(?string $code): self
+    public function setCode(string $code): self
     {
         $this->code = $code;
 

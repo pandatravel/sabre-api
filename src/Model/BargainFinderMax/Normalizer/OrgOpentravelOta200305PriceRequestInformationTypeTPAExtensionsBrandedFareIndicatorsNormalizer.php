@@ -48,8 +48,8 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsBrandedFareI
         if (property_exists($data, 'ItinParityFallbackMode')) {
             $object->setItinParityFallbackMode($data->{'ItinParityFallbackMode'});
         }
-        if (property_exists($data, 'KeepLegParityForLowestSingle')) {
-            $object->setKeepLegParityForLowestSingle($data->{'KeepLegParityForLowestSingle'});
+        if (property_exists($data, 'ParityModeForLowest')) {
+            $object->setParityModeForLowest($data->{'ParityModeForLowest'});
         }
         if (property_exists($data, 'MultipleBrandedFares')) {
             $object->setMultipleBrandedFares($data->{'MultipleBrandedFares'});
@@ -85,8 +85,8 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsBrandedFareI
         if (null !== $object->getItinParityFallbackMode()) {
             $data->{'ItinParityFallbackMode'} = $object->getItinParityFallbackMode();
         }
-        if (null !== $object->getKeepLegParityForLowestSingle()) {
-            $data->{'KeepLegParityForLowestSingle'} = $object->getKeepLegParityForLowestSingle();
+        if (null !== $object->getParityModeForLowest()) {
+            $data->{'ParityModeForLowest'} = $object->getParityModeForLowest();
         }
         if (null !== $object->getMultipleBrandedFares()) {
             $data->{'MultipleBrandedFares'} = $object->getMultipleBrandedFares();

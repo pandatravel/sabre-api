@@ -30,7 +30,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsBudget extends Abstra
      *
      * @return string
      */
-    public function getMaximumPrice(): ?string
+    public function getMaximumPrice(): string
     {
         return $this->maximumPrice;
     }
@@ -42,7 +42,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsBudget extends Abstra
      *
      * @return self
      */
-    public function setMaximumPrice(?string $maximumPrice): self
+    public function setMaximumPrice(string $maximumPrice): self
     {
         $this->maximumPrice = $maximumPrice;
 
@@ -54,7 +54,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsBudget extends Abstra
      *
      * @return string
      */
-    public function getMinimumPrice(): ?string
+    public function getMinimumPrice(): string
     {
         return $this->minimumPrice;
     }
@@ -66,7 +66,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsBudget extends Abstra
      *
      * @return self
      */
-    public function setMinimumPrice(?string $minimumPrice): self
+    public function setMinimumPrice(string $minimumPrice): self
     {
         $this->minimumPrice = $minimumPrice;
 
@@ -78,7 +78,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsBudget extends Abstra
      *
      * @return string
      */
-    public function getRelativePriceThreshold(): ?string
+    public function getRelativePriceThreshold(): string
     {
         return $this->relativePriceThreshold;
     }
@@ -90,7 +90,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsBudget extends Abstra
      *
      * @return self
      */
-    public function setRelativePriceThreshold(?string $relativePriceThreshold): self
+    public function setRelativePriceThreshold(string $relativePriceThreshold): self
     {
         $this->relativePriceThreshold = $relativePriceThreshold;
 

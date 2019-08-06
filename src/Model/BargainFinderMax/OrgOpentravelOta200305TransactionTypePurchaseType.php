@@ -18,7 +18,7 @@ class OrgOpentravelOta200305TransactionTypePurchaseType extends AbstractModel
      *
      * @return string
      */
-    public function getName(): ?string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -30,7 +30,7 @@ class OrgOpentravelOta200305TransactionTypePurchaseType extends AbstractModel
      *
      * @return self
      */
-    public function setName(?string $name): self
+    public function setName(string $name): self
     {
         $this->name = $name;
 

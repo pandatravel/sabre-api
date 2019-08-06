@@ -78,7 +78,7 @@ class OrgOpentravelOta200305CustLoyaltyType extends AbstractModel
      *
      * @return string
      */
-    public function getEffectiveDate(): ?string
+    public function getEffectiveDate(): string
     {
         return $this->effectiveDate;
     }
@@ -90,7 +90,7 @@ class OrgOpentravelOta200305CustLoyaltyType extends AbstractModel
      *
      * @return self
      */
-    public function setEffectiveDate(?string $effectiveDate): self
+    public function setEffectiveDate(string $effectiveDate): self
     {
         $this->effectiveDate = $effectiveDate;
 
@@ -102,7 +102,7 @@ class OrgOpentravelOta200305CustLoyaltyType extends AbstractModel
      *
      * @return string
      */
-    public function getExpireDate(): ?string
+    public function getExpireDate(): string
     {
         return $this->expireDate;
     }
@@ -114,7 +114,7 @@ class OrgOpentravelOta200305CustLoyaltyType extends AbstractModel
      *
      * @return self
      */
-    public function setExpireDate(?string $expireDate): self
+    public function setExpireDate(string $expireDate): self
     {
         $this->expireDate = $expireDate;
 
@@ -126,7 +126,7 @@ class OrgOpentravelOta200305CustLoyaltyType extends AbstractModel
      *
      * @return string
      */
-    public function getLoyalLevel(): ?string
+    public function getLoyalLevel(): string
     {
         return $this->loyalLevel;
     }
@@ -138,7 +138,7 @@ class OrgOpentravelOta200305CustLoyaltyType extends AbstractModel
      *
      * @return self
      */
-    public function setLoyalLevel(?string $loyalLevel): self
+    public function setLoyalLevel(string $loyalLevel): self
     {
         $this->loyalLevel = $loyalLevel;
 
@@ -150,7 +150,7 @@ class OrgOpentravelOta200305CustLoyaltyType extends AbstractModel
      *
      * @return string
      */
-    public function getMembershipID(): ?string
+    public function getMembershipID(): string
     {
         return $this->membershipID;
     }
@@ -162,7 +162,7 @@ class OrgOpentravelOta200305CustLoyaltyType extends AbstractModel
      *
      * @return self
      */
-    public function setMembershipID(?string $membershipID): self
+    public function setMembershipID(string $membershipID): self
     {
         $this->membershipID = $membershipID;
 
@@ -174,7 +174,7 @@ class OrgOpentravelOta200305CustLoyaltyType extends AbstractModel
      *
      * @return string
      */
-    public function getProgramID(): ?string
+    public function getProgramID(): string
     {
         return $this->programID;
     }
@@ -186,7 +186,7 @@ class OrgOpentravelOta200305CustLoyaltyType extends AbstractModel
      *
      * @return self
      */
-    public function setProgramID(?string $programID): self
+    public function setProgramID(string $programID): self
     {
         $this->programID = $programID;
 
@@ -198,7 +198,7 @@ class OrgOpentravelOta200305CustLoyaltyType extends AbstractModel
      *
      * @return string
      */
-    public function getRPH(): ?string
+    public function getRPH(): string
     {
         return $this->rPH;
     }
@@ -210,7 +210,7 @@ class OrgOpentravelOta200305CustLoyaltyType extends AbstractModel
      *
      * @return self
      */
-    public function setRPH(?string $rPH): self
+    public function setRPH(string $rPH): self
     {
         $this->rPH = $rPH;
 
@@ -222,7 +222,7 @@ class OrgOpentravelOta200305CustLoyaltyType extends AbstractModel
      *
      * @return string
      */
-    public function getShareMarketInd(): ?string
+    public function getShareMarketInd(): string
     {
         return $this->shareMarketInd;
     }
@@ -234,7 +234,7 @@ class OrgOpentravelOta200305CustLoyaltyType extends AbstractModel
      *
      * @return self
      */
-    public function setShareMarketInd(?string $shareMarketInd): self
+    public function setShareMarketInd(string $shareMarketInd): self
     {
         $this->shareMarketInd = $shareMarketInd;
 
@@ -246,7 +246,7 @@ class OrgOpentravelOta200305CustLoyaltyType extends AbstractModel
      *
      * @return string
      */
-    public function getShareSynchInd(): ?string
+    public function getShareSynchInd(): string
     {
         return $this->shareSynchInd;
     }
@@ -258,7 +258,7 @@ class OrgOpentravelOta200305CustLoyaltyType extends AbstractModel
      *
      * @return self
      */
-    public function setShareSynchInd(?string $shareSynchInd): self
+    public function setShareSynchInd(string $shareSynchInd): self
     {
         $this->shareSynchInd = $shareSynchInd;
 
@@ -270,7 +270,7 @@ class OrgOpentravelOta200305CustLoyaltyType extends AbstractModel
      *
      * @return string
      */
-    public function getSignupDate(): ?string
+    public function getSignupDate(): string
     {
         return $this->signupDate;
     }
@@ -282,7 +282,7 @@ class OrgOpentravelOta200305CustLoyaltyType extends AbstractModel
      *
      * @return self
      */
-    public function setSignupDate(?string $signupDate): self
+    public function setSignupDate(string $signupDate): self
     {
         $this->signupDate = $signupDate;
 
@@ -294,7 +294,7 @@ class OrgOpentravelOta200305CustLoyaltyType extends AbstractModel
      *
      * @return string
      */
-    public function getSingleVendorInd(): ?string
+    public function getSingleVendorInd(): string
     {
         return $this->singleVendorInd;
     }
@@ -306,7 +306,7 @@ class OrgOpentravelOta200305CustLoyaltyType extends AbstractModel
      *
      * @return self
      */
-    public function setSingleVendorInd(?string $singleVendorInd): self
+    public function setSingleVendorInd(string $singleVendorInd): self
     {
         $this->singleVendorInd = $singleVendorInd;
 
@@ -318,7 +318,7 @@ class OrgOpentravelOta200305CustLoyaltyType extends AbstractModel
      *
      * @return string
      */
-    public function getTravelSector(): ?string
+    public function getTravelSector(): string
     {
         return $this->travelSector;
     }
@@ -330,7 +330,7 @@ class OrgOpentravelOta200305CustLoyaltyType extends AbstractModel
      *
      * @return self
      */
-    public function setTravelSector(?string $travelSector): self
+    public function setTravelSector(string $travelSector): self
     {
         $this->travelSector = $travelSector;
 

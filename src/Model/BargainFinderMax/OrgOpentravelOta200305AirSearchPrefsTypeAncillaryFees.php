@@ -26,7 +26,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeAncillaryFees extends AbstractMode
     /**
      * @return OrgOpentravelOta200305AirSearchPrefsTypeAncillaryFeesAncillaryFeeGroup[]
      */
-    public function getAncillaryFeeGroup(): ?array
+    public function getAncillaryFeeGroup(): array
     {
         return $this->ancillaryFeeGroup;
     }
@@ -36,7 +36,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeAncillaryFees extends AbstractMode
      *
      * @return self
      */
-    public function setAncillaryFeeGroup(?array $ancillaryFeeGroup): self
+    public function setAncillaryFeeGroup(array $ancillaryFeeGroup): self
     {
         $this->ancillaryFeeGroup = $ancillaryFeeGroup;
 
@@ -48,7 +48,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeAncillaryFees extends AbstractMode
      *
      * @return bool
      */
-    public function getEnable(): ?bool
+    public function getEnable(): bool
     {
         return $this->enable;
     }
@@ -60,7 +60,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeAncillaryFees extends AbstractMode
      *
      * @return self
      */
-    public function setEnable(?bool $enable): self
+    public function setEnable(bool $enable): self
     {
         $this->enable = $enable;
 
@@ -72,7 +72,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeAncillaryFees extends AbstractMode
      *
      * @return bool
      */
-    public function getSummary(): ?bool
+    public function getSummary(): bool
     {
         return $this->summary;
     }
@@ -84,7 +84,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeAncillaryFees extends AbstractMode
      *
      * @return self
      */
-    public function setSummary(?bool $summary): self
+    public function setSummary(bool $summary): self
     {
         $this->summary = $summary;
 

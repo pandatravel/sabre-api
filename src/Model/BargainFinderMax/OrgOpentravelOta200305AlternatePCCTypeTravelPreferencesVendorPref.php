@@ -24,7 +24,7 @@ class OrgOpentravelOta200305AlternatePCCTypeTravelPreferencesVendorPref extends 
      *
      * @return string
      */
-    public function getCode(): ?string
+    public function getCode(): string
     {
         return $this->code;
     }
@@ -36,7 +36,7 @@ class OrgOpentravelOta200305AlternatePCCTypeTravelPreferencesVendorPref extends 
      *
      * @return self
      */
-    public function setCode(?string $code): self
+    public function setCode(string $code): self
     {
         $this->code = $code;
 
@@ -48,7 +48,7 @@ class OrgOpentravelOta200305AlternatePCCTypeTravelPreferencesVendorPref extends 
      *
      * @return string
      */
-    public function getPreferLevel(): ?string
+    public function getPreferLevel(): string
     {
         return $this->preferLevel;
     }
@@ -60,7 +60,7 @@ class OrgOpentravelOta200305AlternatePCCTypeTravelPreferencesVendorPref extends 
      *
      * @return self
      */
-    public function setPreferLevel(?string $preferLevel): self
+    public function setPreferLevel(string $preferLevel): self
     {
         $this->preferLevel = $preferLevel;
 

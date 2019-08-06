@@ -28,7 +28,7 @@ class OrgOpentravelOta200305MileageDisplayType extends AbstractModel
      *
      * @return string
      */
-    public function getCity(): ?string
+    public function getCity(): string
     {
         return $this->city;
     }
@@ -40,7 +40,7 @@ class OrgOpentravelOta200305MileageDisplayType extends AbstractModel
      *
      * @return self
      */
-    public function setCity(?string $city): self
+    public function setCity(string $city): self
     {
         $this->city = $city;
 
@@ -52,7 +52,7 @@ class OrgOpentravelOta200305MileageDisplayType extends AbstractModel
      *
      * @return float
      */
-    public function getSurcharge(): ?float
+    public function getSurcharge(): float
     {
         return $this->surcharge;
     }
@@ -64,7 +64,7 @@ class OrgOpentravelOta200305MileageDisplayType extends AbstractModel
      *
      * @return self
      */
-    public function setSurcharge(?float $surcharge): self
+    public function setSurcharge(float $surcharge): self
     {
         $this->surcharge = $surcharge;
 
@@ -74,7 +74,7 @@ class OrgOpentravelOta200305MileageDisplayType extends AbstractModel
     /**
      * @return string
      */
-    public function getType(): ?string
+    public function getType(): string
     {
         return $this->type;
     }
@@ -84,7 +84,7 @@ class OrgOpentravelOta200305MileageDisplayType extends AbstractModel
      *
      * @return self
      */
-    public function setType(?string $type): self
+    public function setType(string $type): self
     {
         $this->type = $type;
 

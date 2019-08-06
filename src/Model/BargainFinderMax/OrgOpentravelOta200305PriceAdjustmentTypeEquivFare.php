@@ -18,7 +18,7 @@ class OrgOpentravelOta200305PriceAdjustmentTypeEquivFare extends AbstractModel
     /**
      * @return float
      */
-    public function getAmount(): ?float
+    public function getAmount(): float
     {
         return $this->amount;
     }
@@ -28,7 +28,7 @@ class OrgOpentravelOta200305PriceAdjustmentTypeEquivFare extends AbstractModel
      *
      * @return self
      */
-    public function setAmount(?float $amount): self
+    public function setAmount(float $amount): self
     {
         $this->amount = $amount;
 
@@ -38,7 +38,7 @@ class OrgOpentravelOta200305PriceAdjustmentTypeEquivFare extends AbstractModel
     /**
      * @return float
      */
-    public function getEffectivePriceDeviation(): ?float
+    public function getEffectivePriceDeviation(): float
     {
         return $this->effectivePriceDeviation;
     }
@@ -48,7 +48,7 @@ class OrgOpentravelOta200305PriceAdjustmentTypeEquivFare extends AbstractModel
      *
      * @return self
      */
-    public function setEffectivePriceDeviation(?float $effectivePriceDeviation): self
+    public function setEffectivePriceDeviation(float $effectivePriceDeviation): self
     {
         $this->effectivePriceDeviation = $effectivePriceDeviation;
 

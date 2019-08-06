@@ -14,7 +14,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsMessagingDetails e
     /**
      * @return OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsMessagingDetailsMDRSubset
      */
-    public function getMDRSubset(): ?OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsMessagingDetailsMDRSubset
+    public function getMDRSubset(): OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsMessagingDetailsMDRSubset
     {
         return $this->mDRSubset;
     }
@@ -24,7 +24,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsMessagingDetails e
      *
      * @return self
      */
-    public function setMDRSubset(?OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsMessagingDetailsMDRSubset $mDRSubset): self
+    public function setMDRSubset(OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsMessagingDetailsMDRSubset $mDRSubset): self
     {
         $this->mDRSubset = $mDRSubset;
 

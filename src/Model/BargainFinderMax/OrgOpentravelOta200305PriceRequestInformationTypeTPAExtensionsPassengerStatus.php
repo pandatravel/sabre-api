@@ -30,7 +30,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPassengerSta
     /**
      * @return string
      */
-    public function getCityCode(): ?string
+    public function getCityCode(): string
     {
         return $this->cityCode;
     }
@@ -40,7 +40,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPassengerSta
      *
      * @return self
      */
-    public function setCityCode(?string $cityCode): self
+    public function setCityCode(string $cityCode): self
     {
         $this->cityCode = $cityCode;
 
@@ -52,7 +52,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPassengerSta
      *
      * @return string
      */
-    public function getCountryCode(): ?string
+    public function getCountryCode(): string
     {
         return $this->countryCode;
     }
@@ -64,7 +64,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPassengerSta
      *
      * @return self
      */
-    public function setCountryCode(?string $countryCode): self
+    public function setCountryCode(string $countryCode): self
     {
         $this->countryCode = $countryCode;
 
@@ -76,7 +76,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPassengerSta
      *
      * @return string
      */
-    public function getStateCode(): ?string
+    public function getStateCode(): string
     {
         return $this->stateCode;
     }
@@ -88,7 +88,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPassengerSta
      *
      * @return self
      */
-    public function setStateCode(?string $stateCode): self
+    public function setStateCode(string $stateCode): self
     {
         $this->stateCode = $stateCode;
 
@@ -98,7 +98,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPassengerSta
     /**
      * @return string
      */
-    public function getType(): ?string
+    public function getType(): string
     {
         return $this->type;
     }
@@ -108,7 +108,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPassengerSta
      *
      * @return self
      */
-    public function setType(?string $type): self
+    public function setType(string $type): self
     {
         $this->type = $type;
 

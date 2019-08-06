@@ -14,7 +14,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsAlternateAirportCi
     /**
      * @return string
      */
-    public function getLocationCode(): ?string
+    public function getLocationCode(): string
     {
         return $this->locationCode;
     }
@@ -24,7 +24,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsAlternateAirportCi
      *
      * @return self
      */
-    public function setLocationCode(?string $locationCode): self
+    public function setLocationCode(string $locationCode): self
     {
         $this->locationCode = $locationCode;
 

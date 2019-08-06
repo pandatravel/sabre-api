@@ -14,7 +14,7 @@ class OrgOpentravelOta200305TravelerInfoSummaryTPAExtensionsType extends Abstrac
     /**
      * @return OrgOpentravelOta200305TravelerInfoSummaryTPAExtensionsTypeTravelerRating[]
      */
-    public function getTravelerRating(): ?array
+    public function getTravelerRating(): array
     {
         return $this->travelerRating;
     }
@@ -24,7 +24,7 @@ class OrgOpentravelOta200305TravelerInfoSummaryTPAExtensionsType extends Abstrac
      *
      * @return self
      */
-    public function setTravelerRating(?array $travelerRating): self
+    public function setTravelerRating(array $travelerRating): self
     {
         $this->travelerRating = $travelerRating;
 

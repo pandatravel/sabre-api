@@ -30,7 +30,7 @@ class Cached extends AbstractModel
      *
      * @return int
      */
-    public function getHoursSinceCreation(): ?int
+    public function getHoursSinceCreation(): int
     {
         return $this->hoursSinceCreation;
     }
@@ -42,7 +42,7 @@ class Cached extends AbstractModel
      *
      * @return self
      */
-    public function setHoursSinceCreation(?int $hoursSinceCreation): self
+    public function setHoursSinceCreation(int $hoursSinceCreation): self
     {
         $this->hoursSinceCreation = $hoursSinceCreation;
 
@@ -54,7 +54,7 @@ class Cached extends AbstractModel
      *
      * @return int
      */
-    public function getRef(): ?int
+    public function getRef(): int
     {
         return $this->ref;
     }
@@ -66,7 +66,7 @@ class Cached extends AbstractModel
      *
      * @return self
      */
-    public function setRef(?int $ref): self
+    public function setRef(int $ref): self
     {
         $this->ref = $ref;
 
@@ -78,7 +78,7 @@ class Cached extends AbstractModel
      *
      * @return int
      */
-    public function getTimeToLive(): ?int
+    public function getTimeToLive(): int
     {
         return $this->timeToLive;
     }
@@ -90,7 +90,7 @@ class Cached extends AbstractModel
      *
      * @return self
      */
-    public function setTimeToLive(?int $timeToLive): self
+    public function setTimeToLive(int $timeToLive): self
     {
         $this->timeToLive = $timeToLive;
 

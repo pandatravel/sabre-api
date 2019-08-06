@@ -42,7 +42,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsDiversityParameters e
      *
      * @return int
      */
-    public function getAdditionalNonStopsNumber(): ?int
+    public function getAdditionalNonStopsNumber(): int
     {
         return $this->additionalNonStopsNumber;
     }
@@ -54,7 +54,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsDiversityParameters e
      *
      * @return self
      */
-    public function setAdditionalNonStopsNumber(?int $additionalNonStopsNumber): self
+    public function setAdditionalNonStopsNumber(int $additionalNonStopsNumber): self
     {
         $this->additionalNonStopsNumber = $additionalNonStopsNumber;
 
@@ -66,7 +66,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsDiversityParameters e
      *
      * @return int
      */
-    public function getAdditionalNonStopsPercentage(): ?int
+    public function getAdditionalNonStopsPercentage(): int
     {
         return $this->additionalNonStopsPercentage;
     }
@@ -78,7 +78,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsDiversityParameters e
      *
      * @return self
      */
-    public function setAdditionalNonStopsPercentage(?int $additionalNonStopsPercentage): self
+    public function setAdditionalNonStopsPercentage(int $additionalNonStopsPercentage): self
     {
         $this->additionalNonStopsPercentage = $additionalNonStopsPercentage;
 
@@ -90,7 +90,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsDiversityParameters e
      *
      * @return int
      */
-    public function getInboundOutboundPairing(): ?int
+    public function getInboundOutboundPairing(): int
     {
         return $this->inboundOutboundPairing;
     }
@@ -102,7 +102,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsDiversityParameters e
      *
      * @return self
      */
-    public function setInboundOutboundPairing(?int $inboundOutboundPairing): self
+    public function setInboundOutboundPairing(int $inboundOutboundPairing): self
     {
         $this->inboundOutboundPairing = $inboundOutboundPairing;
 
@@ -114,7 +114,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsDiversityParameters e
      *
      * @return OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsDiversityParametersTimeOfDayDistribution
      */
-    public function getTimeOfDayDistribution(): ?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsDiversityParametersTimeOfDayDistribution
+    public function getTimeOfDayDistribution(): OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsDiversityParametersTimeOfDayDistribution
     {
         return $this->timeOfDayDistribution;
     }
@@ -126,7 +126,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsDiversityParameters e
      *
      * @return self
      */
-    public function setTimeOfDayDistribution(?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsDiversityParametersTimeOfDayDistribution $timeOfDayDistribution): self
+    public function setTimeOfDayDistribution(OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsDiversityParametersTimeOfDayDistribution $timeOfDayDistribution): self
     {
         $this->timeOfDayDistribution = $timeOfDayDistribution;
 
@@ -138,7 +138,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsDiversityParameters e
      *
      * @return OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsDiversityParametersWeightings
      */
-    public function getWeightings(): ?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsDiversityParametersWeightings
+    public function getWeightings(): OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsDiversityParametersWeightings
     {
         return $this->weightings;
     }
@@ -150,7 +150,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsDiversityParameters e
      *
      * @return self
      */
-    public function setWeightings(?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsDiversityParametersWeightings $weightings): self
+    public function setWeightings(OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsDiversityParametersWeightings $weightings): self
     {
         $this->weightings = $weightings;
 

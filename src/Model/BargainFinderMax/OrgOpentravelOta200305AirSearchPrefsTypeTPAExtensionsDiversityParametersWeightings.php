@@ -24,7 +24,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsDiversityParametersWe
      *
      * @return int
      */
-    public function getPriceWeight(): ?int
+    public function getPriceWeight(): int
     {
         return $this->priceWeight;
     }
@@ -36,7 +36,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsDiversityParametersWe
      *
      * @return self
      */
-    public function setPriceWeight(?int $priceWeight): self
+    public function setPriceWeight(int $priceWeight): self
     {
         $this->priceWeight = $priceWeight;
 
@@ -48,7 +48,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsDiversityParametersWe
      *
      * @return int
      */
-    public function getTravelTimeWeight(): ?int
+    public function getTravelTimeWeight(): int
     {
         return $this->travelTimeWeight;
     }
@@ -60,7 +60,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsDiversityParametersWe
      *
      * @return self
      */
-    public function setTravelTimeWeight(?int $travelTimeWeight): self
+    public function setTravelTimeWeight(int $travelTimeWeight): self
     {
         $this->travelTimeWeight = $travelTimeWeight;
 

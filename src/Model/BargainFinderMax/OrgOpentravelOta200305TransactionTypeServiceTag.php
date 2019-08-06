@@ -18,7 +18,7 @@ class OrgOpentravelOta200305TransactionTypeServiceTag extends AbstractModel
     /**
      * @return string
      */
-    public function getName(): ?string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -28,7 +28,7 @@ class OrgOpentravelOta200305TransactionTypeServiceTag extends AbstractModel
      *
      * @return self
      */
-    public function setName(?string $name): self
+    public function setName(string $name): self
     {
         $this->name = $name;
 
@@ -38,7 +38,7 @@ class OrgOpentravelOta200305TransactionTypeServiceTag extends AbstractModel
     /**
      * @return string
      */
-    public function getContent(): ?string
+    public function getContent(): string
     {
         return $this->content;
     }
@@ -48,7 +48,7 @@ class OrgOpentravelOta200305TransactionTypeServiceTag extends AbstractModel
      *
      * @return self
      */
-    public function setContent(?string $content): self
+    public function setContent(string $content): self
     {
         $this->content = $content;
 

@@ -30,7 +30,7 @@ class TaxReissueType extends AbstractModel
     /**
      * @return float
      */
-    public function getMaxAmount(): ?float
+    public function getMaxAmount(): float
     {
         return $this->maxAmount;
     }
@@ -40,7 +40,7 @@ class TaxReissueType extends AbstractModel
      *
      * @return self
      */
-    public function setMaxAmount(?float $maxAmount): self
+    public function setMaxAmount(float $maxAmount): self
     {
         $this->maxAmount = $maxAmount;
 
@@ -50,7 +50,7 @@ class TaxReissueType extends AbstractModel
     /**
      * @return string
      */
-    public function getMaxCurrency(): ?string
+    public function getMaxCurrency(): string
     {
         return $this->maxCurrency;
     }
@@ -60,7 +60,7 @@ class TaxReissueType extends AbstractModel
      *
      * @return self
      */
-    public function setMaxCurrency(?string $maxCurrency): self
+    public function setMaxCurrency(string $maxCurrency): self
     {
         $this->maxCurrency = $maxCurrency;
 
@@ -70,7 +70,7 @@ class TaxReissueType extends AbstractModel
     /**
      * @return bool
      */
-    public function getRefundable(): ?bool
+    public function getRefundable(): bool
     {
         return $this->refundable;
     }
@@ -80,7 +80,7 @@ class TaxReissueType extends AbstractModel
      *
      * @return self
      */
-    public function setRefundable(?bool $refundable): self
+    public function setRefundable(bool $refundable): self
     {
         $this->refundable = $refundable;
 
@@ -90,7 +90,7 @@ class TaxReissueType extends AbstractModel
     /**
      * @return bool
      */
-    public function getRestrictionApply(): ?bool
+    public function getRestrictionApply(): bool
     {
         return $this->restrictionApply;
     }
@@ -100,7 +100,7 @@ class TaxReissueType extends AbstractModel
      *
      * @return self
      */
-    public function setRestrictionApply(?bool $restrictionApply): self
+    public function setRestrictionApply(bool $restrictionApply): self
     {
         $this->restrictionApply = $restrictionApply;
 
@@ -110,7 +110,7 @@ class TaxReissueType extends AbstractModel
     /**
      * @return string
      */
-    public function getTaxType(): ?string
+    public function getTaxType(): string
     {
         return $this->taxType;
     }
@@ -120,7 +120,7 @@ class TaxReissueType extends AbstractModel
      *
      * @return self
      */
-    public function setTaxType(?string $taxType): self
+    public function setTaxType(string $taxType): self
     {
         $this->taxType = $taxType;
 

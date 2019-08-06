@@ -48,7 +48,7 @@ class OrgOpentravelOta200305AdvResTicketingTypeAdvTicketing extends AbstractMode
      *
      * @return string
      */
-    public function getFromDepartPeriod(): ?string
+    public function getFromDepartPeriod(): string
     {
         return $this->fromDepartPeriod;
     }
@@ -60,7 +60,7 @@ class OrgOpentravelOta200305AdvResTicketingTypeAdvTicketing extends AbstractMode
      *
      * @return self
      */
-    public function setFromDepartPeriod(?string $fromDepartPeriod): self
+    public function setFromDepartPeriod(string $fromDepartPeriod): self
     {
         $this->fromDepartPeriod = $fromDepartPeriod;
 
@@ -72,7 +72,7 @@ class OrgOpentravelOta200305AdvResTicketingTypeAdvTicketing extends AbstractMode
      *
      * @return string
      */
-    public function getFromDepartTimeOfDay(): ?string
+    public function getFromDepartTimeOfDay(): string
     {
         return $this->fromDepartTimeOfDay;
     }
@@ -84,7 +84,7 @@ class OrgOpentravelOta200305AdvResTicketingTypeAdvTicketing extends AbstractMode
      *
      * @return self
      */
-    public function setFromDepartTimeOfDay(?string $fromDepartTimeOfDay): self
+    public function setFromDepartTimeOfDay(string $fromDepartTimeOfDay): self
     {
         $this->fromDepartTimeOfDay = $fromDepartTimeOfDay;
 
@@ -96,7 +96,7 @@ class OrgOpentravelOta200305AdvResTicketingTypeAdvTicketing extends AbstractMode
      *
      * @return string
      */
-    public function getFromDepartUnit(): ?string
+    public function getFromDepartUnit(): string
     {
         return $this->fromDepartUnit;
     }
@@ -108,7 +108,7 @@ class OrgOpentravelOta200305AdvResTicketingTypeAdvTicketing extends AbstractMode
      *
      * @return self
      */
-    public function setFromDepartUnit(?string $fromDepartUnit): self
+    public function setFromDepartUnit(string $fromDepartUnit): self
     {
         $this->fromDepartUnit = $fromDepartUnit;
 
@@ -120,7 +120,7 @@ class OrgOpentravelOta200305AdvResTicketingTypeAdvTicketing extends AbstractMode
      *
      * @return string
      */
-    public function getFromResPeriod(): ?string
+    public function getFromResPeriod(): string
     {
         return $this->fromResPeriod;
     }
@@ -132,7 +132,7 @@ class OrgOpentravelOta200305AdvResTicketingTypeAdvTicketing extends AbstractMode
      *
      * @return self
      */
-    public function setFromResPeriod(?string $fromResPeriod): self
+    public function setFromResPeriod(string $fromResPeriod): self
     {
         $this->fromResPeriod = $fromResPeriod;
 
@@ -144,7 +144,7 @@ class OrgOpentravelOta200305AdvResTicketingTypeAdvTicketing extends AbstractMode
      *
      * @return string
      */
-    public function getFromResTimeOfDay(): ?string
+    public function getFromResTimeOfDay(): string
     {
         return $this->fromResTimeOfDay;
     }
@@ -156,7 +156,7 @@ class OrgOpentravelOta200305AdvResTicketingTypeAdvTicketing extends AbstractMode
      *
      * @return self
      */
-    public function setFromResTimeOfDay(?string $fromResTimeOfDay): self
+    public function setFromResTimeOfDay(string $fromResTimeOfDay): self
     {
         $this->fromResTimeOfDay = $fromResTimeOfDay;
 
@@ -168,7 +168,7 @@ class OrgOpentravelOta200305AdvResTicketingTypeAdvTicketing extends AbstractMode
      *
      * @return string
      */
-    public function getFromResUnit(): ?string
+    public function getFromResUnit(): string
     {
         return $this->fromResUnit;
     }
@@ -180,7 +180,7 @@ class OrgOpentravelOta200305AdvResTicketingTypeAdvTicketing extends AbstractMode
      *
      * @return self
      */
-    public function setFromResUnit(?string $fromResUnit): self
+    public function setFromResUnit(string $fromResUnit): self
     {
         $this->fromResUnit = $fromResUnit;
 

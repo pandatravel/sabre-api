@@ -24,7 +24,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeAncillaryFeesAncillaryFeeGroup ext
      *
      * @return string
      */
-    public function getCode(): ?string
+    public function getCode(): string
     {
         return $this->code;
     }
@@ -36,7 +36,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeAncillaryFeesAncillaryFeeGroup ext
      *
      * @return self
      */
-    public function setCode(?string $code): self
+    public function setCode(string $code): self
     {
         $this->code = $code;
 
@@ -48,7 +48,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeAncillaryFeesAncillaryFeeGroup ext
      *
      * @return string
      */
-    public function getCount(): ?string
+    public function getCount(): string
     {
         return $this->count;
     }
@@ -60,7 +60,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeAncillaryFeesAncillaryFeeGroup ext
      *
      * @return self
      */
-    public function setCount(?string $count): self
+    public function setCount(string $count): self
     {
         $this->count = $count;
 

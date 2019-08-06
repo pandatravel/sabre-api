@@ -22,7 +22,7 @@ class OrgOpentravelOta200305RoutingDefinitionType extends AbstractModel
      *
      * @return bool
      */
-    public function getAddWildcards(): ?bool
+    public function getAddWildcards(): bool
     {
         return $this->addWildcards;
     }
@@ -34,7 +34,7 @@ class OrgOpentravelOta200305RoutingDefinitionType extends AbstractModel
      *
      * @return self
      */
-    public function setAddWildcards(?bool $addWildcards): self
+    public function setAddWildcards(bool $addWildcards): self
     {
         $this->addWildcards = $addWildcards;
 
@@ -44,7 +44,7 @@ class OrgOpentravelOta200305RoutingDefinitionType extends AbstractModel
     /**
      * @return OrgOpentravelOta200305RoutingLegType[]
      */
-    public function getRoutingLeg(): ?array
+    public function getRoutingLeg(): array
     {
         return $this->routingLeg;
     }
@@ -54,7 +54,7 @@ class OrgOpentravelOta200305RoutingDefinitionType extends AbstractModel
      *
      * @return self
      */
-    public function setRoutingLeg(?array $routingLeg): self
+    public function setRoutingLeg(array $routingLeg): self
     {
         $this->routingLeg = $routingLeg;
 

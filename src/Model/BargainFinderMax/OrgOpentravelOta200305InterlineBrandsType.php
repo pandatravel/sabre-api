@@ -20,7 +20,7 @@ class OrgOpentravelOta200305InterlineBrandsType extends AbstractModel
     /**
      * @return OrgOpentravelOta200305BrandType[]
      */
-    public function getBrand(): ?array
+    public function getBrand(): array
     {
         return $this->brand;
     }
@@ -30,7 +30,7 @@ class OrgOpentravelOta200305InterlineBrandsType extends AbstractModel
      *
      * @return self
      */
-    public function setBrand(?array $brand): self
+    public function setBrand(array $brand): self
     {
         $this->brand = $brand;
 
@@ -42,7 +42,7 @@ class OrgOpentravelOta200305InterlineBrandsType extends AbstractModel
      *
      * @return bool
      */
-    public function getChangeBrandForSoldout(): ?bool
+    public function getChangeBrandForSoldout(): bool
     {
         return $this->changeBrandForSoldout;
     }
@@ -54,7 +54,7 @@ class OrgOpentravelOta200305InterlineBrandsType extends AbstractModel
      *
      * @return self
      */
-    public function setChangeBrandForSoldout(?bool $changeBrandForSoldout): self
+    public function setChangeBrandForSoldout(bool $changeBrandForSoldout): self
     {
         $this->changeBrandForSoldout = $changeBrandForSoldout;
 

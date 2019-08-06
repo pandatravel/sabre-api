@@ -22,7 +22,7 @@ class ValidatingCarrier extends AbstractModel
      *
      * @return string
      */
-    public function getCode(): ?string
+    public function getCode(): string
     {
         return $this->code;
     }
@@ -34,7 +34,7 @@ class ValidatingCarrier extends AbstractModel
      *
      * @return self
      */
-    public function setCode(?string $code): self
+    public function setCode(string $code): self
     {
         $this->code = $code;
 
@@ -44,7 +44,7 @@ class ValidatingCarrier extends AbstractModel
     /**
      * @return IETCountryWOBSP
      */
-    public function getIetCountryWobsp(): ?IETCountryWOBSP
+    public function getIetCountryWobsp(): IETCountryWOBSP
     {
         return $this->ietCountryWobsp;
     }
@@ -54,7 +54,7 @@ class ValidatingCarrier extends AbstractModel
      *
      * @return self
      */
-    public function setIetCountryWobsp(?IETCountryWOBSP $ietCountryWobsp): self
+    public function setIetCountryWobsp(IETCountryWOBSP $ietCountryWobsp): self
     {
         $this->ietCountryWobsp = $ietCountryWobsp;
 
