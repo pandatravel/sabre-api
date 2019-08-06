@@ -30,7 +30,7 @@ class OfferNormalizer implements DenormalizerInterface, NormalizerInterface, Den
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\Offer;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\Offer';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])

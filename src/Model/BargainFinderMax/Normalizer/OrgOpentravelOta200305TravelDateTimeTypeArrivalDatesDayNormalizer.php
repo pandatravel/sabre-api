@@ -30,7 +30,7 @@ class OrgOpentravelOta200305TravelDateTimeTypeArrivalDatesDayNormalizer implemen
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305TravelDateTimeTypeArrivalDatesDay;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305TravelDateTimeTypeArrivalDatesDay';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])

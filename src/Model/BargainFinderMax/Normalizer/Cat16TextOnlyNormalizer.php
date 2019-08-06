@@ -30,7 +30,7 @@ class Cat16TextOnlyNormalizer implements DenormalizerInterface, NormalizerInterf
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\Cat16TextOnly;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\Cat16TextOnly';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])

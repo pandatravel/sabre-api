@@ -30,7 +30,7 @@ class CachedNormalizer implements DenormalizerInterface, NormalizerInterface, De
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\Cached;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\Cached';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])

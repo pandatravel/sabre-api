@@ -30,7 +30,7 @@ class IETCountryWOBSPNormalizer implements DenormalizerInterface, NormalizerInte
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\IETCountryWOBSP;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\IETCountryWOBSP';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])

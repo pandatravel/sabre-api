@@ -30,7 +30,7 @@ class OrgOpentravelOta200305JumpCabinLogicTypeNormalizer implements Denormalizer
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305JumpCabinLogicType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305JumpCabinLogicType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])

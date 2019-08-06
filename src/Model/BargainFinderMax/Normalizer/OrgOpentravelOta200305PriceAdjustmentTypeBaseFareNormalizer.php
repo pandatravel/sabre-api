@@ -30,7 +30,7 @@ class OrgOpentravelOta200305PriceAdjustmentTypeBaseFareNormalizer implements Den
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305PriceAdjustmentTypeBaseFare;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305PriceAdjustmentTypeBaseFare';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])

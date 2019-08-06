@@ -30,7 +30,7 @@ class OrgOpentravelOta200305DiversityControlTypeDimensionsTimeOfDayNormalizer im
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305DiversityControlTypeDimensionsTimeOfDay;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305DiversityControlTypeDimensionsTimeOfDay';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])

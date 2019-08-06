@@ -30,7 +30,7 @@ class SurchargeTypeNormalizer implements DenormalizerInterface, NormalizerInterf
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\SurchargeType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\SurchargeType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])

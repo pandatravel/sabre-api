@@ -30,7 +30,7 @@ class LegDescriptionTypeNormalizer implements DenormalizerInterface, NormalizerI
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\LegDescriptionType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\LegDescriptionType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])

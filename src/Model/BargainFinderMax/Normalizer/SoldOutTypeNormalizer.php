@@ -30,7 +30,7 @@ class SoldOutTypeNormalizer implements DenormalizerInterface, NormalizerInterfac
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\SoldOutType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\SoldOutType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])

@@ -30,7 +30,7 @@ class OrgOpentravelOta200305DiversityControlTypeDimensionsStopsNumberNormalizer 
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305DiversityControlTypeDimensionsStopsNumber;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305DiversityControlTypeDimensionsStopsNumber';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])

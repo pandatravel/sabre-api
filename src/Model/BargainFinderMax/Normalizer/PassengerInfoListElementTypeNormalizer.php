@@ -30,7 +30,7 @@ class PassengerInfoListElementTypeNormalizer implements DenormalizerInterface, N
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\PassengerInfoListElementType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\PassengerInfoListElementType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])

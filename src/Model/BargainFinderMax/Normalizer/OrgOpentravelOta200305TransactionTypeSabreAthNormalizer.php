@@ -30,7 +30,7 @@ class OrgOpentravelOta200305TransactionTypeSabreAthNormalizer implements Denorma
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305TransactionTypeSabreAth;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305TransactionTypeSabreAth';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])

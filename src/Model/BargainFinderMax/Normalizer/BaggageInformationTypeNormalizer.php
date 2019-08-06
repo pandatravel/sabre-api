@@ -30,7 +30,7 @@ class BaggageInformationTypeNormalizer implements DenormalizerInterface, Normali
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\BaggageInformationType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\BaggageInformationType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])

@@ -30,7 +30,7 @@ class OrgOpentravelOta200305BaggageTypeNormalizer implements DenormalizerInterfa
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305BaggageType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305BaggageType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])

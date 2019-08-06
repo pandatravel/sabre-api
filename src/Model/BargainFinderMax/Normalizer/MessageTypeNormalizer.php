@@ -30,7 +30,7 @@ class MessageTypeNormalizer implements DenormalizerInterface, NormalizerInterfac
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\MessageType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\MessageType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])

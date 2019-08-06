@@ -30,7 +30,7 @@ class SideTripNormalizer implements DenormalizerInterface, NormalizerInterface, 
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\SideTrip;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\SideTrip';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])

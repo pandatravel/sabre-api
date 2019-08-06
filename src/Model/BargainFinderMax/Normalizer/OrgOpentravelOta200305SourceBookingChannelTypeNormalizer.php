@@ -30,7 +30,7 @@ class OrgOpentravelOta200305SourceBookingChannelTypeNormalizer implements Denorm
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305SourceBookingChannelType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305SourceBookingChannelType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])

@@ -30,7 +30,7 @@ class CountryNormalizer implements DenormalizerInterface, NormalizerInterface, D
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\Country;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\Country';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])

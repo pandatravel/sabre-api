@@ -30,7 +30,7 @@ class OrgOpentravelOta200305TransactionTypeDiagnosticsNormalizer implements Deno
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305TransactionTypeDiagnostics;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305TransactionTypeDiagnostics';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])

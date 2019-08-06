@@ -30,7 +30,7 @@ class PenaltyNormalizer implements DenormalizerInterface, NormalizerInterface, D
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\Penalty;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\Penalty';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])

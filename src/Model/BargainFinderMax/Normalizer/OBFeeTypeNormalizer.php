@@ -30,7 +30,7 @@ class OBFeeTypeNormalizer implements DenormalizerInterface, NormalizerInterface,
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OBFeeType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OBFeeType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])

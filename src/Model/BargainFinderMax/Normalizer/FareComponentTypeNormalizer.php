@@ -30,7 +30,7 @@ class FareComponentTypeNormalizer implements DenormalizerInterface, NormalizerIn
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\FareComponentType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\FareComponentType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])

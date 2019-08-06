@@ -30,7 +30,7 @@ class OrgOpentravelOta200305VoluntaryChangesTypeNormalizer implements Denormaliz
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305VoluntaryChangesType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305VoluntaryChangesType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])

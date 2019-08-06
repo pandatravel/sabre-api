@@ -30,7 +30,7 @@ class AncillaryFeeGroupTypeNormalizer implements DenormalizerInterface, Normaliz
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\AncillaryFeeGroupType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\AncillaryFeeGroupType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])

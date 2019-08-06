@@ -30,7 +30,7 @@ class OrgOpentravelOta200305ValidatingCarrierTypeNormalizer implements Denormali
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305ValidatingCarrierType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305ValidatingCarrierType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])

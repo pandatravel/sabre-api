@@ -30,7 +30,7 @@ class HigherIntermediatePointTypeNormalizer implements DenormalizerInterface, No
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\HigherIntermediatePointType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\HigherIntermediatePointType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])

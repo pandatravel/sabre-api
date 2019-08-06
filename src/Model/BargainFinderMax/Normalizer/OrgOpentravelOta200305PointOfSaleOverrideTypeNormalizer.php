@@ -30,7 +30,7 @@ class OrgOpentravelOta200305PointOfSaleOverrideTypeNormalizer implements Denorma
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305PointOfSaleOverrideType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305PointOfSaleOverrideType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])

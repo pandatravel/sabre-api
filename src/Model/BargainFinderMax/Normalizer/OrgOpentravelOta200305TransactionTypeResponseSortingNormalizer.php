@@ -30,7 +30,7 @@ class OrgOpentravelOta200305TransactionTypeResponseSortingNormalizer implements 
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305TransactionTypeResponseSorting;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305TransactionTypeResponseSorting';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])

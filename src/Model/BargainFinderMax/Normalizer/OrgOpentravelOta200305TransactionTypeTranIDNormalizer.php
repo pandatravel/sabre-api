@@ -30,7 +30,7 @@ class OrgOpentravelOta200305TransactionTypeTranIDNormalizer implements Denormali
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305TransactionTypeTranID;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305TransactionTypeTranID';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])

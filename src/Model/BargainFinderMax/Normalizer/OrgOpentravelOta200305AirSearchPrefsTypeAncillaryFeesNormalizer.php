@@ -30,7 +30,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeAncillaryFeesNormalizer implements
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305AirSearchPrefsTypeAncillaryFees;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305AirSearchPrefsTypeAncillaryFees';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])

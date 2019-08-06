@@ -30,7 +30,7 @@ class OrgOpentravelOta200305AlternatePCCTypeNormalizer implements DenormalizerIn
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305AlternatePCCType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305AlternatePCCType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])

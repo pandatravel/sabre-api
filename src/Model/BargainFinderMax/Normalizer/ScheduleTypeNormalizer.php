@@ -30,7 +30,7 @@ class ScheduleTypeNormalizer implements DenormalizerInterface, NormalizerInterfa
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\ScheduleType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\ScheduleType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])

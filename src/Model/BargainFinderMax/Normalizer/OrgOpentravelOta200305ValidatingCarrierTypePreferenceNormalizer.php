@@ -30,7 +30,7 @@ class OrgOpentravelOta200305ValidatingCarrierTypePreferenceNormalizer implements
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305ValidatingCarrierTypePreference;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305ValidatingCarrierTypePreference';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])

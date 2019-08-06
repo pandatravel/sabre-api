@@ -30,7 +30,7 @@ class OrgOpentravelOta200305StayRestrictionsTypeMaximumStayNormalizer implements
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305StayRestrictionsTypeMaximumStay;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305StayRestrictionsTypeMaximumStay';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])

@@ -30,7 +30,7 @@ class TaxRestrictionsTypeNormalizer implements DenormalizerInterface, Normalizer
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\TaxRestrictionsType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\TaxRestrictionsType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])

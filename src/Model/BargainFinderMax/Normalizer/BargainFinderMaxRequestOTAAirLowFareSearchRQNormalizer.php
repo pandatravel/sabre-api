@@ -30,7 +30,7 @@ class BargainFinderMaxRequestOTAAirLowFareSearchRQNormalizer implements Denormal
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\BargainFinderMaxRequestOTAAirLowFareSearchRQ;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\BargainFinderMaxRequestOTAAirLowFareSearchRQ';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])

@@ -30,7 +30,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeAccountCodeNormalizer imp
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305PriceRequestInformationTypeAccountCode;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305PriceRequestInformationTypeAccountCode';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])

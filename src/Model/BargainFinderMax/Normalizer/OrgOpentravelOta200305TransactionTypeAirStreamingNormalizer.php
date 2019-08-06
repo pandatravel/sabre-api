@@ -30,7 +30,7 @@ class OrgOpentravelOta200305TransactionTypeAirStreamingNormalizer implements Den
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305TransactionTypeAirStreaming;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305TransactionTypeAirStreaming';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])

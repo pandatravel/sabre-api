@@ -30,7 +30,7 @@ class OrgOpentravelOta200305RoutingLegTypeNormalizer implements DenormalizerInte
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305RoutingLegType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305RoutingLegType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])

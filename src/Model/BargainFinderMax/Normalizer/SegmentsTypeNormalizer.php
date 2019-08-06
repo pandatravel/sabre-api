@@ -30,7 +30,7 @@ class SegmentsTypeNormalizer implements DenormalizerInterface, NormalizerInterfa
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\SegmentsType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\SegmentsType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])

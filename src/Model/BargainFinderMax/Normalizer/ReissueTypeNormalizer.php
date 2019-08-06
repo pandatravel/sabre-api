@@ -30,7 +30,7 @@ class ReissueTypeNormalizer implements DenormalizerInterface, NormalizerInterfac
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\ReissueType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\ReissueType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])

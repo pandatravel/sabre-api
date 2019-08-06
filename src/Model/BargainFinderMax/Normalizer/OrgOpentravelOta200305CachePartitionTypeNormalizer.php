@@ -30,7 +30,7 @@ class OrgOpentravelOta200305CachePartitionTypeNormalizer implements Denormalizer
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305CachePartitionType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305CachePartitionType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])

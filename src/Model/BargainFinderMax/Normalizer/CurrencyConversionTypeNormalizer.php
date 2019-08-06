@@ -30,7 +30,7 @@ class CurrencyConversionTypeNormalizer implements DenormalizerInterface, Normali
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\CurrencyConversionType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\CurrencyConversionType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
