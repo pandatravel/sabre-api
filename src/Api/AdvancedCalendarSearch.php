@@ -37,12 +37,23 @@ use GuzzleHttp\Exception\ConnectException;
 use GuzzleHttp\Exception\RequestException;
 
 /**
- * The Airline Lookup API returns the airline name associated with
- * a specified IATA airline code. If no code is specified, the
- * API returns all codes and their corresponding names.
+ * The Advanced Calendar Search API returns the lowest published fares and flight itineraries
+ * for a given city pair.
+ *
+ * The API uses the Travel Insight engine to retrieve up to 192 days
+ * of shopped fare data for a given city pair and length of stay available in the Sabre®
+ * cache.
+ *
+ * Multiple search preferences are available to sort and filter results,
+ * including the ability to:
+ *
+ * limit flight options to online itineraries only, include/exclude carriers and specify
+ * particular days of the week; specify multiple lengths of stay, a maximum number
+ * of stops; connecting-flight time or a departure/arrival time window on each
+ * flight leg.
  *
  * @link   https://beta.developer.sabre.com/sites/default/files/lUDUUr0S.yaml OpenApi Spec
- * @link   https://ptagent.com/api/v1/packages/
+ * @link   https://ptagent.com/api/v1/sabre/
  *
  * @author Ammon Casey <ammon@caseyohana.com>
  */
