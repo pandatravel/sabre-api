@@ -30,7 +30,7 @@ class PassengerInformationTypeNormalizer implements DenormalizerInterface, Norma
 
     public function supportsNormalization($data, $format = null)
     {
-        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\PassengerInformationType';
+        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\PassengerInformationType;
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])

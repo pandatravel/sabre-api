@@ -30,7 +30,7 @@ class PricingLegTypeNormalizer implements DenormalizerInterface, NormalizerInter
 
     public function supportsNormalization($data, $format = null)
     {
-        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\PricingLegType';
+        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\PricingLegType;
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])

@@ -30,7 +30,7 @@ class OrgOpentravelOta200305TransactionTypeSubagentDataNormalizer implements Den
 
     public function supportsNormalization($data, $format = null)
     {
-        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305TransactionTypeSubagentData';
+        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305TransactionTypeSubagentData;
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])

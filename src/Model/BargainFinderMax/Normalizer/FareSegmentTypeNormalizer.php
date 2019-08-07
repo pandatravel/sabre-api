@@ -30,7 +30,7 @@ class FareSegmentTypeNormalizer implements DenormalizerInterface, NormalizerInte
 
     public function supportsNormalization($data, $format = null)
     {
-        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\FareSegmentType';
+        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\FareSegmentType;
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])

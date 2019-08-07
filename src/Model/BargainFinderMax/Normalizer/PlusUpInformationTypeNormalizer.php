@@ -30,7 +30,7 @@ class PlusUpInformationTypeNormalizer implements DenormalizerInterface, Normaliz
 
     public function supportsNormalization($data, $format = null)
     {
-        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\PlusUpInformationType';
+        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\PlusUpInformationType;
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])

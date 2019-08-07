@@ -30,7 +30,7 @@ class ArrivalNormalizer implements DenormalizerInterface, NormalizerInterface, D
 
     public function supportsNormalization($data, $format = null)
     {
-        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\Arrival';
+        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\Arrival;
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])

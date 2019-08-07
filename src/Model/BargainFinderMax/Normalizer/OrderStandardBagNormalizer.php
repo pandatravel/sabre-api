@@ -30,7 +30,7 @@ class OrderStandardBagNormalizer implements DenormalizerInterface, NormalizerInt
 
     public function supportsNormalization($data, $format = null)
     {
-        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrderStandardBag';
+        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrderStandardBag;
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])

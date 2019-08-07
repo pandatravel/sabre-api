@@ -30,7 +30,7 @@ class SurfaceTypeNormalizer implements DenormalizerInterface, NormalizerInterfac
 
     public function supportsNormalization($data, $format = null)
     {
-        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\SurfaceType';
+        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\SurfaceType;
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])

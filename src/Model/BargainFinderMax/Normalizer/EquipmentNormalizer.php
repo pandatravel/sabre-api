@@ -30,7 +30,7 @@ class EquipmentNormalizer implements DenormalizerInterface, NormalizerInterface,
 
     public function supportsNormalization($data, $format = null)
     {
-        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\Equipment';
+        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\Equipment;
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])

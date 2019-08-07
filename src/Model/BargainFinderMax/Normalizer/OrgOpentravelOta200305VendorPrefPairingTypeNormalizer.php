@@ -30,7 +30,7 @@ class OrgOpentravelOta200305VendorPrefPairingTypeNormalizer implements Denormali
 
     public function supportsNormalization($data, $format = null)
     {
-        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305VendorPrefPairingType';
+        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305VendorPrefPairingType;
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])

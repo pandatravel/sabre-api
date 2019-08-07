@@ -30,7 +30,7 @@ class ValidatingCarrierNormalizer implements DenormalizerInterface, NormalizerIn
 
     public function supportsNormalization($data, $format = null)
     {
-        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\ValidatingCarrier';
+        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\ValidatingCarrier;
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])

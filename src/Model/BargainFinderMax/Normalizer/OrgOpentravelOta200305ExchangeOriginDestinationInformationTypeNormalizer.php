@@ -30,7 +30,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeNormalizer i
 
     public function supportsNormalization($data, $format = null)
     {
-        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305ExchangeOriginDestinationInformationType';
+        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305ExchangeOriginDestinationInformationType;
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])

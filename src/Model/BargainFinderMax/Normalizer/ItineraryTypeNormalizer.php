@@ -30,7 +30,7 @@ class ItineraryTypeNormalizer implements DenormalizerInterface, NormalizerInterf
 
     public function supportsNormalization($data, $format = null)
     {
-        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\ItineraryType';
+        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\ItineraryType;
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])

@@ -30,7 +30,7 @@ class PassengerNotAvailableInfoTypeNormalizer implements DenormalizerInterface, 
 
     public function supportsNormalization($data, $format = null)
     {
-        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\PassengerNotAvailableInfoType';
+        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\PassengerNotAvailableInfoType;
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])

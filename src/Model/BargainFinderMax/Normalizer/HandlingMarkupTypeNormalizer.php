@@ -30,7 +30,7 @@ class HandlingMarkupTypeNormalizer implements DenormalizerInterface, NormalizerI
 
     public function supportsNormalization($data, $format = null)
     {
-        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\HandlingMarkupType';
+        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\HandlingMarkupType;
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])

@@ -30,7 +30,7 @@ class OrgOpentravelOta200305AltCitiesCombinationsTypeNormalizer implements Denor
 
     public function supportsNormalization($data, $format = null)
     {
-        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305AltCitiesCombinationsType';
+        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305AltCitiesCombinationsType;
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])

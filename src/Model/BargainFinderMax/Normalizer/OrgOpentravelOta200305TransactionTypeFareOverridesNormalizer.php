@@ -30,7 +30,7 @@ class OrgOpentravelOta200305TransactionTypeFareOverridesNormalizer implements De
 
     public function supportsNormalization($data, $format = null)
     {
-        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305TransactionTypeFareOverrides';
+        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305TransactionTypeFareOverrides;
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])

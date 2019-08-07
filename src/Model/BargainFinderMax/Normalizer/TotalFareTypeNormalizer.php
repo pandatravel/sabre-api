@@ -30,7 +30,7 @@ class TotalFareTypeNormalizer implements DenormalizerInterface, NormalizerInterf
 
     public function supportsNormalization($data, $format = null)
     {
-        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\TotalFareType';
+        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\TotalFareType;
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])

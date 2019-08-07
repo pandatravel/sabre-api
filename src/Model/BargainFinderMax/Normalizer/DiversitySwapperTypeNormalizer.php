@@ -30,7 +30,7 @@ class DiversitySwapperTypeNormalizer implements DenormalizerInterface, Normalize
 
     public function supportsNormalization($data, $format = null)
     {
-        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\DiversitySwapperType';
+        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\DiversitySwapperType;
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])

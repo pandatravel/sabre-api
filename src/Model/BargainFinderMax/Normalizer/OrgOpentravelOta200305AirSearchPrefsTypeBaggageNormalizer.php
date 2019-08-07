@@ -30,7 +30,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeBaggageNormalizer implements Denor
 
     public function supportsNormalization($data, $format = null)
     {
-        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305AirSearchPrefsTypeBaggage';
+        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305AirSearchPrefsTypeBaggage;
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])

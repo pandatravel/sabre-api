@@ -30,7 +30,7 @@ class GroupedItineraryResponseGroupedItineraryResponseNormalizer implements Deno
 
     public function supportsNormalization($data, $format = null)
     {
-        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\GroupedItineraryResponseGroupedItineraryResponse';
+        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\GroupedItineraryResponseGroupedItineraryResponse;
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])

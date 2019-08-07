@@ -30,7 +30,7 @@ class OrgOpentravelOta200305VoluntaryChangesSMPTypeNormalizer implements Denorma
 
     public function supportsNormalization($data, $format = null)
     {
-        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305VoluntaryChangesSMPType';
+        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305VoluntaryChangesSMPType;
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
