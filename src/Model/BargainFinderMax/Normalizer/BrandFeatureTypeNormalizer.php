@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,34 +29,34 @@ class BrandFeatureTypeNormalizer implements DenormalizerInterface, NormalizerInt
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\BrandFeatureType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\BrandFeatureType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\BrandFeatureType();
-        if (property_exists($data, 'application')) {
+        if (property_exists($data, 'application') && $data->{'application'} !== null) {
             $object->setApplication($data->{'application'});
         }
-        if (property_exists($data, 'commercialName')) {
+        if (property_exists($data, 'commercialName') && $data->{'commercialName'} !== null) {
             $object->setCommercialName($data->{'commercialName'});
         }
-        if (property_exists($data, 'id')) {
+        if (property_exists($data, 'id') && $data->{'id'} !== null) {
             $object->setId($data->{'id'});
         }
-        if (property_exists($data, 'serviceGroup')) {
+        if (property_exists($data, 'serviceGroup') && $data->{'serviceGroup'} !== null) {
             $object->setServiceGroup($data->{'serviceGroup'});
         }
-        if (property_exists($data, 'serviceType')) {
+        if (property_exists($data, 'serviceType') && $data->{'serviceType'} !== null) {
             $object->setServiceType($data->{'serviceType'});
         }
-        if (property_exists($data, 'subCode')) {
+        if (property_exists($data, 'subCode') && $data->{'subCode'} !== null) {
             $object->setSubCode($data->{'subCode'});
         }
-        if (property_exists($data, 'vendor')) {
+        if (property_exists($data, 'vendor') && $data->{'vendor'} !== null) {
             $object->setVendor($data->{'vendor'});
         }
 

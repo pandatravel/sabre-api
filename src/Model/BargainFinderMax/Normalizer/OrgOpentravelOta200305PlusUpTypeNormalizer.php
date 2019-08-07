@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,37 +29,37 @@ class OrgOpentravelOta200305PlusUpTypeNormalizer implements DenormalizerInterfac
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305PlusUpType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305PlusUpType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305PlusUpType();
-        if (property_exists($data, 'Amount')) {
+        if (property_exists($data, 'Amount') && $data->{'Amount'} !== null) {
             $object->setAmount($data->{'Amount'});
         }
-        if (property_exists($data, 'CountryOfPayment')) {
+        if (property_exists($data, 'CountryOfPayment') && $data->{'CountryOfPayment'} !== null) {
             $object->setCountryOfPayment($data->{'CountryOfPayment'});
         }
-        if (property_exists($data, 'DestinationCity')) {
+        if (property_exists($data, 'DestinationCity') && $data->{'DestinationCity'} !== null) {
             $object->setDestinationCity($data->{'DestinationCity'});
         }
-        if (property_exists($data, 'FareDestinationCity')) {
+        if (property_exists($data, 'FareDestinationCity') && $data->{'FareDestinationCity'} !== null) {
             $object->setFareDestinationCity($data->{'FareDestinationCity'});
         }
-        if (property_exists($data, 'FareOriginCity')) {
+        if (property_exists($data, 'FareOriginCity') && $data->{'FareOriginCity'} !== null) {
             $object->setFareOriginCity($data->{'FareOriginCity'});
         }
-        if (property_exists($data, 'Message')) {
+        if (property_exists($data, 'Message') && $data->{'Message'} !== null) {
             $object->setMessage($data->{'Message'});
         }
-        if (property_exists($data, 'OriginCity')) {
+        if (property_exists($data, 'OriginCity') && $data->{'OriginCity'} !== null) {
             $object->setOriginCity($data->{'OriginCity'});
         }
-        if (property_exists($data, 'ViaCity')) {
+        if (property_exists($data, 'ViaCity') && $data->{'ViaCity'} !== null) {
             $object->setViaCity($data->{'ViaCity'});
         }
 

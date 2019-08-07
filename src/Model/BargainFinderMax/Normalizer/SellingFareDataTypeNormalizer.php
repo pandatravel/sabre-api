@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,58 +29,58 @@ class SellingFareDataTypeNormalizer implements DenormalizerInterface, Normalizer
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\SellingFareDataType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\SellingFareDataType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\SellingFareDataType();
-        if (property_exists($data, 'baseFareAmount')) {
+        if (property_exists($data, 'baseFareAmount') && $data->{'baseFareAmount'} !== null) {
             $object->setBaseFareAmount($data->{'baseFareAmount'});
         }
-        if (property_exists($data, 'constructedTotalAmount')) {
+        if (property_exists($data, 'constructedTotalAmount') && $data->{'constructedTotalAmount'} !== null) {
             $object->setConstructedTotalAmount($data->{'constructedTotalAmount'});
         }
-        if (property_exists($data, 'equivalentAmount')) {
+        if (property_exists($data, 'equivalentAmount') && $data->{'equivalentAmount'} !== null) {
             $object->setEquivalentAmount($data->{'equivalentAmount'});
         }
-        if (property_exists($data, 'fareCalculation')) {
+        if (property_exists($data, 'fareCalculation') && $data->{'fareCalculation'} !== null) {
             $object->setFareCalculation($data->{'fareCalculation'});
         }
-        if (property_exists($data, 'fareRetailerRule')) {
+        if (property_exists($data, 'fareRetailerRule') && $data->{'fareRetailerRule'} !== null) {
             $object->setFareRetailerRule($data->{'fareRetailerRule'});
         }
-        if (property_exists($data, 'handlingMarkups')) {
+        if (property_exists($data, 'handlingMarkups') && $data->{'handlingMarkups'} !== null) {
             $values = [];
             foreach ($data->{'handlingMarkups'} as $value) {
                 $values[] = $this->denormalizer->denormalize($value, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\HandlingMarkupType', 'json', $context);
             }
             $object->setHandlingMarkups($values);
         }
-        if (property_exists($data, 'taxSummaries')) {
+        if (property_exists($data, 'taxSummaries') && $data->{'taxSummaries'} !== null) {
             $values_1 = [];
             foreach ($data->{'taxSummaries'} as $value_1) {
                 $values_1[] = $this->denormalizer->denormalize($value_1, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\TaxSummaryIDType', 'json', $context);
             }
             $object->setTaxSummaries($values_1);
         }
-        if (property_exists($data, 'taxes')) {
+        if (property_exists($data, 'taxes') && $data->{'taxes'} !== null) {
             $values_2 = [];
             foreach ($data->{'taxes'} as $value_2) {
                 $values_2[] = $this->denormalizer->denormalize($value_2, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\TaxIDType', 'json', $context);
             }
             $object->setTaxes($values_2);
         }
-        if (property_exists($data, 'totalPerPassenger')) {
+        if (property_exists($data, 'totalPerPassenger') && $data->{'totalPerPassenger'} !== null) {
             $object->setTotalPerPassenger($data->{'totalPerPassenger'});
         }
-        if (property_exists($data, 'totalTaxAmount')) {
+        if (property_exists($data, 'totalTaxAmount') && $data->{'totalTaxAmount'} !== null) {
             $object->setTotalTaxAmount($data->{'totalTaxAmount'});
         }
-        if (property_exists($data, 'type')) {
+        if (property_exists($data, 'type') && $data->{'type'} !== null) {
             $object->setType($data->{'type'});
         }
 

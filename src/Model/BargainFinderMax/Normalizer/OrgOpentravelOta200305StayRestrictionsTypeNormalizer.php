@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,22 +29,22 @@ class OrgOpentravelOta200305StayRestrictionsTypeNormalizer implements Denormaliz
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305StayRestrictionsType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305StayRestrictionsType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305StayRestrictionsType();
-        if (property_exists($data, 'MaximumStay')) {
+        if (property_exists($data, 'MaximumStay') && $data->{'MaximumStay'} !== null) {
             $object->setMaximumStay($this->denormalizer->denormalize($data->{'MaximumStay'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305StayRestrictionsTypeMaximumStay', 'json', $context));
         }
-        if (property_exists($data, 'MinimumStay')) {
+        if (property_exists($data, 'MinimumStay') && $data->{'MinimumStay'} !== null) {
             $object->setMinimumStay($this->denormalizer->denormalize($data->{'MinimumStay'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305StayRestrictionsTypeMinimumStay', 'json', $context));
         }
-        if (property_exists($data, 'StayRestrictionsInd')) {
+        if (property_exists($data, 'StayRestrictionsInd') && $data->{'StayRestrictionsInd'} !== null) {
             $object->setStayRestrictionsInd($data->{'StayRestrictionsInd'});
         }
 

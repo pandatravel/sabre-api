@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,37 +29,37 @@ class BaggageChargeTypeNormalizer implements DenormalizerInterface, NormalizerIn
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\BaggageChargeType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\BaggageChargeType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\BaggageChargeType();
-        if (property_exists($data, 'description1')) {
+        if (property_exists($data, 'description1') && $data->{'description1'} !== null) {
             $object->setDescription1($data->{'description1'});
         }
-        if (property_exists($data, 'description2')) {
+        if (property_exists($data, 'description2') && $data->{'description2'} !== null) {
             $object->setDescription2($data->{'description2'});
         }
-        if (property_exists($data, 'equivalentAmount')) {
+        if (property_exists($data, 'equivalentAmount') && $data->{'equivalentAmount'} !== null) {
             $object->setEquivalentAmount($data->{'equivalentAmount'});
         }
-        if (property_exists($data, 'equivalentCurrency')) {
+        if (property_exists($data, 'equivalentCurrency') && $data->{'equivalentCurrency'} !== null) {
             $object->setEquivalentCurrency($data->{'equivalentCurrency'});
         }
-        if (property_exists($data, 'firstPiece')) {
+        if (property_exists($data, 'firstPiece') && $data->{'firstPiece'} !== null) {
             $object->setFirstPiece($data->{'firstPiece'});
         }
-        if (property_exists($data, 'id')) {
+        if (property_exists($data, 'id') && $data->{'id'} !== null) {
             $object->setId($data->{'id'});
         }
-        if (property_exists($data, 'lastPiece')) {
+        if (property_exists($data, 'lastPiece') && $data->{'lastPiece'} !== null) {
             $object->setLastPiece($data->{'lastPiece'});
         }
-        if (property_exists($data, 'noChargeNotAvailable')) {
+        if (property_exists($data, 'noChargeNotAvailable') && $data->{'noChargeNotAvailable'} !== null) {
             $object->setNoChargeNotAvailable($data->{'noChargeNotAvailable'});
         }
 

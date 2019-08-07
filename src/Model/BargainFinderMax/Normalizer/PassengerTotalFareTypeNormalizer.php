@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,85 +29,85 @@ class PassengerTotalFareTypeNormalizer implements DenormalizerInterface, Normali
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\PassengerTotalFareType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\PassengerTotalFareType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\PassengerTotalFareType();
-        if (property_exists($data, 'baseFareAmount')) {
+        if (property_exists($data, 'baseFareAmount') && $data->{'baseFareAmount'} !== null) {
             $object->setBaseFareAmount($data->{'baseFareAmount'});
         }
-        if (property_exists($data, 'baseFareCurrency')) {
+        if (property_exists($data, 'baseFareCurrency') && $data->{'baseFareCurrency'} !== null) {
             $object->setBaseFareCurrency($data->{'baseFareCurrency'});
         }
-        if (property_exists($data, 'bookingFeeAmount')) {
+        if (property_exists($data, 'bookingFeeAmount') && $data->{'bookingFeeAmount'} !== null) {
             $object->setBookingFeeAmount($data->{'bookingFeeAmount'});
         }
-        if (property_exists($data, 'cat35CommissionAmount')) {
+        if (property_exists($data, 'cat35CommissionAmount') && $data->{'cat35CommissionAmount'} !== null) {
             $object->setCat35CommissionAmount($data->{'cat35CommissionAmount'});
         }
-        if (property_exists($data, 'cat35CommissionPercentage')) {
+        if (property_exists($data, 'cat35CommissionPercentage') && $data->{'cat35CommissionPercentage'} !== null) {
             $object->setCat35CommissionPercentage($data->{'cat35CommissionPercentage'});
         }
-        if (property_exists($data, 'cat35MarkupAmount')) {
+        if (property_exists($data, 'cat35MarkupAmount') && $data->{'cat35MarkupAmount'} !== null) {
             $object->setCat35MarkupAmount($data->{'cat35MarkupAmount'});
         }
-        if (property_exists($data, 'commissionAmount')) {
+        if (property_exists($data, 'commissionAmount') && $data->{'commissionAmount'} !== null) {
             $object->setCommissionAmount($data->{'commissionAmount'});
         }
-        if (property_exists($data, 'commissionAmountInEquivalent')) {
+        if (property_exists($data, 'commissionAmountInEquivalent') && $data->{'commissionAmountInEquivalent'} !== null) {
             $object->setCommissionAmountInEquivalent($data->{'commissionAmountInEquivalent'});
         }
-        if (property_exists($data, 'commissionPercentage')) {
+        if (property_exists($data, 'commissionPercentage') && $data->{'commissionPercentage'} !== null) {
             $object->setCommissionPercentage($data->{'commissionPercentage'});
         }
-        if (property_exists($data, 'commissionSource')) {
+        if (property_exists($data, 'commissionSource') && $data->{'commissionSource'} !== null) {
             $object->setCommissionSource($data->{'commissionSource'});
         }
-        if (property_exists($data, 'constructionAmount')) {
+        if (property_exists($data, 'constructionAmount') && $data->{'constructionAmount'} !== null) {
             $object->setConstructionAmount($data->{'constructionAmount'});
         }
-        if (property_exists($data, 'constructionCurrency')) {
+        if (property_exists($data, 'constructionCurrency') && $data->{'constructionCurrency'} !== null) {
             $object->setConstructionCurrency($data->{'constructionCurrency'});
         }
-        if (property_exists($data, 'creditCardFeeAmount')) {
+        if (property_exists($data, 'creditCardFeeAmount') && $data->{'creditCardFeeAmount'} !== null) {
             $object->setCreditCardFeeAmount($data->{'creditCardFeeAmount'});
         }
-        if (property_exists($data, 'currency')) {
+        if (property_exists($data, 'currency') && $data->{'currency'} !== null) {
             $object->setCurrency($data->{'currency'});
         }
-        if (property_exists($data, 'effectiveDeviationType')) {
+        if (property_exists($data, 'effectiveDeviationType') && $data->{'effectiveDeviationType'} !== null) {
             $object->setEffectiveDeviationType($data->{'effectiveDeviationType'});
         }
-        if (property_exists($data, 'effectivePriceDeviation')) {
+        if (property_exists($data, 'effectivePriceDeviation') && $data->{'effectivePriceDeviation'} !== null) {
             $object->setEffectivePriceDeviation($data->{'effectivePriceDeviation'});
         }
-        if (property_exists($data, 'equivalentAmount')) {
+        if (property_exists($data, 'equivalentAmount') && $data->{'equivalentAmount'} !== null) {
             $object->setEquivalentAmount($data->{'equivalentAmount'});
         }
-        if (property_exists($data, 'equivalentCurrency')) {
+        if (property_exists($data, 'equivalentCurrency') && $data->{'equivalentCurrency'} !== null) {
             $object->setEquivalentCurrency($data->{'equivalentCurrency'});
         }
-        if (property_exists($data, 'exchangeRateOne')) {
+        if (property_exists($data, 'exchangeRateOne') && $data->{'exchangeRateOne'} !== null) {
             $object->setExchangeRateOne($data->{'exchangeRateOne'});
         }
-        if (property_exists($data, 'noMarkupBaseFareAmount')) {
+        if (property_exists($data, 'noMarkupBaseFareAmount') && $data->{'noMarkupBaseFareAmount'} !== null) {
             $object->setNoMarkupBaseFareAmount($data->{'noMarkupBaseFareAmount'});
         }
-        if (property_exists($data, 'stopoverChargeAmount')) {
+        if (property_exists($data, 'stopoverChargeAmount') && $data->{'stopoverChargeAmount'} !== null) {
             $object->setStopoverChargeAmount($data->{'stopoverChargeAmount'});
         }
-        if (property_exists($data, 'totalFare')) {
+        if (property_exists($data, 'totalFare') && $data->{'totalFare'} !== null) {
             $object->setTotalFare($data->{'totalFare'});
         }
-        if (property_exists($data, 'totalTaxAmount')) {
+        if (property_exists($data, 'totalTaxAmount') && $data->{'totalTaxAmount'} !== null) {
             $object->setTotalTaxAmount($data->{'totalTaxAmount'});
         }
-        if (property_exists($data, 'totalTtypeObFee')) {
+        if (property_exists($data, 'totalTtypeObFee') && $data->{'totalTtypeObFee'} !== null) {
             $object->setTotalTtypeObFee($data->{'totalTtypeObFee'});
         }
 

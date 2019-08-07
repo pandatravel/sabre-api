@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,29 +29,29 @@ class OrgOpentravelOta200305DiversityControlTypeDimensionsCarrierNormalizer impl
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305DiversityControlTypeDimensionsCarrier;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305DiversityControlTypeDimensionsCarrier';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305DiversityControlTypeDimensionsCarrier();
-        if (property_exists($data, 'Default')) {
+        if (property_exists($data, 'Default') && $data->{'Default'} !== null) {
             $object->setDefault($this->denormalizer->denormalize($data->{'Default'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305DiversityControlTypeDimensionsCarrierDefault', 'json', $context));
         }
-        if (property_exists($data, 'OnlineIndicator')) {
+        if (property_exists($data, 'OnlineIndicator') && $data->{'OnlineIndicator'} !== null) {
             $object->setOnlineIndicator($data->{'OnlineIndicator'});
         }
-        if (property_exists($data, 'Override')) {
+        if (property_exists($data, 'Override') && $data->{'Override'} !== null) {
             $values = [];
             foreach ($data->{'Override'} as $value) {
                 $values[] = $this->denormalizer->denormalize($value, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305DiversityControlTypeDimensionsCarrierOverride', 'json', $context);
             }
             $object->setOverride($values);
         }
-        if (property_exists($data, 'Weight')) {
+        if (property_exists($data, 'Weight') && $data->{'Weight'} !== null) {
             $object->setWeight($data->{'Weight'});
         }
 

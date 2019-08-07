@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,22 +29,22 @@ class OrgOpentravelOta200305ArunkTypeNormalizer implements DenormalizerInterface
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305ArunkType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305ArunkType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305ArunkType();
-        if (property_exists($data, 'DestinationLocation')) {
+        if (property_exists($data, 'DestinationLocation') && $data->{'DestinationLocation'} !== null) {
             $object->setDestinationLocation($this->denormalizer->denormalize($data->{'DestinationLocation'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305RequestLocationType', 'json', $context));
         }
-        if (property_exists($data, 'OriginLocation')) {
+        if (property_exists($data, 'OriginLocation') && $data->{'OriginLocation'} !== null) {
             $object->setOriginLocation($this->denormalizer->denormalize($data->{'OriginLocation'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305RequestLocationType', 'json', $context));
         }
-        if (property_exists($data, 'SideTrip')) {
+        if (property_exists($data, 'SideTrip') && $data->{'SideTrip'} !== null) {
             $object->setSideTrip($this->denormalizer->denormalize($data->{'SideTrip'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305SideTripType', 'json', $context));
         }
 

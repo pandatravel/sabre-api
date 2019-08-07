@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,22 +29,22 @@ class OrgOpentravelOta200305DiversityControlTypeDimensionsTimeOfDayDistributionR
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305DiversityControlTypeDimensionsTimeOfDayDistributionRange;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305DiversityControlTypeDimensionsTimeOfDayDistributionRange';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305DiversityControlTypeDimensionsTimeOfDayDistributionRange();
-        if (property_exists($data, 'Begin')) {
+        if (property_exists($data, 'Begin') && $data->{'Begin'} !== null) {
             $object->setBegin($data->{'Begin'});
         }
-        if (property_exists($data, 'End')) {
+        if (property_exists($data, 'End') && $data->{'End'} !== null) {
             $object->setEnd($data->{'End'});
         }
-        if (property_exists($data, 'Options')) {
+        if (property_exists($data, 'Options') && $data->{'Options'} !== null) {
             $object->setOptions($data->{'Options'});
         }
 

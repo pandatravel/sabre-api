@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,19 +29,19 @@ class OrgOpentravelOta200305TravelDateTimeTypeDepartureDatesLengthOfStayRangeNor
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305TravelDateTimeTypeDepartureDatesLengthOfStayRange;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305TravelDateTimeTypeDepartureDatesLengthOfStayRange';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305TravelDateTimeTypeDepartureDatesLengthOfStayRange();
-        if (property_exists($data, 'MaxDays')) {
+        if (property_exists($data, 'MaxDays') && $data->{'MaxDays'} !== null) {
             $object->setMaxDays($data->{'MaxDays'});
         }
-        if (property_exists($data, 'MinDays')) {
+        if (property_exists($data, 'MinDays') && $data->{'MinDays'} !== null) {
             $object->setMinDays($data->{'MinDays'});
         }
 

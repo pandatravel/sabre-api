@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,49 +29,49 @@ class HiddenStopTypeNormalizer implements DenormalizerInterface, NormalizerInter
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\HiddenStopType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\HiddenStopType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\HiddenStopType();
-        if (property_exists($data, 'airMiles')) {
+        if (property_exists($data, 'airMiles') && $data->{'airMiles'} !== null) {
             $object->setAirMiles($data->{'airMiles'});
         }
-        if (property_exists($data, 'airport')) {
+        if (property_exists($data, 'airport') && $data->{'airport'} !== null) {
             $object->setAirport($data->{'airport'});
         }
-        if (property_exists($data, 'arrivalDateAdjustment')) {
+        if (property_exists($data, 'arrivalDateAdjustment') && $data->{'arrivalDateAdjustment'} !== null) {
             $object->setArrivalDateAdjustment($data->{'arrivalDateAdjustment'});
         }
-        if (property_exists($data, 'arrivalTime')) {
+        if (property_exists($data, 'arrivalTime') && $data->{'arrivalTime'} !== null) {
             $object->setArrivalTime($data->{'arrivalTime'});
         }
-        if (property_exists($data, 'city')) {
+        if (property_exists($data, 'city') && $data->{'city'} !== null) {
             $object->setCity($data->{'city'});
         }
-        if (property_exists($data, 'country')) {
+        if (property_exists($data, 'country') && $data->{'country'} !== null) {
             $object->setCountry($data->{'country'});
         }
-        if (property_exists($data, 'departureDateAdjustment')) {
+        if (property_exists($data, 'departureDateAdjustment') && $data->{'departureDateAdjustment'} !== null) {
             $object->setDepartureDateAdjustment($data->{'departureDateAdjustment'});
         }
-        if (property_exists($data, 'departureTime')) {
+        if (property_exists($data, 'departureTime') && $data->{'departureTime'} !== null) {
             $object->setDepartureTime($data->{'departureTime'});
         }
-        if (property_exists($data, 'elapsedLayoverTime')) {
+        if (property_exists($data, 'elapsedLayoverTime') && $data->{'elapsedLayoverTime'} !== null) {
             $object->setElapsedLayoverTime($data->{'elapsedLayoverTime'});
         }
-        if (property_exists($data, 'elapsedTime')) {
+        if (property_exists($data, 'elapsedTime') && $data->{'elapsedTime'} !== null) {
             $object->setElapsedTime($data->{'elapsedTime'});
         }
-        if (property_exists($data, 'equipment')) {
+        if (property_exists($data, 'equipment') && $data->{'equipment'} !== null) {
             $object->setEquipment($data->{'equipment'});
         }
-        if (property_exists($data, 'state')) {
+        if (property_exists($data, 'state') && $data->{'state'} !== null) {
             $object->setState($data->{'state'});
         }
 

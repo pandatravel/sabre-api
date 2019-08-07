@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,19 +29,19 @@ class GroupDescriptionNormalizer implements DenormalizerInterface, NormalizerInt
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\GroupDescription;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\GroupDescription';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\GroupDescription();
-        if (property_exists($data, 'itineraryType')) {
+        if (property_exists($data, 'itineraryType') && $data->{'itineraryType'} !== null) {
             $object->setItineraryType($data->{'itineraryType'});
         }
-        if (property_exists($data, 'legDescriptions')) {
+        if (property_exists($data, 'legDescriptions') && $data->{'legDescriptions'} !== null) {
             $values = [];
             foreach ($data->{'legDescriptions'} as $value) {
                 $values[] = $this->denormalizer->denormalize($value, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\LegDescriptionType', 'json', $context);

@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,28 +29,28 @@ class CurrencyConversionTypeNormalizer implements DenormalizerInterface, Normali
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\CurrencyConversionType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\CurrencyConversionType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\CurrencyConversionType();
-        if (property_exists($data, 'exchangeRate')) {
+        if (property_exists($data, 'exchangeRate') && $data->{'exchangeRate'} !== null) {
             $object->setExchangeRate($data->{'exchangeRate'});
         }
-        if (property_exists($data, 'exchangeRateUsed')) {
+        if (property_exists($data, 'exchangeRateUsed') && $data->{'exchangeRateUsed'} !== null) {
             $object->setExchangeRateUsed($data->{'exchangeRateUsed'});
         }
-        if (property_exists($data, 'from')) {
+        if (property_exists($data, 'from') && $data->{'from'} !== null) {
             $object->setFrom($data->{'from'});
         }
-        if (property_exists($data, 'overriden')) {
+        if (property_exists($data, 'overriden') && $data->{'overriden'} !== null) {
             $object->setOverriden($data->{'overriden'});
         }
-        if (property_exists($data, 'to')) {
+        if (property_exists($data, 'to') && $data->{'to'} !== null) {
             $object->setTo($data->{'to'});
         }
 

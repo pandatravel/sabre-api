@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,28 +29,28 @@ class OrgOpentravelOta200305NumTripsTypeNormalizer implements DenormalizerInterf
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305NumTripsType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305NumTripsType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305NumTripsType();
-        if (property_exists($data, 'Number')) {
+        if (property_exists($data, 'Number') && $data->{'Number'} !== null) {
             $object->setNumber($data->{'Number'});
         }
-        if (property_exists($data, 'PerDateMax')) {
+        if (property_exists($data, 'PerDateMax') && $data->{'PerDateMax'} !== null) {
             $object->setPerDateMax($data->{'PerDateMax'});
         }
-        if (property_exists($data, 'PerDateMin')) {
+        if (property_exists($data, 'PerDateMin') && $data->{'PerDateMin'} !== null) {
             $object->setPerDateMin($data->{'PerDateMin'});
         }
-        if (property_exists($data, 'PerMarket')) {
+        if (property_exists($data, 'PerMarket') && $data->{'PerMarket'} !== null) {
             $object->setPerMarket($data->{'PerMarket'});
         }
-        if (property_exists($data, 'PerMonth')) {
+        if (property_exists($data, 'PerMonth') && $data->{'PerMonth'} !== null) {
             $object->setPerMonth($data->{'PerMonth'});
         }
 

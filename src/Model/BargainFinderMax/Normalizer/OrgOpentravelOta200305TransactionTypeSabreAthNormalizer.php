@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,22 +29,22 @@ class OrgOpentravelOta200305TransactionTypeSabreAthNormalizer implements Denorma
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305TransactionTypeSabreAth;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305TransactionTypeSabreAth';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305TransactionTypeSabreAth();
-        if (property_exists($data, 'BinarySecToken')) {
+        if (property_exists($data, 'BinarySecToken') && $data->{'BinarySecToken'} !== null) {
             $object->setBinarySecToken($data->{'BinarySecToken'});
         }
-        if (property_exists($data, 'ConversationID')) {
+        if (property_exists($data, 'ConversationID') && $data->{'ConversationID'} !== null) {
             $object->setConversationID($data->{'ConversationID'});
         }
-        if (property_exists($data, 'Value')) {
+        if (property_exists($data, 'Value') && $data->{'Value'} !== null) {
             $object->setValue($data->{'Value'});
         }
 

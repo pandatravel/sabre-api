@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,23 +29,23 @@ class OrgOpentravelOta200305ExchangeTravelPreferencesTPAExtensionsTypeTaxesNorma
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305ExchangeTravelPreferencesTPAExtensionsTypeTaxes;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305ExchangeTravelPreferencesTPAExtensionsTypeTaxes';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305ExchangeTravelPreferencesTPAExtensionsTypeTaxes();
-        if (property_exists($data, 'IsRefundable')) {
+        if (property_exists($data, 'IsRefundable') && $data->{'IsRefundable'} !== null) {
             $values = [];
             foreach ($data->{'IsRefundable'} as $value) {
                 $values[] = $this->denormalizer->denormalize($value, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305TaxCodeType', 'json', $context);
             }
             $object->setIsRefundable($values);
         }
-        if (property_exists($data, 'Tax')) {
+        if (property_exists($data, 'Tax') && $data->{'Tax'} !== null) {
             $values_1 = [];
             foreach ($data->{'Tax'} as $value_1) {
                 $values_1[] = $this->denormalizer->denormalize($value_1, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305TaxCodeAmountType', 'json', $context);

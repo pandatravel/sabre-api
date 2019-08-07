@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,22 +29,22 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsBudgetNormalizer impl
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsBudget;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsBudget';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsBudget();
-        if (property_exists($data, 'MaximumPrice')) {
+        if (property_exists($data, 'MaximumPrice') && $data->{'MaximumPrice'} !== null) {
             $object->setMaximumPrice($data->{'MaximumPrice'});
         }
-        if (property_exists($data, 'MinimumPrice')) {
+        if (property_exists($data, 'MinimumPrice') && $data->{'MinimumPrice'} !== null) {
             $object->setMinimumPrice($data->{'MinimumPrice'});
         }
-        if (property_exists($data, 'RelativePriceThreshold')) {
+        if (property_exists($data, 'RelativePriceThreshold') && $data->{'RelativePriceThreshold'} !== null) {
             $object->setRelativePriceThreshold($data->{'RelativePriceThreshold'});
         }
 

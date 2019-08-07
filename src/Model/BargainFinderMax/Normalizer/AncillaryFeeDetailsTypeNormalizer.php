@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,49 +29,49 @@ class AncillaryFeeDetailsTypeNormalizer implements DenormalizerInterface, Normal
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\AncillaryFeeDetailsType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\AncillaryFeeDetailsType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\AncillaryFeeDetailsType();
-        if (property_exists($data, 'amount')) {
+        if (property_exists($data, 'amount') && $data->{'amount'} !== null) {
             $object->setAmount($data->{'amount'});
         }
-        if (property_exists($data, 'ancillaryTypeCode')) {
+        if (property_exists($data, 'ancillaryTypeCode') && $data->{'ancillaryTypeCode'} !== null) {
             $object->setAncillaryTypeCode($data->{'ancillaryTypeCode'});
         }
-        if (property_exists($data, 'baggageId')) {
+        if (property_exists($data, 'baggageId') && $data->{'baggageId'} !== null) {
             $object->setBaggageId($data->{'baggageId'});
         }
-        if (property_exists($data, 'carrier')) {
+        if (property_exists($data, 'carrier') && $data->{'carrier'} !== null) {
             $object->setCarrier($data->{'carrier'});
         }
-        if (property_exists($data, 'code')) {
+        if (property_exists($data, 'code') && $data->{'code'} !== null) {
             $object->setCode($data->{'code'});
         }
-        if (property_exists($data, 'departureDate')) {
+        if (property_exists($data, 'departureDate') && $data->{'departureDate'} !== null) {
             $object->setDepartureDate($data->{'departureDate'});
         }
-        if (property_exists($data, 'description')) {
+        if (property_exists($data, 'description') && $data->{'description'} !== null) {
             $object->setDescription($data->{'description'});
         }
-        if (property_exists($data, 'destination')) {
+        if (property_exists($data, 'destination') && $data->{'destination'} !== null) {
             $object->setDestination($data->{'destination'});
         }
-        if (property_exists($data, 'endSegment')) {
+        if (property_exists($data, 'endSegment') && $data->{'endSegment'} !== null) {
             $object->setEndSegment($data->{'endSegment'});
         }
-        if (property_exists($data, 'origin')) {
+        if (property_exists($data, 'origin') && $data->{'origin'} !== null) {
             $object->setOrigin($data->{'origin'});
         }
-        if (property_exists($data, 'startSegment')) {
+        if (property_exists($data, 'startSegment') && $data->{'startSegment'} !== null) {
             $object->setStartSegment($data->{'startSegment'});
         }
-        if (property_exists($data, 'subcode')) {
+        if (property_exists($data, 'subcode') && $data->{'subcode'} !== null) {
             $object->setSubcode($data->{'subcode'});
         }
 

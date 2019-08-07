@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,19 +29,19 @@ class OrgOpentravelOta200305RetailerRulesTypeNormalizer implements DenormalizerI
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305RetailerRulesType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305RetailerRulesType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305RetailerRulesType();
-        if (property_exists($data, 'Force')) {
+        if (property_exists($data, 'Force') && $data->{'Force'} !== null) {
             $object->setForce($data->{'Force'});
         }
-        if (property_exists($data, 'RetailerRule')) {
+        if (property_exists($data, 'RetailerRule') && $data->{'RetailerRule'} !== null) {
             $values = [];
             foreach ($data->{'RetailerRule'} as $value) {
                 $values[] = $this->denormalizer->denormalize($value, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305RetailerRulesTypeRetailerRule', 'json', $context);

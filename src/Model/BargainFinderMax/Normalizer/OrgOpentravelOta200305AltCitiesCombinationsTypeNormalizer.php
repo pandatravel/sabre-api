@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,19 +29,19 @@ class OrgOpentravelOta200305AltCitiesCombinationsTypeNormalizer implements Denor
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305AltCitiesCombinationsType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305AltCitiesCombinationsType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305AltCitiesCombinationsType();
-        if (property_exists($data, 'Destinations')) {
+        if (property_exists($data, 'Destinations') && $data->{'Destinations'} !== null) {
             $object->setDestinations($data->{'Destinations'});
         }
-        if (property_exists($data, 'Origins')) {
+        if (property_exists($data, 'Origins') && $data->{'Origins'} !== null) {
             $object->setOrigins($data->{'Origins'});
         }
 

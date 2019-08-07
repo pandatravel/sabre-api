@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,43 +29,43 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsBrandedFareI
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsBrandedFareIndicators;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsBrandedFareIndicators';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsBrandedFareIndicators();
-        if (property_exists($data, 'BrandFilters')) {
+        if (property_exists($data, 'BrandFilters') && $data->{'BrandFilters'} !== null) {
             $object->setBrandFilters($this->denormalizer->denormalize($data->{'BrandFilters'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305BrandFiltersType', 'json', $context));
         }
-        if (property_exists($data, 'ItinParityBrandlessLeg')) {
+        if (property_exists($data, 'ItinParityBrandlessLeg') && $data->{'ItinParityBrandlessLeg'} !== null) {
             $object->setItinParityBrandlessLeg($data->{'ItinParityBrandlessLeg'});
         }
-        if (property_exists($data, 'ItinParityFallbackMode')) {
+        if (property_exists($data, 'ItinParityFallbackMode') && $data->{'ItinParityFallbackMode'} !== null) {
             $object->setItinParityFallbackMode($data->{'ItinParityFallbackMode'});
         }
-        if (property_exists($data, 'KeepLegParityForLowestSingle')) {
-            $object->setKeepLegParityForLowestSingle($data->{'KeepLegParityForLowestSingle'});
+        if (property_exists($data, 'ParityModeForLowest') && $data->{'ParityModeForLowest'} !== null) {
+            $object->setParityModeForLowest($data->{'ParityModeForLowest'});
         }
-        if (property_exists($data, 'MultipleBrandedFares')) {
+        if (property_exists($data, 'MultipleBrandedFares') && $data->{'MultipleBrandedFares'} !== null) {
             $object->setMultipleBrandedFares($data->{'MultipleBrandedFares'});
         }
-        if (property_exists($data, 'ParityMode')) {
+        if (property_exists($data, 'ParityMode') && $data->{'ParityMode'} !== null) {
             $object->setParityMode($data->{'ParityMode'});
         }
-        if (property_exists($data, 'ReturnBrandAncillaries')) {
+        if (property_exists($data, 'ReturnBrandAncillaries') && $data->{'ReturnBrandAncillaries'} !== null) {
             $object->setReturnBrandAncillaries($data->{'ReturnBrandAncillaries'});
         }
-        if (property_exists($data, 'ReturnCheapestUnbrandedFare')) {
+        if (property_exists($data, 'ReturnCheapestUnbrandedFare') && $data->{'ReturnCheapestUnbrandedFare'} !== null) {
             $object->setReturnCheapestUnbrandedFare($this->denormalizer->denormalize($data->{'ReturnCheapestUnbrandedFare'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsBrandedFareIndicatorsReturnCheapestUnbrandedFare', 'json', $context));
         }
-        if (property_exists($data, 'SingleBrandedFare')) {
+        if (property_exists($data, 'SingleBrandedFare') && $data->{'SingleBrandedFare'} !== null) {
             $object->setSingleBrandedFare($data->{'SingleBrandedFare'});
         }
-        if (property_exists($data, 'UpsellLimit')) {
+        if (property_exists($data, 'UpsellLimit') && $data->{'UpsellLimit'} !== null) {
             $object->setUpsellLimit($data->{'UpsellLimit'});
         }
 
@@ -85,8 +84,8 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsBrandedFareI
         if (null !== $object->getItinParityFallbackMode()) {
             $data->{'ItinParityFallbackMode'} = $object->getItinParityFallbackMode();
         }
-        if (null !== $object->getKeepLegParityForLowestSingle()) {
-            $data->{'KeepLegParityForLowestSingle'} = $object->getKeepLegParityForLowestSingle();
+        if (null !== $object->getParityModeForLowest()) {
+            $data->{'ParityModeForLowest'} = $object->getParityModeForLowest();
         }
         if (null !== $object->getMultipleBrandedFares()) {
             $data->{'MultipleBrandedFares'} = $object->getMultipleBrandedFares();

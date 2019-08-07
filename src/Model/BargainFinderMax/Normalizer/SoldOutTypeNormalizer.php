@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,23 +29,23 @@ class SoldOutTypeNormalizer implements DenormalizerInterface, NormalizerInterfac
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\SoldOutType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\SoldOutType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\SoldOutType();
-        if (property_exists($data, 'soldOutLegs')) {
+        if (property_exists($data, 'soldOutLegs') && $data->{'soldOutLegs'} !== null) {
             $values = [];
             foreach ($data->{'soldOutLegs'} as $value) {
                 $values[] = $this->denormalizer->denormalize($value, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\SoldOutLegType', 'json', $context);
             }
             $object->setSoldOutLegs($values);
         }
-        if (property_exists($data, 'status')) {
+        if (property_exists($data, 'status') && $data->{'status'} !== null) {
             $object->setStatus($data->{'status'});
         }
 

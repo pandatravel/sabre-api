@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,28 +29,28 @@ class BaggageInformationTypeNormalizer implements DenormalizerInterface, Normali
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\BaggageInformationType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\BaggageInformationType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\BaggageInformationType();
-        if (property_exists($data, 'airlineCode')) {
+        if (property_exists($data, 'airlineCode') && $data->{'airlineCode'} !== null) {
             $object->setAirlineCode($data->{'airlineCode'});
         }
-        if (property_exists($data, 'allowance')) {
+        if (property_exists($data, 'allowance') && $data->{'allowance'} !== null) {
             $object->setAllowance($this->denormalizer->denormalize($data->{'allowance'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\Allowance', 'json', $context));
         }
-        if (property_exists($data, 'charge')) {
+        if (property_exists($data, 'charge') && $data->{'charge'} !== null) {
             $object->setCharge($this->denormalizer->denormalize($data->{'charge'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\Charge', 'json', $context));
         }
-        if (property_exists($data, 'provisionType')) {
+        if (property_exists($data, 'provisionType') && $data->{'provisionType'} !== null) {
             $object->setProvisionType($data->{'provisionType'});
         }
-        if (property_exists($data, 'segments')) {
+        if (property_exists($data, 'segments') && $data->{'segments'} !== null) {
             $values = [];
             foreach ($data->{'segments'} as $value) {
                 $values[] = $this->denormalizer->denormalize($value, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\Segment', 'json', $context);

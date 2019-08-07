@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,34 +29,34 @@ class OrgOpentravelOta200305CompanyNamePrefTypeNormalizer implements Denormalize
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305CompanyNamePrefType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305CompanyNamePrefType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305CompanyNamePrefType();
-        if (property_exists($data, 'Code')) {
+        if (property_exists($data, 'Code') && $data->{'Code'} !== null) {
             $object->setCode($data->{'Code'});
         }
-        if (property_exists($data, 'CodeContext')) {
+        if (property_exists($data, 'CodeContext') && $data->{'CodeContext'} !== null) {
             $object->setCodeContext($data->{'CodeContext'});
         }
-        if (property_exists($data, 'CompanyShortName')) {
+        if (property_exists($data, 'CompanyShortName') && $data->{'CompanyShortName'} !== null) {
             $object->setCompanyShortName($data->{'CompanyShortName'});
         }
-        if (property_exists($data, 'PreferLevel')) {
+        if (property_exists($data, 'PreferLevel') && $data->{'PreferLevel'} !== null) {
             $object->setPreferLevel($data->{'PreferLevel'});
         }
-        if (property_exists($data, 'TravelSector')) {
+        if (property_exists($data, 'TravelSector') && $data->{'TravelSector'} !== null) {
             $object->setTravelSector($data->{'TravelSector'});
         }
-        if (property_exists($data, 'Type')) {
+        if (property_exists($data, 'Type') && $data->{'Type'} !== null) {
             $object->setType($data->{'Type'});
         }
-        if (property_exists($data, 'content')) {
+        if (property_exists($data, 'content') && $data->{'content'} !== null) {
             $object->setContent($data->{'content'});
         }
 

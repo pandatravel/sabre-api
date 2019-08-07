@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,40 +29,40 @@ class OrgOpentravelOta200305FareOptionalDetailsTypeNormalizer implements Denorma
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305FareOptionalDetailsType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305FareOptionalDetailsType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305FareOptionalDetailsType();
-        if (property_exists($data, 'Amount')) {
+        if (property_exists($data, 'Amount') && $data->{'Amount'} !== null) {
             $object->setAmount($data->{'Amount'});
         }
-        if (property_exists($data, 'BasisCode')) {
+        if (property_exists($data, 'BasisCode') && $data->{'BasisCode'} !== null) {
             $object->setBasisCode($data->{'BasisCode'});
         }
-        if (property_exists($data, 'BrandID')) {
+        if (property_exists($data, 'BrandID') && $data->{'BrandID'} !== null) {
             $object->setBrandID($data->{'BrandID'});
         }
-        if (property_exists($data, 'ComponentNo')) {
+        if (property_exists($data, 'ComponentNo') && $data->{'ComponentNo'} !== null) {
             $object->setComponentNo($data->{'ComponentNo'});
         }
-        if (property_exists($data, 'ProgramID')) {
+        if (property_exists($data, 'ProgramID') && $data->{'ProgramID'} !== null) {
             $object->setProgramID($data->{'ProgramID'});
         }
-        if (property_exists($data, 'RuleNumber')) {
+        if (property_exists($data, 'RuleNumber') && $data->{'RuleNumber'} !== null) {
             $object->setRuleNumber($data->{'RuleNumber'});
         }
-        if (property_exists($data, 'SourceVendor')) {
+        if (property_exists($data, 'SourceVendor') && $data->{'SourceVendor'} !== null) {
             $object->setSourceVendor($data->{'SourceVendor'});
         }
-        if (property_exists($data, 'Tariff')) {
+        if (property_exists($data, 'Tariff') && $data->{'Tariff'} !== null) {
             $object->setTariff($data->{'Tariff'});
         }
-        if (property_exists($data, 'Vendor')) {
+        if (property_exists($data, 'Vendor') && $data->{'Vendor'} !== null) {
             $object->setVendor($data->{'Vendor'});
         }
 

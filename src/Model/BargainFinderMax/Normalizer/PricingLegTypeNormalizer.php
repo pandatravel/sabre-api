@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,36 +29,36 @@ class PricingLegTypeNormalizer implements DenormalizerInterface, NormalizerInter
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\PricingLegType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\PricingLegType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\PricingLegType();
-        if (property_exists($data, 'ref')) {
+        if (property_exists($data, 'ref') && $data->{'ref'} !== null) {
             $object->setRef($data->{'ref'});
         }
-        if (property_exists($data, 'status')) {
+        if (property_exists($data, 'status') && $data->{'status'} !== null) {
             $object->setStatus($data->{'status'});
         }
-        if (property_exists($data, 'taxSummaries')) {
+        if (property_exists($data, 'taxSummaries') && $data->{'taxSummaries'} !== null) {
             $values = [];
             foreach ($data->{'taxSummaries'} as $value) {
                 $values[] = $this->denormalizer->denormalize($value, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\TaxSummaryIDType', 'json', $context);
             }
             $object->setTaxSummaries($values);
         }
-        if (property_exists($data, 'taxes')) {
+        if (property_exists($data, 'taxes') && $data->{'taxes'} !== null) {
             $values_1 = [];
             foreach ($data->{'taxes'} as $value_1) {
                 $values_1[] = $this->denormalizer->denormalize($value_1, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\TaxIDType', 'json', $context);
             }
             $object->setTaxes($values_1);
         }
-        if (property_exists($data, 'totalFare')) {
+        if (property_exists($data, 'totalFare') && $data->{'totalFare'} !== null) {
             $object->setTotalFare($this->denormalizer->denormalize($data->{'totalFare'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\TotalFareType', 'json', $context));
         }
 

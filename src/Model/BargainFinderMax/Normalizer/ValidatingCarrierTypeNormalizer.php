@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,42 +29,42 @@ class ValidatingCarrierTypeNormalizer implements DenormalizerInterface, Normaliz
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\ValidatingCarrierType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\ValidatingCarrierType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\ValidatingCarrierType();
-        if (property_exists($data, 'alternates')) {
+        if (property_exists($data, 'alternates') && $data->{'alternates'} !== null) {
             $values = [];
             foreach ($data->{'alternates'} as $value) {
                 $values[] = $this->denormalizer->denormalize($value, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\ValidatingCarrier', 'json', $context);
             }
             $object->setAlternates($values);
         }
-        if (property_exists($data, 'country')) {
+        if (property_exists($data, 'country') && $data->{'country'} !== null) {
             $object->setCountry($data->{'country'});
         }
-        if (property_exists($data, 'default')) {
+        if (property_exists($data, 'default') && $data->{'default'} !== null) {
             $object->setDefault($this->denormalizer->denormalize($data->{'default'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\ValidatingCarrier', 'json', $context));
         }
-        if (property_exists($data, 'id')) {
+        if (property_exists($data, 'id') && $data->{'id'} !== null) {
             $object->setId($data->{'id'});
         }
-        if (property_exists($data, 'newVcxProcess')) {
+        if (property_exists($data, 'newVcxProcess') && $data->{'newVcxProcess'} !== null) {
             $object->setNewVcxProcess($data->{'newVcxProcess'});
         }
-        if (property_exists($data, 'otherTicketings')) {
+        if (property_exists($data, 'otherTicketings') && $data->{'otherTicketings'} !== null) {
             $values_1 = [];
             foreach ($data->{'otherTicketings'} as $value_1) {
                 $values_1[] = $this->denormalizer->denormalize($value_1, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\ValidatingCarrier', 'json', $context);
             }
             $object->setOtherTicketings($values_1);
         }
-        if (property_exists($data, 'settlementMethod')) {
+        if (property_exists($data, 'settlementMethod') && $data->{'settlementMethod'} !== null) {
             $object->setSettlementMethod($data->{'settlementMethod'});
         }
 

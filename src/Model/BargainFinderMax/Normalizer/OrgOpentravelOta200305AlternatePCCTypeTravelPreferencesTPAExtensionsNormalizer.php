@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,23 +29,23 @@ class OrgOpentravelOta200305AlternatePCCTypeTravelPreferencesTPAExtensionsNormal
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305AlternatePCCTypeTravelPreferencesTPAExtensions;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305AlternatePCCTypeTravelPreferencesTPAExtensions';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305AlternatePCCTypeTravelPreferencesTPAExtensions();
-        if (property_exists($data, 'ExcludeAlliancePref')) {
+        if (property_exists($data, 'ExcludeAlliancePref') && $data->{'ExcludeAlliancePref'} !== null) {
             $values = [];
             foreach ($data->{'ExcludeAlliancePref'} as $value) {
                 $values[] = $this->denormalizer->denormalize($value, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305AllianceType', 'json', $context);
             }
             $object->setExcludeAlliancePref($values);
         }
-        if (property_exists($data, 'IncludeAlliancePref')) {
+        if (property_exists($data, 'IncludeAlliancePref') && $data->{'IncludeAlliancePref'} !== null) {
             $values_1 = [];
             foreach ($data->{'IncludeAlliancePref'} as $value_1) {
                 $values_1[] = $this->denormalizer->denormalize($value_1, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305AllianceType', 'json', $context);

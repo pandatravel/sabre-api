@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,49 +29,49 @@ class HigherIntermediatePointTypeNormalizer implements DenormalizerInterface, No
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\HigherIntermediatePointType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\HigherIntermediatePointType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\HigherIntermediatePointType();
-        if (property_exists($data, 'amount')) {
+        if (property_exists($data, 'amount') && $data->{'amount'} !== null) {
             $object->setAmount($data->{'amount'});
         }
-        if (property_exists($data, 'cabinHigh')) {
+        if (property_exists($data, 'cabinHigh') && $data->{'cabinHigh'} !== null) {
             $object->setCabinHigh($data->{'cabinHigh'});
         }
-        if (property_exists($data, 'cabinLow')) {
+        if (property_exists($data, 'cabinLow') && $data->{'cabinLow'} !== null) {
             $object->setCabinLow($data->{'cabinLow'});
         }
-        if (property_exists($data, 'destination')) {
+        if (property_exists($data, 'destination') && $data->{'destination'} !== null) {
             $object->setDestination($data->{'destination'});
         }
-        if (property_exists($data, 'fareClassHigh')) {
+        if (property_exists($data, 'fareClassHigh') && $data->{'fareClassHigh'} !== null) {
             $object->setFareClassHigh($data->{'fareClassHigh'});
         }
-        if (property_exists($data, 'fareClassLow')) {
+        if (property_exists($data, 'fareClassLow') && $data->{'fareClassLow'} !== null) {
             $object->setFareClassLow($data->{'fareClassLow'});
         }
-        if (property_exists($data, 'highDestination')) {
+        if (property_exists($data, 'highDestination') && $data->{'highDestination'} !== null) {
             $object->setHighDestination($data->{'highDestination'});
         }
-        if (property_exists($data, 'highOrigin')) {
+        if (property_exists($data, 'highOrigin') && $data->{'highOrigin'} !== null) {
             $object->setHighOrigin($data->{'highOrigin'});
         }
-        if (property_exists($data, 'lowDestination')) {
+        if (property_exists($data, 'lowDestination') && $data->{'lowDestination'} !== null) {
             $object->setLowDestination($data->{'lowDestination'});
         }
-        if (property_exists($data, 'lowOrigin')) {
+        if (property_exists($data, 'lowOrigin') && $data->{'lowOrigin'} !== null) {
             $object->setLowOrigin($data->{'lowOrigin'});
         }
-        if (property_exists($data, 'mileageSurchargePercentage')) {
+        if (property_exists($data, 'mileageSurchargePercentage') && $data->{'mileageSurchargePercentage'} !== null) {
             $object->setMileageSurchargePercentage($data->{'mileageSurchargePercentage'});
         }
-        if (property_exists($data, 'origin')) {
+        if (property_exists($data, 'origin') && $data->{'origin'} !== null) {
             $object->setOrigin($data->{'origin'});
         }
 

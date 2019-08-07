@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,19 +29,19 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsDiversityParametersWe
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsDiversityParametersWeightings;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsDiversityParametersWeightings';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsDiversityParametersWeightings();
-        if (property_exists($data, 'PriceWeight')) {
+        if (property_exists($data, 'PriceWeight') && $data->{'PriceWeight'} !== null) {
             $object->setPriceWeight($data->{'PriceWeight'});
         }
-        if (property_exists($data, 'TravelTimeWeight')) {
+        if (property_exists($data, 'TravelTimeWeight') && $data->{'TravelTimeWeight'} !== null) {
             $object->setTravelTimeWeight($data->{'TravelTimeWeight'});
         }
 

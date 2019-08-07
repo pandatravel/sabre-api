@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,46 +29,46 @@ class OrgOpentravelOta200305CustLoyaltyTypeNormalizer implements DenormalizerInt
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305CustLoyaltyType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305CustLoyaltyType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305CustLoyaltyType();
-        if (property_exists($data, 'EffectiveDate')) {
+        if (property_exists($data, 'EffectiveDate') && $data->{'EffectiveDate'} !== null) {
             $object->setEffectiveDate($data->{'EffectiveDate'});
         }
-        if (property_exists($data, 'ExpireDate')) {
+        if (property_exists($data, 'ExpireDate') && $data->{'ExpireDate'} !== null) {
             $object->setExpireDate($data->{'ExpireDate'});
         }
-        if (property_exists($data, 'LoyalLevel')) {
+        if (property_exists($data, 'LoyalLevel') && $data->{'LoyalLevel'} !== null) {
             $object->setLoyalLevel($data->{'LoyalLevel'});
         }
-        if (property_exists($data, 'MembershipID')) {
+        if (property_exists($data, 'MembershipID') && $data->{'MembershipID'} !== null) {
             $object->setMembershipID($data->{'MembershipID'});
         }
-        if (property_exists($data, 'ProgramID')) {
+        if (property_exists($data, 'ProgramID') && $data->{'ProgramID'} !== null) {
             $object->setProgramID($data->{'ProgramID'});
         }
-        if (property_exists($data, 'RPH')) {
+        if (property_exists($data, 'RPH') && $data->{'RPH'} !== null) {
             $object->setRPH($data->{'RPH'});
         }
-        if (property_exists($data, 'ShareMarketInd')) {
+        if (property_exists($data, 'ShareMarketInd') && $data->{'ShareMarketInd'} !== null) {
             $object->setShareMarketInd($data->{'ShareMarketInd'});
         }
-        if (property_exists($data, 'ShareSynchInd')) {
+        if (property_exists($data, 'ShareSynchInd') && $data->{'ShareSynchInd'} !== null) {
             $object->setShareSynchInd($data->{'ShareSynchInd'});
         }
-        if (property_exists($data, 'SignupDate')) {
+        if (property_exists($data, 'SignupDate') && $data->{'SignupDate'} !== null) {
             $object->setSignupDate($data->{'SignupDate'});
         }
-        if (property_exists($data, 'SingleVendorInd')) {
+        if (property_exists($data, 'SingleVendorInd') && $data->{'SingleVendorInd'} !== null) {
             $object->setSingleVendorInd($data->{'SingleVendorInd'});
         }
-        if (property_exists($data, 'TravelSector')) {
+        if (property_exists($data, 'TravelSector') && $data->{'TravelSector'} !== null) {
             $object->setTravelSector($data->{'TravelSector'});
         }
 

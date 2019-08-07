@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,22 +29,22 @@ class OrgOpentravelOta200305AdvResTicketingTypeAdvReservationNormalizer implemen
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305AdvResTicketingTypeAdvReservation;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305AdvResTicketingTypeAdvReservation';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305AdvResTicketingTypeAdvReservation();
-        if (property_exists($data, 'LatestPeriod')) {
+        if (property_exists($data, 'LatestPeriod') && $data->{'LatestPeriod'} !== null) {
             $object->setLatestPeriod($data->{'LatestPeriod'});
         }
-        if (property_exists($data, 'LatestTimeOfDay')) {
+        if (property_exists($data, 'LatestTimeOfDay') && $data->{'LatestTimeOfDay'} !== null) {
             $object->setLatestTimeOfDay($data->{'LatestTimeOfDay'});
         }
-        if (property_exists($data, 'LatestUnit')) {
+        if (property_exists($data, 'LatestUnit') && $data->{'LatestUnit'} !== null) {
             $object->setLatestUnit($data->{'LatestUnit'});
         }
 

@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,19 +29,19 @@ class OrgOpentravelOta200305TravelerInfoSummaryTPAExtensionsTypeTravelerRatingFr
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305TravelerInfoSummaryTPAExtensionsTypeTravelerRatingFrequentFlyer;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305TravelerInfoSummaryTPAExtensionsTypeTravelerRatingFrequentFlyer';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305TravelerInfoSummaryTPAExtensionsTypeTravelerRatingFrequentFlyer();
-        if (property_exists($data, 'Carrier')) {
+        if (property_exists($data, 'Carrier') && $data->{'Carrier'} !== null) {
             $object->setCarrier($data->{'Carrier'});
         }
-        if (property_exists($data, 'Tier')) {
+        if (property_exists($data, 'Tier') && $data->{'Tier'} !== null) {
             $object->setTier($data->{'Tier'});
         }
 

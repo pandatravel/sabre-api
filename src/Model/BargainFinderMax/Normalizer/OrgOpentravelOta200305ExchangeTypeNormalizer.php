@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,57 +29,57 @@ class OrgOpentravelOta200305ExchangeTypeNormalizer implements DenormalizerInterf
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305ExchangeType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305ExchangeType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305ExchangeType();
-        if (property_exists($data, 'Arunk')) {
+        if (property_exists($data, 'Arunk') && $data->{'Arunk'} !== null) {
             $values = [];
             foreach ($data->{'Arunk'} as $value) {
                 $values[] = $this->denormalizer->denormalize($value, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305ArunkType', 'json', $context);
             }
             $object->setArunk($values);
         }
-        if (property_exists($data, 'BypassAdvancePurchaseOption')) {
+        if (property_exists($data, 'BypassAdvancePurchaseOption') && $data->{'BypassAdvancePurchaseOption'} !== null) {
             $object->setBypassAdvancePurchaseOption($data->{'BypassAdvancePurchaseOption'});
         }
-        if (property_exists($data, 'ExchangedTktIssueDateTime')) {
+        if (property_exists($data, 'ExchangedTktIssueDateTime') && $data->{'ExchangedTktIssueDateTime'} !== null) {
             $object->setExchangedTktIssueDateTime($data->{'ExchangedTktIssueDateTime'});
         }
-        if (property_exists($data, 'Fare')) {
+        if (property_exists($data, 'Fare') && $data->{'Fare'} !== null) {
             $object->setFare($this->denormalizer->denormalize($data->{'Fare'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305ExchangeFareType', 'json', $context));
         }
-        if (property_exists($data, 'NumberOfTaxBoxes')) {
+        if (property_exists($data, 'NumberOfTaxBoxes') && $data->{'NumberOfTaxBoxes'} !== null) {
             $object->setNumberOfTaxBoxes($data->{'NumberOfTaxBoxes'});
         }
-        if (property_exists($data, 'OriginDestinationInformation')) {
+        if (property_exists($data, 'OriginDestinationInformation') && $data->{'OriginDestinationInformation'} !== null) {
             $values_1 = [];
             foreach ($data->{'OriginDestinationInformation'} as $value_1) {
                 $values_1[] = $this->denormalizer->denormalize($value_1, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305ExchangeOriginDestinationInformationType', 'json', $context);
             }
             $object->setOriginDestinationInformation($values_1);
         }
-        if (property_exists($data, 'OriginalTktIssueDateTime')) {
+        if (property_exists($data, 'OriginalTktIssueDateTime') && $data->{'OriginalTktIssueDateTime'} !== null) {
             $object->setOriginalTktIssueDateTime($data->{'OriginalTktIssueDateTime'});
         }
-        if (property_exists($data, 'POS')) {
+        if (property_exists($data, 'POS') && $data->{'POS'} !== null) {
             $object->setPOS($this->denormalizer->denormalize($data->{'POS'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305ExchangePOSType', 'json', $context));
         }
-        if (property_exists($data, 'PreviousExchangeDateTime')) {
+        if (property_exists($data, 'PreviousExchangeDateTime') && $data->{'PreviousExchangeDateTime'} !== null) {
             $object->setPreviousExchangeDateTime($data->{'PreviousExchangeDateTime'});
         }
-        if (property_exists($data, 'TPA_Extensions')) {
+        if (property_exists($data, 'TPA_Extensions') && $data->{'TPA_Extensions'} !== null) {
             $object->setTPAExtensions($this->denormalizer->denormalize($data->{'TPA_Extensions'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305ExchangeTPAExtensionsType', 'json', $context));
         }
-        if (property_exists($data, 'TravelPreferences')) {
+        if (property_exists($data, 'TravelPreferences') && $data->{'TravelPreferences'} !== null) {
             $object->setTravelPreferences($this->denormalizer->denormalize($data->{'TravelPreferences'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305ExchangeAirSearchPrefsType', 'json', $context));
         }
-        if (property_exists($data, 'TravelerInfoSummary')) {
+        if (property_exists($data, 'TravelerInfoSummary') && $data->{'TravelerInfoSummary'} !== null) {
             $object->setTravelerInfoSummary($this->denormalizer->denormalize($data->{'TravelerInfoSummary'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305TravelerInfoSummaryType', 'json', $context));
         }
 

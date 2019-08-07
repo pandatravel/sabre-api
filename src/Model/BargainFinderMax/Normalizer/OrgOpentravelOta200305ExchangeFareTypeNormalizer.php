@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,31 +29,31 @@ class OrgOpentravelOta200305ExchangeFareTypeNormalizer implements DenormalizerIn
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305ExchangeFareType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305ExchangeFareType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305ExchangeFareType();
-        if (property_exists($data, 'BaseFareAmount')) {
+        if (property_exists($data, 'BaseFareAmount') && $data->{'BaseFareAmount'} !== null) {
             $object->setBaseFareAmount($data->{'BaseFareAmount'});
         }
-        if (property_exists($data, 'BaseFareCurrency')) {
+        if (property_exists($data, 'BaseFareCurrency') && $data->{'BaseFareCurrency'} !== null) {
             $object->setBaseFareCurrency($data->{'BaseFareCurrency'});
         }
-        if (property_exists($data, 'FareCalcCurrency')) {
+        if (property_exists($data, 'FareCalcCurrency') && $data->{'FareCalcCurrency'} !== null) {
             $object->setFareCalcCurrency($data->{'FareCalcCurrency'});
         }
-        if (property_exists($data, 'NonRefundableAmount')) {
+        if (property_exists($data, 'NonRefundableAmount') && $data->{'NonRefundableAmount'} !== null) {
             $object->setNonRefundableAmount($data->{'NonRefundableAmount'});
         }
-        if (property_exists($data, 'ROE')) {
+        if (property_exists($data, 'ROE') && $data->{'ROE'} !== null) {
             $object->setROE($data->{'ROE'});
         }
-        if (property_exists($data, 'ValidatingCarrier')) {
+        if (property_exists($data, 'ValidatingCarrier') && $data->{'ValidatingCarrier'} !== null) {
             $object->setValidatingCarrier($data->{'ValidatingCarrier'});
         }
 

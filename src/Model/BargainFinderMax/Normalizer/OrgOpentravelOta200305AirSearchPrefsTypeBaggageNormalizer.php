@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,25 +29,25 @@ class OrgOpentravelOta200305AirSearchPrefsTypeBaggageNormalizer implements Denor
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305AirSearchPrefsTypeBaggage;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305AirSearchPrefsTypeBaggage';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305AirSearchPrefsTypeBaggage();
-        if (property_exists($data, 'Description')) {
+        if (property_exists($data, 'Description') && $data->{'Description'} !== null) {
             $object->setDescription($data->{'Description'});
         }
-        if (property_exists($data, 'FreePieceRequired')) {
+        if (property_exists($data, 'FreePieceRequired') && $data->{'FreePieceRequired'} !== null) {
             $object->setFreePieceRequired($data->{'FreePieceRequired'});
         }
-        if (property_exists($data, 'RequestType')) {
+        if (property_exists($data, 'RequestType') && $data->{'RequestType'} !== null) {
             $object->setRequestType($data->{'RequestType'});
         }
-        if (property_exists($data, 'RequestedPieces')) {
+        if (property_exists($data, 'RequestedPieces') && $data->{'RequestedPieces'} !== null) {
             $object->setRequestedPieces($data->{'RequestedPieces'});
         }
 

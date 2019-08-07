@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,28 +29,28 @@ class ChangeFeeTypeNormalizer implements DenormalizerInterface, NormalizerInterf
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\ChangeFeeType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\ChangeFeeType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\ChangeFeeType();
-        if (property_exists($data, 'amount')) {
+        if (property_exists($data, 'amount') && $data->{'amount'} !== null) {
             $object->setAmount($data->{'amount'});
         }
-        if (property_exists($data, 'currency')) {
+        if (property_exists($data, 'currency') && $data->{'currency'} !== null) {
             $object->setCurrency($data->{'currency'});
         }
-        if (property_exists($data, 'highest')) {
+        if (property_exists($data, 'highest') && $data->{'highest'} !== null) {
             $object->setHighest($data->{'highest'});
         }
-        if (property_exists($data, 'notApplicable')) {
+        if (property_exists($data, 'notApplicable') && $data->{'notApplicable'} !== null) {
             $object->setNotApplicable($data->{'notApplicable'});
         }
-        if (property_exists($data, 'waived')) {
+        if (property_exists($data, 'waived') && $data->{'waived'} !== null) {
             $object->setWaived($data->{'waived'});
         }
 

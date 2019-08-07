@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,25 +29,25 @@ class CacheSourceDescTypeNormalizer implements DenormalizerInterface, Normalizer
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\CacheSourceDescType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\CacheSourceDescType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\CacheSourceDescType();
-        if (property_exists($data, 'id')) {
+        if (property_exists($data, 'id') && $data->{'id'} !== null) {
             $object->setId($data->{'id'});
         }
-        if (property_exists($data, 'partition')) {
+        if (property_exists($data, 'partition') && $data->{'partition'} !== null) {
             $object->setPartition($data->{'partition'});
         }
-        if (property_exists($data, 'priority')) {
+        if (property_exists($data, 'priority') && $data->{'priority'} !== null) {
             $object->setPriority($data->{'priority'});
         }
-        if (property_exists($data, 'version')) {
+        if (property_exists($data, 'version') && $data->{'version'} !== null) {
             $object->setVersion($data->{'version'});
         }
 

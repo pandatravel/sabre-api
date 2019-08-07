@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,23 +29,23 @@ class OrgOpentravelOta200305BrandFiltersTypeNormalizer implements DenormalizerIn
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305BrandFiltersType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305BrandFiltersType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305BrandFiltersType();
-        if (property_exists($data, 'Brand')) {
+        if (property_exists($data, 'Brand') && $data->{'Brand'} !== null) {
             $values = [];
             foreach ($data->{'Brand'} as $value) {
                 $values[] = $this->denormalizer->denormalize($value, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305BrandCodePrefType', 'json', $context);
             }
             $object->setBrand($values);
         }
-        if (property_exists($data, 'NonBrandedFares')) {
+        if (property_exists($data, 'NonBrandedFares') && $data->{'NonBrandedFares'} !== null) {
             $values_1 = [];
             foreach ($data->{'NonBrandedFares'} as $value_1) {
                 $values_1[] = $this->denormalizer->denormalize($value_1, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305BrandFiltersTypeNonBrandedFares', 'json', $context);

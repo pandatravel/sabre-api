@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,31 +29,31 @@ class StatisticsTypeNormalizer implements DenormalizerInterface, NormalizerInter
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\StatisticsType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\StatisticsType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\StatisticsType();
-        if (property_exists($data, 'branded')) {
+        if (property_exists($data, 'branded') && $data->{'branded'} !== null) {
             $object->setBranded($data->{'branded'});
         }
-        if (property_exists($data, 'departed')) {
+        if (property_exists($data, 'departed') && $data->{'departed'} !== null) {
             $object->setDeparted($data->{'departed'});
         }
-        if (property_exists($data, 'itineraryCount')) {
+        if (property_exists($data, 'itineraryCount') && $data->{'itineraryCount'} !== null) {
             $object->setItineraryCount($data->{'itineraryCount'});
         }
-        if (property_exists($data, 'legMissed')) {
+        if (property_exists($data, 'legMissed') && $data->{'legMissed'} !== null) {
             $object->setLegMissed($data->{'legMissed'});
         }
-        if (property_exists($data, 'oneWay')) {
+        if (property_exists($data, 'oneWay') && $data->{'oneWay'} !== null) {
             $object->setOneWay($data->{'oneWay'});
         }
-        if (property_exists($data, 'soldOut')) {
+        if (property_exists($data, 'soldOut') && $data->{'soldOut'} !== null) {
             $object->setSoldOut($data->{'soldOut'});
         }
 

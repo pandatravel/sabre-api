@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,22 +29,22 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsDataSourcesNormalizer
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsDataSources;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsDataSources';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsDataSources();
-        if (property_exists($data, 'ATPCO')) {
+        if (property_exists($data, 'ATPCO') && $data->{'ATPCO'} !== null) {
             $object->setATPCO($data->{'ATPCO'});
         }
-        if (property_exists($data, 'LCC')) {
+        if (property_exists($data, 'LCC') && $data->{'LCC'} !== null) {
             $object->setLCC($data->{'LCC'});
         }
-        if (property_exists($data, 'NDC')) {
+        if (property_exists($data, 'NDC') && $data->{'NDC'} !== null) {
             $object->setNDC($data->{'NDC'});
         }
 

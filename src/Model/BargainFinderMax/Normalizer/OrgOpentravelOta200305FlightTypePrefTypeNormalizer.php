@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,22 +29,22 @@ class OrgOpentravelOta200305FlightTypePrefTypeNormalizer implements Denormalizer
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305FlightTypePrefType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305FlightTypePrefType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305FlightTypePrefType();
-        if (property_exists($data, 'FlightType')) {
+        if (property_exists($data, 'FlightType') && $data->{'FlightType'} !== null) {
             $object->setFlightType($data->{'FlightType'});
         }
-        if (property_exists($data, 'MaxConnections')) {
+        if (property_exists($data, 'MaxConnections') && $data->{'MaxConnections'} !== null) {
             $object->setMaxConnections($data->{'MaxConnections'});
         }
-        if (property_exists($data, 'PreferLevel')) {
+        if (property_exists($data, 'PreferLevel') && $data->{'PreferLevel'} !== null) {
             $object->setPreferLevel($data->{'PreferLevel'});
         }
 

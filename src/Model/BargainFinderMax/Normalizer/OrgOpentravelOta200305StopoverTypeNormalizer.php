@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,22 +29,22 @@ class OrgOpentravelOta200305StopoverTypeNormalizer implements DenormalizerInterf
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305StopoverType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305StopoverType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305StopoverType();
-        if (property_exists($data, 'DepartureDateTime')) {
+        if (property_exists($data, 'DepartureDateTime') && $data->{'DepartureDateTime'} !== null) {
             $object->setDepartureDateTime($data->{'DepartureDateTime'});
         }
-        if (property_exists($data, 'DepartureWindow')) {
+        if (property_exists($data, 'DepartureWindow') && $data->{'DepartureWindow'} !== null) {
             $object->setDepartureWindow($data->{'DepartureWindow'});
         }
-        if (property_exists($data, 'StopoverPoint')) {
+        if (property_exists($data, 'StopoverPoint') && $data->{'StopoverPoint'} !== null) {
             $object->setStopoverPoint($this->denormalizer->denormalize($data->{'StopoverPoint'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305StopoverTypeStopoverPoint', 'json', $context));
         }
 

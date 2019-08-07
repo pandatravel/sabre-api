@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,72 +29,72 @@ class OrgOpentravelOta200305OriginDestinationFlightTypeNormalizer implements Den
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305OriginDestinationFlightType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305OriginDestinationFlightType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305OriginDestinationFlightType();
-        if (property_exists($data, 'Airline')) {
+        if (property_exists($data, 'Airline') && $data->{'Airline'} !== null) {
             $object->setAirline($this->denormalizer->denormalize($data->{'Airline'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305AirlineType', 'json', $context));
         }
-        if (property_exists($data, 'ArrivalDateTime')) {
+        if (property_exists($data, 'ArrivalDateTime') && $data->{'ArrivalDateTime'} !== null) {
             $object->setArrivalDateTime($data->{'ArrivalDateTime'});
         }
-        if (property_exists($data, 'BookingDateTime')) {
+        if (property_exists($data, 'BookingDateTime') && $data->{'BookingDateTime'} !== null) {
             $object->setBookingDateTime($data->{'BookingDateTime'});
         }
-        if (property_exists($data, 'ClassOfService')) {
+        if (property_exists($data, 'ClassOfService') && $data->{'ClassOfService'} !== null) {
             $object->setClassOfService($data->{'ClassOfService'});
         }
-        if (property_exists($data, 'DepartureDateTime')) {
+        if (property_exists($data, 'DepartureDateTime') && $data->{'DepartureDateTime'} !== null) {
             $object->setDepartureDateTime($data->{'DepartureDateTime'});
         }
-        if (property_exists($data, 'DestinationLocation')) {
+        if (property_exists($data, 'DestinationLocation') && $data->{'DestinationLocation'} !== null) {
             $object->setDestinationLocation($this->denormalizer->denormalize($data->{'DestinationLocation'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305RequestLocationType', 'json', $context));
         }
-        if (property_exists($data, 'Fare')) {
+        if (property_exists($data, 'Fare') && $data->{'Fare'} !== null) {
             $object->setFare($this->denormalizer->denormalize($data->{'Fare'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305FareOptionalDetailsType', 'json', $context));
         }
-        if (property_exists($data, 'Flown')) {
+        if (property_exists($data, 'Flown') && $data->{'Flown'} !== null) {
             $object->setFlown($data->{'Flown'});
         }
-        if (property_exists($data, 'MarriageStatus')) {
+        if (property_exists($data, 'MarriageStatus') && $data->{'MarriageStatus'} !== null) {
             $object->setMarriageStatus($data->{'MarriageStatus'});
         }
-        if (property_exists($data, 'MileageDisplay')) {
+        if (property_exists($data, 'MileageDisplay') && $data->{'MileageDisplay'} !== null) {
             $values = [];
             foreach ($data->{'MileageDisplay'} as $value) {
                 $values[] = $this->denormalizer->denormalize($value, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305MileageDisplayType', 'json', $context);
             }
             $object->setMileageDisplay($values);
         }
-        if (property_exists($data, 'Number')) {
+        if (property_exists($data, 'Number') && $data->{'Number'} !== null) {
             $object->setNumber($data->{'Number'});
         }
-        if (property_exists($data, 'OriginLocation')) {
+        if (property_exists($data, 'OriginLocation') && $data->{'OriginLocation'} !== null) {
             $object->setOriginLocation($this->denormalizer->denormalize($data->{'OriginLocation'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305RequestLocationType', 'json', $context));
         }
-        if (property_exists($data, 'PlusUp')) {
+        if (property_exists($data, 'PlusUp') && $data->{'PlusUp'} !== null) {
             $values_1 = [];
             foreach ($data->{'PlusUp'} as $value_1) {
                 $values_1[] = $this->denormalizer->denormalize($value_1, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305PlusUpType', 'json', $context);
             }
             $object->setPlusUp($values_1);
         }
-        if (property_exists($data, 'Reservation')) {
+        if (property_exists($data, 'Reservation') && $data->{'Reservation'} !== null) {
             $object->setReservation($this->denormalizer->denormalize($data->{'Reservation'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305ReservationType', 'json', $context));
         }
-        if (property_exists($data, 'Shopped')) {
+        if (property_exists($data, 'Shopped') && $data->{'Shopped'} !== null) {
             $object->setShopped($data->{'Shopped'});
         }
-        if (property_exists($data, 'SideTrip')) {
+        if (property_exists($data, 'SideTrip') && $data->{'SideTrip'} !== null) {
             $object->setSideTrip($this->denormalizer->denormalize($data->{'SideTrip'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305SideTripType', 'json', $context));
         }
-        if (property_exists($data, 'Type')) {
+        if (property_exists($data, 'Type') && $data->{'Type'} !== null) {
             $object->setType($data->{'Type'});
         }
 

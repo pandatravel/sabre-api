@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,37 +29,37 @@ class FareComponentBreakdownTypeNormalizer implements DenormalizerInterface, Nor
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\FareComponentBreakdownType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\FareComponentBreakdownType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\FareComponentBreakdownType();
-        if (property_exists($data, 'contractFamilyId')) {
+        if (property_exists($data, 'contractFamilyId') && $data->{'contractFamilyId'} !== null) {
             $object->setContractFamilyId($data->{'contractFamilyId'});
         }
-        if (property_exists($data, 'contractId')) {
+        if (property_exists($data, 'contractId') && $data->{'contractId'} !== null) {
             $object->setContractId($data->{'contractId'});
         }
-        if (property_exists($data, 'earnedFareComponentCommission')) {
+        if (property_exists($data, 'earnedFareComponentCommission') && $data->{'earnedFareComponentCommission'} !== null) {
             $object->setEarnedFareComponentCommission($data->{'earnedFareComponentCommission'});
         }
-        if (property_exists($data, 'fareComponentCommission')) {
+        if (property_exists($data, 'fareComponentCommission') && $data->{'fareComponentCommission'} !== null) {
             $object->setFareComponentCommission($data->{'fareComponentCommission'});
         }
-        if (property_exists($data, 'fareComponentReferenceId')) {
+        if (property_exists($data, 'fareComponentReferenceId') && $data->{'fareComponentReferenceId'} !== null) {
             $object->setFareComponentReferenceId($data->{'fareComponentReferenceId'});
         }
-        if (property_exists($data, 'methodId')) {
+        if (property_exists($data, 'methodId') && $data->{'methodId'} !== null) {
             $object->setMethodId($data->{'methodId'});
         }
-        if (property_exists($data, 'ruleFamilyId')) {
+        if (property_exists($data, 'ruleFamilyId') && $data->{'ruleFamilyId'} !== null) {
             $object->setRuleFamilyId($data->{'ruleFamilyId'});
         }
-        if (property_exists($data, 'ruleId')) {
+        if (property_exists($data, 'ruleId') && $data->{'ruleId'} !== null) {
             $object->setRuleId($data->{'ruleId'});
         }
 

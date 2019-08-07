@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,48 +29,48 @@ class ItineraryTypeNormalizer implements DenormalizerInterface, NormalizerInterf
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\ItineraryType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\ItineraryType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\ItineraryType();
-        if (property_exists($data, 'currentItinerary')) {
+        if (property_exists($data, 'currentItinerary') && $data->{'currentItinerary'} !== null) {
             $object->setCurrentItinerary($data->{'currentItinerary'});
         }
-        if (property_exists($data, 'diversitySwapper')) {
+        if (property_exists($data, 'diversitySwapper') && $data->{'diversitySwapper'} !== null) {
             $object->setDiversitySwapper($this->denormalizer->denormalize($data->{'diversitySwapper'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\DiversitySwapperType', 'json', $context));
         }
-        if (property_exists($data, 'failed')) {
+        if (property_exists($data, 'failed') && $data->{'failed'} !== null) {
             $object->setFailed($this->denormalizer->denormalize($data->{'failed'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\FailedType', 'json', $context));
         }
-        if (property_exists($data, 'id')) {
+        if (property_exists($data, 'id') && $data->{'id'} !== null) {
             $object->setId($data->{'id'});
         }
-        if (property_exists($data, 'itinSource')) {
+        if (property_exists($data, 'itinSource') && $data->{'itinSource'} !== null) {
             $object->setItinSource($data->{'itinSource'});
         }
-        if (property_exists($data, 'legs')) {
+        if (property_exists($data, 'legs') && $data->{'legs'} !== null) {
             $values = [];
             foreach ($data->{'legs'} as $value) {
                 $values[] = $this->denormalizer->denormalize($value, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\LegIDType', 'json', $context);
             }
             $object->setLegs($values);
         }
-        if (property_exists($data, 'pricingInformation')) {
+        if (property_exists($data, 'pricingInformation') && $data->{'pricingInformation'} !== null) {
             $values_1 = [];
             foreach ($data->{'pricingInformation'} as $value_1) {
                 $values_1[] = $this->denormalizer->denormalize($value_1, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\PricingInformationType', 'json', $context);
             }
             $object->setPricingInformation($values_1);
         }
-        if (property_exists($data, 'pricingSource')) {
+        if (property_exists($data, 'pricingSource') && $data->{'pricingSource'} !== null) {
             $object->setPricingSource($data->{'pricingSource'});
         }
-        if (property_exists($data, 'routingItinerary')) {
+        if (property_exists($data, 'routingItinerary') && $data->{'routingItinerary'} !== null) {
             $object->setRoutingItinerary($data->{'routingItinerary'});
         }
 

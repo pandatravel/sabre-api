@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,19 +29,19 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsSplitTaxesNormaliz
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsSplitTaxes;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsSplitTaxes';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsSplitTaxes();
-        if (property_exists($data, 'ByFareComponent')) {
+        if (property_exists($data, 'ByFareComponent') && $data->{'ByFareComponent'} !== null) {
             $object->setByFareComponent($data->{'ByFareComponent'});
         }
-        if (property_exists($data, 'ByLeg')) {
+        if (property_exists($data, 'ByLeg') && $data->{'ByLeg'} !== null) {
             $object->setByLeg($data->{'ByLeg'});
         }
 

@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,44 +29,44 @@ class SoldOutLegTypeNormalizer implements DenormalizerInterface, NormalizerInter
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\SoldOutLegType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\SoldOutLegType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\SoldOutLegType();
-        if (property_exists($data, 'brandCode')) {
+        if (property_exists($data, 'brandCode') && $data->{'brandCode'} !== null) {
             $object->setBrandCode($data->{'brandCode'});
         }
-        if (property_exists($data, 'brandDescription')) {
+        if (property_exists($data, 'brandDescription') && $data->{'brandDescription'} !== null) {
             $object->setBrandDescription($data->{'brandDescription'});
         }
-        if (property_exists($data, 'programCode')) {
+        if (property_exists($data, 'programCode') && $data->{'programCode'} !== null) {
             $object->setProgramCode($data->{'programCode'});
         }
-        if (property_exists($data, 'programId')) {
+        if (property_exists($data, 'programId') && $data->{'programId'} !== null) {
             $object->setProgramId($data->{'programId'});
         }
-        if (property_exists($data, 'programName')) {
+        if (property_exists($data, 'programName') && $data->{'programName'} !== null) {
             $object->setProgramName($data->{'programName'});
         }
-        if (property_exists($data, 'programSystemCode')) {
+        if (property_exists($data, 'programSystemCode') && $data->{'programSystemCode'} !== null) {
             $object->setProgramSystemCode($data->{'programSystemCode'});
         }
-        if (property_exists($data, 'ref')) {
+        if (property_exists($data, 'ref') && $data->{'ref'} !== null) {
             $object->setRef($data->{'ref'});
         }
-        if (property_exists($data, 'soldOutSchedules')) {
+        if (property_exists($data, 'soldOutSchedules') && $data->{'soldOutSchedules'} !== null) {
             $values = [];
             foreach ($data->{'soldOutSchedules'} as $value) {
                 $values[] = $this->denormalizer->denormalize($value, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\SoldOutSchedule', 'json', $context);
             }
             $object->setSoldOutSchedules($values);
         }
-        if (property_exists($data, 'status')) {
+        if (property_exists($data, 'status') && $data->{'status'} !== null) {
             $object->setStatus($data->{'status'});
         }
 

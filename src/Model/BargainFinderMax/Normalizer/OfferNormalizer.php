@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,22 +29,22 @@ class OfferNormalizer implements DenormalizerInterface, NormalizerInterface, Den
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\Offer;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\Offer';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\Offer();
-        if (property_exists($data, 'offerId')) {
+        if (property_exists($data, 'offerId') && $data->{'offerId'} !== null) {
             $object->setOfferId($data->{'offerId'});
         }
-        if (property_exists($data, 'source')) {
+        if (property_exists($data, 'source') && $data->{'source'} !== null) {
             $object->setSource($data->{'source'});
         }
-        if (property_exists($data, 'ttl')) {
+        if (property_exists($data, 'ttl') && $data->{'ttl'} !== null) {
             $object->setTtl($data->{'ttl'});
         }
 

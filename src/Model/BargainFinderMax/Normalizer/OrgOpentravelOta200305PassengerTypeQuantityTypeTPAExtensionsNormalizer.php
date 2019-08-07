@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,28 +29,28 @@ class OrgOpentravelOta200305PassengerTypeQuantityTypeTPAExtensionsNormalizer imp
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305PassengerTypeQuantityTypeTPAExtensions;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305PassengerTypeQuantityTypeTPAExtensions';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305PassengerTypeQuantityTypeTPAExtensions();
-        if (property_exists($data, 'Age')) {
+        if (property_exists($data, 'Age') && $data->{'Age'} !== null) {
             $object->setAge($this->denormalizer->denormalize($data->{'Age'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305PassengerTypeQuantityTypeTPAExtensionsAge', 'json', $context));
         }
-        if (property_exists($data, 'BirthDate')) {
+        if (property_exists($data, 'BirthDate') && $data->{'BirthDate'} !== null) {
             $object->setBirthDate($this->denormalizer->denormalize($data->{'BirthDate'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305PassengerTypeQuantityTypeTPAExtensionsBirthDate', 'json', $context));
         }
-        if (property_exists($data, 'State')) {
+        if (property_exists($data, 'State') && $data->{'State'} !== null) {
             $object->setState($this->denormalizer->denormalize($data->{'State'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305PassengerTypeQuantityTypeTPAExtensionsState', 'json', $context));
         }
-        if (property_exists($data, 'TotalNumber')) {
+        if (property_exists($data, 'TotalNumber') && $data->{'TotalNumber'} !== null) {
             $object->setTotalNumber($this->denormalizer->denormalize($data->{'TotalNumber'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305PassengerTypeQuantityTypeTPAExtensionsTotalNumber', 'json', $context));
         }
-        if (property_exists($data, 'VoluntaryChanges')) {
+        if (property_exists($data, 'VoluntaryChanges') && $data->{'VoluntaryChanges'} !== null) {
             $object->setVoluntaryChanges($this->denormalizer->denormalize($data->{'VoluntaryChanges'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305VoluntaryChangesSMPType', 'json', $context));
         }
 

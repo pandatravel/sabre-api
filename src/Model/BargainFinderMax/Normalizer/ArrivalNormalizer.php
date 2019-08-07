@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,34 +29,34 @@ class ArrivalNormalizer implements DenormalizerInterface, NormalizerInterface, D
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\Arrival;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\Arrival';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\Arrival();
-        if (property_exists($data, 'airport')) {
+        if (property_exists($data, 'airport') && $data->{'airport'} !== null) {
             $object->setAirport($data->{'airport'});
         }
-        if (property_exists($data, 'city')) {
+        if (property_exists($data, 'city') && $data->{'city'} !== null) {
             $object->setCity($data->{'city'});
         }
-        if (property_exists($data, 'country')) {
+        if (property_exists($data, 'country') && $data->{'country'} !== null) {
             $object->setCountry($data->{'country'});
         }
-        if (property_exists($data, 'dateAdjustment')) {
+        if (property_exists($data, 'dateAdjustment') && $data->{'dateAdjustment'} !== null) {
             $object->setDateAdjustment($data->{'dateAdjustment'});
         }
-        if (property_exists($data, 'state')) {
+        if (property_exists($data, 'state') && $data->{'state'} !== null) {
             $object->setState($data->{'state'});
         }
-        if (property_exists($data, 'terminal')) {
+        if (property_exists($data, 'terminal') && $data->{'terminal'} !== null) {
             $object->setTerminal($data->{'terminal'});
         }
-        if (property_exists($data, 'time')) {
+        if (property_exists($data, 'time') && $data->{'time'} !== null) {
             $object->setTime($data->{'time'});
         }
 

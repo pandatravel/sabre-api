@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,34 +29,34 @@ class HandlingMarkupTypeNormalizer implements DenormalizerInterface, NormalizerI
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\HandlingMarkupType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\HandlingMarkupType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\HandlingMarkupType();
-        if (property_exists($data, 'amount')) {
+        if (property_exists($data, 'amount') && $data->{'amount'} !== null) {
             $object->setAmount($data->{'amount'});
         }
-        if (property_exists($data, 'description')) {
+        if (property_exists($data, 'description') && $data->{'description'} !== null) {
             $object->setDescription($data->{'description'});
         }
-        if (property_exists($data, 'extendedDescription')) {
+        if (property_exists($data, 'extendedDescription') && $data->{'extendedDescription'} !== null) {
             $object->setExtendedDescription($data->{'extendedDescription'});
         }
-        if (property_exists($data, 'fareRetailerRule')) {
+        if (property_exists($data, 'fareRetailerRule') && $data->{'fareRetailerRule'} !== null) {
             $object->setFareRetailerRule($data->{'fareRetailerRule'});
         }
-        if (property_exists($data, 'hiddenHandlingFee')) {
+        if (property_exists($data, 'hiddenHandlingFee') && $data->{'hiddenHandlingFee'} !== null) {
             $object->setHiddenHandlingFee($data->{'hiddenHandlingFee'});
         }
-        if (property_exists($data, 'nonHiddenHandlingFee')) {
+        if (property_exists($data, 'nonHiddenHandlingFee') && $data->{'nonHiddenHandlingFee'} !== null) {
             $object->setNonHiddenHandlingFee($data->{'nonHiddenHandlingFee'});
         }
-        if (property_exists($data, 'type')) {
+        if (property_exists($data, 'type') && $data->{'type'} !== null) {
             $object->setType($data->{'type'});
         }
 

@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,31 +29,31 @@ class OrgOpentravelOta200305VoluntaryChangesSMPTypePenaltyNormalizer implements 
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305VoluntaryChangesSMPTypePenalty;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305VoluntaryChangesSMPTypePenalty';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305VoluntaryChangesSMPTypePenalty();
-        if (property_exists($data, 'Amount')) {
+        if (property_exists($data, 'Amount') && $data->{'Amount'} !== null) {
             $object->setAmount($data->{'Amount'});
         }
-        if (property_exists($data, 'Application')) {
+        if (property_exists($data, 'Application') && $data->{'Application'} !== null) {
             $object->setApplication($data->{'Application'});
         }
-        if (property_exists($data, 'CurrencyCode')) {
+        if (property_exists($data, 'CurrencyCode') && $data->{'CurrencyCode'} !== null) {
             $object->setCurrencyCode($data->{'CurrencyCode'});
         }
-        if (property_exists($data, 'DecimalPlaces')) {
+        if (property_exists($data, 'DecimalPlaces') && $data->{'DecimalPlaces'} !== null) {
             $object->setDecimalPlaces($data->{'DecimalPlaces'});
         }
-        if (property_exists($data, 'Exclude')) {
+        if (property_exists($data, 'Exclude') && $data->{'Exclude'} !== null) {
             $object->setExclude($data->{'Exclude'});
         }
-        if (property_exists($data, 'Type')) {
+        if (property_exists($data, 'Type') && $data->{'Type'} !== null) {
             $object->setType($data->{'Type'});
         }
 

@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,25 +29,25 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsLongConnectTimeNormal
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsLongConnectTime;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsLongConnectTime';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsLongConnectTime();
-        if (property_exists($data, 'Enable')) {
+        if (property_exists($data, 'Enable') && $data->{'Enable'} !== null) {
             $object->setEnable($data->{'Enable'});
         }
-        if (property_exists($data, 'Max')) {
+        if (property_exists($data, 'Max') && $data->{'Max'} !== null) {
             $object->setMax($data->{'Max'});
         }
-        if (property_exists($data, 'Min')) {
+        if (property_exists($data, 'Min') && $data->{'Min'} !== null) {
             $object->setMin($data->{'Min'});
         }
-        if (property_exists($data, 'NumberOfSolutions')) {
+        if (property_exists($data, 'NumberOfSolutions') && $data->{'NumberOfSolutions'} !== null) {
             $object->setNumberOfSolutions($data->{'NumberOfSolutions'});
         }
 

@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,31 +29,31 @@ class OrgOpentravelOta200305UniqueIDTypeNormalizer implements DenormalizerInterf
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305UniqueIDType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305UniqueIDType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305UniqueIDType();
-        if (property_exists($data, 'CompanyName')) {
+        if (property_exists($data, 'CompanyName') && $data->{'CompanyName'} !== null) {
             $object->setCompanyName($this->denormalizer->denormalize($data->{'CompanyName'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305CompanyNameType', 'json', $context));
         }
-        if (property_exists($data, 'ID')) {
+        if (property_exists($data, 'ID') && $data->{'ID'} !== null) {
             $object->setID($data->{'ID'});
         }
-        if (property_exists($data, 'ID_Context')) {
+        if (property_exists($data, 'ID_Context') && $data->{'ID_Context'} !== null) {
             $object->setIDContext($data->{'ID_Context'});
         }
-        if (property_exists($data, 'Instance')) {
+        if (property_exists($data, 'Instance') && $data->{'Instance'} !== null) {
             $object->setInstance($data->{'Instance'});
         }
-        if (property_exists($data, 'Type')) {
+        if (property_exists($data, 'Type') && $data->{'Type'} !== null) {
             $object->setType($data->{'Type'});
         }
-        if (property_exists($data, 'URL')) {
+        if (property_exists($data, 'URL') && $data->{'URL'} !== null) {
             $object->setURL($data->{'URL'});
         }
 

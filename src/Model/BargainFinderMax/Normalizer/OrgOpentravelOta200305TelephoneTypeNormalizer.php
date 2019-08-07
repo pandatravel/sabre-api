@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,43 +29,43 @@ class OrgOpentravelOta200305TelephoneTypeNormalizer implements DenormalizerInter
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305TelephoneType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305TelephoneType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305TelephoneType();
-        if (property_exists($data, 'AreaCityCode')) {
+        if (property_exists($data, 'AreaCityCode') && $data->{'AreaCityCode'} !== null) {
             $object->setAreaCityCode($data->{'AreaCityCode'});
         }
-        if (property_exists($data, 'CountryAccessCode')) {
+        if (property_exists($data, 'CountryAccessCode') && $data->{'CountryAccessCode'} !== null) {
             $object->setCountryAccessCode($data->{'CountryAccessCode'});
         }
-        if (property_exists($data, 'Extension')) {
+        if (property_exists($data, 'Extension') && $data->{'Extension'} !== null) {
             $object->setExtension($data->{'Extension'});
         }
-        if (property_exists($data, 'FormattedInd')) {
+        if (property_exists($data, 'FormattedInd') && $data->{'FormattedInd'} !== null) {
             $object->setFormattedInd($data->{'FormattedInd'});
         }
-        if (property_exists($data, 'PIN')) {
+        if (property_exists($data, 'PIN') && $data->{'PIN'} !== null) {
             $object->setPIN($data->{'PIN'});
         }
-        if (property_exists($data, 'PhoneLocationType')) {
+        if (property_exists($data, 'PhoneLocationType') && $data->{'PhoneLocationType'} !== null) {
             $object->setPhoneLocationType($data->{'PhoneLocationType'});
         }
-        if (property_exists($data, 'PhoneNumber')) {
+        if (property_exists($data, 'PhoneNumber') && $data->{'PhoneNumber'} !== null) {
             $object->setPhoneNumber($data->{'PhoneNumber'});
         }
-        if (property_exists($data, 'PhoneTechType')) {
+        if (property_exists($data, 'PhoneTechType') && $data->{'PhoneTechType'} !== null) {
             $object->setPhoneTechType($data->{'PhoneTechType'});
         }
-        if (property_exists($data, 'ShareMarketInd')) {
+        if (property_exists($data, 'ShareMarketInd') && $data->{'ShareMarketInd'} !== null) {
             $object->setShareMarketInd($data->{'ShareMarketInd'});
         }
-        if (property_exists($data, 'ShareSynchInd')) {
+        if (property_exists($data, 'ShareSynchInd') && $data->{'ShareSynchInd'} !== null) {
             $object->setShareSynchInd($data->{'ShareSynchInd'});
         }
 

@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,74 +29,74 @@ class ScheduleDescTypeNormalizer implements DenormalizerInterface, NormalizerInt
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\ScheduleDescType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\ScheduleDescType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\ScheduleDescType();
-        if (property_exists($data, 'arrival')) {
+        if (property_exists($data, 'arrival') && $data->{'arrival'} !== null) {
             $object->setArrival($this->denormalizer->denormalize($data->{'arrival'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\Arrival', 'json', $context));
         }
-        if (property_exists($data, 'bookingDetails')) {
+        if (property_exists($data, 'bookingDetails') && $data->{'bookingDetails'} !== null) {
             $object->setBookingDetails($this->denormalizer->denormalize($data->{'bookingDetails'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\BookingDetails', 'json', $context));
         }
-        if (property_exists($data, 'carrier')) {
+        if (property_exists($data, 'carrier') && $data->{'carrier'} !== null) {
             $object->setCarrier($this->denormalizer->denormalize($data->{'carrier'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\Carrier', 'json', $context));
         }
-        if (property_exists($data, 'departure')) {
+        if (property_exists($data, 'departure') && $data->{'departure'} !== null) {
             $object->setDeparture($this->denormalizer->denormalize($data->{'departure'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\Departure', 'json', $context));
         }
-        if (property_exists($data, 'dotRating')) {
+        if (property_exists($data, 'dotRating') && $data->{'dotRating'} !== null) {
             $object->setDotRating($data->{'dotRating'});
         }
-        if (property_exists($data, 'eTicketable')) {
+        if (property_exists($data, 'eTicketable') && $data->{'eTicketable'} !== null) {
             $object->setETicketable($data->{'eTicketable'});
         }
-        if (property_exists($data, 'flightStatused')) {
+        if (property_exists($data, 'flightStatused') && $data->{'flightStatused'} !== null) {
             $object->setFlightStatused($data->{'flightStatused'});
         }
-        if (property_exists($data, 'frequency')) {
+        if (property_exists($data, 'frequency') && $data->{'frequency'} !== null) {
             $object->setFrequency($data->{'frequency'});
         }
-        if (property_exists($data, 'funnel')) {
+        if (property_exists($data, 'funnel') && $data->{'funnel'} !== null) {
             $object->setFunnel($data->{'funnel'});
         }
-        if (property_exists($data, 'governmentApproval')) {
+        if (property_exists($data, 'governmentApproval') && $data->{'governmentApproval'} !== null) {
             $object->setGovernmentApproval($data->{'governmentApproval'});
         }
-        if (property_exists($data, 'hiddenStops')) {
+        if (property_exists($data, 'hiddenStops') && $data->{'hiddenStops'} !== null) {
             $values = [];
             foreach ($data->{'hiddenStops'} as $value) {
                 $values[] = $this->denormalizer->denormalize($value, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\HiddenStopType', 'json', $context);
             }
             $object->setHiddenStops($values);
         }
-        if (property_exists($data, 'id')) {
+        if (property_exists($data, 'id') && $data->{'id'} !== null) {
             $object->setId($data->{'id'});
         }
-        if (property_exists($data, 'message')) {
+        if (property_exists($data, 'message') && $data->{'message'} !== null) {
             $object->setMessage($data->{'message'});
         }
-        if (property_exists($data, 'messageType')) {
+        if (property_exists($data, 'messageType') && $data->{'messageType'} !== null) {
             $object->setMessageType($data->{'messageType'});
         }
-        if (property_exists($data, 'onTimePerformance')) {
+        if (property_exists($data, 'onTimePerformance') && $data->{'onTimePerformance'} !== null) {
             $object->setOnTimePerformance($data->{'onTimePerformance'});
         }
-        if (property_exists($data, 'smokingAllowed')) {
+        if (property_exists($data, 'smokingAllowed') && $data->{'smokingAllowed'} !== null) {
             $object->setSmokingAllowed($data->{'smokingAllowed'});
         }
-        if (property_exists($data, 'stopCount')) {
+        if (property_exists($data, 'stopCount') && $data->{'stopCount'} !== null) {
             $object->setStopCount($data->{'stopCount'});
         }
-        if (property_exists($data, 'totalMilesFlown')) {
+        if (property_exists($data, 'totalMilesFlown') && $data->{'totalMilesFlown'} !== null) {
             $object->setTotalMilesFlown($data->{'totalMilesFlown'});
         }
-        if (property_exists($data, 'trafficRestriction')) {
+        if (property_exists($data, 'trafficRestriction') && $data->{'trafficRestriction'} !== null) {
             $object->setTrafficRestriction($data->{'trafficRestriction'});
         }
 

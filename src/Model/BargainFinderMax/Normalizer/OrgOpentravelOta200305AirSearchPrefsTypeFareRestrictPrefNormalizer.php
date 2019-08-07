@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,28 +29,28 @@ class OrgOpentravelOta200305AirSearchPrefsTypeFareRestrictPrefNormalizer impleme
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305AirSearchPrefsTypeFareRestrictPref;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305AirSearchPrefsTypeFareRestrictPref';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305AirSearchPrefsTypeFareRestrictPref();
-        if (property_exists($data, 'AdvResTicketing')) {
+        if (property_exists($data, 'AdvResTicketing') && $data->{'AdvResTicketing'} !== null) {
             $object->setAdvResTicketing($this->denormalizer->denormalize($data->{'AdvResTicketing'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305AdvResTicketingType', 'json', $context));
         }
-        if (property_exists($data, 'FareRestriction')) {
+        if (property_exists($data, 'FareRestriction') && $data->{'FareRestriction'} !== null) {
             $object->setFareRestriction($data->{'FareRestriction'});
         }
-        if (property_exists($data, 'PreferLevel')) {
+        if (property_exists($data, 'PreferLevel') && $data->{'PreferLevel'} !== null) {
             $object->setPreferLevel($data->{'PreferLevel'});
         }
-        if (property_exists($data, 'StayRestrictions')) {
+        if (property_exists($data, 'StayRestrictions') && $data->{'StayRestrictions'} !== null) {
             $object->setStayRestrictions($this->denormalizer->denormalize($data->{'StayRestrictions'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305StayRestrictionsType', 'json', $context));
         }
-        if (property_exists($data, 'VoluntaryChanges')) {
+        if (property_exists($data, 'VoluntaryChanges') && $data->{'VoluntaryChanges'} !== null) {
             $object->setVoluntaryChanges($this->denormalizer->denormalize($data->{'VoluntaryChanges'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305VoluntaryChangesType', 'json', $context));
         }
 

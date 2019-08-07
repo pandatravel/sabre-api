@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,29 +29,29 @@ class OrgOpentravelOta200305TransactionTypeDiagnosticsDiagnosticNormalizer imple
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305TransactionTypeDiagnosticsDiagnostic;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305TransactionTypeDiagnosticsDiagnostic';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305TransactionTypeDiagnosticsDiagnostic();
-        if (property_exists($data, 'Code')) {
+        if (property_exists($data, 'Code') && $data->{'Code'} !== null) {
             $object->setCode($data->{'Code'});
         }
-        if (property_exists($data, 'DiagnosticArgument')) {
+        if (property_exists($data, 'DiagnosticArgument') && $data->{'DiagnosticArgument'} !== null) {
             $values = [];
             foreach ($data->{'DiagnosticArgument'} as $value) {
                 $values[] = $this->denormalizer->denormalize($value, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305TransactionTypeDiagnosticsDiagnosticDiagnosticArgument', 'json', $context);
             }
             $object->setDiagnosticArgument($values);
         }
-        if (property_exists($data, 'TPA_Extensions')) {
+        if (property_exists($data, 'TPA_Extensions') && $data->{'TPA_Extensions'} !== null) {
             $object->setTPAExtensions($data->{'TPA_Extensions'});
         }
-        if (property_exists($data, 'Target')) {
+        if (property_exists($data, 'Target') && $data->{'Target'} !== null) {
             $object->setTarget($data->{'Target'});
         }
 

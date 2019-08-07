@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,19 +29,19 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsAlternateDatesProc
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsAlternateDatesProcessing;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsAlternateDatesProcessing';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsAlternateDatesProcessing();
-        if (property_exists($data, 'CalendarMode')) {
+        if (property_exists($data, 'CalendarMode') && $data->{'CalendarMode'} !== null) {
             $object->setCalendarMode($data->{'CalendarMode'});
         }
-        if (property_exists($data, 'NumOptionsPerAlternateDate')) {
+        if (property_exists($data, 'NumOptionsPerAlternateDate') && $data->{'NumOptionsPerAlternateDate'} !== null) {
             $object->setNumOptionsPerAlternateDate($data->{'NumOptionsPerAlternateDate'});
         }
 

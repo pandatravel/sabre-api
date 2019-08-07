@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,28 +29,28 @@ class OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeConnectionTi
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeConnectionTime;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeConnectionTime';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeConnectionTime();
-        if (property_exists($data, 'EnableExcludedConnection')) {
+        if (property_exists($data, 'EnableExcludedConnection') && $data->{'EnableExcludedConnection'} !== null) {
             $object->setEnableExcludedConnection($data->{'EnableExcludedConnection'});
         }
-        if (property_exists($data, 'ExcludedConnectionBegin')) {
+        if (property_exists($data, 'ExcludedConnectionBegin') && $data->{'ExcludedConnectionBegin'} !== null) {
             $object->setExcludedConnectionBegin($data->{'ExcludedConnectionBegin'});
         }
-        if (property_exists($data, 'ExcludedConnectionEnd')) {
+        if (property_exists($data, 'ExcludedConnectionEnd') && $data->{'ExcludedConnectionEnd'} !== null) {
             $object->setExcludedConnectionEnd($data->{'ExcludedConnectionEnd'});
         }
-        if (property_exists($data, 'Max')) {
+        if (property_exists($data, 'Max') && $data->{'Max'} !== null) {
             $object->setMax($data->{'Max'});
         }
-        if (property_exists($data, 'Min')) {
+        if (property_exists($data, 'Min') && $data->{'Min'} !== null) {
             $object->setMin($data->{'Min'});
         }
 

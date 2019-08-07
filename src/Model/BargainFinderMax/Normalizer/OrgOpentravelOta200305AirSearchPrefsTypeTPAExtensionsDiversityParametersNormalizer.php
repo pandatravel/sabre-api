@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,28 +29,28 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsDiversityParametersNo
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsDiversityParameters;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsDiversityParameters';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsDiversityParameters();
-        if (property_exists($data, 'AdditionalNonStopsNumber')) {
+        if (property_exists($data, 'AdditionalNonStopsNumber') && $data->{'AdditionalNonStopsNumber'} !== null) {
             $object->setAdditionalNonStopsNumber($data->{'AdditionalNonStopsNumber'});
         }
-        if (property_exists($data, 'AdditionalNonStopsPercentage')) {
+        if (property_exists($data, 'AdditionalNonStopsPercentage') && $data->{'AdditionalNonStopsPercentage'} !== null) {
             $object->setAdditionalNonStopsPercentage($data->{'AdditionalNonStopsPercentage'});
         }
-        if (property_exists($data, 'InboundOutboundPairing')) {
+        if (property_exists($data, 'InboundOutboundPairing') && $data->{'InboundOutboundPairing'} !== null) {
             $object->setInboundOutboundPairing($data->{'InboundOutboundPairing'});
         }
-        if (property_exists($data, 'TimeOfDayDistribution')) {
+        if (property_exists($data, 'TimeOfDayDistribution') && $data->{'TimeOfDayDistribution'} !== null) {
             $object->setTimeOfDayDistribution($this->denormalizer->denormalize($data->{'TimeOfDayDistribution'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsDiversityParametersTimeOfDayDistribution', 'json', $context));
         }
-        if (property_exists($data, 'Weightings')) {
+        if (property_exists($data, 'Weightings') && $data->{'Weightings'} !== null) {
             $object->setWeightings($this->denormalizer->denormalize($data->{'Weightings'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsDiversityParametersWeightings', 'json', $context));
         }
 

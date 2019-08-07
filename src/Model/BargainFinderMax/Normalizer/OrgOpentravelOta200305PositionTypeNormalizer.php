@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,22 +29,22 @@ class OrgOpentravelOta200305PositionTypeNormalizer implements DenormalizerInterf
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305PositionType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305PositionType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305PositionType();
-        if (property_exists($data, 'Altitude')) {
+        if (property_exists($data, 'Altitude') && $data->{'Altitude'} !== null) {
             $object->setAltitude($data->{'Altitude'});
         }
-        if (property_exists($data, 'Latitude')) {
+        if (property_exists($data, 'Latitude') && $data->{'Latitude'} !== null) {
             $object->setLatitude($data->{'Latitude'});
         }
-        if (property_exists($data, 'Longitude')) {
+        if (property_exists($data, 'Longitude') && $data->{'Longitude'} !== null) {
             $object->setLongitude($data->{'Longitude'});
         }
 

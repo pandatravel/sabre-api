@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,69 +29,69 @@ class FareTypeNormalizer implements DenormalizerInterface, NormalizerInterface, 
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\FareType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\FareType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\FareType();
-        if (property_exists($data, 'ancillaryFeeGroup')) {
+        if (property_exists($data, 'ancillaryFeeGroup') && $data->{'ancillaryFeeGroup'} !== null) {
             $object->setAncillaryFeeGroup($this->denormalizer->denormalize($data->{'ancillaryFeeGroup'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\AncillaryFeeGroupType', 'json', $context));
         }
-        if (property_exists($data, 'divideByParty')) {
+        if (property_exists($data, 'divideByParty') && $data->{'divideByParty'} !== null) {
             $object->setDivideByParty($data->{'divideByParty'});
         }
-        if (property_exists($data, 'eTicketable')) {
+        if (property_exists($data, 'eTicketable') && $data->{'eTicketable'} !== null) {
             $object->setETicketable($data->{'eTicketable'});
         }
-        if (property_exists($data, 'governingCarriers')) {
+        if (property_exists($data, 'governingCarriers') && $data->{'governingCarriers'} !== null) {
             $object->setGoverningCarriers($data->{'governingCarriers'});
         }
-        if (property_exists($data, 'lastTicketDate')) {
+        if (property_exists($data, 'lastTicketDate') && $data->{'lastTicketDate'} !== null) {
             $object->setLastTicketDate($data->{'lastTicketDate'});
         }
-        if (property_exists($data, 'offerItemId')) {
+        if (property_exists($data, 'offerItemId') && $data->{'offerItemId'} !== null) {
             $object->setOfferItemId($data->{'offerItemId'});
         }
-        if (property_exists($data, 'passengerInfoList')) {
+        if (property_exists($data, 'passengerInfoList') && $data->{'passengerInfoList'} !== null) {
             $values = [];
             foreach ($data->{'passengerInfoList'} as $value) {
                 $values[] = $this->denormalizer->denormalize($value, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\PassengerInfoListElementType', 'json', $context);
             }
             $object->setPassengerInfoList($values);
         }
-        if (property_exists($data, 'reissue')) {
+        if (property_exists($data, 'reissue') && $data->{'reissue'} !== null) {
             $object->setReissue($data->{'reissue'});
         }
-        if (property_exists($data, 'reissueText')) {
+        if (property_exists($data, 'reissueText') && $data->{'reissueText'} !== null) {
             $object->setReissueText($data->{'reissueText'});
         }
-        if (property_exists($data, 'serviceId')) {
+        if (property_exists($data, 'serviceId') && $data->{'serviceId'} !== null) {
             $object->setServiceId($data->{'serviceId'});
         }
-        if (property_exists($data, 'simultaneousReservation')) {
+        if (property_exists($data, 'simultaneousReservation') && $data->{'simultaneousReservation'} !== null) {
             $object->setSimultaneousReservation($data->{'simultaneousReservation'});
         }
-        if (property_exists($data, 'spanishFamilyDiscount')) {
+        if (property_exists($data, 'spanishFamilyDiscount') && $data->{'spanishFamilyDiscount'} !== null) {
             $object->setSpanishFamilyDiscount($data->{'spanishFamilyDiscount'});
         }
-        if (property_exists($data, 'totalFare')) {
+        if (property_exists($data, 'totalFare') && $data->{'totalFare'} !== null) {
             $object->setTotalFare($this->denormalizer->denormalize($data->{'totalFare'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\TotalFareType', 'json', $context));
         }
-        if (property_exists($data, 'validatingCarrierCode')) {
+        if (property_exists($data, 'validatingCarrierCode') && $data->{'validatingCarrierCode'} !== null) {
             $object->setValidatingCarrierCode($data->{'validatingCarrierCode'});
         }
-        if (property_exists($data, 'validatingCarriers')) {
+        if (property_exists($data, 'validatingCarriers') && $data->{'validatingCarriers'} !== null) {
             $values_1 = [];
             foreach ($data->{'validatingCarriers'} as $value_1) {
                 $values_1[] = $this->denormalizer->denormalize($value_1, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\ValidatingCarrierIDType', 'json', $context);
             }
             $object->setValidatingCarriers($values_1);
         }
-        if (property_exists($data, 'vita')) {
+        if (property_exists($data, 'vita') && $data->{'vita'} !== null) {
             $object->setVita($data->{'vita'});
         }
 

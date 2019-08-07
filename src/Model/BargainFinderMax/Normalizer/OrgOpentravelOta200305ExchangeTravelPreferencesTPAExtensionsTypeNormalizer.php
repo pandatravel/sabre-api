@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,32 +29,32 @@ class OrgOpentravelOta200305ExchangeTravelPreferencesTPAExtensionsTypeNormalizer
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305ExchangeTravelPreferencesTPAExtensionsType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305ExchangeTravelPreferencesTPAExtensionsType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305ExchangeTravelPreferencesTPAExtensionsType();
-        if (property_exists($data, 'ExemptAllTaxes')) {
+        if (property_exists($data, 'ExemptAllTaxes') && $data->{'ExemptAllTaxes'} !== null) {
             $object->setExemptAllTaxes($this->denormalizer->denormalize($data->{'ExemptAllTaxes'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305ExchangeTravelPreferencesTPAExtensionsTypeExemptAllTaxes', 'json', $context));
         }
-        if (property_exists($data, 'ExemptAllTaxesAndFees')) {
+        if (property_exists($data, 'ExemptAllTaxesAndFees') && $data->{'ExemptAllTaxesAndFees'} !== null) {
             $object->setExemptAllTaxesAndFees($this->denormalizer->denormalize($data->{'ExemptAllTaxesAndFees'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305ExchangeTravelPreferencesTPAExtensionsTypeExemptAllTaxesAndFees', 'json', $context));
         }
-        if (property_exists($data, 'ExemptTax')) {
+        if (property_exists($data, 'ExemptTax') && $data->{'ExemptTax'} !== null) {
             $values = [];
             foreach ($data->{'ExemptTax'} as $value) {
                 $values[] = $this->denormalizer->denormalize($value, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305TaxCodeType', 'json', $context);
             }
             $object->setExemptTax($values);
         }
-        if (property_exists($data, 'SettlementMethod')) {
+        if (property_exists($data, 'SettlementMethod') && $data->{'SettlementMethod'} !== null) {
             $object->setSettlementMethod($data->{'SettlementMethod'});
         }
-        if (property_exists($data, 'Taxes')) {
+        if (property_exists($data, 'Taxes') && $data->{'Taxes'} !== null) {
             $object->setTaxes($this->denormalizer->denormalize($data->{'Taxes'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305ExchangeTravelPreferencesTPAExtensionsTypeTaxes', 'json', $context));
         }
 

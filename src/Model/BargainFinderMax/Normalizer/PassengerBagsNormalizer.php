@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,23 +29,23 @@ class PassengerBagsNormalizer implements DenormalizerInterface, NormalizerInterf
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\PassengerBags;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\PassengerBags';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\PassengerBags();
-        if (property_exists($data, 'baggageSequenceOrders')) {
+        if (property_exists($data, 'baggageSequenceOrders') && $data->{'baggageSequenceOrders'} !== null) {
             $values = [];
             foreach ($data->{'baggageSequenceOrders'} as $value) {
                 $values[] = $this->denormalizer->denormalize($value, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\BaggageSequenceOrder', 'json', $context);
             }
             $object->setBaggageSequenceOrders($values);
         }
-        if (property_exists($data, 'code')) {
+        if (property_exists($data, 'code') && $data->{'code'} !== null) {
             $object->setCode($data->{'code'});
         }
 

@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,19 +29,19 @@ class SegmentsTypeNormalizer implements DenormalizerInterface, NormalizerInterfa
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\SegmentsType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\SegmentsType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\SegmentsType();
-        if (property_exists($data, 'segment')) {
+        if (property_exists($data, 'segment') && $data->{'segment'} !== null) {
             $object->setSegment($this->denormalizer->denormalize($data->{'segment'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\FareSegmentType', 'json', $context));
         }
-        if (property_exists($data, 'surface')) {
+        if (property_exists($data, 'surface') && $data->{'surface'} !== null) {
             $object->setSurface($this->denormalizer->denormalize($data->{'surface'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\SurfaceType', 'json', $context));
         }
 

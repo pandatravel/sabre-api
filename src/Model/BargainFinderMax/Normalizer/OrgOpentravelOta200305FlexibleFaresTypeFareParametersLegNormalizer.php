@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,46 +29,46 @@ class OrgOpentravelOta200305FlexibleFaresTypeFareParametersLegNormalizer impleme
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305FlexibleFaresTypeFareParametersLeg;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305FlexibleFaresTypeFareParametersLeg';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305FlexibleFaresTypeFareParametersLeg();
-        if (property_exists($data, 'Baggage')) {
+        if (property_exists($data, 'Baggage') && $data->{'Baggage'} !== null) {
             $object->setBaggage($this->denormalizer->denormalize($data->{'Baggage'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305BaggageType', 'json', $context));
         }
-        if (property_exists($data, 'BrandFilters')) {
+        if (property_exists($data, 'BrandFilters') && $data->{'BrandFilters'} !== null) {
             $object->setBrandFilters($this->denormalizer->denormalize($data->{'BrandFilters'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305BrandFiltersType', 'json', $context));
         }
-        if (property_exists($data, 'Cabin')) {
+        if (property_exists($data, 'Cabin') && $data->{'Cabin'} !== null) {
             $object->setCabin($this->denormalizer->denormalize($data->{'Cabin'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305FlexibleFaresTypeFareParametersLegCabin', 'json', $context));
         }
-        if (property_exists($data, 'ClassOfService')) {
+        if (property_exists($data, 'ClassOfService') && $data->{'ClassOfService'} !== null) {
             $values = [];
             foreach ($data->{'ClassOfService'} as $value) {
                 $values[] = $this->denormalizer->denormalize($value, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305ClassOfServiceElemType', 'json', $context);
             }
             $object->setClassOfService($values);
         }
-        if (property_exists($data, 'FareBasis')) {
+        if (property_exists($data, 'FareBasis') && $data->{'FareBasis'} !== null) {
             $values_1 = [];
             foreach ($data->{'FareBasis'} as $value_1) {
                 $values_1[] = $this->denormalizer->denormalize($value_1, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305FareBasisType', 'json', $context);
             }
             $object->setFareBasis($values_1);
         }
-        if (property_exists($data, 'FareType')) {
+        if (property_exists($data, 'FareType') && $data->{'FareType'} !== null) {
             $values_2 = [];
             foreach ($data->{'FareType'} as $value_2) {
                 $values_2[] = $this->denormalizer->denormalize($value_2, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305FareTypePrefType', 'json', $context);
             }
             $object->setFareType($values_2);
         }
-        if (property_exists($data, 'Num')) {
+        if (property_exists($data, 'Num') && $data->{'Num'} !== null) {
             $object->setNum($data->{'Num'});
         }
 

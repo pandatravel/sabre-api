@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,25 +29,25 @@ class OrgOpentravelOta200305AdvResTicketingTypeNormalizer implements Denormalize
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305AdvResTicketingType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305AdvResTicketingType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305AdvResTicketingType();
-        if (property_exists($data, 'AdvResInd')) {
+        if (property_exists($data, 'AdvResInd') && $data->{'AdvResInd'} !== null) {
             $object->setAdvResInd($data->{'AdvResInd'});
         }
-        if (property_exists($data, 'AdvReservation')) {
+        if (property_exists($data, 'AdvReservation') && $data->{'AdvReservation'} !== null) {
             $object->setAdvReservation($this->denormalizer->denormalize($data->{'AdvReservation'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305AdvResTicketingTypeAdvReservation', 'json', $context));
         }
-        if (property_exists($data, 'AdvTicketing')) {
+        if (property_exists($data, 'AdvTicketing') && $data->{'AdvTicketing'} !== null) {
             $object->setAdvTicketing($this->denormalizer->denormalize($data->{'AdvTicketing'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305AdvResTicketingTypeAdvTicketing', 'json', $context));
         }
-        if (property_exists($data, 'AdvTicketingInd')) {
+        if (property_exists($data, 'AdvTicketingInd') && $data->{'AdvTicketingInd'} !== null) {
             $object->setAdvTicketingInd($data->{'AdvTicketingInd'});
         }
 

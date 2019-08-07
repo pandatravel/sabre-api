@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,25 +29,25 @@ class OrgOpentravelOta200305PriceAdjustmentTypeNormalizer implements Denormalize
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305PriceAdjustmentType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305PriceAdjustmentType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305PriceAdjustmentType();
-        if (property_exists($data, 'BaseFare')) {
+        if (property_exists($data, 'BaseFare') && $data->{'BaseFare'} !== null) {
             $object->setBaseFare($this->denormalizer->denormalize($data->{'BaseFare'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305PriceAdjustmentTypeBaseFare', 'json', $context));
         }
-        if (property_exists($data, 'EquivFare')) {
+        if (property_exists($data, 'EquivFare') && $data->{'EquivFare'} !== null) {
             $object->setEquivFare($this->denormalizer->denormalize($data->{'EquivFare'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305PriceAdjustmentTypeEquivFare', 'json', $context));
         }
-        if (property_exists($data, 'TotalFare')) {
+        if (property_exists($data, 'TotalFare') && $data->{'TotalFare'} !== null) {
             $object->setTotalFare($this->denormalizer->denormalize($data->{'TotalFare'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305PriceAdjustmentTypeTotalFare', 'json', $context));
         }
-        if (property_exists($data, 'TotalTax')) {
+        if (property_exists($data, 'TotalTax') && $data->{'TotalTax'} !== null) {
             $object->setTotalTax($this->denormalizer->denormalize($data->{'TotalTax'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305PriceAdjustmentTypeTotalTax', 'json', $context));
         }
 

@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,19 +29,19 @@ class BaggageSequenceOrderNormalizer implements DenormalizerInterface, Normalize
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\BaggageSequenceOrder;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\BaggageSequenceOrder';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\BaggageSequenceOrder();
-        if (property_exists($data, 'baggageRef')) {
+        if (property_exists($data, 'baggageRef') && $data->{'baggageRef'} !== null) {
             $object->setBaggageRef($data->{'baggageRef'});
         }
-        if (property_exists($data, 'standardBag')) {
+        if (property_exists($data, 'standardBag') && $data->{'standardBag'} !== null) {
             $object->setStandardBag($data->{'standardBag'});
         }
 

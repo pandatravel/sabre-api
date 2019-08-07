@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,25 +29,25 @@ class OrgOpentravelOta200305StayRestrictionsTypeMinimumStayNormalizer implements
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305StayRestrictionsTypeMinimumStay;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305StayRestrictionsTypeMinimumStay';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305StayRestrictionsTypeMinimumStay();
-        if (property_exists($data, 'MinStay')) {
+        if (property_exists($data, 'MinStay') && $data->{'MinStay'} !== null) {
             $object->setMinStay($data->{'MinStay'});
         }
-        if (property_exists($data, 'MinStayDate')) {
+        if (property_exists($data, 'MinStayDate') && $data->{'MinStayDate'} !== null) {
             $object->setMinStayDate($data->{'MinStayDate'});
         }
-        if (property_exists($data, 'ReturnTimeOfDay')) {
+        if (property_exists($data, 'ReturnTimeOfDay') && $data->{'ReturnTimeOfDay'} !== null) {
             $object->setReturnTimeOfDay($data->{'ReturnTimeOfDay'});
         }
-        if (property_exists($data, 'StayUnit')) {
+        if (property_exists($data, 'StayUnit') && $data->{'StayUnit'} !== null) {
             $object->setStayUnit($data->{'StayUnit'});
         }
 

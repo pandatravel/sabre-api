@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,26 +29,26 @@ class AncillaryFeeGroupTypeNormalizer implements DenormalizerInterface, Normaliz
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\AncillaryFeeGroupType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\AncillaryFeeGroupType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\AncillaryFeeGroupType();
-        if (property_exists($data, 'ancillaryFees')) {
+        if (property_exists($data, 'ancillaryFees') && $data->{'ancillaryFees'} !== null) {
             $values = [];
             foreach ($data->{'ancillaryFees'} as $value) {
                 $values[] = $this->denormalizer->denormalize($value, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\AncillaryFeeType', 'json', $context);
             }
             $object->setAncillaryFees($values);
         }
-        if (property_exists($data, 'message')) {
+        if (property_exists($data, 'message') && $data->{'message'} !== null) {
             $object->setMessage($data->{'message'});
         }
-        if (property_exists($data, 'orderStandardBag')) {
+        if (property_exists($data, 'orderStandardBag') && $data->{'orderStandardBag'} !== null) {
             $object->setOrderStandardBag($this->denormalizer->denormalize($data->{'orderStandardBag'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrderStandardBag', 'json', $context));
         }
 

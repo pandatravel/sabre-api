@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,28 +29,28 @@ class MessageTypeNormalizer implements DenormalizerInterface, NormalizerInterfac
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\MessageType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\MessageType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\MessageType();
-        if (property_exists($data, 'code')) {
+        if (property_exists($data, 'code') && $data->{'code'} !== null) {
             $object->setCode($data->{'code'});
         }
-        if (property_exists($data, 'severity')) {
+        if (property_exists($data, 'severity') && $data->{'severity'} !== null) {
             $object->setSeverity($data->{'severity'});
         }
-        if (property_exists($data, 'text')) {
+        if (property_exists($data, 'text') && $data->{'text'} !== null) {
             $object->setText($data->{'text'});
         }
-        if (property_exists($data, 'type')) {
+        if (property_exists($data, 'type') && $data->{'type'} !== null) {
             $object->setType($data->{'type'});
         }
-        if (property_exists($data, 'value')) {
+        if (property_exists($data, 'value') && $data->{'value'} !== null) {
             $object->setValue($data->{'value'});
         }
 

@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,19 +29,19 @@ class OrgOpentravelOta200305RoutingDefinitionTypeNormalizer implements Denormali
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305RoutingDefinitionType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305RoutingDefinitionType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305RoutingDefinitionType();
-        if (property_exists($data, 'AddWildcards')) {
+        if (property_exists($data, 'AddWildcards') && $data->{'AddWildcards'} !== null) {
             $object->setAddWildcards($data->{'AddWildcards'});
         }
-        if (property_exists($data, 'RoutingLeg')) {
+        if (property_exists($data, 'RoutingLeg') && $data->{'RoutingLeg'} !== null) {
             $values = [];
             foreach ($data->{'RoutingLeg'} as $value) {
                 $values[] = $this->denormalizer->denormalize($value, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305RoutingLegType', 'json', $context);

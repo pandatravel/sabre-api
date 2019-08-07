@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,22 +29,22 @@ class CachedNormalizer implements DenormalizerInterface, NormalizerInterface, De
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\Cached;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\Cached';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\Cached();
-        if (property_exists($data, 'hoursSinceCreation')) {
+        if (property_exists($data, 'hoursSinceCreation') && $data->{'hoursSinceCreation'} !== null) {
             $object->setHoursSinceCreation($data->{'hoursSinceCreation'});
         }
-        if (property_exists($data, 'ref')) {
+        if (property_exists($data, 'ref') && $data->{'ref'} !== null) {
             $object->setRef($data->{'ref'});
         }
-        if (property_exists($data, 'timeToLive')) {
+        if (property_exists($data, 'timeToLive') && $data->{'timeToLive'} !== null) {
             $object->setTimeToLive($data->{'timeToLive'});
         }
 

@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,80 +29,80 @@ class BargainFinderMaxRequestOTAAirLowFareSearchRQNormalizer implements Denormal
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\BargainFinderMaxRequestOTAAirLowFareSearchRQ;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\BargainFinderMaxRequestOTAAirLowFareSearchRQ';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\BargainFinderMaxRequestOTAAirLowFareSearchRQ();
-        if (property_exists($data, 'AltLangID')) {
+        if (property_exists($data, 'AltLangID') && $data->{'AltLangID'} !== null) {
             $object->setAltLangID($data->{'AltLangID'});
         }
-        if (property_exists($data, 'AvailableFlightsOnly')) {
+        if (property_exists($data, 'AvailableFlightsOnly') && $data->{'AvailableFlightsOnly'} !== null) {
             $object->setAvailableFlightsOnly($data->{'AvailableFlightsOnly'});
         }
-        if (property_exists($data, 'DirectFlightsOnly')) {
+        if (property_exists($data, 'DirectFlightsOnly') && $data->{'DirectFlightsOnly'} !== null) {
             $object->setDirectFlightsOnly($data->{'DirectFlightsOnly'});
         }
-        if (property_exists($data, 'EchoToken')) {
+        if (property_exists($data, 'EchoToken') && $data->{'EchoToken'} !== null) {
             $object->setEchoToken($data->{'EchoToken'});
         }
-        if (property_exists($data, 'MaxResponses')) {
+        if (property_exists($data, 'MaxResponses') && $data->{'MaxResponses'} !== null) {
             $object->setMaxResponses($data->{'MaxResponses'});
         }
-        if (property_exists($data, 'OriginDestinationInformation')) {
+        if (property_exists($data, 'OriginDestinationInformation') && $data->{'OriginDestinationInformation'} !== null) {
             $values = [];
             foreach ($data->{'OriginDestinationInformation'} as $value) {
                 $values[] = $this->denormalizer->denormalize($value, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305OTAAirLowFareSearchRQOriginDestinationInformation', 'json', $context);
             }
             $object->setOriginDestinationInformation($values);
         }
-        if (property_exists($data, 'POS')) {
+        if (property_exists($data, 'POS') && $data->{'POS'} !== null) {
             $object->setPOS($this->denormalizer->denormalize($data->{'POS'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305POSType', 'json', $context));
         }
-        if (property_exists($data, 'PrimaryLangID')) {
+        if (property_exists($data, 'PrimaryLangID') && $data->{'PrimaryLangID'} !== null) {
             $object->setPrimaryLangID($data->{'PrimaryLangID'});
         }
-        if (property_exists($data, 'ResponseType')) {
+        if (property_exists($data, 'ResponseType') && $data->{'ResponseType'} !== null) {
             $object->setResponseType($data->{'ResponseType'});
         }
-        if (property_exists($data, 'ResponseVersion')) {
+        if (property_exists($data, 'ResponseVersion') && $data->{'ResponseVersion'} !== null) {
             $object->setResponseVersion($data->{'ResponseVersion'});
         }
-        if (property_exists($data, 'SeparateMessages')) {
+        if (property_exists($data, 'SeparateMessages') && $data->{'SeparateMessages'} !== null) {
             $object->setSeparateMessages($data->{'SeparateMessages'});
         }
-        if (property_exists($data, 'SequenceNmbr')) {
+        if (property_exists($data, 'SequenceNmbr') && $data->{'SequenceNmbr'} !== null) {
             $object->setSequenceNmbr($data->{'SequenceNmbr'});
         }
-        if (property_exists($data, 'TPA_Extensions')) {
+        if (property_exists($data, 'TPA_Extensions') && $data->{'TPA_Extensions'} !== null) {
             $object->setTPAExtensions($this->denormalizer->denormalize($data->{'TPA_Extensions'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensions', 'json', $context));
         }
-        if (property_exists($data, 'Target')) {
+        if (property_exists($data, 'Target') && $data->{'Target'} !== null) {
             $object->setTarget($data->{'Target'});
         }
-        if (property_exists($data, 'TimeStamp')) {
+        if (property_exists($data, 'TimeStamp') && $data->{'TimeStamp'} !== null) {
             $object->setTimeStamp($data->{'TimeStamp'});
         }
-        if (property_exists($data, 'TransactionIdentifier')) {
+        if (property_exists($data, 'TransactionIdentifier') && $data->{'TransactionIdentifier'} !== null) {
             $object->setTransactionIdentifier($data->{'TransactionIdentifier'});
         }
-        if (property_exists($data, 'TransactionStatusCode')) {
+        if (property_exists($data, 'TransactionStatusCode') && $data->{'TransactionStatusCode'} !== null) {
             $object->setTransactionStatusCode($data->{'TransactionStatusCode'});
         }
-        if (property_exists($data, 'TravelPreferences')) {
+        if (property_exists($data, 'TravelPreferences') && $data->{'TravelPreferences'} !== null) {
             $object->setTravelPreferences($this->denormalizer->denormalize($data->{'TravelPreferences'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305AirSearchPrefsType', 'json', $context));
         }
-        if (property_exists($data, 'TravelerInfoSummary')) {
+        if (property_exists($data, 'TravelerInfoSummary') && $data->{'TravelerInfoSummary'} !== null) {
             $object->setTravelerInfoSummary($this->denormalizer->denormalize($data->{'TravelerInfoSummary'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305TravelerInfoSummaryType', 'json', $context));
         }
-        if (property_exists($data, 'TruncateMessages')) {
+        if (property_exists($data, 'TruncateMessages') && $data->{'TruncateMessages'} !== null) {
             $object->setTruncateMessages($data->{'TruncateMessages'});
         }
-        if (property_exists($data, 'Version')) {
+        if (property_exists($data, 'Version') && $data->{'Version'} !== null) {
             $object->setVersion($data->{'Version'});
         }
 

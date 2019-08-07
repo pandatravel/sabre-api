@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,19 +29,19 @@ class OrgOpentravelOta200305CodeShareIndicatorNormalizer implements Denormalizer
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305CodeShareIndicator;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305CodeShareIndicator';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305CodeShareIndicator();
-        if (property_exists($data, 'ExcludeCodeshare')) {
+        if (property_exists($data, 'ExcludeCodeshare') && $data->{'ExcludeCodeshare'} !== null) {
             $object->setExcludeCodeshare($data->{'ExcludeCodeshare'});
         }
-        if (property_exists($data, 'KeepOnlines')) {
+        if (property_exists($data, 'KeepOnlines') && $data->{'KeepOnlines'} !== null) {
             $object->setKeepOnlines($data->{'KeepOnlines'});
         }
 

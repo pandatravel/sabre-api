@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,38 +29,38 @@ class FareSegmentTypeNormalizer implements DenormalizerInterface, NormalizerInte
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\FareSegmentType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\FareSegmentType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\FareSegmentType();
-        if (property_exists($data, 'extraMileageAllowance')) {
+        if (property_exists($data, 'extraMileageAllowance') && $data->{'extraMileageAllowance'} !== null) {
             $object->setExtraMileageAllowance($data->{'extraMileageAllowance'});
         }
-        if (property_exists($data, 'sideTrip')) {
+        if (property_exists($data, 'sideTrip') && $data->{'sideTrip'} !== null) {
             $object->setSideTrip($this->denormalizer->denormalize($data->{'sideTrip'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\SideTrip', 'json', $context));
         }
-        if (property_exists($data, 'stopover')) {
+        if (property_exists($data, 'stopover') && $data->{'stopover'} !== null) {
             $object->setStopover($data->{'stopover'});
         }
-        if (property_exists($data, 'stopoverCharge')) {
+        if (property_exists($data, 'stopoverCharge') && $data->{'stopoverCharge'} !== null) {
             $object->setStopoverCharge($data->{'stopoverCharge'});
         }
-        if (property_exists($data, 'stopoverChargeCurrency')) {
+        if (property_exists($data, 'stopoverChargeCurrency') && $data->{'stopoverChargeCurrency'} !== null) {
             $object->setStopoverChargeCurrency($data->{'stopoverChargeCurrency'});
         }
-        if (property_exists($data, 'surcharges')) {
+        if (property_exists($data, 'surcharges') && $data->{'surcharges'} !== null) {
             $values = [];
             foreach ($data->{'surcharges'} as $value) {
                 $values[] = $this->denormalizer->denormalize($value, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\SurchargeType', 'json', $context);
             }
             $object->setSurcharges($values);
         }
-        if (property_exists($data, 'transferCharge')) {
+        if (property_exists($data, 'transferCharge') && $data->{'transferCharge'} !== null) {
             $object->setTransferCharge($data->{'transferCharge'});
         }
 

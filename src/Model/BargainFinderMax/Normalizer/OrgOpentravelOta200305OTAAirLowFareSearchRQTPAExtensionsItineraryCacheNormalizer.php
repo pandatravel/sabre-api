@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,19 +29,19 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsItineraryCacheNorm
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsItineraryCache;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsItineraryCache';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsItineraryCache();
-        if (property_exists($data, 'PublicTimeToLive')) {
+        if (property_exists($data, 'PublicTimeToLive') && $data->{'PublicTimeToLive'} !== null) {
             $object->setPublicTimeToLive($data->{'PublicTimeToLive'});
         }
-        if (property_exists($data, 'RemovePreviousOnUpdate')) {
+        if (property_exists($data, 'RemovePreviousOnUpdate') && $data->{'RemovePreviousOnUpdate'} !== null) {
             $object->setRemovePreviousOnUpdate($data->{'RemovePreviousOnUpdate'});
         }
 

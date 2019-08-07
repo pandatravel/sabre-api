@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,31 +29,31 @@ class OrgOpentravelOta200305OriginDestinationInformationTypeOriginLocationNormal
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305OriginDestinationInformationTypeOriginLocation;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305OriginDestinationInformationTypeOriginLocation';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305OriginDestinationInformationTypeOriginLocation();
-        if (property_exists($data, 'AirportsGroup')) {
+        if (property_exists($data, 'AirportsGroup') && $data->{'AirportsGroup'} !== null) {
             $object->setAirportsGroup($data->{'AirportsGroup'});
         }
-        if (property_exists($data, 'AllAirports')) {
+        if (property_exists($data, 'AllAirports') && $data->{'AllAirports'} !== null) {
             $object->setAllAirports($data->{'AllAirports'});
         }
-        if (property_exists($data, 'CodeContext')) {
+        if (property_exists($data, 'CodeContext') && $data->{'CodeContext'} !== null) {
             $object->setCodeContext($data->{'CodeContext'});
         }
-        if (property_exists($data, 'LocationCode')) {
+        if (property_exists($data, 'LocationCode') && $data->{'LocationCode'} !== null) {
             $object->setLocationCode($data->{'LocationCode'});
         }
-        if (property_exists($data, 'LocationType')) {
+        if (property_exists($data, 'LocationType') && $data->{'LocationType'} !== null) {
             $object->setLocationType($data->{'LocationType'});
         }
-        if (property_exists($data, 'content')) {
+        if (property_exists($data, 'content') && $data->{'content'} !== null) {
             $object->setContent($data->{'content'});
         }
 

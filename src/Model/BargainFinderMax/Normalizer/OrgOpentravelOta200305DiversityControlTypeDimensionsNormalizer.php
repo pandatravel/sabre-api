@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,34 +29,34 @@ class OrgOpentravelOta200305DiversityControlTypeDimensionsNormalizer implements 
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305DiversityControlTypeDimensions;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305DiversityControlTypeDimensions';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305DiversityControlTypeDimensions();
-        if (property_exists($data, 'Carrier')) {
+        if (property_exists($data, 'Carrier') && $data->{'Carrier'} !== null) {
             $object->setCarrier($this->denormalizer->denormalize($data->{'Carrier'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305DiversityControlTypeDimensionsCarrier', 'json', $context));
         }
-        if (property_exists($data, 'InboundOutboundPairing')) {
+        if (property_exists($data, 'InboundOutboundPairing') && $data->{'InboundOutboundPairing'} !== null) {
             $object->setInboundOutboundPairing($this->denormalizer->denormalize($data->{'InboundOutboundPairing'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305DiversityControlTypeDimensionsInboundOutboundPairing', 'json', $context));
         }
-        if (property_exists($data, 'OperatingDuplicate')) {
+        if (property_exists($data, 'OperatingDuplicate') && $data->{'OperatingDuplicate'} !== null) {
             $object->setOperatingDuplicate($this->denormalizer->denormalize($data->{'OperatingDuplicate'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305DiversityControlTypeDimensionsOperatingDuplicate', 'json', $context));
         }
-        if (property_exists($data, 'PriceWeight')) {
+        if (property_exists($data, 'PriceWeight') && $data->{'PriceWeight'} !== null) {
             $object->setPriceWeight($data->{'PriceWeight'});
         }
-        if (property_exists($data, 'StopsNumber')) {
+        if (property_exists($data, 'StopsNumber') && $data->{'StopsNumber'} !== null) {
             $object->setStopsNumber($this->denormalizer->denormalize($data->{'StopsNumber'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305DiversityControlTypeDimensionsStopsNumber', 'json', $context));
         }
-        if (property_exists($data, 'TimeOfDay')) {
+        if (property_exists($data, 'TimeOfDay') && $data->{'TimeOfDay'} !== null) {
             $object->setTimeOfDay($this->denormalizer->denormalize($data->{'TimeOfDay'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305DiversityControlTypeDimensionsTimeOfDay', 'json', $context));
         }
-        if (property_exists($data, 'TravelTime')) {
+        if (property_exists($data, 'TravelTime') && $data->{'TravelTime'} !== null) {
             $object->setTravelTime($this->denormalizer->denormalize($data->{'TravelTime'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305DiversityControlTypeDimensionsTravelTime', 'json', $context));
         }
 

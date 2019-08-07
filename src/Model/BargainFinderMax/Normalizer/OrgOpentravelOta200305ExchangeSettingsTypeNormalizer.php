@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,31 +29,31 @@ class OrgOpentravelOta200305ExchangeSettingsTypeNormalizer implements Denormaliz
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305ExchangeSettingsType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305ExchangeSettingsType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305ExchangeSettingsType();
-        if (property_exists($data, 'AttachExchangeInfo')) {
+        if (property_exists($data, 'AttachExchangeInfo') && $data->{'AttachExchangeInfo'} !== null) {
             $object->setAttachExchangeInfo($data->{'AttachExchangeInfo'});
         }
-        if (property_exists($data, 'BrandedResults')) {
+        if (property_exists($data, 'BrandedResults') && $data->{'BrandedResults'} !== null) {
             $object->setBrandedResults($data->{'BrandedResults'});
         }
-        if (property_exists($data, 'MIPTimeoutThreshold')) {
+        if (property_exists($data, 'MIPTimeoutThreshold') && $data->{'MIPTimeoutThreshold'} !== null) {
             $object->setMIPTimeoutThreshold($data->{'MIPTimeoutThreshold'});
         }
-        if (property_exists($data, 'ReissueExchange')) {
+        if (property_exists($data, 'ReissueExchange') && $data->{'ReissueExchange'} !== null) {
             $object->setReissueExchange($data->{'ReissueExchange'});
         }
-        if (property_exists($data, 'RepriceCurrentItin')) {
+        if (property_exists($data, 'RepriceCurrentItin') && $data->{'RepriceCurrentItin'} !== null) {
             $object->setRepriceCurrentItin($data->{'RepriceCurrentItin'});
         }
-        if (property_exists($data, 'RequestType')) {
+        if (property_exists($data, 'RequestType') && $data->{'RequestType'} !== null) {
             $object->setRequestType($data->{'RequestType'});
         }
 

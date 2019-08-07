@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,26 +29,26 @@ class OrgOpentravelOta200305AirSearchPrefsTypeAncillaryFeesNormalizer implements
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305AirSearchPrefsTypeAncillaryFees;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305AirSearchPrefsTypeAncillaryFees';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305AirSearchPrefsTypeAncillaryFees();
-        if (property_exists($data, 'AncillaryFeeGroup')) {
+        if (property_exists($data, 'AncillaryFeeGroup') && $data->{'AncillaryFeeGroup'} !== null) {
             $values = [];
             foreach ($data->{'AncillaryFeeGroup'} as $value) {
                 $values[] = $this->denormalizer->denormalize($value, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305AirSearchPrefsTypeAncillaryFeesAncillaryFeeGroup', 'json', $context);
             }
             $object->setAncillaryFeeGroup($values);
         }
-        if (property_exists($data, 'Enable')) {
+        if (property_exists($data, 'Enable') && $data->{'Enable'} !== null) {
             $object->setEnable($data->{'Enable'});
         }
-        if (property_exists($data, 'Summary')) {
+        if (property_exists($data, 'Summary') && $data->{'Summary'} !== null) {
             $object->setSummary($data->{'Summary'});
         }
 

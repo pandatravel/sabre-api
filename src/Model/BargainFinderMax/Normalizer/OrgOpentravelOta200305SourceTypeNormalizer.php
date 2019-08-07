@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,100 +29,100 @@ class OrgOpentravelOta200305SourceTypeNormalizer implements DenormalizerInterfac
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305SourceType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305SourceType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305SourceType();
-        if (property_exists($data, 'AbacusUser')) {
+        if (property_exists($data, 'AbacusUser') && $data->{'AbacusUser'} !== null) {
             $object->setAbacusUser($data->{'AbacusUser'});
         }
-        if (property_exists($data, 'AccountingCode')) {
+        if (property_exists($data, 'AccountingCode') && $data->{'AccountingCode'} !== null) {
             $object->setAccountingCode($data->{'AccountingCode'});
         }
-        if (property_exists($data, 'AgentCity')) {
+        if (property_exists($data, 'AgentCity') && $data->{'AgentCity'} !== null) {
             $object->setAgentCity($data->{'AgentCity'});
         }
-        if (property_exists($data, 'AgentDepartmentCode')) {
+        if (property_exists($data, 'AgentDepartmentCode') && $data->{'AgentDepartmentCode'} !== null) {
             $object->setAgentDepartmentCode($data->{'AgentDepartmentCode'});
         }
-        if (property_exists($data, 'AgentDuty')) {
+        if (property_exists($data, 'AgentDuty') && $data->{'AgentDuty'} !== null) {
             $object->setAgentDuty($data->{'AgentDuty'});
         }
-        if (property_exists($data, 'AgentDutyCode')) {
+        if (property_exists($data, 'AgentDutyCode') && $data->{'AgentDutyCode'} !== null) {
             $object->setAgentDutyCode($data->{'AgentDutyCode'});
         }
-        if (property_exists($data, 'AgentFunction')) {
+        if (property_exists($data, 'AgentFunction') && $data->{'AgentFunction'} !== null) {
             $object->setAgentFunction($data->{'AgentFunction'});
         }
-        if (property_exists($data, 'AgentIATA')) {
+        if (property_exists($data, 'AgentIATA') && $data->{'AgentIATA'} !== null) {
             $object->setAgentIATA($data->{'AgentIATA'});
         }
-        if (property_exists($data, 'AgentSine')) {
+        if (property_exists($data, 'AgentSine') && $data->{'AgentSine'} !== null) {
             $object->setAgentSine($data->{'AgentSine'});
         }
-        if (property_exists($data, 'AirlineChannelCode')) {
+        if (property_exists($data, 'AirlineChannelCode') && $data->{'AirlineChannelCode'} !== null) {
             $object->setAirlineChannelCode($data->{'AirlineChannelCode'});
         }
-        if (property_exists($data, 'AirlineVendorID')) {
+        if (property_exists($data, 'AirlineVendorID') && $data->{'AirlineVendorID'} !== null) {
             $object->setAirlineVendorID($data->{'AirlineVendorID'});
         }
-        if (property_exists($data, 'AirportCode')) {
+        if (property_exists($data, 'AirportCode') && $data->{'AirportCode'} !== null) {
             $object->setAirportCode($data->{'AirportCode'});
         }
-        if (property_exists($data, 'BookingChannel')) {
+        if (property_exists($data, 'BookingChannel') && $data->{'BookingChannel'} !== null) {
             $object->setBookingChannel($this->denormalizer->denormalize($data->{'BookingChannel'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305SourceBookingChannelType', 'json', $context));
         }
-        if (property_exists($data, 'Carrier')) {
+        if (property_exists($data, 'Carrier') && $data->{'Carrier'} !== null) {
             $object->setCarrier($data->{'Carrier'});
         }
-        if (property_exists($data, 'DefaultTicketingCarrier')) {
+        if (property_exists($data, 'DefaultTicketingCarrier') && $data->{'DefaultTicketingCarrier'} !== null) {
             $object->setDefaultTicketingCarrier($data->{'DefaultTicketingCarrier'});
         }
-        if (property_exists($data, 'ERSP_UserID')) {
+        if (property_exists($data, 'ERSP_UserID') && $data->{'ERSP_UserID'} !== null) {
             $object->setERSPUserID($data->{'ERSP_UserID'});
         }
-        if (property_exists($data, 'FirstDepartPoint')) {
+        if (property_exists($data, 'FirstDepartPoint') && $data->{'FirstDepartPoint'} !== null) {
             $object->setFirstDepartPoint($data->{'FirstDepartPoint'});
         }
-        if (property_exists($data, 'HomeAgencyIATA')) {
+        if (property_exists($data, 'HomeAgencyIATA') && $data->{'HomeAgencyIATA'} !== null) {
             $object->setHomeAgencyIATA($data->{'HomeAgencyIATA'});
         }
-        if (property_exists($data, 'HomePCC')) {
+        if (property_exists($data, 'HomePCC') && $data->{'HomePCC'} !== null) {
             $object->setHomePCC($data->{'HomePCC'});
         }
-        if (property_exists($data, 'ISOCountry')) {
+        if (property_exists($data, 'ISOCountry') && $data->{'ISOCountry'} !== null) {
             $object->setISOCountry($data->{'ISOCountry'});
         }
-        if (property_exists($data, 'ISOCurrency')) {
+        if (property_exists($data, 'ISOCurrency') && $data->{'ISOCurrency'} !== null) {
             $object->setISOCurrency($data->{'ISOCurrency'});
         }
-        if (property_exists($data, 'MainTravelAgencyPCC')) {
+        if (property_exists($data, 'MainTravelAgencyPCC') && $data->{'MainTravelAgencyPCC'} !== null) {
             $object->setMainTravelAgencyPCC($data->{'MainTravelAgencyPCC'});
         }
-        if (property_exists($data, 'OfficeCode')) {
+        if (property_exists($data, 'OfficeCode') && $data->{'OfficeCode'} !== null) {
             $object->setOfficeCode($data->{'OfficeCode'});
         }
-        if (property_exists($data, 'PersonalCityCode')) {
+        if (property_exists($data, 'PersonalCityCode') && $data->{'PersonalCityCode'} !== null) {
             $object->setPersonalCityCode($data->{'PersonalCityCode'});
         }
-        if (property_exists($data, 'Position')) {
+        if (property_exists($data, 'Position') && $data->{'Position'} !== null) {
             $object->setPosition($this->denormalizer->denormalize($data->{'Position'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305PositionType', 'json', $context));
         }
-        if (property_exists($data, 'PseudoCityCode')) {
+        if (property_exists($data, 'PseudoCityCode') && $data->{'PseudoCityCode'} !== null) {
             $object->setPseudoCityCode($data->{'PseudoCityCode'});
         }
-        if (property_exists($data, 'RequestorID')) {
+        if (property_exists($data, 'RequestorID') && $data->{'RequestorID'} !== null) {
             $object->setRequestorID($this->denormalizer->denormalize($data->{'RequestorID'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305UniqueIDType', 'json', $context));
         }
-        if (property_exists($data, 'TravelAgencyIATA')) {
+        if (property_exists($data, 'TravelAgencyIATA') && $data->{'TravelAgencyIATA'} !== null) {
             $object->setTravelAgencyIATA($data->{'TravelAgencyIATA'});
         }
-        if (property_exists($data, 'VendorCRSCode')) {
+        if (property_exists($data, 'VendorCRSCode') && $data->{'VendorCRSCode'} !== null) {
             $object->setVendorCRSCode($data->{'VendorCRSCode'});
         }
 

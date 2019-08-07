@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,25 +29,25 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPassengerSta
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPassengerStatus;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPassengerStatus';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPassengerStatus();
-        if (property_exists($data, 'CityCode')) {
+        if (property_exists($data, 'CityCode') && $data->{'CityCode'} !== null) {
             $object->setCityCode($data->{'CityCode'});
         }
-        if (property_exists($data, 'CountryCode')) {
+        if (property_exists($data, 'CountryCode') && $data->{'CountryCode'} !== null) {
             $object->setCountryCode($data->{'CountryCode'});
         }
-        if (property_exists($data, 'StateCode')) {
+        if (property_exists($data, 'StateCode') && $data->{'StateCode'} !== null) {
             $object->setStateCode($data->{'StateCode'});
         }
-        if (property_exists($data, 'Type')) {
+        if (property_exists($data, 'Type') && $data->{'Type'} !== null) {
             $object->setType($data->{'Type'});
         }
 

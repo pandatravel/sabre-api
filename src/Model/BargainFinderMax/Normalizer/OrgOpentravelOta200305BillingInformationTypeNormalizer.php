@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,37 +29,37 @@ class OrgOpentravelOta200305BillingInformationTypeNormalizer implements Denormal
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305BillingInformationType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305BillingInformationType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305BillingInformationType();
-        if (property_exists($data, 'AAACity')) {
+        if (property_exists($data, 'AAACity') && $data->{'AAACity'} !== null) {
             $object->setAAACity($data->{'AAACity'});
         }
-        if (property_exists($data, 'ActionCode')) {
+        if (property_exists($data, 'ActionCode') && $data->{'ActionCode'} !== null) {
             $object->setActionCode($data->{'ActionCode'});
         }
-        if (property_exists($data, 'AgentSineIn')) {
+        if (property_exists($data, 'AgentSineIn') && $data->{'AgentSineIn'} !== null) {
             $object->setAgentSineIn($data->{'AgentSineIn'});
         }
-        if (property_exists($data, 'PartitionID')) {
+        if (property_exists($data, 'PartitionID') && $data->{'PartitionID'} !== null) {
             $object->setPartitionID($data->{'PartitionID'});
         }
-        if (property_exists($data, 'ServiceName')) {
+        if (property_exists($data, 'ServiceName') && $data->{'ServiceName'} !== null) {
             $object->setServiceName($data->{'ServiceName'});
         }
-        if (property_exists($data, 'UserBranch')) {
+        if (property_exists($data, 'UserBranch') && $data->{'UserBranch'} !== null) {
             $object->setUserBranch($data->{'UserBranch'});
         }
-        if (property_exists($data, 'UserSetAddress')) {
+        if (property_exists($data, 'UserSetAddress') && $data->{'UserSetAddress'} !== null) {
             $object->setUserSetAddress($data->{'UserSetAddress'});
         }
-        if (property_exists($data, 'UserStation')) {
+        if (property_exists($data, 'UserStation') && $data->{'UserStation'} !== null) {
             $object->setUserStation($data->{'UserStation'});
         }
 

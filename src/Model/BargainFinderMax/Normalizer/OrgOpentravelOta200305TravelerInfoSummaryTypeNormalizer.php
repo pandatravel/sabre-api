@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,36 +29,36 @@ class OrgOpentravelOta200305TravelerInfoSummaryTypeNormalizer implements Denorma
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305TravelerInfoSummaryType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305TravelerInfoSummaryType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305TravelerInfoSummaryType();
-        if (property_exists($data, 'AirTravelerAvail')) {
+        if (property_exists($data, 'AirTravelerAvail') && $data->{'AirTravelerAvail'} !== null) {
             $values = [];
             foreach ($data->{'AirTravelerAvail'} as $value) {
                 $values[] = $this->denormalizer->denormalize($value, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305TravelerInformationType', 'json', $context);
             }
             $object->setAirTravelerAvail($values);
         }
-        if (property_exists($data, 'PriceRequestInformation')) {
+        if (property_exists($data, 'PriceRequestInformation') && $data->{'PriceRequestInformation'} !== null) {
             $object->setPriceRequestInformation($this->denormalizer->denormalize($data->{'PriceRequestInformation'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305PriceRequestInformationType', 'json', $context));
         }
-        if (property_exists($data, 'SeatsRequested')) {
+        if (property_exists($data, 'SeatsRequested') && $data->{'SeatsRequested'} !== null) {
             $values_1 = [];
             foreach ($data->{'SeatsRequested'} as $value_1) {
                 $values_1[] = $value_1;
             }
             $object->setSeatsRequested($values_1);
         }
-        if (property_exists($data, 'SpecificPTC_Indicator')) {
+        if (property_exists($data, 'SpecificPTC_Indicator') && $data->{'SpecificPTC_Indicator'} !== null) {
             $object->setSpecificPTCIndicator($data->{'SpecificPTC_Indicator'});
         }
-        if (property_exists($data, 'TPA_Extensions')) {
+        if (property_exists($data, 'TPA_Extensions') && $data->{'TPA_Extensions'} !== null) {
             $object->setTPAExtensions($this->denormalizer->denormalize($data->{'TPA_Extensions'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305TravelerInfoSummaryTPAExtensionsType', 'json', $context));
         }
 

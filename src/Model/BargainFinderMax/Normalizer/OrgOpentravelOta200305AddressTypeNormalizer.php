@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,53 +29,53 @@ class OrgOpentravelOta200305AddressTypeNormalizer implements DenormalizerInterfa
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305AddressType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305AddressType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305AddressType();
-        if (property_exists($data, 'AddressLine')) {
+        if (property_exists($data, 'AddressLine') && $data->{'AddressLine'} !== null) {
             $values = [];
             foreach ($data->{'AddressLine'} as $value) {
                 $values[] = $value;
             }
             $object->setAddressLine($values);
         }
-        if (property_exists($data, 'BldgRoom')) {
+        if (property_exists($data, 'BldgRoom') && $data->{'BldgRoom'} !== null) {
             $object->setBldgRoom($data->{'BldgRoom'});
         }
-        if (property_exists($data, 'CityName')) {
+        if (property_exists($data, 'CityName') && $data->{'CityName'} !== null) {
             $object->setCityName($data->{'CityName'});
         }
-        if (property_exists($data, 'CountryName')) {
+        if (property_exists($data, 'CountryName') && $data->{'CountryName'} !== null) {
             $object->setCountryName($this->denormalizer->denormalize($data->{'CountryName'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305CountryNameType', 'json', $context));
         }
-        if (property_exists($data, 'County')) {
+        if (property_exists($data, 'County') && $data->{'County'} !== null) {
             $object->setCounty($data->{'County'});
         }
-        if (property_exists($data, 'FormattedInd')) {
+        if (property_exists($data, 'FormattedInd') && $data->{'FormattedInd'} !== null) {
             $object->setFormattedInd($data->{'FormattedInd'});
         }
-        if (property_exists($data, 'PostalCode')) {
+        if (property_exists($data, 'PostalCode') && $data->{'PostalCode'} !== null) {
             $object->setPostalCode($data->{'PostalCode'});
         }
-        if (property_exists($data, 'ShareMarketInd')) {
+        if (property_exists($data, 'ShareMarketInd') && $data->{'ShareMarketInd'} !== null) {
             $object->setShareMarketInd($data->{'ShareMarketInd'});
         }
-        if (property_exists($data, 'ShareSynchInd')) {
+        if (property_exists($data, 'ShareSynchInd') && $data->{'ShareSynchInd'} !== null) {
             $object->setShareSynchInd($data->{'ShareSynchInd'});
         }
-        if (property_exists($data, 'StateProv')) {
+        if (property_exists($data, 'StateProv') && $data->{'StateProv'} !== null) {
             $object->setStateProv($this->denormalizer->denormalize($data->{'StateProv'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305StateProvType', 'json', $context));
         }
-        if (property_exists($data, 'StreetNmbr')) {
+        if (property_exists($data, 'StreetNmbr') && $data->{'StreetNmbr'} !== null) {
             $object->setStreetNmbr($this->denormalizer->denormalize($data->{'StreetNmbr'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305StreetNmbrType', 'json', $context));
         }
-        if (property_exists($data, 'Type')) {
+        if (property_exists($data, 'Type') && $data->{'Type'} !== null) {
             $object->setType($data->{'Type'});
         }
 

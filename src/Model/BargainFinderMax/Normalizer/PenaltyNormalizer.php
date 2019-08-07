@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,44 +29,44 @@ class PenaltyNormalizer implements DenormalizerInterface, NormalizerInterface, D
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\Penalty;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\Penalty';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\Penalty();
-        if (property_exists($data, 'amount')) {
+        if (property_exists($data, 'amount') && $data->{'amount'} !== null) {
             $object->setAmount($data->{'amount'});
         }
-        if (property_exists($data, 'applicability')) {
+        if (property_exists($data, 'applicability') && $data->{'applicability'} !== null) {
             $object->setApplicability($data->{'applicability'});
         }
-        if (property_exists($data, 'cat16Info')) {
+        if (property_exists($data, 'cat16Info') && $data->{'cat16Info'} !== null) {
             $object->setCat16Info($data->{'cat16Info'});
         }
-        if (property_exists($data, 'cat16TextOnly')) {
+        if (property_exists($data, 'cat16TextOnly') && $data->{'cat16TextOnly'} !== null) {
             $values = [];
             foreach ($data->{'cat16TextOnly'} as $value) {
                 $values[] = $this->denormalizer->denormalize($value, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\Cat16TextOnly', 'json', $context);
             }
             $object->setCat16TextOnly($values);
         }
-        if (property_exists($data, 'changeable')) {
+        if (property_exists($data, 'changeable') && $data->{'changeable'} !== null) {
             $object->setChangeable($data->{'changeable'});
         }
-        if (property_exists($data, 'conditionsApply')) {
+        if (property_exists($data, 'conditionsApply') && $data->{'conditionsApply'} !== null) {
             $object->setConditionsApply($data->{'conditionsApply'});
         }
-        if (property_exists($data, 'currency')) {
+        if (property_exists($data, 'currency') && $data->{'currency'} !== null) {
             $object->setCurrency($data->{'currency'});
         }
-        if (property_exists($data, 'refundable')) {
+        if (property_exists($data, 'refundable') && $data->{'refundable'} !== null) {
             $object->setRefundable($data->{'refundable'});
         }
-        if (property_exists($data, 'type')) {
+        if (property_exists($data, 'type') && $data->{'type'} !== null) {
             $object->setType($data->{'type'});
         }
 

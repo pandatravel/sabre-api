@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,28 +29,28 @@ class OrgOpentravelOta200305StayRestrictionsTypeMaximumStayNormalizer implements
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305StayRestrictionsTypeMaximumStay;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305StayRestrictionsTypeMaximumStay';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305StayRestrictionsTypeMaximumStay();
-        if (property_exists($data, 'MaxStay')) {
+        if (property_exists($data, 'MaxStay') && $data->{'MaxStay'} !== null) {
             $object->setMaxStay($data->{'MaxStay'});
         }
-        if (property_exists($data, 'MaxStayDate')) {
+        if (property_exists($data, 'MaxStayDate') && $data->{'MaxStayDate'} !== null) {
             $object->setMaxStayDate($data->{'MaxStayDate'});
         }
-        if (property_exists($data, 'ReturnTimeOfDay')) {
+        if (property_exists($data, 'ReturnTimeOfDay') && $data->{'ReturnTimeOfDay'} !== null) {
             $object->setReturnTimeOfDay($data->{'ReturnTimeOfDay'});
         }
-        if (property_exists($data, 'ReturnType')) {
+        if (property_exists($data, 'ReturnType') && $data->{'ReturnType'} !== null) {
             $object->setReturnType($data->{'ReturnType'});
         }
-        if (property_exists($data, 'StayUnit')) {
+        if (property_exists($data, 'StayUnit') && $data->{'StayUnit'} !== null) {
             $object->setStayUnit($data->{'StayUnit'});
         }
 

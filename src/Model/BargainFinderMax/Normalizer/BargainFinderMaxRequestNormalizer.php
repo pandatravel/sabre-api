@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,16 +29,16 @@ class BargainFinderMaxRequestNormalizer implements DenormalizerInterface, Normal
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\BargainFinderMaxRequest;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\BargainFinderMaxRequest';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\BargainFinderMaxRequest();
-        if (property_exists($data, 'OTA_AirLowFareSearchRQ')) {
+        if (property_exists($data, 'OTA_AirLowFareSearchRQ') && $data->{'OTA_AirLowFareSearchRQ'} !== null) {
             $object->setOTAAirLowFareSearchRQ($this->denormalizer->denormalize($data->{'OTA_AirLowFareSearchRQ'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\BargainFinderMaxRequestOTAAirLowFareSearchRQ', 'json', $context));
         }
 

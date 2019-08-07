@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,49 +29,49 @@ class TaxTypeNormalizer implements DenormalizerInterface, NormalizerInterface, D
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\TaxType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\TaxType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\TaxType();
-        if (property_exists($data, 'amount')) {
+        if (property_exists($data, 'amount') && $data->{'amount'} !== null) {
             $object->setAmount($data->{'amount'});
         }
-        if (property_exists($data, 'carrier')) {
+        if (property_exists($data, 'carrier') && $data->{'carrier'} !== null) {
             $object->setCarrier($data->{'carrier'});
         }
-        if (property_exists($data, 'code')) {
+        if (property_exists($data, 'code') && $data->{'code'} !== null) {
             $object->setCode($data->{'code'});
         }
-        if (property_exists($data, 'country')) {
+        if (property_exists($data, 'country') && $data->{'country'} !== null) {
             $object->setCountry($data->{'country'});
         }
-        if (property_exists($data, 'currency')) {
+        if (property_exists($data, 'currency') && $data->{'currency'} !== null) {
             $object->setCurrency($data->{'currency'});
         }
-        if (property_exists($data, 'description')) {
+        if (property_exists($data, 'description') && $data->{'description'} !== null) {
             $object->setDescription($data->{'description'});
         }
-        if (property_exists($data, 'id')) {
+        if (property_exists($data, 'id') && $data->{'id'} !== null) {
             $object->setId($data->{'id'});
         }
-        if (property_exists($data, 'publishedAmount')) {
+        if (property_exists($data, 'publishedAmount') && $data->{'publishedAmount'} !== null) {
             $object->setPublishedAmount($data->{'publishedAmount'});
         }
-        if (property_exists($data, 'publishedCurrency')) {
+        if (property_exists($data, 'publishedCurrency') && $data->{'publishedCurrency'} !== null) {
             $object->setPublishedCurrency($data->{'publishedCurrency'});
         }
-        if (property_exists($data, 'station')) {
+        if (property_exists($data, 'station') && $data->{'station'} !== null) {
             $object->setStation($data->{'station'});
         }
-        if (property_exists($data, 'taxReissue')) {
+        if (property_exists($data, 'taxReissue') && $data->{'taxReissue'} !== null) {
             $object->setTaxReissue($this->denormalizer->denormalize($data->{'taxReissue'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\TaxReissueType', 'json', $context));
         }
-        if (property_exists($data, 'taxRestrictions')) {
+        if (property_exists($data, 'taxRestrictions') && $data->{'taxRestrictions'} !== null) {
             $object->setTaxRestrictions($this->denormalizer->denormalize($data->{'taxRestrictions'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\TaxRestrictionsType', 'json', $context));
         }
 

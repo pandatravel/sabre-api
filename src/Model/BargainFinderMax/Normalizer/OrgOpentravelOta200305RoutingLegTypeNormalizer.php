@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,37 +29,37 @@ class OrgOpentravelOta200305RoutingLegTypeNormalizer implements DenormalizerInte
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305RoutingLegType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305RoutingLegType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305RoutingLegType();
-        if (property_exists($data, 'ConnectPoint')) {
+        if (property_exists($data, 'ConnectPoint') && $data->{'ConnectPoint'} !== null) {
             $values = [];
             foreach ($data->{'ConnectPoint'} as $value) {
                 $values[] = $value;
             }
             $object->setConnectPoint($values);
         }
-        if (property_exists($data, 'InboundCarrier')) {
+        if (property_exists($data, 'InboundCarrier') && $data->{'InboundCarrier'} !== null) {
             $values_1 = [];
             foreach ($data->{'InboundCarrier'} as $value_1) {
                 $values_1[] = $value_1;
             }
             $object->setInboundCarrier($values_1);
         }
-        if (property_exists($data, 'InboundOutboundCarrier')) {
+        if (property_exists($data, 'InboundOutboundCarrier') && $data->{'InboundOutboundCarrier'} !== null) {
             $values_2 = [];
             foreach ($data->{'InboundOutboundCarrier'} as $value_2) {
                 $values_2[] = $value_2;
             }
             $object->setInboundOutboundCarrier($values_2);
         }
-        if (property_exists($data, 'OutboundCarrier')) {
+        if (property_exists($data, 'OutboundCarrier') && $data->{'OutboundCarrier'} !== null) {
             $values_3 = [];
             foreach ($data->{'OutboundCarrier'} as $value_3) {
                 $values_3[] = $value_3;

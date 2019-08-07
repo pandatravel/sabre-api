@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,76 +29,76 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsNormalizer impleme
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensions;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensions';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensions();
-        if (property_exists($data, 'AlternateAirportCities')) {
+        if (property_exists($data, 'AlternateAirportCities') && $data->{'AlternateAirportCities'} !== null) {
             $values = [];
             foreach ($data->{'AlternateAirportCities'} as $value) {
                 $values[] = $this->denormalizer->denormalize($value, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsAlternateAirportCities', 'json', $context);
             }
             $object->setAlternateAirportCities($values);
         }
-        if (property_exists($data, 'AlternateAirportMileage')) {
+        if (property_exists($data, 'AlternateAirportMileage') && $data->{'AlternateAirportMileage'} !== null) {
             $object->setAlternateAirportMileage($this->denormalizer->denormalize($data->{'AlternateAirportMileage'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsAlternateAirportMileage', 'json', $context));
         }
-        if (property_exists($data, 'AlternateDatesProcessing')) {
+        if (property_exists($data, 'AlternateDatesProcessing') && $data->{'AlternateDatesProcessing'} !== null) {
             $object->setAlternateDatesProcessing($this->denormalizer->denormalize($data->{'AlternateDatesProcessing'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsAlternateDatesProcessing', 'json', $context));
         }
-        if (property_exists($data, 'AlternatePCC')) {
+        if (property_exists($data, 'AlternatePCC') && $data->{'AlternatePCC'} !== null) {
             $values_1 = [];
             foreach ($data->{'AlternatePCC'} as $value_1) {
                 $values_1[] = $this->denormalizer->denormalize($value_1, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305AlternatePCCType', 'json', $context);
             }
             $object->setAlternatePCC($values_1);
         }
-        if (property_exists($data, 'AwardShopping')) {
+        if (property_exists($data, 'AwardShopping') && $data->{'AwardShopping'} !== null) {
             $object->setAwardShopping($this->denormalizer->denormalize($data->{'AwardShopping'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305AwardShoppingType', 'json', $context));
         }
-        if (property_exists($data, 'Billing')) {
+        if (property_exists($data, 'Billing') && $data->{'Billing'} !== null) {
             $object->setBilling($this->denormalizer->denormalize($data->{'Billing'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305BillingInformationType', 'json', $context));
         }
-        if (property_exists($data, 'DiversityControl')) {
+        if (property_exists($data, 'DiversityControl') && $data->{'DiversityControl'} !== null) {
             $object->setDiversityControl($this->denormalizer->denormalize($data->{'DiversityControl'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305DiversityControlType', 'json', $context));
         }
-        if (property_exists($data, 'Exchange')) {
+        if (property_exists($data, 'Exchange') && $data->{'Exchange'} !== null) {
             $values_2 = [];
             foreach ($data->{'Exchange'} as $value_2) {
                 $values_2[] = $this->denormalizer->denormalize($value_2, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305ExchangeType', 'json', $context);
             }
             $object->setExchange($values_2);
         }
-        if (property_exists($data, 'ExchangeSettings')) {
+        if (property_exists($data, 'ExchangeSettings') && $data->{'ExchangeSettings'} !== null) {
             $object->setExchangeSettings($this->denormalizer->denormalize($data->{'ExchangeSettings'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305ExchangeSettingsType', 'json', $context));
         }
-        if (property_exists($data, 'IntelliSellTransaction')) {
+        if (property_exists($data, 'IntelliSellTransaction') && $data->{'IntelliSellTransaction'} !== null) {
             $object->setIntelliSellTransaction($this->denormalizer->denormalize($data->{'IntelliSellTransaction'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305TransactionType', 'json', $context));
         }
-        if (property_exists($data, 'ItineraryCache')) {
+        if (property_exists($data, 'ItineraryCache') && $data->{'ItineraryCache'} !== null) {
             $object->setItineraryCache($this->denormalizer->denormalize($data->{'ItineraryCache'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsItineraryCache', 'json', $context));
         }
-        if (property_exists($data, 'MessagingDetails')) {
+        if (property_exists($data, 'MessagingDetails') && $data->{'MessagingDetails'} !== null) {
             $object->setMessagingDetails($this->denormalizer->denormalize($data->{'MessagingDetails'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsMessagingDetails', 'json', $context));
         }
-        if (property_exists($data, 'MultiTicket')) {
+        if (property_exists($data, 'MultiTicket') && $data->{'MultiTicket'} !== null) {
             $object->setMultiTicket($this->denormalizer->denormalize($data->{'MultiTicket'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsMultiTicket', 'json', $context));
         }
-        if (property_exists($data, 'Partitions')) {
+        if (property_exists($data, 'Partitions') && $data->{'Partitions'} !== null) {
             $object->setPartitions($this->denormalizer->denormalize($data->{'Partitions'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsPartitions', 'json', $context));
         }
-        if (property_exists($data, 'PointsRedemption')) {
+        if (property_exists($data, 'PointsRedemption') && $data->{'PointsRedemption'} !== null) {
             $object->setPointsRedemption($this->denormalizer->denormalize($data->{'PointsRedemption'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsPointsRedemption', 'json', $context));
         }
-        if (property_exists($data, 'ReservationData')) {
+        if (property_exists($data, 'ReservationData') && $data->{'ReservationData'} !== null) {
             $object->setReservationData($this->denormalizer->denormalize($data->{'ReservationData'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsReservationData', 'json', $context));
         }
-        if (property_exists($data, 'SplitTaxes')) {
+        if (property_exists($data, 'SplitTaxes') && $data->{'SplitTaxes'} !== null) {
             $object->setSplitTaxes($this->denormalizer->denormalize($data->{'SplitTaxes'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsSplitTaxes', 'json', $context));
         }
 

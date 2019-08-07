@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,31 +29,31 @@ class BaggageAllowanceTypeNormalizer implements DenormalizerInterface, Normalize
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\BaggageAllowanceType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\BaggageAllowanceType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\BaggageAllowanceType();
-        if (property_exists($data, 'description1')) {
+        if (property_exists($data, 'description1') && $data->{'description1'} !== null) {
             $object->setDescription1($data->{'description1'});
         }
-        if (property_exists($data, 'description2')) {
+        if (property_exists($data, 'description2') && $data->{'description2'} !== null) {
             $object->setDescription2($data->{'description2'});
         }
-        if (property_exists($data, 'id')) {
+        if (property_exists($data, 'id') && $data->{'id'} !== null) {
             $object->setId($data->{'id'});
         }
-        if (property_exists($data, 'pieceCount')) {
+        if (property_exists($data, 'pieceCount') && $data->{'pieceCount'} !== null) {
             $object->setPieceCount($data->{'pieceCount'});
         }
-        if (property_exists($data, 'unit')) {
+        if (property_exists($data, 'unit') && $data->{'unit'} !== null) {
             $object->setUnit($data->{'unit'});
         }
-        if (property_exists($data, 'weight')) {
+        if (property_exists($data, 'weight') && $data->{'weight'} !== null) {
             $object->setWeight($data->{'weight'});
         }
 

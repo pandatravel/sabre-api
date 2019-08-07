@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,19 +29,19 @@ class PassengerNotAvailableInfoTypeNormalizer implements DenormalizerInterface, 
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\PassengerNotAvailableInfoType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\PassengerNotAvailableInfoType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\PassengerNotAvailableInfoType();
-        if (property_exists($data, 'passengerType')) {
+        if (property_exists($data, 'passengerType') && $data->{'passengerType'} !== null) {
             $object->setPassengerType($data->{'passengerType'});
         }
-        if (property_exists($data, 'reason')) {
+        if (property_exists($data, 'reason') && $data->{'reason'} !== null) {
             $object->setReason($data->{'reason'});
         }
 

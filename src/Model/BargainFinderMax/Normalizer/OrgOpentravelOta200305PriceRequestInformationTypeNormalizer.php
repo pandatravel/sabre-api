@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,60 +29,60 @@ class OrgOpentravelOta200305PriceRequestInformationTypeNormalizer implements Den
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305PriceRequestInformationType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305PriceRequestInformationType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305PriceRequestInformationType();
-        if (property_exists($data, 'AccountCode')) {
+        if (property_exists($data, 'AccountCode') && $data->{'AccountCode'} !== null) {
             $values = [];
             foreach ($data->{'AccountCode'} as $value) {
                 $values[] = $this->denormalizer->denormalize($value, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305PriceRequestInformationTypeAccountCode', 'json', $context);
             }
             $object->setAccountCode($values);
         }
-        if (property_exists($data, 'BypassAdvancePurchase')) {
+        if (property_exists($data, 'BypassAdvancePurchase') && $data->{'BypassAdvancePurchase'} !== null) {
             $object->setBypassAdvancePurchase($data->{'BypassAdvancePurchase'});
         }
-        if (property_exists($data, 'CurrencyCode')) {
+        if (property_exists($data, 'CurrencyCode') && $data->{'CurrencyCode'} !== null) {
             $object->setCurrencyCode($data->{'CurrencyCode'});
         }
-        if (property_exists($data, 'FareQualifier')) {
+        if (property_exists($data, 'FareQualifier') && $data->{'FareQualifier'} !== null) {
             $object->setFareQualifier($data->{'FareQualifier'});
         }
-        if (property_exists($data, 'NegotiatedFareCode')) {
+        if (property_exists($data, 'NegotiatedFareCode') && $data->{'NegotiatedFareCode'} !== null) {
             $values_1 = [];
             foreach ($data->{'NegotiatedFareCode'} as $value_1) {
                 $values_1[] = $this->denormalizer->denormalize($value_1, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305PriceRequestInformationTypeNegotiatedFareCode', 'json', $context);
             }
             $object->setNegotiatedFareCode($values_1);
         }
-        if (property_exists($data, 'NegotiatedFaresOnly')) {
+        if (property_exists($data, 'NegotiatedFaresOnly') && $data->{'NegotiatedFaresOnly'} !== null) {
             $object->setNegotiatedFaresOnly($data->{'NegotiatedFaresOnly'});
         }
-        if (property_exists($data, 'NetFaresUsed')) {
+        if (property_exists($data, 'NetFaresUsed') && $data->{'NetFaresUsed'} !== null) {
             $object->setNetFaresUsed($data->{'NetFaresUsed'});
         }
-        if (property_exists($data, 'PricingSource')) {
+        if (property_exists($data, 'PricingSource') && $data->{'PricingSource'} !== null) {
             $object->setPricingSource($data->{'PricingSource'});
         }
-        if (property_exists($data, 'ProcessThruFaresOnly')) {
+        if (property_exists($data, 'ProcessThruFaresOnly') && $data->{'ProcessThruFaresOnly'} !== null) {
             $object->setProcessThruFaresOnly($data->{'ProcessThruFaresOnly'});
         }
-        if (property_exists($data, 'PurchaseDate')) {
+        if (property_exists($data, 'PurchaseDate') && $data->{'PurchaseDate'} !== null) {
             $object->setPurchaseDate($data->{'PurchaseDate'});
         }
-        if (property_exists($data, 'PurchaseTime')) {
+        if (property_exists($data, 'PurchaseTime') && $data->{'PurchaseTime'} !== null) {
             $object->setPurchaseTime($data->{'PurchaseTime'});
         }
-        if (property_exists($data, 'Reprice')) {
+        if (property_exists($data, 'Reprice') && $data->{'Reprice'} !== null) {
             $object->setReprice($data->{'Reprice'});
         }
-        if (property_exists($data, 'TPA_Extensions')) {
+        if (property_exists($data, 'TPA_Extensions') && $data->{'TPA_Extensions'} !== null) {
             $object->setTPAExtensions($this->denormalizer->denormalize($data->{'TPA_Extensions'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensions', 'json', $context));
         }
 

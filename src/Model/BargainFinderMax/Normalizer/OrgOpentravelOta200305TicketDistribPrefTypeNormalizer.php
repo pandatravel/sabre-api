@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,25 +29,25 @@ class OrgOpentravelOta200305TicketDistribPrefTypeNormalizer implements Denormali
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305TicketDistribPrefType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305TicketDistribPrefType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305TicketDistribPrefType();
-        if (property_exists($data, 'DistribType')) {
+        if (property_exists($data, 'DistribType') && $data->{'DistribType'} !== null) {
             $object->setDistribType($data->{'DistribType'});
         }
-        if (property_exists($data, 'PreferLevel')) {
+        if (property_exists($data, 'PreferLevel') && $data->{'PreferLevel'} !== null) {
             $object->setPreferLevel($data->{'PreferLevel'});
         }
-        if (property_exists($data, 'TicketTime')) {
+        if (property_exists($data, 'TicketTime') && $data->{'TicketTime'} !== null) {
             $object->setTicketTime($data->{'TicketTime'});
         }
-        if (property_exists($data, 'content')) {
+        if (property_exists($data, 'content') && $data->{'content'} !== null) {
             $object->setContent($data->{'content'});
         }
 

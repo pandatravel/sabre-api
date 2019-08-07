@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,28 +29,28 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsIndicatorsNo
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsIndicators;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsIndicators';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsIndicators();
-        if (property_exists($data, 'MinMaxStay')) {
+        if (property_exists($data, 'MinMaxStay') && $data->{'MinMaxStay'} !== null) {
             $object->setMinMaxStay($this->denormalizer->denormalize($data->{'MinMaxStay'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsIndicatorsMinMaxStay', 'json', $context));
         }
-        if (property_exists($data, 'RefundPenalty')) {
+        if (property_exists($data, 'RefundPenalty') && $data->{'RefundPenalty'} !== null) {
             $object->setRefundPenalty($this->denormalizer->denormalize($data->{'RefundPenalty'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsIndicatorsRefundPenalty', 'json', $context));
         }
-        if (property_exists($data, 'ResTicketing')) {
+        if (property_exists($data, 'ResTicketing') && $data->{'ResTicketing'} !== null) {
             $object->setResTicketing($this->denormalizer->denormalize($data->{'ResTicketing'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsIndicatorsResTicketing', 'json', $context));
         }
-        if (property_exists($data, 'RetainFare')) {
+        if (property_exists($data, 'RetainFare') && $data->{'RetainFare'} !== null) {
             $object->setRetainFare($this->denormalizer->denormalize($data->{'RetainFare'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsIndicatorsRetainFare', 'json', $context));
         }
-        if (property_exists($data, 'TravelPolicy')) {
+        if (property_exists($data, 'TravelPolicy') && $data->{'TravelPolicy'} !== null) {
             $object->setTravelPolicy($this->denormalizer->denormalize($data->{'TravelPolicy'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsIndicatorsTravelPolicy', 'json', $context));
         }
 

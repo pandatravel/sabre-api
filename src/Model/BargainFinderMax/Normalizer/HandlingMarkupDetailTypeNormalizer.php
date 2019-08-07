@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,37 +29,37 @@ class HandlingMarkupDetailTypeNormalizer implements DenormalizerInterface, Norma
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\HandlingMarkupDetailType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\HandlingMarkupDetailType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\HandlingMarkupDetailType();
-        if (property_exists($data, 'amountCurrency')) {
+        if (property_exists($data, 'amountCurrency') && $data->{'amountCurrency'} !== null) {
             $object->setAmountCurrency($data->{'amountCurrency'});
         }
-        if (property_exists($data, 'fareAmountAfterMarkup')) {
+        if (property_exists($data, 'fareAmountAfterMarkup') && $data->{'fareAmountAfterMarkup'} !== null) {
             $object->setFareAmountAfterMarkup($data->{'fareAmountAfterMarkup'});
         }
-        if (property_exists($data, 'markupAmount')) {
+        if (property_exists($data, 'markupAmount') && $data->{'markupAmount'} !== null) {
             $object->setMarkupAmount($data->{'markupAmount'});
         }
-        if (property_exists($data, 'markupHandlingFeeAppId')) {
+        if (property_exists($data, 'markupHandlingFeeAppId') && $data->{'markupHandlingFeeAppId'} !== null) {
             $object->setMarkupHandlingFeeAppId($data->{'markupHandlingFeeAppId'});
         }
-        if (property_exists($data, 'markupRuleItemNumber')) {
+        if (property_exists($data, 'markupRuleItemNumber') && $data->{'markupRuleItemNumber'} !== null) {
             $object->setMarkupRuleItemNumber($data->{'markupRuleItemNumber'});
         }
-        if (property_exists($data, 'markupRuleSourcePcc')) {
+        if (property_exists($data, 'markupRuleSourcePcc') && $data->{'markupRuleSourcePcc'} !== null) {
             $object->setMarkupRuleSourcePcc($data->{'markupRuleSourcePcc'});
         }
-        if (property_exists($data, 'markupTypeCode')) {
+        if (property_exists($data, 'markupTypeCode') && $data->{'markupTypeCode'} !== null) {
             $object->setMarkupTypeCode($data->{'markupTypeCode'});
         }
-        if (property_exists($data, 'retailerRuleQualifier')) {
+        if (property_exists($data, 'retailerRuleQualifier') && $data->{'retailerRuleQualifier'} !== null) {
             $object->setRetailerRuleQualifier($data->{'retailerRuleQualifier'});
         }
 

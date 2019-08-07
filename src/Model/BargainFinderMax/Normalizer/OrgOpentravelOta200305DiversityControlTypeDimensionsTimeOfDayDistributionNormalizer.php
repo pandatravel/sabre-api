@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,25 +29,25 @@ class OrgOpentravelOta200305DiversityControlTypeDimensionsTimeOfDayDistributionN
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305DiversityControlTypeDimensionsTimeOfDayDistribution;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305DiversityControlTypeDimensionsTimeOfDayDistribution';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305DiversityControlTypeDimensionsTimeOfDayDistribution();
-        if (property_exists($data, 'Direction')) {
+        if (property_exists($data, 'Direction') && $data->{'Direction'} !== null) {
             $object->setDirection($data->{'Direction'});
         }
-        if (property_exists($data, 'Endpoint')) {
+        if (property_exists($data, 'Endpoint') && $data->{'Endpoint'} !== null) {
             $object->setEndpoint($data->{'Endpoint'});
         }
-        if (property_exists($data, 'Leg')) {
+        if (property_exists($data, 'Leg') && $data->{'Leg'} !== null) {
             $object->setLeg($data->{'Leg'});
         }
-        if (property_exists($data, 'Range')) {
+        if (property_exists($data, 'Range') && $data->{'Range'} !== null) {
             $values = [];
             foreach ($data->{'Range'} as $value) {
                 $values[] = $this->denormalizer->denormalize($value, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305DiversityControlTypeDimensionsTimeOfDayDistributionRange', 'json', $context);

@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,31 +29,31 @@ class SegmentTypeNormalizer implements DenormalizerInterface, NormalizerInterfac
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\SegmentType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\SegmentType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\SegmentType();
-        if (property_exists($data, 'availabilityBreak')) {
+        if (property_exists($data, 'availabilityBreak') && $data->{'availabilityBreak'} !== null) {
             $object->setAvailabilityBreak($data->{'availabilityBreak'});
         }
-        if (property_exists($data, 'bookingCode')) {
+        if (property_exists($data, 'bookingCode') && $data->{'bookingCode'} !== null) {
             $object->setBookingCode($data->{'bookingCode'});
         }
-        if (property_exists($data, 'cabinCode')) {
+        if (property_exists($data, 'cabinCode') && $data->{'cabinCode'} !== null) {
             $object->setCabinCode($data->{'cabinCode'});
         }
-        if (property_exists($data, 'dualInventoryCode')) {
+        if (property_exists($data, 'dualInventoryCode') && $data->{'dualInventoryCode'} !== null) {
             $object->setDualInventoryCode($data->{'dualInventoryCode'});
         }
-        if (property_exists($data, 'mealCode')) {
+        if (property_exists($data, 'mealCode') && $data->{'mealCode'} !== null) {
             $object->setMealCode($data->{'mealCode'});
         }
-        if (property_exists($data, 'seatsAvailable')) {
+        if (property_exists($data, 'seatsAvailable') && $data->{'seatsAvailable'} !== null) {
             $object->setSeatsAvailable($data->{'seatsAvailable'});
         }
 

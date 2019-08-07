@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,41 +29,41 @@ class ValidatingCarrierCommissionInfoTypeNormalizer implements DenormalizerInter
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\ValidatingCarrierCommissionInfoType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\ValidatingCarrierCommissionInfoType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\ValidatingCarrierCommissionInfoType();
-        if (property_exists($data, 'commissionAmount')) {
+        if (property_exists($data, 'commissionAmount') && $data->{'commissionAmount'} !== null) {
             $object->setCommissionAmount($data->{'commissionAmount'});
         }
-        if (property_exists($data, 'commissionContractQualifier')) {
+        if (property_exists($data, 'commissionContractQualifier') && $data->{'commissionContractQualifier'} !== null) {
             $object->setCommissionContractQualifier($data->{'commissionContractQualifier'});
         }
-        if (property_exists($data, 'commissionPercent')) {
+        if (property_exists($data, 'commissionPercent') && $data->{'commissionPercent'} !== null) {
             $object->setCommissionPercent($data->{'commissionPercent'});
         }
-        if (property_exists($data, 'earnedCommissionAmount')) {
+        if (property_exists($data, 'earnedCommissionAmount') && $data->{'earnedCommissionAmount'} !== null) {
             $object->setEarnedCommissionAmount($data->{'earnedCommissionAmount'});
         }
-        if (property_exists($data, 'fareComponentBreakdowns')) {
+        if (property_exists($data, 'fareComponentBreakdowns') && $data->{'fareComponentBreakdowns'} !== null) {
             $values = [];
             foreach ($data->{'fareComponentBreakdowns'} as $value) {
                 $values[] = $this->denormalizer->denormalize($value, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\FareComponentBreakdownType', 'json', $context);
             }
             $object->setFareComponentBreakdowns($values);
         }
-        if (property_exists($data, 'sourcePcc')) {
+        if (property_exists($data, 'sourcePcc') && $data->{'sourcePcc'} !== null) {
             $object->setSourcePcc($data->{'sourcePcc'});
         }
-        if (property_exists($data, 'totalAmountIncludingMarkUp')) {
+        if (property_exists($data, 'totalAmountIncludingMarkUp') && $data->{'totalAmountIncludingMarkUp'} !== null) {
             $object->setTotalAmountIncludingMarkUp($data->{'totalAmountIncludingMarkUp'});
         }
-        if (property_exists($data, 'validatingCarrier')) {
+        if (property_exists($data, 'validatingCarrier') && $data->{'validatingCarrier'} !== null) {
             $object->setValidatingCarrier($data->{'validatingCarrier'});
         }
 

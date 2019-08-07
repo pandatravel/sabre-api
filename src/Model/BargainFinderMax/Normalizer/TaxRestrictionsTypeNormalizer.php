@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,25 +29,25 @@ class TaxRestrictionsTypeNormalizer implements DenormalizerInterface, Normalizer
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\TaxRestrictionsType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\TaxRestrictionsType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\TaxRestrictionsType();
-        if (property_exists($data, 'currency')) {
+        if (property_exists($data, 'currency') && $data->{'currency'} !== null) {
             $object->setCurrency($data->{'currency'});
         }
-        if (property_exists($data, 'maxAmount')) {
+        if (property_exists($data, 'maxAmount') && $data->{'maxAmount'} !== null) {
             $object->setMaxAmount($data->{'maxAmount'});
         }
-        if (property_exists($data, 'minAmount')) {
+        if (property_exists($data, 'minAmount') && $data->{'minAmount'} !== null) {
             $object->setMinAmount($data->{'minAmount'});
         }
-        if (property_exists($data, 'rate')) {
+        if (property_exists($data, 'rate') && $data->{'rate'} !== null) {
             $object->setRate($data->{'rate'});
         }
 

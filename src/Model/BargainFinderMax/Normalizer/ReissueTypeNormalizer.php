@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,35 +29,35 @@ class ReissueTypeNormalizer implements DenormalizerInterface, NormalizerInterfac
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\ReissueType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\ReissueType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\ReissueType();
-        if (property_exists($data, 'changeFees')) {
+        if (property_exists($data, 'changeFees') && $data->{'changeFees'} !== null) {
             $values = [];
             foreach ($data->{'changeFees'} as $value) {
                 $values[] = $this->denormalizer->denormalize($value, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\ChangeFeeType', 'json', $context);
             }
             $object->setChangeFees($values);
         }
-        if (property_exists($data, 'electronicTicketNotAllowed')) {
+        if (property_exists($data, 'electronicTicketNotAllowed') && $data->{'electronicTicketNotAllowed'} !== null) {
             $object->setElectronicTicketNotAllowed($data->{'electronicTicketNotAllowed'});
         }
-        if (property_exists($data, 'electronicTicketRequired')) {
+        if (property_exists($data, 'electronicTicketRequired') && $data->{'electronicTicketRequired'} !== null) {
             $object->setElectronicTicketRequired($data->{'electronicTicketRequired'});
         }
-        if (property_exists($data, 'formOfRefund')) {
+        if (property_exists($data, 'formOfRefund') && $data->{'formOfRefund'} !== null) {
             $object->setFormOfRefund($data->{'formOfRefund'});
         }
-        if (property_exists($data, 'residual')) {
+        if (property_exists($data, 'residual') && $data->{'residual'} !== null) {
             $object->setResidual($data->{'residual'});
         }
-        if (property_exists($data, 'tag7Result')) {
+        if (property_exists($data, 'tag7Result') && $data->{'tag7Result'} !== null) {
             $object->setTag7Result($data->{'tag7Result'});
         }
 

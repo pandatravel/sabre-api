@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,55 +29,55 @@ class PricingInformationTypeNormalizer implements DenormalizerInterface, Normali
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\PricingInformationType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\PricingInformationType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\PricingInformationType();
-        if (property_exists($data, 'PoSCountryCode')) {
+        if (property_exists($data, 'PoSCountryCode') && $data->{'PoSCountryCode'} !== null) {
             $object->setPoSCountryCode($data->{'PoSCountryCode'});
         }
-        if (property_exists($data, 'brand')) {
+        if (property_exists($data, 'brand') && $data->{'brand'} !== null) {
             $object->setBrand($data->{'brand'});
         }
-        if (property_exists($data, 'brandsOnAnyMarket')) {
+        if (property_exists($data, 'brandsOnAnyMarket') && $data->{'brandsOnAnyMarket'} !== null) {
             $object->setBrandsOnAnyMarket($data->{'brandsOnAnyMarket'});
         }
-        if (property_exists($data, 'cached')) {
+        if (property_exists($data, 'cached') && $data->{'cached'} !== null) {
             $object->setCached($this->denormalizer->denormalize($data->{'cached'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\Cached', 'json', $context));
         }
-        if (property_exists($data, 'fare')) {
+        if (property_exists($data, 'fare') && $data->{'fare'} !== null) {
             $object->setFare($this->denormalizer->denormalize($data->{'fare'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\FareType', 'json', $context));
         }
-        if (property_exists($data, 'flexibleFare')) {
+        if (property_exists($data, 'flexibleFare') && $data->{'flexibleFare'} !== null) {
             $object->setFlexibleFare($data->{'flexibleFare'});
         }
-        if (property_exists($data, 'offer')) {
+        if (property_exists($data, 'offer') && $data->{'offer'} !== null) {
             $object->setOffer($this->denormalizer->denormalize($data->{'offer'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\Offer', 'json', $context));
         }
-        if (property_exists($data, 'passengerGroup')) {
+        if (property_exists($data, 'passengerGroup') && $data->{'passengerGroup'} !== null) {
             $object->setPassengerGroup($data->{'passengerGroup'});
         }
-        if (property_exists($data, 'pricingSubsource')) {
+        if (property_exists($data, 'pricingSubsource') && $data->{'pricingSubsource'} !== null) {
             $object->setPricingSubsource($data->{'pricingSubsource'});
         }
-        if (property_exists($data, 'program')) {
+        if (property_exists($data, 'program') && $data->{'program'} !== null) {
             $object->setProgram($data->{'program'});
         }
-        if (property_exists($data, 'pseudoCityCode')) {
+        if (property_exists($data, 'pseudoCityCode') && $data->{'pseudoCityCode'} !== null) {
             $object->setPseudoCityCode($data->{'pseudoCityCode'});
         }
-        if (property_exists($data, 'revalidated')) {
+        if (property_exists($data, 'revalidated') && $data->{'revalidated'} !== null) {
             $object->setRevalidated($data->{'revalidated'});
         }
-        if (property_exists($data, 'soldOut')) {
+        if (property_exists($data, 'soldOut') && $data->{'soldOut'} !== null) {
             $object->setSoldOut($this->denormalizer->denormalize($data->{'soldOut'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\SoldOutType', 'json', $context));
         }
-        if (property_exists($data, 'tickets')) {
+        if (property_exists($data, 'tickets') && $data->{'tickets'} !== null) {
             $values = [];
             foreach ($data->{'tickets'} as $value) {
                 $values[] = $this->denormalizer->denormalize($value, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\TicketType', 'json', $context);

@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,28 +29,28 @@ class TaxReissueTypeNormalizer implements DenormalizerInterface, NormalizerInter
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\TaxReissueType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\TaxReissueType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\TaxReissueType();
-        if (property_exists($data, 'maxAmount')) {
+        if (property_exists($data, 'maxAmount') && $data->{'maxAmount'} !== null) {
             $object->setMaxAmount($data->{'maxAmount'});
         }
-        if (property_exists($data, 'maxCurrency')) {
+        if (property_exists($data, 'maxCurrency') && $data->{'maxCurrency'} !== null) {
             $object->setMaxCurrency($data->{'maxCurrency'});
         }
-        if (property_exists($data, 'refundable')) {
+        if (property_exists($data, 'refundable') && $data->{'refundable'} !== null) {
             $object->setRefundable($data->{'refundable'});
         }
-        if (property_exists($data, 'restrictionApply')) {
+        if (property_exists($data, 'restrictionApply') && $data->{'restrictionApply'} !== null) {
             $object->setRestrictionApply($data->{'restrictionApply'});
         }
-        if (property_exists($data, 'taxType')) {
+        if (property_exists($data, 'taxType') && $data->{'taxType'} !== null) {
             $object->setTaxType($data->{'taxType'});
         }
 

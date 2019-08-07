@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,53 +29,53 @@ class OrgOpentravelOta200305DocumentTypeNormalizer implements DenormalizerInterf
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305DocumentType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305DocumentType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305DocumentType();
-        if (property_exists($data, 'BirthDate')) {
+        if (property_exists($data, 'BirthDate') && $data->{'BirthDate'} !== null) {
             $object->setBirthDate($data->{'BirthDate'});
         }
-        if (property_exists($data, 'DocHolderName')) {
+        if (property_exists($data, 'DocHolderName') && $data->{'DocHolderName'} !== null) {
             $object->setDocHolderName($data->{'DocHolderName'});
         }
-        if (property_exists($data, 'DocID')) {
+        if (property_exists($data, 'DocID') && $data->{'DocID'} !== null) {
             $object->setDocID($data->{'DocID'});
         }
-        if (property_exists($data, 'DocIssueAuthority')) {
+        if (property_exists($data, 'DocIssueAuthority') && $data->{'DocIssueAuthority'} !== null) {
             $object->setDocIssueAuthority($data->{'DocIssueAuthority'});
         }
-        if (property_exists($data, 'DocIssueLocation')) {
+        if (property_exists($data, 'DocIssueLocation') && $data->{'DocIssueLocation'} !== null) {
             $object->setDocIssueLocation($data->{'DocIssueLocation'});
         }
-        if (property_exists($data, 'DocLimitations')) {
+        if (property_exists($data, 'DocLimitations') && $data->{'DocLimitations'} !== null) {
             $values = [];
             foreach ($data->{'DocLimitations'} as $value) {
                 $values[] = $value;
             }
             $object->setDocLimitations($values);
         }
-        if (property_exists($data, 'DocType')) {
+        if (property_exists($data, 'DocType') && $data->{'DocType'} !== null) {
             $object->setDocType($data->{'DocType'});
         }
-        if (property_exists($data, 'EffectiveDate')) {
+        if (property_exists($data, 'EffectiveDate') && $data->{'EffectiveDate'} !== null) {
             $object->setEffectiveDate($data->{'EffectiveDate'});
         }
-        if (property_exists($data, 'ExpireDate')) {
+        if (property_exists($data, 'ExpireDate') && $data->{'ExpireDate'} !== null) {
             $object->setExpireDate($data->{'ExpireDate'});
         }
-        if (property_exists($data, 'Gender')) {
+        if (property_exists($data, 'Gender') && $data->{'Gender'} !== null) {
             $object->setGender($data->{'Gender'});
         }
-        if (property_exists($data, 'ShareMarketInd')) {
+        if (property_exists($data, 'ShareMarketInd') && $data->{'ShareMarketInd'} !== null) {
             $object->setShareMarketInd($data->{'ShareMarketInd'});
         }
-        if (property_exists($data, 'ShareSynchInd')) {
+        if (property_exists($data, 'ShareSynchInd') && $data->{'ShareSynchInd'} !== null) {
             $object->setShareSynchInd($data->{'ShareSynchInd'});
         }
 

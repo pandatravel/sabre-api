@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,109 +29,109 @@ class PassengerInformationTypeNormalizer implements DenormalizerInterface, Norma
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\PassengerInformationType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\PassengerInformationType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\PassengerInformationType();
-        if (property_exists($data, 'baggageInformation')) {
+        if (property_exists($data, 'baggageInformation') && $data->{'baggageInformation'} !== null) {
             $values = [];
             foreach ($data->{'baggageInformation'} as $value) {
                 $values[] = $this->denormalizer->denormalize($value, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\BaggageInformationType', 'json', $context);
             }
             $object->setBaggageInformation($values);
         }
-        if (property_exists($data, 'currencyConversion')) {
+        if (property_exists($data, 'currencyConversion') && $data->{'currencyConversion'} !== null) {
             $object->setCurrencyConversion($this->denormalizer->denormalize($data->{'currencyConversion'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\CurrencyConversionType', 'json', $context));
         }
-        if (property_exists($data, 'divide')) {
+        if (property_exists($data, 'divide') && $data->{'divide'} !== null) {
             $object->setDivide($data->{'divide'});
         }
-        if (property_exists($data, 'fareComponents')) {
+        if (property_exists($data, 'fareComponents') && $data->{'fareComponents'} !== null) {
             $values_1 = [];
             foreach ($data->{'fareComponents'} as $value_1) {
                 $values_1[] = $this->denormalizer->denormalize($value_1, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\FareComponentIDType', 'json', $context);
             }
             $object->setFareComponents($values_1);
         }
-        if (property_exists($data, 'fareMessages')) {
+        if (property_exists($data, 'fareMessages') && $data->{'fareMessages'} !== null) {
             $values_2 = [];
             foreach ($data->{'fareMessages'} as $value_2) {
                 $values_2[] = $this->denormalizer->denormalize($value_2, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\FareMessageType', 'json', $context);
             }
             $object->setFareMessages($values_2);
         }
-        if (property_exists($data, 'legs')) {
+        if (property_exists($data, 'legs') && $data->{'legs'} !== null) {
             $values_3 = [];
             foreach ($data->{'legs'} as $value_3) {
                 $values_3[] = $this->denormalizer->denormalize($value_3, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\PricingLegType', 'json', $context);
             }
             $object->setLegs($values_3);
         }
-        if (property_exists($data, 'nonRefundable')) {
+        if (property_exists($data, 'nonRefundable') && $data->{'nonRefundable'} !== null) {
             $object->setNonRefundable($data->{'nonRefundable'});
         }
-        if (property_exists($data, 'obFees')) {
+        if (property_exists($data, 'obFees') && $data->{'obFees'} !== null) {
             $values_4 = [];
             foreach ($data->{'obFees'} as $value_4) {
                 $values_4[] = $this->denormalizer->denormalize($value_4, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OBFeeIDType', 'json', $context);
             }
             $object->setObFees($values_4);
         }
-        if (property_exists($data, 'passengerNumber')) {
+        if (property_exists($data, 'passengerNumber') && $data->{'passengerNumber'} !== null) {
             $object->setPassengerNumber($data->{'passengerNumber'});
         }
-        if (property_exists($data, 'passengerTotalFare')) {
+        if (property_exists($data, 'passengerTotalFare') && $data->{'passengerTotalFare'} !== null) {
             $object->setPassengerTotalFare($this->denormalizer->denormalize($data->{'passengerTotalFare'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\PassengerTotalFareType', 'json', $context));
         }
-        if (property_exists($data, 'passengerType')) {
+        if (property_exists($data, 'passengerType') && $data->{'passengerType'} !== null) {
             $object->setPassengerType($data->{'passengerType'});
         }
-        if (property_exists($data, 'penaltiesInfo')) {
+        if (property_exists($data, 'penaltiesInfo') && $data->{'penaltiesInfo'} !== null) {
             $object->setPenaltiesInfo($this->denormalizer->denormalize($data->{'penaltiesInfo'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\PenaltiesType', 'json', $context));
         }
-        if (property_exists($data, 'plusUps')) {
+        if (property_exists($data, 'plusUps') && $data->{'plusUps'} !== null) {
             $values_5 = [];
             foreach ($data->{'plusUps'} as $value_5) {
                 $values_5[] = $this->denormalizer->denormalize($value_5, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\PlusUpInformationType', 'json', $context);
             }
             $object->setPlusUps($values_5);
         }
-        if (property_exists($data, 'reissue')) {
+        if (property_exists($data, 'reissue') && $data->{'reissue'} !== null) {
             $object->setReissue($this->denormalizer->denormalize($data->{'reissue'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\ReissueType', 'json', $context));
         }
-        if (property_exists($data, 'sellingFareData')) {
+        if (property_exists($data, 'sellingFareData') && $data->{'sellingFareData'} !== null) {
             $values_6 = [];
             foreach ($data->{'sellingFareData'} as $value_6) {
                 $values_6[] = $this->denormalizer->denormalize($value_6, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\SellingFareDataType', 'json', $context);
             }
             $object->setSellingFareData($values_6);
         }
-        if (property_exists($data, 'stopover')) {
+        if (property_exists($data, 'stopover') && $data->{'stopover'} !== null) {
             $object->setStopover($data->{'stopover'});
         }
-        if (property_exists($data, 'taxSummaries')) {
+        if (property_exists($data, 'taxSummaries') && $data->{'taxSummaries'} !== null) {
             $values_7 = [];
             foreach ($data->{'taxSummaries'} as $value_7) {
                 $values_7[] = $this->denormalizer->denormalize($value_7, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\TaxSummaryIDType', 'json', $context);
             }
             $object->setTaxSummaries($values_7);
         }
-        if (property_exists($data, 'taxes')) {
+        if (property_exists($data, 'taxes') && $data->{'taxes'} !== null) {
             $values_8 = [];
             foreach ($data->{'taxes'} as $value_8) {
                 $values_8[] = $this->denormalizer->denormalize($value_8, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\TaxIDType', 'json', $context);
             }
             $object->setTaxes($values_8);
         }
-        if (property_exists($data, 'total')) {
+        if (property_exists($data, 'total') && $data->{'total'} !== null) {
             $object->setTotal($data->{'total'});
         }
-        if (property_exists($data, 'validatingCarrierCommissionInfo')) {
+        if (property_exists($data, 'validatingCarrierCommissionInfo') && $data->{'validatingCarrierCommissionInfo'} !== null) {
             $values_9 = [];
             foreach ($data->{'validatingCarrierCommissionInfo'} as $value_9) {
                 $values_9[] = $this->denormalizer->denormalize($value_9, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\ValidatingCarrierCommissionInfoType', 'json', $context);

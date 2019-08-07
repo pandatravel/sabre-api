@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,37 +29,37 @@ class OrgOpentravelOta200305TravelDateTimeTypeDepartureDatesNormalizer implement
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305TravelDateTimeTypeDepartureDates;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305TravelDateTimeTypeDepartureDates';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305TravelDateTimeTypeDepartureDates();
-        if (property_exists($data, 'Day')) {
+        if (property_exists($data, 'Day') && $data->{'Day'} !== null) {
             $values = [];
             foreach ($data->{'Day'} as $value) {
                 $values[] = $this->denormalizer->denormalize($value, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305TravelDateTimeTypeArrivalDatesDay', 'json', $context);
             }
             $object->setDay($values);
         }
-        if (property_exists($data, 'DaysRange')) {
+        if (property_exists($data, 'DaysRange') && $data->{'DaysRange'} !== null) {
             $values_1 = [];
             foreach ($data->{'DaysRange'} as $value_1) {
                 $values_1[] = $this->denormalizer->denormalize($value_1, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305TravelDateTimeTypeArrivalDatesDaysRange', 'json', $context);
             }
             $object->setDaysRange($values_1);
         }
-        if (property_exists($data, 'LengthOfStay')) {
+        if (property_exists($data, 'LengthOfStay') && $data->{'LengthOfStay'} !== null) {
             $values_2 = [];
             foreach ($data->{'LengthOfStay'} as $value_2) {
                 $values_2[] = $this->denormalizer->denormalize($value_2, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305TravelDateTimeTypeDepartureDatesLengthOfStay', 'json', $context);
             }
             $object->setLengthOfStay($values_2);
         }
-        if (property_exists($data, 'LengthOfStayRange')) {
+        if (property_exists($data, 'LengthOfStayRange') && $data->{'LengthOfStayRange'} !== null) {
             $values_3 = [];
             foreach ($data->{'LengthOfStayRange'} as $value_3) {
                 $values_3[] = $this->denormalizer->denormalize($value_3, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305TravelDateTimeTypeDepartureDatesLengthOfStayRange', 'json', $context);

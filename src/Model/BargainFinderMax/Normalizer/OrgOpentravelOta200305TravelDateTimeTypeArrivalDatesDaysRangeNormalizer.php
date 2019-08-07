@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,22 +29,22 @@ class OrgOpentravelOta200305TravelDateTimeTypeArrivalDatesDaysRangeNormalizer im
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305TravelDateTimeTypeArrivalDatesDaysRange;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305TravelDateTimeTypeArrivalDatesDaysRange';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305TravelDateTimeTypeArrivalDatesDaysRange();
-        if (property_exists($data, 'FromDate')) {
+        if (property_exists($data, 'FromDate') && $data->{'FromDate'} !== null) {
             $object->setFromDate($data->{'FromDate'});
         }
-        if (property_exists($data, 'ToDate')) {
+        if (property_exists($data, 'ToDate') && $data->{'ToDate'} !== null) {
             $object->setToDate($data->{'ToDate'});
         }
-        if (property_exists($data, 'WeekDays')) {
+        if (property_exists($data, 'WeekDays') && $data->{'WeekDays'} !== null) {
             $object->setWeekDays($data->{'WeekDays'});
         }
 

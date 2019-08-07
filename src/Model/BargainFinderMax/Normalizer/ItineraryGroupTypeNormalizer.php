@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,26 +29,26 @@ class ItineraryGroupTypeNormalizer implements DenormalizerInterface, NormalizerI
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\ItineraryGroupType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\ItineraryGroupType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\ItineraryGroupType();
-        if (property_exists($data, 'groupDescription')) {
+        if (property_exists($data, 'groupDescription') && $data->{'groupDescription'} !== null) {
             $object->setGroupDescription($this->denormalizer->denormalize($data->{'groupDescription'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\GroupDescription', 'json', $context));
         }
-        if (property_exists($data, 'itineraries')) {
+        if (property_exists($data, 'itineraries') && $data->{'itineraries'} !== null) {
             $values = [];
             foreach ($data->{'itineraries'} as $value) {
                 $values[] = $this->denormalizer->denormalize($value, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\ItineraryType', 'json', $context);
             }
             $object->setItineraries($values);
         }
-        if (property_exists($data, 'processingMessages')) {
+        if (property_exists($data, 'processingMessages') && $data->{'processingMessages'} !== null) {
             $values_1 = [];
             foreach ($data->{'processingMessages'} as $value_1) {
                 $values_1[] = $this->denormalizer->denormalize($value_1, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\ProcessingMessageType', 'json', $context);

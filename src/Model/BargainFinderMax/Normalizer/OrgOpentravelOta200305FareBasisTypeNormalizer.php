@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,17 +29,20 @@ class OrgOpentravelOta200305FareBasisTypeNormalizer implements DenormalizerInter
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305FareBasisType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305FareBasisType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305FareBasisType();
-        if (property_exists($data, 'Code')) {
+        if (property_exists($data, 'Code') && $data->{'Code'} !== null) {
             $object->setCode($data->{'Code'});
+        }
+        if (property_exists($data, 'PreferLevel') && $data->{'PreferLevel'} !== null) {
+            $object->setPreferLevel($data->{'PreferLevel'});
         }
 
         return $object;
@@ -51,6 +53,9 @@ class OrgOpentravelOta200305FareBasisTypeNormalizer implements DenormalizerInter
         $data = new \stdClass();
         if (null !== $object->getCode()) {
             $data->{'Code'} = $object->getCode();
+        }
+        if (null !== $object->getPreferLevel()) {
+            $data->{'PreferLevel'} = $object->getPreferLevel();
         }
 
         return $data;

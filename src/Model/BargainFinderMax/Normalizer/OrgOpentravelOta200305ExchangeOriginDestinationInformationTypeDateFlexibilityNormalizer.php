@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,28 +29,28 @@ class OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeDateFlexibil
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeDateFlexibility;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeDateFlexibility';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeDateFlexibility();
-        if (property_exists($data, 'Minus')) {
+        if (property_exists($data, 'Minus') && $data->{'Minus'} !== null) {
             $object->setMinus($data->{'Minus'});
         }
-        if (property_exists($data, 'NbrOfDays')) {
+        if (property_exists($data, 'NbrOfDays') && $data->{'NbrOfDays'} !== null) {
             $object->setNbrOfDays($data->{'NbrOfDays'});
         }
-        if (property_exists($data, 'Plus')) {
+        if (property_exists($data, 'Plus') && $data->{'Plus'} !== null) {
             $object->setPlus($data->{'Plus'});
         }
-        if (property_exists($data, 'Tolerance')) {
+        if (property_exists($data, 'Tolerance') && $data->{'Tolerance'} !== null) {
             $object->setTolerance($data->{'Tolerance'});
         }
-        if (property_exists($data, 'Validate')) {
+        if (property_exists($data, 'Validate') && $data->{'Validate'} !== null) {
             $object->setValidate($data->{'Validate'});
         }
 

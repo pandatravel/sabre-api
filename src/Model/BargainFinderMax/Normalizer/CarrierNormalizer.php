@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,43 +29,43 @@ class CarrierNormalizer implements DenormalizerInterface, NormalizerInterface, D
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\Carrier;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\Carrier';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\Carrier();
-        if (property_exists($data, 'alliances')) {
+        if (property_exists($data, 'alliances') && $data->{'alliances'} !== null) {
             $object->setAlliances($data->{'alliances'});
         }
-        if (property_exists($data, 'basicBookingRequest')) {
+        if (property_exists($data, 'basicBookingRequest') && $data->{'basicBookingRequest'} !== null) {
             $object->setBasicBookingRequest($data->{'basicBookingRequest'});
         }
-        if (property_exists($data, 'callDirect')) {
+        if (property_exists($data, 'callDirect') && $data->{'callDirect'} !== null) {
             $object->setCallDirect($data->{'callDirect'});
         }
-        if (property_exists($data, 'codeShared')) {
+        if (property_exists($data, 'codeShared') && $data->{'codeShared'} !== null) {
             $object->setCodeShared($data->{'codeShared'});
         }
-        if (property_exists($data, 'disclosure')) {
+        if (property_exists($data, 'disclosure') && $data->{'disclosure'} !== null) {
             $object->setDisclosure($data->{'disclosure'});
         }
-        if (property_exists($data, 'equipment')) {
+        if (property_exists($data, 'equipment') && $data->{'equipment'} !== null) {
             $object->setEquipment($this->denormalizer->denormalize($data->{'equipment'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\Equipment', 'json', $context));
         }
-        if (property_exists($data, 'marketing')) {
+        if (property_exists($data, 'marketing') && $data->{'marketing'} !== null) {
             $object->setMarketing($data->{'marketing'});
         }
-        if (property_exists($data, 'marketingFlightNumber')) {
+        if (property_exists($data, 'marketingFlightNumber') && $data->{'marketingFlightNumber'} !== null) {
             $object->setMarketingFlightNumber($data->{'marketingFlightNumber'});
         }
-        if (property_exists($data, 'operating')) {
+        if (property_exists($data, 'operating') && $data->{'operating'} !== null) {
             $object->setOperating($data->{'operating'});
         }
-        if (property_exists($data, 'operatingFlightNumber')) {
+        if (property_exists($data, 'operatingFlightNumber') && $data->{'operatingFlightNumber'} !== null) {
             $object->setOperatingFlightNumber($data->{'operatingFlightNumber'});
         }
 

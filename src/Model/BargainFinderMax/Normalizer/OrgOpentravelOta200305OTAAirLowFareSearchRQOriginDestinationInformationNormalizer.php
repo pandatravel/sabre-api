@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,52 +29,52 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQOriginDestinationInformationNor
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305OTAAirLowFareSearchRQOriginDestinationInformation;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305OTAAirLowFareSearchRQOriginDestinationInformation';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305OTAAirLowFareSearchRQOriginDestinationInformation();
-        if (property_exists($data, 'ArrivalDateTime')) {
+        if (property_exists($data, 'ArrivalDateTime') && $data->{'ArrivalDateTime'} !== null) {
             $object->setArrivalDateTime($data->{'ArrivalDateTime'});
         }
-        if (property_exists($data, 'ArrivalDates')) {
+        if (property_exists($data, 'ArrivalDates') && $data->{'ArrivalDates'} !== null) {
             $object->setArrivalDates($this->denormalizer->denormalize($data->{'ArrivalDates'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305TravelDateTimeTypeArrivalDates', 'json', $context));
         }
-        if (property_exists($data, 'ArrivalWindow')) {
+        if (property_exists($data, 'ArrivalWindow') && $data->{'ArrivalWindow'} !== null) {
             $object->setArrivalWindow($data->{'ArrivalWindow'});
         }
-        if (property_exists($data, 'ConnectionLocations')) {
+        if (property_exists($data, 'ConnectionLocations') && $data->{'ConnectionLocations'} !== null) {
             $object->setConnectionLocations($this->denormalizer->denormalize($data->{'ConnectionLocations'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305ConnectionType', 'json', $context));
         }
-        if (property_exists($data, 'DepartureDateTime')) {
+        if (property_exists($data, 'DepartureDateTime') && $data->{'DepartureDateTime'} !== null) {
             $object->setDepartureDateTime($data->{'DepartureDateTime'});
         }
-        if (property_exists($data, 'DepartureDates')) {
+        if (property_exists($data, 'DepartureDates') && $data->{'DepartureDates'} !== null) {
             $object->setDepartureDates($this->denormalizer->denormalize($data->{'DepartureDates'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305TravelDateTimeTypeDepartureDates', 'json', $context));
         }
-        if (property_exists($data, 'DepartureWindow')) {
+        if (property_exists($data, 'DepartureWindow') && $data->{'DepartureWindow'} !== null) {
             $object->setDepartureWindow($data->{'DepartureWindow'});
         }
-        if (property_exists($data, 'DestinationLocation')) {
+        if (property_exists($data, 'DestinationLocation') && $data->{'DestinationLocation'} !== null) {
             $object->setDestinationLocation($this->denormalizer->denormalize($data->{'DestinationLocation'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305OriginDestinationInformationTypeDestinationLocation', 'json', $context));
         }
-        if (property_exists($data, 'Fixed')) {
+        if (property_exists($data, 'Fixed') && $data->{'Fixed'} !== null) {
             $object->setFixed($data->{'Fixed'});
         }
-        if (property_exists($data, 'FullDiversity')) {
+        if (property_exists($data, 'FullDiversity') && $data->{'FullDiversity'} !== null) {
             $object->setFullDiversity($data->{'FullDiversity'});
         }
-        if (property_exists($data, 'OriginLocation')) {
+        if (property_exists($data, 'OriginLocation') && $data->{'OriginLocation'} !== null) {
             $object->setOriginLocation($this->denormalizer->denormalize($data->{'OriginLocation'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305OriginDestinationInformationTypeOriginLocation', 'json', $context));
         }
-        if (property_exists($data, 'RPH')) {
+        if (property_exists($data, 'RPH') && $data->{'RPH'} !== null) {
             $object->setRPH($data->{'RPH'});
         }
-        if (property_exists($data, 'TPA_Extensions')) {
+        if (property_exists($data, 'TPA_Extensions') && $data->{'TPA_Extensions'} !== null) {
             $object->setTPAExtensions($this->denormalizer->denormalize($data->{'TPA_Extensions'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305OTAAirLowFareSearchRQOriginDestinationInformationTPAExtensions', 'json', $context));
         }
 

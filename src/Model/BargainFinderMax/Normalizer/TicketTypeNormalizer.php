@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,23 +29,23 @@ class TicketTypeNormalizer implements DenormalizerInterface, NormalizerInterface
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\TicketType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\TicketType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\TicketType();
-        if (property_exists($data, 'legs')) {
+        if (property_exists($data, 'legs') && $data->{'legs'} !== null) {
             $values = [];
             foreach ($data->{'legs'} as $value) {
                 $values[] = $this->denormalizer->denormalize($value, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\LegIDType', 'json', $context);
             }
             $object->setLegs($values);
         }
-        if (property_exists($data, 'pricingInformation')) {
+        if (property_exists($data, 'pricingInformation') && $data->{'pricingInformation'} !== null) {
             $object->setPricingInformation($this->denormalizer->denormalize($data->{'pricingInformation'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\PricingInformationType', 'json', $context));
         }
 

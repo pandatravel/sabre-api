@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,31 +29,31 @@ class OrgOpentravelOta200305AdvResTicketingTypeAdvTicketingNormalizer implements
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305AdvResTicketingTypeAdvTicketing;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305AdvResTicketingTypeAdvTicketing';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305AdvResTicketingTypeAdvTicketing();
-        if (property_exists($data, 'FromDepartPeriod')) {
+        if (property_exists($data, 'FromDepartPeriod') && $data->{'FromDepartPeriod'} !== null) {
             $object->setFromDepartPeriod($data->{'FromDepartPeriod'});
         }
-        if (property_exists($data, 'FromDepartTimeOfDay')) {
+        if (property_exists($data, 'FromDepartTimeOfDay') && $data->{'FromDepartTimeOfDay'} !== null) {
             $object->setFromDepartTimeOfDay($data->{'FromDepartTimeOfDay'});
         }
-        if (property_exists($data, 'FromDepartUnit')) {
+        if (property_exists($data, 'FromDepartUnit') && $data->{'FromDepartUnit'} !== null) {
             $object->setFromDepartUnit($data->{'FromDepartUnit'});
         }
-        if (property_exists($data, 'FromResPeriod')) {
+        if (property_exists($data, 'FromResPeriod') && $data->{'FromResPeriod'} !== null) {
             $object->setFromResPeriod($data->{'FromResPeriod'});
         }
-        if (property_exists($data, 'FromResTimeOfDay')) {
+        if (property_exists($data, 'FromResTimeOfDay') && $data->{'FromResTimeOfDay'} !== null) {
             $object->setFromResTimeOfDay($data->{'FromResTimeOfDay'});
         }
-        if (property_exists($data, 'FromResUnit')) {
+        if (property_exists($data, 'FromResUnit') && $data->{'FromResUnit'} !== null) {
             $object->setFromResUnit($data->{'FromResUnit'});
         }
 

@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,84 +29,84 @@ class OrgOpentravelOta200305AirTravelerTypeNormalizer implements DenormalizerInt
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305AirTravelerType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305AirTravelerType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305AirTravelerType();
-        if (property_exists($data, 'AccompaniedByInfant')) {
+        if (property_exists($data, 'AccompaniedByInfant') && $data->{'AccompaniedByInfant'} !== null) {
             $object->setAccompaniedByInfant($data->{'AccompaniedByInfant'});
         }
-        if (property_exists($data, 'Address')) {
+        if (property_exists($data, 'Address') && $data->{'Address'} !== null) {
             $values = [];
             foreach ($data->{'Address'} as $value) {
                 $values[] = $this->denormalizer->denormalize($value, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305AddressType', 'json', $context);
             }
             $object->setAddress($values);
         }
-        if (property_exists($data, 'BirthDate')) {
+        if (property_exists($data, 'BirthDate') && $data->{'BirthDate'} !== null) {
             $object->setBirthDate($data->{'BirthDate'});
         }
-        if (property_exists($data, 'CurrencyCode')) {
+        if (property_exists($data, 'CurrencyCode') && $data->{'CurrencyCode'} !== null) {
             $object->setCurrencyCode($data->{'CurrencyCode'});
         }
-        if (property_exists($data, 'CustLoyalty')) {
+        if (property_exists($data, 'CustLoyalty') && $data->{'CustLoyalty'} !== null) {
             $values_1 = [];
             foreach ($data->{'CustLoyalty'} as $value_1) {
                 $values_1[] = $this->denormalizer->denormalize($value_1, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305CustLoyaltyType', 'json', $context);
             }
             $object->setCustLoyalty($values_1);
         }
-        if (property_exists($data, 'Document')) {
+        if (property_exists($data, 'Document') && $data->{'Document'} !== null) {
             $values_2 = [];
             foreach ($data->{'Document'} as $value_2) {
                 $values_2[] = $this->denormalizer->denormalize($value_2, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305DocumentType', 'json', $context);
             }
             $object->setDocument($values_2);
         }
-        if (property_exists($data, 'Email')) {
+        if (property_exists($data, 'Email') && $data->{'Email'} !== null) {
             $values_3 = [];
             foreach ($data->{'Email'} as $value_3) {
                 $values_3[] = $this->denormalizer->denormalize($value_3, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305EmailType', 'json', $context);
             }
             $object->setEmail($values_3);
         }
-        if (property_exists($data, 'FlightSegmentRPHs')) {
+        if (property_exists($data, 'FlightSegmentRPHs') && $data->{'FlightSegmentRPHs'} !== null) {
             $object->setFlightSegmentRPHs($this->denormalizer->denormalize($data->{'FlightSegmentRPHs'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305AirTravelerTypeFlightSegmentRPHs', 'json', $context));
         }
-        if (property_exists($data, 'Gender')) {
+        if (property_exists($data, 'Gender') && $data->{'Gender'} !== null) {
             $object->setGender($data->{'Gender'});
         }
-        if (property_exists($data, 'PassengerTypeCode')) {
+        if (property_exists($data, 'PassengerTypeCode') && $data->{'PassengerTypeCode'} !== null) {
             $object->setPassengerTypeCode($data->{'PassengerTypeCode'});
         }
-        if (property_exists($data, 'PassengerTypeQuantity')) {
+        if (property_exists($data, 'PassengerTypeQuantity') && $data->{'PassengerTypeQuantity'} !== null) {
             $object->setPassengerTypeQuantity($this->denormalizer->denormalize($data->{'PassengerTypeQuantity'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305PassengerTypeQuantityType', 'json', $context));
         }
-        if (property_exists($data, 'PersonName')) {
+        if (property_exists($data, 'PersonName') && $data->{'PersonName'} !== null) {
             $object->setPersonName($this->denormalizer->denormalize($data->{'PersonName'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305PersonNameType', 'json', $context));
         }
-        if (property_exists($data, 'ProfileRef')) {
+        if (property_exists($data, 'ProfileRef') && $data->{'ProfileRef'} !== null) {
             $object->setProfileRef($this->denormalizer->denormalize($data->{'ProfileRef'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305AirTravelerTypeProfileRef', 'json', $context));
         }
-        if (property_exists($data, 'ShareMarketInd')) {
+        if (property_exists($data, 'ShareMarketInd') && $data->{'ShareMarketInd'} !== null) {
             $object->setShareMarketInd($data->{'ShareMarketInd'});
         }
-        if (property_exists($data, 'ShareSynchInd')) {
+        if (property_exists($data, 'ShareSynchInd') && $data->{'ShareSynchInd'} !== null) {
             $object->setShareSynchInd($data->{'ShareSynchInd'});
         }
-        if (property_exists($data, 'Telephone')) {
+        if (property_exists($data, 'Telephone') && $data->{'Telephone'} !== null) {
             $values_4 = [];
             foreach ($data->{'Telephone'} as $value_4) {
                 $values_4[] = $this->denormalizer->denormalize($value_4, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305TelephoneType', 'json', $context);
             }
             $object->setTelephone($values_4);
         }
-        if (property_exists($data, 'TravelerRefNumber')) {
+        if (property_exists($data, 'TravelerRefNumber') && $data->{'TravelerRefNumber'} !== null) {
             $object->setTravelerRefNumber($this->denormalizer->denormalize($data->{'TravelerRefNumber'}, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305TravelerRefNumberType', 'json', $context));
         }
 

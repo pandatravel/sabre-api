@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,45 +29,45 @@ class OrgOpentravelOta200305PriceRequestInformationTypeNegotiatedFareCodeNormali
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305PriceRequestInformationTypeNegotiatedFareCode;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305PriceRequestInformationTypeNegotiatedFareCode';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\OrgOpentravelOta200305PriceRequestInformationTypeNegotiatedFareCode();
-        if (property_exists($data, 'Code')) {
+        if (property_exists($data, 'Code') && $data->{'Code'} !== null) {
             $object->setCode($data->{'Code'});
         }
-        if (property_exists($data, 'CodeContext')) {
+        if (property_exists($data, 'CodeContext') && $data->{'CodeContext'} !== null) {
             $object->setCodeContext($data->{'CodeContext'});
         }
-        if (property_exists($data, 'Quantity')) {
+        if (property_exists($data, 'Quantity') && $data->{'Quantity'} !== null) {
             $object->setQuantity($data->{'Quantity'});
         }
-        if (property_exists($data, 'SecondaryCode')) {
+        if (property_exists($data, 'SecondaryCode') && $data->{'SecondaryCode'} !== null) {
             $object->setSecondaryCode($data->{'SecondaryCode'});
         }
-        if (property_exists($data, 'Supplier')) {
+        if (property_exists($data, 'Supplier') && $data->{'Supplier'} !== null) {
             $values = [];
             foreach ($data->{'Supplier'} as $value) {
                 $values[] = $this->denormalizer->denormalize($value, 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\OrgOpentravelOta200305CompanyNameType', 'json', $context);
             }
             $object->setSupplier($values);
         }
-        if (property_exists($data, 'SupplierCode')) {
+        if (property_exists($data, 'SupplierCode') && $data->{'SupplierCode'} !== null) {
             $object->setSupplierCode($data->{'SupplierCode'});
         }
-        if (property_exists($data, 'TPA_Extensions')) {
+        if (property_exists($data, 'TPA_Extensions') && $data->{'TPA_Extensions'} !== null) {
             $values_1 = [];
             foreach ($data->{'TPA_Extensions'} as $value_1) {
                 $values_1[] = $value_1;
             }
             $object->setTPAExtensions($values_1);
         }
-        if (property_exists($data, 'URI')) {
+        if (property_exists($data, 'URI') && $data->{'URI'} !== null) {
             $object->setURI($data->{'URI'});
         }
 

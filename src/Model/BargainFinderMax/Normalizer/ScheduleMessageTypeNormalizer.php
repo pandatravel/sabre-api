@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,28 +29,28 @@ class ScheduleMessageTypeNormalizer implements DenormalizerInterface, Normalizer
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\ScheduleMessageType;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\ScheduleMessageType';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\ScheduleMessageType();
-        if (property_exists($data, 'destination')) {
+        if (property_exists($data, 'destination') && $data->{'destination'} !== null) {
             $object->setDestination($data->{'destination'});
         }
-        if (property_exists($data, 'origin')) {
+        if (property_exists($data, 'origin') && $data->{'origin'} !== null) {
             $object->setOrigin($data->{'origin'});
         }
-        if (property_exists($data, 'pricingSource')) {
+        if (property_exists($data, 'pricingSource') && $data->{'pricingSource'} !== null) {
             $object->setPricingSource($data->{'pricingSource'});
         }
-        if (property_exists($data, 'text')) {
+        if (property_exists($data, 'text') && $data->{'text'} !== null) {
             $object->setText($data->{'text'});
         }
-        if (property_exists($data, 'type')) {
+        if (property_exists($data, 'type') && $data->{'type'} !== null) {
             $object->setType($data->{'type'});
         }
 

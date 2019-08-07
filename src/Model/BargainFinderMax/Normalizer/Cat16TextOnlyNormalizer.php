@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -30,19 +29,19 @@ class Cat16TextOnlyNormalizer implements DenormalizerInterface, NormalizerInterf
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\BargainFinderMax\Cat16TextOnly;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\BargainFinderMax\\Cat16TextOnly';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\BargainFinderMax\Cat16TextOnly();
-        if (property_exists($data, 'fareBasisCode')) {
+        if (property_exists($data, 'fareBasisCode') && $data->{'fareBasisCode'} !== null) {
             $object->setFareBasisCode($data->{'fareBasisCode'});
         }
-        if (property_exists($data, 'fareComponentId')) {
+        if (property_exists($data, 'fareComponentId') && $data->{'fareComponentId'} !== null) {
             $object->setFareComponentId($data->{'fareComponentId'});
         }
 
