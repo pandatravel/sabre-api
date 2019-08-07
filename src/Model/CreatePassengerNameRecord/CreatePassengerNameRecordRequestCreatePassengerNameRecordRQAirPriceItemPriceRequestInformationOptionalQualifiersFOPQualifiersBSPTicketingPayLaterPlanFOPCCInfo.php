@@ -15,30 +15,30 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBSPTicketingPayLaterPlanFOPCCInfo extends AbstractModel
 {
     /**
-     * Used to define card details.
+     * Used to define the payment card details.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBSPTicketingPayLaterPlanFOPCCInfoPaymentCard
      */
     protected $paymentCard;
 
     /**
-     * Used to define card details.
+     * Used to define the payment card details.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBSPTicketingPayLaterPlanFOPCCInfoPaymentCard
      */
-    public function getPaymentCard(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBSPTicketingPayLaterPlanFOPCCInfoPaymentCard
+    public function getPaymentCard(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBSPTicketingPayLaterPlanFOPCCInfoPaymentCard
     {
         return $this->paymentCard;
     }
 
     /**
-     * Used to define card details.
+     * Used to define the payment card details.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBSPTicketingPayLaterPlanFOPCCInfoPaymentCard $paymentCard
      *
      * @return self
      */
-    public function setPaymentCard(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBSPTicketingPayLaterPlanFOPCCInfoPaymentCard $paymentCard): self
+    public function setPaymentCard(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBSPTicketingPayLaterPlanFOPCCInfoPaymentCard $paymentCard): self
     {
         $this->paymentCard = $paymentCard;
 

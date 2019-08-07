@@ -15,30 +15,30 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuote extends AbstractModel
 {
     /**
-     * Priced itinerary details.
+     * The priced itinerary details.
      *
      * @var CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItinerary
      */
     protected $pricedItinerary;
 
     /**
-     * Priced itinerary details.
+     * The priced itinerary details.
      *
      * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItinerary
      */
-    public function getPricedItinerary(): ?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItinerary
+    public function getPricedItinerary(): CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItinerary
     {
         return $this->pricedItinerary;
     }
 
     /**
-     * Priced itinerary details.
+     * The priced itinerary details.
      *
      * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItinerary $pricedItinerary
      *
      * @return self
      */
-    public function setPricedItinerary(?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItinerary $pricedItinerary): self
+    public function setPricedItinerary(CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItinerary $pricedItinerary): self
     {
         $this->pricedItinerary = $pricedItinerary;
 

@@ -15,30 +15,30 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDestinationInformationFlightSegmentItemOperatingAirline extends AbstractModel
 {
     /**
-     * Used to specify the operating airline code.
+     * 'Code' is used to describe the code of the carrier operating the flight.
      *
      * @var string
      */
     protected $code;
 
     /**
-     * Used to specify the operating airline code.
+     * 'Code' is used to describe the code of the carrier operating the flight.
      *
      * @return string
      */
-    public function getCode(): ?string
+    public function getCode(): string
     {
         return $this->code;
     }
 
     /**
-     * Used to specify the operating airline code.
+     * 'Code' is used to describe the code of the carrier operating the flight.
      *
      * @param string $code
      *
      * @return self
      */
-    public function setCode(?string $code): self
+    public function setCode(string $code): self
     {
         $this->code = $code;
 

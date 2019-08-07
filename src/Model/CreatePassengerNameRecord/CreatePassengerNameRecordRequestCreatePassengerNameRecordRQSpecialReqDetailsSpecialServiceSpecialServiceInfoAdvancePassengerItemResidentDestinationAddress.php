@@ -15,60 +15,61 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoAdvancePassengerItemResidentDestinationAddress extends AbstractModel
 {
     /**
-     * City name.
+     * The city name.
      *
      * @var string
      */
     protected $city;
     /**
-     * Country code.
+     * The country code.
      *
      * @var string
      */
     protected $country;
     /**
-     * Street address.
+     * The street address.
      *
      * @var string
      */
     protected $street;
     /**
-     * State.
+     * The state code.
      *
      * @var string
      */
     protected $state;
     /**
-     * Zip or postal code.
+     * The zip or postal code.
      *
      * @var string
      */
     protected $zip;
     /**
-     * Used to specify the address type. Acceptable values are "R" - residence address, "D" - destination address.
+     * Used to specify the address type.
+     * Acceptable values are "R" - residence address, "D" - destination address.
      *
      * @var string
      */
     protected $type;
 
     /**
-     * City name.
+     * The city name.
      *
      * @return string
      */
-    public function getCity(): ?string
+    public function getCity(): string
     {
         return $this->city;
     }
 
     /**
-     * City name.
+     * The city name.
      *
      * @param string $city
      *
      * @return self
      */
-    public function setCity(?string $city): self
+    public function setCity(string $city): self
     {
         $this->city = $city;
 
@@ -76,23 +77,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     }
 
     /**
-     * Country code.
+     * The country code.
      *
      * @return string
      */
-    public function getCountry(): ?string
+    public function getCountry(): string
     {
         return $this->country;
     }
 
     /**
-     * Country code.
+     * The country code.
      *
      * @param string $country
      *
      * @return self
      */
-    public function setCountry(?string $country): self
+    public function setCountry(string $country): self
     {
         $this->country = $country;
 
@@ -100,23 +101,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     }
 
     /**
-     * Street address.
+     * The street address.
      *
      * @return string
      */
-    public function getStreet(): ?string
+    public function getStreet(): string
     {
         return $this->street;
     }
 
     /**
-     * Street address.
+     * The street address.
      *
      * @param string $street
      *
      * @return self
      */
-    public function setStreet(?string $street): self
+    public function setStreet(string $street): self
     {
         $this->street = $street;
 
@@ -124,23 +125,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     }
 
     /**
-     * State.
+     * The state code.
      *
      * @return string
      */
-    public function getState(): ?string
+    public function getState(): string
     {
         return $this->state;
     }
 
     /**
-     * State.
+     * The state code.
      *
      * @param string $state
      *
      * @return self
      */
-    public function setState(?string $state): self
+    public function setState(string $state): self
     {
         $this->state = $state;
 
@@ -148,23 +149,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     }
 
     /**
-     * Zip or postal code.
+     * The zip or postal code.
      *
      * @return string
      */
-    public function getZip(): ?string
+    public function getZip(): string
     {
         return $this->zip;
     }
 
     /**
-     * Zip or postal code.
+     * The zip or postal code.
      *
      * @param string $zip
      *
      * @return self
      */
-    public function setZip(?string $zip): self
+    public function setZip(string $zip): self
     {
         $this->zip = $zip;
 
@@ -172,23 +173,25 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     }
 
     /**
-     * Used to specify the address type. Acceptable values are "R" - residence address, "D" - destination address.
+     * Used to specify the address type.
+     * Acceptable values are "R" - residence address, "D" - destination address.
      *
      * @return string
      */
-    public function getType(): ?string
+    public function getType(): string
     {
         return $this->type;
     }
 
     /**
-     * Used to specify the address type. Acceptable values are "R" - residence address, "D" - destination address.
+     * Used to specify the address type.
+     * Acceptable values are "R" - residence address, "D" - destination address.
      *
      * @param string $type
      *
      * @return self
      */
-    public function setType(?string $type): self
+    public function setType(string $type): self
     {
         $this->type = $type;
 

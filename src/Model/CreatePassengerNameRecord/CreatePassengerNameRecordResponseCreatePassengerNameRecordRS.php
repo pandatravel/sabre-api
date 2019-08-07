@@ -15,7 +15,7 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordResponseCreatePassengerNameRecordRS extends AbstractModel
 {
     /**
-     * .
+     * The API version.
      *
      * @var string
      */
@@ -25,13 +25,13 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRS extends Abstr
      */
     protected $applicationResults;
     /**
-     * Used to pass the ID of the ended record.
+     * The ID of the ended passenger name record.
      *
      * @var CreatePassengerNameRecordResponseCreatePassengerNameRecordRSItineraryRef
      */
     protected $itineraryRef;
     /**
-     * Used to pass air segment booking details.
+     * Used to return air segment booking details.
      *
      * @var CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBook
      */
@@ -43,30 +43,30 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRS extends Abstr
      */
     protected $airPrice;
     /**
-     * Used to pass details of the ended record.
+     * Used to return details of the ended passenger name record.
      *
      * @var CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryRead
      */
     protected $travelItineraryRead;
 
     /**
-     * .
+     * The API version.
      *
      * @return string
      */
-    public function getVersion(): ?string
+    public function getVersion(): string
     {
         return $this->version;
     }
 
     /**
-     * .
+     * The API version.
      *
      * @param string $version
      *
      * @return self
      */
-    public function setVersion(?string $version): self
+    public function setVersion(string $version): self
     {
         $this->version = $version;
 
@@ -76,7 +76,7 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRS extends Abstr
     /**
      * @return ApplicationResults
      */
-    public function getApplicationResults(): ?ApplicationResults
+    public function getApplicationResults(): ApplicationResults
     {
         return $this->applicationResults;
     }
@@ -86,7 +86,7 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRS extends Abstr
      *
      * @return self
      */
-    public function setApplicationResults(?ApplicationResults $applicationResults): self
+    public function setApplicationResults(ApplicationResults $applicationResults): self
     {
         $this->applicationResults = $applicationResults;
 
@@ -94,23 +94,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRS extends Abstr
     }
 
     /**
-     * Used to pass the ID of the ended record.
+     * The ID of the ended passenger name record.
      *
      * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSItineraryRef
      */
-    public function getItineraryRef(): ?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSItineraryRef
+    public function getItineraryRef(): CreatePassengerNameRecordResponseCreatePassengerNameRecordRSItineraryRef
     {
         return $this->itineraryRef;
     }
 
     /**
-     * Used to pass the ID of the ended record.
+     * The ID of the ended passenger name record.
      *
      * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSItineraryRef $itineraryRef
      *
      * @return self
      */
-    public function setItineraryRef(?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSItineraryRef $itineraryRef): self
+    public function setItineraryRef(CreatePassengerNameRecordResponseCreatePassengerNameRecordRSItineraryRef $itineraryRef): self
     {
         $this->itineraryRef = $itineraryRef;
 
@@ -118,23 +118,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRS extends Abstr
     }
 
     /**
-     * Used to pass air segment booking details.
+     * Used to return air segment booking details.
      *
      * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBook
      */
-    public function getAirBook(): ?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBook
+    public function getAirBook(): CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBook
     {
         return $this->airBook;
     }
 
     /**
-     * Used to pass air segment booking details.
+     * Used to return air segment booking details.
      *
      * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBook $airBook
      *
      * @return self
      */
-    public function setAirBook(?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBook $airBook): self
+    public function setAirBook(CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBook $airBook): self
     {
         $this->airBook = $airBook;
 
@@ -146,7 +146,7 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRS extends Abstr
      *
      * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItem[]
      */
-    public function getAirPrice(): ?array
+    public function getAirPrice(): array
     {
         return $this->airPrice;
     }
@@ -158,7 +158,7 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRS extends Abstr
      *
      * @return self
      */
-    public function setAirPrice(?array $airPrice): self
+    public function setAirPrice(array $airPrice): self
     {
         $this->airPrice = $airPrice;
 
@@ -166,23 +166,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRS extends Abstr
     }
 
     /**
-     * Used to pass details of the ended record.
+     * Used to return details of the ended passenger name record.
      *
      * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryRead
      */
-    public function getTravelItineraryRead(): ?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryRead
+    public function getTravelItineraryRead(): CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryRead
     {
         return $this->travelItineraryRead;
     }
 
     /**
-     * Used to pass details of the ended record.
+     * Used to return details of the ended passenger name record.
      *
      * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryRead $travelItineraryRead
      *
      * @return self
      */
-    public function setTravelItineraryRead(?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryRead $travelItineraryRead): self
+    public function setTravelItineraryRead(CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryRead $travelItineraryRead): self
     {
         $this->travelItineraryRead = $travelItineraryRead;
 

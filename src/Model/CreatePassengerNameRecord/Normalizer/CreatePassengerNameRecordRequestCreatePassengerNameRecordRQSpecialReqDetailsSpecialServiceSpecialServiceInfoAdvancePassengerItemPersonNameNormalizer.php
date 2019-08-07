@@ -30,7 +30,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoAdvancePassengerItemPersonName;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoAdvancePassengerItemPersonName';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
@@ -56,6 +56,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
         }
         if (property_exists($data, 'Gender')) {
             $object->setGender($data->{'Gender'});
+        }
+        if (property_exists($data, 'LapChild')) {
+            $object->setLapChild($data->{'LapChild'});
         }
         if (property_exists($data, 'NameNumber')) {
             $object->setNameNumber($data->{'NameNumber'});
@@ -84,6 +87,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
         }
         if (null !== $object->getGender()) {
             $data->{'Gender'} = $object->getGender();
+        }
+        if (null !== $object->getLapChild()) {
+            $data->{'LapChild'} = $object->getLapChild();
         }
         if (null !== $object->getNameNumber()) {
             $data->{'NameNumber'} = $object->getNameNumber();

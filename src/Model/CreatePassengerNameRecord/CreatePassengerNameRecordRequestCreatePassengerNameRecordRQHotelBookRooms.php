@@ -15,36 +15,36 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRooms extends AbstractModel
 {
     /**
-     * List of Extended Rooms.
+     * The list of Rooms.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsRoomItem[]
      */
     protected $room;
     /**
-     * Indicates number of rooms to be booked.
+     * Indicates the number of rooms to be booked.
      *
      * @var int
      */
     protected $numberOfRooms;
 
     /**
-     * List of Extended Rooms.
+     * The list of Rooms.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsRoomItem[]
      */
-    public function getRoom(): ?array
+    public function getRoom(): array
     {
         return $this->room;
     }
 
     /**
-     * List of Extended Rooms.
+     * The list of Rooms.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsRoomItem[] $room
      *
      * @return self
      */
-    public function setRoom(?array $room): self
+    public function setRoom(array $room): self
     {
         $this->room = $room;
 
@@ -52,23 +52,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRooms 
     }
 
     /**
-     * Indicates number of rooms to be booked.
+     * Indicates the number of rooms to be booked.
      *
      * @return int
      */
-    public function getNumberOfRooms(): ?int
+    public function getNumberOfRooms(): int
     {
         return $this->numberOfRooms;
     }
 
     /**
-     * Indicates number of rooms to be booked.
+     * Indicates the number of rooms to be booked.
      *
      * @param int $numberOfRooms
      *
      * @return self
      */
-    public function setNumberOfRooms(?int $numberOfRooms): self
+    public function setNumberOfRooms(int $numberOfRooms): self
     {
         $this->numberOfRooms = $numberOfRooms;
 

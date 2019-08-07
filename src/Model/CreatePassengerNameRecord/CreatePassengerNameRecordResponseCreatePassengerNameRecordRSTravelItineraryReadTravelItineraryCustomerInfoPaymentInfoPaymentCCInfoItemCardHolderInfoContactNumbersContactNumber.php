@@ -15,30 +15,30 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPaymentInfoPaymentCCInfoItemCardHolderInfoContactNumbersContactNumber extends AbstractModel
 {
     /**
-     * "Phone" is used to return the telephone number associated with the particular credit card holder.
+     * The telephone number associated with the particular credit card holder.
      *
      * @var string
      */
     protected $phone;
 
     /**
-     * "Phone" is used to return the telephone number associated with the particular credit card holder.
+     * The telephone number associated with the particular credit card holder.
      *
      * @return string
      */
-    public function getPhone(): ?string
+    public function getPhone(): string
     {
         return $this->phone;
     }
 
     /**
-     * "Phone" is used to return the telephone number associated with the particular credit card holder.
+     * The telephone number associated with the particular credit card holder.
      *
      * @param string $phone
      *
      * @return self
      */
-    public function setPhone(?string $phone): self
+    public function setPhone(string $phone): self
     {
         $this->phone = $phone;
 

@@ -15,36 +15,36 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemPriceInformationBase extends AbstractModel
 {
     /**
-     * Amount.
+     * The amount.
      *
      * @var string
      */
     protected $amount;
     /**
-     * Currency code.
+     * The currency code.
      *
      * @var string
      */
     protected $currencyCode;
 
     /**
-     * Amount.
+     * The amount.
      *
      * @return string
      */
-    public function getAmount(): ?string
+    public function getAmount(): string
     {
         return $this->amount;
     }
 
     /**
-     * Amount.
+     * The amount.
      *
      * @param string $amount
      *
      * @return self
      */
-    public function setAmount(?string $amount): self
+    public function setAmount(string $amount): self
     {
         $this->amount = $amount;
 
@@ -52,23 +52,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     }
 
     /**
-     * Currency code.
+     * The currency code.
      *
      * @return string
      */
-    public function getCurrencyCode(): ?string
+    public function getCurrencyCode(): string
     {
         return $this->currencyCode;
     }
 
     /**
-     * Currency code.
+     * The currency code.
      *
      * @param string $currencyCode
      *
      * @return self
      */
-    public function setCurrencyCode(?string $currencyCode): self
+    public function setCurrencyCode(string $currencyCode): self
     {
         $this->currencyCode = $currencyCode;
 

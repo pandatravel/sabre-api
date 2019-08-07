@@ -26,7 +26,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoCustomerInfoPersonNameItemGroupInfoVendorPrefsAirline
      */
-    public function getAirline(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoCustomerInfoPersonNameItemGroupInfoVendorPrefsAirline
+    public function getAirline(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoCustomerInfoPersonNameItemGroupInfoVendorPrefsAirline
     {
         return $this->airline;
     }
@@ -38,7 +38,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
      *
      * @return self
      */
-    public function setAirline(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoCustomerInfoPersonNameItemGroupInfoVendorPrefsAirline $airline): self
+    public function setAirline(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoCustomerInfoPersonNameItemGroupInfoVendorPrefsAirline $airline): self
     {
         $this->airline = $airline;
 

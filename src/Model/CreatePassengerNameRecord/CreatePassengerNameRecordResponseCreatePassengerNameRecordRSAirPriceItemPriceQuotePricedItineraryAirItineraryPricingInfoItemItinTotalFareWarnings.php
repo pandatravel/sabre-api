@@ -15,30 +15,30 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareWarnings extends AbstractModel
 {
     /**
-     * Warning.
+     * The warning information.
      *
      * @var CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareWarningsWarningItem[]
      */
     protected $warning;
 
     /**
-     * Warning.
+     * The warning information.
      *
      * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareWarningsWarningItem[]
      */
-    public function getWarning(): ?array
+    public function getWarning(): array
     {
         return $this->warning;
     }
 
     /**
-     * Warning.
+     * The warning information.
      *
      * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareWarningsWarningItem[] $warning
      *
      * @return self
      */
-    public function setWarning(?array $warning): self
+    public function setWarning(array $warning): self
     {
         $this->warning = $warning;
 

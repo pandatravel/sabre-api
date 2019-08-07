@@ -30,7 +30,7 @@ class ProblemInformationSystemSpecificResultsItemNormalizer implements Denormali
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\ProblemInformationSystemSpecificResultsItem;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\ProblemInformationSystemSpecificResultsItem';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])

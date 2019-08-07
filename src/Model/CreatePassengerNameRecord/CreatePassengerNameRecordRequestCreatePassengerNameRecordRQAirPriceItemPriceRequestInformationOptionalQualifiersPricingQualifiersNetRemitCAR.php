@@ -15,30 +15,30 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersNetRemitCAR extends AbstractModel
 {
     /**
-     * Car code.
+     * The 'CAR' code.
      *
      * @var string
      */
     protected $code;
 
     /**
-     * Car code.
+     * The 'CAR' code.
      *
      * @return string
      */
-    public function getCode(): ?string
+    public function getCode(): string
     {
         return $this->code;
     }
 
     /**
-     * Car code.
+     * The 'CAR' code.
      *
      * @param string $code
      *
      * @return self
      */
-    public function setCode(?string $code): self
+    public function setCode(string $code): self
     {
         $this->code = $code;
 

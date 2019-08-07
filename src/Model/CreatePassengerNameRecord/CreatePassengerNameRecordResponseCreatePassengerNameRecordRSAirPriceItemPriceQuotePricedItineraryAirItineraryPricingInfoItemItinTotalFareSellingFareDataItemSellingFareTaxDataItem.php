@@ -15,30 +15,30 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareSellingFareDataItemSellingFareTaxDataItem extends AbstractModel
 {
     /**
-     * tax data.
+     * The tax data.
      *
      * @var CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareSellingFareDataItemSellingFareTaxDataItemTax
      */
     protected $tax;
 
     /**
-     * tax data.
+     * The tax data.
      *
      * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareSellingFareDataItemSellingFareTaxDataItemTax
      */
-    public function getTax(): ?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareSellingFareDataItemSellingFareTaxDataItemTax
+    public function getTax(): CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareSellingFareDataItemSellingFareTaxDataItemTax
     {
         return $this->tax;
     }
 
     /**
-     * tax data.
+     * The tax data.
      *
      * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareSellingFareDataItemSellingFareTaxDataItemTax $tax
      *
      * @return self
      */
-    public function setTax(?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareSellingFareDataItemSellingFareTaxDataItemTax $tax): self
+    public function setTax(CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareSellingFareDataItemSellingFareTaxDataItemTax $tax): self
     {
         $this->tax = $tax;
 

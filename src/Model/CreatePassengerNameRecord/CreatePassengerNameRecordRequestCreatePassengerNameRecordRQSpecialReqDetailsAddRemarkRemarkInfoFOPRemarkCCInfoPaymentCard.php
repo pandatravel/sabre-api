@@ -15,7 +15,7 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAddRemarkRemarkInfoFOPRemarkCCInfoPaymentCard extends AbstractModel
 {
     /**
-     * Used to specify an airline code to be used in conjunction with a credit card security code.
+     * 'AirlineCode' is used to specify a airline code to be used in conjunction with a credit card security code.
      *
      * @var string
      */
@@ -33,19 +33,22 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
      */
     protected $code;
     /**
-     * Used to specify a credit card expiration date.
+     * 'ExpireDate' is used to specify a credit card expiration date.
+     * 'ExpireDate' follows this format: YYYY-MM.
+     * Go to the following link for a more in-depth explanation.
+     * http://www.w3.org/TR/xmlschema-2/#gYearMonth
      *
      * @var string
      */
     protected $expireDate;
     /**
-     * Used to define number of months for extended payment.
+     * 'ExtendedPayment' is used to pass the number of months by which to extend the payment.
      *
      * @var string
      */
     protected $extendedPayment;
     /**
-     * Used to specify a manual credit card if applicable.
+     * 'ManualApprovalCode' is used to pass a manual credit card approval code if it applies to the credit card.
      *
      * @var string
      */
@@ -64,23 +67,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     protected $suppressApprovalCode;
 
     /**
-     * Used to specify an airline code to be used in conjunction with a credit card security code.
+     * 'AirlineCode' is used to specify a airline code to be used in conjunction with a credit card security code.
      *
      * @return string
      */
-    public function getAirlineCode(): ?string
+    public function getAirlineCode(): string
     {
         return $this->airlineCode;
     }
 
     /**
-     * Used to specify an airline code to be used in conjunction with a credit card security code.
+     * 'AirlineCode' is used to specify a airline code to be used in conjunction with a credit card security code.
      *
      * @param string $airlineCode
      *
      * @return self
      */
-    public function setAirlineCode(?string $airlineCode): self
+    public function setAirlineCode(string $airlineCode): self
     {
         $this->airlineCode = $airlineCode;
 
@@ -92,7 +95,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
      *
      * @return string
      */
-    public function getCardSecurityCode(): ?string
+    public function getCardSecurityCode(): string
     {
         return $this->cardSecurityCode;
     }
@@ -104,7 +107,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
      *
      * @return self
      */
-    public function setCardSecurityCode(?string $cardSecurityCode): self
+    public function setCardSecurityCode(string $cardSecurityCode): self
     {
         $this->cardSecurityCode = $cardSecurityCode;
 
@@ -116,7 +119,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
      *
      * @return string
      */
-    public function getCode(): ?string
+    public function getCode(): string
     {
         return $this->code;
     }
@@ -128,7 +131,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
      *
      * @return self
      */
-    public function setCode(?string $code): self
+    public function setCode(string $code): self
     {
         $this->code = $code;
 
@@ -136,23 +139,29 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     }
 
     /**
-     * Used to specify a credit card expiration date.
+     * 'ExpireDate' is used to specify a credit card expiration date.
+     * 'ExpireDate' follows this format: YYYY-MM.
+     * Go to the following link for a more in-depth explanation.
+     * http://www.w3.org/TR/xmlschema-2/#gYearMonth
      *
      * @return string
      */
-    public function getExpireDate(): ?string
+    public function getExpireDate(): string
     {
         return $this->expireDate;
     }
 
     /**
-     * Used to specify a credit card expiration date.
+     * 'ExpireDate' is used to specify a credit card expiration date.
+     * 'ExpireDate' follows this format: YYYY-MM.
+     * Go to the following link for a more in-depth explanation.
+     * http://www.w3.org/TR/xmlschema-2/#gYearMonth
      *
      * @param string $expireDate
      *
      * @return self
      */
-    public function setExpireDate(?string $expireDate): self
+    public function setExpireDate(string $expireDate): self
     {
         $this->expireDate = $expireDate;
 
@@ -160,23 +169,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     }
 
     /**
-     * Used to define number of months for extended payment.
+     * 'ExtendedPayment' is used to pass the number of months by which to extend the payment.
      *
      * @return string
      */
-    public function getExtendedPayment(): ?string
+    public function getExtendedPayment(): string
     {
         return $this->extendedPayment;
     }
 
     /**
-     * Used to define number of months for extended payment.
+     * 'ExtendedPayment' is used to pass the number of months by which to extend the payment.
      *
      * @param string $extendedPayment
      *
      * @return self
      */
-    public function setExtendedPayment(?string $extendedPayment): self
+    public function setExtendedPayment(string $extendedPayment): self
     {
         $this->extendedPayment = $extendedPayment;
 
@@ -184,23 +193,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     }
 
     /**
-     * Used to specify a manual credit card if applicable.
+     * 'ManualApprovalCode' is used to pass a manual credit card approval code if it applies to the credit card.
      *
      * @return string
      */
-    public function getManualApprovalCode(): ?string
+    public function getManualApprovalCode(): string
     {
         return $this->manualApprovalCode;
     }
 
     /**
-     * Used to specify a manual credit card if applicable.
+     * 'ManualApprovalCode' is used to pass a manual credit card approval code if it applies to the credit card.
      *
      * @param string $manualApprovalCode
      *
      * @return self
      */
-    public function setManualApprovalCode(?string $manualApprovalCode): self
+    public function setManualApprovalCode(string $manualApprovalCode): self
     {
         $this->manualApprovalCode = $manualApprovalCode;
 
@@ -212,7 +221,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
      *
      * @return string
      */
-    public function getNumber(): ?string
+    public function getNumber(): string
     {
         return $this->number;
     }
@@ -224,7 +233,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
      *
      * @return self
      */
-    public function setNumber(?string $number): self
+    public function setNumber(string $number): self
     {
         $this->number = $number;
 
@@ -236,7 +245,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
      *
      * @return bool
      */
-    public function getSuppressApprovalCode(): ?bool
+    public function getSuppressApprovalCode(): bool
     {
         return $this->suppressApprovalCode;
     }
@@ -248,7 +257,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
      *
      * @return self
      */
-    public function setSuppressApprovalCode(?bool $suppressApprovalCode): self
+    public function setSuppressApprovalCode(bool $suppressApprovalCode): self
     {
         $this->suppressApprovalCode = $suppressApprovalCode;
 

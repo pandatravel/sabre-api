@@ -15,54 +15,57 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoSecureFlightItemPersonName extends AbstractModel
 {
     /**
-     * First name.
+     * The first name.
      *
      * @var string
      */
     protected $givenName;
     /**
-     * Surname.
+     * The surname.
      *
      * @var string
      */
     protected $surname;
     /**
-     * "DateOfBirth" and "Gender" cannot combine with "RedressNumber" and "KnownTravelerNumber".
+     * The date of birth.
+     * 'DateOfBirth' accepts dates in the following formats - YYYY-MM-DD and YY-MM-DD.
+     * 'DateOfBirth' and 'Gender' cannot be combined with '../RedressNumber' and '../KnownTravelerNumber'.
      *
      * @var string
      */
     protected $dateOfBirth;
     /**
-     * Gender.
+     * The gender type code.
      *
      * @var string
      */
     protected $gender;
     /**
-     * Name number: 1.1, 2.1. etc.
+     * The name number.
+     * Example: 1.1, 2.1. etc.
      *
      * @var string
      */
     protected $nameNumber;
 
     /**
-     * First name.
+     * The first name.
      *
      * @return string
      */
-    public function getGivenName(): ?string
+    public function getGivenName(): string
     {
         return $this->givenName;
     }
 
     /**
-     * First name.
+     * The first name.
      *
      * @param string $givenName
      *
      * @return self
      */
-    public function setGivenName(?string $givenName): self
+    public function setGivenName(string $givenName): self
     {
         $this->givenName = $givenName;
 
@@ -70,23 +73,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     }
 
     /**
-     * Surname.
+     * The surname.
      *
      * @return string
      */
-    public function getSurname(): ?string
+    public function getSurname(): string
     {
         return $this->surname;
     }
 
     /**
-     * Surname.
+     * The surname.
      *
      * @param string $surname
      *
      * @return self
      */
-    public function setSurname(?string $surname): self
+    public function setSurname(string $surname): self
     {
         $this->surname = $surname;
 
@@ -94,23 +97,27 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     }
 
     /**
-     * "DateOfBirth" and "Gender" cannot combine with "RedressNumber" and "KnownTravelerNumber".
+     * The date of birth.
+     * 'DateOfBirth' accepts dates in the following formats - YYYY-MM-DD and YY-MM-DD.
+     * 'DateOfBirth' and 'Gender' cannot be combined with '../RedressNumber' and '../KnownTravelerNumber'.
      *
      * @return string
      */
-    public function getDateOfBirth(): ?string
+    public function getDateOfBirth(): string
     {
         return $this->dateOfBirth;
     }
 
     /**
-     * "DateOfBirth" and "Gender" cannot combine with "RedressNumber" and "KnownTravelerNumber".
+     * The date of birth.
+     * 'DateOfBirth' accepts dates in the following formats - YYYY-MM-DD and YY-MM-DD.
+     * 'DateOfBirth' and 'Gender' cannot be combined with '../RedressNumber' and '../KnownTravelerNumber'.
      *
      * @param string $dateOfBirth
      *
      * @return self
      */
-    public function setDateOfBirth(?string $dateOfBirth): self
+    public function setDateOfBirth(string $dateOfBirth): self
     {
         $this->dateOfBirth = $dateOfBirth;
 
@@ -118,23 +125,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     }
 
     /**
-     * Gender.
+     * The gender type code.
      *
      * @return string
      */
-    public function getGender(): ?string
+    public function getGender(): string
     {
         return $this->gender;
     }
 
     /**
-     * Gender.
+     * The gender type code.
      *
      * @param string $gender
      *
      * @return self
      */
-    public function setGender(?string $gender): self
+    public function setGender(string $gender): self
     {
         $this->gender = $gender;
 
@@ -142,23 +149,25 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     }
 
     /**
-     * Name number: 1.1, 2.1. etc.
+     * The name number.
+     * Example: 1.1, 2.1. etc.
      *
      * @return string
      */
-    public function getNameNumber(): ?string
+    public function getNameNumber(): string
     {
         return $this->nameNumber;
     }
 
     /**
-     * Name number: 1.1, 2.1. etc.
+     * The name number.
+     * Example: 1.1, 2.1. etc.
      *
      * @param string $nameNumber
      *
      * @return self
      */
-    public function setNameNumber(?string $nameNumber): self
+    public function setNameNumber(string $nameNumber): self
     {
         $this->nameNumber = $nameNumber;
 

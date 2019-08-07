@@ -15,30 +15,30 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingRedisplayReservation extends AbstractModel
 {
     /**
-     *  "waitInterval" is used to specify an interval that the system should wait in milliseconds before making redisplay service calls.
+     * 'waitInterval' is used to specify an interval that the system should wait in milliseconds before making redisplay service calls.
      *
      * @var int
      */
     protected $waitInterval;
 
     /**
-     *  "waitInterval" is used to specify an interval that the system should wait in milliseconds before making redisplay service calls.
+     * 'waitInterval' is used to specify an interval that the system should wait in milliseconds before making redisplay service calls.
      *
      * @return int
      */
-    public function getWaitInterval(): ?int
+    public function getWaitInterval(): int
     {
         return $this->waitInterval;
     }
 
     /**
-     *  "waitInterval" is used to specify an interval that the system should wait in milliseconds before making redisplay service calls.
+     * 'waitInterval' is used to specify an interval that the system should wait in milliseconds before making redisplay service calls.
      *
      * @param int $waitInterval
      *
      * @return self
      */
-    public function setWaitInterval(?int $waitInterval): self
+    public function setWaitInterval(int $waitInterval): self
     {
         $this->waitInterval = $waitInterval;
 

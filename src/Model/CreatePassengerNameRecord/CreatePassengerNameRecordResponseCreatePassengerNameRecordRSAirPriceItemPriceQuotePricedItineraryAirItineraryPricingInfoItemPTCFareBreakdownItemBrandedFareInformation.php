@@ -15,48 +15,48 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemPTCFareBreakdownItemBrandedFareInformation extends AbstractModel
 {
     /**
-     * Brand code.
+     * The brand code.
      *
      * @var string
      */
     protected $brandCode;
     /**
-     * Brand name.
+     * The brand name.
      *
      * @var string
      */
     protected $brandName;
     /**
-     * Program code.
+     * The program code.
      *
      * @var string
      */
     protected $programCode;
     /**
-     * Program name.
+     * The program name.
      *
      * @var string
      */
     protected $programName;
 
     /**
-     * Brand code.
+     * The brand code.
      *
      * @return string
      */
-    public function getBrandCode(): ?string
+    public function getBrandCode(): string
     {
         return $this->brandCode;
     }
 
     /**
-     * Brand code.
+     * The brand code.
      *
      * @param string $brandCode
      *
      * @return self
      */
-    public function setBrandCode(?string $brandCode): self
+    public function setBrandCode(string $brandCode): self
     {
         $this->brandCode = $brandCode;
 
@@ -64,23 +64,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     }
 
     /**
-     * Brand name.
+     * The brand name.
      *
      * @return string
      */
-    public function getBrandName(): ?string
+    public function getBrandName(): string
     {
         return $this->brandName;
     }
 
     /**
-     * Brand name.
+     * The brand name.
      *
      * @param string $brandName
      *
      * @return self
      */
-    public function setBrandName(?string $brandName): self
+    public function setBrandName(string $brandName): self
     {
         $this->brandName = $brandName;
 
@@ -88,23 +88,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     }
 
     /**
-     * Program code.
+     * The program code.
      *
      * @return string
      */
-    public function getProgramCode(): ?string
+    public function getProgramCode(): string
     {
         return $this->programCode;
     }
 
     /**
-     * Program code.
+     * The program code.
      *
      * @param string $programCode
      *
      * @return self
      */
-    public function setProgramCode(?string $programCode): self
+    public function setProgramCode(string $programCode): self
     {
         $this->programCode = $programCode;
 
@@ -112,23 +112,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     }
 
     /**
-     * Program name.
+     * The program name.
      *
      * @return string
      */
-    public function getProgramName(): ?string
+    public function getProgramName(): string
     {
         return $this->programName;
     }
 
     /**
-     * Program name.
+     * The program name.
      *
      * @param string $programName
      *
      * @return self
      */
-    public function setProgramName(?string $programName): self
+    public function setProgramName(string $programName): self
     {
         $this->programName = $programName;
 

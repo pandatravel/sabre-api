@@ -15,30 +15,30 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsRoomItemGuests extends AbstractModel
 {
     /**
-     * Used to pass details on a single guest.
+     * Used to pass details for a single guest.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsRoomItemGuestsGuestItem[]
      */
     protected $guest;
 
     /**
-     * Used to pass details on a single guest.
+     * Used to pass details for a single guest.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsRoomItemGuestsGuestItem[]
      */
-    public function getGuest(): ?array
+    public function getGuest(): array
     {
         return $this->guest;
     }
 
     /**
-     * Used to pass details on a single guest.
+     * Used to pass details for a single guest.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsRoomItemGuestsGuestItem[] $guest
      *
      * @return self
      */
-    public function setGuest(?array $guest): self
+    public function setGuest(array $guest): self
     {
         $this->guest = $guest;
 

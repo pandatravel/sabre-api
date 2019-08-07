@@ -27,13 +27,14 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      */
     protected $payLaterReferenceNumber;
     /**
-     * Used to define reference number.
+     * Used to define the reference number.
      *
      * @var int
      */
     protected $reference;
     /**
-     * Used to specify the value of the installments. Please note that decimals are not permitted.
+     * Used to specify the value of the installments.
+     * Please note that decimals are not permitted.
      *
      * @var string
      */
@@ -44,7 +45,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return string
      */
-    public function getCount(): ?string
+    public function getCount(): string
     {
         return $this->count;
     }
@@ -56,7 +57,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return self
      */
-    public function setCount(?string $count): self
+    public function setCount(string $count): self
     {
         $this->count = $count;
 
@@ -68,7 +69,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return string
      */
-    public function getPayLaterReferenceNumber(): ?string
+    public function getPayLaterReferenceNumber(): string
     {
         return $this->payLaterReferenceNumber;
     }
@@ -80,7 +81,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return self
      */
-    public function setPayLaterReferenceNumber(?string $payLaterReferenceNumber): self
+    public function setPayLaterReferenceNumber(string $payLaterReferenceNumber): self
     {
         $this->payLaterReferenceNumber = $payLaterReferenceNumber;
 
@@ -88,23 +89,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     }
 
     /**
-     * Used to define reference number.
+     * Used to define the reference number.
      *
      * @return int
      */
-    public function getReference(): ?int
+    public function getReference(): int
     {
         return $this->reference;
     }
 
     /**
-     * Used to define reference number.
+     * Used to define the reference number.
      *
      * @param int $reference
      *
      * @return self
      */
-    public function setReference(?int $reference): self
+    public function setReference(int $reference): self
     {
         $this->reference = $reference;
 
@@ -112,23 +113,25 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     }
 
     /**
-     * Used to specify the value of the installments. Please note that decimals are not permitted.
+     * Used to specify the value of the installments.
+     * Please note that decimals are not permitted.
      *
      * @return string
      */
-    public function getValue(): ?string
+    public function getValue(): string
     {
         return $this->value;
     }
 
     /**
-     * Used to specify the value of the installments. Please note that decimals are not permitted.
+     * Used to specify the value of the installments.
+     * Please note that decimals are not permitted.
      *
      * @param string $value
      *
      * @return self
      */
-    public function setValue(?string $value): self
+    public function setValue(string $value): self
     {
         $this->value = $value;
 

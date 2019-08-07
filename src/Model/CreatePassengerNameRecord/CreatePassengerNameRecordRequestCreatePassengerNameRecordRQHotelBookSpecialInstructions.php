@@ -15,30 +15,30 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookSpecialInstructions extends AbstractModel
 {
     /**
-     * Used to specify miscellaneous special preference information.
+     * Used to specify special instructions.
      *
      * @var string[]
      */
     protected $specialInstruction;
 
     /**
-     * Used to specify miscellaneous special preference information.
+     * Used to specify special instructions.
      *
      * @return string[]
      */
-    public function getSpecialInstruction(): ?array
+    public function getSpecialInstruction(): array
     {
         return $this->specialInstruction;
     }
 
     /**
-     * Used to specify miscellaneous special preference information.
+     * Used to specify special instructions.
      *
      * @param string[] $specialInstruction
      *
      * @return self
      */
-    public function setSpecialInstruction(?array $specialInstruction): self
+    public function setSpecialInstruction(array $specialInstruction): self
     {
         $this->specialInstruction = $specialInstruction;
 

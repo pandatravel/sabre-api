@@ -15,13 +15,13 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoCustLoyaltyItem extends AbstractModel
 {
     /**
-     * "TravelingCarrierCode" is used to return the traveling airline code.
+     * The traveling airline code.
      *
      * @var string
      */
     protected $travelingCarrierCode;
     /**
-     * "MembershipID" is used to return the passenger's frequent flyer number.
+     * The passenger's frequent flyer number.
      *
      * @var string
      */
@@ -33,54 +33,54 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
      */
     protected $nameNumber;
     /**
-     * "ProgramID" is used to return the passenger's frequent flyer airline code.
+     * The passenger's frequent flyer airline code.
      *
      * @var string
      */
     protected $programID;
     /**
-     * "RPH" is used as a reference placeholder.
+     * The reference placeholder.
      *
      * @var string
      */
     protected $rPH;
     /**
-     * "ShortText" is used to return miscellaneous frequent flyer-related information.
+     * 'ShortText' is used to return miscellaneous frequent flyer-related information.
      *
      * @var string
      */
     protected $shortText;
     /**
-     * "Status" is used to return the status code associated with the particular flight segment within the record.
+     * The status code associated with the particular flight segment within the record.
      *
      * @var string
      */
     protected $status;
     /**
-     * Reference ID.
+     * The reference ID.
      *
      * @var string
      */
     protected $id;
 
     /**
-     * "TravelingCarrierCode" is used to return the traveling airline code.
+     * The traveling airline code.
      *
      * @return string
      */
-    public function getTravelingCarrierCode(): ?string
+    public function getTravelingCarrierCode(): string
     {
         return $this->travelingCarrierCode;
     }
 
     /**
-     * "TravelingCarrierCode" is used to return the traveling airline code.
+     * The traveling airline code.
      *
      * @param string $travelingCarrierCode
      *
      * @return self
      */
-    public function setTravelingCarrierCode(?string $travelingCarrierCode): self
+    public function setTravelingCarrierCode(string $travelingCarrierCode): self
     {
         $this->travelingCarrierCode = $travelingCarrierCode;
 
@@ -88,23 +88,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     }
 
     /**
-     * "MembershipID" is used to return the passenger's frequent flyer number.
+     * The passenger's frequent flyer number.
      *
      * @return string
      */
-    public function getMembershipID(): ?string
+    public function getMembershipID(): string
     {
         return $this->membershipID;
     }
 
     /**
-     * "MembershipID" is used to return the passenger's frequent flyer number.
+     * The passenger's frequent flyer number.
      *
      * @param string $membershipID
      *
      * @return self
      */
-    public function setMembershipID(?string $membershipID): self
+    public function setMembershipID(string $membershipID): self
     {
         $this->membershipID = $membershipID;
 
@@ -116,7 +116,7 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
      *
      * @return string
      */
-    public function getNameNumber(): ?string
+    public function getNameNumber(): string
     {
         return $this->nameNumber;
     }
@@ -128,7 +128,7 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
      *
      * @return self
      */
-    public function setNameNumber(?string $nameNumber): self
+    public function setNameNumber(string $nameNumber): self
     {
         $this->nameNumber = $nameNumber;
 
@@ -136,23 +136,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     }
 
     /**
-     * "ProgramID" is used to return the passenger's frequent flyer airline code.
+     * The passenger's frequent flyer airline code.
      *
      * @return string
      */
-    public function getProgramID(): ?string
+    public function getProgramID(): string
     {
         return $this->programID;
     }
 
     /**
-     * "ProgramID" is used to return the passenger's frequent flyer airline code.
+     * The passenger's frequent flyer airline code.
      *
      * @param string $programID
      *
      * @return self
      */
-    public function setProgramID(?string $programID): self
+    public function setProgramID(string $programID): self
     {
         $this->programID = $programID;
 
@@ -160,23 +160,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     }
 
     /**
-     * "RPH" is used as a reference placeholder.
+     * The reference placeholder.
      *
      * @return string
      */
-    public function getRPH(): ?string
+    public function getRPH(): string
     {
         return $this->rPH;
     }
 
     /**
-     * "RPH" is used as a reference placeholder.
+     * The reference placeholder.
      *
      * @param string $rPH
      *
      * @return self
      */
-    public function setRPH(?string $rPH): self
+    public function setRPH(string $rPH): self
     {
         $this->rPH = $rPH;
 
@@ -184,23 +184,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     }
 
     /**
-     * "ShortText" is used to return miscellaneous frequent flyer-related information.
+     * 'ShortText' is used to return miscellaneous frequent flyer-related information.
      *
      * @return string
      */
-    public function getShortText(): ?string
+    public function getShortText(): string
     {
         return $this->shortText;
     }
 
     /**
-     * "ShortText" is used to return miscellaneous frequent flyer-related information.
+     * 'ShortText' is used to return miscellaneous frequent flyer-related information.
      *
      * @param string $shortText
      *
      * @return self
      */
-    public function setShortText(?string $shortText): self
+    public function setShortText(string $shortText): self
     {
         $this->shortText = $shortText;
 
@@ -208,23 +208,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     }
 
     /**
-     * "Status" is used to return the status code associated with the particular flight segment within the record.
+     * The status code associated with the particular flight segment within the record.
      *
      * @return string
      */
-    public function getStatus(): ?string
+    public function getStatus(): string
     {
         return $this->status;
     }
 
     /**
-     * "Status" is used to return the status code associated with the particular flight segment within the record.
+     * The status code associated with the particular flight segment within the record.
      *
      * @param string $status
      *
      * @return self
      */
-    public function setStatus(?string $status): self
+    public function setStatus(string $status): self
     {
         $this->status = $status;
 
@@ -232,23 +232,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     }
 
     /**
-     * Reference ID.
+     * The reference ID.
      *
      * @return string
      */
-    public function getId(): ?string
+    public function getId(): string
     {
         return $this->id;
     }
 
     /**
-     * Reference ID.
+     * The reference ID.
      *
      * @param string $id
      *
      * @return self
      */
-    public function setId(?string $id): self
+    public function setId(string $id): self
     {
         $this->id = $id;
 

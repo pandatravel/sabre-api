@@ -26,7 +26,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
      *
      * @return string
      */
-    public function getNameNumber(): ?string
+    public function getNameNumber(): string
     {
         return $this->nameNumber;
     }
@@ -38,7 +38,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
      *
      * @return self
      */
-    public function setNameNumber(?string $nameNumber): self
+    public function setNameNumber(string $nameNumber): self
     {
         $this->nameNumber = $nameNumber;
 

@@ -15,42 +15,42 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersCommandPricingItemDiscount extends AbstractModel
 {
     /**
-     * Amount.
+     * The discount amount.
      *
      * @var string
      */
     protected $amount;
     /**
-     * Authorization code.
+     * The discount authorization code.
      *
      * @var string
      */
     protected $authCode;
     /**
-     * Percent.
+     * The discount percentage.
      *
      * @var string
      */
     protected $percent;
 
     /**
-     * Amount.
+     * The discount amount.
      *
      * @return string
      */
-    public function getAmount(): ?string
+    public function getAmount(): string
     {
         return $this->amount;
     }
 
     /**
-     * Amount.
+     * The discount amount.
      *
      * @param string $amount
      *
      * @return self
      */
-    public function setAmount(?string $amount): self
+    public function setAmount(string $amount): self
     {
         $this->amount = $amount;
 
@@ -58,23 +58,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     }
 
     /**
-     * Authorization code.
+     * The discount authorization code.
      *
      * @return string
      */
-    public function getAuthCode(): ?string
+    public function getAuthCode(): string
     {
         return $this->authCode;
     }
 
     /**
-     * Authorization code.
+     * The discount authorization code.
      *
      * @param string $authCode
      *
      * @return self
      */
-    public function setAuthCode(?string $authCode): self
+    public function setAuthCode(string $authCode): self
     {
         $this->authCode = $authCode;
 
@@ -82,23 +82,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     }
 
     /**
-     * Percent.
+     * The discount percentage.
      *
      * @return string
      */
-    public function getPercent(): ?string
+    public function getPercent(): string
     {
         return $this->percent;
     }
 
     /**
-     * Percent.
+     * The discount percentage.
      *
      * @param string $percent
      *
      * @return self
      */
-    public function setPercent(?string $percent): self
+    public function setPercent(string $percent): self
     {
         $this->percent = $percent;
 

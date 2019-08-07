@@ -15,30 +15,30 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingMultipleFOPFOPTwoCCInfo extends AbstractModel
 {
     /**
-     * Used to define card details.
+     * Used to define the payment card details.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingMultipleFOPFOPTwoCCInfoPaymentCard
      */
     protected $paymentCard;
 
     /**
-     * Used to define card details.
+     * Used to define the payment card details.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingMultipleFOPFOPTwoCCInfoPaymentCard
      */
-    public function getPaymentCard(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingMultipleFOPFOPTwoCCInfoPaymentCard
+    public function getPaymentCard(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingMultipleFOPFOPTwoCCInfoPaymentCard
     {
         return $this->paymentCard;
     }
 
     /**
-     * Used to define card details.
+     * Used to define the payment card details.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingMultipleFOPFOPTwoCCInfoPaymentCard $paymentCard
      *
      * @return self
      */
-    public function setPaymentCard(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingMultipleFOPFOPTwoCCInfoPaymentCard $paymentCard): self
+    public function setPaymentCard(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingMultipleFOPFOPTwoCCInfoPaymentCard $paymentCard): self
     {
         $this->paymentCard = $paymentCard;
 

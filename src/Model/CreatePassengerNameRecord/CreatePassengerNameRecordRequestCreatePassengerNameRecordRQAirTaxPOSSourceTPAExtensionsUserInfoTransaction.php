@@ -15,30 +15,30 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSourceTPAExtensionsUserInfoTransaction extends AbstractModel
 {
     /**
-     * Transaction ID.
+     * The transaction ID.
      *
      * @var int
      */
     protected $iD;
 
     /**
-     * Transaction ID.
+     * The transaction ID.
      *
      * @return int
      */
-    public function getID(): ?int
+    public function getID(): int
     {
         return $this->iD;
     }
 
     /**
-     * Transaction ID.
+     * The transaction ID.
      *
      * @param int $iD
      *
      * @return self
      */
-    public function setID(?int $iD): self
+    public function setID(int $iD): self
     {
         $this->iD = $iD;
 

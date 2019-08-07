@@ -15,30 +15,30 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSourceTPAExtensionsUserInfoPartition extends AbstractModel
 {
     /**
-     * Partition ID.
+     * The partition ID.
      *
      * @var string
      */
     protected $iD;
 
     /**
-     * Partition ID.
+     * The partition ID.
      *
      * @return string
      */
-    public function getID(): ?string
+    public function getID(): string
     {
         return $this->iD;
     }
 
     /**
-     * Partition ID.
+     * The partition ID.
      *
      * @param string $iD
      *
      * @return self
      */
-    public function setID(?string $iD): self
+    public function setID(string $iD): self
     {
         $this->iD = $iD;
 

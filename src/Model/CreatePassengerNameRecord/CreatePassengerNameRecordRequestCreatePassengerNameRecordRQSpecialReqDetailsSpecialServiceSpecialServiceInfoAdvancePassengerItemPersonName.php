@@ -15,25 +15,25 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoAdvancePassengerItemPersonName extends AbstractModel
 {
     /**
-     * First name.
+     * The first name.
      *
      * @var string
      */
     protected $givenName;
     /**
-     * Middle name.
+     * The middle name.
      *
      * @var string
      */
     protected $middleName;
     /**
-     * Surname.
+     * The surname.
      *
      * @var string
      */
     protected $surname;
     /**
-     * Date of birth.
+     * The date of birth.
      *
      * @var string
      */
@@ -45,36 +45,44 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
      */
     protected $documentHolder;
     /**
-     * Gender.
+     * The gender.
      *
      * @var string
      */
     protected $gender;
     /**
-     * Name number: 1.1, 2.1. etc.
+     * Used to identify information associated with a lap child.
+     * It can only be used together with SpecialServiceInfo.AdvancePassenger.Document.Visa and SpecialServiceInfo.AdvancePassenger.ResidentDestinationAddress.
+     *
+     * @var bool
+     */
+    protected $lapChild;
+    /**
+     * The name number.
+     * I. e. 1.1, 2.1 etc.
      *
      * @var string
      */
     protected $nameNumber;
 
     /**
-     * First name.
+     * The first name.
      *
      * @return string
      */
-    public function getGivenName(): ?string
+    public function getGivenName(): string
     {
         return $this->givenName;
     }
 
     /**
-     * First name.
+     * The first name.
      *
      * @param string $givenName
      *
      * @return self
      */
-    public function setGivenName(?string $givenName): self
+    public function setGivenName(string $givenName): self
     {
         $this->givenName = $givenName;
 
@@ -82,23 +90,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     }
 
     /**
-     * Middle name.
+     * The middle name.
      *
      * @return string
      */
-    public function getMiddleName(): ?string
+    public function getMiddleName(): string
     {
         return $this->middleName;
     }
 
     /**
-     * Middle name.
+     * The middle name.
      *
      * @param string $middleName
      *
      * @return self
      */
-    public function setMiddleName(?string $middleName): self
+    public function setMiddleName(string $middleName): self
     {
         $this->middleName = $middleName;
 
@@ -106,23 +114,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     }
 
     /**
-     * Surname.
+     * The surname.
      *
      * @return string
      */
-    public function getSurname(): ?string
+    public function getSurname(): string
     {
         return $this->surname;
     }
 
     /**
-     * Surname.
+     * The surname.
      *
      * @param string $surname
      *
      * @return self
      */
-    public function setSurname(?string $surname): self
+    public function setSurname(string $surname): self
     {
         $this->surname = $surname;
 
@@ -130,23 +138,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     }
 
     /**
-     * Date of birth.
+     * The date of birth.
      *
      * @return string
      */
-    public function getDateOfBirth(): ?string
+    public function getDateOfBirth(): string
     {
         return $this->dateOfBirth;
     }
 
     /**
-     * Date of birth.
+     * The date of birth.
      *
      * @param string $dateOfBirth
      *
      * @return self
      */
-    public function setDateOfBirth(?string $dateOfBirth): self
+    public function setDateOfBirth(string $dateOfBirth): self
     {
         $this->dateOfBirth = $dateOfBirth;
 
@@ -158,7 +166,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
      *
      * @return bool
      */
-    public function getDocumentHolder(): ?bool
+    public function getDocumentHolder(): bool
     {
         return $this->documentHolder;
     }
@@ -170,7 +178,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
      *
      * @return self
      */
-    public function setDocumentHolder(?bool $documentHolder): self
+    public function setDocumentHolder(bool $documentHolder): self
     {
         $this->documentHolder = $documentHolder;
 
@@ -178,23 +186,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     }
 
     /**
-     * Gender.
+     * The gender.
      *
      * @return string
      */
-    public function getGender(): ?string
+    public function getGender(): string
     {
         return $this->gender;
     }
 
     /**
-     * Gender.
+     * The gender.
      *
      * @param string $gender
      *
      * @return self
      */
-    public function setGender(?string $gender): self
+    public function setGender(string $gender): self
     {
         $this->gender = $gender;
 
@@ -202,23 +210,51 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     }
 
     /**
-     * Name number: 1.1, 2.1. etc.
+     * Used to identify information associated with a lap child.
+     * It can only be used together with SpecialServiceInfo.AdvancePassenger.Document.Visa and SpecialServiceInfo.AdvancePassenger.ResidentDestinationAddress.
+     *
+     * @return bool
+     */
+    public function getLapChild(): bool
+    {
+        return $this->lapChild;
+    }
+
+    /**
+     * Used to identify information associated with a lap child.
+     * It can only be used together with SpecialServiceInfo.AdvancePassenger.Document.Visa and SpecialServiceInfo.AdvancePassenger.ResidentDestinationAddress.
+     *
+     * @param bool $lapChild
+     *
+     * @return self
+     */
+    public function setLapChild(bool $lapChild): self
+    {
+        $this->lapChild = $lapChild;
+
+        return $this;
+    }
+
+    /**
+     * The name number.
+     * I. e. 1.1, 2.1 etc.
      *
      * @return string
      */
-    public function getNameNumber(): ?string
+    public function getNameNumber(): string
     {
         return $this->nameNumber;
     }
 
     /**
-     * Name number: 1.1, 2.1. etc.
+     * The name number.
+     * I. e. 1.1, 2.1 etc.
      *
      * @param string $nameNumber
      *
      * @return self
      */
-    public function setNameNumber(?string $nameNumber): self
+    public function setNameNumber(string $nameNumber): self
     {
         $this->nameNumber = $nameNumber;
 

@@ -27,25 +27,29 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      */
     protected $governingCarrierOverride;
     /**
-     * Used to instruct the system to price the itinerary with fares having no advance purchase requirements. Cannot combine with "NoFareRestrictions.".
+     * Used to instruct the system to price the itinerary with fares having no advance purchase requirements.
+     * Cannot be combined with 'NoFareRestrictions'.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersOverridesNoAdvancePurchase
      */
     protected $noAdvancePurchase;
     /**
-     * Used to instruct the system to price the itinerary with fares having no restrictions. Cannot combine with "NoAdvancePurchase", "NoMinMaxStay", or "NoPenalty".
+     * Used to instruct the system to price the itinerary with fares having no restrictions.
+     * cannot be combined with 'NoAdvancePurchase', 'NoMinMaxStay', or 'NoPenalty'.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersOverridesNoFareRestrictions
      */
     protected $noFareRestrictions;
     /**
-     * Used to instruct the system to price the itinerary with fares having no minimum/maximum stay requirements. Cannot combine with "NoFareRestrictions".
+     * Used to instruct the system to price the itinerary with fares having no minimum/maximum stay requirements.
+     * Cannot be combined with 'NoFareRestrictions'.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersOverridesNoMinMaxStay
      */
     protected $noMinMaxStay;
     /**
-     * Used to instruct the system to price the itinerary with fares having no penalties. Cannot combine with "NoFareRestrictions".
+     * Used to instruct the system to price the itinerary with fares having no penalties.
+     * Cannot be combined with 'NoFareRestrictions'
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersOverridesNoPenalty
      */
@@ -68,7 +72,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersOverridesFuelSurchargeOverride
      */
-    public function getFuelSurchargeOverride(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersOverridesFuelSurchargeOverride
+    public function getFuelSurchargeOverride(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersOverridesFuelSurchargeOverride
     {
         return $this->fuelSurchargeOverride;
     }
@@ -80,7 +84,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return self
      */
-    public function setFuelSurchargeOverride(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersOverridesFuelSurchargeOverride $fuelSurchargeOverride): self
+    public function setFuelSurchargeOverride(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersOverridesFuelSurchargeOverride $fuelSurchargeOverride): self
     {
         $this->fuelSurchargeOverride = $fuelSurchargeOverride;
 
@@ -92,7 +96,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersOverridesGoverningCarrierOverrideItem[]
      */
-    public function getGoverningCarrierOverride(): ?array
+    public function getGoverningCarrierOverride(): array
     {
         return $this->governingCarrierOverride;
     }
@@ -104,7 +108,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return self
      */
-    public function setGoverningCarrierOverride(?array $governingCarrierOverride): self
+    public function setGoverningCarrierOverride(array $governingCarrierOverride): self
     {
         $this->governingCarrierOverride = $governingCarrierOverride;
 
@@ -112,23 +116,25 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     }
 
     /**
-     * Used to instruct the system to price the itinerary with fares having no advance purchase requirements. Cannot combine with "NoFareRestrictions.".
+     * Used to instruct the system to price the itinerary with fares having no advance purchase requirements.
+     * Cannot be combined with 'NoFareRestrictions'.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersOverridesNoAdvancePurchase
      */
-    public function getNoAdvancePurchase(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersOverridesNoAdvancePurchase
+    public function getNoAdvancePurchase(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersOverridesNoAdvancePurchase
     {
         return $this->noAdvancePurchase;
     }
 
     /**
-     * Used to instruct the system to price the itinerary with fares having no advance purchase requirements. Cannot combine with "NoFareRestrictions.".
+     * Used to instruct the system to price the itinerary with fares having no advance purchase requirements.
+     * Cannot be combined with 'NoFareRestrictions'.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersOverridesNoAdvancePurchase $noAdvancePurchase
      *
      * @return self
      */
-    public function setNoAdvancePurchase(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersOverridesNoAdvancePurchase $noAdvancePurchase): self
+    public function setNoAdvancePurchase(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersOverridesNoAdvancePurchase $noAdvancePurchase): self
     {
         $this->noAdvancePurchase = $noAdvancePurchase;
 
@@ -136,23 +142,25 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     }
 
     /**
-     * Used to instruct the system to price the itinerary with fares having no restrictions. Cannot combine with "NoAdvancePurchase", "NoMinMaxStay", or "NoPenalty".
+     * Used to instruct the system to price the itinerary with fares having no restrictions.
+     * cannot be combined with 'NoAdvancePurchase', 'NoMinMaxStay', or 'NoPenalty'.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersOverridesNoFareRestrictions
      */
-    public function getNoFareRestrictions(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersOverridesNoFareRestrictions
+    public function getNoFareRestrictions(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersOverridesNoFareRestrictions
     {
         return $this->noFareRestrictions;
     }
 
     /**
-     * Used to instruct the system to price the itinerary with fares having no restrictions. Cannot combine with "NoAdvancePurchase", "NoMinMaxStay", or "NoPenalty".
+     * Used to instruct the system to price the itinerary with fares having no restrictions.
+     * cannot be combined with 'NoAdvancePurchase', 'NoMinMaxStay', or 'NoPenalty'.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersOverridesNoFareRestrictions $noFareRestrictions
      *
      * @return self
      */
-    public function setNoFareRestrictions(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersOverridesNoFareRestrictions $noFareRestrictions): self
+    public function setNoFareRestrictions(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersOverridesNoFareRestrictions $noFareRestrictions): self
     {
         $this->noFareRestrictions = $noFareRestrictions;
 
@@ -160,23 +168,25 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     }
 
     /**
-     * Used to instruct the system to price the itinerary with fares having no minimum/maximum stay requirements. Cannot combine with "NoFareRestrictions".
+     * Used to instruct the system to price the itinerary with fares having no minimum/maximum stay requirements.
+     * Cannot be combined with 'NoFareRestrictions'.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersOverridesNoMinMaxStay
      */
-    public function getNoMinMaxStay(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersOverridesNoMinMaxStay
+    public function getNoMinMaxStay(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersOverridesNoMinMaxStay
     {
         return $this->noMinMaxStay;
     }
 
     /**
-     * Used to instruct the system to price the itinerary with fares having no minimum/maximum stay requirements. Cannot combine with "NoFareRestrictions".
+     * Used to instruct the system to price the itinerary with fares having no minimum/maximum stay requirements.
+     * Cannot be combined with 'NoFareRestrictions'.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersOverridesNoMinMaxStay $noMinMaxStay
      *
      * @return self
      */
-    public function setNoMinMaxStay(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersOverridesNoMinMaxStay $noMinMaxStay): self
+    public function setNoMinMaxStay(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersOverridesNoMinMaxStay $noMinMaxStay): self
     {
         $this->noMinMaxStay = $noMinMaxStay;
 
@@ -184,23 +194,25 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     }
 
     /**
-     * Used to instruct the system to price the itinerary with fares having no penalties. Cannot combine with "NoFareRestrictions".
+     * Used to instruct the system to price the itinerary with fares having no penalties.
+     * Cannot be combined with 'NoFareRestrictions'
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersOverridesNoPenalty
      */
-    public function getNoPenalty(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersOverridesNoPenalty
+    public function getNoPenalty(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersOverridesNoPenalty
     {
         return $this->noPenalty;
     }
 
     /**
-     * Used to instruct the system to price the itinerary with fares having no penalties. Cannot combine with "NoFareRestrictions".
+     * Used to instruct the system to price the itinerary with fares having no penalties.
+     * Cannot be combined with 'NoFareRestrictions'
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersOverridesNoPenalty $noPenalty
      *
      * @return self
      */
-    public function setNoPenalty(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersOverridesNoPenalty $noPenalty): self
+    public function setNoPenalty(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersOverridesNoPenalty $noPenalty): self
     {
         $this->noPenalty = $noPenalty;
 
@@ -212,7 +224,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersOverridesPurchase
      */
-    public function getPurchase(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersOverridesPurchase
+    public function getPurchase(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersOverridesPurchase
     {
         return $this->purchase;
     }
@@ -224,7 +236,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return self
      */
-    public function setPurchase(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersOverridesPurchase $purchase): self
+    public function setPurchase(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersOverridesPurchase $purchase): self
     {
         $this->purchase = $purchase;
 
@@ -236,7 +248,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersOverridesTicketing
      */
-    public function getTicketing(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersOverridesTicketing
+    public function getTicketing(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersOverridesTicketing
     {
         return $this->ticketing;
     }
@@ -248,7 +260,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return self
      */
-    public function setTicketing(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersOverridesTicketing $ticketing): self
+    public function setTicketing(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersOverridesTicketing $ticketing): self
     {
         $this->ticketing = $ticketing;
 

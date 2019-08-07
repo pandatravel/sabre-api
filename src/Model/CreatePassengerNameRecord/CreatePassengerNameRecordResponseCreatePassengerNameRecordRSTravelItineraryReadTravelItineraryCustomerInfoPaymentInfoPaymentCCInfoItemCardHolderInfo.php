@@ -15,42 +15,42 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPaymentInfoPaymentCCInfoItemCardHolderInfo extends AbstractModel
 {
     /**
-     * Address.
+     * The address information.
      *
      * @var CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPaymentInfoPaymentCCInfoItemCardHolderInfoAddress
      */
     protected $address;
     /**
-     * Contact numbers.
+     * The contact numbers.
      *
      * @var CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPaymentInfoPaymentCCInfoItemCardHolderInfoContactNumbers
      */
     protected $contactNumbers;
     /**
-     * "Name" is used to return the credit card holder's name.
+     * The credit card holder's name.
      *
      * @var string
      */
     protected $name;
 
     /**
-     * Address.
+     * The address information.
      *
      * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPaymentInfoPaymentCCInfoItemCardHolderInfoAddress
      */
-    public function getAddress(): ?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPaymentInfoPaymentCCInfoItemCardHolderInfoAddress
+    public function getAddress(): CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPaymentInfoPaymentCCInfoItemCardHolderInfoAddress
     {
         return $this->address;
     }
 
     /**
-     * Address.
+     * The address information.
      *
      * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPaymentInfoPaymentCCInfoItemCardHolderInfoAddress $address
      *
      * @return self
      */
-    public function setAddress(?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPaymentInfoPaymentCCInfoItemCardHolderInfoAddress $address): self
+    public function setAddress(CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPaymentInfoPaymentCCInfoItemCardHolderInfoAddress $address): self
     {
         $this->address = $address;
 
@@ -58,23 +58,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     }
 
     /**
-     * Contact numbers.
+     * The contact numbers.
      *
      * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPaymentInfoPaymentCCInfoItemCardHolderInfoContactNumbers
      */
-    public function getContactNumbers(): ?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPaymentInfoPaymentCCInfoItemCardHolderInfoContactNumbers
+    public function getContactNumbers(): CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPaymentInfoPaymentCCInfoItemCardHolderInfoContactNumbers
     {
         return $this->contactNumbers;
     }
 
     /**
-     * Contact numbers.
+     * The contact numbers.
      *
      * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPaymentInfoPaymentCCInfoItemCardHolderInfoContactNumbers $contactNumbers
      *
      * @return self
      */
-    public function setContactNumbers(?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPaymentInfoPaymentCCInfoItemCardHolderInfoContactNumbers $contactNumbers): self
+    public function setContactNumbers(CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPaymentInfoPaymentCCInfoItemCardHolderInfoContactNumbers $contactNumbers): self
     {
         $this->contactNumbers = $contactNumbers;
 
@@ -82,23 +82,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     }
 
     /**
-     * "Name" is used to return the credit card holder's name.
+     * The credit card holder's name.
      *
      * @return string
      */
-    public function getName(): ?string
+    public function getName(): string
     {
         return $this->name;
     }
 
     /**
-     * "Name" is used to return the credit card holder's name.
+     * The credit card holder's name.
      *
      * @param string $name
      *
      * @return self
      */
-    public function setName(?string $name): self
+    public function setName(string $name): self
     {
         $this->name = $name;
 

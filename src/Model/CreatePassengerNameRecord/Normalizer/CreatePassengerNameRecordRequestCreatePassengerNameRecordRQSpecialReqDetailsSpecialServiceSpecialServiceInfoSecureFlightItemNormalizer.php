@@ -30,7 +30,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoSecureFlightItem;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoSecureFlightItem';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
@@ -39,6 +39,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
             throw new InvalidArgumentException();
         }
         $object = new \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoSecureFlightItem();
+        if (property_exists($data, 'IssueCountry')) {
+            $object->setIssueCountry($data->{'IssueCountry'});
+        }
         if (property_exists($data, 'KnownTravelerNumber')) {
             $object->setKnownTravelerNumber($data->{'KnownTravelerNumber'});
         }
@@ -61,6 +64,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     public function normalize($object, $format = null, array $context = [])
     {
         $data = new \stdClass();
+        if (null !== $object->getIssueCountry()) {
+            $data->{'IssueCountry'} = $object->getIssueCountry();
+        }
         if (null !== $object->getKnownTravelerNumber()) {
             $data->{'KnownTravelerNumber'} = $object->getKnownTravelerNumber();
         }

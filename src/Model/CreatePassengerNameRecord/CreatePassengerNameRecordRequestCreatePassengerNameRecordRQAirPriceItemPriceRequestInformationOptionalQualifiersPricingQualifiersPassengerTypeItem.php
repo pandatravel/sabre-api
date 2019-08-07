@@ -21,7 +21,8 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      */
     protected $code;
     /**
-     * Used to force the system to price with the specified passenger type code. If the client requests multiple passenger types and also wishes to make use of @Force they should only pass it on the last .../PassengerType occurrence.
+     * Used to force the system to price with the specified passenger type code.
+     * If the client requests multiple passenger types and also wishes to make use of 'Forc'e they should only pass it on the last 'PassengerType' occurrence.
      *
      * @var bool
      */
@@ -38,7 +39,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return string
      */
-    public function getCode(): ?string
+    public function getCode(): string
     {
         return $this->code;
     }
@@ -50,7 +51,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return self
      */
-    public function setCode(?string $code): self
+    public function setCode(string $code): self
     {
         $this->code = $code;
 
@@ -58,23 +59,25 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     }
 
     /**
-     * Used to force the system to price with the specified passenger type code. If the client requests multiple passenger types and also wishes to make use of @Force they should only pass it on the last .../PassengerType occurrence.
+     * Used to force the system to price with the specified passenger type code.
+     * If the client requests multiple passenger types and also wishes to make use of 'Forc'e they should only pass it on the last 'PassengerType' occurrence.
      *
      * @return bool
      */
-    public function getForce(): ?bool
+    public function getForce(): bool
     {
         return $this->force;
     }
 
     /**
-     * Used to force the system to price with the specified passenger type code. If the client requests multiple passenger types and also wishes to make use of @Force they should only pass it on the last .../PassengerType occurrence.
+     * Used to force the system to price with the specified passenger type code.
+     * If the client requests multiple passenger types and also wishes to make use of 'Forc'e they should only pass it on the last 'PassengerType' occurrence.
      *
      * @param bool $force
      *
      * @return self
      */
-    public function setForce(?bool $force): self
+    public function setForce(bool $force): self
     {
         $this->force = $force;
 
@@ -86,7 +89,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return string
      */
-    public function getQuantity(): ?string
+    public function getQuantity(): string
     {
         return $this->quantity;
     }
@@ -98,7 +101,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return self
      */
-    public function setQuantity(?string $quantity): self
+    public function setQuantity(string $quantity): self
     {
         $this->quantity = $quantity;
 

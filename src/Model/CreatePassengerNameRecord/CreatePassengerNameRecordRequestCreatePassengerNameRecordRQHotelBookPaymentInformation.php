@@ -15,36 +15,39 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformation extends AbstractModel
 {
     /**
-     * Different forms of payment. Choose only one.
+     * Used to pass along different forms of payment.
+     * Please choose only one of them.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPayment
      */
     protected $formOfPayment;
     /**
-     * "Type"can be DEPOSIT or GUARANTEE.
+     * The form of payment 'Type'.
      *
      * @var string
      */
     protected $type;
 
     /**
-     * Different forms of payment. Choose only one.
+     * Used to pass along different forms of payment.
+     * Please choose only one of them.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPayment
      */
-    public function getFormOfPayment(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPayment
+    public function getFormOfPayment(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPayment
     {
         return $this->formOfPayment;
     }
 
     /**
-     * Different forms of payment. Choose only one.
+     * Used to pass along different forms of payment.
+     * Please choose only one of them.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPayment $formOfPayment
      *
      * @return self
      */
-    public function setFormOfPayment(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPayment $formOfPayment): self
+    public function setFormOfPayment(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPayment $formOfPayment): self
     {
         $this->formOfPayment = $formOfPayment;
 
@@ -52,23 +55,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymen
     }
 
     /**
-     * "Type"can be DEPOSIT or GUARANTEE.
+     * The form of payment 'Type'.
      *
      * @return string
      */
-    public function getType(): ?string
+    public function getType(): string
     {
         return $this->type;
     }
 
     /**
-     * "Type"can be DEPOSIT or GUARANTEE.
+     * The form of payment 'Type'.
      *
      * @param string $type
      *
      * @return self
      */
-    public function setType(?string $type): self
+    public function setType(string $type): self
     {
         $this->type = $type;
 

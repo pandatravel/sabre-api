@@ -15,7 +15,7 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersAlternativePricing extends AbstractModel
 {
     /**
-     * Overrides.
+     * The alternative pricing overrides.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersAlternativePricingOverrides
      */
@@ -28,23 +28,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     protected $noAvailCheck;
 
     /**
-     * Overrides.
+     * The alternative pricing overrides.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersAlternativePricingOverrides
      */
-    public function getOverrides(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersAlternativePricingOverrides
+    public function getOverrides(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersAlternativePricingOverrides
     {
         return $this->overrides;
     }
 
     /**
-     * Overrides.
+     * The alternative pricing overrides.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersAlternativePricingOverrides $overrides
      *
      * @return self
      */
-    public function setOverrides(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersAlternativePricingOverrides $overrides): self
+    public function setOverrides(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersAlternativePricingOverrides $overrides): self
     {
         $this->overrides = $overrides;
 
@@ -56,7 +56,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return bool
      */
-    public function getNoAvailCheck(): ?bool
+    public function getNoAvailCheck(): bool
     {
         return $this->noAvailCheck;
     }
@@ -68,7 +68,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return self
      */
-    public function setNoAvailCheck(?bool $noAvailCheck): self
+    public function setNoAvailCheck(bool $noAvailCheck): self
     {
         $this->noAvailCheck = $noAvailCheck;
 

@@ -15,13 +15,13 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAddRemarkRemarkInfo extends AbstractModel
 {
     /**
-     * Form of payment remark.
+     * The form of payment remark.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAddRemarkRemarkInfoFOPRemark
      */
     protected $fOPRemark;
     /**
-     * Used for future queue place remark.
+     * Used for future queue placement remark.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAddRemarkRemarkInfoFutureQueuePlaceRemark
      */
@@ -34,23 +34,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     protected $remark;
 
     /**
-     * Form of payment remark.
+     * The form of payment remark.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAddRemarkRemarkInfoFOPRemark
      */
-    public function getFOPRemark(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAddRemarkRemarkInfoFOPRemark
+    public function getFOPRemark(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAddRemarkRemarkInfoFOPRemark
     {
         return $this->fOPRemark;
     }
 
     /**
-     * Form of payment remark.
+     * The form of payment remark.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAddRemarkRemarkInfoFOPRemark $fOPRemark
      *
      * @return self
      */
-    public function setFOPRemark(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAddRemarkRemarkInfoFOPRemark $fOPRemark): self
+    public function setFOPRemark(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAddRemarkRemarkInfoFOPRemark $fOPRemark): self
     {
         $this->fOPRemark = $fOPRemark;
 
@@ -58,23 +58,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     }
 
     /**
-     * Used for future queue place remark.
+     * Used for future queue placement remark.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAddRemarkRemarkInfoFutureQueuePlaceRemark
      */
-    public function getFutureQueuePlaceRemark(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAddRemarkRemarkInfoFutureQueuePlaceRemark
+    public function getFutureQueuePlaceRemark(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAddRemarkRemarkInfoFutureQueuePlaceRemark
     {
         return $this->futureQueuePlaceRemark;
     }
 
     /**
-     * Used for future queue place remark.
+     * Used for future queue placement remark.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAddRemarkRemarkInfoFutureQueuePlaceRemark $futureQueuePlaceRemark
      *
      * @return self
      */
-    public function setFutureQueuePlaceRemark(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAddRemarkRemarkInfoFutureQueuePlaceRemark $futureQueuePlaceRemark): self
+    public function setFutureQueuePlaceRemark(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAddRemarkRemarkInfoFutureQueuePlaceRemark $futureQueuePlaceRemark): self
     {
         $this->futureQueuePlaceRemark = $futureQueuePlaceRemark;
 
@@ -86,7 +86,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAddRemarkRemarkInfoRemarkItem[]
      */
-    public function getRemark(): ?array
+    public function getRemark(): array
     {
         return $this->remark;
     }
@@ -98,7 +98,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
      *
      * @return self
      */
-    public function setRemark(?array $remark): self
+    public function setRemark(array $remark): self
     {
         $this->remark = $remark;
 

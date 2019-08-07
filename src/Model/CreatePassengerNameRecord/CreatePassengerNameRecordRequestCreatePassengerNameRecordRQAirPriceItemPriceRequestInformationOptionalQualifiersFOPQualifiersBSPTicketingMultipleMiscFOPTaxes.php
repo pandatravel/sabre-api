@@ -15,30 +15,30 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBSPTicketingMultipleMiscFOPTaxes extends AbstractModel
 {
     /**
-     * Used to define tax details.
+     * Used to define the tax details.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBSPTicketingMultipleMiscFOPTaxesTaxItem[]
      */
     protected $tax;
 
     /**
-     * Used to define tax details.
+     * Used to define the tax details.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBSPTicketingMultipleMiscFOPTaxesTaxItem[]
      */
-    public function getTax(): ?array
+    public function getTax(): array
     {
         return $this->tax;
     }
 
     /**
-     * Used to define tax details.
+     * Used to define the tax details.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBSPTicketingMultipleMiscFOPTaxesTaxItem[] $tax
      *
      * @return self
      */
-    public function setTax(?array $tax): self
+    public function setTax(array $tax): self
     {
         $this->tax = $tax;
 

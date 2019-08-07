@@ -26,7 +26,7 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
      *
      * @return string[]
      */
-    public function getText(): ?array
+    public function getText(): array
     {
         return $this->text;
     }
@@ -38,7 +38,7 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
      *
      * @return self
      */
-    public function setText(?array $text): self
+    public function setText(array $text): self
     {
         $this->text = $text;
 

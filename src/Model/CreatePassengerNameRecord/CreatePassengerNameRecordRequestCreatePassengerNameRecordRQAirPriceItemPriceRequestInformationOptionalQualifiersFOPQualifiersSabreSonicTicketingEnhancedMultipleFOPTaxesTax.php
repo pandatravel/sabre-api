@@ -15,36 +15,36 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingEnhancedMultipleFOPTaxesTax extends AbstractModel
 {
     /**
-     * Tax amount.
+     * The tax amount.
      *
      * @var string
      */
     protected $amount;
     /**
-     * Tax code.
+     * 'TaxCode' is used to specify the tax code, refer to OpenTravel Code List Fee Tax Type(FTT).
      *
      * @var string
      */
     protected $taxCode;
 
     /**
-     * Tax amount.
+     * The tax amount.
      *
      * @return string
      */
-    public function getAmount(): ?string
+    public function getAmount(): string
     {
         return $this->amount;
     }
 
     /**
-     * Tax amount.
+     * The tax amount.
      *
      * @param string $amount
      *
      * @return self
      */
-    public function setAmount(?string $amount): self
+    public function setAmount(string $amount): self
     {
         $this->amount = $amount;
 
@@ -52,23 +52,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     }
 
     /**
-     * Tax code.
+     * 'TaxCode' is used to specify the tax code, refer to OpenTravel Code List Fee Tax Type(FTT).
      *
      * @return string
      */
-    public function getTaxCode(): ?string
+    public function getTaxCode(): string
     {
         return $this->taxCode;
     }
 
     /**
-     * Tax code.
+     * 'TaxCode' is used to specify the tax code, refer to OpenTravel Code List Fee Tax Type(FTT).
      *
      * @param string $taxCode
      *
      * @return self
      */
-    public function setTaxCode(?string $taxCode): self
+    public function setTaxCode(string $taxCode): self
     {
         $this->taxCode = $taxCode;
 

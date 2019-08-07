@@ -15,7 +15,7 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBSPTicketingMultipleFOPFOPOneCCInfo extends AbstractModel
 {
     /**
-     * Used to define card details.
+     * Used to define the payment card details.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBSPTicketingMultipleFOPFOPOneCCInfoPaymentCard
      */
@@ -28,23 +28,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     protected $suppress;
 
     /**
-     * Used to define card details.
+     * Used to define the payment card details.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBSPTicketingMultipleFOPFOPOneCCInfoPaymentCard
      */
-    public function getPaymentCard(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBSPTicketingMultipleFOPFOPOneCCInfoPaymentCard
+    public function getPaymentCard(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBSPTicketingMultipleFOPFOPOneCCInfoPaymentCard
     {
         return $this->paymentCard;
     }
 
     /**
-     * Used to define card details.
+     * Used to define the payment card details.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBSPTicketingMultipleFOPFOPOneCCInfoPaymentCard $paymentCard
      *
      * @return self
      */
-    public function setPaymentCard(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBSPTicketingMultipleFOPFOPOneCCInfoPaymentCard $paymentCard): self
+    public function setPaymentCard(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBSPTicketingMultipleFOPFOPOneCCInfoPaymentCard $paymentCard): self
     {
         $this->paymentCard = $paymentCard;
 
@@ -56,7 +56,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return bool
      */
-    public function getSuppress(): ?bool
+    public function getSuppress(): bool
     {
         return $this->suppress;
     }
@@ -68,7 +68,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return self
      */
-    public function setSuppress(?bool $suppress): self
+    public function setSuppress(bool $suppress): self
     {
         $this->suppress = $suppress;
 

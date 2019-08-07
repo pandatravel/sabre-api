@@ -21,7 +21,8 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      */
     protected $markDown;
     /**
-     * Used to instruct the system to price the itinerary with a mark up amount. MarkDown cannot be combined with MarkUp.
+     * Used to instruct the system to price the itinerary with a mark up amount.
+     * MarkDown cannot be combined with MarkUp.
      *
      * @var float
      */
@@ -32,7 +33,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return float
      */
-    public function getMarkDown(): ?float
+    public function getMarkDown(): float
     {
         return $this->markDown;
     }
@@ -44,7 +45,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return self
      */
-    public function setMarkDown(?float $markDown): self
+    public function setMarkDown(float $markDown): self
     {
         $this->markDown = $markDown;
 
@@ -52,23 +53,25 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     }
 
     /**
-     * Used to instruct the system to price the itinerary with a mark up amount. MarkDown cannot be combined with MarkUp.
+     * Used to instruct the system to price the itinerary with a mark up amount.
+     * MarkDown cannot be combined with MarkUp.
      *
      * @return float
      */
-    public function getMarkUp(): ?float
+    public function getMarkUp(): float
     {
         return $this->markUp;
     }
 
     /**
-     * Used to instruct the system to price the itinerary with a mark up amount. MarkDown cannot be combined with MarkUp.
+     * Used to instruct the system to price the itinerary with a mark up amount.
+     * MarkDown cannot be combined with MarkUp.
      *
      * @param float $markUp
      *
      * @return self
      */
-    public function setMarkUp(?float $markUp): self
+    public function setMarkUp(float $markUp): self
     {
         $this->markUp = $markUp;
 

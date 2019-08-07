@@ -50,7 +50,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersTourCodeSuppressFareReplaceWithBT
      */
-    public function getSuppressFareReplaceWithBT(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersTourCodeSuppressFareReplaceWithBT
+    public function getSuppressFareReplaceWithBT(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersTourCodeSuppressFareReplaceWithBT
     {
         return $this->suppressFareReplaceWithBT;
     }
@@ -62,7 +62,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return self
      */
-    public function setSuppressFareReplaceWithBT(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersTourCodeSuppressFareReplaceWithBT $suppressFareReplaceWithBT): self
+    public function setSuppressFareReplaceWithBT(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersTourCodeSuppressFareReplaceWithBT $suppressFareReplaceWithBT): self
     {
         $this->suppressFareReplaceWithBT = $suppressFareReplaceWithBT;
 
@@ -74,7 +74,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersTourCodeSuppressFareReplaceWithIT
      */
-    public function getSuppressFareReplaceWithIT(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersTourCodeSuppressFareReplaceWithIT
+    public function getSuppressFareReplaceWithIT(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersTourCodeSuppressFareReplaceWithIT
     {
         return $this->suppressFareReplaceWithIT;
     }
@@ -86,7 +86,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return self
      */
-    public function setSuppressFareReplaceWithIT(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersTourCodeSuppressFareReplaceWithIT $suppressFareReplaceWithIT): self
+    public function setSuppressFareReplaceWithIT(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersTourCodeSuppressFareReplaceWithIT $suppressFareReplaceWithIT): self
     {
         $this->suppressFareReplaceWithIT = $suppressFareReplaceWithIT;
 
@@ -98,7 +98,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersTourCodeSuppressIT
      */
-    public function getSuppressIT(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersTourCodeSuppressIT
+    public function getSuppressIT(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersTourCodeSuppressIT
     {
         return $this->suppressIT;
     }
@@ -110,7 +110,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return self
      */
-    public function setSuppressIT(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersTourCodeSuppressIT $suppressIT): self
+    public function setSuppressIT(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersTourCodeSuppressIT $suppressIT): self
     {
         $this->suppressIT = $suppressIT;
 
@@ -122,7 +122,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersTourCodeSuppressITSupressFare
      */
-    public function getSuppressITSupressFare(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersTourCodeSuppressITSupressFare
+    public function getSuppressITSupressFare(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersTourCodeSuppressITSupressFare
     {
         return $this->suppressITSupressFare;
     }
@@ -134,7 +134,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return self
      */
-    public function setSuppressITSupressFare(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersTourCodeSuppressITSupressFare $suppressITSupressFare): self
+    public function setSuppressITSupressFare(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersTourCodeSuppressITSupressFare $suppressITSupressFare): self
     {
         $this->suppressITSupressFare = $suppressITSupressFare;
 
@@ -146,7 +146,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return string
      */
-    public function getText(): ?string
+    public function getText(): string
     {
         return $this->text;
     }
@@ -158,7 +158,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return self
      */
-    public function setText(?string $text): self
+    public function setText(string $text): self
     {
         $this->text = $text;
 

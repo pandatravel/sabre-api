@@ -15,30 +15,30 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmailInvoice extends AbstractModel
 {
     /**
-     * Used to send an email notification containing a text-based copy of the invoice.
+     * Specifies whether an reservation invoice should be sent via e-mail.
      *
      * @var bool
      */
     protected $ind;
 
     /**
-     * Used to send an email notification containing a text-based copy of the invoice.
+     * Specifies whether an reservation invoice should be sent via e-mail.
      *
      * @return bool
      */
-    public function getInd(): ?bool
+    public function getInd(): bool
     {
         return $this->ind;
     }
 
     /**
-     * Used to send an email notification containing a text-based copy of the invoice.
+     * Specifies whether an reservation invoice should be sent via e-mail.
      *
      * @param bool $ind
      *
      * @return self
      */
-    public function setInd(?bool $ind): self
+    public function setInd(bool $ind): self
     {
         $this->ind = $ind;
 

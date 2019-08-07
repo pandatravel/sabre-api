@@ -15,30 +15,30 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentCompanyAddressStateProvince extends AbstractModel
 {
     /**
-     * State or province code.
+     * The company state or province code.
      *
      * @var string
      */
     protected $code;
 
     /**
-     * State or province code.
+     * The company state or province code.
      *
      * @return string
      */
-    public function getCode(): ?string
+    public function getCode(): string
     {
         return $this->code;
     }
 
     /**
-     * State or province code.
+     * The company state or province code.
      *
      * @param string $code
      *
      * @return self
      */
-    public function setCode(?string $code): self
+    public function setCode(string $code): self
     {
         $this->code = $code;
 

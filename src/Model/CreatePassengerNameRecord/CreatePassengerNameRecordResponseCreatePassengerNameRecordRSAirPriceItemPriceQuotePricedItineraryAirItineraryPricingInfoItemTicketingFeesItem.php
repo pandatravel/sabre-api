@@ -15,30 +15,30 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemTicketingFeesItem extends AbstractModel
 {
     /**
-     * Fee information.
+     * The fee information.
      *
      * @var CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemTicketingFeesItemFeeInformation
      */
     protected $feeInformation;
 
     /**
-     * Fee information.
+     * The fee information.
      *
      * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemTicketingFeesItemFeeInformation
      */
-    public function getFeeInformation(): ?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemTicketingFeesItemFeeInformation
+    public function getFeeInformation(): CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemTicketingFeesItemFeeInformation
     {
         return $this->feeInformation;
     }
 
     /**
-     * Fee information.
+     * The fee information.
      *
      * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemTicketingFeesItemFeeInformation $feeInformation
      *
      * @return self
      */
-    public function setFeeInformation(?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemTicketingFeesItemFeeInformation $feeInformation): self
+    public function setFeeInformation(CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemTicketingFeesItemFeeInformation $feeInformation): self
     {
         $this->feeInformation = $feeInformation;
 

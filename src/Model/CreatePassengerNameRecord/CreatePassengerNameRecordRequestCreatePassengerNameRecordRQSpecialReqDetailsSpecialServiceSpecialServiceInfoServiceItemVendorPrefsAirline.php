@@ -15,36 +15,39 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoServiceItemVendorPrefsAirline extends AbstractModel
 {
     /**
-     * Applicable to the "OSI" SSRCode, and is used to specify the airline that the SSR needs to be sent to.
+     * The airline code.
+     * Applicable to the 'OSI' SSRCode, and is used to specify the airline that the SSR needs to be sent to.
      *
      * @var string
      */
     protected $code;
     /**
-     * Defines if the receiving airline is Sabre hosted carrier.
+     * Defines if the receiving airline is a Sabre hosted carrier.
      *
      * @var bool
      */
     protected $hosted;
 
     /**
-     * Applicable to the "OSI" SSRCode, and is used to specify the airline that the SSR needs to be sent to.
+     * The airline code.
+     * Applicable to the 'OSI' SSRCode, and is used to specify the airline that the SSR needs to be sent to.
      *
      * @return string
      */
-    public function getCode(): ?string
+    public function getCode(): string
     {
         return $this->code;
     }
 
     /**
-     * Applicable to the "OSI" SSRCode, and is used to specify the airline that the SSR needs to be sent to.
+     * The airline code.
+     * Applicable to the 'OSI' SSRCode, and is used to specify the airline that the SSR needs to be sent to.
      *
      * @param string $code
      *
      * @return self
      */
-    public function setCode(?string $code): self
+    public function setCode(string $code): self
     {
         $this->code = $code;
 
@@ -52,23 +55,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     }
 
     /**
-     * Defines if the receiving airline is Sabre hosted carrier.
+     * Defines if the receiving airline is a Sabre hosted carrier.
      *
      * @return bool
      */
-    public function getHosted(): ?bool
+    public function getHosted(): bool
     {
         return $this->hosted;
     }
 
     /**
-     * Defines if the receiving airline is Sabre hosted carrier.
+     * Defines if the receiving airline is a Sabre hosted carrier.
      *
      * @param bool $hosted
      *
      * @return self
      */
-    public function setHosted(?bool $hosted): self
+    public function setHosted(bool $hosted): self
     {
         $this->hosted = $hosted;
 

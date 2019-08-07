@@ -15,30 +15,30 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareWarningsWarningItem extends AbstractModel
 {
     /**
-     * Any free text.
+     * The short text information.
      *
      * @var string
      */
     protected $shortText;
 
     /**
-     * Any free text.
+     * The short text information.
      *
      * @return string
      */
-    public function getShortText(): ?string
+    public function getShortText(): string
     {
         return $this->shortText;
     }
 
     /**
-     * Any free text.
+     * The short text information.
      *
      * @param string $shortText
      *
      * @return self
      */
-    public function setShortText(?string $shortText): self
+    public function setShortText(string $shortText): self
     {
         $this->shortText = $shortText;
 

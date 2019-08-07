@@ -15,30 +15,36 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoAgencyInfoAddressVendorPrefsAirline extends AbstractModel
 {
     /**
-     * For Travel Network customers "Hosted" should be set to "false" For SabreSonic RES hosted customers "Hosted" should be set to "true".
+     * 'Hosted' is used to specify if the request is based in a hosted or a non-hosted carrier.
+     * For Travel Network customers, 'Hosted' should be set to 'false'.
+     * For SabreSonic RES hosted customers, 'Hosted' should be set to 'true'.
      *
      * @var bool
      */
     protected $hosted;
 
     /**
-     * For Travel Network customers "Hosted" should be set to "false" For SabreSonic RES hosted customers "Hosted" should be set to "true".
+     * 'Hosted' is used to specify if the request is based in a hosted or a non-hosted carrier.
+     * For Travel Network customers, 'Hosted' should be set to 'false'.
+     * For SabreSonic RES hosted customers, 'Hosted' should be set to 'true'.
      *
      * @return bool
      */
-    public function getHosted(): ?bool
+    public function getHosted(): bool
     {
         return $this->hosted;
     }
 
     /**
-     * For Travel Network customers "Hosted" should be set to "false" For SabreSonic RES hosted customers "Hosted" should be set to "true".
+     * 'Hosted' is used to specify if the request is based in a hosted or a non-hosted carrier.
+     * For Travel Network customers, 'Hosted' should be set to 'false'.
+     * For SabreSonic RES hosted customers, 'Hosted' should be set to 'true'.
      *
      * @param bool $hosted
      *
      * @return self
      */
-    public function setHosted(?bool $hosted): self
+    public function setHosted(bool $hosted): self
     {
         $this->hosted = $hosted;
 

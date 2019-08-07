@@ -15,30 +15,30 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOS extends AbstractModel
 {
     /**
-     * Details of the POS.
+     * Details of the point of sale.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSource
      */
     protected $source;
 
     /**
-     * Details of the POS.
+     * Details of the point of sale.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSource
      */
-    public function getSource(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSource
+    public function getSource(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSource
     {
         return $this->source;
     }
 
     /**
-     * Details of the POS.
+     * Details of the point of sale.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSource $source
      *
      * @return self
      */
-    public function setSource(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSource $source): self
+    public function setSource(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSource $source): self
     {
         $this->source = $source;
 

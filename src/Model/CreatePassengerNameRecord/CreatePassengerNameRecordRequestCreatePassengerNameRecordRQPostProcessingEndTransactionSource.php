@@ -15,30 +15,30 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionSource extends AbstractModel
 {
     /**
-     * Source name.
+     * The source name.
      *
      * @var string
      */
     protected $receivedFrom;
 
     /**
-     * Source name.
+     * The source name.
      *
      * @return string
      */
-    public function getReceivedFrom(): ?string
+    public function getReceivedFrom(): string
     {
         return $this->receivedFrom;
     }
 
     /**
-     * Source name.
+     * The source name.
      *
      * @param string $receivedFrom
      *
      * @return self
      */
-    public function setReceivedFrom(?string $receivedFrom): self
+    public function setReceivedFrom(string $receivedFrom): self
     {
         $this->receivedFrom = $receivedFrom;
 

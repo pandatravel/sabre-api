@@ -15,48 +15,48 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingMultipleFOP extends AbstractModel
 {
     /**
-     * Used to specify the amount to be applied to the second FOP.
+     * Used to specify the fare to be applied to the second FOP.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingMultipleFOPFare
      */
     protected $fare;
     /**
-     * First form of payment.
+     * Used to pass the first form of payment.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingMultipleFOPFOPOne
      */
     protected $fOPOne;
     /**
-     * Second form of payment.
+     * Used to pass the second form of payment.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingMultipleFOPFOPTwo
      */
     protected $fOPTwo;
     /**
-     * Used to specify the tax amount.
+     * Used to specify the taxes.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingMultipleFOPTaxes
      */
     protected $taxes;
 
     /**
-     * Used to specify the amount to be applied to the second FOP.
+     * Used to specify the fare to be applied to the second FOP.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingMultipleFOPFare
      */
-    public function getFare(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingMultipleFOPFare
+    public function getFare(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingMultipleFOPFare
     {
         return $this->fare;
     }
 
     /**
-     * Used to specify the amount to be applied to the second FOP.
+     * Used to specify the fare to be applied to the second FOP.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingMultipleFOPFare $fare
      *
      * @return self
      */
-    public function setFare(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingMultipleFOPFare $fare): self
+    public function setFare(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingMultipleFOPFare $fare): self
     {
         $this->fare = $fare;
 
@@ -64,23 +64,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     }
 
     /**
-     * First form of payment.
+     * Used to pass the first form of payment.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingMultipleFOPFOPOne
      */
-    public function getFOPOne(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingMultipleFOPFOPOne
+    public function getFOPOne(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingMultipleFOPFOPOne
     {
         return $this->fOPOne;
     }
 
     /**
-     * First form of payment.
+     * Used to pass the first form of payment.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingMultipleFOPFOPOne $fOPOne
      *
      * @return self
      */
-    public function setFOPOne(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingMultipleFOPFOPOne $fOPOne): self
+    public function setFOPOne(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingMultipleFOPFOPOne $fOPOne): self
     {
         $this->fOPOne = $fOPOne;
 
@@ -88,23 +88,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     }
 
     /**
-     * Second form of payment.
+     * Used to pass the second form of payment.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingMultipleFOPFOPTwo
      */
-    public function getFOPTwo(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingMultipleFOPFOPTwo
+    public function getFOPTwo(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingMultipleFOPFOPTwo
     {
         return $this->fOPTwo;
     }
 
     /**
-     * Second form of payment.
+     * Used to pass the second form of payment.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingMultipleFOPFOPTwo $fOPTwo
      *
      * @return self
      */
-    public function setFOPTwo(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingMultipleFOPFOPTwo $fOPTwo): self
+    public function setFOPTwo(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingMultipleFOPFOPTwo $fOPTwo): self
     {
         $this->fOPTwo = $fOPTwo;
 
@@ -112,23 +112,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     }
 
     /**
-     * Used to specify the tax amount.
+     * Used to specify the taxes.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingMultipleFOPTaxes
      */
-    public function getTaxes(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingMultipleFOPTaxes
+    public function getTaxes(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingMultipleFOPTaxes
     {
         return $this->taxes;
     }
 
     /**
-     * Used to specify the tax amount.
+     * Used to specify the taxes.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingMultipleFOPTaxes $taxes
      *
      * @return self
      */
-    public function setTaxes(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingMultipleFOPTaxes $taxes): self
+    public function setTaxes(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingMultipleFOPTaxes $taxes): self
     {
         $this->taxes = $taxes;
 

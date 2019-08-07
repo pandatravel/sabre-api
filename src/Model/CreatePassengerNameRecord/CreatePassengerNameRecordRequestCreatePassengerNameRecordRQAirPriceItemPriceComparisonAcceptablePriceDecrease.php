@@ -21,7 +21,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      */
     protected $amount;
     /**
-     * Used to specify whether service should stop when actual price would be lesser than "AmountSpecified" + percent or amount decrease.
+     * 'HaltOnNonAcceptablePrice' is used to specify whether the service should be stopped when the actual price is lesser than 'AmountSpecified' + percent or amount decrease.
      *
      * @var bool
      */
@@ -32,7 +32,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return float
      */
-    public function getAmount(): ?float
+    public function getAmount(): float
     {
         return $this->amount;
     }
@@ -44,7 +44,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return self
      */
-    public function setAmount(?float $amount): self
+    public function setAmount(float $amount): self
     {
         $this->amount = $amount;
 
@@ -52,23 +52,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     }
 
     /**
-     * Used to specify whether service should stop when actual price would be lesser than "AmountSpecified" + percent or amount decrease.
+     * 'HaltOnNonAcceptablePrice' is used to specify whether the service should be stopped when the actual price is lesser than 'AmountSpecified' + percent or amount decrease.
      *
      * @return bool
      */
-    public function getHaltOnNonAcceptablePrice(): ?bool
+    public function getHaltOnNonAcceptablePrice(): bool
     {
         return $this->haltOnNonAcceptablePrice;
     }
 
     /**
-     * Used to specify whether service should stop when actual price would be lesser than "AmountSpecified" + percent or amount decrease.
+     * 'HaltOnNonAcceptablePrice' is used to specify whether the service should be stopped when the actual price is lesser than 'AmountSpecified' + percent or amount decrease.
      *
      * @param bool $haltOnNonAcceptablePrice
      *
      * @return self
      */
-    public function setHaltOnNonAcceptablePrice(?bool $haltOnNonAcceptablePrice): self
+    public function setHaltOnNonAcceptablePrice(bool $haltOnNonAcceptablePrice): self
     {
         $this->haltOnNonAcceptablePrice = $haltOnNonAcceptablePrice;
 

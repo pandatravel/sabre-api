@@ -15,30 +15,30 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersCustomer extends AbstractModel
 {
     /**
-     * DK number.
+     * The DK number.
      *
      * @var string
      */
     protected $number;
 
     /**
-     * DK number.
+     * The DK number.
      *
      * @return string
      */
-    public function getNumber(): ?string
+    public function getNumber(): string
     {
         return $this->number;
     }
 
     /**
-     * DK number.
+     * The DK number.
      *
      * @param string $number
      *
      * @return self
      */
-    public function setNumber(?string $number): self
+    public function setNumber(string $number): self
     {
         $this->number = $number;
 

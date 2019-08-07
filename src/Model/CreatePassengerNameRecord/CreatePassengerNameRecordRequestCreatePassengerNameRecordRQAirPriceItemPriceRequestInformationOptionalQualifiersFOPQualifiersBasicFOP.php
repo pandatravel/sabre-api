@@ -15,13 +15,14 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBasicFOP extends AbstractModel
 {
     /**
-     * Used to pass credit card information.
+     * Used to pass the credit card information.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBasicFOPCCInfo
      */
     protected $cCInfo;
     /**
-     * Used to specify the payment type. Acceptable values are "CA" (cash), "CK" (check), "CQ" (cheque). If utilizing a credit card please omit @Type, and populate the .../CC_Info child node.
+     * Used to specify the payment type. Acceptable values are 'CA' (cash), 'CK' (check), 'CQ' (cheque).
+     * If utilizing a credit card please omit 'Typ', and populate the 'CC_Info' object.
      *
      * @var string
      */
@@ -40,23 +41,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     protected $virtual;
 
     /**
-     * Used to pass credit card information.
+     * Used to pass the credit card information.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBasicFOPCCInfo
      */
-    public function getCCInfo(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBasicFOPCCInfo
+    public function getCCInfo(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBasicFOPCCInfo
     {
         return $this->cCInfo;
     }
 
     /**
-     * Used to pass credit card information.
+     * Used to pass the credit card information.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBasicFOPCCInfo $cCInfo
      *
      * @return self
      */
-    public function setCCInfo(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBasicFOPCCInfo $cCInfo): self
+    public function setCCInfo(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBasicFOPCCInfo $cCInfo): self
     {
         $this->cCInfo = $cCInfo;
 
@@ -64,23 +65,25 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     }
 
     /**
-     * Used to specify the payment type. Acceptable values are "CA" (cash), "CK" (check), "CQ" (cheque). If utilizing a credit card please omit @Type, and populate the .../CC_Info child node.
+     * Used to specify the payment type. Acceptable values are 'CA' (cash), 'CK' (check), 'CQ' (cheque).
+     * If utilizing a credit card please omit 'Typ', and populate the 'CC_Info' object.
      *
      * @return string
      */
-    public function getType(): ?string
+    public function getType(): string
     {
         return $this->type;
     }
 
     /**
-     * Used to specify the payment type. Acceptable values are "CA" (cash), "CK" (check), "CQ" (cheque). If utilizing a credit card please omit @Type, and populate the .../CC_Info child node.
+     * Used to specify the payment type. Acceptable values are 'CA' (cash), 'CK' (check), 'CQ' (cheque).
+     * If utilizing a credit card please omit 'Typ', and populate the 'CC_Info' object.
      *
      * @param string $type
      *
      * @return self
      */
-    public function setType(?string $type): self
+    public function setType(string $type): self
     {
         $this->type = $type;
 
@@ -92,7 +95,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return int
      */
-    public function getReference(): ?int
+    public function getReference(): int
     {
         return $this->reference;
     }
@@ -104,7 +107,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return self
      */
-    public function setReference(?int $reference): self
+    public function setReference(int $reference): self
     {
         $this->reference = $reference;
 
@@ -116,7 +119,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return string
      */
-    public function getVirtual(): ?string
+    public function getVirtual(): string
     {
         return $this->virtual;
     }
@@ -128,7 +131,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return self
      */
-    public function setVirtual(?string $virtual): self
+    public function setVirtual(string $virtual): self
     {
         $this->virtual = $virtual;
 

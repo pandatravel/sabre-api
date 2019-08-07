@@ -15,30 +15,30 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAirSeat extends AbstractModel
 {
     /**
-     * Seat details.
+     * The seat details.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAirSeatSeats
      */
     protected $seats;
 
     /**
-     * Seat details.
+     * The seat details.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAirSeatSeats
      */
-    public function getSeats(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAirSeatSeats
+    public function getSeats(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAirSeatSeats
     {
         return $this->seats;
     }
 
     /**
-     * Seat details.
+     * The seat details.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAirSeatSeats $seats
      *
      * @return self
      */
-    public function setSeats(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAirSeatSeats $seats): self
+    public function setSeats(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAirSeatSeats $seats): self
     {
         $this->seats = $seats;
 

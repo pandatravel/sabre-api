@@ -15,30 +15,30 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoAddress extends AbstractModel
 {
     /**
-     * "AddressLine" is used to return customer address information.
+     * The customer address line information.
      *
      * @var CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoAddressAddressLineItem[]
      */
     protected $addressLine;
 
     /**
-     * "AddressLine" is used to return customer address information.
+     * The customer address line information.
      *
      * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoAddressAddressLineItem[]
      */
-    public function getAddressLine(): ?array
+    public function getAddressLine(): array
     {
         return $this->addressLine;
     }
 
     /**
-     * "AddressLine" is used to return customer address information.
+     * The customer address line information.
      *
      * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoAddressAddressLineItem[] $addressLine
      *
      * @return self
      */
-    public function setAddressLine(?array $addressLine): self
+    public function setAddressLine(array $addressLine): self
     {
         $this->addressLine = $addressLine;
 

@@ -15,78 +15,78 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemFareCalculationBreakdownItemDeparture extends AbstractModel
 {
     /**
-     * City code.
+     * The city code.
      *
      * @var string
      */
     protected $cityCode;
     /**
-     * Airport code.
+     * The airport code.
      *
      * @var string
      */
     protected $airportCode;
     /**
-     * Type of side trip.
+     * The type of side trip.
      *
      * @var string
      */
     protected $sideTripIndicator;
     /**
-     * Airline code.
+     * The airline code.
      *
      * @var string
      */
     protected $airlineCode;
     /**
-     * Generic indicator associated with the particular flight segment.
+     * The generic indicator associated with the particular flight segment.
      *
      * @var string
      */
     protected $genericInd;
     /**
-     * Global indicator associated with the particular flight segment.
+     * The global indicator associated with the particular flight segment.
      *
      * @var string
      */
     protected $globalInd;
     /**
-     * Arrival City Code.
+     * The arrival city code.
      *
      * @var string
      */
     protected $arrivalCityCode;
     /**
-     * Arrival Airport Code.
+     * The arrival airport code.
      *
      * @var string
      */
     protected $arrivalAirportCode;
     /**
-     * Information on fare construction city for an infant fare.
+     * The information on fare construction city for an infant fare.
      *
      * @var string
      */
     protected $infantFareConstructionCity;
 
     /**
-     * City code.
+     * The city code.
      *
      * @return string
      */
-    public function getCityCode(): ?string
+    public function getCityCode(): string
     {
         return $this->cityCode;
     }
 
     /**
-     * City code.
+     * The city code.
      *
      * @param string $cityCode
      *
      * @return self
      */
-    public function setCityCode(?string $cityCode): self
+    public function setCityCode(string $cityCode): self
     {
         $this->cityCode = $cityCode;
 
@@ -94,23 +94,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     }
 
     /**
-     * Airport code.
+     * The airport code.
      *
      * @return string
      */
-    public function getAirportCode(): ?string
+    public function getAirportCode(): string
     {
         return $this->airportCode;
     }
 
     /**
-     * Airport code.
+     * The airport code.
      *
      * @param string $airportCode
      *
      * @return self
      */
-    public function setAirportCode(?string $airportCode): self
+    public function setAirportCode(string $airportCode): self
     {
         $this->airportCode = $airportCode;
 
@@ -118,23 +118,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     }
 
     /**
-     * Type of side trip.
+     * The type of side trip.
      *
      * @return string
      */
-    public function getSideTripIndicator(): ?string
+    public function getSideTripIndicator(): string
     {
         return $this->sideTripIndicator;
     }
 
     /**
-     * Type of side trip.
+     * The type of side trip.
      *
      * @param string $sideTripIndicator
      *
      * @return self
      */
-    public function setSideTripIndicator(?string $sideTripIndicator): self
+    public function setSideTripIndicator(string $sideTripIndicator): self
     {
         $this->sideTripIndicator = $sideTripIndicator;
 
@@ -142,23 +142,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     }
 
     /**
-     * Airline code.
+     * The airline code.
      *
      * @return string
      */
-    public function getAirlineCode(): ?string
+    public function getAirlineCode(): string
     {
         return $this->airlineCode;
     }
 
     /**
-     * Airline code.
+     * The airline code.
      *
      * @param string $airlineCode
      *
      * @return self
      */
-    public function setAirlineCode(?string $airlineCode): self
+    public function setAirlineCode(string $airlineCode): self
     {
         $this->airlineCode = $airlineCode;
 
@@ -166,23 +166,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     }
 
     /**
-     * Generic indicator associated with the particular flight segment.
+     * The generic indicator associated with the particular flight segment.
      *
      * @return string
      */
-    public function getGenericInd(): ?string
+    public function getGenericInd(): string
     {
         return $this->genericInd;
     }
 
     /**
-     * Generic indicator associated with the particular flight segment.
+     * The generic indicator associated with the particular flight segment.
      *
      * @param string $genericInd
      *
      * @return self
      */
-    public function setGenericInd(?string $genericInd): self
+    public function setGenericInd(string $genericInd): self
     {
         $this->genericInd = $genericInd;
 
@@ -190,23 +190,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     }
 
     /**
-     * Global indicator associated with the particular flight segment.
+     * The global indicator associated with the particular flight segment.
      *
      * @return string
      */
-    public function getGlobalInd(): ?string
+    public function getGlobalInd(): string
     {
         return $this->globalInd;
     }
 
     /**
-     * Global indicator associated with the particular flight segment.
+     * The global indicator associated with the particular flight segment.
      *
      * @param string $globalInd
      *
      * @return self
      */
-    public function setGlobalInd(?string $globalInd): self
+    public function setGlobalInd(string $globalInd): self
     {
         $this->globalInd = $globalInd;
 
@@ -214,23 +214,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     }
 
     /**
-     * Arrival City Code.
+     * The arrival city code.
      *
      * @return string
      */
-    public function getArrivalCityCode(): ?string
+    public function getArrivalCityCode(): string
     {
         return $this->arrivalCityCode;
     }
 
     /**
-     * Arrival City Code.
+     * The arrival city code.
      *
      * @param string $arrivalCityCode
      *
      * @return self
      */
-    public function setArrivalCityCode(?string $arrivalCityCode): self
+    public function setArrivalCityCode(string $arrivalCityCode): self
     {
         $this->arrivalCityCode = $arrivalCityCode;
 
@@ -238,23 +238,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     }
 
     /**
-     * Arrival Airport Code.
+     * The arrival airport code.
      *
      * @return string
      */
-    public function getArrivalAirportCode(): ?string
+    public function getArrivalAirportCode(): string
     {
         return $this->arrivalAirportCode;
     }
 
     /**
-     * Arrival Airport Code.
+     * The arrival airport code.
      *
      * @param string $arrivalAirportCode
      *
      * @return self
      */
-    public function setArrivalAirportCode(?string $arrivalAirportCode): self
+    public function setArrivalAirportCode(string $arrivalAirportCode): self
     {
         $this->arrivalAirportCode = $arrivalAirportCode;
 
@@ -262,23 +262,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     }
 
     /**
-     * Information on fare construction city for an infant fare.
+     * The information on fare construction city for an infant fare.
      *
      * @return string
      */
-    public function getInfantFareConstructionCity(): ?string
+    public function getInfantFareConstructionCity(): string
     {
         return $this->infantFareConstructionCity;
     }
 
     /**
-     * Information on fare construction city for an infant fare.
+     * The information on fare construction city for an infant fare.
      *
      * @param string $infantFareConstructionCity
      *
      * @return self
      */
-    public function setInfantFareConstructionCity(?string $infantFareConstructionCity): self
+    public function setInfantFareConstructionCity(string $infantFareConstructionCity): self
     {
         $this->infantFareConstructionCity = $infantFareConstructionCity;
 

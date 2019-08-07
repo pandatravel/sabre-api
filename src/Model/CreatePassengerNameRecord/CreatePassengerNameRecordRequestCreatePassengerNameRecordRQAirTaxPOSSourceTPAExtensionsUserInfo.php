@@ -15,78 +15,78 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSourceTPAExtensionsUserInfo extends AbstractModel
 {
     /**
-     *  AAA City.
+     * The AAA city.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSourceTPAExtensionsUserInfoAAACity
      */
     protected $aAACity;
     /**
-     * Action Code.
+     * The action code.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSourceTPAExtensionsUserInfoAction
      */
     protected $action;
     /**
-     * Agent Sine.
+     * The agent sine.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSourceTPAExtensionsUserInfoAgentSine
      */
     protected $agentSine;
     /**
-     * User Branch.
+     * The user branch.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSourceTPAExtensionsUserInfoBranch
      */
     protected $branch;
     /**
-     * Partition ID.
+     * The partition ID.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSourceTPAExtensionsUserInfoPartition
      */
     protected $partition;
     /**
-     * Service Name.
+     * The service name.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSourceTPAExtensionsUserInfoService
      */
     protected $service;
     /**
-     * User set address.
+     * The user set address.
      *
      * @var string
      */
     protected $setAddress;
     /**
-     * User Station.
+     * The user station.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSourceTPAExtensionsUserInfoStation
      */
     protected $station;
     /**
-     * Transaction ID.
+     * The transaction ID.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSourceTPAExtensionsUserInfoTransaction
      */
     protected $transaction;
 
     /**
-     *  AAA City.
+     * The AAA city.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSourceTPAExtensionsUserInfoAAACity
      */
-    public function getAAACity(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSourceTPAExtensionsUserInfoAAACity
+    public function getAAACity(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSourceTPAExtensionsUserInfoAAACity
     {
         return $this->aAACity;
     }
 
     /**
-     *  AAA City.
+     * The AAA city.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSourceTPAExtensionsUserInfoAAACity $aAACity
      *
      * @return self
      */
-    public function setAAACity(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSourceTPAExtensionsUserInfoAAACity $aAACity): self
+    public function setAAACity(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSourceTPAExtensionsUserInfoAAACity $aAACity): self
     {
         $this->aAACity = $aAACity;
 
@@ -94,23 +94,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSource
     }
 
     /**
-     * Action Code.
+     * The action code.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSourceTPAExtensionsUserInfoAction
      */
-    public function getAction(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSourceTPAExtensionsUserInfoAction
+    public function getAction(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSourceTPAExtensionsUserInfoAction
     {
         return $this->action;
     }
 
     /**
-     * Action Code.
+     * The action code.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSourceTPAExtensionsUserInfoAction $action
      *
      * @return self
      */
-    public function setAction(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSourceTPAExtensionsUserInfoAction $action): self
+    public function setAction(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSourceTPAExtensionsUserInfoAction $action): self
     {
         $this->action = $action;
 
@@ -118,23 +118,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSource
     }
 
     /**
-     * Agent Sine.
+     * The agent sine.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSourceTPAExtensionsUserInfoAgentSine
      */
-    public function getAgentSine(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSourceTPAExtensionsUserInfoAgentSine
+    public function getAgentSine(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSourceTPAExtensionsUserInfoAgentSine
     {
         return $this->agentSine;
     }
 
     /**
-     * Agent Sine.
+     * The agent sine.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSourceTPAExtensionsUserInfoAgentSine $agentSine
      *
      * @return self
      */
-    public function setAgentSine(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSourceTPAExtensionsUserInfoAgentSine $agentSine): self
+    public function setAgentSine(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSourceTPAExtensionsUserInfoAgentSine $agentSine): self
     {
         $this->agentSine = $agentSine;
 
@@ -142,23 +142,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSource
     }
 
     /**
-     * User Branch.
+     * The user branch.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSourceTPAExtensionsUserInfoBranch
      */
-    public function getBranch(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSourceTPAExtensionsUserInfoBranch
+    public function getBranch(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSourceTPAExtensionsUserInfoBranch
     {
         return $this->branch;
     }
 
     /**
-     * User Branch.
+     * The user branch.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSourceTPAExtensionsUserInfoBranch $branch
      *
      * @return self
      */
-    public function setBranch(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSourceTPAExtensionsUserInfoBranch $branch): self
+    public function setBranch(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSourceTPAExtensionsUserInfoBranch $branch): self
     {
         $this->branch = $branch;
 
@@ -166,23 +166,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSource
     }
 
     /**
-     * Partition ID.
+     * The partition ID.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSourceTPAExtensionsUserInfoPartition
      */
-    public function getPartition(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSourceTPAExtensionsUserInfoPartition
+    public function getPartition(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSourceTPAExtensionsUserInfoPartition
     {
         return $this->partition;
     }
 
     /**
-     * Partition ID.
+     * The partition ID.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSourceTPAExtensionsUserInfoPartition $partition
      *
      * @return self
      */
-    public function setPartition(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSourceTPAExtensionsUserInfoPartition $partition): self
+    public function setPartition(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSourceTPAExtensionsUserInfoPartition $partition): self
     {
         $this->partition = $partition;
 
@@ -190,23 +190,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSource
     }
 
     /**
-     * Service Name.
+     * The service name.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSourceTPAExtensionsUserInfoService
      */
-    public function getService(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSourceTPAExtensionsUserInfoService
+    public function getService(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSourceTPAExtensionsUserInfoService
     {
         return $this->service;
     }
 
     /**
-     * Service Name.
+     * The service name.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSourceTPAExtensionsUserInfoService $service
      *
      * @return self
      */
-    public function setService(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSourceTPAExtensionsUserInfoService $service): self
+    public function setService(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSourceTPAExtensionsUserInfoService $service): self
     {
         $this->service = $service;
 
@@ -214,23 +214,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSource
     }
 
     /**
-     * User set address.
+     * The user set address.
      *
      * @return string
      */
-    public function getSetAddress(): ?string
+    public function getSetAddress(): string
     {
         return $this->setAddress;
     }
 
     /**
-     * User set address.
+     * The user set address.
      *
      * @param string $setAddress
      *
      * @return self
      */
-    public function setSetAddress(?string $setAddress): self
+    public function setSetAddress(string $setAddress): self
     {
         $this->setAddress = $setAddress;
 
@@ -238,23 +238,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSource
     }
 
     /**
-     * User Station.
+     * The user station.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSourceTPAExtensionsUserInfoStation
      */
-    public function getStation(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSourceTPAExtensionsUserInfoStation
+    public function getStation(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSourceTPAExtensionsUserInfoStation
     {
         return $this->station;
     }
 
     /**
-     * User Station.
+     * The user station.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSourceTPAExtensionsUserInfoStation $station
      *
      * @return self
      */
-    public function setStation(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSourceTPAExtensionsUserInfoStation $station): self
+    public function setStation(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSourceTPAExtensionsUserInfoStation $station): self
     {
         $this->station = $station;
 
@@ -262,23 +262,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSource
     }
 
     /**
-     * Transaction ID.
+     * The transaction ID.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSourceTPAExtensionsUserInfoTransaction
      */
-    public function getTransaction(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSourceTPAExtensionsUserInfoTransaction
+    public function getTransaction(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSourceTPAExtensionsUserInfoTransaction
     {
         return $this->transaction;
     }
 
     /**
-     * Transaction ID.
+     * The transaction ID.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSourceTPAExtensionsUserInfoTransaction $transaction
      *
      * @return self
      */
-    public function setTransaction(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSourceTPAExtensionsUserInfoTransaction $transaction): self
+    public function setTransaction(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSourceTPAExtensionsUserInfoTransaction $transaction): self
     {
         $this->transaction = $transaction;
 

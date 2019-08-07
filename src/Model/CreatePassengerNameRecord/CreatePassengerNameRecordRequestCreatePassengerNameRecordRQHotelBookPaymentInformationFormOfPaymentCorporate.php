@@ -15,30 +15,30 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentCorporate extends AbstractModel
 {
     /**
-     * Corporate ID.
+     * The corporate identifier.
      *
      * @var string
      */
     protected $corporateId;
 
     /**
-     * Corporate ID.
+     * The corporate identifier.
      *
      * @return string
      */
-    public function getCorporateId(): ?string
+    public function getCorporateId(): string
     {
         return $this->corporateId;
     }
 
     /**
-     * Corporate ID.
+     * The corporate identifier.
      *
      * @param string $corporateId
      *
      * @return self
      */
-    public function setCorporateId(?string $corporateId): self
+    public function setCorporateId(string $corporateId): self
     {
         $this->corporateId = $corporateId;
 

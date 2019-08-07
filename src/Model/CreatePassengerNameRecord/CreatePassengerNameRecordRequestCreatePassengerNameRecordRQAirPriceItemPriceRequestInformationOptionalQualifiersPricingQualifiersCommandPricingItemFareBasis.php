@@ -15,7 +15,7 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersCommandPricingItemFareBasis extends AbstractModel
 {
     /**
-     * Used to instruct the system to price the itinerary utilizing the fare basis code.
+     * The fare basis code.
      *
      * @var string
      */
@@ -28,23 +28,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     protected $ticketDesignator;
 
     /**
-     * Used to instruct the system to price the itinerary utilizing the fare basis code.
+     * The fare basis code.
      *
      * @return string
      */
-    public function getCode(): ?string
+    public function getCode(): string
     {
         return $this->code;
     }
 
     /**
-     * Used to instruct the system to price the itinerary utilizing the fare basis code.
+     * The fare basis code.
      *
      * @param string $code
      *
      * @return self
      */
-    public function setCode(?string $code): self
+    public function setCode(string $code): self
     {
         $this->code = $code;
 
@@ -56,7 +56,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return string
      */
-    public function getTicketDesignator(): ?string
+    public function getTicketDesignator(): string
     {
         return $this->ticketDesignator;
     }
@@ -68,7 +68,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return self
      */
-    public function setTicketDesignator(?string $ticketDesignator): self
+    public function setTicketDesignator(string $ticketDesignator): self
     {
         $this->ticketDesignator = $ticketDesignator;
 

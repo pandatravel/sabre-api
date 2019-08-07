@@ -15,30 +15,30 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDestinationInformation extends AbstractModel
 {
     /**
-     * Used for a specific air segment to be booked.
+     * Used to specify the air flight segment to be booked.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDestinationInformationFlightSegmentItem[]
      */
     protected $flightSegment;
 
     /**
-     * Used for a specific air segment to be booked.
+     * Used to specify the air flight segment to be booked.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDestinationInformationFlightSegmentItem[]
      */
-    public function getFlightSegment(): ?array
+    public function getFlightSegment(): array
     {
         return $this->flightSegment;
     }
 
     /**
-     * Used for a specific air segment to be booked.
+     * Used to specify the air flight segment to be booked.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDestinationInformationFlightSegmentItem[] $flightSegment
      *
      * @return self
      */
-    public function setFlightSegment(?array $flightSegment): self
+    public function setFlightSegment(array $flightSegment): self
     {
         $this->flightSegment = $flightSegment;
 

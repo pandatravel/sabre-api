@@ -15,7 +15,7 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersPlusUp extends AbstractModel
 {
     /**
-     * Ticket designator.
+     * The ticket designator.
      *
      * @var string
      */
@@ -28,23 +28,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     protected $amount;
 
     /**
-     * Ticket designator.
+     * The ticket designator.
      *
      * @return string
      */
-    public function getTicketDesignator(): ?string
+    public function getTicketDesignator(): string
     {
         return $this->ticketDesignator;
     }
 
     /**
-     * Ticket designator.
+     * The ticket designator.
      *
      * @param string $ticketDesignator
      *
      * @return self
      */
-    public function setTicketDesignator(?string $ticketDesignator): self
+    public function setTicketDesignator(string $ticketDesignator): self
     {
         $this->ticketDesignator = $ticketDesignator;
 
@@ -56,7 +56,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return string
      */
-    public function getAmount(): ?string
+    public function getAmount(): string
     {
         return $this->amount;
     }
@@ -68,7 +68,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return self
      */
-    public function setAmount(?string $amount): self
+    public function setAmount(string $amount): self
     {
         $this->amount = $amount;
 

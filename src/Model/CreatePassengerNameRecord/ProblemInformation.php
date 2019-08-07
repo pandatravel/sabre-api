@@ -34,7 +34,7 @@ class ProblemInformation extends AbstractModel
     /**
      * @return ProblemInformationSystemSpecificResultsItem[]
      */
-    public function getSystemSpecificResults(): ?array
+    public function getSystemSpecificResults(): array
     {
         return $this->systemSpecificResults;
     }
@@ -44,7 +44,7 @@ class ProblemInformation extends AbstractModel
      *
      * @return self
      */
-    public function setSystemSpecificResults(?array $systemSpecificResults): self
+    public function setSystemSpecificResults(array $systemSpecificResults): self
     {
         $this->systemSpecificResults = $systemSpecificResults;
 
@@ -56,7 +56,7 @@ class ProblemInformation extends AbstractModel
      *
      * @return string
      */
-    public function getType(): ?string
+    public function getType(): string
     {
         return $this->type;
     }
@@ -68,7 +68,7 @@ class ProblemInformation extends AbstractModel
      *
      * @return self
      */
-    public function setType(?string $type): self
+    public function setType(string $type): self
     {
         $this->type = $type;
 
@@ -80,7 +80,7 @@ class ProblemInformation extends AbstractModel
      *
      * @return string
      */
-    public function getTimeStamp(): ?string
+    public function getTimeStamp(): string
     {
         return $this->timeStamp;
     }
@@ -92,7 +92,7 @@ class ProblemInformation extends AbstractModel
      *
      * @return self
      */
-    public function setTimeStamp(?string $timeStamp): self
+    public function setTimeStamp(string $timeStamp): self
     {
         $this->timeStamp = $timeStamp;
 

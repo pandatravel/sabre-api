@@ -15,36 +15,36 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemPassengerTypeQuantity extends AbstractModel
 {
     /**
-     * Used to return the passenger type code associated with the particular itinerary.
+     * The passenger type code associated with the particular itinerary.
      *
      * @var string
      */
     protected $code;
     /**
-     * Used to return the number of passengers associated with the particular itinerary.
+     * The number of passengers associated with the particular itinerary.
      *
      * @var string
      */
     protected $quantity;
 
     /**
-     * Used to return the passenger type code associated with the particular itinerary.
+     * The passenger type code associated with the particular itinerary.
      *
      * @return string
      */
-    public function getCode(): ?string
+    public function getCode(): string
     {
         return $this->code;
     }
 
     /**
-     * Used to return the passenger type code associated with the particular itinerary.
+     * The passenger type code associated with the particular itinerary.
      *
      * @param string $code
      *
      * @return self
      */
-    public function setCode(?string $code): self
+    public function setCode(string $code): self
     {
         $this->code = $code;
 
@@ -52,23 +52,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     }
 
     /**
-     * Used to return the number of passengers associated with the particular itinerary.
+     * The number of passengers associated with the particular itinerary.
      *
      * @return string
      */
-    public function getQuantity(): ?string
+    public function getQuantity(): string
     {
         return $this->quantity;
     }
 
     /**
-     * Used to return the number of passengers associated with the particular itinerary.
+     * The number of passengers associated with the particular itinerary.
      *
      * @param string $quantity
      *
      * @return self
      */
-    public function setQuantity(?string $quantity): self
+    public function setQuantity(string $quantity): self
     {
         $this->quantity = $quantity;
 

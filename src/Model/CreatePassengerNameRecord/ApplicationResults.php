@@ -36,7 +36,7 @@ class ApplicationResults extends AbstractModel
     /**
      * @return ProblemInformation[]
      */
-    public function getSuccess(): ?array
+    public function getSuccess(): array
     {
         return $this->success;
     }
@@ -46,7 +46,7 @@ class ApplicationResults extends AbstractModel
      *
      * @return self
      */
-    public function setSuccess(?array $success): self
+    public function setSuccess(array $success): self
     {
         $this->success = $success;
 
@@ -56,7 +56,7 @@ class ApplicationResults extends AbstractModel
     /**
      * @return ProblemInformation[]
      */
-    public function getError(): ?array
+    public function getError(): array
     {
         return $this->error;
     }
@@ -66,7 +66,7 @@ class ApplicationResults extends AbstractModel
      *
      * @return self
      */
-    public function setError(?array $error): self
+    public function setError(array $error): self
     {
         $this->error = $error;
 
@@ -76,7 +76,7 @@ class ApplicationResults extends AbstractModel
     /**
      * @return ProblemInformation[]
      */
-    public function getWarning(): ?array
+    public function getWarning(): array
     {
         return $this->warning;
     }
@@ -86,7 +86,7 @@ class ApplicationResults extends AbstractModel
      *
      * @return self
      */
-    public function setWarning(?array $warning): self
+    public function setWarning(array $warning): self
     {
         $this->warning = $warning;
 
@@ -98,7 +98,7 @@ class ApplicationResults extends AbstractModel
      *
      * @return string
      */
-    public function getStatus(): ?string
+    public function getStatus(): string
     {
         return $this->status;
     }
@@ -110,7 +110,7 @@ class ApplicationResults extends AbstractModel
      *
      * @return self
      */
-    public function setStatus(?string $status): self
+    public function setStatus(string $status): self
     {
         $this->status = $status;
 

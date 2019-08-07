@@ -15,36 +15,36 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSource extends AbstractModel
 {
     /**
-     * Additional POS details.
+     * The additional POS details.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSourceTPAExtensions
      */
     protected $tPAExtensions;
     /**
-     * Sale PCC.
+     * The sale PCC.
      *
      * @var string
      */
     protected $pseudoCityCode;
 
     /**
-     * Additional POS details.
+     * The additional POS details.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSourceTPAExtensions
      */
-    public function getTPAExtensions(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSourceTPAExtensions
+    public function getTPAExtensions(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSourceTPAExtensions
     {
         return $this->tPAExtensions;
     }
 
     /**
-     * Additional POS details.
+     * The additional POS details.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSourceTPAExtensions $tPAExtensions
      *
      * @return self
      */
-    public function setTPAExtensions(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSourceTPAExtensions $tPAExtensions): self
+    public function setTPAExtensions(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSourceTPAExtensions $tPAExtensions): self
     {
         $this->tPAExtensions = $tPAExtensions;
 
@@ -52,23 +52,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSource
     }
 
     /**
-     * Sale PCC.
+     * The sale PCC.
      *
      * @return string
      */
-    public function getPseudoCityCode(): ?string
+    public function getPseudoCityCode(): string
     {
         return $this->pseudoCityCode;
     }
 
     /**
-     * Sale PCC.
+     * The sale PCC.
      *
      * @param string $pseudoCityCode
      *
      * @return self
      */
-    public function setPseudoCityCode(?string $pseudoCityCode): self
+    public function setPseudoCityCode(string $pseudoCityCode): self
     {
         $this->pseudoCityCode = $pseudoCityCode;
 

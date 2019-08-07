@@ -15,30 +15,30 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookRetryRebook extends AbstractModel
 {
     /**
-     * "Option" is used to specify if Rebooking of segments is required if UC is encountered in any of the segments which is trying to be booked.
+     * 'Option' is used to specify if re-booking of segments is required when UC segment status is encountered in any of the segments which is being booked.
      *
      * @var bool
      */
     protected $option;
 
     /**
-     * "Option" is used to specify if Rebooking of segments is required if UC is encountered in any of the segments which is trying to be booked.
+     * 'Option' is used to specify if re-booking of segments is required when UC segment status is encountered in any of the segments which is being booked.
      *
      * @return bool
      */
-    public function getOption(): ?bool
+    public function getOption(): bool
     {
         return $this->option;
     }
 
     /**
-     * "Option" is used to specify if Rebooking of segments is required if UC is encountered in any of the segments which is trying to be booked.
+     * 'Option' is used to specify if re-booking of segments is required when UC segment status is encountered in any of the segments which is being booked.
      *
      * @param bool $option
      *
      * @return self
      */
-    public function setOption(?bool $option): self
+    public function setOption(bool $option): self
     {
         $this->option = $option;
 

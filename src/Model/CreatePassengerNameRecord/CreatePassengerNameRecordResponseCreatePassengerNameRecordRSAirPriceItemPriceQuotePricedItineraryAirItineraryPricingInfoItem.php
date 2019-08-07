@@ -15,13 +15,13 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItem extends AbstractModel
 {
     /**
-     * Used to pass details related to agency managed commission.
+     * Used to return details related to agency managed commission.
      *
      * @var CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemAgencyCommissionItem[]
      */
     protected $agencyCommission;
     /**
-     * Used to pass details related to ancillary fees.
+     * Used to return details related to ancillary fees.
      *
      * @var CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemAncillaryFeesItem[]
      */
@@ -33,49 +33,49 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
      */
     protected $baggageProvisions;
     /**
-     * Generic fare calculation.
+     * The generic fare calculation.
      *
      * @var CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemFareCalculation
      */
     protected $fareCalculation;
     /**
-     * fare calculation breakdown.
+     * The fare calculation breakdown.
      *
      * @var CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemFareCalculationBreakdownItem[]
      */
     protected $fareCalculationBreakdown;
     /**
-     * Total itinerary pricing.
+     * The total itinerary pricing.
      *
      * @var CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFare
      */
     protected $itinTotalFare;
     /**
-     * Passenger type information.
+     * The passenger type and quantity information.
      *
      * @var CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemPassengerTypeQuantity
      */
     protected $passengerTypeQuantity;
     /**
-     * Pricing details broken down by passenger type code (PTC).
+     * The pricing details broken down by passenger type code (PTC).
      *
      * @var CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemPTCFareBreakdownItem[]
      */
     protected $pTCFareBreakdown;
     /**
-     * Rule Retailer Codes.
+     * The retailer rule code information.
      *
      * @var CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemRetailerRulesItem[]
      */
     protected $retailerRules;
     /**
-     * Information on specific change or cancellation penalties for an itinerary.
+     * The information on specific change or cancellation penalties for an itinerary.
      *
      * @var CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemSpecificPenaltyItem[]
      */
     protected $specificPenalty;
     /**
-     * Ticketing fee related information.
+     * The ticketing fee information.
      *
      * @var CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemTicketingFeesItem[]
      */
@@ -88,23 +88,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     protected $solutionSequenceNmbr;
 
     /**
-     * Used to pass details related to agency managed commission.
+     * Used to return details related to agency managed commission.
      *
      * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemAgencyCommissionItem[]
      */
-    public function getAgencyCommission(): ?array
+    public function getAgencyCommission(): array
     {
         return $this->agencyCommission;
     }
 
     /**
-     * Used to pass details related to agency managed commission.
+     * Used to return details related to agency managed commission.
      *
      * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemAgencyCommissionItem[] $agencyCommission
      *
      * @return self
      */
-    public function setAgencyCommission(?array $agencyCommission): self
+    public function setAgencyCommission(array $agencyCommission): self
     {
         $this->agencyCommission = $agencyCommission;
 
@@ -112,23 +112,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     }
 
     /**
-     * Used to pass details related to ancillary fees.
+     * Used to return details related to ancillary fees.
      *
      * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemAncillaryFeesItem[]
      */
-    public function getAncillaryFees(): ?array
+    public function getAncillaryFees(): array
     {
         return $this->ancillaryFees;
     }
 
     /**
-     * Used to pass details related to ancillary fees.
+     * Used to return details related to ancillary fees.
      *
      * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemAncillaryFeesItem[] $ancillaryFees
      *
      * @return self
      */
-    public function setAncillaryFees(?array $ancillaryFees): self
+    public function setAncillaryFees(array $ancillaryFees): self
     {
         $this->ancillaryFees = $ancillaryFees;
 
@@ -140,7 +140,7 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
      *
      * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItem[]
      */
-    public function getBaggageProvisions(): ?array
+    public function getBaggageProvisions(): array
     {
         return $this->baggageProvisions;
     }
@@ -152,7 +152,7 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
      *
      * @return self
      */
-    public function setBaggageProvisions(?array $baggageProvisions): self
+    public function setBaggageProvisions(array $baggageProvisions): self
     {
         $this->baggageProvisions = $baggageProvisions;
 
@@ -160,23 +160,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     }
 
     /**
-     * Generic fare calculation.
+     * The generic fare calculation.
      *
      * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemFareCalculation
      */
-    public function getFareCalculation(): ?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemFareCalculation
+    public function getFareCalculation(): CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemFareCalculation
     {
         return $this->fareCalculation;
     }
 
     /**
-     * Generic fare calculation.
+     * The generic fare calculation.
      *
      * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemFareCalculation $fareCalculation
      *
      * @return self
      */
-    public function setFareCalculation(?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemFareCalculation $fareCalculation): self
+    public function setFareCalculation(CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemFareCalculation $fareCalculation): self
     {
         $this->fareCalculation = $fareCalculation;
 
@@ -184,23 +184,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     }
 
     /**
-     * fare calculation breakdown.
+     * The fare calculation breakdown.
      *
      * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemFareCalculationBreakdownItem[]
      */
-    public function getFareCalculationBreakdown(): ?array
+    public function getFareCalculationBreakdown(): array
     {
         return $this->fareCalculationBreakdown;
     }
 
     /**
-     * fare calculation breakdown.
+     * The fare calculation breakdown.
      *
      * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemFareCalculationBreakdownItem[] $fareCalculationBreakdown
      *
      * @return self
      */
-    public function setFareCalculationBreakdown(?array $fareCalculationBreakdown): self
+    public function setFareCalculationBreakdown(array $fareCalculationBreakdown): self
     {
         $this->fareCalculationBreakdown = $fareCalculationBreakdown;
 
@@ -208,23 +208,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     }
 
     /**
-     * Total itinerary pricing.
+     * The total itinerary pricing.
      *
      * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFare
      */
-    public function getItinTotalFare(): ?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFare
+    public function getItinTotalFare(): CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFare
     {
         return $this->itinTotalFare;
     }
 
     /**
-     * Total itinerary pricing.
+     * The total itinerary pricing.
      *
      * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFare $itinTotalFare
      *
      * @return self
      */
-    public function setItinTotalFare(?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFare $itinTotalFare): self
+    public function setItinTotalFare(CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFare $itinTotalFare): self
     {
         $this->itinTotalFare = $itinTotalFare;
 
@@ -232,23 +232,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     }
 
     /**
-     * Passenger type information.
+     * The passenger type and quantity information.
      *
      * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemPassengerTypeQuantity
      */
-    public function getPassengerTypeQuantity(): ?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemPassengerTypeQuantity
+    public function getPassengerTypeQuantity(): CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemPassengerTypeQuantity
     {
         return $this->passengerTypeQuantity;
     }
 
     /**
-     * Passenger type information.
+     * The passenger type and quantity information.
      *
      * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemPassengerTypeQuantity $passengerTypeQuantity
      *
      * @return self
      */
-    public function setPassengerTypeQuantity(?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemPassengerTypeQuantity $passengerTypeQuantity): self
+    public function setPassengerTypeQuantity(CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemPassengerTypeQuantity $passengerTypeQuantity): self
     {
         $this->passengerTypeQuantity = $passengerTypeQuantity;
 
@@ -256,23 +256,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     }
 
     /**
-     * Pricing details broken down by passenger type code (PTC).
+     * The pricing details broken down by passenger type code (PTC).
      *
      * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemPTCFareBreakdownItem[]
      */
-    public function getPTCFareBreakdown(): ?array
+    public function getPTCFareBreakdown(): array
     {
         return $this->pTCFareBreakdown;
     }
 
     /**
-     * Pricing details broken down by passenger type code (PTC).
+     * The pricing details broken down by passenger type code (PTC).
      *
      * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemPTCFareBreakdownItem[] $pTCFareBreakdown
      *
      * @return self
      */
-    public function setPTCFareBreakdown(?array $pTCFareBreakdown): self
+    public function setPTCFareBreakdown(array $pTCFareBreakdown): self
     {
         $this->pTCFareBreakdown = $pTCFareBreakdown;
 
@@ -280,23 +280,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     }
 
     /**
-     * Rule Retailer Codes.
+     * The retailer rule code information.
      *
      * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemRetailerRulesItem[]
      */
-    public function getRetailerRules(): ?array
+    public function getRetailerRules(): array
     {
         return $this->retailerRules;
     }
 
     /**
-     * Rule Retailer Codes.
+     * The retailer rule code information.
      *
      * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemRetailerRulesItem[] $retailerRules
      *
      * @return self
      */
-    public function setRetailerRules(?array $retailerRules): self
+    public function setRetailerRules(array $retailerRules): self
     {
         $this->retailerRules = $retailerRules;
 
@@ -304,23 +304,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     }
 
     /**
-     * Information on specific change or cancellation penalties for an itinerary.
+     * The information on specific change or cancellation penalties for an itinerary.
      *
      * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemSpecificPenaltyItem[]
      */
-    public function getSpecificPenalty(): ?array
+    public function getSpecificPenalty(): array
     {
         return $this->specificPenalty;
     }
 
     /**
-     * Information on specific change or cancellation penalties for an itinerary.
+     * The information on specific change or cancellation penalties for an itinerary.
      *
      * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemSpecificPenaltyItem[] $specificPenalty
      *
      * @return self
      */
-    public function setSpecificPenalty(?array $specificPenalty): self
+    public function setSpecificPenalty(array $specificPenalty): self
     {
         $this->specificPenalty = $specificPenalty;
 
@@ -328,23 +328,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     }
 
     /**
-     * Ticketing fee related information.
+     * The ticketing fee information.
      *
      * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemTicketingFeesItem[]
      */
-    public function getTicketingFees(): ?array
+    public function getTicketingFees(): array
     {
         return $this->ticketingFees;
     }
 
     /**
-     * Ticketing fee related information.
+     * The ticketing fee information.
      *
      * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemTicketingFeesItem[] $ticketingFees
      *
      * @return self
      */
-    public function setTicketingFees(?array $ticketingFees): self
+    public function setTicketingFees(array $ticketingFees): self
     {
         $this->ticketingFees = $ticketingFees;
 
@@ -356,7 +356,7 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
      *
      * @return string
      */
-    public function getSolutionSequenceNmbr(): ?string
+    public function getSolutionSequenceNmbr(): string
     {
         return $this->solutionSequenceNmbr;
     }
@@ -368,7 +368,7 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
      *
      * @return self
      */
-    public function setSolutionSequenceNmbr(?string $solutionSequenceNmbr): self
+    public function setSolutionSequenceNmbr(string $solutionSequenceNmbr): self
     {
         $this->solutionSequenceNmbr = $solutionSequenceNmbr;
 

@@ -12,39 +12,39 @@ namespace Ammonkc\SabreApi\Model\CreatePassengerNameRecord;
 
 use Ammonkc\SabreApi\AbstractModel;
 
-class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItinerary extends AbstractModel extends AbstractModel
+class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItinerary extends AbstractModel
 {
     /**
-     * Customer details.
+     * The customer information details.
      *
      * @var CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfo
      */
     protected $customerInfo;
     /**
-     * Special service request details.
+     * Special service request information.
      *
      * @var CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItinerarySpecialServiceInfoItem[]
      */
     protected $specialServiceInfo;
 
     /**
-     * Customer details.
+     * The customer information details.
      *
      * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfo
      */
-    public function getCustomerInfo(): ?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfo
+    public function getCustomerInfo(): CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfo
     {
         return $this->customerInfo;
     }
 
     /**
-     * Customer details.
+     * The customer information details.
      *
      * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfo $customerInfo
      *
      * @return self
      */
-    public function setCustomerInfo(?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfo $customerInfo): self
+    public function setCustomerInfo(CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfo $customerInfo): self
     {
         $this->customerInfo = $customerInfo;
 
@@ -52,23 +52,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     }
 
     /**
-     * Special service request details.
+     * Special service request information.
      *
      * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItinerarySpecialServiceInfoItem[]
      */
-    public function getSpecialServiceInfo(): ?array
+    public function getSpecialServiceInfo(): array
     {
         return $this->specialServiceInfo;
     }
 
     /**
-     * Special service request details.
+     * Special service request information.
      *
      * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItinerarySpecialServiceInfoItem[] $specialServiceInfo
      *
      * @return self
      */
-    public function setSpecialServiceInfo(?array $specialServiceInfo): self
+    public function setSpecialServiceInfo(array $specialServiceInfo): self
     {
         $this->specialServiceInfo = $specialServiceInfo;
 

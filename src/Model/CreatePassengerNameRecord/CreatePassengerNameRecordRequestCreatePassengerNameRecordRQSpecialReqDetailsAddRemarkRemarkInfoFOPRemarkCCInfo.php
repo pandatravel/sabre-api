@@ -15,7 +15,7 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAddRemarkRemarkInfoFOPRemarkCCInfo extends AbstractModel
 {
     /**
-     * Card details.
+     * The payment card details.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAddRemarkRemarkInfoFOPRemarkCCInfoPaymentCard
      */
@@ -28,23 +28,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     protected $suppress;
 
     /**
-     * Card details.
+     * The payment card details.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAddRemarkRemarkInfoFOPRemarkCCInfoPaymentCard
      */
-    public function getPaymentCard(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAddRemarkRemarkInfoFOPRemarkCCInfoPaymentCard
+    public function getPaymentCard(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAddRemarkRemarkInfoFOPRemarkCCInfoPaymentCard
     {
         return $this->paymentCard;
     }
 
     /**
-     * Card details.
+     * The payment card details.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAddRemarkRemarkInfoFOPRemarkCCInfoPaymentCard $paymentCard
      *
      * @return self
      */
-    public function setPaymentCard(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAddRemarkRemarkInfoFOPRemarkCCInfoPaymentCard $paymentCard): self
+    public function setPaymentCard(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAddRemarkRemarkInfoFOPRemarkCCInfoPaymentCard $paymentCard): self
     {
         $this->paymentCard = $paymentCard;
 
@@ -56,7 +56,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
      *
      * @return bool
      */
-    public function getSuppress(): ?bool
+    public function getSuppress(): bool
     {
         return $this->suppress;
     }
@@ -68,7 +68,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
      *
      * @return self
      */
-    public function setSuppress(?bool $suppress): self
+    public function setSuppress(bool $suppress): self
     {
         $this->suppress = $suppress;
 

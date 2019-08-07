@@ -15,19 +15,19 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemSpecificPenaltyItemPenaltyInformation extends AbstractModel
 {
     /**
-     * Fare basis code.
+     * The fare basis code information.
      *
      * @var string[]
      */
     protected $fareBasisCode;
     /**
-     * Fare component number.
+     * The fare component information.
      *
      * @var string[]
      */
     protected $fareComponent;
     /**
-     * Penalty amount.
+     * The penalty amount.
      *
      * @var string
      */
@@ -39,7 +39,7 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
      */
     protected $cat16;
     /**
-     * Currency type.
+     * The currency code.
      *
      * @var string
      */
@@ -51,30 +51,34 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
      */
     protected $notApplicable;
     /**
-     * Returns four penalty types: "CPBD" - Change Penalty Before Departure; "CPAD" - Change Penalty After Departure; "RPBD" - Refund Penalty Before Departure or "RPAD" - Refund Penalty After Departure.
+     * 'Type' returns four penalty types:.
+     * 'CPBD' - change penalty before departure,
+     * 'CPAD' - change penalty after departure,
+     * 'RPBD' - refund penalty before departure,
+     * 'RPAD' - refund penalty after departure.
      *
      * @var string
      */
     protected $type;
 
     /**
-     * Fare basis code.
+     * The fare basis code information.
      *
      * @return string[]
      */
-    public function getFareBasisCode(): ?array
+    public function getFareBasisCode(): array
     {
         return $this->fareBasisCode;
     }
 
     /**
-     * Fare basis code.
+     * The fare basis code information.
      *
      * @param string[] $fareBasisCode
      *
      * @return self
      */
-    public function setFareBasisCode(?array $fareBasisCode): self
+    public function setFareBasisCode(array $fareBasisCode): self
     {
         $this->fareBasisCode = $fareBasisCode;
 
@@ -82,23 +86,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     }
 
     /**
-     * Fare component number.
+     * The fare component information.
      *
      * @return string[]
      */
-    public function getFareComponent(): ?array
+    public function getFareComponent(): array
     {
         return $this->fareComponent;
     }
 
     /**
-     * Fare component number.
+     * The fare component information.
      *
      * @param string[] $fareComponent
      *
      * @return self
      */
-    public function setFareComponent(?array $fareComponent): self
+    public function setFareComponent(array $fareComponent): self
     {
         $this->fareComponent = $fareComponent;
 
@@ -106,23 +110,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     }
 
     /**
-     * Penalty amount.
+     * The penalty amount.
      *
      * @return string
      */
-    public function getAmount(): ?string
+    public function getAmount(): string
     {
         return $this->amount;
     }
 
     /**
-     * Penalty amount.
+     * The penalty amount.
      *
      * @param string $amount
      *
      * @return self
      */
-    public function setAmount(?string $amount): self
+    public function setAmount(string $amount): self
     {
         $this->amount = $amount;
 
@@ -134,7 +138,7 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
      *
      * @return bool
      */
-    public function getCat16(): ?bool
+    public function getCat16(): bool
     {
         return $this->cat16;
     }
@@ -146,7 +150,7 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
      *
      * @return self
      */
-    public function setCat16(?bool $cat16): self
+    public function setCat16(bool $cat16): self
     {
         $this->cat16 = $cat16;
 
@@ -154,23 +158,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     }
 
     /**
-     * Currency type.
+     * The currency code.
      *
      * @return string
      */
-    public function getCurrency(): ?string
+    public function getCurrency(): string
     {
         return $this->currency;
     }
 
     /**
-     * Currency type.
+     * The currency code.
      *
      * @param string $currency
      *
      * @return self
      */
-    public function setCurrency(?string $currency): self
+    public function setCurrency(string $currency): self
     {
         $this->currency = $currency;
 
@@ -182,7 +186,7 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
      *
      * @return bool
      */
-    public function getNotApplicable(): ?bool
+    public function getNotApplicable(): bool
     {
         return $this->notApplicable;
     }
@@ -194,7 +198,7 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
      *
      * @return self
      */
-    public function setNotApplicable(?bool $notApplicable): self
+    public function setNotApplicable(bool $notApplicable): self
     {
         $this->notApplicable = $notApplicable;
 
@@ -202,23 +206,31 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     }
 
     /**
-     * Returns four penalty types: "CPBD" - Change Penalty Before Departure; "CPAD" - Change Penalty After Departure; "RPBD" - Refund Penalty Before Departure or "RPAD" - Refund Penalty After Departure.
+     * 'Type' returns four penalty types:.
+     * 'CPBD' - change penalty before departure,
+     * 'CPAD' - change penalty after departure,
+     * 'RPBD' - refund penalty before departure,
+     * 'RPAD' - refund penalty after departure.
      *
      * @return string
      */
-    public function getType(): ?string
+    public function getType(): string
     {
         return $this->type;
     }
 
     /**
-     * Returns four penalty types: "CPBD" - Change Penalty Before Departure; "CPAD" - Change Penalty After Departure; "RPBD" - Refund Penalty Before Departure or "RPAD" - Refund Penalty After Departure.
+     * 'Type' returns four penalty types:.
+     * 'CPBD' - change penalty before departure,
+     * 'CPAD' - change penalty after departure,
+     * 'RPBD' - refund penalty before departure,
+     * 'RPAD' - refund penalty after departure.
      *
      * @param string $type
      *
      * @return self
      */
-    public function setType(?string $type): self
+    public function setType(string $type): self
     {
         $this->type = $type;
 

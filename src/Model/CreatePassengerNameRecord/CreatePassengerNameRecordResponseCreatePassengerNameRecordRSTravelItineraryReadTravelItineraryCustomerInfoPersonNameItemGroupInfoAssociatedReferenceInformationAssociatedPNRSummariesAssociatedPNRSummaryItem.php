@@ -15,48 +15,48 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPersonNameItemGroupInfoAssociatedReferenceInformationAssociatedPNRSummariesAssociatedPNRSummaryItem extends AbstractModel
 {
     /**
-     * "RecordLocator" is used to return the Associated PNRs Record locator.
+     * The associated passenger name record locator.
      *
      * @var string
      */
     protected $recordLocator;
     /**
-     * "NumberOfSeats" is used to return the number of seats in the Associated PNR.
+     * The number of seats in the Associated PNR.
      *
      * @var string
      */
     protected $numberOfSeats;
     /**
-     * "TicketingTimeLimitInfo" is used to return the ticketing time limit for the Associated PNR.
+     * The ticketing time limit for the Associated PNR.
      *
      * @var string
      */
     protected $ticketingTimeLimitInfo;
     /**
-     * "FreeText" is used to return miscellaneous free text associated with the particular Associated PNR.
+     * 'FreeText' is used to return miscellaneous free text associated with the particular Associated PNR.
      *
      * @var string
      */
     protected $freeText;
 
     /**
-     * "RecordLocator" is used to return the Associated PNRs Record locator.
+     * The associated passenger name record locator.
      *
      * @return string
      */
-    public function getRecordLocator(): ?string
+    public function getRecordLocator(): string
     {
         return $this->recordLocator;
     }
 
     /**
-     * "RecordLocator" is used to return the Associated PNRs Record locator.
+     * The associated passenger name record locator.
      *
      * @param string $recordLocator
      *
      * @return self
      */
-    public function setRecordLocator(?string $recordLocator): self
+    public function setRecordLocator(string $recordLocator): self
     {
         $this->recordLocator = $recordLocator;
 
@@ -64,23 +64,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     }
 
     /**
-     * "NumberOfSeats" is used to return the number of seats in the Associated PNR.
+     * The number of seats in the Associated PNR.
      *
      * @return string
      */
-    public function getNumberOfSeats(): ?string
+    public function getNumberOfSeats(): string
     {
         return $this->numberOfSeats;
     }
 
     /**
-     * "NumberOfSeats" is used to return the number of seats in the Associated PNR.
+     * The number of seats in the Associated PNR.
      *
      * @param string $numberOfSeats
      *
      * @return self
      */
-    public function setNumberOfSeats(?string $numberOfSeats): self
+    public function setNumberOfSeats(string $numberOfSeats): self
     {
         $this->numberOfSeats = $numberOfSeats;
 
@@ -88,23 +88,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     }
 
     /**
-     * "TicketingTimeLimitInfo" is used to return the ticketing time limit for the Associated PNR.
+     * The ticketing time limit for the Associated PNR.
      *
      * @return string
      */
-    public function getTicketingTimeLimitInfo(): ?string
+    public function getTicketingTimeLimitInfo(): string
     {
         return $this->ticketingTimeLimitInfo;
     }
 
     /**
-     * "TicketingTimeLimitInfo" is used to return the ticketing time limit for the Associated PNR.
+     * The ticketing time limit for the Associated PNR.
      *
      * @param string $ticketingTimeLimitInfo
      *
      * @return self
      */
-    public function setTicketingTimeLimitInfo(?string $ticketingTimeLimitInfo): self
+    public function setTicketingTimeLimitInfo(string $ticketingTimeLimitInfo): self
     {
         $this->ticketingTimeLimitInfo = $ticketingTimeLimitInfo;
 
@@ -112,23 +112,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     }
 
     /**
-     * "FreeText" is used to return miscellaneous free text associated with the particular Associated PNR.
+     * 'FreeText' is used to return miscellaneous free text associated with the particular Associated PNR.
      *
      * @return string
      */
-    public function getFreeText(): ?string
+    public function getFreeText(): string
     {
         return $this->freeText;
     }
 
     /**
-     * "FreeText" is used to return miscellaneous free text associated with the particular Associated PNR.
+     * 'FreeText' is used to return miscellaneous free text associated with the particular Associated PNR.
      *
      * @param string $freeText
      *
      * @return self
      */
-    public function setFreeText(?string $freeText): self
+    public function setFreeText(string $freeText): self
     {
         $this->freeText = $freeText;
 

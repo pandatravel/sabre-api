@@ -15,42 +15,42 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPaymentInfoPaymentCCInfoItem extends AbstractModel
 {
     /**
-     * Cardholder information.
+     * The cardholder information.
      *
      * @var CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPaymentInfoPaymentCCInfoItemCardHolderInfo
      */
     protected $cardHolderInfo;
     /**
-     * "PreferredCustomer" is used to indicate whether or not the cardholder is a preferred customer.
+     * 'PreferredCustomer' is used to indicate whether or not the cardholder is a preferred customer.
      *
      * @var string
      */
     protected $preferredCustomer;
     /**
-     * "ShortText" is used to return miscellaneous credit card-related information.
+     * 'ShortText' is used to return miscellaneous credit card-related information.
      *
      * @var string
      */
     protected $shortText;
 
     /**
-     * Cardholder information.
+     * The cardholder information.
      *
      * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPaymentInfoPaymentCCInfoItemCardHolderInfo
      */
-    public function getCardHolderInfo(): ?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPaymentInfoPaymentCCInfoItemCardHolderInfo
+    public function getCardHolderInfo(): CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPaymentInfoPaymentCCInfoItemCardHolderInfo
     {
         return $this->cardHolderInfo;
     }
 
     /**
-     * Cardholder information.
+     * The cardholder information.
      *
      * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPaymentInfoPaymentCCInfoItemCardHolderInfo $cardHolderInfo
      *
      * @return self
      */
-    public function setCardHolderInfo(?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPaymentInfoPaymentCCInfoItemCardHolderInfo $cardHolderInfo): self
+    public function setCardHolderInfo(CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPaymentInfoPaymentCCInfoItemCardHolderInfo $cardHolderInfo): self
     {
         $this->cardHolderInfo = $cardHolderInfo;
 
@@ -58,23 +58,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     }
 
     /**
-     * "PreferredCustomer" is used to indicate whether or not the cardholder is a preferred customer.
+     * 'PreferredCustomer' is used to indicate whether or not the cardholder is a preferred customer.
      *
      * @return string
      */
-    public function getPreferredCustomer(): ?string
+    public function getPreferredCustomer(): string
     {
         return $this->preferredCustomer;
     }
 
     /**
-     * "PreferredCustomer" is used to indicate whether or not the cardholder is a preferred customer.
+     * 'PreferredCustomer' is used to indicate whether or not the cardholder is a preferred customer.
      *
      * @param string $preferredCustomer
      *
      * @return self
      */
-    public function setPreferredCustomer(?string $preferredCustomer): self
+    public function setPreferredCustomer(string $preferredCustomer): self
     {
         $this->preferredCustomer = $preferredCustomer;
 
@@ -82,23 +82,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     }
 
     /**
-     * "ShortText" is used to return miscellaneous credit card-related information.
+     * 'ShortText' is used to return miscellaneous credit card-related information.
      *
      * @return string
      */
-    public function getShortText(): ?string
+    public function getShortText(): string
     {
         return $this->shortText;
     }
 
     /**
-     * "ShortText" is used to return miscellaneous credit card-related information.
+     * 'ShortText' is used to return miscellaneous credit card-related information.
      *
      * @param string $shortText
      *
      * @return self
      */
-    public function setShortText(?string $shortText): self
+    public function setShortText(string $shortText): self
     {
         $this->shortText = $shortText;
 

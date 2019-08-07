@@ -15,30 +15,30 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmailPersonName extends AbstractModel
 {
     /**
-     * Name number.
+     * The name number.
      *
      * @var string
      */
     protected $nameNumber;
 
     /**
-     * Name number.
+     * The name number.
      *
      * @return string
      */
-    public function getNameNumber(): ?string
+    public function getNameNumber(): string
     {
         return $this->nameNumber;
     }
 
     /**
-     * Name number.
+     * The name number.
      *
      * @param string $nameNumber
      *
      * @return self
      */
-    public function setNameNumber(?string $nameNumber): self
+    public function setNameNumber(string $nameNumber): self
     {
         $this->nameNumber = $nameNumber;
 

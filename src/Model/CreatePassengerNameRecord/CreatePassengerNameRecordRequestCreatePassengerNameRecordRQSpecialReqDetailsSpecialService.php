@@ -15,30 +15,30 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialService extends AbstractModel
 {
     /**
-     * SSR details.
+     * The SSR details.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfo
      */
     protected $specialServiceInfo;
 
     /**
-     * SSR details.
+     * The SSR details.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfo
      */
-    public function getSpecialServiceInfo(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfo
+    public function getSpecialServiceInfo(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfo
     {
         return $this->specialServiceInfo;
     }
 
     /**
-     * SSR details.
+     * The SSR details.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfo $specialServiceInfo
      *
      * @return self
      */
-    public function setSpecialServiceInfo(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfo $specialServiceInfo): self
+    public function setSpecialServiceInfo(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfo $specialServiceInfo): self
     {
         $this->specialServiceInfo = $specialServiceInfo;
 

@@ -15,36 +15,36 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareTaxes extends AbstractModel
 {
     /**
-     * Individual tax details.
+     * The individual tax details.
      *
      * @var CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareTaxesTaxItem[]
      */
     protected $tax;
     /**
-     * Tax total amount.
+     * The tax total amount.
      *
      * @var string
      */
     protected $totalAmount;
 
     /**
-     * Individual tax details.
+     * The individual tax details.
      *
      * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareTaxesTaxItem[]
      */
-    public function getTax(): ?array
+    public function getTax(): array
     {
         return $this->tax;
     }
 
     /**
-     * Individual tax details.
+     * The individual tax details.
      *
      * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareTaxesTaxItem[] $tax
      *
      * @return self
      */
-    public function setTax(?array $tax): self
+    public function setTax(array $tax): self
     {
         $this->tax = $tax;
 
@@ -52,23 +52,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     }
 
     /**
-     * Tax total amount.
+     * The tax total amount.
      *
      * @return string
      */
-    public function getTotalAmount(): ?string
+    public function getTotalAmount(): string
     {
         return $this->totalAmount;
     }
 
     /**
-     * Tax total amount.
+     * The tax total amount.
      *
      * @param string $totalAmount
      *
      * @return self
      */
-    public function setTotalAmount(?string $totalAmount): self
+    public function setTotalAmount(string $totalAmount): self
     {
         $this->totalAmount = $totalAmount;
 

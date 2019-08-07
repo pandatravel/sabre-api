@@ -15,42 +15,42 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSourceAgencyContact extends AbstractModel
 {
     /**
-     * Phone number.
+     * The agency phone number.
      *
      * @var string
      */
     protected $phone;
     /**
-     * Mobile phone number.
+     * The agency mobile phone number.
      *
      * @var string
      */
     protected $mobile;
     /**
-     * Fax number.
+     * The agency fax number.
      *
      * @var string
      */
     protected $fax;
 
     /**
-     * Phone number.
+     * The agency phone number.
      *
      * @return string
      */
-    public function getPhone(): ?string
+    public function getPhone(): string
     {
         return $this->phone;
     }
 
     /**
-     * Phone number.
+     * The agency phone number.
      *
      * @param string $phone
      *
      * @return self
      */
-    public function setPhone(?string $phone): self
+    public function setPhone(string $phone): self
     {
         $this->phone = $phone;
 
@@ -58,23 +58,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSou
     }
 
     /**
-     * Mobile phone number.
+     * The agency mobile phone number.
      *
      * @return string
      */
-    public function getMobile(): ?string
+    public function getMobile(): string
     {
         return $this->mobile;
     }
 
     /**
-     * Mobile phone number.
+     * The agency mobile phone number.
      *
      * @param string $mobile
      *
      * @return self
      */
-    public function setMobile(?string $mobile): self
+    public function setMobile(string $mobile): self
     {
         $this->mobile = $mobile;
 
@@ -82,23 +82,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSou
     }
 
     /**
-     * Fax number.
+     * The agency fax number.
      *
      * @return string
      */
-    public function getFax(): ?string
+    public function getFax(): string
     {
         return $this->fax;
     }
 
     /**
-     * Fax number.
+     * The agency fax number.
      *
      * @param string $fax
      *
      * @return self
      */
-    public function setFax(?string $fax): self
+    public function setFax(string $fax): self
     {
         $this->fax = $fax;
 

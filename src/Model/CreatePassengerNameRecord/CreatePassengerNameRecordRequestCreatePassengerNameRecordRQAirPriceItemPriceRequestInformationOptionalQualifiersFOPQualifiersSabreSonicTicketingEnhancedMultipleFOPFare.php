@@ -15,30 +15,30 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingEnhancedMultipleFOPFare extends AbstractModel
 {
     /**
-     * Used to specify the amount to be applied to the second FOP.
+     * Used to specify the fare amount to be applied to the second FOP.
      *
      * @var string
      */
     protected $amount;
 
     /**
-     * Used to specify the amount to be applied to the second FOP.
+     * Used to specify the fare amount to be applied to the second FOP.
      *
      * @return string
      */
-    public function getAmount(): ?string
+    public function getAmount(): string
     {
         return $this->amount;
     }
 
     /**
-     * Used to specify the amount to be applied to the second FOP.
+     * Used to specify the fare amount to be applied to the second FOP.
      *
      * @param string $amount
      *
      * @return self
      */
-    public function setAmount(?string $amount): self
+    public function setAmount(string $amount): self
     {
         $this->amount = $amount;
 

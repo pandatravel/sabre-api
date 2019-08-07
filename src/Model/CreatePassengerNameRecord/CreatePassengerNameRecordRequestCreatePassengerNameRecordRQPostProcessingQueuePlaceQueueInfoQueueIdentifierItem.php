@@ -15,48 +15,48 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingQueuePlaceQueueInfoQueueIdentifierItem extends AbstractModel
 {
     /**
-     * Queue name.
+     * The queue name.
      *
      * @var string
      */
     protected $name;
     /**
-     * Queue number.
+     * The queue number.
      *
      * @var string
      */
     protected $number;
     /**
-     * PIC code.
+     * The prefatory instruction code.
      *
      * @var string
      */
     protected $prefatoryInstructionCode;
     /**
-     * PCC.
+     * The pseudo city code.
      *
      * @var string
      */
     protected $pseudoCityCode;
 
     /**
-     * Queue name.
+     * The queue name.
      *
      * @return string
      */
-    public function getName(): ?string
+    public function getName(): string
     {
         return $this->name;
     }
 
     /**
-     * Queue name.
+     * The queue name.
      *
      * @param string $name
      *
      * @return self
      */
-    public function setName(?string $name): self
+    public function setName(string $name): self
     {
         $this->name = $name;
 
@@ -64,23 +64,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingQ
     }
 
     /**
-     * Queue number.
+     * The queue number.
      *
      * @return string
      */
-    public function getNumber(): ?string
+    public function getNumber(): string
     {
         return $this->number;
     }
 
     /**
-     * Queue number.
+     * The queue number.
      *
      * @param string $number
      *
      * @return self
      */
-    public function setNumber(?string $number): self
+    public function setNumber(string $number): self
     {
         $this->number = $number;
 
@@ -88,23 +88,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingQ
     }
 
     /**
-     * PIC code.
+     * The prefatory instruction code.
      *
      * @return string
      */
-    public function getPrefatoryInstructionCode(): ?string
+    public function getPrefatoryInstructionCode(): string
     {
         return $this->prefatoryInstructionCode;
     }
 
     /**
-     * PIC code.
+     * The prefatory instruction code.
      *
      * @param string $prefatoryInstructionCode
      *
      * @return self
      */
-    public function setPrefatoryInstructionCode(?string $prefatoryInstructionCode): self
+    public function setPrefatoryInstructionCode(string $prefatoryInstructionCode): self
     {
         $this->prefatoryInstructionCode = $prefatoryInstructionCode;
 
@@ -112,23 +112,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingQ
     }
 
     /**
-     * PCC.
+     * The pseudo city code.
      *
      * @return string
      */
-    public function getPseudoCityCode(): ?string
+    public function getPseudoCityCode(): string
     {
         return $this->pseudoCityCode;
     }
 
     /**
-     * PCC.
+     * The pseudo city code.
      *
      * @param string $pseudoCityCode
      *
      * @return self
      */
-    public function setPseudoCityCode(?string $pseudoCityCode): self
+    public function setPseudoCityCode(string $pseudoCityCode): self
     {
         $this->pseudoCityCode = $pseudoCityCode;
 

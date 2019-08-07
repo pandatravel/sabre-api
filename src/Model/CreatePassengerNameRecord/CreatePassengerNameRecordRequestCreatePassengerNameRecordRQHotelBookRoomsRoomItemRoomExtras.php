@@ -15,30 +15,30 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsRoomItemRoomExtras extends AbstractModel
 {
     /**
-     * Details of an individual extra requested.
+     * Details of an individual room extra requested.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsRoomItemRoomExtrasRoomExtraItem[]
      */
     protected $roomExtra;
 
     /**
-     * Details of an individual extra requested.
+     * Details of an individual room extra requested.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsRoomItemRoomExtrasRoomExtraItem[]
      */
-    public function getRoomExtra(): ?array
+    public function getRoomExtra(): array
     {
         return $this->roomExtra;
     }
 
     /**
-     * Details of an individual extra requested.
+     * Details of an individual room extra requested.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsRoomItemRoomExtrasRoomExtraItem[] $roomExtra
      *
      * @return self
      */
-    public function setRoomExtra(?array $roomExtra): self
+    public function setRoomExtra(array $roomExtra): self
     {
         $this->roomExtra = $roomExtra;
 

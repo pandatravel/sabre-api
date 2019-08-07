@@ -15,48 +15,51 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoAdvancePassengerItemDocumentVisa extends AbstractModel
 {
     /**
+     * The applicable country code.
      * You must use a valid 2 or 3 character country code (alpha characters only).
      *
      * @var string
      */
     protected $applicableCountry;
     /**
-     * Place of birth.
+     * The place of birth.
      *
      * @var string
      */
     protected $placeOfBirth;
     /**
-     * Place of issue.
+     * The place of issue.
      *
      * @var string
      */
     protected $placeOfIssue;
     /**
-     * Issue date.
+     * The issue date.
      *
      * @var string
      */
     protected $issueDate;
 
     /**
+     * The applicable country code.
      * You must use a valid 2 or 3 character country code (alpha characters only).
      *
      * @return string
      */
-    public function getApplicableCountry(): ?string
+    public function getApplicableCountry(): string
     {
         return $this->applicableCountry;
     }
 
     /**
+     * The applicable country code.
      * You must use a valid 2 or 3 character country code (alpha characters only).
      *
      * @param string $applicableCountry
      *
      * @return self
      */
-    public function setApplicableCountry(?string $applicableCountry): self
+    public function setApplicableCountry(string $applicableCountry): self
     {
         $this->applicableCountry = $applicableCountry;
 
@@ -64,23 +67,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     }
 
     /**
-     * Place of birth.
+     * The place of birth.
      *
      * @return string
      */
-    public function getPlaceOfBirth(): ?string
+    public function getPlaceOfBirth(): string
     {
         return $this->placeOfBirth;
     }
 
     /**
-     * Place of birth.
+     * The place of birth.
      *
      * @param string $placeOfBirth
      *
      * @return self
      */
-    public function setPlaceOfBirth(?string $placeOfBirth): self
+    public function setPlaceOfBirth(string $placeOfBirth): self
     {
         $this->placeOfBirth = $placeOfBirth;
 
@@ -88,23 +91,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     }
 
     /**
-     * Place of issue.
+     * The place of issue.
      *
      * @return string
      */
-    public function getPlaceOfIssue(): ?string
+    public function getPlaceOfIssue(): string
     {
         return $this->placeOfIssue;
     }
 
     /**
-     * Place of issue.
+     * The place of issue.
      *
      * @param string $placeOfIssue
      *
      * @return self
      */
-    public function setPlaceOfIssue(?string $placeOfIssue): self
+    public function setPlaceOfIssue(string $placeOfIssue): self
     {
         $this->placeOfIssue = $placeOfIssue;
 
@@ -112,23 +115,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     }
 
     /**
-     * Issue date.
+     * The issue date.
      *
      * @return string
      */
-    public function getIssueDate(): ?string
+    public function getIssueDate(): string
     {
         return $this->issueDate;
     }
 
     /**
-     * Issue date.
+     * The issue date.
      *
      * @param string $issueDate
      *
      * @return self
      */
-    public function setIssueDate(?string $issueDate): self
+    public function setIssueDate(string $issueDate): self
     {
         $this->issueDate = $issueDate;
 

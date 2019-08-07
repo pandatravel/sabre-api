@@ -15,30 +15,30 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItem extends AbstractModel
 {
     /**
-     * Itinerary information.
+     * The itinerary information.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItems
      */
     protected $reservationItems;
 
     /**
-     * Itinerary information.
+     * The itinerary information.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItems
      */
-    public function getReservationItems(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItems
+    public function getReservationItems(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItems
     {
         return $this->reservationItems;
     }
 
     /**
-     * Itinerary information.
+     * The itinerary information.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItems $reservationItems
      *
      * @return self
      */
-    public function setReservationItems(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItems $reservationItems): self
+    public function setReservationItems(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItems $reservationItems): self
     {
         $this->reservationItems = $reservationItems;
 

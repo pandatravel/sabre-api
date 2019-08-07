@@ -30,7 +30,7 @@ class ProblemInformationSystemSpecificResultsItemMessageItemNormalizer implement
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\ProblemInformationSystemSpecificResultsItemMessageItem;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\ProblemInformationSystemSpecificResultsItemMessageItem';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])

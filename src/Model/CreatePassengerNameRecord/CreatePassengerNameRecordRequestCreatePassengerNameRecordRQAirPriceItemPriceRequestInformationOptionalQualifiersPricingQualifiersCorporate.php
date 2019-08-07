@@ -32,7 +32,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return string[]
      */
-    public function getID(): ?array
+    public function getID(): array
     {
         return $this->iD;
     }
@@ -44,7 +44,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return self
      */
-    public function setID(?array $iD): self
+    public function setID(array $iD): self
     {
         $this->iD = $iD;
 
@@ -56,7 +56,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return string
      */
-    public function getForce(): ?string
+    public function getForce(): string
     {
         return $this->force;
     }
@@ -68,7 +68,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return self
      */
-    public function setForce(?string $force): self
+    public function setForce(string $force): self
     {
         $this->force = $force;
 

@@ -15,36 +15,36 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfo extends AbstractModel
 {
     /**
-     * Used to pass agency details.
+     * Used to pass the agency details.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoAgencyInfo
      */
     protected $agencyInfo;
     /**
-     * Used to pass passenger details.
+     * Used to pass passenger's details.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoCustomerInfo
      */
     protected $customerInfo;
 
     /**
-     * Used to pass agency details.
+     * Used to pass the agency details.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoAgencyInfo
      */
-    public function getAgencyInfo(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoAgencyInfo
+    public function getAgencyInfo(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoAgencyInfo
     {
         return $this->agencyInfo;
     }
 
     /**
-     * Used to pass agency details.
+     * Used to pass the agency details.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoAgencyInfo $agencyInfo
      *
      * @return self
      */
-    public function setAgencyInfo(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoAgencyInfo $agencyInfo): self
+    public function setAgencyInfo(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoAgencyInfo $agencyInfo): self
     {
         $this->agencyInfo = $agencyInfo;
 
@@ -52,23 +52,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
     }
 
     /**
-     * Used to pass passenger details.
+     * Used to pass passenger's details.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoCustomerInfo
      */
-    public function getCustomerInfo(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoCustomerInfo
+    public function getCustomerInfo(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoCustomerInfo
     {
         return $this->customerInfo;
     }
 
     /**
-     * Used to pass passenger details.
+     * Used to pass passenger's details.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoCustomerInfo $customerInfo
      *
      * @return self
      */
-    public function setCustomerInfo(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoCustomerInfo $customerInfo): self
+    public function setCustomerInfo(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoCustomerInfo $customerInfo): self
     {
         $this->customerInfo = $customerInfo;
 

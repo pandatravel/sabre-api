@@ -38,7 +38,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return int
      */
-    public function getEndNumber(): ?int
+    public function getEndNumber(): int
     {
         return $this->endNumber;
     }
@@ -50,7 +50,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return self
      */
-    public function setEndNumber(?int $endNumber): self
+    public function setEndNumber(int $endNumber): self
     {
         $this->endNumber = $endNumber;
 
@@ -62,7 +62,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return int
      */
-    public function getETicketNumber(): ?int
+    public function getETicketNumber(): int
     {
         return $this->eTicketNumber;
     }
@@ -74,7 +74,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return self
      */
-    public function setETicketNumber(?int $eTicketNumber): self
+    public function setETicketNumber(int $eTicketNumber): self
     {
         $this->eTicketNumber = $eTicketNumber;
 
@@ -86,7 +86,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return int
      */
-    public function getNumber(): ?int
+    public function getNumber(): int
     {
         return $this->number;
     }
@@ -98,7 +98,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return self
      */
-    public function setNumber(?int $number): self
+    public function setNumber(int $number): self
     {
         $this->number = $number;
 

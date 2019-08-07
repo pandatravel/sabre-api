@@ -15,54 +15,54 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPersonNameItemEmailItem extends AbstractModel
 {
     /**
-     * "Email" is used to return the passenger's email address.
+     * The passenger's email address.
      *
      * @var string
      */
     protected $content;
     /**
-     * Email ID.
+     * The email ID.
      *
      * @var string
      */
     protected $id;
     /**
-     * Email Comment.
+     * The email comment.
      *
      * @var string
      */
     protected $comment;
     /**
-     * Email Type.
+     * The email type.
      *
      * @var string
      */
     protected $type;
     /**
-     * Email Name.
+     * The email name.
      *
      * @var string
      */
     protected $name;
 
     /**
-     * "Email" is used to return the passenger's email address.
+     * The passenger's email address.
      *
      * @return string
      */
-    public function getContent(): ?string
+    public function getContent(): string
     {
         return $this->content;
     }
 
     /**
-     * "Email" is used to return the passenger's email address.
+     * The passenger's email address.
      *
      * @param string $content
      *
      * @return self
      */
-    public function setContent(?string $content): self
+    public function setContent(string $content): self
     {
         $this->content = $content;
 
@@ -70,23 +70,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     }
 
     /**
-     * Email ID.
+     * The email ID.
      *
      * @return string
      */
-    public function getId(): ?string
+    public function getId(): string
     {
         return $this->id;
     }
 
     /**
-     * Email ID.
+     * The email ID.
      *
      * @param string $id
      *
      * @return self
      */
-    public function setId(?string $id): self
+    public function setId(string $id): self
     {
         $this->id = $id;
 
@@ -94,23 +94,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     }
 
     /**
-     * Email Comment.
+     * The email comment.
      *
      * @return string
      */
-    public function getComment(): ?string
+    public function getComment(): string
     {
         return $this->comment;
     }
 
     /**
-     * Email Comment.
+     * The email comment.
      *
      * @param string $comment
      *
      * @return self
      */
-    public function setComment(?string $comment): self
+    public function setComment(string $comment): self
     {
         $this->comment = $comment;
 
@@ -118,23 +118,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     }
 
     /**
-     * Email Type.
+     * The email type.
      *
      * @return string
      */
-    public function getType(): ?string
+    public function getType(): string
     {
         return $this->type;
     }
 
     /**
-     * Email Type.
+     * The email type.
      *
      * @param string $type
      *
      * @return self
      */
-    public function setType(?string $type): self
+    public function setType(string $type): self
     {
         $this->type = $type;
 
@@ -142,23 +142,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     }
 
     /**
-     * Email Name.
+     * The email name.
      *
      * @return string
      */
-    public function getName(): ?string
+    public function getName(): string
     {
         return $this->name;
     }
 
     /**
-     * Email Name.
+     * The email name.
      *
      * @param string $name
      *
      * @return self
      */
-    public function setName(?string $name): self
+    public function setName(string $name): self
     {
         $this->name = $name;
 

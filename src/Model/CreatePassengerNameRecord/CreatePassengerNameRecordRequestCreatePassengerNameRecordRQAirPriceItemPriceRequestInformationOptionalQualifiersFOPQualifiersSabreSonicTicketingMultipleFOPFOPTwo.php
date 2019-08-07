@@ -15,36 +15,38 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingMultipleFOPFOPTwo extends AbstractModel
 {
     /**
-     * Used to pass credit card information.
+     * Used to pass the credit card information.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingMultipleFOPFOPTwoCCInfo
      */
     protected $cCInfo;
     /**
-     * Used to specify the payment type. Acceptable values are "CA", "CK" or "CQ". If utilizing a credit card please omit @Type, and populate the .../CC_Info child node.
+     * Type is used to specify the payment type.
+     * Acceptable values are 'CA' (cash), 'CK' (check) or 'CQ' (cheque).
+     * If you are using a credit card, omit 'Type' and populate the 'CC_Info' object.
      *
      * @var string
      */
     protected $type;
 
     /**
-     * Used to pass credit card information.
+     * Used to pass the credit card information.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingMultipleFOPFOPTwoCCInfo
      */
-    public function getCCInfo(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingMultipleFOPFOPTwoCCInfo
+    public function getCCInfo(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingMultipleFOPFOPTwoCCInfo
     {
         return $this->cCInfo;
     }
 
     /**
-     * Used to pass credit card information.
+     * Used to pass the credit card information.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingMultipleFOPFOPTwoCCInfo $cCInfo
      *
      * @return self
      */
-    public function setCCInfo(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingMultipleFOPFOPTwoCCInfo $cCInfo): self
+    public function setCCInfo(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingMultipleFOPFOPTwoCCInfo $cCInfo): self
     {
         $this->cCInfo = $cCInfo;
 
@@ -52,23 +54,27 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     }
 
     /**
-     * Used to specify the payment type. Acceptable values are "CA", "CK" or "CQ". If utilizing a credit card please omit @Type, and populate the .../CC_Info child node.
+     * Type is used to specify the payment type.
+     * Acceptable values are 'CA' (cash), 'CK' (check) or 'CQ' (cheque).
+     * If you are using a credit card, omit 'Type' and populate the 'CC_Info' object.
      *
      * @return string
      */
-    public function getType(): ?string
+    public function getType(): string
     {
         return $this->type;
     }
 
     /**
-     * Used to specify the payment type. Acceptable values are "CA", "CK" or "CQ". If utilizing a credit card please omit @Type, and populate the .../CC_Info child node.
+     * Type is used to specify the payment type.
+     * Acceptable values are 'CA' (cash), 'CK' (check) or 'CQ' (cheque).
+     * If you are using a credit card, omit 'Type' and populate the 'CC_Info' object.
      *
      * @param string $type
      *
      * @return self
      */
-    public function setType(?string $type): self
+    public function setType(string $type): self
     {
         $this->type = $type;
 

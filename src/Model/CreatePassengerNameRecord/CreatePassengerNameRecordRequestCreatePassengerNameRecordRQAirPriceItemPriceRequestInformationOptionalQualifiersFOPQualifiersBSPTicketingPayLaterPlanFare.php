@@ -15,30 +15,30 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBSPTicketingPayLaterPlanFare extends AbstractModel
 {
     /**
-     * Used to specify the remaining fare amount.
+     * 'Amount' is used to specify the remaining fare amount.
      *
      * @var string
      */
     protected $amount;
 
     /**
-     * Used to specify the remaining fare amount.
+     * 'Amount' is used to specify the remaining fare amount.
      *
      * @return string
      */
-    public function getAmount(): ?string
+    public function getAmount(): string
     {
         return $this->amount;
     }
 
     /**
-     * Used to specify the remaining fare amount.
+     * 'Amount' is used to specify the remaining fare amount.
      *
      * @param string $amount
      *
      * @return self
      */
-    public function setAmount(?string $amount): self
+    public function setAmount(string $amount): self
     {
         $this->amount = $amount;
 

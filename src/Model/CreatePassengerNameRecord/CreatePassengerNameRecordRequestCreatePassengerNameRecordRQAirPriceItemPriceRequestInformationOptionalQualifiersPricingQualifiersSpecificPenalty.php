@@ -15,19 +15,21 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersSpecificPenalty extends AbstractModel
 {
     /**
-     * Changeable pricing fare options. Please note that "Changeable" and "Refundable" can be combined in a single request to query for both changeable AND refundable pricing options.
+     * The changeable pricing fare options.
+     * Please note that 'Changeable' and 'Refundable' can be combined in a single request to query for both changeable AND refundable pricing options.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersSpecificPenaltyChangeable
      */
     protected $changeable;
     /**
-     * Refundable OR changeable pricing fare options.
+     * The Refundable OR changeable pricing fare options.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersSpecificPenaltyEitherOr
      */
     protected $eitherOr;
     /**
-     * Refundable pricing fare options. Please note that "Changeable" and "Refundable" can be combined in a single request to query for both changeable AND refundable pricing options.
+     * The refundable pricing fare options.
+     * Please note that 'Changeable' and 'Refundable' can be combined in a single request to query for both changeable AND refundable pricing options.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersSpecificPenaltyRefundable
      */
@@ -40,23 +42,25 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     protected $additionalInfo;
 
     /**
-     * Changeable pricing fare options. Please note that "Changeable" and "Refundable" can be combined in a single request to query for both changeable AND refundable pricing options.
+     * The changeable pricing fare options.
+     * Please note that 'Changeable' and 'Refundable' can be combined in a single request to query for both changeable AND refundable pricing options.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersSpecificPenaltyChangeable
      */
-    public function getChangeable(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersSpecificPenaltyChangeable
+    public function getChangeable(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersSpecificPenaltyChangeable
     {
         return $this->changeable;
     }
 
     /**
-     * Changeable pricing fare options. Please note that "Changeable" and "Refundable" can be combined in a single request to query for both changeable AND refundable pricing options.
+     * The changeable pricing fare options.
+     * Please note that 'Changeable' and 'Refundable' can be combined in a single request to query for both changeable AND refundable pricing options.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersSpecificPenaltyChangeable $changeable
      *
      * @return self
      */
-    public function setChangeable(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersSpecificPenaltyChangeable $changeable): self
+    public function setChangeable(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersSpecificPenaltyChangeable $changeable): self
     {
         $this->changeable = $changeable;
 
@@ -64,23 +68,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     }
 
     /**
-     * Refundable OR changeable pricing fare options.
+     * The Refundable OR changeable pricing fare options.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersSpecificPenaltyEitherOr
      */
-    public function getEitherOr(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersSpecificPenaltyEitherOr
+    public function getEitherOr(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersSpecificPenaltyEitherOr
     {
         return $this->eitherOr;
     }
 
     /**
-     * Refundable OR changeable pricing fare options.
+     * The Refundable OR changeable pricing fare options.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersSpecificPenaltyEitherOr $eitherOr
      *
      * @return self
      */
-    public function setEitherOr(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersSpecificPenaltyEitherOr $eitherOr): self
+    public function setEitherOr(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersSpecificPenaltyEitherOr $eitherOr): self
     {
         $this->eitherOr = $eitherOr;
 
@@ -88,23 +92,25 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     }
 
     /**
-     * Refundable pricing fare options. Please note that "Changeable" and "Refundable" can be combined in a single request to query for both changeable AND refundable pricing options.
+     * The refundable pricing fare options.
+     * Please note that 'Changeable' and 'Refundable' can be combined in a single request to query for both changeable AND refundable pricing options.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersSpecificPenaltyRefundable
      */
-    public function getRefundable(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersSpecificPenaltyRefundable
+    public function getRefundable(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersSpecificPenaltyRefundable
     {
         return $this->refundable;
     }
 
     /**
-     * Refundable pricing fare options. Please note that "Changeable" and "Refundable" can be combined in a single request to query for both changeable AND refundable pricing options.
+     * The refundable pricing fare options.
+     * Please note that 'Changeable' and 'Refundable' can be combined in a single request to query for both changeable AND refundable pricing options.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersSpecificPenaltyRefundable $refundable
      *
      * @return self
      */
-    public function setRefundable(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersSpecificPenaltyRefundable $refundable): self
+    public function setRefundable(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersSpecificPenaltyRefundable $refundable): self
     {
         $this->refundable = $refundable;
 
@@ -116,7 +122,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return bool
      */
-    public function getAdditionalInfo(): ?bool
+    public function getAdditionalInfo(): bool
     {
         return $this->additionalInfo;
     }
@@ -128,7 +134,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return self
      */
-    public function setAdditionalInfo(?bool $additionalInfo): self
+    public function setAdditionalInfo(bool $additionalInfo): self
     {
         $this->additionalInfo = $additionalInfo;
 

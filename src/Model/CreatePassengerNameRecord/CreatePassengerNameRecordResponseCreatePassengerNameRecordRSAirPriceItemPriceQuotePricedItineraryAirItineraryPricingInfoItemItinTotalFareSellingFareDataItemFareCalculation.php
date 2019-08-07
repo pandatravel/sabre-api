@@ -15,30 +15,30 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareSellingFareDataItemFareCalculation extends AbstractModel
 {
     /**
-     * Details of the fare calculation line.
+     * The details of the fare calculation line.
      *
      * @var string
      */
     protected $text;
 
     /**
-     * Details of the fare calculation line.
+     * The details of the fare calculation line.
      *
      * @return string
      */
-    public function getText(): ?string
+    public function getText(): string
     {
         return $this->text;
     }
 
     /**
-     * Details of the fare calculation line.
+     * The details of the fare calculation line.
      *
      * @param string $text
      *
      * @return self
      */
-    public function setText(?string $text): self
+    public function setText(string $text): self
     {
         $this->text = $text;
 

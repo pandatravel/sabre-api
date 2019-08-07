@@ -15,36 +15,36 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransaction extends AbstractModel
 {
     /**
-     * Used to identify the entity that authorized the changes in a Passenger Name Record.
+     * Used to identify the entity that authorized the changes in a passenger name record.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionSource
      */
     protected $source;
     /**
-     * Used to request e-mail notifications after ending the record.
+     * Used to request e-mail notifications after ending the passenger name record.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmail
      */
     protected $email;
 
     /**
-     * Used to identify the entity that authorized the changes in a Passenger Name Record.
+     * Used to identify the entity that authorized the changes in a passenger name record.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionSource
      */
-    public function getSource(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionSource
+    public function getSource(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionSource
     {
         return $this->source;
     }
 
     /**
-     * Used to identify the entity that authorized the changes in a Passenger Name Record.
+     * Used to identify the entity that authorized the changes in a passenger name record.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionSource $source
      *
      * @return self
      */
-    public function setSource(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionSource $source): self
+    public function setSource(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionSource $source): self
     {
         $this->source = $source;
 
@@ -52,23 +52,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingE
     }
 
     /**
-     * Used to request e-mail notifications after ending the record.
+     * Used to request e-mail notifications after ending the passenger name record.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmail
      */
-    public function getEmail(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmail
+    public function getEmail(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmail
     {
         return $this->email;
     }
 
     /**
-     * Used to request e-mail notifications after ending the record.
+     * Used to request e-mail notifications after ending the passenger name record.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmail $email
      *
      * @return self
      */
-    public function setEmail(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmail $email): self
+    public function setEmail(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmail $email): self
     {
         $this->email = $email;
 

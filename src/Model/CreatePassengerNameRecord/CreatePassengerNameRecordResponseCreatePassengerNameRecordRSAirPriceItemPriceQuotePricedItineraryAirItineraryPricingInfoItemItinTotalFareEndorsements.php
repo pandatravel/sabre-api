@@ -15,30 +15,30 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareEndorsements extends AbstractModel
 {
     /**
-     * Endorsement.
+     * The endorsement text information.
      *
      * @var string[]
      */
     protected $text;
 
     /**
-     * Endorsement.
+     * The endorsement text information.
      *
      * @return string[]
      */
-    public function getText(): ?array
+    public function getText(): array
     {
         return $this->text;
     }
 
     /**
-     * Endorsement.
+     * The endorsement text information.
      *
      * @param string[] $text
      *
      * @return self
      */
-    public function setText(?array $text): self
+    public function setText(array $text): self
     {
         $this->text = $text;
 

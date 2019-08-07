@@ -15,19 +15,19 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFare extends AbstractModel
 {
     /**
-     * Baggage info.
+     * The baggage info.
      *
      * @var CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareBaggageInfo
      */
     protected $baggageInfo;
     /**
-     * Base fare.
+     * The base fare information.
      *
      * @var CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareBaseFare
      */
     protected $baseFare;
     /**
-     * Commission.
+     * The commission information.
      *
      * @var CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareCommission
      */
@@ -43,72 +43,72 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
      */
     protected $discountTypeMessage;
     /**
-     * Endorsement.
+     * The endorsement information.
      *
      * @var CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareEndorsements
      */
     protected $endorsements;
     /**
-     * Equivalent fare.
+     * The equivalent fare information.
      *
      * @var CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareEquivFare
      */
     protected $equivFare;
     /**
-     * Private fare indicator.
+     * The private fare information.
      *
      * @var CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFarePrivateFare
      */
     protected $privateFare;
     /**
-     * Taxes information.
+     * The Tax information.
      *
      * @var CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareTaxes
      */
     protected $taxes;
     /**
-     * Total fare.
+     * The total fare information.
      *
      * @var CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareTotalFare
      */
     protected $totalFare;
     /**
-     * Warnings related to the priced itinerary.
+     * The warnings related to the priced itinerary.
      *
      * @var CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareWarnings
      */
     protected $warnings;
     /**
-     * Selling fare data for each passenger type.
+     * The selling fare data for each passenger type.
      *
      * @var CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareSellingFareDataItem[]
      */
     protected $sellingFareData;
     /**
-     * Used to return non-refundable indicator-related information.
+     * The Non-refundable indicator.
      *
      * @var string
      */
     protected $nonRefundableInd;
 
     /**
-     * Baggage info.
+     * The baggage info.
      *
      * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareBaggageInfo
      */
-    public function getBaggageInfo(): ?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareBaggageInfo
+    public function getBaggageInfo(): CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareBaggageInfo
     {
         return $this->baggageInfo;
     }
 
     /**
-     * Baggage info.
+     * The baggage info.
      *
      * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareBaggageInfo $baggageInfo
      *
      * @return self
      */
-    public function setBaggageInfo(?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareBaggageInfo $baggageInfo): self
+    public function setBaggageInfo(CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareBaggageInfo $baggageInfo): self
     {
         $this->baggageInfo = $baggageInfo;
 
@@ -116,23 +116,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     }
 
     /**
-     * Base fare.
+     * The base fare information.
      *
      * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareBaseFare
      */
-    public function getBaseFare(): ?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareBaseFare
+    public function getBaseFare(): CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareBaseFare
     {
         return $this->baseFare;
     }
 
     /**
-     * Base fare.
+     * The base fare information.
      *
      * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareBaseFare $baseFare
      *
      * @return self
      */
-    public function setBaseFare(?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareBaseFare $baseFare): self
+    public function setBaseFare(CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareBaseFare $baseFare): self
     {
         $this->baseFare = $baseFare;
 
@@ -140,23 +140,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     }
 
     /**
-     * Commission.
+     * The commission information.
      *
      * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareCommission
      */
-    public function getCommission(): ?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareCommission
+    public function getCommission(): CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareCommission
     {
         return $this->commission;
     }
 
     /**
-     * Commission.
+     * The commission information.
      *
      * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareCommission $commission
      *
      * @return self
      */
-    public function setCommission(?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareCommission $commission): self
+    public function setCommission(CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareCommission $commission): self
     {
         $this->commission = $commission;
 
@@ -166,7 +166,7 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareConstruction
      */
-    public function getConstruction(): ?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareConstruction
+    public function getConstruction(): CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareConstruction
     {
         return $this->construction;
     }
@@ -176,7 +176,7 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
      *
      * @return self
      */
-    public function setConstruction(?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareConstruction $construction): self
+    public function setConstruction(CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareConstruction $construction): self
     {
         $this->construction = $construction;
 
@@ -188,7 +188,7 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
      *
      * @return string
      */
-    public function getDiscountTypeMessage(): ?string
+    public function getDiscountTypeMessage(): string
     {
         return $this->discountTypeMessage;
     }
@@ -200,7 +200,7 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
      *
      * @return self
      */
-    public function setDiscountTypeMessage(?string $discountTypeMessage): self
+    public function setDiscountTypeMessage(string $discountTypeMessage): self
     {
         $this->discountTypeMessage = $discountTypeMessage;
 
@@ -208,23 +208,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     }
 
     /**
-     * Endorsement.
+     * The endorsement information.
      *
      * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareEndorsements
      */
-    public function getEndorsements(): ?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareEndorsements
+    public function getEndorsements(): CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareEndorsements
     {
         return $this->endorsements;
     }
 
     /**
-     * Endorsement.
+     * The endorsement information.
      *
      * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareEndorsements $endorsements
      *
      * @return self
      */
-    public function setEndorsements(?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareEndorsements $endorsements): self
+    public function setEndorsements(CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareEndorsements $endorsements): self
     {
         $this->endorsements = $endorsements;
 
@@ -232,23 +232,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     }
 
     /**
-     * Equivalent fare.
+     * The equivalent fare information.
      *
      * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareEquivFare
      */
-    public function getEquivFare(): ?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareEquivFare
+    public function getEquivFare(): CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareEquivFare
     {
         return $this->equivFare;
     }
 
     /**
-     * Equivalent fare.
+     * The equivalent fare information.
      *
      * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareEquivFare $equivFare
      *
      * @return self
      */
-    public function setEquivFare(?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareEquivFare $equivFare): self
+    public function setEquivFare(CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareEquivFare $equivFare): self
     {
         $this->equivFare = $equivFare;
 
@@ -256,23 +256,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     }
 
     /**
-     * Private fare indicator.
+     * The private fare information.
      *
      * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFarePrivateFare
      */
-    public function getPrivateFare(): ?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFarePrivateFare
+    public function getPrivateFare(): CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFarePrivateFare
     {
         return $this->privateFare;
     }
 
     /**
-     * Private fare indicator.
+     * The private fare information.
      *
      * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFarePrivateFare $privateFare
      *
      * @return self
      */
-    public function setPrivateFare(?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFarePrivateFare $privateFare): self
+    public function setPrivateFare(CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFarePrivateFare $privateFare): self
     {
         $this->privateFare = $privateFare;
 
@@ -280,23 +280,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     }
 
     /**
-     * Taxes information.
+     * The Tax information.
      *
      * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareTaxes
      */
-    public function getTaxes(): ?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareTaxes
+    public function getTaxes(): CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareTaxes
     {
         return $this->taxes;
     }
 
     /**
-     * Taxes information.
+     * The Tax information.
      *
      * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareTaxes $taxes
      *
      * @return self
      */
-    public function setTaxes(?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareTaxes $taxes): self
+    public function setTaxes(CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareTaxes $taxes): self
     {
         $this->taxes = $taxes;
 
@@ -304,23 +304,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     }
 
     /**
-     * Total fare.
+     * The total fare information.
      *
      * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareTotalFare
      */
-    public function getTotalFare(): ?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareTotalFare
+    public function getTotalFare(): CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareTotalFare
     {
         return $this->totalFare;
     }
 
     /**
-     * Total fare.
+     * The total fare information.
      *
      * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareTotalFare $totalFare
      *
      * @return self
      */
-    public function setTotalFare(?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareTotalFare $totalFare): self
+    public function setTotalFare(CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareTotalFare $totalFare): self
     {
         $this->totalFare = $totalFare;
 
@@ -328,23 +328,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     }
 
     /**
-     * Warnings related to the priced itinerary.
+     * The warnings related to the priced itinerary.
      *
      * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareWarnings
      */
-    public function getWarnings(): ?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareWarnings
+    public function getWarnings(): CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareWarnings
     {
         return $this->warnings;
     }
 
     /**
-     * Warnings related to the priced itinerary.
+     * The warnings related to the priced itinerary.
      *
      * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareWarnings $warnings
      *
      * @return self
      */
-    public function setWarnings(?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareWarnings $warnings): self
+    public function setWarnings(CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareWarnings $warnings): self
     {
         $this->warnings = $warnings;
 
@@ -352,23 +352,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     }
 
     /**
-     * Selling fare data for each passenger type.
+     * The selling fare data for each passenger type.
      *
      * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareSellingFareDataItem[]
      */
-    public function getSellingFareData(): ?array
+    public function getSellingFareData(): array
     {
         return $this->sellingFareData;
     }
 
     /**
-     * Selling fare data for each passenger type.
+     * The selling fare data for each passenger type.
      *
      * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareSellingFareDataItem[] $sellingFareData
      *
      * @return self
      */
-    public function setSellingFareData(?array $sellingFareData): self
+    public function setSellingFareData(array $sellingFareData): self
     {
         $this->sellingFareData = $sellingFareData;
 
@@ -376,23 +376,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     }
 
     /**
-     * Used to return non-refundable indicator-related information.
+     * The Non-refundable indicator.
      *
      * @return string
      */
-    public function getNonRefundableInd(): ?string
+    public function getNonRefundableInd(): string
     {
         return $this->nonRefundableInd;
     }
 
     /**
-     * Used to return non-refundable indicator-related information.
+     * The Non-refundable indicator.
      *
      * @param string $nonRefundableInd
      *
      * @return self
      */
-    public function setNonRefundableInd(?string $nonRefundableInd): self
+    public function setNonRefundableInd(string $nonRefundableInd): self
     {
         $this->nonRefundableInd = $nonRefundableInd;
 

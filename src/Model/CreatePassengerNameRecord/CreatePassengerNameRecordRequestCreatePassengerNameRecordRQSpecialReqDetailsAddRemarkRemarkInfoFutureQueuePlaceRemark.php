@@ -15,7 +15,7 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAddRemarkRemarkInfoFutureQueuePlaceRemark extends AbstractModel
 {
     /**
-     * Used to specify a queue placement date.
+     * Used to specify the queue placement date.
      *
      * @var string
      */
@@ -33,36 +33,37 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
      */
     protected $pseudoCityCode;
     /**
-     * Used to specify a queue name/number.
+     * Used to specify a queue name or number.
      *
      * @var string
      */
     protected $queueIdentifier;
     /**
-     * Used to specify a queue placement time. Please note that only whole hours can be specified, i.e. 12:00.
+     * Used to specify a queue placement time.
+     * Please note that only whole hours can be specified, i.e. 12:00.
      *
      * @var string
      */
     protected $time;
 
     /**
-     * Used to specify a queue placement date.
+     * Used to specify the queue placement date.
      *
      * @return string
      */
-    public function getDate(): ?string
+    public function getDate(): string
     {
         return $this->date;
     }
 
     /**
-     * Used to specify a queue placement date.
+     * Used to specify the queue placement date.
      *
      * @param string $date
      *
      * @return self
      */
-    public function setDate(?string $date): self
+    public function setDate(string $date): self
     {
         $this->date = $date;
 
@@ -74,7 +75,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
      *
      * @return string
      */
-    public function getPrefatoryInstructionCode(): ?string
+    public function getPrefatoryInstructionCode(): string
     {
         return $this->prefatoryInstructionCode;
     }
@@ -86,7 +87,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
      *
      * @return self
      */
-    public function setPrefatoryInstructionCode(?string $prefatoryInstructionCode): self
+    public function setPrefatoryInstructionCode(string $prefatoryInstructionCode): self
     {
         $this->prefatoryInstructionCode = $prefatoryInstructionCode;
 
@@ -98,7 +99,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
      *
      * @return string
      */
-    public function getPseudoCityCode(): ?string
+    public function getPseudoCityCode(): string
     {
         return $this->pseudoCityCode;
     }
@@ -110,7 +111,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
      *
      * @return self
      */
-    public function setPseudoCityCode(?string $pseudoCityCode): self
+    public function setPseudoCityCode(string $pseudoCityCode): self
     {
         $this->pseudoCityCode = $pseudoCityCode;
 
@@ -118,23 +119,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     }
 
     /**
-     * Used to specify a queue name/number.
+     * Used to specify a queue name or number.
      *
      * @return string
      */
-    public function getQueueIdentifier(): ?string
+    public function getQueueIdentifier(): string
     {
         return $this->queueIdentifier;
     }
 
     /**
-     * Used to specify a queue name/number.
+     * Used to specify a queue name or number.
      *
      * @param string $queueIdentifier
      *
      * @return self
      */
-    public function setQueueIdentifier(?string $queueIdentifier): self
+    public function setQueueIdentifier(string $queueIdentifier): self
     {
         $this->queueIdentifier = $queueIdentifier;
 
@@ -142,23 +143,25 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     }
 
     /**
-     * Used to specify a queue placement time. Please note that only whole hours can be specified, i.e. 12:00.
+     * Used to specify a queue placement time.
+     * Please note that only whole hours can be specified, i.e. 12:00.
      *
      * @return string
      */
-    public function getTime(): ?string
+    public function getTime(): string
     {
         return $this->time;
     }
 
     /**
-     * Used to specify a queue placement time. Please note that only whole hours can be specified, i.e. 12:00.
+     * Used to specify a queue placement time.
+     * Please note that only whole hours can be specified, i.e. 12:00.
      *
      * @param string $time
      *
      * @return self
      */
-    public function setTime(?string $time): self
+    public function setTime(string $time): self
     {
         $this->time = $time;
 

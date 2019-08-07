@@ -15,36 +15,36 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemSubCodeInfo extends AbstractModel
 {
     /**
-     * Subcode for allowance.
+     * The sub code for allowance information.
      *
      * @var CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemSubCodeInfoSubCodeForAllowanceItem[]
      */
     protected $subCodeForAllowance;
     /**
-     * Subcode associated with charges.
+     * The sub code associated with charges.
      *
      * @var string
      */
     protected $subCodeForChargesOthers;
 
     /**
-     * Subcode for allowance.
+     * The sub code for allowance information.
      *
      * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemSubCodeInfoSubCodeForAllowanceItem[]
      */
-    public function getSubCodeForAllowance(): ?array
+    public function getSubCodeForAllowance(): array
     {
         return $this->subCodeForAllowance;
     }
 
     /**
-     * Subcode for allowance.
+     * The sub code for allowance information.
      *
      * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemSubCodeInfoSubCodeForAllowanceItem[] $subCodeForAllowance
      *
      * @return self
      */
-    public function setSubCodeForAllowance(?array $subCodeForAllowance): self
+    public function setSubCodeForAllowance(array $subCodeForAllowance): self
     {
         $this->subCodeForAllowance = $subCodeForAllowance;
 
@@ -52,23 +52,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     }
 
     /**
-     * Subcode associated with charges.
+     * The sub code associated with charges.
      *
      * @return string
      */
-    public function getSubCodeForChargesOthers(): ?string
+    public function getSubCodeForChargesOthers(): string
     {
         return $this->subCodeForChargesOthers;
     }
 
     /**
-     * Subcode associated with charges.
+     * The sub code associated with charges.
      *
      * @param string $subCodeForChargesOthers
      *
      * @return self
      */
-    public function setSubCodeForChargesOthers(?string $subCodeForChargesOthers): self
+    public function setSubCodeForChargesOthers(string $subCodeForChargesOthers): self
     {
         $this->subCodeForChargesOthers = $subCodeForChargesOthers;
 

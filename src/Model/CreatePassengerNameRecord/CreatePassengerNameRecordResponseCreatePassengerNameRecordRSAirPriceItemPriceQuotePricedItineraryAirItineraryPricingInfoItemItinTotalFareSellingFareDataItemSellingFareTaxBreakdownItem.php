@@ -15,30 +15,30 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareSellingFareDataItemSellingFareTaxBreakdownItem extends AbstractModel
 {
     /**
-     * Tax breakdown.
+     * The selling fare tax breakdown information.
      *
      * @var CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareSellingFareDataItemSellingFareTaxBreakdownItemTaxBreakDown
      */
     protected $taxBreakDown;
 
     /**
-     * Tax breakdown.
+     * The selling fare tax breakdown information.
      *
      * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareSellingFareDataItemSellingFareTaxBreakdownItemTaxBreakDown
      */
-    public function getTaxBreakDown(): ?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareSellingFareDataItemSellingFareTaxBreakdownItemTaxBreakDown
+    public function getTaxBreakDown(): CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareSellingFareDataItemSellingFareTaxBreakdownItemTaxBreakDown
     {
         return $this->taxBreakDown;
     }
 
     /**
-     * Tax breakdown.
+     * The selling fare tax breakdown information.
      *
      * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareSellingFareDataItemSellingFareTaxBreakdownItemTaxBreakDown $taxBreakDown
      *
      * @return self
      */
-    public function setTaxBreakDown(?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareSellingFareDataItemSellingFareTaxBreakdownItemTaxBreakDown $taxBreakDown): self
+    public function setTaxBreakDown(CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareSellingFareDataItemSellingFareTaxBreakdownItemTaxBreakDown $taxBreakDown): self
     {
         $this->taxBreakDown = $taxBreakDown;
 

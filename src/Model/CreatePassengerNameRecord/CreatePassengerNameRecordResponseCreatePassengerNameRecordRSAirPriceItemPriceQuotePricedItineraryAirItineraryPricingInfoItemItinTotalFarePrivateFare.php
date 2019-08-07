@@ -15,30 +15,30 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFarePrivateFare extends AbstractModel
 {
     /**
-     * Private fare indicator.
+     * The private fare indicator.
      *
      * @var string
      */
     protected $ind;
 
     /**
-     * Private fare indicator.
+     * The private fare indicator.
      *
      * @return string
      */
-    public function getInd(): ?string
+    public function getInd(): string
     {
         return $this->ind;
     }
 
     /**
-     * Private fare indicator.
+     * The private fare indicator.
      *
      * @param string $ind
      *
      * @return self
      */
-    public function setInd(?string $ind): self
+    public function setInd(string $ind): self
     {
         $this->ind = $ind;
 

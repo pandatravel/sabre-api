@@ -15,30 +15,30 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBSPTicketingMultipleMiscFOPFOPTwoExtendedPayment extends AbstractModel
 {
     /**
-     * Used to define number of months for the extension.
+     * 'NumMonths' is used to pass the number of months by which to extend the payment.
      *
      * @var int
      */
     protected $numMonths;
 
     /**
-     * Used to define number of months for the extension.
+     * 'NumMonths' is used to pass the number of months by which to extend the payment.
      *
      * @return int
      */
-    public function getNumMonths(): ?int
+    public function getNumMonths(): int
     {
         return $this->numMonths;
     }
 
     /**
-     * Used to define number of months for the extension.
+     * 'NumMonths' is used to pass the number of months by which to extend the payment.
      *
      * @param int $numMonths
      *
      * @return self
      */
-    public function setNumMonths(?int $numMonths): self
+    public function setNumMonths(int $numMonths): self
     {
         $this->numMonths = $numMonths;
 

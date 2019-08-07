@@ -15,30 +15,30 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoSecureFlightItemVendorPrefsAirline extends AbstractModel
 {
     /**
-     * Defines if the receiving airline is Sabre hosted carrier.
+     * Defines if the receiving airline is a Sabre hosted carrier.
      *
      * @var bool
      */
     protected $hosted;
 
     /**
-     * Defines if the receiving airline is Sabre hosted carrier.
+     * Defines if the receiving airline is a Sabre hosted carrier.
      *
      * @return bool
      */
-    public function getHosted(): ?bool
+    public function getHosted(): bool
     {
         return $this->hosted;
     }
 
     /**
-     * Defines if the receiving airline is Sabre hosted carrier.
+     * Defines if the receiving airline is a Sabre hosted carrier.
      *
      * @param bool $hosted
      *
      * @return self
      */
-    public function setHosted(?bool $hosted): self
+    public function setHosted(bool $hosted): self
     {
         $this->hosted = $hosted;
 

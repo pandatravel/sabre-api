@@ -15,36 +15,36 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentCompany extends AbstractModel
 {
     /**
-     * Company name.
+     * The company name.
      *
      * @var string
      */
     protected $name;
     /**
-     * Company address.
+     * The company address.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentCompanyAddress
      */
     protected $address;
 
     /**
-     * Company name.
+     * The company name.
      *
      * @return string
      */
-    public function getName(): ?string
+    public function getName(): string
     {
         return $this->name;
     }
 
     /**
-     * Company name.
+     * The company name.
      *
      * @param string $name
      *
      * @return self
      */
-    public function setName(?string $name): self
+    public function setName(string $name): self
     {
         $this->name = $name;
 
@@ -52,23 +52,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymen
     }
 
     /**
-     * Company address.
+     * The company address.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentCompanyAddress
      */
-    public function getAddress(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentCompanyAddress
+    public function getAddress(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentCompanyAddress
     {
         return $this->address;
     }
 
     /**
-     * Company address.
+     * The company address.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentCompanyAddress $address
      *
      * @return self
      */
-    public function setAddress(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentCompanyAddress $address): self
+    public function setAddress(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentCompanyAddress $address): self
     {
         $this->address = $address;
 

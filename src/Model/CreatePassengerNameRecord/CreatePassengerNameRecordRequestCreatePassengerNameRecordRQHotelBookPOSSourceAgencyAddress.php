@@ -15,66 +15,66 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSourceAgencyAddress extends AbstractModel
 {
     /**
-     * First address line.
+     * The first agency address line.
      *
      * @var string
      */
     protected $addressLine1;
     /**
-     * Second address line.
+     * The second agency address line.
      *
      * @var string
      */
     protected $addressLine2;
     /**
-     * Third address line.
+     * The third agency address line.
      *
      * @var string
      */
     protected $addressLine3;
     /**
-     * City name with code.
+     * The agency city name information.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSourceAgencyAddressCityName
      */
     protected $cityName;
     /**
-     * State name with code.
+     * The agency state or province code information.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSourceAgencyAddressStateProv
      */
     protected $stateProv;
     /**
-     * Postal code.
+     * The agency postal code.
      *
      * @var string
      */
     protected $postalCode;
     /**
-     * Country name with code.
+     * The agency country and name information.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSourceAgencyAddressCountryName
      */
     protected $countryName;
 
     /**
-     * First address line.
+     * The first agency address line.
      *
      * @return string
      */
-    public function getAddressLine1(): ?string
+    public function getAddressLine1(): string
     {
         return $this->addressLine1;
     }
 
     /**
-     * First address line.
+     * The first agency address line.
      *
      * @param string $addressLine1
      *
      * @return self
      */
-    public function setAddressLine1(?string $addressLine1): self
+    public function setAddressLine1(string $addressLine1): self
     {
         $this->addressLine1 = $addressLine1;
 
@@ -82,23 +82,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSou
     }
 
     /**
-     * Second address line.
+     * The second agency address line.
      *
      * @return string
      */
-    public function getAddressLine2(): ?string
+    public function getAddressLine2(): string
     {
         return $this->addressLine2;
     }
 
     /**
-     * Second address line.
+     * The second agency address line.
      *
      * @param string $addressLine2
      *
      * @return self
      */
-    public function setAddressLine2(?string $addressLine2): self
+    public function setAddressLine2(string $addressLine2): self
     {
         $this->addressLine2 = $addressLine2;
 
@@ -106,23 +106,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSou
     }
 
     /**
-     * Third address line.
+     * The third agency address line.
      *
      * @return string
      */
-    public function getAddressLine3(): ?string
+    public function getAddressLine3(): string
     {
         return $this->addressLine3;
     }
 
     /**
-     * Third address line.
+     * The third agency address line.
      *
      * @param string $addressLine3
      *
      * @return self
      */
-    public function setAddressLine3(?string $addressLine3): self
+    public function setAddressLine3(string $addressLine3): self
     {
         $this->addressLine3 = $addressLine3;
 
@@ -130,23 +130,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSou
     }
 
     /**
-     * City name with code.
+     * The agency city name information.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSourceAgencyAddressCityName
      */
-    public function getCityName(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSourceAgencyAddressCityName
+    public function getCityName(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSourceAgencyAddressCityName
     {
         return $this->cityName;
     }
 
     /**
-     * City name with code.
+     * The agency city name information.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSourceAgencyAddressCityName $cityName
      *
      * @return self
      */
-    public function setCityName(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSourceAgencyAddressCityName $cityName): self
+    public function setCityName(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSourceAgencyAddressCityName $cityName): self
     {
         $this->cityName = $cityName;
 
@@ -154,23 +154,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSou
     }
 
     /**
-     * State name with code.
+     * The agency state or province code information.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSourceAgencyAddressStateProv
      */
-    public function getStateProv(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSourceAgencyAddressStateProv
+    public function getStateProv(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSourceAgencyAddressStateProv
     {
         return $this->stateProv;
     }
 
     /**
-     * State name with code.
+     * The agency state or province code information.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSourceAgencyAddressStateProv $stateProv
      *
      * @return self
      */
-    public function setStateProv(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSourceAgencyAddressStateProv $stateProv): self
+    public function setStateProv(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSourceAgencyAddressStateProv $stateProv): self
     {
         $this->stateProv = $stateProv;
 
@@ -178,23 +178,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSou
     }
 
     /**
-     * Postal code.
+     * The agency postal code.
      *
      * @return string
      */
-    public function getPostalCode(): ?string
+    public function getPostalCode(): string
     {
         return $this->postalCode;
     }
 
     /**
-     * Postal code.
+     * The agency postal code.
      *
      * @param string $postalCode
      *
      * @return self
      */
-    public function setPostalCode(?string $postalCode): self
+    public function setPostalCode(string $postalCode): self
     {
         $this->postalCode = $postalCode;
 
@@ -202,23 +202,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSou
     }
 
     /**
-     * Country name with code.
+     * The agency country and name information.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSourceAgencyAddressCountryName
      */
-    public function getCountryName(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSourceAgencyAddressCountryName
+    public function getCountryName(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSourceAgencyAddressCountryName
     {
         return $this->countryName;
     }
 
     /**
-     * Country name with code.
+     * The agency country and name information.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSourceAgencyAddressCountryName $countryName
      *
      * @return self
      */
-    public function setCountryName(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSourceAgencyAddressCountryName $countryName): self
+    public function setCountryName(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSourceAgencyAddressCountryName $countryName): self
     {
         $this->countryName = $countryName;
 

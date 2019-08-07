@@ -30,7 +30,7 @@ class ApplicationResultsNormalizer implements DenormalizerInterface, NormalizerI
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\ApplicationResults;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\ApplicationResults';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])

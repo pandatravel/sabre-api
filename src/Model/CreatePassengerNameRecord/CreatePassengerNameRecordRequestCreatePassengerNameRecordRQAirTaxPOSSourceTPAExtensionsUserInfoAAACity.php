@@ -15,30 +15,30 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSourceTPAExtensionsUserInfoAAACity extends AbstractModel
 {
     /**
-     *  AAA City.
+     * The AAA city code.
      *
      * @var string
      */
     protected $code;
 
     /**
-     *  AAA City.
+     * The AAA city code.
      *
      * @return string
      */
-    public function getCode(): ?string
+    public function getCode(): string
     {
         return $this->code;
     }
 
     /**
-     *  AAA City.
+     * The AAA city code.
      *
      * @param string $code
      *
      * @return self
      */
-    public function setCode(?string $code): self
+    public function setCode(string $code): self
     {
         $this->code = $code;
 

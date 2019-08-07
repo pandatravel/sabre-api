@@ -21,7 +21,8 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDe
      */
     protected $code;
     /**
-     * Used to specify the flight number. OPEN can also be passed if the user desires an open space ticket.
+     * Used to specify the flight number.
+     * 'OPEN' can also be passed if the user desires an open space ticket.
      *
      * @var string
      */
@@ -32,7 +33,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDe
      *
      * @return string
      */
-    public function getCode(): ?string
+    public function getCode(): string
     {
         return $this->code;
     }
@@ -44,7 +45,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDe
      *
      * @return self
      */
-    public function setCode(?string $code): self
+    public function setCode(string $code): self
     {
         $this->code = $code;
 
@@ -52,23 +53,25 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDe
     }
 
     /**
-     * Used to specify the flight number. OPEN can also be passed if the user desires an open space ticket.
+     * Used to specify the flight number.
+     * 'OPEN' can also be passed if the user desires an open space ticket.
      *
      * @return string
      */
-    public function getFlightNumber(): ?string
+    public function getFlightNumber(): string
     {
         return $this->flightNumber;
     }
 
     /**
-     * Used to specify the flight number. OPEN can also be passed if the user desires an open space ticket.
+     * Used to specify the flight number.
+     * 'OPEN' can also be passed if the user desires an open space ticket.
      *
      * @param string $flightNumber
      *
      * @return self
      */
-    public function setFlightNumber(?string $flightNumber): self
+    public function setFlightNumber(string $flightNumber): self
     {
         $this->flightNumber = $flightNumber;
 

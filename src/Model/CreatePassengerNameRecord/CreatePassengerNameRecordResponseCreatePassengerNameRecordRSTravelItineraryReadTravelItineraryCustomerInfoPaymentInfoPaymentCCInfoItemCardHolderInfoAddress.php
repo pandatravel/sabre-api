@@ -15,30 +15,30 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPaymentInfoPaymentCCInfoItemCardHolderInfoAddress extends AbstractModel
 {
     /**
-     * "AddressLine" is used to return the address associated with the particular credit card holder.
+     * The address line information.
      *
      * @var string[]
      */
     protected $addressLine;
 
     /**
-     * "AddressLine" is used to return the address associated with the particular credit card holder.
+     * The address line information.
      *
      * @return string[]
      */
-    public function getAddressLine(): ?array
+    public function getAddressLine(): array
     {
         return $this->addressLine;
     }
 
     /**
-     * "AddressLine" is used to return the address associated with the particular credit card holder.
+     * The address line information.
      *
      * @param string[] $addressLine
      *
      * @return self
      */
-    public function setAddressLine(?array $addressLine): self
+    public function setAddressLine(array $addressLine): self
     {
         $this->addressLine = $addressLine;
 

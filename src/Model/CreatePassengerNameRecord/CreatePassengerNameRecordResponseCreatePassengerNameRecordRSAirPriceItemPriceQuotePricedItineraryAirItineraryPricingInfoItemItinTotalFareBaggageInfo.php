@@ -32,7 +32,7 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
      *
      * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareBaggageInfoNonUSDOTDisclosure
      */
-    public function getNonUSDOTDisclosure(): ?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareBaggageInfoNonUSDOTDisclosure
+    public function getNonUSDOTDisclosure(): CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareBaggageInfoNonUSDOTDisclosure
     {
         return $this->nonUSDOTDisclosure;
     }
@@ -44,7 +44,7 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
      *
      * @return self
      */
-    public function setNonUSDOTDisclosure(?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareBaggageInfoNonUSDOTDisclosure $nonUSDOTDisclosure): self
+    public function setNonUSDOTDisclosure(CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareBaggageInfoNonUSDOTDisclosure $nonUSDOTDisclosure): self
     {
         $this->nonUSDOTDisclosure = $nonUSDOTDisclosure;
 
@@ -56,7 +56,7 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
      *
      * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareBaggageInfoUSDOTDisclosure
      */
-    public function getUSDOTDisclosure(): ?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareBaggageInfoUSDOTDisclosure
+    public function getUSDOTDisclosure(): CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareBaggageInfoUSDOTDisclosure
     {
         return $this->uSDOTDisclosure;
     }
@@ -68,7 +68,7 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
      *
      * @return self
      */
-    public function setUSDOTDisclosure(?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareBaggageInfoUSDOTDisclosure $uSDOTDisclosure): self
+    public function setUSDOTDisclosure(CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareBaggageInfoUSDOTDisclosure $uSDOTDisclosure): self
     {
         $this->uSDOTDisclosure = $uSDOTDisclosure;
 

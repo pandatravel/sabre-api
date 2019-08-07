@@ -15,13 +15,13 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiers extends AbstractModel
 {
     /**
-     * utilized to display air extra-related content, i.e. optional services, ancillary services, etc.
+     * 'AirExtras' are utilized to display air extra-related content, i.e. optional services, ancillary services, etc.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersAirExtras
      */
     protected $airExtras;
     /**
-     * Used to define baggage allowance details.
+     * Used to define the baggage allowance qualifiers.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersBaggageAllowanceItem[]
      */
@@ -45,13 +45,13 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      */
     protected $endorsements;
     /**
-     * Hemisphere code.
+     * The hemisphere code.
      *
      * @var string
      */
     protected $hemisphereCode;
     /**
-     * Journey code.
+     * The journey code.
      *
      * @var string
      */
@@ -63,7 +63,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      */
     protected $multiTicket;
     /**
-     * Tour code details.
+     * The tour code details.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersTourCode
      */
@@ -76,23 +76,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     protected $validationMethod;
 
     /**
-     * utilized to display air extra-related content, i.e. optional services, ancillary services, etc.
+     * 'AirExtras' are utilized to display air extra-related content, i.e. optional services, ancillary services, etc.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersAirExtras
      */
-    public function getAirExtras(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersAirExtras
+    public function getAirExtras(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersAirExtras
     {
         return $this->airExtras;
     }
 
     /**
-     * utilized to display air extra-related content, i.e. optional services, ancillary services, etc.
+     * 'AirExtras' are utilized to display air extra-related content, i.e. optional services, ancillary services, etc.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersAirExtras $airExtras
      *
      * @return self
      */
-    public function setAirExtras(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersAirExtras $airExtras): self
+    public function setAirExtras(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersAirExtras $airExtras): self
     {
         $this->airExtras = $airExtras;
 
@@ -100,23 +100,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     }
 
     /**
-     * Used to define baggage allowance details.
+     * Used to define the baggage allowance qualifiers.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersBaggageAllowanceItem[]
      */
-    public function getBaggageAllowance(): ?array
+    public function getBaggageAllowance(): array
     {
         return $this->baggageAllowance;
     }
 
     /**
-     * Used to define baggage allowance details.
+     * Used to define the baggage allowance qualifiers.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersBaggageAllowanceItem[] $baggageAllowance
      *
      * @return self
      */
-    public function setBaggageAllowance(?array $baggageAllowance): self
+    public function setBaggageAllowance(array $baggageAllowance): self
     {
         $this->baggageAllowance = $baggageAllowance;
 
@@ -128,7 +128,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersCommission
      */
-    public function getCommission(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersCommission
+    public function getCommission(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersCommission
     {
         return $this->commission;
     }
@@ -140,7 +140,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return self
      */
-    public function setCommission(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersCommission $commission): self
+    public function setCommission(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersCommission $commission): self
     {
         $this->commission = $commission;
 
@@ -152,7 +152,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersCustomer
      */
-    public function getCustomer(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersCustomer
+    public function getCustomer(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersCustomer
     {
         return $this->customer;
     }
@@ -164,7 +164,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return self
      */
-    public function setCustomer(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersCustomer $customer): self
+    public function setCustomer(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersCustomer $customer): self
     {
         $this->customer = $customer;
 
@@ -176,7 +176,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersEndorsements
      */
-    public function getEndorsements(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersEndorsements
+    public function getEndorsements(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersEndorsements
     {
         return $this->endorsements;
     }
@@ -188,7 +188,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return self
      */
-    public function setEndorsements(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersEndorsements $endorsements): self
+    public function setEndorsements(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersEndorsements $endorsements): self
     {
         $this->endorsements = $endorsements;
 
@@ -196,23 +196,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     }
 
     /**
-     * Hemisphere code.
+     * The hemisphere code.
      *
      * @return string
      */
-    public function getHemisphereCode(): ?string
+    public function getHemisphereCode(): string
     {
         return $this->hemisphereCode;
     }
 
     /**
-     * Hemisphere code.
+     * The hemisphere code.
      *
      * @param string $hemisphereCode
      *
      * @return self
      */
-    public function setHemisphereCode(?string $hemisphereCode): self
+    public function setHemisphereCode(string $hemisphereCode): self
     {
         $this->hemisphereCode = $hemisphereCode;
 
@@ -220,23 +220,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     }
 
     /**
-     * Journey code.
+     * The journey code.
      *
      * @return string
      */
-    public function getJourneyCode(): ?string
+    public function getJourneyCode(): string
     {
         return $this->journeyCode;
     }
 
     /**
-     * Journey code.
+     * The journey code.
      *
      * @param string $journeyCode
      *
      * @return self
      */
-    public function setJourneyCode(?string $journeyCode): self
+    public function setJourneyCode(string $journeyCode): self
     {
         $this->journeyCode = $journeyCode;
 
@@ -248,7 +248,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersMultiTicket
      */
-    public function getMultiTicket(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersMultiTicket
+    public function getMultiTicket(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersMultiTicket
     {
         return $this->multiTicket;
     }
@@ -260,7 +260,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return self
      */
-    public function setMultiTicket(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersMultiTicket $multiTicket): self
+    public function setMultiTicket(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersMultiTicket $multiTicket): self
     {
         $this->multiTicket = $multiTicket;
 
@@ -268,23 +268,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     }
 
     /**
-     * Tour code details.
+     * The tour code details.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersTourCode
      */
-    public function getTourCode(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersTourCode
+    public function getTourCode(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersTourCode
     {
         return $this->tourCode;
     }
 
     /**
-     * Tour code details.
+     * The tour code details.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersTourCode $tourCode
      *
      * @return self
      */
-    public function setTourCode(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersTourCode $tourCode): self
+    public function setTourCode(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersTourCode $tourCode): self
     {
         $this->tourCode = $tourCode;
 
@@ -296,7 +296,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return string
      */
-    public function getValidationMethod(): ?string
+    public function getValidationMethod(): string
     {
         return $this->validationMethod;
     }
@@ -308,7 +308,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return self
      */
-    public function setValidationMethod(?string $validationMethod): self
+    public function setValidationMethod(string $validationMethod): self
     {
         $this->validationMethod = $validationMethod;
 

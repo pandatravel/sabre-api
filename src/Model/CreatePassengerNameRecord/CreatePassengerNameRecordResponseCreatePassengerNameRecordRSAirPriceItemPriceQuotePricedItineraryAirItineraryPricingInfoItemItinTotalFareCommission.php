@@ -15,42 +15,42 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareCommission extends AbstractModel
 {
     /**
-     * Amount.
+     * The commission amount.
      *
      * @var string
      */
     protected $amount;
     /**
-     * Commission cap amount indicator.
+     * The commission cap amount indicator.
      *
      * @var string
      */
     protected $capAmountInd;
     /**
-     * Percent.
+     * The commission percent.
      *
      * @var string
      */
     protected $percent;
 
     /**
-     * Amount.
+     * The commission amount.
      *
      * @return string
      */
-    public function getAmount(): ?string
+    public function getAmount(): string
     {
         return $this->amount;
     }
 
     /**
-     * Amount.
+     * The commission amount.
      *
      * @param string $amount
      *
      * @return self
      */
-    public function setAmount(?string $amount): self
+    public function setAmount(string $amount): self
     {
         $this->amount = $amount;
 
@@ -58,23 +58,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     }
 
     /**
-     * Commission cap amount indicator.
+     * The commission cap amount indicator.
      *
      * @return string
      */
-    public function getCapAmountInd(): ?string
+    public function getCapAmountInd(): string
     {
         return $this->capAmountInd;
     }
 
     /**
-     * Commission cap amount indicator.
+     * The commission cap amount indicator.
      *
      * @param string $capAmountInd
      *
      * @return self
      */
-    public function setCapAmountInd(?string $capAmountInd): self
+    public function setCapAmountInd(string $capAmountInd): self
     {
         $this->capAmountInd = $capAmountInd;
 
@@ -82,23 +82,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     }
 
     /**
-     * Percent.
+     * The commission percent.
      *
      * @return string
      */
-    public function getPercent(): ?string
+    public function getPercent(): string
     {
         return $this->percent;
     }
 
     /**
-     * Percent.
+     * The commission percent.
      *
      * @param string $percent
      *
      * @return self
      */
-    public function setPercent(?string $percent): self
+    public function setPercent(string $percent): self
     {
         $this->percent = $percent;
 

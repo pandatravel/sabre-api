@@ -21,25 +21,27 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymen
      */
     protected $paymentCard;
     /**
-     * Details of the virtual payment card.
+     * The virtual payment card details.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentVirtualCard
      */
     protected $virtualCard;
     /**
-     * There are two options for Agency form of payment: 1. Name and address, 2. IATA number.
+     * The agency form of payment details.
+     * There are two options for Agency form of payment:
+     * 1. Name and address or 2. IATA number.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentAgency
      */
     protected $agency;
     /**
-     * Corporate ID.
+     * The Corporate form of payment details.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentCorporate
      */
     protected $corporate;
     /**
-     * Company Name.
+     * The company form of payment details.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentCompany
      */
@@ -50,7 +52,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymen
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentPaymentCard
      */
-    public function getPaymentCard(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentPaymentCard
+    public function getPaymentCard(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentPaymentCard
     {
         return $this->paymentCard;
     }
@@ -62,7 +64,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymen
      *
      * @return self
      */
-    public function setPaymentCard(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentPaymentCard $paymentCard): self
+    public function setPaymentCard(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentPaymentCard $paymentCard): self
     {
         $this->paymentCard = $paymentCard;
 
@@ -70,23 +72,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymen
     }
 
     /**
-     * Details of the virtual payment card.
+     * The virtual payment card details.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentVirtualCard
      */
-    public function getVirtualCard(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentVirtualCard
+    public function getVirtualCard(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentVirtualCard
     {
         return $this->virtualCard;
     }
 
     /**
-     * Details of the virtual payment card.
+     * The virtual payment card details.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentVirtualCard $virtualCard
      *
      * @return self
      */
-    public function setVirtualCard(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentVirtualCard $virtualCard): self
+    public function setVirtualCard(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentVirtualCard $virtualCard): self
     {
         $this->virtualCard = $virtualCard;
 
@@ -94,23 +96,27 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymen
     }
 
     /**
-     * There are two options for Agency form of payment: 1. Name and address, 2. IATA number.
+     * The agency form of payment details.
+     * There are two options for Agency form of payment:
+     * 1. Name and address or 2. IATA number.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentAgency
      */
-    public function getAgency(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentAgency
+    public function getAgency(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentAgency
     {
         return $this->agency;
     }
 
     /**
-     * There are two options for Agency form of payment: 1. Name and address, 2. IATA number.
+     * The agency form of payment details.
+     * There are two options for Agency form of payment:
+     * 1. Name and address or 2. IATA number.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentAgency $agency
      *
      * @return self
      */
-    public function setAgency(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentAgency $agency): self
+    public function setAgency(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentAgency $agency): self
     {
         $this->agency = $agency;
 
@@ -118,23 +124,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymen
     }
 
     /**
-     * Corporate ID.
+     * The Corporate form of payment details.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentCorporate
      */
-    public function getCorporate(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentCorporate
+    public function getCorporate(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentCorporate
     {
         return $this->corporate;
     }
 
     /**
-     * Corporate ID.
+     * The Corporate form of payment details.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentCorporate $corporate
      *
      * @return self
      */
-    public function setCorporate(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentCorporate $corporate): self
+    public function setCorporate(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentCorporate $corporate): self
     {
         $this->corporate = $corporate;
 
@@ -142,23 +148,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymen
     }
 
     /**
-     * Company Name.
+     * The company form of payment details.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentCompany
      */
-    public function getCompany(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentCompany
+    public function getCompany(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentCompany
     {
         return $this->company;
     }
 
     /**
-     * Company Name.
+     * The company form of payment details.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentCompany $company
      *
      * @return self
      */
-    public function setCompany(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentCompany $company): self
+    public function setCompany(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentCompany $company): self
     {
         $this->company = $company;
 

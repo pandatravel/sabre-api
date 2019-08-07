@@ -15,7 +15,7 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemAssociations extends AbstractModel
 {
     /**
-     * Carrier code.
+     * The carrier code.
      *
      * @var CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemAssociationsCarrierCodeItem[]
      */
@@ -27,25 +27,25 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
      */
     protected $countForSegmentAssociatedID;
     /**
-     * Used to return the departure date.
+     * The departure date information.
      *
      * @var CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemAssociationsDepartureDateItem[]
      */
     protected $departureDate;
     /**
-     * Used to return the destination location code.
+     * The destination location code.
      *
      * @var CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemAssociationsDestinationLocationItem[]
      */
     protected $destinationLocation;
     /**
-     * Flight number.
+     * The flight number information.
      *
      * @var CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemAssociationsFlightNumberItem[]
      */
     protected $flightNumber;
     /**
-     * Used to return the origin location code.
+     * The origin location code associated with a specific baggage provision.
      *
      * @var CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemAssociationsOriginLocationItem[]
      */
@@ -63,30 +63,30 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
      */
     protected $resBookDesigCode;
     /**
-     * Status code.
+     * The status code information.
      *
      * @var CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemAssociationsStatusCodeItem[]
      */
     protected $statusCode;
 
     /**
-     * Carrier code.
+     * The carrier code.
      *
      * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemAssociationsCarrierCodeItem[]
      */
-    public function getCarrierCode(): ?array
+    public function getCarrierCode(): array
     {
         return $this->carrierCode;
     }
 
     /**
-     * Carrier code.
+     * The carrier code.
      *
      * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemAssociationsCarrierCodeItem[] $carrierCode
      *
      * @return self
      */
-    public function setCarrierCode(?array $carrierCode): self
+    public function setCarrierCode(array $carrierCode): self
     {
         $this->carrierCode = $carrierCode;
 
@@ -98,7 +98,7 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
      *
      * @return string
      */
-    public function getCountForSegmentAssociatedID(): ?string
+    public function getCountForSegmentAssociatedID(): string
     {
         return $this->countForSegmentAssociatedID;
     }
@@ -110,7 +110,7 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
      *
      * @return self
      */
-    public function setCountForSegmentAssociatedID(?string $countForSegmentAssociatedID): self
+    public function setCountForSegmentAssociatedID(string $countForSegmentAssociatedID): self
     {
         $this->countForSegmentAssociatedID = $countForSegmentAssociatedID;
 
@@ -118,23 +118,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     }
 
     /**
-     * Used to return the departure date.
+     * The departure date information.
      *
      * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemAssociationsDepartureDateItem[]
      */
-    public function getDepartureDate(): ?array
+    public function getDepartureDate(): array
     {
         return $this->departureDate;
     }
 
     /**
-     * Used to return the departure date.
+     * The departure date information.
      *
      * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemAssociationsDepartureDateItem[] $departureDate
      *
      * @return self
      */
-    public function setDepartureDate(?array $departureDate): self
+    public function setDepartureDate(array $departureDate): self
     {
         $this->departureDate = $departureDate;
 
@@ -142,23 +142,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     }
 
     /**
-     * Used to return the destination location code.
+     * The destination location code.
      *
      * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemAssociationsDestinationLocationItem[]
      */
-    public function getDestinationLocation(): ?array
+    public function getDestinationLocation(): array
     {
         return $this->destinationLocation;
     }
 
     /**
-     * Used to return the destination location code.
+     * The destination location code.
      *
      * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemAssociationsDestinationLocationItem[] $destinationLocation
      *
      * @return self
      */
-    public function setDestinationLocation(?array $destinationLocation): self
+    public function setDestinationLocation(array $destinationLocation): self
     {
         $this->destinationLocation = $destinationLocation;
 
@@ -166,23 +166,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     }
 
     /**
-     * Flight number.
+     * The flight number information.
      *
      * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemAssociationsFlightNumberItem[]
      */
-    public function getFlightNumber(): ?array
+    public function getFlightNumber(): array
     {
         return $this->flightNumber;
     }
 
     /**
-     * Flight number.
+     * The flight number information.
      *
      * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemAssociationsFlightNumberItem[] $flightNumber
      *
      * @return self
      */
-    public function setFlightNumber(?array $flightNumber): self
+    public function setFlightNumber(array $flightNumber): self
     {
         $this->flightNumber = $flightNumber;
 
@@ -190,23 +190,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     }
 
     /**
-     * Used to return the origin location code.
+     * The origin location code associated with a specific baggage provision.
      *
      * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemAssociationsOriginLocationItem[]
      */
-    public function getOriginLocation(): ?array
+    public function getOriginLocation(): array
     {
         return $this->originLocation;
     }
 
     /**
-     * Used to return the origin location code.
+     * The origin location code associated with a specific baggage provision.
      *
      * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemAssociationsOriginLocationItem[] $originLocation
      *
      * @return self
      */
-    public function setOriginLocation(?array $originLocation): self
+    public function setOriginLocation(array $originLocation): self
     {
         $this->originLocation = $originLocation;
 
@@ -218,7 +218,7 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
      *
      * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemAssociationsPNRSegmentItem[]
      */
-    public function getPNRSegment(): ?array
+    public function getPNRSegment(): array
     {
         return $this->pNRSegment;
     }
@@ -230,7 +230,7 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
      *
      * @return self
      */
-    public function setPNRSegment(?array $pNRSegment): self
+    public function setPNRSegment(array $pNRSegment): self
     {
         $this->pNRSegment = $pNRSegment;
 
@@ -242,7 +242,7 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
      *
      * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemAssociationsResBookDesigCodeItem[]
      */
-    public function getResBookDesigCode(): ?array
+    public function getResBookDesigCode(): array
     {
         return $this->resBookDesigCode;
     }
@@ -254,7 +254,7 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
      *
      * @return self
      */
-    public function setResBookDesigCode(?array $resBookDesigCode): self
+    public function setResBookDesigCode(array $resBookDesigCode): self
     {
         $this->resBookDesigCode = $resBookDesigCode;
 
@@ -262,23 +262,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     }
 
     /**
-     * Status code.
+     * The status code information.
      *
      * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemAssociationsStatusCodeItem[]
      */
-    public function getStatusCode(): ?array
+    public function getStatusCode(): array
     {
         return $this->statusCode;
     }
 
     /**
-     * Status code.
+     * The status code information.
      *
      * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemAssociationsStatusCodeItem[] $statusCode
      *
      * @return self
      */
-    public function setStatusCode(?array $statusCode): self
+    public function setStatusCode(array $statusCode): self
     {
         $this->statusCode = $statusCode;
 

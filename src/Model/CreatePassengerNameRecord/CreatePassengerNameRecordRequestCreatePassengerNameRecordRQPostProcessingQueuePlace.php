@@ -15,36 +15,36 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingQueuePlace extends AbstractModel
 {
     /**
-     * Place on multiple queues.
+     * Used to request to place the newly created PNR on multiple queues.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingQueuePlaceMultiQueuePlace
      */
     protected $multiQueuePlace;
     /**
-     * Place on a single queue.
+     * Used to request to place the newly created PNR on a queue.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingQueuePlaceQueueInfo
      */
     protected $queueInfo;
 
     /**
-     * Place on multiple queues.
+     * Used to request to place the newly created PNR on multiple queues.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingQueuePlaceMultiQueuePlace
      */
-    public function getMultiQueuePlace(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingQueuePlaceMultiQueuePlace
+    public function getMultiQueuePlace(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingQueuePlaceMultiQueuePlace
     {
         return $this->multiQueuePlace;
     }
 
     /**
-     * Place on multiple queues.
+     * Used to request to place the newly created PNR on multiple queues.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingQueuePlaceMultiQueuePlace $multiQueuePlace
      *
      * @return self
      */
-    public function setMultiQueuePlace(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingQueuePlaceMultiQueuePlace $multiQueuePlace): self
+    public function setMultiQueuePlace(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingQueuePlaceMultiQueuePlace $multiQueuePlace): self
     {
         $this->multiQueuePlace = $multiQueuePlace;
 
@@ -52,23 +52,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingQ
     }
 
     /**
-     * Place on a single queue.
+     * Used to request to place the newly created PNR on a queue.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingQueuePlaceQueueInfo
      */
-    public function getQueueInfo(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingQueuePlaceQueueInfo
+    public function getQueueInfo(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingQueuePlaceQueueInfo
     {
         return $this->queueInfo;
     }
 
     /**
-     * Place on a single queue.
+     * Used to request to place the newly created PNR on a queue.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingQueuePlaceQueueInfo $queueInfo
      *
      * @return self
      */
-    public function setQueueInfo(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingQueuePlaceQueueInfo $queueInfo): self
+    public function setQueueInfo(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingQueuePlaceQueueInfo $queueInfo): self
     {
         $this->queueInfo = $queueInfo;
 

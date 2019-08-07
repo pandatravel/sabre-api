@@ -15,48 +15,48 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiers extends AbstractModel
 {
     /**
-     * Used to define carrier specific variables.
+     * Used to define the carrier specific pricing qualifiers.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFlightQualifiers
      */
     protected $flightQualifiers;
     /**
-     * Used to define form of payment variables.
+     * Used to define the form of payment qualifiers.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiers
      */
     protected $fOPQualifiers;
     /**
-     * Used to define miscellaneous variables.
+     * Used to pass the miscellaneous pricing qualifiers.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiers
      */
     protected $miscQualifiers;
     /**
-     * All the price specific variables.
+     * All the pricing specific qualifiers.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiers
      */
     protected $pricingQualifiers;
 
     /**
-     * Used to define carrier specific variables.
+     * Used to define the carrier specific pricing qualifiers.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFlightQualifiers
      */
-    public function getFlightQualifiers(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFlightQualifiers
+    public function getFlightQualifiers(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFlightQualifiers
     {
         return $this->flightQualifiers;
     }
 
     /**
-     * Used to define carrier specific variables.
+     * Used to define the carrier specific pricing qualifiers.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFlightQualifiers $flightQualifiers
      *
      * @return self
      */
-    public function setFlightQualifiers(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFlightQualifiers $flightQualifiers): self
+    public function setFlightQualifiers(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFlightQualifiers $flightQualifiers): self
     {
         $this->flightQualifiers = $flightQualifiers;
 
@@ -64,23 +64,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     }
 
     /**
-     * Used to define form of payment variables.
+     * Used to define the form of payment qualifiers.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiers
      */
-    public function getFOPQualifiers(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiers
+    public function getFOPQualifiers(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiers
     {
         return $this->fOPQualifiers;
     }
 
     /**
-     * Used to define form of payment variables.
+     * Used to define the form of payment qualifiers.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiers $fOPQualifiers
      *
      * @return self
      */
-    public function setFOPQualifiers(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiers $fOPQualifiers): self
+    public function setFOPQualifiers(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiers $fOPQualifiers): self
     {
         $this->fOPQualifiers = $fOPQualifiers;
 
@@ -88,23 +88,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     }
 
     /**
-     * Used to define miscellaneous variables.
+     * Used to pass the miscellaneous pricing qualifiers.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiers
      */
-    public function getMiscQualifiers(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiers
+    public function getMiscQualifiers(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiers
     {
         return $this->miscQualifiers;
     }
 
     /**
-     * Used to define miscellaneous variables.
+     * Used to pass the miscellaneous pricing qualifiers.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiers $miscQualifiers
      *
      * @return self
      */
-    public function setMiscQualifiers(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiers $miscQualifiers): self
+    public function setMiscQualifiers(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiers $miscQualifiers): self
     {
         $this->miscQualifiers = $miscQualifiers;
 
@@ -112,23 +112,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     }
 
     /**
-     * All the price specific variables.
+     * All the pricing specific qualifiers.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiers
      */
-    public function getPricingQualifiers(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiers
+    public function getPricingQualifiers(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiers
     {
         return $this->pricingQualifiers;
     }
 
     /**
-     * All the price specific variables.
+     * All the pricing specific qualifiers.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiers $pricingQualifiers
      *
      * @return self
      */
-    public function setPricingQualifiers(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiers $pricingQualifiers): self
+    public function setPricingQualifiers(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiers $pricingQualifiers): self
     {
         $this->pricingQualifiers = $pricingQualifiers;
 

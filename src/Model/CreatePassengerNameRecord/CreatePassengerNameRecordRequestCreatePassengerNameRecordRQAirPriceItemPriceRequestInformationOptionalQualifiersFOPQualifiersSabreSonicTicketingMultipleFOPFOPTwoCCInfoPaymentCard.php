@@ -21,7 +21,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      */
     protected $code;
     /**
-     * Used to specify a manual credit card if applicable.
+     * 'ManualApprovalCode' is used to pass a manual credit card approval code if it applies to the credit card.
      *
      * @var string
      */
@@ -38,7 +38,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return string
      */
-    public function getCode(): ?string
+    public function getCode(): string
     {
         return $this->code;
     }
@@ -50,7 +50,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return self
      */
-    public function setCode(?string $code): self
+    public function setCode(string $code): self
     {
         $this->code = $code;
 
@@ -58,23 +58,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     }
 
     /**
-     * Used to specify a manual credit card if applicable.
+     * 'ManualApprovalCode' is used to pass a manual credit card approval code if it applies to the credit card.
      *
      * @return string
      */
-    public function getManualApprovalCode(): ?string
+    public function getManualApprovalCode(): string
     {
         return $this->manualApprovalCode;
     }
 
     /**
-     * Used to specify a manual credit card if applicable.
+     * 'ManualApprovalCode' is used to pass a manual credit card approval code if it applies to the credit card.
      *
      * @param string $manualApprovalCode
      *
      * @return self
      */
-    public function setManualApprovalCode(?string $manualApprovalCode): self
+    public function setManualApprovalCode(string $manualApprovalCode): self
     {
         $this->manualApprovalCode = $manualApprovalCode;
 
@@ -86,7 +86,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return int
      */
-    public function getNumber(): ?int
+    public function getNumber(): int
     {
         return $this->number;
     }
@@ -98,7 +98,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return self
      */
-    public function setNumber(?int $number): self
+    public function setNumber(int $number): self
     {
         $this->number = $number;
 

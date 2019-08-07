@@ -15,30 +15,30 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemAirFareInfo extends AbstractModel
 {
     /**
-     * Fare breakdown.
+     * The fare breakdown.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemAirFareInfoPTCFareBreakdown
      */
     protected $pTCFareBreakdown;
 
     /**
-     * Fare breakdown.
+     * The fare breakdown.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemAirFareInfoPTCFareBreakdown
      */
-    public function getPTCFareBreakdown(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemAirFareInfoPTCFareBreakdown
+    public function getPTCFareBreakdown(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemAirFareInfoPTCFareBreakdown
     {
         return $this->pTCFareBreakdown;
     }
 
     /**
-     * Fare breakdown.
+     * The fare breakdown.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemAirFareInfoPTCFareBreakdown $pTCFareBreakdown
      *
      * @return self
      */
-    public function setPTCFareBreakdown(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemAirFareInfoPTCFareBreakdown $pTCFareBreakdown): self
+    public function setPTCFareBreakdown(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemAirFareInfoPTCFareBreakdown $pTCFareBreakdown): self
     {
         $this->pTCFareBreakdown = $pTCFareBreakdown;
 

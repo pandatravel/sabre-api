@@ -32,7 +32,7 @@ class CreatePassengerNameRecordResponseLinksItem extends AbstractModel
      *
      * @return string
      */
-    public function getRel(): ?string
+    public function getRel(): string
     {
         return $this->rel;
     }
@@ -44,7 +44,7 @@ class CreatePassengerNameRecordResponseLinksItem extends AbstractModel
      *
      * @return self
      */
-    public function setRel(?string $rel): self
+    public function setRel(string $rel): self
     {
         $this->rel = $rel;
 
@@ -56,7 +56,7 @@ class CreatePassengerNameRecordResponseLinksItem extends AbstractModel
      *
      * @return string
      */
-    public function getHref(): ?string
+    public function getHref(): string
     {
         return $this->href;
     }
@@ -68,7 +68,7 @@ class CreatePassengerNameRecordResponseLinksItem extends AbstractModel
      *
      * @return self
      */
-    public function setHref(?string $href): self
+    public function setHref(string $href): self
     {
         $this->href = $href;
 

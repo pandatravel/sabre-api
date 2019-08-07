@@ -15,30 +15,30 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentPaymentCardAddressCountryCodes extends AbstractModel
 {
     /**
-     * Country code.
+     * The country codes.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentPaymentCardAddressCountryCodesCodeItem[]
      */
     protected $code;
 
     /**
-     * Country code.
+     * The country codes.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentPaymentCardAddressCountryCodesCodeItem[]
      */
-    public function getCode(): ?array
+    public function getCode(): array
     {
         return $this->code;
     }
 
     /**
-     * Country code.
+     * The country codes.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentPaymentCardAddressCountryCodesCodeItem[] $code
      *
      * @return self
      */
-    public function setCode(?array $code): self
+    public function setCode(array $code): self
     {
         $this->code = $code;
 

@@ -15,36 +15,36 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoContactNumbersContactNumberItemPersonNameItem extends AbstractModel
 {
     /**
-     * Customer names.
+     * The passenger names.
      *
      * @var string
      */
     protected $content;
     /**
-     * NameNumber is used to return the passenger name number associated with the particular passenger.
+     * The passenger name number associated with the particular passenger.
      *
      * @var string
      */
     protected $nameNumber;
 
     /**
-     * Customer names.
+     * The passenger names.
      *
      * @return string
      */
-    public function getContent(): ?string
+    public function getContent(): string
     {
         return $this->content;
     }
 
     /**
-     * Customer names.
+     * The passenger names.
      *
      * @param string $content
      *
      * @return self
      */
-    public function setContent(?string $content): self
+    public function setContent(string $content): self
     {
         $this->content = $content;
 
@@ -52,23 +52,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     }
 
     /**
-     * NameNumber is used to return the passenger name number associated with the particular passenger.
+     * The passenger name number associated with the particular passenger.
      *
      * @return string
      */
-    public function getNameNumber(): ?string
+    public function getNameNumber(): string
     {
         return $this->nameNumber;
     }
 
     /**
-     * NameNumber is used to return the passenger name number associated with the particular passenger.
+     * The passenger name number associated with the particular passenger.
      *
      * @param string $nameNumber
      *
      * @return self
      */
-    public function setNameNumber(?string $nameNumber): self
+    public function setNameNumber(string $nameNumber): self
     {
         $this->nameNumber = $nameNumber;
 

@@ -15,42 +15,45 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSourceRequestorID extends AbstractModel
 {
     /**
+     * The IATA identifier type.
      * OTA Table UIT : Value 5 for travel agency.
      *
      * @var int
      */
     protected $type;
     /**
-     * Agency IATA ID.
+     * The agency IATA id.
      *
      * @var string
      */
     protected $id;
     /**
-     * Value : IATA.
+     * The agency IATA id context.
      *
      * @var string
      */
     protected $idContext;
 
     /**
+     * The IATA identifier type.
      * OTA Table UIT : Value 5 for travel agency.
      *
      * @return int
      */
-    public function getType(): ?int
+    public function getType(): int
     {
         return $this->type;
     }
 
     /**
+     * The IATA identifier type.
      * OTA Table UIT : Value 5 for travel agency.
      *
      * @param int $type
      *
      * @return self
      */
-    public function setType(?int $type): self
+    public function setType(int $type): self
     {
         $this->type = $type;
 
@@ -58,23 +61,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSou
     }
 
     /**
-     * Agency IATA ID.
+     * The agency IATA id.
      *
      * @return string
      */
-    public function getId(): ?string
+    public function getId(): string
     {
         return $this->id;
     }
 
     /**
-     * Agency IATA ID.
+     * The agency IATA id.
      *
      * @param string $id
      *
      * @return self
      */
-    public function setId(?string $id): self
+    public function setId(string $id): self
     {
         $this->id = $id;
 
@@ -82,23 +85,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSou
     }
 
     /**
-     * Value : IATA.
+     * The agency IATA id context.
      *
      * @return string
      */
-    public function getIdContext(): ?string
+    public function getIdContext(): string
     {
         return $this->idContext;
     }
 
     /**
-     * Value : IATA.
+     * The agency IATA id context.
      *
      * @param string $idContext
      *
      * @return self
      */
-    public function setIdContext(?string $idContext): self
+    public function setIdContext(string $idContext): self
     {
         $this->idContext = $idContext;
 

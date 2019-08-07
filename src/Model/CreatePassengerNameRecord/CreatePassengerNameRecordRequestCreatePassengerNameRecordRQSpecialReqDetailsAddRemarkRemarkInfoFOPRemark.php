@@ -15,36 +15,36 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAddRemarkRemarkInfoFOPRemark extends AbstractModel
 {
     /**
-     * Credit card details.
+     * The credit card information.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAddRemarkRemarkInfoFOPRemarkCCInfo
      */
     protected $cCInfo;
     /**
-     * Used to specify the form of payment type.
+     * 'Type' is used to specify the form of payment type.
      *
      * @var string
      */
     protected $type;
 
     /**
-     * Credit card details.
+     * The credit card information.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAddRemarkRemarkInfoFOPRemarkCCInfo
      */
-    public function getCCInfo(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAddRemarkRemarkInfoFOPRemarkCCInfo
+    public function getCCInfo(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAddRemarkRemarkInfoFOPRemarkCCInfo
     {
         return $this->cCInfo;
     }
 
     /**
-     * Credit card details.
+     * The credit card information.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAddRemarkRemarkInfoFOPRemarkCCInfo $cCInfo
      *
      * @return self
      */
-    public function setCCInfo(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAddRemarkRemarkInfoFOPRemarkCCInfo $cCInfo): self
+    public function setCCInfo(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAddRemarkRemarkInfoFOPRemarkCCInfo $cCInfo): self
     {
         $this->cCInfo = $cCInfo;
 
@@ -52,23 +52,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     }
 
     /**
-     * Used to specify the form of payment type.
+     * 'Type' is used to specify the form of payment type.
      *
      * @return string
      */
-    public function getType(): ?string
+    public function getType(): string
     {
         return $this->type;
     }
 
     /**
-     * Used to specify the form of payment type.
+     * 'Type' is used to specify the form of payment type.
      *
      * @param string $type
      *
      * @return self
      */
-    public function setType(?string $type): self
+    public function setType(string $type): self
     {
         $this->type = $type;
 

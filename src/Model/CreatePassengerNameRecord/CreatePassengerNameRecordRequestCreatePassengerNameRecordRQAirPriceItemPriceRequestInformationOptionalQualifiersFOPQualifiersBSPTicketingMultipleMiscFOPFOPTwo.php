@@ -15,13 +15,13 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBSPTicketingMultipleMiscFOPFOPTwo extends AbstractModel
 {
     /**
-     * Used to specify extended payment if applicable.
+     * 'ExtendedPayment' is used to pass the number of months by which to extend the payment.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBSPTicketingMultipleMiscFOPFOPTwoExtendedPayment
      */
     protected $extendedPayment;
     /**
-     * Used to specify the misc payment.
+     * 'Type' is used to specify the miscellaneous payment type.
      *
      * @var string
      */
@@ -34,23 +34,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     protected $reference;
 
     /**
-     * Used to specify extended payment if applicable.
+     * 'ExtendedPayment' is used to pass the number of months by which to extend the payment.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBSPTicketingMultipleMiscFOPFOPTwoExtendedPayment
      */
-    public function getExtendedPayment(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBSPTicketingMultipleMiscFOPFOPTwoExtendedPayment
+    public function getExtendedPayment(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBSPTicketingMultipleMiscFOPFOPTwoExtendedPayment
     {
         return $this->extendedPayment;
     }
 
     /**
-     * Used to specify extended payment if applicable.
+     * 'ExtendedPayment' is used to pass the number of months by which to extend the payment.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBSPTicketingMultipleMiscFOPFOPTwoExtendedPayment $extendedPayment
      *
      * @return self
      */
-    public function setExtendedPayment(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBSPTicketingMultipleMiscFOPFOPTwoExtendedPayment $extendedPayment): self
+    public function setExtendedPayment(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBSPTicketingMultipleMiscFOPFOPTwoExtendedPayment $extendedPayment): self
     {
         $this->extendedPayment = $extendedPayment;
 
@@ -58,23 +58,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     }
 
     /**
-     * Used to specify the misc payment.
+     * 'Type' is used to specify the miscellaneous payment type.
      *
      * @return string
      */
-    public function getType(): ?string
+    public function getType(): string
     {
         return $this->type;
     }
 
     /**
-     * Used to specify the misc payment.
+     * 'Type' is used to specify the miscellaneous payment type.
      *
      * @param string $type
      *
      * @return self
      */
-    public function setType(?string $type): self
+    public function setType(string $type): self
     {
         $this->type = $type;
 
@@ -86,7 +86,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return int
      */
-    public function getReference(): ?int
+    public function getReference(): int
     {
         return $this->reference;
     }
@@ -98,7 +98,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return self
      */
-    public function setReference(?int $reference): self
+    public function setReference(int $reference): self
     {
         $this->reference = $reference;
 

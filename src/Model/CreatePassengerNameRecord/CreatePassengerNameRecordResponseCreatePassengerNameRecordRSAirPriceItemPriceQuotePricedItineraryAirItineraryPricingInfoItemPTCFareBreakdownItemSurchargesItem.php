@@ -15,42 +15,42 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemPTCFareBreakdownItemSurchargesItem extends AbstractModel
 {
     /**
-     * Surcharges is used to return surcharge-related information if applicable.
+     * The surcharge information.
      *
      * @var string
      */
     protected $content;
     /**
-     * Ind is used to return surcharge-related indicator information if applicable.
+     * The surcharge indicator.
      *
      * @var string
      */
     protected $ind;
     /**
-     * Type is used to return surcharge-related type information if applicable.
+     * The surcharge type.
      *
      * @var string
      */
     protected $type;
 
     /**
-     * Surcharges is used to return surcharge-related information if applicable.
+     * The surcharge information.
      *
      * @return string
      */
-    public function getContent(): ?string
+    public function getContent(): string
     {
         return $this->content;
     }
 
     /**
-     * Surcharges is used to return surcharge-related information if applicable.
+     * The surcharge information.
      *
      * @param string $content
      *
      * @return self
      */
-    public function setContent(?string $content): self
+    public function setContent(string $content): self
     {
         $this->content = $content;
 
@@ -58,23 +58,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     }
 
     /**
-     * Ind is used to return surcharge-related indicator information if applicable.
+     * The surcharge indicator.
      *
      * @return string
      */
-    public function getInd(): ?string
+    public function getInd(): string
     {
         return $this->ind;
     }
 
     /**
-     * Ind is used to return surcharge-related indicator information if applicable.
+     * The surcharge indicator.
      *
      * @param string $ind
      *
      * @return self
      */
-    public function setInd(?string $ind): self
+    public function setInd(string $ind): self
     {
         $this->ind = $ind;
 
@@ -82,23 +82,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     }
 
     /**
-     * Type is used to return surcharge-related type information if applicable.
+     * The surcharge type.
      *
      * @return string
      */
-    public function getType(): ?string
+    public function getType(): string
     {
         return $this->type;
     }
 
     /**
-     * Type is used to return surcharge-related type information if applicable.
+     * The surcharge type.
      *
      * @param string $type
      *
      * @return self
      */
-    public function setType(?string $type): self
+    public function setType(string $type): self
     {
         $this->type = $type;
 

@@ -15,42 +15,42 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemAirFareInfoPTCFareBreakdownPassengerType extends AbstractModel
 {
     /**
-     * Passenger type count.
+     * The passenger quantity.
      *
      * @var int
      */
     protected $quantity;
     /**
-     * Passenger type code.
+     * The passenger type code.
      *
      * @var string
      */
     protected $code;
     /**
-     * Passenger age.
+     * The passenger age.
      *
      * @var int
      */
     protected $age;
 
     /**
-     * Passenger type count.
+     * The passenger quantity.
      *
      * @return int
      */
-    public function getQuantity(): ?int
+    public function getQuantity(): int
     {
         return $this->quantity;
     }
 
     /**
-     * Passenger type count.
+     * The passenger quantity.
      *
      * @param int $quantity
      *
      * @return self
      */
-    public function setQuantity(?int $quantity): self
+    public function setQuantity(int $quantity): self
     {
         $this->quantity = $quantity;
 
@@ -58,23 +58,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItinerary
     }
 
     /**
-     * Passenger type code.
+     * The passenger type code.
      *
      * @return string
      */
-    public function getCode(): ?string
+    public function getCode(): string
     {
         return $this->code;
     }
 
     /**
-     * Passenger type code.
+     * The passenger type code.
      *
      * @param string $code
      *
      * @return self
      */
-    public function setCode(?string $code): self
+    public function setCode(string $code): self
     {
         $this->code = $code;
 
@@ -82,23 +82,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItinerary
     }
 
     /**
-     * Passenger age.
+     * The passenger age.
      *
      * @return int
      */
-    public function getAge(): ?int
+    public function getAge(): int
     {
         return $this->age;
     }
 
     /**
-     * Passenger age.
+     * The passenger age.
      *
      * @param int $age
      *
      * @return self
      */
-    public function setAge(?int $age): self
+    public function setAge(int $age): self
     {
         $this->age = $age;
 

@@ -15,30 +15,30 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryRead extends AbstractModel
 {
     /**
-     * Reservation details.
+     * The reservation details.
      *
      * @var CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItinerary
      */
     protected $travelItinerary;
 
     /**
-     * Reservation details.
+     * The reservation details.
      *
      * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItinerary
      */
-    public function getTravelItinerary(): ?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItinerary
+    public function getTravelItinerary(): CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItinerary
     {
         return $this->travelItinerary;
     }
 
     /**
-     * Reservation details.
+     * The reservation details.
      *
      * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItinerary $travelItinerary
      *
      * @return self
      */
-    public function setTravelItinerary(?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItinerary $travelItinerary): self
+    public function setTravelItinerary(CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItinerary $travelItinerary): self
     {
         $this->travelItinerary = $travelItinerary;
 

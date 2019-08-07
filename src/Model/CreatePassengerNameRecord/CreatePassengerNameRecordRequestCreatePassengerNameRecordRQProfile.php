@@ -26,7 +26,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQProfile extends
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQProfileUniqueID
      */
-    public function getUniqueID(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQProfileUniqueID
+    public function getUniqueID(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQProfileUniqueID
     {
         return $this->uniqueID;
     }
@@ -38,7 +38,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQProfile extends
      *
      * @return self
      */
-    public function setUniqueID(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQProfileUniqueID $uniqueID): self
+    public function setUniqueID(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQProfileUniqueID $uniqueID): self
     {
         $this->uniqueID = $uniqueID;
 

@@ -15,36 +15,37 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersOverridesGoverningCarrierOverrideItem extends AbstractModel
 {
     /**
-     * Airline code.
+     * The airline code.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersOverridesGoverningCarrierOverrideItemAirline
      */
     protected $airline;
     /**
-     * Used to tie a governing carrier override to particular segments. If a client application needs to utilize a governing carrier override from a particular segment or segments the application can use .../GoverningCarrierOverride in conjunction with .../ItineraryOptions/SegmentSelect.
+     * Used to tie a governing carrier override to particular segments.
+     * If a client application needs to utilize a governing carrier override from a particular segment or segments the application can use 'GoverningCarrierOverride' in conjunction with 'ItineraryOptions.SegmentSelect'.
      *
      * @var string
      */
     protected $rPH;
 
     /**
-     * Airline code.
+     * The airline code.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersOverridesGoverningCarrierOverrideItemAirline
      */
-    public function getAirline(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersOverridesGoverningCarrierOverrideItemAirline
+    public function getAirline(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersOverridesGoverningCarrierOverrideItemAirline
     {
         return $this->airline;
     }
 
     /**
-     * Airline code.
+     * The airline code.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersOverridesGoverningCarrierOverrideItemAirline $airline
      *
      * @return self
      */
-    public function setAirline(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersOverridesGoverningCarrierOverrideItemAirline $airline): self
+    public function setAirline(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersOverridesGoverningCarrierOverrideItemAirline $airline): self
     {
         $this->airline = $airline;
 
@@ -52,23 +53,25 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     }
 
     /**
-     * Used to tie a governing carrier override to particular segments. If a client application needs to utilize a governing carrier override from a particular segment or segments the application can use .../GoverningCarrierOverride in conjunction with .../ItineraryOptions/SegmentSelect.
+     * Used to tie a governing carrier override to particular segments.
+     * If a client application needs to utilize a governing carrier override from a particular segment or segments the application can use 'GoverningCarrierOverride' in conjunction with 'ItineraryOptions.SegmentSelect'.
      *
      * @return string
      */
-    public function getRPH(): ?string
+    public function getRPH(): string
     {
         return $this->rPH;
     }
 
     /**
-     * Used to tie a governing carrier override to particular segments. If a client application needs to utilize a governing carrier override from a particular segment or segments the application can use .../GoverningCarrierOverride in conjunction with .../ItineraryOptions/SegmentSelect.
+     * Used to tie a governing carrier override to particular segments.
+     * If a client application needs to utilize a governing carrier override from a particular segment or segments the application can use 'GoverningCarrierOverride' in conjunction with 'ItineraryOptions.SegmentSelect'.
      *
      * @param string $rPH
      *
      * @return self
      */
-    public function setRPH(?string $rPH): self
+    public function setRPH(string $rPH): self
     {
         $this->rPH = $rPH;
 

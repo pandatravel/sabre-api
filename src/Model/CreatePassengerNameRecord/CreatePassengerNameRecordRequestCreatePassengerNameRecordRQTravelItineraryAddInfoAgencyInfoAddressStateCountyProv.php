@@ -15,30 +15,30 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoAgencyInfoAddressStateCountyProv extends AbstractModel
 {
     /**
-     * state code.
+     * The state code.
      *
      * @var string
      */
     protected $stateCode;
 
     /**
-     * state code.
+     * The state code.
      *
      * @return string
      */
-    public function getStateCode(): ?string
+    public function getStateCode(): string
     {
         return $this->stateCode;
     }
 
     /**
-     * state code.
+     * The state code.
      *
      * @param string $stateCode
      *
      * @return self
      */
-    public function setStateCode(?string $stateCode): self
+    public function setStateCode(string $stateCode): self
     {
         $this->stateCode = $stateCode;
 

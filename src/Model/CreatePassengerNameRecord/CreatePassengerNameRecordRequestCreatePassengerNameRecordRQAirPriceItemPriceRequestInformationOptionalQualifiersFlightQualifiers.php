@@ -15,30 +15,30 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFlightQualifiers extends AbstractModel
 {
     /**
-     * Carrier preferences.
+     * The airline vendor preferences.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFlightQualifiersVendorPrefs
      */
     protected $vendorPrefs;
 
     /**
-     * Carrier preferences.
+     * The airline vendor preferences.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFlightQualifiersVendorPrefs
      */
-    public function getVendorPrefs(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFlightQualifiersVendorPrefs
+    public function getVendorPrefs(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFlightQualifiersVendorPrefs
     {
         return $this->vendorPrefs;
     }
 
     /**
-     * Carrier preferences.
+     * The airline vendor preferences.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFlightQualifiersVendorPrefs $vendorPrefs
      *
      * @return self
      */
-    public function setVendorPrefs(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFlightQualifiersVendorPrefs $vendorPrefs): self
+    public function setVendorPrefs(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFlightQualifiersVendorPrefs $vendorPrefs): self
     {
         $this->vendorPrefs = $vendorPrefs;
 

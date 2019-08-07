@@ -15,36 +15,36 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPaymentInfoPayment extends AbstractModel
 {
     /**
-     * Credit card information.
+     * The credit card information.
      *
      * @var CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPaymentInfoPaymentCCInfoItem[]
      */
     protected $cCInfo;
     /**
-     * Payment form.
+     * The form of payment information.
      *
      * @var CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPaymentInfoPaymentFormItem[]
      */
     protected $form;
 
     /**
-     * Credit card information.
+     * The credit card information.
      *
      * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPaymentInfoPaymentCCInfoItem[]
      */
-    public function getCCInfo(): ?array
+    public function getCCInfo(): array
     {
         return $this->cCInfo;
     }
 
     /**
-     * Credit card information.
+     * The credit card information.
      *
      * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPaymentInfoPaymentCCInfoItem[] $cCInfo
      *
      * @return self
      */
-    public function setCCInfo(?array $cCInfo): self
+    public function setCCInfo(array $cCInfo): self
     {
         $this->cCInfo = $cCInfo;
 
@@ -52,23 +52,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     }
 
     /**
-     * Payment form.
+     * The form of payment information.
      *
      * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPaymentInfoPaymentFormItem[]
      */
-    public function getForm(): ?array
+    public function getForm(): array
     {
         return $this->form;
     }
 
     /**
-     * Payment form.
+     * The form of payment information.
      *
      * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPaymentInfoPaymentFormItem[] $form
      *
      * @return self
      */
-    public function setForm(?array $form): self
+    public function setForm(array $form): self
     {
         $this->form = $form;
 

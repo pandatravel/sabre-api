@@ -33,7 +33,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
      */
     protected $nameNumber;
     /**
-     * Used to add customer telephone numbers into the record if applicable.
+     * Used to add customer telephone numbers into the record.
      *
      * @var string
      */
@@ -50,7 +50,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
      *
      * @return int
      */
-    public function getInsertAfter(): ?int
+    public function getInsertAfter(): int
     {
         return $this->insertAfter;
     }
@@ -62,7 +62,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
      *
      * @return self
      */
-    public function setInsertAfter(?int $insertAfter): self
+    public function setInsertAfter(int $insertAfter): self
     {
         $this->insertAfter = $insertAfter;
 
@@ -74,7 +74,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
      *
      * @return string
      */
-    public function getLocationCode(): ?string
+    public function getLocationCode(): string
     {
         return $this->locationCode;
     }
@@ -86,7 +86,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
      *
      * @return self
      */
-    public function setLocationCode(?string $locationCode): self
+    public function setLocationCode(string $locationCode): self
     {
         $this->locationCode = $locationCode;
 
@@ -98,7 +98,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
      *
      * @return string
      */
-    public function getNameNumber(): ?string
+    public function getNameNumber(): string
     {
         return $this->nameNumber;
     }
@@ -110,7 +110,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
      *
      * @return self
      */
-    public function setNameNumber(?string $nameNumber): self
+    public function setNameNumber(string $nameNumber): self
     {
         $this->nameNumber = $nameNumber;
 
@@ -118,23 +118,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
     }
 
     /**
-     * Used to add customer telephone numbers into the record if applicable.
+     * Used to add customer telephone numbers into the record.
      *
      * @return string
      */
-    public function getPhone(): ?string
+    public function getPhone(): string
     {
         return $this->phone;
     }
 
     /**
-     * Used to add customer telephone numbers into the record if applicable.
+     * Used to add customer telephone numbers into the record.
      *
      * @param string $phone
      *
      * @return self
      */
-    public function setPhone(?string $phone): self
+    public function setPhone(string $phone): self
     {
         $this->phone = $phone;
 
@@ -146,7 +146,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
      *
      * @return string
      */
-    public function getPhoneUseType(): ?string
+    public function getPhoneUseType(): string
     {
         return $this->phoneUseType;
     }
@@ -158,7 +158,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
      *
      * @return self
      */
-    public function setPhoneUseType(?string $phoneUseType): self
+    public function setPhoneUseType(string $phoneUseType): self
     {
         $this->phoneUseType = $phoneUseType;
 

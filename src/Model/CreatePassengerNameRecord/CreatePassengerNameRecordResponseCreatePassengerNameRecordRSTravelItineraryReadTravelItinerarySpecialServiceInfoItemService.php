@@ -15,54 +15,55 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItinerarySpecialServiceInfoItemService extends AbstractModel
 {
     /**
-     * Airline code.
+     * The airline information.
      *
      * @var CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItinerarySpecialServiceInfoItemServiceAirline
      */
     protected $airline;
     /**
-     * Passenger name.
+     * The passenger name information.
      *
      * @var CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItinerarySpecialServiceInfoItemServicePersonNameItem[]
      */
     protected $personName;
     /**
-     * "Text" is used to return miscellaneous SSR-related free text if applicable.
+     * The miscellaneous SSR-related text information.
      *
      * @var string[]
      */
     protected $text;
     /**
-     * "SSR_Code is used to return the SSR code associated with the particular SSR segment.
+     * The SSR code associated with the particular SSR segment.
      *
      * @var string
      */
     protected $sSRCode;
     /**
-     * "SSR_Type" is used to return the SSR type associated with the particular SSR segment Example: WCHR.
+     * The SSR type associated with the particular SSR segment.
+     * Example: WCHR.
      *
      * @var string
      */
     protected $sSRType;
 
     /**
-     * Airline code.
+     * The airline information.
      *
      * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItinerarySpecialServiceInfoItemServiceAirline
      */
-    public function getAirline(): ?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItinerarySpecialServiceInfoItemServiceAirline
+    public function getAirline(): CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItinerarySpecialServiceInfoItemServiceAirline
     {
         return $this->airline;
     }
 
     /**
-     * Airline code.
+     * The airline information.
      *
      * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItinerarySpecialServiceInfoItemServiceAirline $airline
      *
      * @return self
      */
-    public function setAirline(?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItinerarySpecialServiceInfoItemServiceAirline $airline): self
+    public function setAirline(CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItinerarySpecialServiceInfoItemServiceAirline $airline): self
     {
         $this->airline = $airline;
 
@@ -70,23 +71,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     }
 
     /**
-     * Passenger name.
+     * The passenger name information.
      *
      * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItinerarySpecialServiceInfoItemServicePersonNameItem[]
      */
-    public function getPersonName(): ?array
+    public function getPersonName(): array
     {
         return $this->personName;
     }
 
     /**
-     * Passenger name.
+     * The passenger name information.
      *
      * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItinerarySpecialServiceInfoItemServicePersonNameItem[] $personName
      *
      * @return self
      */
-    public function setPersonName(?array $personName): self
+    public function setPersonName(array $personName): self
     {
         $this->personName = $personName;
 
@@ -94,23 +95,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     }
 
     /**
-     * "Text" is used to return miscellaneous SSR-related free text if applicable.
+     * The miscellaneous SSR-related text information.
      *
      * @return string[]
      */
-    public function getText(): ?array
+    public function getText(): array
     {
         return $this->text;
     }
 
     /**
-     * "Text" is used to return miscellaneous SSR-related free text if applicable.
+     * The miscellaneous SSR-related text information.
      *
      * @param string[] $text
      *
      * @return self
      */
-    public function setText(?array $text): self
+    public function setText(array $text): self
     {
         $this->text = $text;
 
@@ -118,23 +119,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     }
 
     /**
-     * "SSR_Code is used to return the SSR code associated with the particular SSR segment.
+     * The SSR code associated with the particular SSR segment.
      *
      * @return string
      */
-    public function getSSRCode(): ?string
+    public function getSSRCode(): string
     {
         return $this->sSRCode;
     }
 
     /**
-     * "SSR_Code is used to return the SSR code associated with the particular SSR segment.
+     * The SSR code associated with the particular SSR segment.
      *
      * @param string $sSRCode
      *
      * @return self
      */
-    public function setSSRCode(?string $sSRCode): self
+    public function setSSRCode(string $sSRCode): self
     {
         $this->sSRCode = $sSRCode;
 
@@ -142,23 +143,25 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     }
 
     /**
-     * "SSR_Type" is used to return the SSR type associated with the particular SSR segment Example: WCHR.
+     * The SSR type associated with the particular SSR segment.
+     * Example: WCHR.
      *
      * @return string
      */
-    public function getSSRType(): ?string
+    public function getSSRType(): string
     {
         return $this->sSRType;
     }
 
     /**
-     * "SSR_Type" is used to return the SSR type associated with the particular SSR segment Example: WCHR.
+     * The SSR type associated with the particular SSR segment.
+     * Example: WCHR.
      *
      * @param string $sSRType
      *
      * @return self
      */
-    public function setSSRType(?string $sSRType): self
+    public function setSSRType(string $sSRType): self
     {
         $this->sSRType = $sSRType;
 

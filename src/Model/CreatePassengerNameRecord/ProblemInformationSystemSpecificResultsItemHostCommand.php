@@ -15,7 +15,8 @@ use Ammonkc\SabreApi\AbstractModel;
 class ProblemInformationSystemSpecificResultsItemHostCommand extends AbstractModel
 {
     /**
-     * LNIATA is an abbreviation for Line / Interface Adapter / Terminal Address.  This is a 3-byte terminal address, usually seen as a 6-character hexadecimal field, such as "0358DC".
+     * 'LNIATA' is an abbreviation for Line / Interface Adapter / Terminal Address.
+     * It is a 3-byte terminal address, usually seen as a 6-character hexadecimal field, such as '0358DC'.
      *
      * @var string
      */
@@ -28,23 +29,25 @@ class ProblemInformationSystemSpecificResultsItemHostCommand extends AbstractMod
     protected $content;
 
     /**
-     * LNIATA is an abbreviation for Line / Interface Adapter / Terminal Address.  This is a 3-byte terminal address, usually seen as a 6-character hexadecimal field, such as "0358DC".
+     * 'LNIATA' is an abbreviation for Line / Interface Adapter / Terminal Address.
+     * It is a 3-byte terminal address, usually seen as a 6-character hexadecimal field, such as '0358DC'.
      *
      * @return string
      */
-    public function getLNIATA(): ?string
+    public function getLNIATA(): string
     {
         return $this->lNIATA;
     }
 
     /**
-     * LNIATA is an abbreviation for Line / Interface Adapter / Terminal Address.  This is a 3-byte terminal address, usually seen as a 6-character hexadecimal field, such as "0358DC".
+     * 'LNIATA' is an abbreviation for Line / Interface Adapter / Terminal Address.
+     * It is a 3-byte terminal address, usually seen as a 6-character hexadecimal field, such as '0358DC'.
      *
      * @param string $lNIATA
      *
      * @return self
      */
-    public function setLNIATA(?string $lNIATA): self
+    public function setLNIATA(string $lNIATA): self
     {
         $this->lNIATA = $lNIATA;
 
@@ -56,7 +59,7 @@ class ProblemInformationSystemSpecificResultsItemHostCommand extends AbstractMod
      *
      * @return string
      */
-    public function getContent(): ?string
+    public function getContent(): string
     {
         return $this->content;
     }
@@ -68,7 +71,7 @@ class ProblemInformationSystemSpecificResultsItemHostCommand extends AbstractMod
      *
      * @return self
      */
-    public function setContent(?string $content): self
+    public function setContent(string $content): self
     {
         $this->content = $content;
 

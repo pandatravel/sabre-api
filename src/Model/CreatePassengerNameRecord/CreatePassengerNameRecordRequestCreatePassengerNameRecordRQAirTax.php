@@ -15,36 +15,36 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTax extends AbstractModel
 {
     /**
-     * Itinerary information.
+     * The itinerary information.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfos
      */
     protected $itineraryInfos;
     /**
-     * Point of Sale details.
+     * The point of Sale details.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOS
      */
     protected $pOS;
 
     /**
-     * Itinerary information.
+     * The itinerary information.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfos
      */
-    public function getItineraryInfos(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfos
+    public function getItineraryInfos(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfos
     {
         return $this->itineraryInfos;
     }
 
     /**
-     * Itinerary information.
+     * The itinerary information.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfos $itineraryInfos
      *
      * @return self
      */
-    public function setItineraryInfos(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfos $itineraryInfos): self
+    public function setItineraryInfos(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfos $itineraryInfos): self
     {
         $this->itineraryInfos = $itineraryInfos;
 
@@ -52,23 +52,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTax extends 
     }
 
     /**
-     * Point of Sale details.
+     * The point of Sale details.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOS
      */
-    public function getPOS(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOS
+    public function getPOS(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOS
     {
         return $this->pOS;
     }
 
     /**
-     * Point of Sale details.
+     * The point of Sale details.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOS $pOS
      *
      * @return self
      */
-    public function setPOS(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOS $pOS): self
+    public function setPOS(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOS $pOS): self
     {
         $this->pOS = $pOS;
 

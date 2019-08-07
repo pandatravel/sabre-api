@@ -15,30 +15,30 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBook extends AbstractModel
 {
     /**
-     * Air segments details.
+     * The air segments details.
      *
      * @var CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginDestinationOption
      */
     protected $originDestinationOption;
 
     /**
-     * Air segments details.
+     * The air segments details.
      *
      * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginDestinationOption
      */
-    public function getOriginDestinationOption(): ?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginDestinationOption
+    public function getOriginDestinationOption(): CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginDestinationOption
     {
         return $this->originDestinationOption;
     }
 
     /**
-     * Air segments details.
+     * The air segments details.
      *
      * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginDestinationOption $originDestinationOption
      *
      * @return self
      */
-    public function setOriginDestinationOption(?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginDestinationOption $originDestinationOption): self
+    public function setOriginDestinationOption(CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginDestinationOption $originDestinationOption): self
     {
         $this->originDestinationOption = $originDestinationOption;
 

@@ -30,7 +30,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoCustomerInfoEmailItem;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoCustomerInfoEmailItem';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
@@ -41,6 +41,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
         $object = new \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoCustomerInfoEmailItem();
         if (property_exists($data, 'Address')) {
             $object->setAddress($data->{'Address'});
+        }
+        if (property_exists($data, 'LanguageOverride')) {
+            $object->setLanguageOverride($data->{'LanguageOverride'});
         }
         if (property_exists($data, 'NameNumber')) {
             $object->setNameNumber($data->{'NameNumber'});
@@ -60,6 +63,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
         $data = new \stdClass();
         if (null !== $object->getAddress()) {
             $data->{'Address'} = $object->getAddress();
+        }
+        if (null !== $object->getLanguageOverride()) {
+            $data->{'LanguageOverride'} = $object->getLanguageOverride();
         }
         if (null !== $object->getNameNumber()) {
             $data->{'NameNumber'} = $object->getNameNumber();

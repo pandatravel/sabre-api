@@ -15,36 +15,36 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmailItinerarySegmentItem extends AbstractModel
 {
     /**
-     * Used to specify an ending segment in the range to include in the email message.
+     * Used to specify an ending segment in the range within the range that is to be included in the email message.
      *
      * @var int
      */
     protected $endNumber;
     /**
-     * Used to specify segment number.
+     * Used to specify a segment number.
      *
      * @var int
      */
     protected $number;
 
     /**
-     * Used to specify an ending segment in the range to include in the email message.
+     * Used to specify an ending segment in the range within the range that is to be included in the email message.
      *
      * @return int
      */
-    public function getEndNumber(): ?int
+    public function getEndNumber(): int
     {
         return $this->endNumber;
     }
 
     /**
-     * Used to specify an ending segment in the range to include in the email message.
+     * Used to specify an ending segment in the range within the range that is to be included in the email message.
      *
      * @param int $endNumber
      *
      * @return self
      */
-    public function setEndNumber(?int $endNumber): self
+    public function setEndNumber(int $endNumber): self
     {
         $this->endNumber = $endNumber;
 
@@ -52,23 +52,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingE
     }
 
     /**
-     * Used to specify segment number.
+     * Used to specify a segment number.
      *
      * @return int
      */
-    public function getNumber(): ?int
+    public function getNumber(): int
     {
         return $this->number;
     }
 
     /**
-     * Used to specify segment number.
+     * Used to specify a segment number.
      *
      * @param int $number
      *
      * @return self
      */
-    public function setNumber(?int $number): self
+    public function setNumber(int $number): self
     {
         $this->number = $number;
 

@@ -15,31 +15,31 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfo extends AbstractModel
 {
     /**
-     * Address.
+     * The address.
      *
      * @var CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoAddress
      */
     protected $address;
     /**
-     * Contact numbers.
+     * The contact number information.
      *
      * @var CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoContactNumbers
      */
     protected $contactNumbers;
     /**
-     * Frequent flyer information.
+     * The frequent flyer information.
      *
      * @var CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoCustLoyaltyItem[]
      */
     protected $custLoyalty;
     /**
-     * Passport details.
+     * The passport details.
      *
      * @var CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPassportItem[]
      */
     protected $passport;
     /**
-     * Payment information.
+     * The payment information.
      *
      * @var CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPaymentInfo
      */
@@ -52,23 +52,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     protected $personName;
 
     /**
-     * Address.
+     * The address.
      *
      * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoAddress
      */
-    public function getAddress(): ?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoAddress
+    public function getAddress(): CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoAddress
     {
         return $this->address;
     }
 
     /**
-     * Address.
+     * The address.
      *
      * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoAddress $address
      *
      * @return self
      */
-    public function setAddress(?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoAddress $address): self
+    public function setAddress(CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoAddress $address): self
     {
         $this->address = $address;
 
@@ -76,23 +76,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     }
 
     /**
-     * Contact numbers.
+     * The contact number information.
      *
      * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoContactNumbers
      */
-    public function getContactNumbers(): ?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoContactNumbers
+    public function getContactNumbers(): CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoContactNumbers
     {
         return $this->contactNumbers;
     }
 
     /**
-     * Contact numbers.
+     * The contact number information.
      *
      * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoContactNumbers $contactNumbers
      *
      * @return self
      */
-    public function setContactNumbers(?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoContactNumbers $contactNumbers): self
+    public function setContactNumbers(CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoContactNumbers $contactNumbers): self
     {
         $this->contactNumbers = $contactNumbers;
 
@@ -100,23 +100,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     }
 
     /**
-     * Frequent flyer information.
+     * The frequent flyer information.
      *
      * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoCustLoyaltyItem[]
      */
-    public function getCustLoyalty(): ?array
+    public function getCustLoyalty(): array
     {
         return $this->custLoyalty;
     }
 
     /**
-     * Frequent flyer information.
+     * The frequent flyer information.
      *
      * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoCustLoyaltyItem[] $custLoyalty
      *
      * @return self
      */
-    public function setCustLoyalty(?array $custLoyalty): self
+    public function setCustLoyalty(array $custLoyalty): self
     {
         $this->custLoyalty = $custLoyalty;
 
@@ -124,23 +124,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     }
 
     /**
-     * Passport details.
+     * The passport details.
      *
      * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPassportItem[]
      */
-    public function getPassport(): ?array
+    public function getPassport(): array
     {
         return $this->passport;
     }
 
     /**
-     * Passport details.
+     * The passport details.
      *
      * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPassportItem[] $passport
      *
      * @return self
      */
-    public function setPassport(?array $passport): self
+    public function setPassport(array $passport): self
     {
         $this->passport = $passport;
 
@@ -148,23 +148,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     }
 
     /**
-     * Payment information.
+     * The payment information.
      *
      * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPaymentInfo
      */
-    public function getPaymentInfo(): ?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPaymentInfo
+    public function getPaymentInfo(): CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPaymentInfo
     {
         return $this->paymentInfo;
     }
 
     /**
-     * Payment information.
+     * The payment information.
      *
      * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPaymentInfo $paymentInfo
      *
      * @return self
      */
-    public function setPaymentInfo(?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPaymentInfo $paymentInfo): self
+    public function setPaymentInfo(CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPaymentInfo $paymentInfo): self
     {
         $this->paymentInfo = $paymentInfo;
 
@@ -176,7 +176,7 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
      *
      * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPersonNameItem[]
      */
-    public function getPersonName(): ?array
+    public function getPersonName(): array
     {
         return $this->personName;
     }
@@ -188,7 +188,7 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
      *
      * @return self
      */
-    public function setPersonName(?array $personName): self
+    public function setPersonName(array $personName): self
     {
         $this->personName = $personName;
 

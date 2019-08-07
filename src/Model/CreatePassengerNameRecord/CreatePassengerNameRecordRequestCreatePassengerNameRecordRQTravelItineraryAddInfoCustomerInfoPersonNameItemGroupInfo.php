@@ -21,13 +21,13 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
      */
     protected $vendorPrefs;
     /**
-     * Used to specify miscellaneous group booking-related free text title information if applicable.
+     * 'Name' is used to specify any miscellaneous group booking related free text title information.
      *
      * @var string
      */
     protected $name;
     /**
-     * Used to specify the number of passengers travelling in a group if applicable.
+     * 'NumSeatsRemaining' is used to specify the number of passengers travelling in a group.
      *
      * @var int
      */
@@ -38,7 +38,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoCustomerInfoPersonNameItemGroupInfoVendorPrefs
      */
-    public function getVendorPrefs(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoCustomerInfoPersonNameItemGroupInfoVendorPrefs
+    public function getVendorPrefs(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoCustomerInfoPersonNameItemGroupInfoVendorPrefs
     {
         return $this->vendorPrefs;
     }
@@ -50,7 +50,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
      *
      * @return self
      */
-    public function setVendorPrefs(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoCustomerInfoPersonNameItemGroupInfoVendorPrefs $vendorPrefs): self
+    public function setVendorPrefs(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoCustomerInfoPersonNameItemGroupInfoVendorPrefs $vendorPrefs): self
     {
         $this->vendorPrefs = $vendorPrefs;
 
@@ -58,23 +58,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
     }
 
     /**
-     * Used to specify miscellaneous group booking-related free text title information if applicable.
+     * 'Name' is used to specify any miscellaneous group booking related free text title information.
      *
      * @return string
      */
-    public function getName(): ?string
+    public function getName(): string
     {
         return $this->name;
     }
 
     /**
-     * Used to specify miscellaneous group booking-related free text title information if applicable.
+     * 'Name' is used to specify any miscellaneous group booking related free text title information.
      *
      * @param string $name
      *
      * @return self
      */
-    public function setName(?string $name): self
+    public function setName(string $name): self
     {
         $this->name = $name;
 
@@ -82,23 +82,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
     }
 
     /**
-     * Used to specify the number of passengers travelling in a group if applicable.
+     * 'NumSeatsRemaining' is used to specify the number of passengers travelling in a group.
      *
      * @return int
      */
-    public function getNumSeatsRemaining(): ?int
+    public function getNumSeatsRemaining(): int
     {
         return $this->numSeatsRemaining;
     }
 
     /**
-     * Used to specify the number of passengers travelling in a group if applicable.
+     * 'NumSeatsRemaining' is used to specify the number of passengers travelling in a group.
      *
      * @param int $numSeatsRemaining
      *
      * @return self
      */
-    public function setNumSeatsRemaining(?int $numSeatsRemaining): self
+    public function setNumSeatsRemaining(int $numSeatsRemaining): self
     {
         $this->numSeatsRemaining = $numSeatsRemaining;
 

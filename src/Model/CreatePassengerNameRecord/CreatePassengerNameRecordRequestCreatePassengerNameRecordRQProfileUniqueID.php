@@ -19,28 +19,28 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQProfileUniqueID
      *
      * @var string
      */
-    protected $iD;
+    protected $id;
 
     /**
      * Used to specify a profile name that is to be moved into the AAA to create the PNR.
      *
      * @return string
      */
-    public function getID(): ?string
+    public function getId(): string
     {
-        return $this->iD;
+        return $this->id;
     }
 
     /**
      * Used to specify a profile name that is to be moved into the AAA to create the PNR.
      *
-     * @param string $iD
+     * @param string $id
      *
      * @return self
      */
-    public function setID(?string $iD): self
+    public function setId(string $id): self
     {
-        $this->iD = $iD;
+        $this->id = $id;
 
         return $this;
     }

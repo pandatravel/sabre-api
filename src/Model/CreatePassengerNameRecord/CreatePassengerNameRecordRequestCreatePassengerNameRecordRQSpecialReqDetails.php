@@ -27,7 +27,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
      */
     protected $airSeat;
     /**
-     * Used to add SSRs.
+     * Used to add many types of SSRs.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialService
      */
@@ -38,7 +38,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAddRemark
      */
-    public function getAddRemark(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAddRemark
+    public function getAddRemark(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAddRemark
     {
         return $this->addRemark;
     }
@@ -50,7 +50,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
      *
      * @return self
      */
-    public function setAddRemark(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAddRemark $addRemark): self
+    public function setAddRemark(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAddRemark $addRemark): self
     {
         $this->addRemark = $addRemark;
 
@@ -62,7 +62,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAirSeat
      */
-    public function getAirSeat(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAirSeat
+    public function getAirSeat(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAirSeat
     {
         return $this->airSeat;
     }
@@ -74,7 +74,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
      *
      * @return self
      */
-    public function setAirSeat(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAirSeat $airSeat): self
+    public function setAirSeat(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAirSeat $airSeat): self
     {
         $this->airSeat = $airSeat;
 
@@ -82,23 +82,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     }
 
     /**
-     * Used to add SSRs.
+     * Used to add many types of SSRs.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialService
      */
-    public function getSpecialService(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialService
+    public function getSpecialService(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialService
     {
         return $this->specialService;
     }
 
     /**
-     * Used to add SSRs.
+     * Used to add many types of SSRs.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialService $specialService
      *
      * @return self
      */
-    public function setSpecialService(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialService $specialService): self
+    public function setSpecialService(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialService $specialService): self
     {
         $this->specialService = $specialService;
 

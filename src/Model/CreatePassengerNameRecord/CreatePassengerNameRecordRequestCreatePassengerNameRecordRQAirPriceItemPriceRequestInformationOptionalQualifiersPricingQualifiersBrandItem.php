@@ -15,36 +15,37 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersBrandItem extends AbstractModel
 {
     /**
-     * BasicEconomyExclude is used to exclude Basic Economy Fares (up to 5 booking classes can be selected). Please note that this element is only applicable to airline customers.
+     * Used to specify a brand code.
      *
      * @var string
      */
     protected $content;
     /**
-     * Used to match up with "SegmentSelect" Brand/@RPH cannot combine with .../CommandPricing/@RPH.
+     * Used to match up with 'SegmentSelect'.
+     * 'Brand.RPH' cannot be combined with 'CommandPricing.RPH'.
      *
      * @var int
      */
     protected $rPH;
 
     /**
-     * BasicEconomyExclude is used to exclude Basic Economy Fares (up to 5 booking classes can be selected). Please note that this element is only applicable to airline customers.
+     * Used to specify a brand code.
      *
      * @return string
      */
-    public function getContent(): ?string
+    public function getContent(): string
     {
         return $this->content;
     }
 
     /**
-     * BasicEconomyExclude is used to exclude Basic Economy Fares (up to 5 booking classes can be selected). Please note that this element is only applicable to airline customers.
+     * Used to specify a brand code.
      *
      * @param string $content
      *
      * @return self
      */
-    public function setContent(?string $content): self
+    public function setContent(string $content): self
     {
         $this->content = $content;
 
@@ -52,23 +53,25 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     }
 
     /**
-     * Used to match up with "SegmentSelect" Brand/@RPH cannot combine with .../CommandPricing/@RPH.
+     * Used to match up with 'SegmentSelect'.
+     * 'Brand.RPH' cannot be combined with 'CommandPricing.RPH'.
      *
      * @return int
      */
-    public function getRPH(): ?int
+    public function getRPH(): int
     {
         return $this->rPH;
     }
 
     /**
-     * Used to match up with "SegmentSelect" Brand/@RPH cannot combine with .../CommandPricing/@RPH.
+     * Used to match up with 'SegmentSelect'.
+     * 'Brand.RPH' cannot be combined with 'CommandPricing.RPH'.
      *
      * @param int $rPH
      *
      * @return self
      */
-    public function setRPH(?int $rPH): self
+    public function setRPH(int $rPH): self
     {
         $this->rPH = $rPH;
 

@@ -15,7 +15,7 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBook extends AbstractModel
 {
     /**
-     * Used to specify if Rebooking of segments is required if UC is encountered.
+     * Used to specify if re-booking of segments is required when UC segment status is encountered.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookRetryRebook
      */
@@ -27,7 +27,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBook extends
      */
     protected $haltOnStatus;
     /**
-     * Used to specify air segments to be booked.
+     * Used to specify the air segments to be booked.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDestinationInformation
      */
@@ -40,23 +40,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBook extends
     protected $redisplayReservation;
 
     /**
-     * Used to specify if Rebooking of segments is required if UC is encountered.
+     * Used to specify if re-booking of segments is required when UC segment status is encountered.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookRetryRebook
      */
-    public function getRetryRebook(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookRetryRebook
+    public function getRetryRebook(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookRetryRebook
     {
         return $this->retryRebook;
     }
 
     /**
-     * Used to specify if Rebooking of segments is required if UC is encountered.
+     * Used to specify if re-booking of segments is required when UC segment status is encountered.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookRetryRebook $retryRebook
      *
      * @return self
      */
-    public function setRetryRebook(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookRetryRebook $retryRebook): self
+    public function setRetryRebook(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookRetryRebook $retryRebook): self
     {
         $this->retryRebook = $retryRebook;
 
@@ -68,7 +68,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBook extends
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookHaltOnStatusItem[]
      */
-    public function getHaltOnStatus(): ?array
+    public function getHaltOnStatus(): array
     {
         return $this->haltOnStatus;
     }
@@ -80,7 +80,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBook extends
      *
      * @return self
      */
-    public function setHaltOnStatus(?array $haltOnStatus): self
+    public function setHaltOnStatus(array $haltOnStatus): self
     {
         $this->haltOnStatus = $haltOnStatus;
 
@@ -88,23 +88,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBook extends
     }
 
     /**
-     * Used to specify air segments to be booked.
+     * Used to specify the air segments to be booked.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDestinationInformation
      */
-    public function getOriginDestinationInformation(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDestinationInformation
+    public function getOriginDestinationInformation(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDestinationInformation
     {
         return $this->originDestinationInformation;
     }
 
     /**
-     * Used to specify air segments to be booked.
+     * Used to specify the air segments to be booked.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDestinationInformation $originDestinationInformation
      *
      * @return self
      */
-    public function setOriginDestinationInformation(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDestinationInformation $originDestinationInformation): self
+    public function setOriginDestinationInformation(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDestinationInformation $originDestinationInformation): self
     {
         $this->originDestinationInformation = $originDestinationInformation;
 
@@ -116,7 +116,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBook extends
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookRedisplayReservation
      */
-    public function getRedisplayReservation(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookRedisplayReservation
+    public function getRedisplayReservation(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookRedisplayReservation
     {
         return $this->redisplayReservation;
     }
@@ -128,7 +128,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBook extends
      *
      * @return self
      */
-    public function setRedisplayReservation(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookRedisplayReservation $redisplayReservation): self
+    public function setRedisplayReservation(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookRedisplayReservation $redisplayReservation): self
     {
         $this->redisplayReservation = $redisplayReservation;
 

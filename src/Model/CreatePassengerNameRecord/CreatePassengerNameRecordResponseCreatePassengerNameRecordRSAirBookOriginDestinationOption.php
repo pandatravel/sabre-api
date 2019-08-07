@@ -15,30 +15,30 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginDestinationOption extends AbstractModel
 {
     /**
-     * Single flight segment details.
+     * A single flight segment details.
      *
      * @var CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginDestinationOptionFlightSegmentItem[]
      */
     protected $flightSegment;
 
     /**
-     * Single flight segment details.
+     * A single flight segment details.
      *
      * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginDestinationOptionFlightSegmentItem[]
      */
-    public function getFlightSegment(): ?array
+    public function getFlightSegment(): array
     {
         return $this->flightSegment;
     }
 
     /**
-     * Single flight segment details.
+     * A single flight segment details.
      *
      * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginDestinationOptionFlightSegmentItem[] $flightSegment
      *
      * @return self
      */
-    public function setFlightSegment(?array $flightSegment): self
+    public function setFlightSegment(array $flightSegment): self
     {
         $this->flightSegment = $flightSegment;
 

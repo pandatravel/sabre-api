@@ -15,13 +15,17 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersValidityDatesItem extends AbstractModel
 {
     /**
-     * Used to specify the ending validity date. "NotValidAfter" follows this format: MM-DD or YYYY-MM-DD.
+     * Used to specify the ending validity date.
+    'NotValidAfter' follows this format: 'MM-DD' or 'YYYY-MM-DD'.
+
      *
      * @var string
      */
     protected $notValidAfter;
     /**
-     * Used to specify the beginning validity date. "NotValidBefore" follows this format: MM-DD or YYYY-MM-DD.
+     * Used to specify the beginning validity date.
+    'NotValidBefore' follows this format: 'MM-DD' or 'YYYY-MM-DD'.
+
      *
      * @var string
      */
@@ -34,23 +38,27 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     protected $segment;
 
     /**
-     * Used to specify the ending validity date. "NotValidAfter" follows this format: MM-DD or YYYY-MM-DD.
+     * Used to specify the ending validity date.
+    'NotValidAfter' follows this format: 'MM-DD' or 'YYYY-MM-DD'.
+
      *
      * @return string
      */
-    public function getNotValidAfter(): ?string
+    public function getNotValidAfter(): string
     {
         return $this->notValidAfter;
     }
 
     /**
-     * Used to specify the ending validity date. "NotValidAfter" follows this format: MM-DD or YYYY-MM-DD.
+     * Used to specify the ending validity date.
+    'NotValidAfter' follows this format: 'MM-DD' or 'YYYY-MM-DD'.
+
      *
      * @param string $notValidAfter
      *
      * @return self
      */
-    public function setNotValidAfter(?string $notValidAfter): self
+    public function setNotValidAfter(string $notValidAfter): self
     {
         $this->notValidAfter = $notValidAfter;
 
@@ -58,23 +66,27 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     }
 
     /**
-     * Used to specify the beginning validity date. "NotValidBefore" follows this format: MM-DD or YYYY-MM-DD.
+     * Used to specify the beginning validity date.
+    'NotValidBefore' follows this format: 'MM-DD' or 'YYYY-MM-DD'.
+
      *
      * @return string
      */
-    public function getNotValidBefore(): ?string
+    public function getNotValidBefore(): string
     {
         return $this->notValidBefore;
     }
 
     /**
-     * Used to specify the beginning validity date. "NotValidBefore" follows this format: MM-DD or YYYY-MM-DD.
+     * Used to specify the beginning validity date.
+    'NotValidBefore' follows this format: 'MM-DD' or 'YYYY-MM-DD'.
+
      *
      * @param string $notValidBefore
      *
      * @return self
      */
-    public function setNotValidBefore(?string $notValidBefore): self
+    public function setNotValidBefore(string $notValidBefore): self
     {
         $this->notValidBefore = $notValidBefore;
 
@@ -86,7 +98,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersValidityDatesItemSegment
      */
-    public function getSegment(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersValidityDatesItemSegment
+    public function getSegment(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersValidityDatesItemSegment
     {
         return $this->segment;
     }
@@ -98,7 +110,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return self
      */
-    public function setSegment(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersValidityDatesItemSegment $segment): self
+    public function setSegment(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersValidityDatesItemSegment $segment): self
     {
         $this->segment = $segment;
 

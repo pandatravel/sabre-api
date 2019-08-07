@@ -15,30 +15,30 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmailItineraryPDF extends AbstractModel
 {
     /**
-     * Used to send an email notification containing a PDF-based copy of the itinerary.
+     * Used to indicate whether to send an email notification containing a PDF-based copy of the itinerary.
      *
      * @var bool
      */
     protected $ind;
 
     /**
-     * Used to send an email notification containing a PDF-based copy of the itinerary.
+     * Used to indicate whether to send an email notification containing a PDF-based copy of the itinerary.
      *
      * @return bool
      */
-    public function getInd(): ?bool
+    public function getInd(): bool
     {
         return $this->ind;
     }
 
     /**
-     * Used to send an email notification containing a PDF-based copy of the itinerary.
+     * Used to indicate whether to send an email notification containing a PDF-based copy of the itinerary.
      *
      * @param bool $ind
      *
      * @return self
      */
-    public function setInd(?bool $ind): self
+    public function setInd(bool $ind): self
     {
         $this->ind = $ind;
 

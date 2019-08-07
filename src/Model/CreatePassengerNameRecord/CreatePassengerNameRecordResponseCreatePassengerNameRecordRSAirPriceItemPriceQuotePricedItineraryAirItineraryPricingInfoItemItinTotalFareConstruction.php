@@ -15,42 +15,42 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareConstruction extends AbstractModel
 {
     /**
-     * Amount used to return construction amount information.
+     * The construction amount information.
      *
      * @var string
      */
     protected $amount;
     /**
-     * CurrencyCode is used to return the applicable currency code.
+     * The applicable currency code.
      *
      * @var string
      */
     protected $currencyCode;
     /**
-     * RateOfExchange is used to return rate of exchange.
+     * The rate of exchange.
      *
      * @var string
      */
     protected $rateOfExchange;
 
     /**
-     * Amount used to return construction amount information.
+     * The construction amount information.
      *
      * @return string
      */
-    public function getAmount(): ?string
+    public function getAmount(): string
     {
         return $this->amount;
     }
 
     /**
-     * Amount used to return construction amount information.
+     * The construction amount information.
      *
      * @param string $amount
      *
      * @return self
      */
-    public function setAmount(?string $amount): self
+    public function setAmount(string $amount): self
     {
         $this->amount = $amount;
 
@@ -58,23 +58,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     }
 
     /**
-     * CurrencyCode is used to return the applicable currency code.
+     * The applicable currency code.
      *
      * @return string
      */
-    public function getCurrencyCode(): ?string
+    public function getCurrencyCode(): string
     {
         return $this->currencyCode;
     }
 
     /**
-     * CurrencyCode is used to return the applicable currency code.
+     * The applicable currency code.
      *
      * @param string $currencyCode
      *
      * @return self
      */
-    public function setCurrencyCode(?string $currencyCode): self
+    public function setCurrencyCode(string $currencyCode): self
     {
         $this->currencyCode = $currencyCode;
 
@@ -82,23 +82,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     }
 
     /**
-     * RateOfExchange is used to return rate of exchange.
+     * The rate of exchange.
      *
      * @return string
      */
-    public function getRateOfExchange(): ?string
+    public function getRateOfExchange(): string
     {
         return $this->rateOfExchange;
     }
 
     /**
-     * RateOfExchange is used to return rate of exchange.
+     * The rate of exchange.
      *
      * @param string $rateOfExchange
      *
      * @return self
      */
-    public function setRateOfExchange(?string $rateOfExchange): self
+    public function setRateOfExchange(string $rateOfExchange): self
     {
         $this->rateOfExchange = $rateOfExchange;
 

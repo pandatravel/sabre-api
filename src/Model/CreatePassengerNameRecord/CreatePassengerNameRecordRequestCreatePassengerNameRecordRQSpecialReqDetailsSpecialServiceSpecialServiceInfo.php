@@ -38,7 +38,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoAdvancePassengerItem[]
      */
-    public function getAdvancePassenger(): ?array
+    public function getAdvancePassenger(): array
     {
         return $this->advancePassenger;
     }
@@ -50,7 +50,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
      *
      * @return self
      */
-    public function setAdvancePassenger(?array $advancePassenger): self
+    public function setAdvancePassenger(array $advancePassenger): self
     {
         $this->advancePassenger = $advancePassenger;
 
@@ -62,7 +62,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoSecureFlightItem[]
      */
-    public function getSecureFlight(): ?array
+    public function getSecureFlight(): array
     {
         return $this->secureFlight;
     }
@@ -74,7 +74,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
      *
      * @return self
      */
-    public function setSecureFlight(?array $secureFlight): self
+    public function setSecureFlight(array $secureFlight): self
     {
         $this->secureFlight = $secureFlight;
 
@@ -86,7 +86,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoServiceItem[]
      */
-    public function getService(): ?array
+    public function getService(): array
     {
         return $this->service;
     }
@@ -98,7 +98,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
      *
      * @return self
      */
-    public function setService(?array $service): self
+    public function setService(array $service): self
     {
         $this->service = $service;
 

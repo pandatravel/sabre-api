@@ -15,36 +15,40 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersCommission extends AbstractModel
 {
     /**
-     * Used to specify the numeric amount of commission being claimed if applicable.Amount and Percent are mutually exclusive.
+     * Used to specify the numeric amount of commission being claimed.
+     * 'Amount' and 'Percent' are mutually exclusive.
      *
      * @var string
      */
     protected $amount;
     /**
-     * Used to specify the percentage of commission being claimed if applicable. Amount and Percent are mutually exclusive.
+     * Used to specify the percentage of commission being claimed.
+     * 'Amount' and 'Percent' are mutually exclusive.
      *
      * @var string
      */
     protected $percent;
 
     /**
-     * Used to specify the numeric amount of commission being claimed if applicable.Amount and Percent are mutually exclusive.
+     * Used to specify the numeric amount of commission being claimed.
+     * 'Amount' and 'Percent' are mutually exclusive.
      *
      * @return string
      */
-    public function getAmount(): ?string
+    public function getAmount(): string
     {
         return $this->amount;
     }
 
     /**
-     * Used to specify the numeric amount of commission being claimed if applicable.Amount and Percent are mutually exclusive.
+     * Used to specify the numeric amount of commission being claimed.
+     * 'Amount' and 'Percent' are mutually exclusive.
      *
      * @param string $amount
      *
      * @return self
      */
-    public function setAmount(?string $amount): self
+    public function setAmount(string $amount): self
     {
         $this->amount = $amount;
 
@@ -52,23 +56,25 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     }
 
     /**
-     * Used to specify the percentage of commission being claimed if applicable. Amount and Percent are mutually exclusive.
+     * Used to specify the percentage of commission being claimed.
+     * 'Amount' and 'Percent' are mutually exclusive.
      *
      * @return string
      */
-    public function getPercent(): ?string
+    public function getPercent(): string
     {
         return $this->percent;
     }
 
     /**
-     * Used to specify the percentage of commission being claimed if applicable. Amount and Percent are mutually exclusive.
+     * Used to specify the percentage of commission being claimed.
+     * 'Amount' and 'Percent' are mutually exclusive.
      *
      * @param string $percent
      *
      * @return self
      */
-    public function setPercent(?string $percent): self
+    public function setPercent(string $percent): self
     {
         $this->percent = $percent;
 

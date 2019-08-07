@@ -15,36 +15,36 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentPaymentCardAddressCityCodesCodeItem extends AbstractModel
 {
     /**
-     * City code.
+     * The city code.
      *
      * @var string
      */
     protected $content;
     /**
-     * City code.
+     * The city code context.
      *
      * @var string
      */
     protected $codeContext;
 
     /**
-     * City code.
+     * The city code.
      *
      * @return string
      */
-    public function getContent(): ?string
+    public function getContent(): string
     {
         return $this->content;
     }
 
     /**
-     * City code.
+     * The city code.
      *
      * @param string $content
      *
      * @return self
      */
-    public function setContent(?string $content): self
+    public function setContent(string $content): self
     {
         $this->content = $content;
 
@@ -52,23 +52,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymen
     }
 
     /**
-     * City code.
+     * The city code context.
      *
      * @return string
      */
-    public function getCodeContext(): ?string
+    public function getCodeContext(): string
     {
         return $this->codeContext;
     }
 
     /**
-     * City code.
+     * The city code context.
      *
      * @param string $codeContext
      *
      * @return self
      */
-    public function setCodeContext(?string $codeContext): self
+    public function setCodeContext(string $codeContext): self
     {
         $this->codeContext = $codeContext;
 

@@ -15,7 +15,7 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersCommandPricingItem extends AbstractModel
 {
     /**
-     * Used to specify discount information.
+     * Used to specify the discount information.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersCommandPricingItemDiscount
      */
@@ -27,30 +27,30 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      */
     protected $fareBasis;
     /**
-     * Used to match up with "SegmentSelect". These formats require a "*", i.e. requires a "/", i.e. WPS1*QY/AD75.
+     * Used to match up with 'SegmentSelect'.
      *
      * @var string
      */
     protected $rPH;
 
     /**
-     * Used to specify discount information.
+     * Used to specify the discount information.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersCommandPricingItemDiscount
      */
-    public function getDiscount(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersCommandPricingItemDiscount
+    public function getDiscount(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersCommandPricingItemDiscount
     {
         return $this->discount;
     }
 
     /**
-     * Used to specify discount information.
+     * Used to specify the discount information.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersCommandPricingItemDiscount $discount
      *
      * @return self
      */
-    public function setDiscount(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersCommandPricingItemDiscount $discount): self
+    public function setDiscount(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersCommandPricingItemDiscount $discount): self
     {
         $this->discount = $discount;
 
@@ -62,7 +62,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersCommandPricingItemFareBasis
      */
-    public function getFareBasis(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersCommandPricingItemFareBasis
+    public function getFareBasis(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersCommandPricingItemFareBasis
     {
         return $this->fareBasis;
     }
@@ -74,7 +74,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return self
      */
-    public function setFareBasis(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersCommandPricingItemFareBasis $fareBasis): self
+    public function setFareBasis(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersCommandPricingItemFareBasis $fareBasis): self
     {
         $this->fareBasis = $fareBasis;
 
@@ -82,23 +82,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     }
 
     /**
-     * Used to match up with "SegmentSelect". These formats require a "*", i.e. requires a "/", i.e. WPS1*QY/AD75.
+     * Used to match up with 'SegmentSelect'.
      *
      * @return string
      */
-    public function getRPH(): ?string
+    public function getRPH(): string
     {
         return $this->rPH;
     }
 
     /**
-     * Used to match up with "SegmentSelect". These formats require a "*", i.e. requires a "/", i.e. WPS1*QY/AD75.
+     * Used to match up with 'SegmentSelect'.
      *
      * @param string $rPH
      *
      * @return self
      */
-    public function setRPH(?string $rPH): self
+    public function setRPH(string $rPH): self
     {
         $this->rPH = $rPH;
 

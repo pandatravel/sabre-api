@@ -15,7 +15,7 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemAssociationsCarrierCodeItem extends AbstractModel
 {
     /**
-     * Carrier code.
+     * The carrier code.
      *
      * @var string
      */
@@ -28,23 +28,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     protected $rPH;
 
     /**
-     * Carrier code.
+     * The carrier code.
      *
      * @return string
      */
-    public function getContent(): ?string
+    public function getContent(): string
     {
         return $this->content;
     }
 
     /**
-     * Carrier code.
+     * The carrier code.
      *
      * @param string $content
      *
      * @return self
      */
-    public function setContent(?string $content): self
+    public function setContent(string $content): self
     {
         $this->content = $content;
 
@@ -56,7 +56,7 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
      *
      * @return int
      */
-    public function getRPH(): ?int
+    public function getRPH(): int
     {
         return $this->rPH;
     }
@@ -68,7 +68,7 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
      *
      * @return self
      */
-    public function setRPH(?int $rPH): self
+    public function setRPH(int $rPH): self
     {
         $this->rPH = $rPH;
 

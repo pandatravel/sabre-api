@@ -15,48 +15,50 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareTaxesTaxItem extends AbstractModel
 {
     /**
-     * Tax amount.
+     * The tax amount.
      *
      * @var string
      */
     protected $amount;
     /**
-     * Tax code.
+     * The tax code.
+     * For more information please refer to OpenTravel Code List Fee Tax Type(FTT).
      *
      * @var string
      */
     protected $taxCode;
     /**
-     * Tax name.
+     * The tax name.
      *
      * @var string
      */
     protected $taxName;
     /**
-     * Ticketing tax code associated with the particular tax.
+     * The ticketing tax code.
+     * For more information please refer to OpenTravel Code List Fee Tax Type(FTT).
      *
      * @var string
      */
     protected $ticketingTaxCode;
 
     /**
-     * Tax amount.
+     * The tax amount.
      *
      * @return string
      */
-    public function getAmount(): ?string
+    public function getAmount(): string
     {
         return $this->amount;
     }
 
     /**
-     * Tax amount.
+     * The tax amount.
      *
      * @param string $amount
      *
      * @return self
      */
-    public function setAmount(?string $amount): self
+    public function setAmount(string $amount): self
     {
         $this->amount = $amount;
 
@@ -64,23 +66,25 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     }
 
     /**
-     * Tax code.
+     * The tax code.
+     * For more information please refer to OpenTravel Code List Fee Tax Type(FTT).
      *
      * @return string
      */
-    public function getTaxCode(): ?string
+    public function getTaxCode(): string
     {
         return $this->taxCode;
     }
 
     /**
-     * Tax code.
+     * The tax code.
+     * For more information please refer to OpenTravel Code List Fee Tax Type(FTT).
      *
      * @param string $taxCode
      *
      * @return self
      */
-    public function setTaxCode(?string $taxCode): self
+    public function setTaxCode(string $taxCode): self
     {
         $this->taxCode = $taxCode;
 
@@ -88,23 +92,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     }
 
     /**
-     * Tax name.
+     * The tax name.
      *
      * @return string
      */
-    public function getTaxName(): ?string
+    public function getTaxName(): string
     {
         return $this->taxName;
     }
 
     /**
-     * Tax name.
+     * The tax name.
      *
      * @param string $taxName
      *
      * @return self
      */
-    public function setTaxName(?string $taxName): self
+    public function setTaxName(string $taxName): self
     {
         $this->taxName = $taxName;
 
@@ -112,23 +116,25 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     }
 
     /**
-     * Ticketing tax code associated with the particular tax.
+     * The ticketing tax code.
+     * For more information please refer to OpenTravel Code List Fee Tax Type(FTT).
      *
      * @return string
      */
-    public function getTicketingTaxCode(): ?string
+    public function getTicketingTaxCode(): string
     {
         return $this->ticketingTaxCode;
     }
 
     /**
-     * Ticketing tax code associated with the particular tax.
+     * The ticketing tax code.
+     * For more information please refer to OpenTravel Code List Fee Tax Type(FTT).
      *
      * @param string $ticketingTaxCode
      *
      * @return self
      */
-    public function setTicketingTaxCode(?string $ticketingTaxCode): self
+    public function setTicketingTaxCode(string $ticketingTaxCode): self
     {
         $this->ticketingTaxCode = $ticketingTaxCode;
 

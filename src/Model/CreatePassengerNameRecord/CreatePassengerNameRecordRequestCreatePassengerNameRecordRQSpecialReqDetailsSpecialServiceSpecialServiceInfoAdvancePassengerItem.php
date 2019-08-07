@@ -15,13 +15,13 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoAdvancePassengerItem extends AbstractModel
 {
     /**
-     * Document details.
+     * The dcument details.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoAdvancePassengerItemDocument
      */
     protected $document;
     /**
-     * Personal details.
+     * The personal details.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoAdvancePassengerItemPersonName
      */
@@ -33,36 +33,37 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
      */
     protected $residentDestinationAddress;
     /**
-     * Airline preferences.
+     * The airline vendor preferences.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoAdvancePassengerItemVendorPrefs
      */
     protected $vendorPrefs;
     /**
-     * Used to specify an itinerary segment to associate the SSR to. "A" can be specified to associate the SSR to all segments.
+     * Used to specify an itinerary segment number to associate the SSR to.
+     * 'A; can be specified to associate the SSR to all segments.
      *
      * @var string
      */
     protected $segmentNumber;
 
     /**
-     * Document details.
+     * The dcument details.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoAdvancePassengerItemDocument
      */
-    public function getDocument(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoAdvancePassengerItemDocument
+    public function getDocument(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoAdvancePassengerItemDocument
     {
         return $this->document;
     }
 
     /**
-     * Document details.
+     * The dcument details.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoAdvancePassengerItemDocument $document
      *
      * @return self
      */
-    public function setDocument(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoAdvancePassengerItemDocument $document): self
+    public function setDocument(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoAdvancePassengerItemDocument $document): self
     {
         $this->document = $document;
 
@@ -70,23 +71,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     }
 
     /**
-     * Personal details.
+     * The personal details.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoAdvancePassengerItemPersonName
      */
-    public function getPersonName(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoAdvancePassengerItemPersonName
+    public function getPersonName(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoAdvancePassengerItemPersonName
     {
         return $this->personName;
     }
 
     /**
-     * Personal details.
+     * The personal details.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoAdvancePassengerItemPersonName $personName
      *
      * @return self
      */
-    public function setPersonName(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoAdvancePassengerItemPersonName $personName): self
+    public function setPersonName(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoAdvancePassengerItemPersonName $personName): self
     {
         $this->personName = $personName;
 
@@ -98,7 +99,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoAdvancePassengerItemResidentDestinationAddress
      */
-    public function getResidentDestinationAddress(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoAdvancePassengerItemResidentDestinationAddress
+    public function getResidentDestinationAddress(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoAdvancePassengerItemResidentDestinationAddress
     {
         return $this->residentDestinationAddress;
     }
@@ -110,7 +111,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
      *
      * @return self
      */
-    public function setResidentDestinationAddress(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoAdvancePassengerItemResidentDestinationAddress $residentDestinationAddress): self
+    public function setResidentDestinationAddress(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoAdvancePassengerItemResidentDestinationAddress $residentDestinationAddress): self
     {
         $this->residentDestinationAddress = $residentDestinationAddress;
 
@@ -118,23 +119,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     }
 
     /**
-     * Airline preferences.
+     * The airline vendor preferences.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoAdvancePassengerItemVendorPrefs
      */
-    public function getVendorPrefs(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoAdvancePassengerItemVendorPrefs
+    public function getVendorPrefs(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoAdvancePassengerItemVendorPrefs
     {
         return $this->vendorPrefs;
     }
 
     /**
-     * Airline preferences.
+     * The airline vendor preferences.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoAdvancePassengerItemVendorPrefs $vendorPrefs
      *
      * @return self
      */
-    public function setVendorPrefs(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoAdvancePassengerItemVendorPrefs $vendorPrefs): self
+    public function setVendorPrefs(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoAdvancePassengerItemVendorPrefs $vendorPrefs): self
     {
         $this->vendorPrefs = $vendorPrefs;
 
@@ -142,23 +143,25 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     }
 
     /**
-     * Used to specify an itinerary segment to associate the SSR to. "A" can be specified to associate the SSR to all segments.
+     * Used to specify an itinerary segment number to associate the SSR to.
+     * 'A; can be specified to associate the SSR to all segments.
      *
      * @return string
      */
-    public function getSegmentNumber(): ?string
+    public function getSegmentNumber(): string
     {
         return $this->segmentNumber;
     }
 
     /**
-     * Used to specify an itinerary segment to associate the SSR to. "A" can be specified to associate the SSR to all segments.
+     * Used to specify an itinerary segment number to associate the SSR to.
+     * 'A; can be specified to associate the SSR to all segments.
      *
      * @param string $segmentNumber
      *
      * @return self
      */
-    public function setSegmentNumber(?string $segmentNumber): self
+    public function setSegmentNumber(string $segmentNumber): self
     {
         $this->segmentNumber = $segmentNumber;
 

@@ -15,7 +15,7 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmailItinerary extends AbstractModel
 {
     /**
-     * PDF request.
+     * 'PDF' is used to send an email notification containing a PDF-based copy of the itinerary.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmailItineraryPDF
      */
@@ -25,30 +25,30 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingE
      */
     protected $segment;
     /**
-     * Used to send an email notification containing a text-based copy of the itinerary.
+     * Used to indicate whether to send an e-mail notification containing a text-based copy of the itinerary.
      *
      * @var bool
      */
     protected $ind;
 
     /**
-     * PDF request.
+     * 'PDF' is used to send an email notification containing a PDF-based copy of the itinerary.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmailItineraryPDF
      */
-    public function getPDF(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmailItineraryPDF
+    public function getPDF(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmailItineraryPDF
     {
         return $this->pDF;
     }
 
     /**
-     * PDF request.
+     * 'PDF' is used to send an email notification containing a PDF-based copy of the itinerary.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmailItineraryPDF $pDF
      *
      * @return self
      */
-    public function setPDF(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmailItineraryPDF $pDF): self
+    public function setPDF(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmailItineraryPDF $pDF): self
     {
         $this->pDF = $pDF;
 
@@ -58,7 +58,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingE
     /**
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmailItinerarySegmentItem[]
      */
-    public function getSegment(): ?array
+    public function getSegment(): array
     {
         return $this->segment;
     }
@@ -68,7 +68,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingE
      *
      * @return self
      */
-    public function setSegment(?array $segment): self
+    public function setSegment(array $segment): self
     {
         $this->segment = $segment;
 
@@ -76,23 +76,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingE
     }
 
     /**
-     * Used to send an email notification containing a text-based copy of the itinerary.
+     * Used to indicate whether to send an e-mail notification containing a text-based copy of the itinerary.
      *
      * @return bool
      */
-    public function getInd(): ?bool
+    public function getInd(): bool
     {
         return $this->ind;
     }
 
     /**
-     * Used to send an email notification containing a text-based copy of the itinerary.
+     * Used to indicate whether to send an e-mail notification containing a text-based copy of the itinerary.
      *
      * @param bool $ind
      *
      * @return self
      */
-    public function setInd(?bool $ind): self
+    public function setInd(bool $ind): self
     {
         $this->ind = $ind;
 

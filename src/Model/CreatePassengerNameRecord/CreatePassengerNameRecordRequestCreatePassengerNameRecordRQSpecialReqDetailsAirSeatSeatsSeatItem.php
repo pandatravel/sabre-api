@@ -21,7 +21,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
      */
     protected $boardingPass;
     /**
-     * Used to specify a change of gauge of flight.
+     * 'ChangeOfGauge' is used to specify whether a change happened in the gauge of flight.
      *
      * @var bool
      */
@@ -39,13 +39,14 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
      */
     protected $number;
     /**
-     * Used to specify a seat preference. Preference cannot combine with Number.
+     * Used to specify a seat preference.
+     * Seat preference cannot be combined with seat number.
      *
      * @var string
      */
     protected $preference;
     /**
-     * Used to specify a segment number.
+     * 'SegmentNumber' is used to specify the number of the segment.
      *
      * @var string
      */
@@ -56,7 +57,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
      *
      * @return bool
      */
-    public function getBoardingPass(): ?bool
+    public function getBoardingPass(): bool
     {
         return $this->boardingPass;
     }
@@ -68,7 +69,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
      *
      * @return self
      */
-    public function setBoardingPass(?bool $boardingPass): self
+    public function setBoardingPass(bool $boardingPass): self
     {
         $this->boardingPass = $boardingPass;
 
@@ -76,23 +77,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     }
 
     /**
-     * Used to specify a change of gauge of flight.
+     * 'ChangeOfGauge' is used to specify whether a change happened in the gauge of flight.
      *
      * @return bool
      */
-    public function getChangeOfGauge(): ?bool
+    public function getChangeOfGauge(): bool
     {
         return $this->changeOfGauge;
     }
 
     /**
-     * Used to specify a change of gauge of flight.
+     * 'ChangeOfGauge' is used to specify whether a change happened in the gauge of flight.
      *
      * @param bool $changeOfGauge
      *
      * @return self
      */
-    public function setChangeOfGauge(?bool $changeOfGauge): self
+    public function setChangeOfGauge(bool $changeOfGauge): self
     {
         $this->changeOfGauge = $changeOfGauge;
 
@@ -104,7 +105,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
      *
      * @return string
      */
-    public function getNameNumber(): ?string
+    public function getNameNumber(): string
     {
         return $this->nameNumber;
     }
@@ -116,7 +117,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
      *
      * @return self
      */
-    public function setNameNumber(?string $nameNumber): self
+    public function setNameNumber(string $nameNumber): self
     {
         $this->nameNumber = $nameNumber;
 
@@ -128,7 +129,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
      *
      * @return string
      */
-    public function getNumber(): ?string
+    public function getNumber(): string
     {
         return $this->number;
     }
@@ -140,7 +141,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
      *
      * @return self
      */
-    public function setNumber(?string $number): self
+    public function setNumber(string $number): self
     {
         $this->number = $number;
 
@@ -148,23 +149,25 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     }
 
     /**
-     * Used to specify a seat preference. Preference cannot combine with Number.
+     * Used to specify a seat preference.
+     * Seat preference cannot be combined with seat number.
      *
      * @return string
      */
-    public function getPreference(): ?string
+    public function getPreference(): string
     {
         return $this->preference;
     }
 
     /**
-     * Used to specify a seat preference. Preference cannot combine with Number.
+     * Used to specify a seat preference.
+     * Seat preference cannot be combined with seat number.
      *
      * @param string $preference
      *
      * @return self
      */
-    public function setPreference(?string $preference): self
+    public function setPreference(string $preference): self
     {
         $this->preference = $preference;
 
@@ -172,23 +175,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     }
 
     /**
-     * Used to specify a segment number.
+     * 'SegmentNumber' is used to specify the number of the segment.
      *
      * @return string
      */
-    public function getSegmentNumber(): ?string
+    public function getSegmentNumber(): string
     {
         return $this->segmentNumber;
     }
 
     /**
-     * Used to specify a segment number.
+     * 'SegmentNumber' is used to specify the number of the segment.
      *
      * @param string $segmentNumber
      *
      * @return self
      */
-    public function setSegmentNumber(?string $segmentNumber): self
+    public function setSegmentNumber(string $segmentNumber): self
     {
         $this->segmentNumber = $segmentNumber;
 

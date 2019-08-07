@@ -15,30 +15,30 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSourceTPAExtensionsUserInfoStation extends AbstractModel
 {
     /**
-     * User Station.
+     * The user station.
      *
      * @var int
      */
     protected $code;
 
     /**
-     * User Station.
+     * The user station.
      *
      * @return int
      */
-    public function getCode(): ?int
+    public function getCode(): int
     {
         return $this->code;
     }
 
     /**
-     * User Station.
+     * The user station.
      *
      * @param int $code
      *
      * @return self
      */
-    public function setCode(?int $code): self
+    public function setCode(int $code): self
     {
         $this->code = $code;
 

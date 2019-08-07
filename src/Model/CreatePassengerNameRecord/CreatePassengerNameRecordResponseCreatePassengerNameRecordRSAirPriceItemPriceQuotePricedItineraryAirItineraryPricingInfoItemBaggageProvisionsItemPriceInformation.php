@@ -15,48 +15,48 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemPriceInformation extends AbstractModel
 {
     /**
-     * Base amount.
+     * The base amount.
      *
      * @var CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemPriceInformationBase
      */
     protected $base;
     /**
-     * Equivalent amount.
+     * The equivalent amount.
      *
      * @var CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemPriceInformationEquiv
      */
     protected $equiv;
     /**
-     * Tax indicator.
+     * The tax indicator.
      *
      * @var string
      */
     protected $taxIndicator;
     /**
-     * Total.
+     * The total price information.
      *
      * @var string
      */
     protected $total;
 
     /**
-     * Base amount.
+     * The base amount.
      *
      * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemPriceInformationBase
      */
-    public function getBase(): ?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemPriceInformationBase
+    public function getBase(): CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemPriceInformationBase
     {
         return $this->base;
     }
 
     /**
-     * Base amount.
+     * The base amount.
      *
      * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemPriceInformationBase $base
      *
      * @return self
      */
-    public function setBase(?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemPriceInformationBase $base): self
+    public function setBase(CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemPriceInformationBase $base): self
     {
         $this->base = $base;
 
@@ -64,23 +64,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     }
 
     /**
-     * Equivalent amount.
+     * The equivalent amount.
      *
      * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemPriceInformationEquiv
      */
-    public function getEquiv(): ?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemPriceInformationEquiv
+    public function getEquiv(): CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemPriceInformationEquiv
     {
         return $this->equiv;
     }
 
     /**
-     * Equivalent amount.
+     * The equivalent amount.
      *
      * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemPriceInformationEquiv $equiv
      *
      * @return self
      */
-    public function setEquiv(?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemPriceInformationEquiv $equiv): self
+    public function setEquiv(CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemPriceInformationEquiv $equiv): self
     {
         $this->equiv = $equiv;
 
@@ -88,23 +88,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     }
 
     /**
-     * Tax indicator.
+     * The tax indicator.
      *
      * @return string
      */
-    public function getTaxIndicator(): ?string
+    public function getTaxIndicator(): string
     {
         return $this->taxIndicator;
     }
 
     /**
-     * Tax indicator.
+     * The tax indicator.
      *
      * @param string $taxIndicator
      *
      * @return self
      */
-    public function setTaxIndicator(?string $taxIndicator): self
+    public function setTaxIndicator(string $taxIndicator): self
     {
         $this->taxIndicator = $taxIndicator;
 
@@ -112,23 +112,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     }
 
     /**
-     * Total.
+     * The total price information.
      *
      * @return string
      */
-    public function getTotal(): ?string
+    public function getTotal(): string
     {
         return $this->total;
     }
 
     /**
-     * Total.
+     * The total price information.
      *
      * @param string $total
      *
      * @return self
      */
-    public function setTotal(?string $total): self
+    public function setTotal(string $total): self
     {
         $this->total = $total;
 

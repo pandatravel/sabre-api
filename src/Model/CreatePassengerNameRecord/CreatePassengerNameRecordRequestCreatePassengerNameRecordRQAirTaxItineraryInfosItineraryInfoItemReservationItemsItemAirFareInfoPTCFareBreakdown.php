@@ -15,42 +15,42 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemAirFareInfoPTCFareBreakdown extends AbstractModel
 {
     /**
-     * FareBasisCode information is needed for YQ/YR tax information.
+     * The 'FareBasisCode' information is needed for YQ/YR tax information.
      *
      * @var string
      */
     protected $fareBasisCode;
     /**
-     * Passenger Fare.
+     * The passenger fare.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemAirFareInfoPTCFareBreakdownPassengerFare
      */
     protected $passengerFare;
     /**
-     * Passenger information.
+     * The passenger information.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemAirFareInfoPTCFareBreakdownPassengerType
      */
     protected $passengerType;
 
     /**
-     * FareBasisCode information is needed for YQ/YR tax information.
+     * The 'FareBasisCode' information is needed for YQ/YR tax information.
      *
      * @return string
      */
-    public function getFareBasisCode(): ?string
+    public function getFareBasisCode(): string
     {
         return $this->fareBasisCode;
     }
 
     /**
-     * FareBasisCode information is needed for YQ/YR tax information.
+     * The 'FareBasisCode' information is needed for YQ/YR tax information.
      *
      * @param string $fareBasisCode
      *
      * @return self
      */
-    public function setFareBasisCode(?string $fareBasisCode): self
+    public function setFareBasisCode(string $fareBasisCode): self
     {
         $this->fareBasisCode = $fareBasisCode;
 
@@ -58,23 +58,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItinerary
     }
 
     /**
-     * Passenger Fare.
+     * The passenger fare.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemAirFareInfoPTCFareBreakdownPassengerFare
      */
-    public function getPassengerFare(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemAirFareInfoPTCFareBreakdownPassengerFare
+    public function getPassengerFare(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemAirFareInfoPTCFareBreakdownPassengerFare
     {
         return $this->passengerFare;
     }
 
     /**
-     * Passenger Fare.
+     * The passenger fare.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemAirFareInfoPTCFareBreakdownPassengerFare $passengerFare
      *
      * @return self
      */
-    public function setPassengerFare(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemAirFareInfoPTCFareBreakdownPassengerFare $passengerFare): self
+    public function setPassengerFare(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemAirFareInfoPTCFareBreakdownPassengerFare $passengerFare): self
     {
         $this->passengerFare = $passengerFare;
 
@@ -82,23 +82,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItinerary
     }
 
     /**
-     * Passenger information.
+     * The passenger information.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemAirFareInfoPTCFareBreakdownPassengerType
      */
-    public function getPassengerType(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemAirFareInfoPTCFareBreakdownPassengerType
+    public function getPassengerType(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemAirFareInfoPTCFareBreakdownPassengerType
     {
         return $this->passengerType;
     }
 
     /**
-     * Passenger information.
+     * The passenger information.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemAirFareInfoPTCFareBreakdownPassengerType $passengerType
      *
      * @return self
      */
-    public function setPassengerType(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemAirFareInfoPTCFareBreakdownPassengerType $passengerType): self
+    public function setPassengerType(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemAirFareInfoPTCFareBreakdownPassengerType $passengerType): self
     {
         $this->passengerType = $passengerType;
 

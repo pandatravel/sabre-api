@@ -27,13 +27,13 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
      */
     protected $code;
     /**
-     * Used to specify a segment number.
+     * 'SegmentNumber' is used to specify the number of the segment that the remark refers to.
      *
      * @var string
      */
     protected $segmentNumber;
     /**
-     * Used to specify the type of remark. Acceptable values are: Alpha-Coded, Client Address, Corporate, Delivery Address, General, Group Name, Hidden, Historical, Invoice, or Itinerary.
+     * Used to specify the remark type.
      *
      * @var string
      */
@@ -44,7 +44,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
      *
      * @return string
      */
-    public function getText(): ?string
+    public function getText(): string
     {
         return $this->text;
     }
@@ -56,7 +56,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
      *
      * @return self
      */
-    public function setText(?string $text): self
+    public function setText(string $text): self
     {
         $this->text = $text;
 
@@ -68,7 +68,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
      *
      * @return string
      */
-    public function getCode(): ?string
+    public function getCode(): string
     {
         return $this->code;
     }
@@ -80,7 +80,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
      *
      * @return self
      */
-    public function setCode(?string $code): self
+    public function setCode(string $code): self
     {
         $this->code = $code;
 
@@ -88,23 +88,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     }
 
     /**
-     * Used to specify a segment number.
+     * 'SegmentNumber' is used to specify the number of the segment that the remark refers to.
      *
      * @return string
      */
-    public function getSegmentNumber(): ?string
+    public function getSegmentNumber(): string
     {
         return $this->segmentNumber;
     }
 
     /**
-     * Used to specify a segment number.
+     * 'SegmentNumber' is used to specify the number of the segment that the remark refers to.
      *
      * @param string $segmentNumber
      *
      * @return self
      */
-    public function setSegmentNumber(?string $segmentNumber): self
+    public function setSegmentNumber(string $segmentNumber): self
     {
         $this->segmentNumber = $segmentNumber;
 
@@ -112,23 +112,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     }
 
     /**
-     * Used to specify the type of remark. Acceptable values are: Alpha-Coded, Client Address, Corporate, Delivery Address, General, Group Name, Hidden, Historical, Invoice, or Itinerary.
+     * Used to specify the remark type.
      *
      * @return string
      */
-    public function getType(): ?string
+    public function getType(): string
     {
         return $this->type;
     }
 
     /**
-     * Used to specify the type of remark. Acceptable values are: Alpha-Coded, Client Address, Corporate, Delivery Address, General, Group Name, Hidden, Historical, Invoice, or Itinerary.
+     * Used to specify the remark type.
      *
      * @param string $type
      *
      * @return self
      */
-    public function setType(?string $type): self
+    public function setType(string $type): self
     {
         $this->type = $type;
 

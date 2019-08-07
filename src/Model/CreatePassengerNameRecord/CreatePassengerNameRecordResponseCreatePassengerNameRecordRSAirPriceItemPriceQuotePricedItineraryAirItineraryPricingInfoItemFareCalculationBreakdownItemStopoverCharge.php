@@ -15,7 +15,7 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemFareCalculationBreakdownItemStopoverCharge extends AbstractModel
 {
     /**
-     * Used to indicate Stopover charge if applicable.
+     * The stopover charge indicator.
      *
      * @var string
      */
@@ -27,36 +27,36 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
      */
     protected $citySpecificStopoverCharge;
     /**
-     * Used to indicate Transfer charge if applicable.
+     * The transfer charge indicator.
      *
      * @var string
      */
     protected $transferChargeInd;
     /**
-     * Used to return transfer charge information.
+     * The transfer charge.
      *
      * @var string
      */
     protected $transferCharge;
 
     /**
-     * Used to indicate Stopover charge if applicable.
+     * The stopover charge indicator.
      *
      * @return string
      */
-    public function getInd(): ?string
+    public function getInd(): string
     {
         return $this->ind;
     }
 
     /**
-     * Used to indicate Stopover charge if applicable.
+     * The stopover charge indicator.
      *
      * @param string $ind
      *
      * @return self
      */
-    public function setInd(?string $ind): self
+    public function setInd(string $ind): self
     {
         $this->ind = $ind;
 
@@ -68,7 +68,7 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
      *
      * @return string
      */
-    public function getCitySpecificStopoverCharge(): ?string
+    public function getCitySpecificStopoverCharge(): string
     {
         return $this->citySpecificStopoverCharge;
     }
@@ -80,7 +80,7 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
      *
      * @return self
      */
-    public function setCitySpecificStopoverCharge(?string $citySpecificStopoverCharge): self
+    public function setCitySpecificStopoverCharge(string $citySpecificStopoverCharge): self
     {
         $this->citySpecificStopoverCharge = $citySpecificStopoverCharge;
 
@@ -88,23 +88,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     }
 
     /**
-     * Used to indicate Transfer charge if applicable.
+     * The transfer charge indicator.
      *
      * @return string
      */
-    public function getTransferChargeInd(): ?string
+    public function getTransferChargeInd(): string
     {
         return $this->transferChargeInd;
     }
 
     /**
-     * Used to indicate Transfer charge if applicable.
+     * The transfer charge indicator.
      *
      * @param string $transferChargeInd
      *
      * @return self
      */
-    public function setTransferChargeInd(?string $transferChargeInd): self
+    public function setTransferChargeInd(string $transferChargeInd): self
     {
         $this->transferChargeInd = $transferChargeInd;
 
@@ -112,23 +112,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     }
 
     /**
-     * Used to return transfer charge information.
+     * The transfer charge.
      *
      * @return string
      */
-    public function getTransferCharge(): ?string
+    public function getTransferCharge(): string
     {
         return $this->transferCharge;
     }
 
     /**
-     * Used to return transfer charge information.
+     * The transfer charge.
      *
      * @param string $transferCharge
      *
      * @return self
      */
-    public function setTransferCharge(?string $transferCharge): self
+    public function setTransferCharge(string $transferCharge): self
     {
         $this->transferCharge = $transferCharge;
 

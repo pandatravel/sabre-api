@@ -15,66 +15,69 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoCustomerInfo extends AbstractModel
 {
     /**
-     * Used to pass passenger contact numbers.
+     * Used to pass the passenger contact numbers.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoCustomerInfoContactNumbers
      */
     protected $contactNumbers;
     /**
-     * Used to pass corporate ID into the record if applicable. Cannot combine with any other qualifier.
+     * 'Corporate' is used to specify that the type of the journey is corporate, i.e. through a corporation.
+     * It cannot be combined with any other qualifier.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoCustomerInfoCorporate
      */
     protected $corporate;
     /**
-     * Used to pass the credit card billing information. Please note that .../BillingInformation and .../PreferredCustomer are mutually exclusive.
+     * 'CreditCardData' is used to pass the credit card billing information.
+     * Please note that .../BillingInformation and .../PreferredCustomer are mutually exclusive.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoCustomerInfoCreditCardData
      */
     protected $creditCardData;
     /**
-     * Used to pass frequent flyer number information.
+     * Used to pass the frequent flyer number information.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoCustomerInfoCustLoyaltyItem[]
      */
     protected $custLoyalty;
     /**
-     * Used to add a customer number into the record if applicable. Please note that this qualifier is not applicable to Sabre Sonic Res-based clients.
+     * Used to add a customer number into the record.
+     * Please note that this qualifier is not applicable to Sabre Sonic Res-based clients.
      *
      * @var string
      */
     protected $customerIdentifier;
     /**
-     * Used to pass e-mail details.
+     * Used to pass the e-mail details.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoCustomerInfoEmailItem[]
      */
     protected $email;
     /**
-     * Used to add passenger names.
+     * Used to add the passenger names.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoCustomerInfoPersonNameItem[]
      */
     protected $personName;
 
     /**
-     * Used to pass passenger contact numbers.
+     * Used to pass the passenger contact numbers.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoCustomerInfoContactNumbers
      */
-    public function getContactNumbers(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoCustomerInfoContactNumbers
+    public function getContactNumbers(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoCustomerInfoContactNumbers
     {
         return $this->contactNumbers;
     }
 
     /**
-     * Used to pass passenger contact numbers.
+     * Used to pass the passenger contact numbers.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoCustomerInfoContactNumbers $contactNumbers
      *
      * @return self
      */
-    public function setContactNumbers(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoCustomerInfoContactNumbers $contactNumbers): self
+    public function setContactNumbers(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoCustomerInfoContactNumbers $contactNumbers): self
     {
         $this->contactNumbers = $contactNumbers;
 
@@ -82,23 +85,25 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
     }
 
     /**
-     * Used to pass corporate ID into the record if applicable. Cannot combine with any other qualifier.
+     * 'Corporate' is used to specify that the type of the journey is corporate, i.e. through a corporation.
+     * It cannot be combined with any other qualifier.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoCustomerInfoCorporate
      */
-    public function getCorporate(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoCustomerInfoCorporate
+    public function getCorporate(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoCustomerInfoCorporate
     {
         return $this->corporate;
     }
 
     /**
-     * Used to pass corporate ID into the record if applicable. Cannot combine with any other qualifier.
+     * 'Corporate' is used to specify that the type of the journey is corporate, i.e. through a corporation.
+     * It cannot be combined with any other qualifier.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoCustomerInfoCorporate $corporate
      *
      * @return self
      */
-    public function setCorporate(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoCustomerInfoCorporate $corporate): self
+    public function setCorporate(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoCustomerInfoCorporate $corporate): self
     {
         $this->corporate = $corporate;
 
@@ -106,23 +111,25 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
     }
 
     /**
-     * Used to pass the credit card billing information. Please note that .../BillingInformation and .../PreferredCustomer are mutually exclusive.
+     * 'CreditCardData' is used to pass the credit card billing information.
+     * Please note that .../BillingInformation and .../PreferredCustomer are mutually exclusive.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoCustomerInfoCreditCardData
      */
-    public function getCreditCardData(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoCustomerInfoCreditCardData
+    public function getCreditCardData(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoCustomerInfoCreditCardData
     {
         return $this->creditCardData;
     }
 
     /**
-     * Used to pass the credit card billing information. Please note that .../BillingInformation and .../PreferredCustomer are mutually exclusive.
+     * 'CreditCardData' is used to pass the credit card billing information.
+     * Please note that .../BillingInformation and .../PreferredCustomer are mutually exclusive.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoCustomerInfoCreditCardData $creditCardData
      *
      * @return self
      */
-    public function setCreditCardData(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoCustomerInfoCreditCardData $creditCardData): self
+    public function setCreditCardData(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoCustomerInfoCreditCardData $creditCardData): self
     {
         $this->creditCardData = $creditCardData;
 
@@ -130,23 +137,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
     }
 
     /**
-     * Used to pass frequent flyer number information.
+     * Used to pass the frequent flyer number information.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoCustomerInfoCustLoyaltyItem[]
      */
-    public function getCustLoyalty(): ?array
+    public function getCustLoyalty(): array
     {
         return $this->custLoyalty;
     }
 
     /**
-     * Used to pass frequent flyer number information.
+     * Used to pass the frequent flyer number information.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoCustomerInfoCustLoyaltyItem[] $custLoyalty
      *
      * @return self
      */
-    public function setCustLoyalty(?array $custLoyalty): self
+    public function setCustLoyalty(array $custLoyalty): self
     {
         $this->custLoyalty = $custLoyalty;
 
@@ -154,23 +161,25 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
     }
 
     /**
-     * Used to add a customer number into the record if applicable. Please note that this qualifier is not applicable to Sabre Sonic Res-based clients.
+     * Used to add a customer number into the record.
+     * Please note that this qualifier is not applicable to Sabre Sonic Res-based clients.
      *
      * @return string
      */
-    public function getCustomerIdentifier(): ?string
+    public function getCustomerIdentifier(): string
     {
         return $this->customerIdentifier;
     }
 
     /**
-     * Used to add a customer number into the record if applicable. Please note that this qualifier is not applicable to Sabre Sonic Res-based clients.
+     * Used to add a customer number into the record.
+     * Please note that this qualifier is not applicable to Sabre Sonic Res-based clients.
      *
      * @param string $customerIdentifier
      *
      * @return self
      */
-    public function setCustomerIdentifier(?string $customerIdentifier): self
+    public function setCustomerIdentifier(string $customerIdentifier): self
     {
         $this->customerIdentifier = $customerIdentifier;
 
@@ -178,23 +187,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
     }
 
     /**
-     * Used to pass e-mail details.
+     * Used to pass the e-mail details.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoCustomerInfoEmailItem[]
      */
-    public function getEmail(): ?array
+    public function getEmail(): array
     {
         return $this->email;
     }
 
     /**
-     * Used to pass e-mail details.
+     * Used to pass the e-mail details.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoCustomerInfoEmailItem[] $email
      *
      * @return self
      */
-    public function setEmail(?array $email): self
+    public function setEmail(array $email): self
     {
         $this->email = $email;
 
@@ -202,23 +211,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
     }
 
     /**
-     * Used to add passenger names.
+     * Used to add the passenger names.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoCustomerInfoPersonNameItem[]
      */
-    public function getPersonName(): ?array
+    public function getPersonName(): array
     {
         return $this->personName;
     }
 
     /**
-     * Used to add passenger names.
+     * Used to add the passenger names.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoCustomerInfoPersonNameItem[] $personName
      *
      * @return self
      */
-    public function setPersonName(?array $personName): self
+    public function setPersonName(array $personName): self
     {
         $this->personName = $personName;
 

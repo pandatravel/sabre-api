@@ -15,42 +15,42 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentPaymentCardPhone extends AbstractModel
 {
     /**
-     * Phone use type.
+     * The phone use type.
      *
      * @var string
      */
     protected $phoneUseType;
     /**
-     * Phone country code.
+     * The phone country code.
      *
      * @var string
      */
     protected $phoneCountryCode;
     /**
-     * Phone number.
+     * The phone number.
      *
      * @var string
      */
     protected $phoneNumber;
 
     /**
-     * Phone use type.
+     * The phone use type.
      *
      * @return string
      */
-    public function getPhoneUseType(): ?string
+    public function getPhoneUseType(): string
     {
         return $this->phoneUseType;
     }
 
     /**
-     * Phone use type.
+     * The phone use type.
      *
      * @param string $phoneUseType
      *
      * @return self
      */
-    public function setPhoneUseType(?string $phoneUseType): self
+    public function setPhoneUseType(string $phoneUseType): self
     {
         $this->phoneUseType = $phoneUseType;
 
@@ -58,23 +58,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymen
     }
 
     /**
-     * Phone country code.
+     * The phone country code.
      *
      * @return string
      */
-    public function getPhoneCountryCode(): ?string
+    public function getPhoneCountryCode(): string
     {
         return $this->phoneCountryCode;
     }
 
     /**
-     * Phone country code.
+     * The phone country code.
      *
      * @param string $phoneCountryCode
      *
      * @return self
      */
-    public function setPhoneCountryCode(?string $phoneCountryCode): self
+    public function setPhoneCountryCode(string $phoneCountryCode): self
     {
         $this->phoneCountryCode = $phoneCountryCode;
 
@@ -82,23 +82,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymen
     }
 
     /**
-     * Phone number.
+     * The phone number.
      *
      * @return string
      */
-    public function getPhoneNumber(): ?string
+    public function getPhoneNumber(): string
     {
         return $this->phoneNumber;
     }
 
     /**
-     * Phone number.
+     * The phone number.
      *
      * @param string $phoneNumber
      *
      * @return self
      */
-    public function setPhoneNumber(?string $phoneNumber): self
+    public function setPhoneNumber(string $phoneNumber): self
     {
         $this->phoneNumber = $phoneNumber;
 

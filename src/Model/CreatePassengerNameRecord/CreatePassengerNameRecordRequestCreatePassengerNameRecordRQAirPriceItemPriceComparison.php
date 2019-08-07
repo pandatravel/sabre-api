@@ -38,7 +38,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceComparisonAcceptablePriceIncrease
      */
-    public function getAcceptablePriceIncrease(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceComparisonAcceptablePriceIncrease
+    public function getAcceptablePriceIncrease(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceComparisonAcceptablePriceIncrease
     {
         return $this->acceptablePriceIncrease;
     }
@@ -50,7 +50,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return self
      */
-    public function setAcceptablePriceIncrease(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceComparisonAcceptablePriceIncrease $acceptablePriceIncrease): self
+    public function setAcceptablePriceIncrease(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceComparisonAcceptablePriceIncrease $acceptablePriceIncrease): self
     {
         $this->acceptablePriceIncrease = $acceptablePriceIncrease;
 
@@ -62,7 +62,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceComparisonAcceptablePriceDecrease
      */
-    public function getAcceptablePriceDecrease(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceComparisonAcceptablePriceDecrease
+    public function getAcceptablePriceDecrease(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceComparisonAcceptablePriceDecrease
     {
         return $this->acceptablePriceDecrease;
     }
@@ -74,7 +74,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return self
      */
-    public function setAcceptablePriceDecrease(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceComparisonAcceptablePriceDecrease $acceptablePriceDecrease): self
+    public function setAcceptablePriceDecrease(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceComparisonAcceptablePriceDecrease $acceptablePriceDecrease): self
     {
         $this->acceptablePriceDecrease = $acceptablePriceDecrease;
 
@@ -86,7 +86,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return float
      */
-    public function getAmountSpecified(): ?float
+    public function getAmountSpecified(): float
     {
         return $this->amountSpecified;
     }
@@ -98,7 +98,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return self
      */
-    public function setAmountSpecified(?float $amountSpecified): self
+    public function setAmountSpecified(float $amountSpecified): self
     {
         $this->amountSpecified = $amountSpecified;
 

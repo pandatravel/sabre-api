@@ -15,30 +15,30 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingQueuePlaceQueueInfoUniqueIDItem extends AbstractModel
 {
     /**
-     * This attribute is not in use.
+     * This element is not used by this API.
      *
      * @var string
      */
     protected $iD;
 
     /**
-     * This attribute is not in use.
+     * This element is not used by this API.
      *
      * @return string
      */
-    public function getID(): ?string
+    public function getID(): string
     {
         return $this->iD;
     }
 
     /**
-     * This attribute is not in use.
+     * This element is not used by this API.
      *
      * @param string $iD
      *
      * @return self
      */
-    public function setID(?string $iD): self
+    public function setID(string $iD): self
     {
         $this->iD = $iD;
 

@@ -15,30 +15,30 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItemEquipment extends AbstractModel
 {
     /**
-     * Machine type code.
+     * The airplane equipment type.
      *
      * @var string
      */
     protected $airEquipType;
 
     /**
-     * Machine type code.
+     * The airplane equipment type.
      *
      * @return string
      */
-    public function getAirEquipType(): ?string
+    public function getAirEquipType(): string
     {
         return $this->airEquipType;
     }
 
     /**
-     * Machine type code.
+     * The airplane equipment type.
      *
      * @param string $airEquipType
      *
      * @return self
      */
-    public function setAirEquipType(?string $airEquipType): self
+    public function setAirEquipType(string $airEquipType): self
     {
         $this->airEquipType = $airEquipType;
 

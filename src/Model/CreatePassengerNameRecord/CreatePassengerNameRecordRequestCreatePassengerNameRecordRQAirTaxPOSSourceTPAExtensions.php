@@ -15,30 +15,30 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSourceTPAExtensions extends AbstractModel
 {
     /**
-     * Additional POS details.
+     * The additional POS details.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSourceTPAExtensionsUserInfo
      */
     protected $userInfo;
 
     /**
-     * Additional POS details.
+     * The additional POS details.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSourceTPAExtensionsUserInfo
      */
-    public function getUserInfo(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSourceTPAExtensionsUserInfo
+    public function getUserInfo(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSourceTPAExtensionsUserInfo
     {
         return $this->userInfo;
     }
 
     /**
-     * Additional POS details.
+     * The additional POS details.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSourceTPAExtensionsUserInfo $userInfo
      *
      * @return self
      */
-    public function setUserInfo(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSourceTPAExtensionsUserInfo $userInfo): self
+    public function setUserInfo(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSourceTPAExtensionsUserInfo $userInfo): self
     {
         $this->userInfo = $userInfo;
 

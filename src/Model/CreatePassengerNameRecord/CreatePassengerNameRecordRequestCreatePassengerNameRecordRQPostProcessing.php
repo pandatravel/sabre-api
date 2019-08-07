@@ -15,7 +15,8 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessing extends AbstractModel
 {
     /**
-     * Used to add arrival unknown segments into a passenger name record. The system will properly apply them so there is no need to segment select, etc...
+     * Used to add arrival unknown segments into a passenger name record.
+     * The system will properly apply them so there is no need to segment select, etc.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingARUNK
      */
@@ -27,52 +28,61 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessing 
      */
     protected $queuePlace;
     /**
-     * Used to finalize the transaction and commit the record.
+     * Used to finalize the transaction and commit the passenger name record.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransaction
      */
     protected $endTransaction;
     /**
-     * Used to specify wait interval to validate whether after booking is ended code share flights keep the holding confirmed status. If the "HK" status changes for any of the flight segments the service will pass corresponding warning message. The maximum time that can be set is 60 seconds. "PostBookingHKValidation" must be combined with .../PostProcessing/@RedisplayReservation="true".
+     * 'PostBookingHKValidation' is used to validate whether after the booking is ended, codeshare flights keep the holding confirmed status or not.
+     * If the 'HK' status changes for any of the flight segments, the service will send a warning message.
+     * 'PostBookingHKValidation' must be combined with 'PostProcessing.RedisplayReservation'='true'.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingPostBookingHKValidation
      */
     protected $postBookingHKValidation;
     /**
-     * Used to specify wait interval to wait for airline record locators to be returned. If the locators are not returned after the specified interval and number of attempts service will pass corresponding warning message. "WaitForAirlineRecLoc" must be combined with .../PostProcessing/@RedisplayReservation="true".
+     * 'WaitForAirlineRecLoc' is used to check, whether the airline record locators have been returned by Air segment providers.
+     * If one or more locators are not returned after the specified interval and number of attempts, the service will send a warning message.
+     * 'WaitForAirlineRecLoc' must be combined with 'PostProcessing.RedisplayReservation'='true'.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingWaitForAirlineRecLoc
      */
     protected $waitForAirlineRecLoc;
     /**
+     * 'RedisplayReservation' object is used to indicate whether or not to re-display the PNR.
+     *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingRedisplayReservation
      */
     protected $redisplayReservation;
     /**
-     * Used to unmask credit card information in the TIR response. Please note that this attribute has effect only if a user has EPR keyword CCVIEW.
+     * 'UnmaskCreditCard' is used to unmask credit card information in the TIR response.
+     * Please note that this attribute has an effect only if the user has the EPR keyword CCVIEW.
      *
      * @var bool
      */
     protected $unmaskCreditCard;
 
     /**
-     * Used to add arrival unknown segments into a passenger name record. The system will properly apply them so there is no need to segment select, etc...
+     * Used to add arrival unknown segments into a passenger name record.
+     * The system will properly apply them so there is no need to segment select, etc.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingARUNK
      */
-    public function getARUNK(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingARUNK
+    public function getARUNK(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingARUNK
     {
         return $this->aRUNK;
     }
 
     /**
-     * Used to add arrival unknown segments into a passenger name record. The system will properly apply them so there is no need to segment select, etc...
+     * Used to add arrival unknown segments into a passenger name record.
+     * The system will properly apply them so there is no need to segment select, etc.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingARUNK $aRUNK
      *
      * @return self
      */
-    public function setARUNK(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingARUNK $aRUNK): self
+    public function setARUNK(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingARUNK $aRUNK): self
     {
         $this->aRUNK = $aRUNK;
 
@@ -84,7 +94,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessing 
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingQueuePlace
      */
-    public function getQueuePlace(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingQueuePlace
+    public function getQueuePlace(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingQueuePlace
     {
         return $this->queuePlace;
     }
@@ -96,7 +106,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessing 
      *
      * @return self
      */
-    public function setQueuePlace(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingQueuePlace $queuePlace): self
+    public function setQueuePlace(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingQueuePlace $queuePlace): self
     {
         $this->queuePlace = $queuePlace;
 
@@ -104,23 +114,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessing 
     }
 
     /**
-     * Used to finalize the transaction and commit the record.
+     * Used to finalize the transaction and commit the passenger name record.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransaction
      */
-    public function getEndTransaction(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransaction
+    public function getEndTransaction(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransaction
     {
         return $this->endTransaction;
     }
 
     /**
-     * Used to finalize the transaction and commit the record.
+     * Used to finalize the transaction and commit the passenger name record.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransaction $endTransaction
      *
      * @return self
      */
-    public function setEndTransaction(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransaction $endTransaction): self
+    public function setEndTransaction(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransaction $endTransaction): self
     {
         $this->endTransaction = $endTransaction;
 
@@ -128,23 +138,27 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessing 
     }
 
     /**
-     * Used to specify wait interval to validate whether after booking is ended code share flights keep the holding confirmed status. If the "HK" status changes for any of the flight segments the service will pass corresponding warning message. The maximum time that can be set is 60 seconds. "PostBookingHKValidation" must be combined with .../PostProcessing/@RedisplayReservation="true".
+     * 'PostBookingHKValidation' is used to validate whether after the booking is ended, codeshare flights keep the holding confirmed status or not.
+     * If the 'HK' status changes for any of the flight segments, the service will send a warning message.
+     * 'PostBookingHKValidation' must be combined with 'PostProcessing.RedisplayReservation'='true'.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingPostBookingHKValidation
      */
-    public function getPostBookingHKValidation(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingPostBookingHKValidation
+    public function getPostBookingHKValidation(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingPostBookingHKValidation
     {
         return $this->postBookingHKValidation;
     }
 
     /**
-     * Used to specify wait interval to validate whether after booking is ended code share flights keep the holding confirmed status. If the "HK" status changes for any of the flight segments the service will pass corresponding warning message. The maximum time that can be set is 60 seconds. "PostBookingHKValidation" must be combined with .../PostProcessing/@RedisplayReservation="true".
+     * 'PostBookingHKValidation' is used to validate whether after the booking is ended, codeshare flights keep the holding confirmed status or not.
+     * If the 'HK' status changes for any of the flight segments, the service will send a warning message.
+     * 'PostBookingHKValidation' must be combined with 'PostProcessing.RedisplayReservation'='true'.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingPostBookingHKValidation $postBookingHKValidation
      *
      * @return self
      */
-    public function setPostBookingHKValidation(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingPostBookingHKValidation $postBookingHKValidation): self
+    public function setPostBookingHKValidation(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingPostBookingHKValidation $postBookingHKValidation): self
     {
         $this->postBookingHKValidation = $postBookingHKValidation;
 
@@ -152,23 +166,27 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessing 
     }
 
     /**
-     * Used to specify wait interval to wait for airline record locators to be returned. If the locators are not returned after the specified interval and number of attempts service will pass corresponding warning message. "WaitForAirlineRecLoc" must be combined with .../PostProcessing/@RedisplayReservation="true".
+     * 'WaitForAirlineRecLoc' is used to check, whether the airline record locators have been returned by Air segment providers.
+     * If one or more locators are not returned after the specified interval and number of attempts, the service will send a warning message.
+     * 'WaitForAirlineRecLoc' must be combined with 'PostProcessing.RedisplayReservation'='true'.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingWaitForAirlineRecLoc
      */
-    public function getWaitForAirlineRecLoc(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingWaitForAirlineRecLoc
+    public function getWaitForAirlineRecLoc(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingWaitForAirlineRecLoc
     {
         return $this->waitForAirlineRecLoc;
     }
 
     /**
-     * Used to specify wait interval to wait for airline record locators to be returned. If the locators are not returned after the specified interval and number of attempts service will pass corresponding warning message. "WaitForAirlineRecLoc" must be combined with .../PostProcessing/@RedisplayReservation="true".
+     * 'WaitForAirlineRecLoc' is used to check, whether the airline record locators have been returned by Air segment providers.
+     * If one or more locators are not returned after the specified interval and number of attempts, the service will send a warning message.
+     * 'WaitForAirlineRecLoc' must be combined with 'PostProcessing.RedisplayReservation'='true'.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingWaitForAirlineRecLoc $waitForAirlineRecLoc
      *
      * @return self
      */
-    public function setWaitForAirlineRecLoc(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingWaitForAirlineRecLoc $waitForAirlineRecLoc): self
+    public function setWaitForAirlineRecLoc(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingWaitForAirlineRecLoc $waitForAirlineRecLoc): self
     {
         $this->waitForAirlineRecLoc = $waitForAirlineRecLoc;
 
@@ -176,19 +194,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessing 
     }
 
     /**
+     * 'RedisplayReservation' object is used to indicate whether or not to re-display the PNR.
+     *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingRedisplayReservation
      */
-    public function getRedisplayReservation(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingRedisplayReservation
+    public function getRedisplayReservation(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingRedisplayReservation
     {
         return $this->redisplayReservation;
     }
 
     /**
+     * 'RedisplayReservation' object is used to indicate whether or not to re-display the PNR.
+     *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingRedisplayReservation $redisplayReservation
      *
      * @return self
      */
-    public function setRedisplayReservation(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingRedisplayReservation $redisplayReservation): self
+    public function setRedisplayReservation(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingRedisplayReservation $redisplayReservation): self
     {
         $this->redisplayReservation = $redisplayReservation;
 
@@ -196,23 +218,25 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessing 
     }
 
     /**
-     * Used to unmask credit card information in the TIR response. Please note that this attribute has effect only if a user has EPR keyword CCVIEW.
+     * 'UnmaskCreditCard' is used to unmask credit card information in the TIR response.
+     * Please note that this attribute has an effect only if the user has the EPR keyword CCVIEW.
      *
      * @return bool
      */
-    public function getUnmaskCreditCard(): ?bool
+    public function getUnmaskCreditCard(): bool
     {
         return $this->unmaskCreditCard;
     }
 
     /**
-     * Used to unmask credit card information in the TIR response. Please note that this attribute has effect only if a user has EPR keyword CCVIEW.
+     * 'UnmaskCreditCard' is used to unmask credit card information in the TIR response.
+     * Please note that this attribute has an effect only if the user has the EPR keyword CCVIEW.
      *
      * @param bool $unmaskCreditCard
      *
      * @return self
      */
-    public function setUnmaskCreditCard(?bool $unmaskCreditCard): self
+    public function setUnmaskCreditCard(bool $unmaskCreditCard): self
     {
         $this->unmaskCreditCard = $unmaskCreditCard;
 

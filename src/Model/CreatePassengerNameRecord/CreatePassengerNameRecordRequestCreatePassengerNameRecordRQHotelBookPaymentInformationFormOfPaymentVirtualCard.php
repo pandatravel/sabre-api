@@ -15,30 +15,30 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentVirtualCard extends AbstractModel
 {
     /**
-     * Customer account code.
+     * The customer account code.
      *
      * @var string
      */
     protected $customerAccountCode;
 
     /**
-     * Customer account code.
+     * The customer account code.
      *
      * @return string
      */
-    public function getCustomerAccountCode(): ?string
+    public function getCustomerAccountCode(): string
     {
         return $this->customerAccountCode;
     }
 
     /**
-     * Customer account code.
+     * The customer account code.
      *
      * @param string $customerAccountCode
      *
      * @return self
      */
-    public function setCustomerAccountCode(?string $customerAccountCode): self
+    public function setCustomerAccountCode(string $customerAccountCode): self
     {
         $this->customerAccountCode = $customerAccountCode;
 

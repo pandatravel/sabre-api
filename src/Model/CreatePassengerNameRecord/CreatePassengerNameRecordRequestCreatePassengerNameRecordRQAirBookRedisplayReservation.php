@@ -21,7 +21,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookRedispla
      */
     protected $numAttempts;
     /**
-     * Used to specify an interval that the system should wait in milliseconds before making redisplay service calls.
+     * Used to specify an interval (in milliseconds) that the system should wait in milliseconds before making re-display service calls.
      *
      * @var int
      */
@@ -32,7 +32,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookRedispla
      *
      * @return int
      */
-    public function getNumAttempts(): ?int
+    public function getNumAttempts(): int
     {
         return $this->numAttempts;
     }
@@ -44,7 +44,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookRedispla
      *
      * @return self
      */
-    public function setNumAttempts(?int $numAttempts): self
+    public function setNumAttempts(int $numAttempts): self
     {
         $this->numAttempts = $numAttempts;
 
@@ -52,23 +52,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookRedispla
     }
 
     /**
-     * Used to specify an interval that the system should wait in milliseconds before making redisplay service calls.
+     * Used to specify an interval (in milliseconds) that the system should wait in milliseconds before making re-display service calls.
      *
      * @return int
      */
-    public function getWaitInterval(): ?int
+    public function getWaitInterval(): int
     {
         return $this->waitInterval;
     }
 
     /**
-     * Used to specify an interval that the system should wait in milliseconds before making redisplay service calls.
+     * Used to specify an interval (in milliseconds) that the system should wait in milliseconds before making re-display service calls.
      *
      * @param int $waitInterval
      *
      * @return self
      */
-    public function setWaitInterval(?int $waitInterval): self
+    public function setWaitInterval(int $waitInterval): self
     {
         $this->waitInterval = $waitInterval;
 

@@ -15,48 +15,48 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentPaymentCardFullCardHolderName extends AbstractModel
 {
     /**
-     * Title.
+     * The card holder title.
      *
      * @var string
      */
     protected $title;
     /**
-     * First name.
+     * The card holder first name.
      *
      * @var string
      */
     protected $firstName;
     /**
-     * Last name.
+     * The card holder last name.
      *
      * @var string
      */
     protected $lastName;
     /**
-     * E-mail address.
+     * The card holder E-mail address.
      *
      * @var string
      */
     protected $email;
 
     /**
-     * Title.
+     * The card holder title.
      *
      * @return string
      */
-    public function getTitle(): ?string
+    public function getTitle(): string
     {
         return $this->title;
     }
 
     /**
-     * Title.
+     * The card holder title.
      *
      * @param string $title
      *
      * @return self
      */
-    public function setTitle(?string $title): self
+    public function setTitle(string $title): self
     {
         $this->title = $title;
 
@@ -64,23 +64,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymen
     }
 
     /**
-     * First name.
+     * The card holder first name.
      *
      * @return string
      */
-    public function getFirstName(): ?string
+    public function getFirstName(): string
     {
         return $this->firstName;
     }
 
     /**
-     * First name.
+     * The card holder first name.
      *
      * @param string $firstName
      *
      * @return self
      */
-    public function setFirstName(?string $firstName): self
+    public function setFirstName(string $firstName): self
     {
         $this->firstName = $firstName;
 
@@ -88,23 +88,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymen
     }
 
     /**
-     * Last name.
+     * The card holder last name.
      *
      * @return string
      */
-    public function getLastName(): ?string
+    public function getLastName(): string
     {
         return $this->lastName;
     }
 
     /**
-     * Last name.
+     * The card holder last name.
      *
      * @param string $lastName
      *
      * @return self
      */
-    public function setLastName(?string $lastName): self
+    public function setLastName(string $lastName): self
     {
         $this->lastName = $lastName;
 
@@ -112,23 +112,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymen
     }
 
     /**
-     * E-mail address.
+     * The card holder E-mail address.
      *
      * @return string
      */
-    public function getEmail(): ?string
+    public function getEmail(): string
     {
         return $this->email;
     }
 
     /**
-     * E-mail address.
+     * The card holder E-mail address.
      *
      * @param string $email
      *
      * @return self
      */
-    public function setEmail(?string $email): self
+    public function setEmail(string $email): self
     {
         $this->email = $email;
 

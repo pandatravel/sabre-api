@@ -15,54 +15,54 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoContactNumbersContactNumberItem extends AbstractModel
 {
     /**
-     * Customer names.
+     * The passenger name information.
      *
      * @var CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoContactNumbersContactNumberItemPersonNameItem[]
      */
     protected $personName;
     /**
-     * "LocationCode" is used to return the city code associated to the phone number.
+     * The city code associated to the phone number.
      *
      * @var string
      */
     protected $locationCode;
     /**
-     * "Phone" is used to return the telephone number.
+     * The telephone number.
      *
      * @var string
      */
     protected $phone;
     /**
-     * "RPH" is used as a reference placeholder.
+     * The reference placeholder.
      *
      * @var string
      */
     protected $rPH;
     /**
-     * Reference ID.
+     * The reference ID.
      *
      * @var string
      */
     protected $id;
 
     /**
-     * Customer names.
+     * The passenger name information.
      *
      * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoContactNumbersContactNumberItemPersonNameItem[]
      */
-    public function getPersonName(): ?array
+    public function getPersonName(): array
     {
         return $this->personName;
     }
 
     /**
-     * Customer names.
+     * The passenger name information.
      *
      * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoContactNumbersContactNumberItemPersonNameItem[] $personName
      *
      * @return self
      */
-    public function setPersonName(?array $personName): self
+    public function setPersonName(array $personName): self
     {
         $this->personName = $personName;
 
@@ -70,23 +70,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     }
 
     /**
-     * "LocationCode" is used to return the city code associated to the phone number.
+     * The city code associated to the phone number.
      *
      * @return string
      */
-    public function getLocationCode(): ?string
+    public function getLocationCode(): string
     {
         return $this->locationCode;
     }
 
     /**
-     * "LocationCode" is used to return the city code associated to the phone number.
+     * The city code associated to the phone number.
      *
      * @param string $locationCode
      *
      * @return self
      */
-    public function setLocationCode(?string $locationCode): self
+    public function setLocationCode(string $locationCode): self
     {
         $this->locationCode = $locationCode;
 
@@ -94,23 +94,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     }
 
     /**
-     * "Phone" is used to return the telephone number.
+     * The telephone number.
      *
      * @return string
      */
-    public function getPhone(): ?string
+    public function getPhone(): string
     {
         return $this->phone;
     }
 
     /**
-     * "Phone" is used to return the telephone number.
+     * The telephone number.
      *
      * @param string $phone
      *
      * @return self
      */
-    public function setPhone(?string $phone): self
+    public function setPhone(string $phone): self
     {
         $this->phone = $phone;
 
@@ -118,23 +118,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     }
 
     /**
-     * "RPH" is used as a reference placeholder.
+     * The reference placeholder.
      *
      * @return string
      */
-    public function getRPH(): ?string
+    public function getRPH(): string
     {
         return $this->rPH;
     }
 
     /**
-     * "RPH" is used as a reference placeholder.
+     * The reference placeholder.
      *
      * @param string $rPH
      *
      * @return self
      */
-    public function setRPH(?string $rPH): self
+    public function setRPH(string $rPH): self
     {
         $this->rPH = $rPH;
 
@@ -142,23 +142,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     }
 
     /**
-     * Reference ID.
+     * The reference ID.
      *
      * @return string
      */
-    public function getId(): ?string
+    public function getId(): string
     {
         return $this->id;
     }
 
     /**
-     * Reference ID.
+     * The reference ID.
      *
      * @param string $id
      *
      * @return self
      */
-    public function setId(?string $id): self
+    public function setId(string $id): self
     {
         $this->id = $id;
 

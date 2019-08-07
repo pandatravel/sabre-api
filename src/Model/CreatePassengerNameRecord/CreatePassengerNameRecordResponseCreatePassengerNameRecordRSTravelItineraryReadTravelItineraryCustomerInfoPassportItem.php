@@ -15,42 +15,42 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPassportItem extends AbstractModel
 {
     /**
-     * "Number" is used to return the passenger's passport number.
+     * The passenger's passport number.
      *
      * @var string
      */
     protected $number;
     /**
-     * "RPH" is used as a reference placeholder.
+     * The reference placeholder.
      *
      * @var string
      */
     protected $rPH;
     /**
-     * Reference ID.
+     * The reference ID.
      *
      * @var string
      */
     protected $id;
 
     /**
-     * "Number" is used to return the passenger's passport number.
+     * The passenger's passport number.
      *
      * @return string
      */
-    public function getNumber(): ?string
+    public function getNumber(): string
     {
         return $this->number;
     }
 
     /**
-     * "Number" is used to return the passenger's passport number.
+     * The passenger's passport number.
      *
      * @param string $number
      *
      * @return self
      */
-    public function setNumber(?string $number): self
+    public function setNumber(string $number): self
     {
         $this->number = $number;
 
@@ -58,23 +58,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     }
 
     /**
-     * "RPH" is used as a reference placeholder.
+     * The reference placeholder.
      *
      * @return string
      */
-    public function getRPH(): ?string
+    public function getRPH(): string
     {
         return $this->rPH;
     }
 
     /**
-     * "RPH" is used as a reference placeholder.
+     * The reference placeholder.
      *
      * @param string $rPH
      *
      * @return self
      */
-    public function setRPH(?string $rPH): self
+    public function setRPH(string $rPH): self
     {
         $this->rPH = $rPH;
 
@@ -82,23 +82,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     }
 
     /**
-     * Reference ID.
+     * The reference ID.
      *
      * @return string
      */
-    public function getId(): ?string
+    public function getId(): string
     {
         return $this->id;
     }
 
     /**
-     * Reference ID.
+     * The reference ID.
      *
      * @param string $id
      *
      * @return self
      */
-    public function setId(?string $id): self
+    public function setId(string $id): self
     {
         $this->id = $id;
 

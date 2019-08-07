@@ -15,42 +15,45 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsRoomItemRoomExtrasRoomExtraItem extends AbstractModel
 {
     /**
-     * "Type" - Currently supported types are: Crib (26), Rollaway Bed (91) and Extra Person (131).
+     * The room extra 'Type'.
+     * Currently supported types are: Crib (26), Rollaway Bed (91) and Extra Person (131).
      *
      * @var int
      */
     protected $type;
     /**
-     * Quantity for room extras. Mandatory for request.
+     * The room extra quantity.
      *
      * @var int
      */
     protected $quantity;
     /**
-     * "Amount" for the Room Extra.
+     * The room extra amount.
      *
      * @var float
      */
     protected $amount;
 
     /**
-     * "Type" - Currently supported types are: Crib (26), Rollaway Bed (91) and Extra Person (131).
+     * The room extra 'Type'.
+     * Currently supported types are: Crib (26), Rollaway Bed (91) and Extra Person (131).
      *
      * @return int
      */
-    public function getType(): ?int
+    public function getType(): int
     {
         return $this->type;
     }
 
     /**
-     * "Type" - Currently supported types are: Crib (26), Rollaway Bed (91) and Extra Person (131).
+     * The room extra 'Type'.
+     * Currently supported types are: Crib (26), Rollaway Bed (91) and Extra Person (131).
      *
      * @param int $type
      *
      * @return self
      */
-    public function setType(?int $type): self
+    public function setType(int $type): self
     {
         $this->type = $type;
 
@@ -58,23 +61,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsR
     }
 
     /**
-     * Quantity for room extras. Mandatory for request.
+     * The room extra quantity.
      *
      * @return int
      */
-    public function getQuantity(): ?int
+    public function getQuantity(): int
     {
         return $this->quantity;
     }
 
     /**
-     * Quantity for room extras. Mandatory for request.
+     * The room extra quantity.
      *
      * @param int $quantity
      *
      * @return self
      */
-    public function setQuantity(?int $quantity): self
+    public function setQuantity(int $quantity): self
     {
         $this->quantity = $quantity;
 
@@ -82,23 +85,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsR
     }
 
     /**
-     * "Amount" for the Room Extra.
+     * The room extra amount.
      *
      * @return float
      */
-    public function getAmount(): ?float
+    public function getAmount(): float
     {
         return $this->amount;
     }
 
     /**
-     * "Amount" for the Room Extra.
+     * The room extra amount.
      *
      * @param float $amount
      *
      * @return self
      */
-    public function setAmount(?float $amount): self
+    public function setAmount(float $amount): self
     {
         $this->amount = $amount;
 

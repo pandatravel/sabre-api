@@ -15,36 +15,36 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemRetailerRulesItem extends AbstractModel
 {
     /**
-     * Retailer rule for the Adjustment Selling Level.
+     * The retailer rule for the adjustment selling level.
      *
      * @var string
      */
     protected $adjustmentSellingLevel;
     /**
-     * Retailer rule for pricing transactions.
+     * The retailer rule for pricing transactions.
      *
      * @var string
      */
     protected $pricingTransaction;
 
     /**
-     * Retailer rule for the Adjustment Selling Level.
+     * The retailer rule for the adjustment selling level.
      *
      * @return string
      */
-    public function getAdjustmentSellingLevel(): ?string
+    public function getAdjustmentSellingLevel(): string
     {
         return $this->adjustmentSellingLevel;
     }
 
     /**
-     * Retailer rule for the Adjustment Selling Level.
+     * The retailer rule for the adjustment selling level.
      *
      * @param string $adjustmentSellingLevel
      *
      * @return self
      */
-    public function setAdjustmentSellingLevel(?string $adjustmentSellingLevel): self
+    public function setAdjustmentSellingLevel(string $adjustmentSellingLevel): self
     {
         $this->adjustmentSellingLevel = $adjustmentSellingLevel;
 
@@ -52,23 +52,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     }
 
     /**
-     * Retailer rule for pricing transactions.
+     * The retailer rule for pricing transactions.
      *
      * @return string
      */
-    public function getPricingTransaction(): ?string
+    public function getPricingTransaction(): string
     {
         return $this->pricingTransaction;
     }
 
     /**
-     * Retailer rule for pricing transactions.
+     * The retailer rule for pricing transactions.
      *
      * @param string $pricingTransaction
      *
      * @return self
      */
-    public function setPricingTransaction(?string $pricingTransaction): self
+    public function setPricingTransaction(string $pricingTransaction): self
     {
         $this->pricingTransaction = $pricingTransaction;
 

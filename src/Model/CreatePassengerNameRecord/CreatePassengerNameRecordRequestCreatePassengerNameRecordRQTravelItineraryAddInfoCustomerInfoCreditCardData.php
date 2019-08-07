@@ -26,7 +26,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoCustomerInfoCreditCardDataBillingInformation
      */
-    public function getBillingInformation(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoCustomerInfoCreditCardDataBillingInformation
+    public function getBillingInformation(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoCustomerInfoCreditCardDataBillingInformation
     {
         return $this->billingInformation;
     }
@@ -38,7 +38,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
      *
      * @return self
      */
-    public function setBillingInformation(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoCustomerInfoCreditCardDataBillingInformation $billingInformation): self
+    public function setBillingInformation(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoCustomerInfoCreditCardDataBillingInformation $billingInformation): self
     {
         $this->billingInformation = $billingInformation;
 

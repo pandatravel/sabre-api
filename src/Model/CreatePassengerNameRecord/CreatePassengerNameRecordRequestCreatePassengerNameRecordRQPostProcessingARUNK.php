@@ -26,7 +26,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingA
      *
      * @return bool
      */
-    public function getPriorPricing(): ?bool
+    public function getPriorPricing(): bool
     {
         return $this->priorPricing;
     }
@@ -38,7 +38,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingA
      *
      * @return self
      */
-    public function setPriorPricing(?bool $priorPricing): self
+    public function setPriorPricing(bool $priorPricing): self
     {
         $this->priorPricing = $priorPricing;
 

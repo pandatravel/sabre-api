@@ -26,7 +26,7 @@ class CreatePassengerNameRecordResponse extends AbstractModel
     /**
      * @return CreatePassengerNameRecordResponseLinksItem[]
      */
-    public function getLinks(): ?array
+    public function getLinks(): array
     {
         return $this->links;
     }
@@ -36,7 +36,7 @@ class CreatePassengerNameRecordResponse extends AbstractModel
      *
      * @return self
      */
-    public function setLinks(?array $links): self
+    public function setLinks(array $links): self
     {
         $this->links = $links;
 
@@ -46,7 +46,7 @@ class CreatePassengerNameRecordResponse extends AbstractModel
     /**
      * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRS
      */
-    public function getCreatePassengerNameRecordRS(): ?CreatePassengerNameRecordResponseCreatePassengerNameRecordRS
+    public function getCreatePassengerNameRecordRS(): CreatePassengerNameRecordResponseCreatePassengerNameRecordRS
     {
         return $this->createPassengerNameRecordRS;
     }
@@ -56,7 +56,7 @@ class CreatePassengerNameRecordResponse extends AbstractModel
      *
      * @return self
      */
-    public function setCreatePassengerNameRecordRS(?CreatePassengerNameRecordResponseCreatePassengerNameRecordRS $createPassengerNameRecordRS): self
+    public function setCreatePassengerNameRecordRS(CreatePassengerNameRecordResponseCreatePassengerNameRecordRS $createPassengerNameRecordRS): self
     {
         $this->createPassengerNameRecordRS = $createPassengerNameRecordRS;
 

@@ -15,36 +15,36 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersAirExtrasCustLoyaltyItem extends AbstractModel
 {
     /**
-     * Program ID.
+     * The Program ID.
      *
      * @var string
      */
     protected $programID;
     /**
-     * Tier Level.
+     * The frequent flyer tier level.
      *
      * @var string
      */
     protected $tierLevel;
 
     /**
-     * Program ID.
+     * The Program ID.
      *
      * @return string
      */
-    public function getProgramID(): ?string
+    public function getProgramID(): string
     {
         return $this->programID;
     }
 
     /**
-     * Program ID.
+     * The Program ID.
      *
      * @param string $programID
      *
      * @return self
      */
-    public function setProgramID(?string $programID): self
+    public function setProgramID(string $programID): self
     {
         $this->programID = $programID;
 
@@ -52,23 +52,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     }
 
     /**
-     * Tier Level.
+     * The frequent flyer tier level.
      *
      * @return string
      */
-    public function getTierLevel(): ?string
+    public function getTierLevel(): string
     {
         return $this->tierLevel;
     }
 
     /**
-     * Tier Level.
+     * The frequent flyer tier level.
      *
      * @param string $tierLevel
      *
      * @return self
      */
-    public function setTierLevel(?string $tierLevel): self
+    public function setTierLevel(string $tierLevel): self
     {
         $this->tierLevel = $tierLevel;
 

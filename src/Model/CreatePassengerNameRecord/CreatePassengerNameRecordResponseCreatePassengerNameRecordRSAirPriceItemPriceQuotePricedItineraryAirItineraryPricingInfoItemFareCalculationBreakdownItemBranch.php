@@ -15,7 +15,7 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemFareCalculationBreakdownItemBranch extends AbstractModel
 {
     /**
-     * Used to return Branch PCC information.
+     * The branch PCC information.
      *
      * @var string
      */
@@ -46,23 +46,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     protected $iATAAuthorizedCarrier;
 
     /**
-     * Used to return Branch PCC information.
+     * The branch PCC information.
      *
      * @return string
      */
-    public function getPCC(): ?string
+    public function getPCC(): string
     {
         return $this->pCC;
     }
 
     /**
-     * Used to return Branch PCC information.
+     * The branch PCC information.
      *
      * @param string $pCC
      *
      * @return self
      */
-    public function setPCC(?string $pCC): self
+    public function setPCC(string $pCC): self
     {
         $this->pCC = $pCC;
 
@@ -74,7 +74,7 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
      *
      * @return string
      */
-    public function getCountryOfShipRegistry(): ?string
+    public function getCountryOfShipRegistry(): string
     {
         return $this->countryOfShipRegistry;
     }
@@ -86,7 +86,7 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
      *
      * @return self
      */
-    public function setCountryOfShipRegistry(?string $countryOfShipRegistry): self
+    public function setCountryOfShipRegistry(string $countryOfShipRegistry): self
     {
         $this->countryOfShipRegistry = $countryOfShipRegistry;
 
@@ -98,7 +98,7 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
      *
      * @return string
      */
-    public function getFirstJointCarrier(): ?string
+    public function getFirstJointCarrier(): string
     {
         return $this->firstJointCarrier;
     }
@@ -110,7 +110,7 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
      *
      * @return self
      */
-    public function setFirstJointCarrier(?string $firstJointCarrier): self
+    public function setFirstJointCarrier(string $firstJointCarrier): self
     {
         $this->firstJointCarrier = $firstJointCarrier;
 
@@ -122,7 +122,7 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
      *
      * @return string
      */
-    public function getSecondJointCarrier(): ?string
+    public function getSecondJointCarrier(): string
     {
         return $this->secondJointCarrier;
     }
@@ -134,7 +134,7 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
      *
      * @return self
      */
-    public function setSecondJointCarrier(?string $secondJointCarrier): self
+    public function setSecondJointCarrier(string $secondJointCarrier): self
     {
         $this->secondJointCarrier = $secondJointCarrier;
 
@@ -146,7 +146,7 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
      *
      * @return string
      */
-    public function getIATAAuthorizedCarrier(): ?string
+    public function getIATAAuthorizedCarrier(): string
     {
         return $this->iATAAuthorizedCarrier;
     }
@@ -158,7 +158,7 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
      *
      * @return self
      */
-    public function setIATAAuthorizedCarrier(?string $iATAAuthorizedCarrier): self
+    public function setIATAAuthorizedCarrier(string $iATAAuthorizedCarrier): self
     {
         $this->iATAAuthorizedCarrier = $iATAAuthorizedCarrier;
 

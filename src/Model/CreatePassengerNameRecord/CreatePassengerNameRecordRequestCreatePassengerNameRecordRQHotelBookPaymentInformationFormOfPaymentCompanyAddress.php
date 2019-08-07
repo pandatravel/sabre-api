@@ -15,72 +15,72 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentCompanyAddress extends AbstractModel
 {
     /**
-     * Address.
+     * The company address lines.
      *
      * @var string[]
      */
     protected $addressLine;
     /**
-     * City name.
+     * The company city name.
      *
      * @var string
      */
     protected $cityName;
     /**
-     * City code.
+     * The company city codes.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentCompanyAddressCityCodes
      */
     protected $cityCodes;
     /**
-     * State or province code.
+     * The company state or province code.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentCompanyAddressStateProvince
      */
     protected $stateProvince;
     /**
-     * State or province code.
+     * The company state or province codes.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentCompanyAddressStateProvinceCodes
      */
     protected $stateProvinceCodes;
     /**
-     * Post code.
+     * The company postal code.
      *
      * @var string
      */
     protected $postCode;
     /**
-     * Country code.
+     * The company country code.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentCompanyAddressCountry
      */
     protected $country;
     /**
-     * Country code.
+     * The company country codes.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentCompanyAddressCountryCodes
      */
     protected $countryCodes;
 
     /**
-     * Address.
+     * The company address lines.
      *
      * @return string[]
      */
-    public function getAddressLine(): ?array
+    public function getAddressLine(): array
     {
         return $this->addressLine;
     }
 
     /**
-     * Address.
+     * The company address lines.
      *
      * @param string[] $addressLine
      *
      * @return self
      */
-    public function setAddressLine(?array $addressLine): self
+    public function setAddressLine(array $addressLine): self
     {
         $this->addressLine = $addressLine;
 
@@ -88,23 +88,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymen
     }
 
     /**
-     * City name.
+     * The company city name.
      *
      * @return string
      */
-    public function getCityName(): ?string
+    public function getCityName(): string
     {
         return $this->cityName;
     }
 
     /**
-     * City name.
+     * The company city name.
      *
      * @param string $cityName
      *
      * @return self
      */
-    public function setCityName(?string $cityName): self
+    public function setCityName(string $cityName): self
     {
         $this->cityName = $cityName;
 
@@ -112,23 +112,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymen
     }
 
     /**
-     * City code.
+     * The company city codes.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentCompanyAddressCityCodes
      */
-    public function getCityCodes(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentCompanyAddressCityCodes
+    public function getCityCodes(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentCompanyAddressCityCodes
     {
         return $this->cityCodes;
     }
 
     /**
-     * City code.
+     * The company city codes.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentCompanyAddressCityCodes $cityCodes
      *
      * @return self
      */
-    public function setCityCodes(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentCompanyAddressCityCodes $cityCodes): self
+    public function setCityCodes(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentCompanyAddressCityCodes $cityCodes): self
     {
         $this->cityCodes = $cityCodes;
 
@@ -136,23 +136,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymen
     }
 
     /**
-     * State or province code.
+     * The company state or province code.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentCompanyAddressStateProvince
      */
-    public function getStateProvince(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentCompanyAddressStateProvince
+    public function getStateProvince(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentCompanyAddressStateProvince
     {
         return $this->stateProvince;
     }
 
     /**
-     * State or province code.
+     * The company state or province code.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentCompanyAddressStateProvince $stateProvince
      *
      * @return self
      */
-    public function setStateProvince(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentCompanyAddressStateProvince $stateProvince): self
+    public function setStateProvince(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentCompanyAddressStateProvince $stateProvince): self
     {
         $this->stateProvince = $stateProvince;
 
@@ -160,23 +160,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymen
     }
 
     /**
-     * State or province code.
+     * The company state or province codes.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentCompanyAddressStateProvinceCodes
      */
-    public function getStateProvinceCodes(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentCompanyAddressStateProvinceCodes
+    public function getStateProvinceCodes(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentCompanyAddressStateProvinceCodes
     {
         return $this->stateProvinceCodes;
     }
 
     /**
-     * State or province code.
+     * The company state or province codes.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentCompanyAddressStateProvinceCodes $stateProvinceCodes
      *
      * @return self
      */
-    public function setStateProvinceCodes(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentCompanyAddressStateProvinceCodes $stateProvinceCodes): self
+    public function setStateProvinceCodes(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentCompanyAddressStateProvinceCodes $stateProvinceCodes): self
     {
         $this->stateProvinceCodes = $stateProvinceCodes;
 
@@ -184,23 +184,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymen
     }
 
     /**
-     * Post code.
+     * The company postal code.
      *
      * @return string
      */
-    public function getPostCode(): ?string
+    public function getPostCode(): string
     {
         return $this->postCode;
     }
 
     /**
-     * Post code.
+     * The company postal code.
      *
      * @param string $postCode
      *
      * @return self
      */
-    public function setPostCode(?string $postCode): self
+    public function setPostCode(string $postCode): self
     {
         $this->postCode = $postCode;
 
@@ -208,23 +208,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymen
     }
 
     /**
-     * Country code.
+     * The company country code.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentCompanyAddressCountry
      */
-    public function getCountry(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentCompanyAddressCountry
+    public function getCountry(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentCompanyAddressCountry
     {
         return $this->country;
     }
 
     /**
-     * Country code.
+     * The company country code.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentCompanyAddressCountry $country
      *
      * @return self
      */
-    public function setCountry(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentCompanyAddressCountry $country): self
+    public function setCountry(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentCompanyAddressCountry $country): self
     {
         $this->country = $country;
 
@@ -232,23 +232,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymen
     }
 
     /**
-     * Country code.
+     * The company country codes.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentCompanyAddressCountryCodes
      */
-    public function getCountryCodes(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentCompanyAddressCountryCodes
+    public function getCountryCodes(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentCompanyAddressCountryCodes
     {
         return $this->countryCodes;
     }
 
     /**
-     * Country code.
+     * The company country codes.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentCompanyAddressCountryCodes $countryCodes
      *
      * @return self
      */
-    public function setCountryCodes(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentCompanyAddressCountryCodes $countryCodes): self
+    public function setCountryCodes(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentCompanyAddressCountryCodes $countryCodes): self
     {
         $this->countryCodes = $countryCodes;
 

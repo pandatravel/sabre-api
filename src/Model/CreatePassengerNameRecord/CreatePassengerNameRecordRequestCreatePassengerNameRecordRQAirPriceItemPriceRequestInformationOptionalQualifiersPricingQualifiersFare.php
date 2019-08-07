@@ -15,30 +15,33 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersFare extends AbstractModel
 {
     /**
-     * Used to specify a fare type. Acceptable values are "NL" for normal fare, "EX" for special fare, and 'IT" for inclusive tour.
+     * Used to specify a fare type.
+     * Acceptable values are 'NL' for normal fare, 'EX' for special fare, and 'IT' for inclusive tour.
      *
      * @var string
      */
     protected $type;
 
     /**
-     * Used to specify a fare type. Acceptable values are "NL" for normal fare, "EX" for special fare, and 'IT" for inclusive tour.
+     * Used to specify a fare type.
+     * Acceptable values are 'NL' for normal fare, 'EX' for special fare, and 'IT' for inclusive tour.
      *
      * @return string
      */
-    public function getType(): ?string
+    public function getType(): string
     {
         return $this->type;
     }
 
     /**
-     * Used to specify a fare type. Acceptable values are "NL" for normal fare, "EX" for special fare, and 'IT" for inclusive tour.
+     * Used to specify a fare type.
+     * Acceptable values are 'NL' for normal fare, 'EX' for special fare, and 'IT' for inclusive tour.
      *
      * @param string $type
      *
      * @return self
      */
-    public function setType(?string $type): self
+    public function setType(string $type): self
     {
         $this->type = $type;
 

@@ -15,36 +15,36 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItem extends AbstractModel
 {
     /**
-     * Used to pass results of price comparison.
+     * Used to return results of price comparison.
      *
      * @var CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceComparison
      */
     protected $priceComparison;
     /**
-     * Price quote details.
+     * The price quote details.
      *
      * @var CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuote
      */
     protected $priceQuote;
 
     /**
-     * Used to pass results of price comparison.
+     * Used to return results of price comparison.
      *
      * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceComparison
      */
-    public function getPriceComparison(): ?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceComparison
+    public function getPriceComparison(): CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceComparison
     {
         return $this->priceComparison;
     }
 
     /**
-     * Used to pass results of price comparison.
+     * Used to return results of price comparison.
      *
      * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceComparison $priceComparison
      *
      * @return self
      */
-    public function setPriceComparison(?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceComparison $priceComparison): self
+    public function setPriceComparison(CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceComparison $priceComparison): self
     {
         $this->priceComparison = $priceComparison;
 
@@ -52,23 +52,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItem e
     }
 
     /**
-     * Price quote details.
+     * The price quote details.
      *
      * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuote
      */
-    public function getPriceQuote(): ?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuote
+    public function getPriceQuote(): CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuote
     {
         return $this->priceQuote;
     }
 
     /**
-     * Price quote details.
+     * The price quote details.
      *
      * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuote $priceQuote
      *
      * @return self
      */
-    public function setPriceQuote(?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuote $priceQuote): self
+    public function setPriceQuote(CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuote $priceQuote): self
     {
         $this->priceQuote = $priceQuote;
 

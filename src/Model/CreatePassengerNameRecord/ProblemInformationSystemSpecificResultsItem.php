@@ -62,7 +62,7 @@ class ProblemInformationSystemSpecificResultsItem extends AbstractModel
     /**
      * @return ProblemInformationSystemSpecificResultsItemHostCommand
      */
-    public function getHostCommand(): ?ProblemInformationSystemSpecificResultsItemHostCommand
+    public function getHostCommand(): ProblemInformationSystemSpecificResultsItemHostCommand
     {
         return $this->hostCommand;
     }
@@ -72,7 +72,7 @@ class ProblemInformationSystemSpecificResultsItem extends AbstractModel
      *
      * @return self
      */
-    public function setHostCommand(?ProblemInformationSystemSpecificResultsItemHostCommand $hostCommand): self
+    public function setHostCommand(ProblemInformationSystemSpecificResultsItemHostCommand $hostCommand): self
     {
         $this->hostCommand = $hostCommand;
 
@@ -82,7 +82,7 @@ class ProblemInformationSystemSpecificResultsItem extends AbstractModel
     /**
      * @return ProblemInformationSystemSpecificResultsItemMessageItem[]
      */
-    public function getMessage(): ?array
+    public function getMessage(): array
     {
         return $this->message;
     }
@@ -92,7 +92,7 @@ class ProblemInformationSystemSpecificResultsItem extends AbstractModel
      *
      * @return self
      */
-    public function setMessage(?array $message): self
+    public function setMessage(array $message): self
     {
         $this->message = $message;
 
@@ -104,7 +104,7 @@ class ProblemInformationSystemSpecificResultsItem extends AbstractModel
      *
      * @return string
      */
-    public function getShortText(): ?string
+    public function getShortText(): string
     {
         return $this->shortText;
     }
@@ -116,7 +116,7 @@ class ProblemInformationSystemSpecificResultsItem extends AbstractModel
      *
      * @return self
      */
-    public function setShortText(?string $shortText): self
+    public function setShortText(string $shortText): self
     {
         $this->shortText = $shortText;
 
@@ -128,7 +128,7 @@ class ProblemInformationSystemSpecificResultsItem extends AbstractModel
      *
      * @return string
      */
-    public function getElement(): ?string
+    public function getElement(): string
     {
         return $this->element;
     }
@@ -140,7 +140,7 @@ class ProblemInformationSystemSpecificResultsItem extends AbstractModel
      *
      * @return self
      */
-    public function setElement(?string $element): self
+    public function setElement(string $element): self
     {
         $this->element = $element;
 
@@ -152,7 +152,7 @@ class ProblemInformationSystemSpecificResultsItem extends AbstractModel
      *
      * @return string
      */
-    public function getRecordID(): ?string
+    public function getRecordID(): string
     {
         return $this->recordID;
     }
@@ -164,7 +164,7 @@ class ProblemInformationSystemSpecificResultsItem extends AbstractModel
      *
      * @return self
      */
-    public function setRecordID(?string $recordID): self
+    public function setRecordID(string $recordID): self
     {
         $this->recordID = $recordID;
 
@@ -176,7 +176,7 @@ class ProblemInformationSystemSpecificResultsItem extends AbstractModel
      *
      * @return string
      */
-    public function getDocURL(): ?string
+    public function getDocURL(): string
     {
         return $this->docURL;
     }
@@ -188,7 +188,7 @@ class ProblemInformationSystemSpecificResultsItem extends AbstractModel
      *
      * @return self
      */
-    public function setDocURL(?string $docURL): self
+    public function setDocURL(string $docURL): self
     {
         $this->docURL = $docURL;
 
@@ -200,7 +200,7 @@ class ProblemInformationSystemSpecificResultsItem extends AbstractModel
      *
      * @return string
      */
-    public function getTimeStamp(): ?string
+    public function getTimeStamp(): string
     {
         return $this->timeStamp;
     }
@@ -212,7 +212,7 @@ class ProblemInformationSystemSpecificResultsItem extends AbstractModel
      *
      * @return self
      */
-    public function setTimeStamp(?string $timeStamp): self
+    public function setTimeStamp(string $timeStamp): self
     {
         $this->timeStamp = $timeStamp;
 
@@ -224,7 +224,7 @@ class ProblemInformationSystemSpecificResultsItem extends AbstractModel
      *
      * @return string
      */
-    public function getReference(): ?string
+    public function getReference(): string
     {
         return $this->reference;
     }
@@ -236,7 +236,7 @@ class ProblemInformationSystemSpecificResultsItem extends AbstractModel
      *
      * @return self
      */
-    public function setReference(?string $reference): self
+    public function setReference(string $reference): self
     {
         $this->reference = $reference;
 

@@ -21,13 +21,15 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookBookin
      */
     protected $bookingKey;
     /**
-     * A code that a company may give to an agency to use for a discount. It is quite often tied to a negotiated rate code. Applies to GDS hotels only.
+     * A code that a company may give to an agency to use for a discount.
+     * It is quite often tied to a negotiated rate code.
+     * Applies to GDS hotels only.
      *
      * @var string
      */
     protected $corpDiscount;
     /**
-     * Requestor ID.
+     * The requestor ID.
      *
      * @var string
      */
@@ -38,7 +40,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookBookin
      *
      * @return string
      */
-    public function getBookingKey(): ?string
+    public function getBookingKey(): string
     {
         return $this->bookingKey;
     }
@@ -50,7 +52,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookBookin
      *
      * @return self
      */
-    public function setBookingKey(?string $bookingKey): self
+    public function setBookingKey(string $bookingKey): self
     {
         $this->bookingKey = $bookingKey;
 
@@ -58,23 +60,27 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookBookin
     }
 
     /**
-     * A code that a company may give to an agency to use for a discount. It is quite often tied to a negotiated rate code. Applies to GDS hotels only.
+     * A code that a company may give to an agency to use for a discount.
+     * It is quite often tied to a negotiated rate code.
+     * Applies to GDS hotels only.
      *
      * @return string
      */
-    public function getCorpDiscount(): ?string
+    public function getCorpDiscount(): string
     {
         return $this->corpDiscount;
     }
 
     /**
-     * A code that a company may give to an agency to use for a discount. It is quite often tied to a negotiated rate code. Applies to GDS hotels only.
+     * A code that a company may give to an agency to use for a discount.
+     * It is quite often tied to a negotiated rate code.
+     * Applies to GDS hotels only.
      *
      * @param string $corpDiscount
      *
      * @return self
      */
-    public function setCorpDiscount(?string $corpDiscount): self
+    public function setCorpDiscount(string $corpDiscount): self
     {
         $this->corpDiscount = $corpDiscount;
 
@@ -82,23 +88,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookBookin
     }
 
     /**
-     * Requestor ID.
+     * The requestor ID.
      *
      * @return string
      */
-    public function getRequestorID(): ?string
+    public function getRequestorID(): string
     {
         return $this->requestorID;
     }
 
     /**
-     * Requestor ID.
+     * The requestor ID.
      *
      * @param string $requestorID
      *
      * @return self
      */
-    public function setRequestorID(?string $requestorID): self
+    public function setRequestorID(string $requestorID): self
     {
         $this->requestorID = $requestorID;
 

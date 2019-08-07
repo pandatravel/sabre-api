@@ -30,7 +30,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQProfileUniqueID
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQProfileUniqueID;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQProfileUniqueID';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])
@@ -39,8 +39,8 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQProfileUniqueID
             throw new InvalidArgumentException();
         }
         $object = new \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQProfileUniqueID();
-        if (property_exists($data, 'ID')) {
-            $object->setID($data->{'ID'});
+        if (property_exists($data, 'id')) {
+            $object->setId($data->{'id'});
         }
 
         return $object;
@@ -49,8 +49,8 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQProfileUniqueID
     public function normalize($object, $format = null, array $context = [])
     {
         $data = new \stdClass();
-        if (null !== $object->getID()) {
-            $data->{'ID'} = $object->getID();
+        if (null !== $object->getId()) {
+            $data->{'id'} = $object->getId();
         }
 
         return $data;

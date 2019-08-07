@@ -26,7 +26,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDe
      *
      * @return string
      */
-    public function getLocationCode(): ?string
+    public function getLocationCode(): string
     {
         return $this->locationCode;
     }
@@ -38,7 +38,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDe
      *
      * @return self
      */
-    public function setLocationCode(?string $locationCode): self
+    public function setLocationCode(string $locationCode): self
     {
         $this->locationCode = $locationCode;
 

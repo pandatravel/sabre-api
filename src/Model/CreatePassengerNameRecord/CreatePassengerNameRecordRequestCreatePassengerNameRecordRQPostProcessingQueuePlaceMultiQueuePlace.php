@@ -15,30 +15,30 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingQueuePlaceMultiQueuePlace extends AbstractModel
 {
     /**
-     * Single queue details.
+     * A single queue details.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingQueuePlaceMultiQueuePlaceQueueIdentifierItem[]
      */
     protected $queueIdentifier;
 
     /**
-     * Single queue details.
+     * A single queue details.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingQueuePlaceMultiQueuePlaceQueueIdentifierItem[]
      */
-    public function getQueueIdentifier(): ?array
+    public function getQueueIdentifier(): array
     {
         return $this->queueIdentifier;
     }
 
     /**
-     * Single queue details.
+     * A single queue details.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingQueuePlaceMultiQueuePlaceQueueIdentifierItem[] $queueIdentifier
      *
      * @return self
      */
-    public function setQueueIdentifier(?array $queueIdentifier): self
+    public function setQueueIdentifier(array $queueIdentifier): self
     {
         $this->queueIdentifier = $queueIdentifier;
 

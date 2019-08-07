@@ -15,36 +15,36 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersValidityDatesItemSegment extends AbstractModel
 {
     /**
-     * Segment number.
+     * The segment number.
      *
      * @var string
      */
     protected $number;
     /**
-     * Segment end number in range.
+     * The segment end number in range.
      *
      * @var string
      */
     protected $endNumber;
 
     /**
-     * Segment number.
+     * The segment number.
      *
      * @return string
      */
-    public function getNumber(): ?string
+    public function getNumber(): string
     {
         return $this->number;
     }
 
     /**
-     * Segment number.
+     * The segment number.
      *
      * @param string $number
      *
      * @return self
      */
-    public function setNumber(?string $number): self
+    public function setNumber(string $number): self
     {
         $this->number = $number;
 
@@ -52,23 +52,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     }
 
     /**
-     * Segment end number in range.
+     * The segment end number in range.
      *
      * @return string
      */
-    public function getEndNumber(): ?string
+    public function getEndNumber(): string
     {
         return $this->endNumber;
     }
 
     /**
-     * Segment end number in range.
+     * The segment end number in range.
      *
      * @param string $endNumber
      *
      * @return self
      */
-    public function setEndNumber(?string $endNumber): self
+    public function setEndNumber(string $endNumber): self
     {
         $this->endNumber = $endNumber;
 

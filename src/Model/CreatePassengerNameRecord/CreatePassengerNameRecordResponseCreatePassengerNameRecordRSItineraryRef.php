@@ -15,30 +15,30 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSItineraryRef extends AbstractModel
 {
     /**
-     * Used to return the locator of the ended record.
+     * The locator of the ended passenger name record.
      *
      * @var string
      */
     protected $iD;
 
     /**
-     * Used to return the locator of the ended record.
+     * The locator of the ended passenger name record.
      *
      * @return string
      */
-    public function getID(): ?string
+    public function getID(): string
     {
         return $this->iD;
     }
 
     /**
-     * Used to return the locator of the ended record.
+     * The locator of the ended passenger name record.
      *
      * @param string $iD
      *
      * @return self
      */
-    public function setID(?string $iD): self
+    public function setID(string $iD): self
     {
         $this->iD = $iD;
 

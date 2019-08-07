@@ -15,42 +15,43 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoAddressAddressLineItem extends AbstractModel
 {
     /**
-     * "AddressLine" is used to return customer address information.
+     * The customer address information.
      *
      * @var string
      */
     protected $content;
     /**
-     * Reference ID.
+     * The reference ID.
      *
      * @var string
      */
     protected $id;
     /**
-     * Indicates type of information ex. O Other N Name A Address C City and State Z Zip code B Business.
+     * Indicates type of information.
+     * Ex. O  - Other, N - Name, A - Address, C - City and State, Z - Zip code, B - Business.
      *
      * @var string
      */
     protected $type;
 
     /**
-     * "AddressLine" is used to return customer address information.
+     * The customer address information.
      *
      * @return string
      */
-    public function getContent(): ?string
+    public function getContent(): string
     {
         return $this->content;
     }
 
     /**
-     * "AddressLine" is used to return customer address information.
+     * The customer address information.
      *
      * @param string $content
      *
      * @return self
      */
-    public function setContent(?string $content): self
+    public function setContent(string $content): self
     {
         $this->content = $content;
 
@@ -58,23 +59,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     }
 
     /**
-     * Reference ID.
+     * The reference ID.
      *
      * @return string
      */
-    public function getId(): ?string
+    public function getId(): string
     {
         return $this->id;
     }
 
     /**
-     * Reference ID.
+     * The reference ID.
      *
      * @param string $id
      *
      * @return self
      */
-    public function setId(?string $id): self
+    public function setId(string $id): self
     {
         $this->id = $id;
 
@@ -82,23 +83,25 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     }
 
     /**
-     * Indicates type of information ex. O Other N Name A Address C City and State Z Zip code B Business.
+     * Indicates type of information.
+     * Ex. O  - Other, N - Name, A - Address, C - City and State, Z - Zip code, B - Business.
      *
      * @return string
      */
-    public function getType(): ?string
+    public function getType(): string
     {
         return $this->type;
     }
 
     /**
-     * Indicates type of information ex. O Other N Name A Address C City and State Z Zip code B Business.
+     * Indicates type of information.
+     * Ex. O  - Other, N - Name, A - Address, C - City and State, Z - Zip code, B - Business.
      *
      * @param string $type
      *
      * @return self
      */
-    public function setType(?string $type): self
+    public function setType(string $type): self
     {
         $this->type = $type;
 

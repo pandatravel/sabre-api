@@ -15,19 +15,19 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoCustomerInfoPersonNameItem extends AbstractModel
 {
     /**
-     * Passenger first name.
+     * Used to pass the passenger's first name.
      *
      * @var string
      */
     protected $givenName;
     /**
-     * Group details.
+     * Used to pass the group information details.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoCustomerInfoPersonNameItemGroupInfo
      */
     protected $groupInfo;
     /**
-     * Passenger surname.
+     * Used to pass the passenger's surname.
      *
      * @var string
      */
@@ -39,42 +39,43 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
      */
     protected $infant;
     /**
-     * Used to specify a passenger name number, and is only applicable when used in conjunction with @PassengerType.
+     * Used to specify a passenger name number, and is only applicable when used in conjunction with 'PassengerType'.
      *
      * @var string
      */
     protected $nameNumber;
     /**
-     * Used to specify miscellaneous name reference-related information if applicable.
+     * 'NameReference' is used to specify miscellaneous name reference-related information.
      *
      * @var string
      */
     protected $nameReference;
     /**
-     * Used to add a passenger type code into the record. Please note that this qualifier is not applicable to Sabre Sonic Res-based clients.
+     * Used to add a passenger type code into the record.
+     * Please note that this qualifier is not applicable to Sabre Sonic Res-based clients.
      *
      * @var string
      */
     protected $passengerType;
 
     /**
-     * Passenger first name.
+     * Used to pass the passenger's first name.
      *
      * @return string
      */
-    public function getGivenName(): ?string
+    public function getGivenName(): string
     {
         return $this->givenName;
     }
 
     /**
-     * Passenger first name.
+     * Used to pass the passenger's first name.
      *
      * @param string $givenName
      *
      * @return self
      */
-    public function setGivenName(?string $givenName): self
+    public function setGivenName(string $givenName): self
     {
         $this->givenName = $givenName;
 
@@ -82,23 +83,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
     }
 
     /**
-     * Group details.
+     * Used to pass the group information details.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoCustomerInfoPersonNameItemGroupInfo
      */
-    public function getGroupInfo(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoCustomerInfoPersonNameItemGroupInfo
+    public function getGroupInfo(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoCustomerInfoPersonNameItemGroupInfo
     {
         return $this->groupInfo;
     }
 
     /**
-     * Group details.
+     * Used to pass the group information details.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoCustomerInfoPersonNameItemGroupInfo $groupInfo
      *
      * @return self
      */
-    public function setGroupInfo(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoCustomerInfoPersonNameItemGroupInfo $groupInfo): self
+    public function setGroupInfo(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoCustomerInfoPersonNameItemGroupInfo $groupInfo): self
     {
         $this->groupInfo = $groupInfo;
 
@@ -106,23 +107,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
     }
 
     /**
-     * Passenger surname.
+     * Used to pass the passenger's surname.
      *
      * @return string
      */
-    public function getSurname(): ?string
+    public function getSurname(): string
     {
         return $this->surname;
     }
 
     /**
-     * Passenger surname.
+     * Used to pass the passenger's surname.
      *
      * @param string $surname
      *
      * @return self
      */
-    public function setSurname(?string $surname): self
+    public function setSurname(string $surname): self
     {
         $this->surname = $surname;
 
@@ -134,7 +135,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
      *
      * @return bool
      */
-    public function getInfant(): ?bool
+    public function getInfant(): bool
     {
         return $this->infant;
     }
@@ -146,7 +147,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
      *
      * @return self
      */
-    public function setInfant(?bool $infant): self
+    public function setInfant(bool $infant): self
     {
         $this->infant = $infant;
 
@@ -154,23 +155,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
     }
 
     /**
-     * Used to specify a passenger name number, and is only applicable when used in conjunction with @PassengerType.
+     * Used to specify a passenger name number, and is only applicable when used in conjunction with 'PassengerType'.
      *
      * @return string
      */
-    public function getNameNumber(): ?string
+    public function getNameNumber(): string
     {
         return $this->nameNumber;
     }
 
     /**
-     * Used to specify a passenger name number, and is only applicable when used in conjunction with @PassengerType.
+     * Used to specify a passenger name number, and is only applicable when used in conjunction with 'PassengerType'.
      *
      * @param string $nameNumber
      *
      * @return self
      */
-    public function setNameNumber(?string $nameNumber): self
+    public function setNameNumber(string $nameNumber): self
     {
         $this->nameNumber = $nameNumber;
 
@@ -178,23 +179,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
     }
 
     /**
-     * Used to specify miscellaneous name reference-related information if applicable.
+     * 'NameReference' is used to specify miscellaneous name reference-related information.
      *
      * @return string
      */
-    public function getNameReference(): ?string
+    public function getNameReference(): string
     {
         return $this->nameReference;
     }
 
     /**
-     * Used to specify miscellaneous name reference-related information if applicable.
+     * 'NameReference' is used to specify miscellaneous name reference-related information.
      *
      * @param string $nameReference
      *
      * @return self
      */
-    public function setNameReference(?string $nameReference): self
+    public function setNameReference(string $nameReference): self
     {
         $this->nameReference = $nameReference;
 
@@ -202,23 +203,25 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
     }
 
     /**
-     * Used to add a passenger type code into the record. Please note that this qualifier is not applicable to Sabre Sonic Res-based clients.
+     * Used to add a passenger type code into the record.
+     * Please note that this qualifier is not applicable to Sabre Sonic Res-based clients.
      *
      * @return string
      */
-    public function getPassengerType(): ?string
+    public function getPassengerType(): string
     {
         return $this->passengerType;
     }
 
     /**
-     * Used to add a passenger type code into the record. Please note that this qualifier is not applicable to Sabre Sonic Res-based clients.
+     * Used to add a passenger type code into the record.
+     * Please note that this qualifier is not applicable to Sabre Sonic Res-based clients.
      *
      * @param string $passengerType
      *
      * @return self
      */
-    public function setPassengerType(?string $passengerType): self
+    public function setPassengerType(string $passengerType): self
     {
         $this->passengerType = $passengerType;
 

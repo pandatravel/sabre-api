@@ -15,42 +15,44 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingBasicFOP extends AbstractModel
 {
     /**
-     * Used to pass credit card information.
+     * Used to pass the credit card information.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingBasicFOPCCInfo
      */
     protected $cCInfo;
     /**
-     * Used to specify a manual approval code for non-credit card forms of payment.
+     * 'ManualApprovalCode' is used to pass a manual credit card approval code if it applies to the credit card.
      *
      * @var string
      */
     protected $manualApprovalCode;
     /**
-     * Used to specify the payment type. Acceptable values are "CA" (cash, "CK" (check), "CQ" (cheque), "PT", "PTACA" (PTA cash), "PTAGTCK" (PTA agency check) or "PTCK" (PTA check). If utilizing a credit card please omit @Type, and populate the .../CC_Info child node, unless needing to specify a PTA credit card form of payment. For a PTA credit card form of payment the client should pass Type="PT" and populate the .../CC_Info child node with the relevant credit card information.
+     * Used to specify the payment type. Acceptable values are 'CA' (cash), 'CK' (check), 'CQ' (cheque), 'PT', 'PTACA' (PTA cash), 'PTAGTCK' (PTA agency check) or 'PTCK' (PTA check).
+     * If utilizing a credit card please omit 'Type', and populate the 'CC_Info' object, unless needing to specify a PTA credit card form of payment.
+     * For a PTA credit card form of payment the client should pass Type='PT' and populate the 'CC_Info' object with the relevant credit card information.
      *
      * @var string
      */
     protected $type;
 
     /**
-     * Used to pass credit card information.
+     * Used to pass the credit card information.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingBasicFOPCCInfo
      */
-    public function getCCInfo(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingBasicFOPCCInfo
+    public function getCCInfo(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingBasicFOPCCInfo
     {
         return $this->cCInfo;
     }
 
     /**
-     * Used to pass credit card information.
+     * Used to pass the credit card information.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingBasicFOPCCInfo $cCInfo
      *
      * @return self
      */
-    public function setCCInfo(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingBasicFOPCCInfo $cCInfo): self
+    public function setCCInfo(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingBasicFOPCCInfo $cCInfo): self
     {
         $this->cCInfo = $cCInfo;
 
@@ -58,23 +60,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     }
 
     /**
-     * Used to specify a manual approval code for non-credit card forms of payment.
+     * 'ManualApprovalCode' is used to pass a manual credit card approval code if it applies to the credit card.
      *
      * @return string
      */
-    public function getManualApprovalCode(): ?string
+    public function getManualApprovalCode(): string
     {
         return $this->manualApprovalCode;
     }
 
     /**
-     * Used to specify a manual approval code for non-credit card forms of payment.
+     * 'ManualApprovalCode' is used to pass a manual credit card approval code if it applies to the credit card.
      *
      * @param string $manualApprovalCode
      *
      * @return self
      */
-    public function setManualApprovalCode(?string $manualApprovalCode): self
+    public function setManualApprovalCode(string $manualApprovalCode): self
     {
         $this->manualApprovalCode = $manualApprovalCode;
 
@@ -82,23 +84,27 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     }
 
     /**
-     * Used to specify the payment type. Acceptable values are "CA" (cash, "CK" (check), "CQ" (cheque), "PT", "PTACA" (PTA cash), "PTAGTCK" (PTA agency check) or "PTCK" (PTA check). If utilizing a credit card please omit @Type, and populate the .../CC_Info child node, unless needing to specify a PTA credit card form of payment. For a PTA credit card form of payment the client should pass Type="PT" and populate the .../CC_Info child node with the relevant credit card information.
+     * Used to specify the payment type. Acceptable values are 'CA' (cash), 'CK' (check), 'CQ' (cheque), 'PT', 'PTACA' (PTA cash), 'PTAGTCK' (PTA agency check) or 'PTCK' (PTA check).
+     * If utilizing a credit card please omit 'Type', and populate the 'CC_Info' object, unless needing to specify a PTA credit card form of payment.
+     * For a PTA credit card form of payment the client should pass Type='PT' and populate the 'CC_Info' object with the relevant credit card information.
      *
      * @return string
      */
-    public function getType(): ?string
+    public function getType(): string
     {
         return $this->type;
     }
 
     /**
-     * Used to specify the payment type. Acceptable values are "CA" (cash, "CK" (check), "CQ" (cheque), "PT", "PTACA" (PTA cash), "PTAGTCK" (PTA agency check) or "PTCK" (PTA check). If utilizing a credit card please omit @Type, and populate the .../CC_Info child node, unless needing to specify a PTA credit card form of payment. For a PTA credit card form of payment the client should pass Type="PT" and populate the .../CC_Info child node with the relevant credit card information.
+     * Used to specify the payment type. Acceptable values are 'CA' (cash), 'CK' (check), 'CQ' (cheque), 'PT', 'PTACA' (PTA cash), 'PTAGTCK' (PTA agency check) or 'PTCK' (PTA check).
+     * If utilizing a credit card please omit 'Type', and populate the 'CC_Info' object, unless needing to specify a PTA credit card form of payment.
+     * For a PTA credit card form of payment the client should pass Type='PT' and populate the 'CC_Info' object with the relevant credit card information.
      *
      * @param string $type
      *
      * @return self
      */
-    public function setType(?string $type): self
+    public function setType(string $type): self
     {
         $this->type = $type;
 

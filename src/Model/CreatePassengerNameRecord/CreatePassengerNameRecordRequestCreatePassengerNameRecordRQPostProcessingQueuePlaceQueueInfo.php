@@ -15,36 +15,36 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingQueuePlaceQueueInfo extends AbstractModel
 {
     /**
-     * Single queue details.
+     * The single queue details.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingQueuePlaceQueueInfoQueueIdentifierItem[]
      */
     protected $queueIdentifier;
     /**
-     * This element is not in use.
+     * This element is not used by this API.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingQueuePlaceQueueInfoUniqueIDItem[]
      */
     protected $uniqueID;
 
     /**
-     * Single queue details.
+     * The single queue details.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingQueuePlaceQueueInfoQueueIdentifierItem[]
      */
-    public function getQueueIdentifier(): ?array
+    public function getQueueIdentifier(): array
     {
         return $this->queueIdentifier;
     }
 
     /**
-     * Single queue details.
+     * The single queue details.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingQueuePlaceQueueInfoQueueIdentifierItem[] $queueIdentifier
      *
      * @return self
      */
-    public function setQueueIdentifier(?array $queueIdentifier): self
+    public function setQueueIdentifier(array $queueIdentifier): self
     {
         $this->queueIdentifier = $queueIdentifier;
 
@@ -52,23 +52,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingQ
     }
 
     /**
-     * This element is not in use.
+     * This element is not used by this API.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingQueuePlaceQueueInfoUniqueIDItem[]
      */
-    public function getUniqueID(): ?array
+    public function getUniqueID(): array
     {
         return $this->uniqueID;
     }
 
     /**
-     * This element is not in use.
+     * This element is not used by this API.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingQueuePlaceQueueInfoUniqueIDItem[] $uniqueID
      *
      * @return self
      */
-    public function setUniqueID(?array $uniqueID): self
+    public function setUniqueID(array $uniqueID): self
     {
         $this->uniqueID = $uniqueID;
 

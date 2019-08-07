@@ -21,7 +21,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      */
     protected $fareBasis;
     /**
-     * RPH" is used to match up with "SegmentSelect".
+     * 'RPH' is used to match up with 'SegmentSelect'.
      *
      * @var string
      */
@@ -32,7 +32,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return string
      */
-    public function getFareBasis(): ?string
+    public function getFareBasis(): string
     {
         return $this->fareBasis;
     }
@@ -44,7 +44,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return self
      */
-    public function setFareBasis(?string $fareBasis): self
+    public function setFareBasis(string $fareBasis): self
     {
         $this->fareBasis = $fareBasis;
 
@@ -52,23 +52,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     }
 
     /**
-     * RPH" is used to match up with "SegmentSelect".
+     * 'RPH' is used to match up with 'SegmentSelect'.
      *
      * @return string
      */
-    public function getRPH(): ?string
+    public function getRPH(): string
     {
         return $this->rPH;
     }
 
     /**
-     * RPH" is used to match up with "SegmentSelect".
+     * 'RPH' is used to match up with 'SegmentSelect'.
      *
      * @param string $rPH
      *
      * @return self
      */
-    public function setRPH(?string $rPH): self
+    public function setRPH(string $rPH): self
     {
         $this->rPH = $rPH;
 

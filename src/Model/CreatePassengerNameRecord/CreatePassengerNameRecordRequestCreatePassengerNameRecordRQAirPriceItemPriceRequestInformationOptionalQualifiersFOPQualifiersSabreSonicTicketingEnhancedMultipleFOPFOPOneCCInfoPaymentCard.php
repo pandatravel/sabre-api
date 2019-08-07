@@ -27,19 +27,22 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      */
     protected $code;
     /**
-     * Used to specify the credit card expiration date.
+     * 'ExpireDate' is used to specify a credit card expiration date.
+     * 'ExpireDate' follows this format: YYYY-MM.
+     * Go to the following link for a more in-depth explanation.
+     * http://www.w3.org/TR/xmlschema-2/#gYearMonth
      *
      * @var string
      */
     protected $expireDate;
     /**
-     * Used to specify extended payment if applicable.
+     * 'ExtendedPayment' is used to pass the number of months by which to extend the payment.
      *
      * @var int
      */
     protected $extendedPayment;
     /**
-     * Used to specify a manual credit card if applicable.
+     * 'ManualApprovalCode' is used to pass a manual credit card approval code if it applies to the credit card.
      *
      * @var string
      */
@@ -56,7 +59,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return string
      */
-    public function getCardSecurityCode(): ?string
+    public function getCardSecurityCode(): string
     {
         return $this->cardSecurityCode;
     }
@@ -68,7 +71,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return self
      */
-    public function setCardSecurityCode(?string $cardSecurityCode): self
+    public function setCardSecurityCode(string $cardSecurityCode): self
     {
         $this->cardSecurityCode = $cardSecurityCode;
 
@@ -80,7 +83,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return string
      */
-    public function getCode(): ?string
+    public function getCode(): string
     {
         return $this->code;
     }
@@ -92,7 +95,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return self
      */
-    public function setCode(?string $code): self
+    public function setCode(string $code): self
     {
         $this->code = $code;
 
@@ -100,23 +103,29 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     }
 
     /**
-     * Used to specify the credit card expiration date.
+     * 'ExpireDate' is used to specify a credit card expiration date.
+     * 'ExpireDate' follows this format: YYYY-MM.
+     * Go to the following link for a more in-depth explanation.
+     * http://www.w3.org/TR/xmlschema-2/#gYearMonth
      *
      * @return string
      */
-    public function getExpireDate(): ?string
+    public function getExpireDate(): string
     {
         return $this->expireDate;
     }
 
     /**
-     * Used to specify the credit card expiration date.
+     * 'ExpireDate' is used to specify a credit card expiration date.
+     * 'ExpireDate' follows this format: YYYY-MM.
+     * Go to the following link for a more in-depth explanation.
+     * http://www.w3.org/TR/xmlschema-2/#gYearMonth
      *
      * @param string $expireDate
      *
      * @return self
      */
-    public function setExpireDate(?string $expireDate): self
+    public function setExpireDate(string $expireDate): self
     {
         $this->expireDate = $expireDate;
 
@@ -124,23 +133,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     }
 
     /**
-     * Used to specify extended payment if applicable.
+     * 'ExtendedPayment' is used to pass the number of months by which to extend the payment.
      *
      * @return int
      */
-    public function getExtendedPayment(): ?int
+    public function getExtendedPayment(): int
     {
         return $this->extendedPayment;
     }
 
     /**
-     * Used to specify extended payment if applicable.
+     * 'ExtendedPayment' is used to pass the number of months by which to extend the payment.
      *
      * @param int $extendedPayment
      *
      * @return self
      */
-    public function setExtendedPayment(?int $extendedPayment): self
+    public function setExtendedPayment(int $extendedPayment): self
     {
         $this->extendedPayment = $extendedPayment;
 
@@ -148,23 +157,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     }
 
     /**
-     * Used to specify a manual credit card if applicable.
+     * 'ManualApprovalCode' is used to pass a manual credit card approval code if it applies to the credit card.
      *
      * @return string
      */
-    public function getManualApprovalCode(): ?string
+    public function getManualApprovalCode(): string
     {
         return $this->manualApprovalCode;
     }
 
     /**
-     * Used to specify a manual credit card if applicable.
+     * 'ManualApprovalCode' is used to pass a manual credit card approval code if it applies to the credit card.
      *
      * @param string $manualApprovalCode
      *
      * @return self
      */
-    public function setManualApprovalCode(?string $manualApprovalCode): self
+    public function setManualApprovalCode(string $manualApprovalCode): self
     {
         $this->manualApprovalCode = $manualApprovalCode;
 
@@ -176,7 +185,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return int
      */
-    public function getNumber(): ?int
+    public function getNumber(): int
     {
         return $this->number;
     }
@@ -188,7 +197,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return self
      */
-    public function setNumber(?int $number): self
+    public function setNumber(int $number): self
     {
         $this->number = $number;
 

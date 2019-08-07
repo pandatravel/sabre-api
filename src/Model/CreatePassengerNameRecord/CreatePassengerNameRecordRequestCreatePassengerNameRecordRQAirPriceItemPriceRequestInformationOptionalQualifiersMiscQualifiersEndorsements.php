@@ -21,7 +21,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      */
     protected $text;
     /**
-     * Override any endorsement.
+     * Used to override any endorsement.
      *
      * @var bool
      */
@@ -32,7 +32,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return string
      */
-    public function getText(): ?string
+    public function getText(): string
     {
         return $this->text;
     }
@@ -44,7 +44,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return self
      */
-    public function setText(?string $text): self
+    public function setText(string $text): self
     {
         $this->text = $text;
 
@@ -52,23 +52,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     }
 
     /**
-     * Override any endorsement.
+     * Used to override any endorsement.
      *
      * @return bool
      */
-    public function getOverride(): ?bool
+    public function getOverride(): bool
     {
         return $this->override;
     }
 
     /**
-     * Override any endorsement.
+     * Used to override any endorsement.
      *
      * @param bool $override
      *
      * @return self
      */
-    public function setOverride(?bool $override): self
+    public function setOverride(bool $override): self
     {
         $this->override = $override;
 

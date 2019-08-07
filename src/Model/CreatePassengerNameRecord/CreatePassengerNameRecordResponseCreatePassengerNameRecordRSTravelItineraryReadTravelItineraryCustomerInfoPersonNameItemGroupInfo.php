@@ -19,31 +19,31 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
      */
     protected $associatedReferenceInformation;
     /**
-     * "Name" is used to return the corporate/group name.
+     * The corporate/group name.
      *
      * @var string
      */
     protected $name;
     /**
-     * "OriginalNumberOfSeats" is used to return the original number of seats requested in the BSG.
+     * The original number of seats requested in the BSG.
      *
      * @var string
      */
     protected $originalNumberOfSeats;
     /**
-     * "GroupNameNumber" is used to return the passenger name number in relation to the rest of the group.
+     * The passenger name number in relation to the rest of the group.
      *
      * @var string
      */
     protected $groupNameNumber;
     /**
-     * "NumSeatsRemaining" is used to return the number of remaining seats.
+     * The number of remaining seats.
      *
      * @var string
      */
     protected $numSeatsRemaining;
     /**
-     * "SoldNumberOfSeats is used to return the number of seats sold from the BSG".
+     * The number of seats sold from the BSG.
      *
      * @var string
      */
@@ -52,7 +52,7 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     /**
      * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPersonNameItemGroupInfoAssociatedReferenceInformation
      */
-    public function getAssociatedReferenceInformation(): ?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPersonNameItemGroupInfoAssociatedReferenceInformation
+    public function getAssociatedReferenceInformation(): CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPersonNameItemGroupInfoAssociatedReferenceInformation
     {
         return $this->associatedReferenceInformation;
     }
@@ -62,7 +62,7 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
      *
      * @return self
      */
-    public function setAssociatedReferenceInformation(?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPersonNameItemGroupInfoAssociatedReferenceInformation $associatedReferenceInformation): self
+    public function setAssociatedReferenceInformation(CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPersonNameItemGroupInfoAssociatedReferenceInformation $associatedReferenceInformation): self
     {
         $this->associatedReferenceInformation = $associatedReferenceInformation;
 
@@ -70,23 +70,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     }
 
     /**
-     * "Name" is used to return the corporate/group name.
+     * The corporate/group name.
      *
      * @return string
      */
-    public function getName(): ?string
+    public function getName(): string
     {
         return $this->name;
     }
 
     /**
-     * "Name" is used to return the corporate/group name.
+     * The corporate/group name.
      *
      * @param string $name
      *
      * @return self
      */
-    public function setName(?string $name): self
+    public function setName(string $name): self
     {
         $this->name = $name;
 
@@ -94,23 +94,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     }
 
     /**
-     * "OriginalNumberOfSeats" is used to return the original number of seats requested in the BSG.
+     * The original number of seats requested in the BSG.
      *
      * @return string
      */
-    public function getOriginalNumberOfSeats(): ?string
+    public function getOriginalNumberOfSeats(): string
     {
         return $this->originalNumberOfSeats;
     }
 
     /**
-     * "OriginalNumberOfSeats" is used to return the original number of seats requested in the BSG.
+     * The original number of seats requested in the BSG.
      *
      * @param string $originalNumberOfSeats
      *
      * @return self
      */
-    public function setOriginalNumberOfSeats(?string $originalNumberOfSeats): self
+    public function setOriginalNumberOfSeats(string $originalNumberOfSeats): self
     {
         $this->originalNumberOfSeats = $originalNumberOfSeats;
 
@@ -118,23 +118,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     }
 
     /**
-     * "GroupNameNumber" is used to return the passenger name number in relation to the rest of the group.
+     * The passenger name number in relation to the rest of the group.
      *
      * @return string
      */
-    public function getGroupNameNumber(): ?string
+    public function getGroupNameNumber(): string
     {
         return $this->groupNameNumber;
     }
 
     /**
-     * "GroupNameNumber" is used to return the passenger name number in relation to the rest of the group.
+     * The passenger name number in relation to the rest of the group.
      *
      * @param string $groupNameNumber
      *
      * @return self
      */
-    public function setGroupNameNumber(?string $groupNameNumber): self
+    public function setGroupNameNumber(string $groupNameNumber): self
     {
         $this->groupNameNumber = $groupNameNumber;
 
@@ -142,23 +142,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     }
 
     /**
-     * "NumSeatsRemaining" is used to return the number of remaining seats.
+     * The number of remaining seats.
      *
      * @return string
      */
-    public function getNumSeatsRemaining(): ?string
+    public function getNumSeatsRemaining(): string
     {
         return $this->numSeatsRemaining;
     }
 
     /**
-     * "NumSeatsRemaining" is used to return the number of remaining seats.
+     * The number of remaining seats.
      *
      * @param string $numSeatsRemaining
      *
      * @return self
      */
-    public function setNumSeatsRemaining(?string $numSeatsRemaining): self
+    public function setNumSeatsRemaining(string $numSeatsRemaining): self
     {
         $this->numSeatsRemaining = $numSeatsRemaining;
 
@@ -166,23 +166,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     }
 
     /**
-     * "SoldNumberOfSeats is used to return the number of seats sold from the BSG".
+     * The number of seats sold from the BSG.
      *
      * @return string
      */
-    public function getSoldNumberOfSeats(): ?string
+    public function getSoldNumberOfSeats(): string
     {
         return $this->soldNumberOfSeats;
     }
 
     /**
-     * "SoldNumberOfSeats is used to return the number of seats sold from the BSG".
+     * The number of seats sold from the BSG.
      *
      * @param string $soldNumberOfSeats
      *
      * @return self
      */
-    public function setSoldNumberOfSeats(?string $soldNumberOfSeats): self
+    public function setSoldNumberOfSeats(string $soldNumberOfSeats): self
     {
         $this->soldNumberOfSeats = $soldNumberOfSeats;
 

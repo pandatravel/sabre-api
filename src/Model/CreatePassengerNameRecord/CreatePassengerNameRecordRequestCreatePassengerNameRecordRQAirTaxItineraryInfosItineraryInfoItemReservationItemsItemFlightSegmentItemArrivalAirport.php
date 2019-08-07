@@ -15,36 +15,36 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItemArrivalAirport extends AbstractModel
 {
     /**
-     * Airport code.
+     * 'LocationCode' is used to describe the code of the airport the traveler will arrive in.
      *
      * @var string
      */
     protected $locationCode;
     /**
-     * Attribute is not in use.
+     * 'CodeContext' is not used.
      *
      * @var string
      */
     protected $codeContext;
 
     /**
-     * Airport code.
+     * 'LocationCode' is used to describe the code of the airport the traveler will arrive in.
      *
      * @return string
      */
-    public function getLocationCode(): ?string
+    public function getLocationCode(): string
     {
         return $this->locationCode;
     }
 
     /**
-     * Airport code.
+     * 'LocationCode' is used to describe the code of the airport the traveler will arrive in.
      *
      * @param string $locationCode
      *
      * @return self
      */
-    public function setLocationCode(?string $locationCode): self
+    public function setLocationCode(string $locationCode): self
     {
         $this->locationCode = $locationCode;
 
@@ -52,23 +52,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItinerary
     }
 
     /**
-     * Attribute is not in use.
+     * 'CodeContext' is not used.
      *
      * @return string
      */
-    public function getCodeContext(): ?string
+    public function getCodeContext(): string
     {
         return $this->codeContext;
     }
 
     /**
-     * Attribute is not in use.
+     * 'CodeContext' is not used.
      *
      * @param string $codeContext
      *
      * @return self
      */
-    public function setCodeContext(?string $codeContext): self
+    public function setCodeContext(string $codeContext): self
     {
         $this->codeContext = $codeContext;
 

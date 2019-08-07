@@ -15,42 +15,42 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemAirFareInfoPTCFareBreakdownPassengerFare extends AbstractModel
 {
     /**
-     * Base fare.
+     * The base fare.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemAirFareInfoPTCFareBreakdownPassengerFareBaseFare
      */
     protected $baseFare;
     /**
-     * Equivalent fare.
+     * The Equivalent fare.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemAirFareInfoPTCFareBreakdownPassengerFareEquivFare
      */
     protected $equivFare;
     /**
-     * Ancillary code.
+     * The Ancillary service code.
      *
      * @var string
      */
     protected $ancillaryServiceCode;
 
     /**
-     * Base fare.
+     * The base fare.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemAirFareInfoPTCFareBreakdownPassengerFareBaseFare
      */
-    public function getBaseFare(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemAirFareInfoPTCFareBreakdownPassengerFareBaseFare
+    public function getBaseFare(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemAirFareInfoPTCFareBreakdownPassengerFareBaseFare
     {
         return $this->baseFare;
     }
 
     /**
-     * Base fare.
+     * The base fare.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemAirFareInfoPTCFareBreakdownPassengerFareBaseFare $baseFare
      *
      * @return self
      */
-    public function setBaseFare(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemAirFareInfoPTCFareBreakdownPassengerFareBaseFare $baseFare): self
+    public function setBaseFare(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemAirFareInfoPTCFareBreakdownPassengerFareBaseFare $baseFare): self
     {
         $this->baseFare = $baseFare;
 
@@ -58,23 +58,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItinerary
     }
 
     /**
-     * Equivalent fare.
+     * The Equivalent fare.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemAirFareInfoPTCFareBreakdownPassengerFareEquivFare
      */
-    public function getEquivFare(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemAirFareInfoPTCFareBreakdownPassengerFareEquivFare
+    public function getEquivFare(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemAirFareInfoPTCFareBreakdownPassengerFareEquivFare
     {
         return $this->equivFare;
     }
 
     /**
-     * Equivalent fare.
+     * The Equivalent fare.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemAirFareInfoPTCFareBreakdownPassengerFareEquivFare $equivFare
      *
      * @return self
      */
-    public function setEquivFare(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemAirFareInfoPTCFareBreakdownPassengerFareEquivFare $equivFare): self
+    public function setEquivFare(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemAirFareInfoPTCFareBreakdownPassengerFareEquivFare $equivFare): self
     {
         $this->equivFare = $equivFare;
 
@@ -82,23 +82,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItinerary
     }
 
     /**
-     * Ancillary code.
+     * The Ancillary service code.
      *
      * @return string
      */
-    public function getAncillaryServiceCode(): ?string
+    public function getAncillaryServiceCode(): string
     {
         return $this->ancillaryServiceCode;
     }
 
     /**
-     * Ancillary code.
+     * The Ancillary service code.
      *
      * @param string $ancillaryServiceCode
      *
      * @return self
      */
-    public function setAncillaryServiceCode(?string $ancillaryServiceCode): self
+    public function setAncillaryServiceCode(string $ancillaryServiceCode): self
     {
         $this->ancillaryServiceCode = $ancillaryServiceCode;
 

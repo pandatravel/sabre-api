@@ -15,42 +15,42 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentAgency extends AbstractModel
 {
     /**
-     * Agency name.
+     * The agency name.
      *
      * @var string
      */
     protected $name;
     /**
-     * Agency address.
+     * The agency address information.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentAgencyAddress
      */
     protected $address;
     /**
-     * IATA number.
+     * The IATA number.
      *
      * @var string
      */
     protected $iATANumber;
 
     /**
-     * Agency name.
+     * The agency name.
      *
      * @return string
      */
-    public function getName(): ?string
+    public function getName(): string
     {
         return $this->name;
     }
 
     /**
-     * Agency name.
+     * The agency name.
      *
      * @param string $name
      *
      * @return self
      */
-    public function setName(?string $name): self
+    public function setName(string $name): self
     {
         $this->name = $name;
 
@@ -58,23 +58,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymen
     }
 
     /**
-     * Agency address.
+     * The agency address information.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentAgencyAddress
      */
-    public function getAddress(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentAgencyAddress
+    public function getAddress(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentAgencyAddress
     {
         return $this->address;
     }
 
     /**
-     * Agency address.
+     * The agency address information.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentAgencyAddress $address
      *
      * @return self
      */
-    public function setAddress(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentAgencyAddress $address): self
+    public function setAddress(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentAgencyAddress $address): self
     {
         $this->address = $address;
 
@@ -82,23 +82,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymen
     }
 
     /**
-     * IATA number.
+     * The IATA number.
      *
      * @return string
      */
-    public function getIATANumber(): ?string
+    public function getIATANumber(): string
     {
         return $this->iATANumber;
     }
 
     /**
-     * IATA number.
+     * The IATA number.
      *
      * @param string $iATANumber
      *
      * @return self
      */
-    public function setIATANumber(?string $iATANumber): self
+    public function setIATANumber(string $iATANumber): self
     {
         $this->iATANumber = $iATANumber;
 

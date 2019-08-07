@@ -15,30 +15,30 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItemHiddenStops extends AbstractModel
 {
     /**
-     * Used to pass hidden city / via code.
+     * Used to pass the hidden city / via code.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItemHiddenStopsHiddenStopItem[]
      */
     protected $hiddenStop;
 
     /**
-     * Used to pass hidden city / via code.
+     * Used to pass the hidden city / via code.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItemHiddenStopsHiddenStopItem[]
      */
-    public function getHiddenStop(): ?array
+    public function getHiddenStop(): array
     {
         return $this->hiddenStop;
     }
 
     /**
-     * Used to pass hidden city / via code.
+     * Used to pass the hidden city / via code.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItemHiddenStopsHiddenStopItem[] $hiddenStop
      *
      * @return self
      */
-    public function setHiddenStop(?array $hiddenStop): self
+    public function setHiddenStop(array $hiddenStop): self
     {
         $this->hiddenStop = $hiddenStop;
 

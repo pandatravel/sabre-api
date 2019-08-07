@@ -15,30 +15,30 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoContactNumbers extends AbstractModel
 {
     /**
-     * Contact number.
+     * The contact number information.
      *
      * @var CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoContactNumbersContactNumberItem[]
      */
     protected $contactNumber;
 
     /**
-     * Contact number.
+     * The contact number information.
      *
      * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoContactNumbersContactNumberItem[]
      */
-    public function getContactNumber(): ?array
+    public function getContactNumber(): array
     {
         return $this->contactNumber;
     }
 
     /**
-     * Contact number.
+     * The contact number information.
      *
      * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoContactNumbersContactNumberItem[] $contactNumber
      *
      * @return self
      */
-    public function setContactNumber(?array $contactNumber): self
+    public function setContactNumber(array $contactNumber): self
     {
         $this->contactNumber = $contactNumber;
 

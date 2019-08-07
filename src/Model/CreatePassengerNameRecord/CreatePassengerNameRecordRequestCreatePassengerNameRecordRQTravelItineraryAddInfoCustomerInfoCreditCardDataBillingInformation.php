@@ -39,7 +39,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
      */
     protected $city;
     /**
-     * Used to specify the state or province of the card holder. "stateOrProvince" with a state code is required for addresses in the United States, U.S. Virgin Islands, Puerto Rico. "stateOrProvince" with a province code is required for addresses outside the United States, U.S. Virgin Islands, Puerto Rico.
+     * 'stateOrProvince' is used to specify the state or province of the card holder.
+     * 'stateOrProvince' with a state code is required for addresses in the United States, U.S. Virgin Islands, and Puerto Rico.
+     * 'stateOrProvince' with a province code is required for addresses outside the United States, U.S. Virgin Islands, and Puerto Rico.
      *
      * @var string
      */
@@ -50,7 +52,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
      *
      * @return string
      */
-    public function getZip(): ?string
+    public function getZip(): string
     {
         return $this->zip;
     }
@@ -62,7 +64,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
      *
      * @return self
      */
-    public function setZip(?string $zip): self
+    public function setZip(string $zip): self
     {
         $this->zip = $zip;
 
@@ -74,7 +76,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
      *
      * @return string
      */
-    public function getCardHolderName(): ?string
+    public function getCardHolderName(): string
     {
         return $this->cardHolderName;
     }
@@ -86,7 +88,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
      *
      * @return self
      */
-    public function setCardHolderName(?string $cardHolderName): self
+    public function setCardHolderName(string $cardHolderName): self
     {
         $this->cardHolderName = $cardHolderName;
 
@@ -98,7 +100,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
      *
      * @return string
      */
-    public function getStreetAddress(): ?string
+    public function getStreetAddress(): string
     {
         return $this->streetAddress;
     }
@@ -110,7 +112,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
      *
      * @return self
      */
-    public function setStreetAddress(?string $streetAddress): self
+    public function setStreetAddress(string $streetAddress): self
     {
         $this->streetAddress = $streetAddress;
 
@@ -122,7 +124,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
      *
      * @return string
      */
-    public function getCity(): ?string
+    public function getCity(): string
     {
         return $this->city;
     }
@@ -134,7 +136,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
      *
      * @return self
      */
-    public function setCity(?string $city): self
+    public function setCity(string $city): self
     {
         $this->city = $city;
 
@@ -142,23 +144,27 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
     }
 
     /**
-     * Used to specify the state or province of the card holder. "stateOrProvince" with a state code is required for addresses in the United States, U.S. Virgin Islands, Puerto Rico. "stateOrProvince" with a province code is required for addresses outside the United States, U.S. Virgin Islands, Puerto Rico.
+     * 'stateOrProvince' is used to specify the state or province of the card holder.
+     * 'stateOrProvince' with a state code is required for addresses in the United States, U.S. Virgin Islands, and Puerto Rico.
+     * 'stateOrProvince' with a province code is required for addresses outside the United States, U.S. Virgin Islands, and Puerto Rico.
      *
      * @return string
      */
-    public function getStateOrProvince(): ?string
+    public function getStateOrProvince(): string
     {
         return $this->stateOrProvince;
     }
 
     /**
-     * Used to specify the state or province of the card holder. "stateOrProvince" with a state code is required for addresses in the United States, U.S. Virgin Islands, Puerto Rico. "stateOrProvince" with a province code is required for addresses outside the United States, U.S. Virgin Islands, Puerto Rico.
+     * 'stateOrProvince' is used to specify the state or province of the card holder.
+     * 'stateOrProvince' with a state code is required for addresses in the United States, U.S. Virgin Islands, and Puerto Rico.
+     * 'stateOrProvince' with a province code is required for addresses outside the United States, U.S. Virgin Islands, and Puerto Rico.
      *
      * @param string $stateOrProvince
      *
      * @return self
      */
-    public function setStateOrProvince(?string $stateOrProvince): self
+    public function setStateOrProvince(string $stateOrProvince): self
     {
         $this->stateOrProvince = $stateOrProvince;
 

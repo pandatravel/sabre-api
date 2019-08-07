@@ -15,48 +15,50 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItinerarySpecialServiceInfoItem extends AbstractModel
 {
     /**
-     * SSR details.
+     * The SSR details information.
      *
      * @var CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItinerarySpecialServiceInfoItemService
      */
     protected $service;
     /**
-     * "RPH" is used as a reference placeholder.
+     * The reference placeholder.
      *
      * @var string
      */
     protected $rPH;
     /**
-     * "Type" is used to return the type of the SSR segment. Returns the SSR code AFX for Host Airline, GFX for other Airline.
+     * The type of the SSR segment.
+    Returns the SSR code AFX for Host Airline, GFX for other Airline.
+
      *
      * @var string
      */
     protected $type;
     /**
-     * "Id" is used to return the id of SSR.
+     * The id of SSR.
      *
      * @var string
      */
     protected $id;
 
     /**
-     * SSR details.
+     * The SSR details information.
      *
      * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItinerarySpecialServiceInfoItemService
      */
-    public function getService(): ?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItinerarySpecialServiceInfoItemService
+    public function getService(): CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItinerarySpecialServiceInfoItemService
     {
         return $this->service;
     }
 
     /**
-     * SSR details.
+     * The SSR details information.
      *
      * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItinerarySpecialServiceInfoItemService $service
      *
      * @return self
      */
-    public function setService(?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItinerarySpecialServiceInfoItemService $service): self
+    public function setService(CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItinerarySpecialServiceInfoItemService $service): self
     {
         $this->service = $service;
 
@@ -64,23 +66,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     }
 
     /**
-     * "RPH" is used as a reference placeholder.
+     * The reference placeholder.
      *
      * @return string
      */
-    public function getRPH(): ?string
+    public function getRPH(): string
     {
         return $this->rPH;
     }
 
     /**
-     * "RPH" is used as a reference placeholder.
+     * The reference placeholder.
      *
      * @param string $rPH
      *
      * @return self
      */
-    public function setRPH(?string $rPH): self
+    public function setRPH(string $rPH): self
     {
         $this->rPH = $rPH;
 
@@ -88,23 +90,27 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     }
 
     /**
-     * "Type" is used to return the type of the SSR segment. Returns the SSR code AFX for Host Airline, GFX for other Airline.
+     * The type of the SSR segment.
+    Returns the SSR code AFX for Host Airline, GFX for other Airline.
+
      *
      * @return string
      */
-    public function getType(): ?string
+    public function getType(): string
     {
         return $this->type;
     }
 
     /**
-     * "Type" is used to return the type of the SSR segment. Returns the SSR code AFX for Host Airline, GFX for other Airline.
+     * The type of the SSR segment.
+    Returns the SSR code AFX for Host Airline, GFX for other Airline.
+
      *
      * @param string $type
      *
      * @return self
      */
-    public function setType(?string $type): self
+    public function setType(string $type): self
     {
         $this->type = $type;
 
@@ -112,23 +118,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     }
 
     /**
-     * "Id" is used to return the id of SSR.
+     * The id of SSR.
      *
      * @return string
      */
-    public function getId(): ?string
+    public function getId(): string
     {
         return $this->id;
     }
 
     /**
-     * "Id" is used to return the id of SSR.
+     * The id of SSR.
      *
      * @param string $id
      *
      * @return self
      */
-    public function setId(?string $id): self
+    public function setId(string $id): self
     {
         $this->id = $id;
 

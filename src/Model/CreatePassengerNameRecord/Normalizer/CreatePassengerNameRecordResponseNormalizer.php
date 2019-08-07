@@ -30,7 +30,7 @@ class CreatePassengerNameRecordResponseNormalizer implements DenormalizerInterfa
 
     public function supportsNormalization($data, $format = null)
     {
-        return $data instanceof \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordResponse;
+        return get_class($data) === 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordResponse';
     }
 
     public function denormalize($data, $class, $format = null, array $context = [])

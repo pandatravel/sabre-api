@@ -15,30 +15,30 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemSpecificPenaltyItem extends AbstractModel
 {
     /**
-     * Penalty info.
+     * The penalty information.
      *
      * @var CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemSpecificPenaltyItemPenaltyInformation
      */
     protected $penaltyInformation;
 
     /**
-     * Penalty info.
+     * The penalty information.
      *
      * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemSpecificPenaltyItemPenaltyInformation
      */
-    public function getPenaltyInformation(): ?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemSpecificPenaltyItemPenaltyInformation
+    public function getPenaltyInformation(): CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemSpecificPenaltyItemPenaltyInformation
     {
         return $this->penaltyInformation;
     }
 
     /**
-     * Penalty info.
+     * The penalty information.
      *
      * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemSpecificPenaltyItemPenaltyInformation $penaltyInformation
      *
      * @return self
      */
-    public function setPenaltyInformation(?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemSpecificPenaltyItemPenaltyInformation $penaltyInformation): self
+    public function setPenaltyInformation(CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemSpecificPenaltyItemPenaltyInformation $penaltyInformation): self
     {
         $this->penaltyInformation = $penaltyInformation;
 

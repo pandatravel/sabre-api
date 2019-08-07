@@ -15,150 +15,152 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItem extends AbstractModel
 {
     /**
-     * Baggage associations.
+     * The baggage associations.
      *
      * @var CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemAssociations
      */
     protected $associations;
     /**
-     * Carrier code whose baggage provisions apply.
+     * The carrier code, whose baggage provisions apply.
      *
      * @var string
      */
     protected $carrierWhoseBaggageProvisionsApply;
     /**
-     * Commissionable indicator.
+     * The Commissionable indicator.
      *
      * @var string
      */
     protected $commissionable;
     /**
-     * Fee application indicator.
+     * The fee application indicator.
      *
      * @var string
      */
     protected $feeApplicationIndicator;
     /**
-     * Fee not guaranteed indicator.
+     * The fee not guaranteed indicator.
      *
      * @var string
      */
     protected $feeNotGuaranteedIndicator;
     /**
-     * First occurrence.
+     * The first occurrence.
      *
      * @var string
      */
     protected $firstOccurrence;
     /**
-     * Frequent flier tier level.
+     * The frequent flier tier level.
      *
      * @var string
      */
     protected $fQTVCarrierFiledTierLevel;
     /**
-     * Interlineable indicator.
+     * The interlineable indicator.
      *
      * @var string
      */
     protected $interlineable;
     /**
-     * Last occurrence.
+     * The last occurrence.
      *
      * @var string
      */
     protected $lastOccurrence;
     /**
-     * No charge / Not available indicator.
+     * The no charge / not available indicator.
      *
      * @var string
      */
     protected $noChargeNotAvailableIndicator;
     /**
-     * Number of BDI pieced.
+     * The number of BDI pieced.
      *
      * @var string
      */
     protected $numPiecesBDI;
     /**
-     * Number of ITR pieces.
+     * The number of ITR pieces.
      *
      * @var string[]
      */
     protected $numPiecesITR;
     /**
-     * Passenger type.
+     * The passenger type information.
      *
      * @var CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemPassengerType
      */
     protected $passengerType;
     /**
-     * Price information.
+     * The price information.
      *
      * @var CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemPriceInformation
      */
     protected $priceInformation;
     /**
-     * Provision type.
+     * The provision type information.
      *
      * @var string
      */
     protected $provisionType;
     /**
-     * Refund form.
+     * The refund form information.
      *
      * @var string
      */
     protected $refundForm;
     /**
-     * Refund reissue indicator.
+     * The refund reissue indicator.
      *
      * @var string
      */
     protected $refundReissue;
     /**
-     * Simultaneous ticket indicator.
+     * The simultaneous ticket indicator.
      *
      * @var string
      */
     protected $simultaneousTicketIndicator;
     /**
-     * Sub code.
+     * The sub code information.
      *
      * @var CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemSubCodeInfo
      */
     protected $subCodeInfo;
     /**
-     * Weight limit.
+     * The weight limit information.
      *
      * @var CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemWeightLimit
      */
     protected $weightLimit;
     /**
-     * Used as a reference place holder. Matches /PriceQuote/MiscInformation/BaggageInfo/SubCodeProperties[n]/@RPH.
+     * Used as a reference place holder.
+    Matches PriceQuote.MiscInformation.BaggageInfo.SubCodeProperties[n].RPH.
+
      *
      * @var string
      */
     protected $rPH;
 
     /**
-     * Baggage associations.
+     * The baggage associations.
      *
      * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemAssociations
      */
-    public function getAssociations(): ?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemAssociations
+    public function getAssociations(): CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemAssociations
     {
         return $this->associations;
     }
 
     /**
-     * Baggage associations.
+     * The baggage associations.
      *
      * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemAssociations $associations
      *
      * @return self
      */
-    public function setAssociations(?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemAssociations $associations): self
+    public function setAssociations(CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemAssociations $associations): self
     {
         $this->associations = $associations;
 
@@ -166,23 +168,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     }
 
     /**
-     * Carrier code whose baggage provisions apply.
+     * The carrier code, whose baggage provisions apply.
      *
      * @return string
      */
-    public function getCarrierWhoseBaggageProvisionsApply(): ?string
+    public function getCarrierWhoseBaggageProvisionsApply(): string
     {
         return $this->carrierWhoseBaggageProvisionsApply;
     }
 
     /**
-     * Carrier code whose baggage provisions apply.
+     * The carrier code, whose baggage provisions apply.
      *
      * @param string $carrierWhoseBaggageProvisionsApply
      *
      * @return self
      */
-    public function setCarrierWhoseBaggageProvisionsApply(?string $carrierWhoseBaggageProvisionsApply): self
+    public function setCarrierWhoseBaggageProvisionsApply(string $carrierWhoseBaggageProvisionsApply): self
     {
         $this->carrierWhoseBaggageProvisionsApply = $carrierWhoseBaggageProvisionsApply;
 
@@ -190,23 +192,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     }
 
     /**
-     * Commissionable indicator.
+     * The Commissionable indicator.
      *
      * @return string
      */
-    public function getCommissionable(): ?string
+    public function getCommissionable(): string
     {
         return $this->commissionable;
     }
 
     /**
-     * Commissionable indicator.
+     * The Commissionable indicator.
      *
      * @param string $commissionable
      *
      * @return self
      */
-    public function setCommissionable(?string $commissionable): self
+    public function setCommissionable(string $commissionable): self
     {
         $this->commissionable = $commissionable;
 
@@ -214,23 +216,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     }
 
     /**
-     * Fee application indicator.
+     * The fee application indicator.
      *
      * @return string
      */
-    public function getFeeApplicationIndicator(): ?string
+    public function getFeeApplicationIndicator(): string
     {
         return $this->feeApplicationIndicator;
     }
 
     /**
-     * Fee application indicator.
+     * The fee application indicator.
      *
      * @param string $feeApplicationIndicator
      *
      * @return self
      */
-    public function setFeeApplicationIndicator(?string $feeApplicationIndicator): self
+    public function setFeeApplicationIndicator(string $feeApplicationIndicator): self
     {
         $this->feeApplicationIndicator = $feeApplicationIndicator;
 
@@ -238,23 +240,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     }
 
     /**
-     * Fee not guaranteed indicator.
+     * The fee not guaranteed indicator.
      *
      * @return string
      */
-    public function getFeeNotGuaranteedIndicator(): ?string
+    public function getFeeNotGuaranteedIndicator(): string
     {
         return $this->feeNotGuaranteedIndicator;
     }
 
     /**
-     * Fee not guaranteed indicator.
+     * The fee not guaranteed indicator.
      *
      * @param string $feeNotGuaranteedIndicator
      *
      * @return self
      */
-    public function setFeeNotGuaranteedIndicator(?string $feeNotGuaranteedIndicator): self
+    public function setFeeNotGuaranteedIndicator(string $feeNotGuaranteedIndicator): self
     {
         $this->feeNotGuaranteedIndicator = $feeNotGuaranteedIndicator;
 
@@ -262,23 +264,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     }
 
     /**
-     * First occurrence.
+     * The first occurrence.
      *
      * @return string
      */
-    public function getFirstOccurrence(): ?string
+    public function getFirstOccurrence(): string
     {
         return $this->firstOccurrence;
     }
 
     /**
-     * First occurrence.
+     * The first occurrence.
      *
      * @param string $firstOccurrence
      *
      * @return self
      */
-    public function setFirstOccurrence(?string $firstOccurrence): self
+    public function setFirstOccurrence(string $firstOccurrence): self
     {
         $this->firstOccurrence = $firstOccurrence;
 
@@ -286,23 +288,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     }
 
     /**
-     * Frequent flier tier level.
+     * The frequent flier tier level.
      *
      * @return string
      */
-    public function getFQTVCarrierFiledTierLevel(): ?string
+    public function getFQTVCarrierFiledTierLevel(): string
     {
         return $this->fQTVCarrierFiledTierLevel;
     }
 
     /**
-     * Frequent flier tier level.
+     * The frequent flier tier level.
      *
      * @param string $fQTVCarrierFiledTierLevel
      *
      * @return self
      */
-    public function setFQTVCarrierFiledTierLevel(?string $fQTVCarrierFiledTierLevel): self
+    public function setFQTVCarrierFiledTierLevel(string $fQTVCarrierFiledTierLevel): self
     {
         $this->fQTVCarrierFiledTierLevel = $fQTVCarrierFiledTierLevel;
 
@@ -310,23 +312,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     }
 
     /**
-     * Interlineable indicator.
+     * The interlineable indicator.
      *
      * @return string
      */
-    public function getInterlineable(): ?string
+    public function getInterlineable(): string
     {
         return $this->interlineable;
     }
 
     /**
-     * Interlineable indicator.
+     * The interlineable indicator.
      *
      * @param string $interlineable
      *
      * @return self
      */
-    public function setInterlineable(?string $interlineable): self
+    public function setInterlineable(string $interlineable): self
     {
         $this->interlineable = $interlineable;
 
@@ -334,23 +336,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     }
 
     /**
-     * Last occurrence.
+     * The last occurrence.
      *
      * @return string
      */
-    public function getLastOccurrence(): ?string
+    public function getLastOccurrence(): string
     {
         return $this->lastOccurrence;
     }
 
     /**
-     * Last occurrence.
+     * The last occurrence.
      *
      * @param string $lastOccurrence
      *
      * @return self
      */
-    public function setLastOccurrence(?string $lastOccurrence): self
+    public function setLastOccurrence(string $lastOccurrence): self
     {
         $this->lastOccurrence = $lastOccurrence;
 
@@ -358,23 +360,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     }
 
     /**
-     * No charge / Not available indicator.
+     * The no charge / not available indicator.
      *
      * @return string
      */
-    public function getNoChargeNotAvailableIndicator(): ?string
+    public function getNoChargeNotAvailableIndicator(): string
     {
         return $this->noChargeNotAvailableIndicator;
     }
 
     /**
-     * No charge / Not available indicator.
+     * The no charge / not available indicator.
      *
      * @param string $noChargeNotAvailableIndicator
      *
      * @return self
      */
-    public function setNoChargeNotAvailableIndicator(?string $noChargeNotAvailableIndicator): self
+    public function setNoChargeNotAvailableIndicator(string $noChargeNotAvailableIndicator): self
     {
         $this->noChargeNotAvailableIndicator = $noChargeNotAvailableIndicator;
 
@@ -382,23 +384,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     }
 
     /**
-     * Number of BDI pieced.
+     * The number of BDI pieced.
      *
      * @return string
      */
-    public function getNumPiecesBDI(): ?string
+    public function getNumPiecesBDI(): string
     {
         return $this->numPiecesBDI;
     }
 
     /**
-     * Number of BDI pieced.
+     * The number of BDI pieced.
      *
      * @param string $numPiecesBDI
      *
      * @return self
      */
-    public function setNumPiecesBDI(?string $numPiecesBDI): self
+    public function setNumPiecesBDI(string $numPiecesBDI): self
     {
         $this->numPiecesBDI = $numPiecesBDI;
 
@@ -406,23 +408,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     }
 
     /**
-     * Number of ITR pieces.
+     * The number of ITR pieces.
      *
      * @return string[]
      */
-    public function getNumPiecesITR(): ?array
+    public function getNumPiecesITR(): array
     {
         return $this->numPiecesITR;
     }
 
     /**
-     * Number of ITR pieces.
+     * The number of ITR pieces.
      *
      * @param string[] $numPiecesITR
      *
      * @return self
      */
-    public function setNumPiecesITR(?array $numPiecesITR): self
+    public function setNumPiecesITR(array $numPiecesITR): self
     {
         $this->numPiecesITR = $numPiecesITR;
 
@@ -430,23 +432,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     }
 
     /**
-     * Passenger type.
+     * The passenger type information.
      *
      * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemPassengerType
      */
-    public function getPassengerType(): ?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemPassengerType
+    public function getPassengerType(): CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemPassengerType
     {
         return $this->passengerType;
     }
 
     /**
-     * Passenger type.
+     * The passenger type information.
      *
      * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemPassengerType $passengerType
      *
      * @return self
      */
-    public function setPassengerType(?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemPassengerType $passengerType): self
+    public function setPassengerType(CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemPassengerType $passengerType): self
     {
         $this->passengerType = $passengerType;
 
@@ -454,23 +456,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     }
 
     /**
-     * Price information.
+     * The price information.
      *
      * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemPriceInformation
      */
-    public function getPriceInformation(): ?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemPriceInformation
+    public function getPriceInformation(): CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemPriceInformation
     {
         return $this->priceInformation;
     }
 
     /**
-     * Price information.
+     * The price information.
      *
      * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemPriceInformation $priceInformation
      *
      * @return self
      */
-    public function setPriceInformation(?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemPriceInformation $priceInformation): self
+    public function setPriceInformation(CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemPriceInformation $priceInformation): self
     {
         $this->priceInformation = $priceInformation;
 
@@ -478,23 +480,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     }
 
     /**
-     * Provision type.
+     * The provision type information.
      *
      * @return string
      */
-    public function getProvisionType(): ?string
+    public function getProvisionType(): string
     {
         return $this->provisionType;
     }
 
     /**
-     * Provision type.
+     * The provision type information.
      *
      * @param string $provisionType
      *
      * @return self
      */
-    public function setProvisionType(?string $provisionType): self
+    public function setProvisionType(string $provisionType): self
     {
         $this->provisionType = $provisionType;
 
@@ -502,23 +504,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     }
 
     /**
-     * Refund form.
+     * The refund form information.
      *
      * @return string
      */
-    public function getRefundForm(): ?string
+    public function getRefundForm(): string
     {
         return $this->refundForm;
     }
 
     /**
-     * Refund form.
+     * The refund form information.
      *
      * @param string $refundForm
      *
      * @return self
      */
-    public function setRefundForm(?string $refundForm): self
+    public function setRefundForm(string $refundForm): self
     {
         $this->refundForm = $refundForm;
 
@@ -526,23 +528,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     }
 
     /**
-     * Refund reissue indicator.
+     * The refund reissue indicator.
      *
      * @return string
      */
-    public function getRefundReissue(): ?string
+    public function getRefundReissue(): string
     {
         return $this->refundReissue;
     }
 
     /**
-     * Refund reissue indicator.
+     * The refund reissue indicator.
      *
      * @param string $refundReissue
      *
      * @return self
      */
-    public function setRefundReissue(?string $refundReissue): self
+    public function setRefundReissue(string $refundReissue): self
     {
         $this->refundReissue = $refundReissue;
 
@@ -550,23 +552,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     }
 
     /**
-     * Simultaneous ticket indicator.
+     * The simultaneous ticket indicator.
      *
      * @return string
      */
-    public function getSimultaneousTicketIndicator(): ?string
+    public function getSimultaneousTicketIndicator(): string
     {
         return $this->simultaneousTicketIndicator;
     }
 
     /**
-     * Simultaneous ticket indicator.
+     * The simultaneous ticket indicator.
      *
      * @param string $simultaneousTicketIndicator
      *
      * @return self
      */
-    public function setSimultaneousTicketIndicator(?string $simultaneousTicketIndicator): self
+    public function setSimultaneousTicketIndicator(string $simultaneousTicketIndicator): self
     {
         $this->simultaneousTicketIndicator = $simultaneousTicketIndicator;
 
@@ -574,23 +576,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     }
 
     /**
-     * Sub code.
+     * The sub code information.
      *
      * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemSubCodeInfo
      */
-    public function getSubCodeInfo(): ?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemSubCodeInfo
+    public function getSubCodeInfo(): CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemSubCodeInfo
     {
         return $this->subCodeInfo;
     }
 
     /**
-     * Sub code.
+     * The sub code information.
      *
      * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemSubCodeInfo $subCodeInfo
      *
      * @return self
      */
-    public function setSubCodeInfo(?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemSubCodeInfo $subCodeInfo): self
+    public function setSubCodeInfo(CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemSubCodeInfo $subCodeInfo): self
     {
         $this->subCodeInfo = $subCodeInfo;
 
@@ -598,23 +600,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     }
 
     /**
-     * Weight limit.
+     * The weight limit information.
      *
      * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemWeightLimit
      */
-    public function getWeightLimit(): ?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemWeightLimit
+    public function getWeightLimit(): CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemWeightLimit
     {
         return $this->weightLimit;
     }
 
     /**
-     * Weight limit.
+     * The weight limit information.
      *
      * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemWeightLimit $weightLimit
      *
      * @return self
      */
-    public function setWeightLimit(?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemWeightLimit $weightLimit): self
+    public function setWeightLimit(CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemWeightLimit $weightLimit): self
     {
         $this->weightLimit = $weightLimit;
 
@@ -622,23 +624,27 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     }
 
     /**
-     * Used as a reference place holder. Matches /PriceQuote/MiscInformation/BaggageInfo/SubCodeProperties[n]/@RPH.
+     * Used as a reference place holder.
+    Matches PriceQuote.MiscInformation.BaggageInfo.SubCodeProperties[n].RPH.
+
      *
      * @return string
      */
-    public function getRPH(): ?string
+    public function getRPH(): string
     {
         return $this->rPH;
     }
 
     /**
-     * Used as a reference place holder. Matches /PriceQuote/MiscInformation/BaggageInfo/SubCodeProperties[n]/@RPH.
+     * Used as a reference place holder.
+    Matches PriceQuote.MiscInformation.BaggageInfo.SubCodeProperties[n].RPH.
+
      *
      * @param string $rPH
      *
      * @return self
      */
-    public function setRPH(?string $rPH): self
+    public function setRPH(string $rPH): self
     {
         $this->rPH = $rPH;
 

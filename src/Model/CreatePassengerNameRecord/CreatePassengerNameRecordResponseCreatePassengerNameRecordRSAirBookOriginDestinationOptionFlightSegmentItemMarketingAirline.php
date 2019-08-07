@@ -15,36 +15,36 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginDestinationOptionFlightSegmentItemMarketingAirline extends AbstractModel
 {
     /**
-     * Airline code.
+     * The airline code.
      *
      * @var string
      */
     protected $code;
     /**
-     * Used to return the flight number.
+     * The flight number.
      *
      * @var string
      */
     protected $flightNumber;
 
     /**
-     * Airline code.
+     * The airline code.
      *
      * @return string
      */
-    public function getCode(): ?string
+    public function getCode(): string
     {
         return $this->code;
     }
 
     /**
-     * Airline code.
+     * The airline code.
      *
      * @param string $code
      *
      * @return self
      */
-    public function setCode(?string $code): self
+    public function setCode(string $code): self
     {
         $this->code = $code;
 
@@ -52,23 +52,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginD
     }
 
     /**
-     * Used to return the flight number.
+     * The flight number.
      *
      * @return string
      */
-    public function getFlightNumber(): ?string
+    public function getFlightNumber(): string
     {
         return $this->flightNumber;
     }
 
     /**
-     * Used to return the flight number.
+     * The flight number.
      *
      * @param string $flightNumber
      *
      * @return self
      */
-    public function setFlightNumber(?string $flightNumber): self
+    public function setFlightNumber(string $flightNumber): self
     {
         $this->flightNumber = $flightNumber;
 

@@ -22,7 +22,7 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     /**
      * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPersonNameItemGroupInfoAssociatedReferenceInformationAssociatedPNRSummaries
      */
-    public function getAssociatedPNRSummaries(): ?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPersonNameItemGroupInfoAssociatedReferenceInformationAssociatedPNRSummaries
+    public function getAssociatedPNRSummaries(): CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPersonNameItemGroupInfoAssociatedReferenceInformationAssociatedPNRSummaries
     {
         return $this->associatedPNRSummaries;
     }
@@ -32,7 +32,7 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
      *
      * @return self
      */
-    public function setAssociatedPNRSummaries(?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPersonNameItemGroupInfoAssociatedReferenceInformationAssociatedPNRSummaries $associatedPNRSummaries): self
+    public function setAssociatedPNRSummaries(CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPersonNameItemGroupInfoAssociatedReferenceInformationAssociatedPNRSummaries $associatedPNRSummaries): self
     {
         $this->associatedPNRSummaries = $associatedPNRSummaries;
 

@@ -15,36 +15,36 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPersonNameItemProfileIndexItem extends AbstractModel
 {
     /**
-     * "ProfileIndex" is used to return the profile index.
+     * The profile index.
      *
      * @var string
      */
     protected $content;
     /**
-     * "ProfileIndex" is used to return the profile index ID.
+     * The profile index ID.
      *
      * @var string
      */
     protected $id;
 
     /**
-     * "ProfileIndex" is used to return the profile index.
+     * The profile index.
      *
      * @return string
      */
-    public function getContent(): ?string
+    public function getContent(): string
     {
         return $this->content;
     }
 
     /**
-     * "ProfileIndex" is used to return the profile index.
+     * The profile index.
      *
      * @param string $content
      *
      * @return self
      */
-    public function setContent(?string $content): self
+    public function setContent(string $content): self
     {
         $this->content = $content;
 
@@ -52,23 +52,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     }
 
     /**
-     * "ProfileIndex" is used to return the profile index ID.
+     * The profile index ID.
      *
      * @return string
      */
-    public function getId(): ?string
+    public function getId(): string
     {
         return $this->id;
     }
 
     /**
-     * "ProfileIndex" is used to return the profile index ID.
+     * The profile index ID.
      *
      * @param string $id
      *
      * @return self
      */
-    public function setId(?string $id): self
+    public function setId(string $id): self
     {
         $this->id = $id;
 

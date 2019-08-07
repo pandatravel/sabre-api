@@ -33,7 +33,8 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDe
      */
     protected $marketingAirline;
     /**
-     * Information whether the flight segment is part of a married connection. O means no. I means yes.
+     * Information whether the flight segment is part of a married connection.
+     * 'O' means no. 'I' means yes.
      *
      * @var string
      */
@@ -51,7 +52,8 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDe
      */
     protected $originLocation;
     /**
-     * Used to specify the time and date of flight arrival. Please note that the value within this attribute if passed cannot be null.
+     * Used to specify the time and date of flight arrival.
+     * Please note that the value within this attribute if passed cannot be null.
      *
      * @var string
      */
@@ -63,7 +65,8 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDe
      */
     protected $departureDateTime;
     /**
-     * Used to specify the flight number. OPEN can also be passed if the user desires an open space ticket.
+     * Used to specify the flight number.
+     * OPEN can also be passed if the user desires an open space ticket.
      *
      * @var string
      */
@@ -81,7 +84,8 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDe
      */
     protected $resBookDesigCode;
     /**
-     * Used to specify the action code to be used to sell the flight inventory. Valid values for "Status": NN, HL, GK, QF, SA, MM, or OPEN.
+     * Used to specify the action code to be used to sell the flight inventory.
+     * Valid values for 'Status' are: 'NN', 'HL', 'GK', 'QF', 'SA', 'MM', or 'OPEN'.
      *
      * @var string
      */
@@ -98,7 +102,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDe
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDestinationInformationFlightSegmentItemDestinationLocation
      */
-    public function getDestinationLocation(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDestinationInformationFlightSegmentItemDestinationLocation
+    public function getDestinationLocation(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDestinationInformationFlightSegmentItemDestinationLocation
     {
         return $this->destinationLocation;
     }
@@ -110,7 +114,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDe
      *
      * @return self
      */
-    public function setDestinationLocation(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDestinationInformationFlightSegmentItemDestinationLocation $destinationLocation): self
+    public function setDestinationLocation(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDestinationInformationFlightSegmentItemDestinationLocation $destinationLocation): self
     {
         $this->destinationLocation = $destinationLocation;
 
@@ -122,7 +126,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDe
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDestinationInformationFlightSegmentItemEquipment
      */
-    public function getEquipment(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDestinationInformationFlightSegmentItemEquipment
+    public function getEquipment(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDestinationInformationFlightSegmentItemEquipment
     {
         return $this->equipment;
     }
@@ -134,7 +138,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDe
      *
      * @return self
      */
-    public function setEquipment(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDestinationInformationFlightSegmentItemEquipment $equipment): self
+    public function setEquipment(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDestinationInformationFlightSegmentItemEquipment $equipment): self
     {
         $this->equipment = $equipment;
 
@@ -146,7 +150,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDe
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDestinationInformationFlightSegmentItemMarketingAirline
      */
-    public function getMarketingAirline(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDestinationInformationFlightSegmentItemMarketingAirline
+    public function getMarketingAirline(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDestinationInformationFlightSegmentItemMarketingAirline
     {
         return $this->marketingAirline;
     }
@@ -158,7 +162,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDe
      *
      * @return self
      */
-    public function setMarketingAirline(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDestinationInformationFlightSegmentItemMarketingAirline $marketingAirline): self
+    public function setMarketingAirline(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDestinationInformationFlightSegmentItemMarketingAirline $marketingAirline): self
     {
         $this->marketingAirline = $marketingAirline;
 
@@ -166,23 +170,25 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDe
     }
 
     /**
-     * Information whether the flight segment is part of a married connection. O means no. I means yes.
+     * Information whether the flight segment is part of a married connection.
+     * 'O' means no. 'I' means yes.
      *
      * @return string
      */
-    public function getMarriageGrp(): ?string
+    public function getMarriageGrp(): string
     {
         return $this->marriageGrp;
     }
 
     /**
-     * Information whether the flight segment is part of a married connection. O means no. I means yes.
+     * Information whether the flight segment is part of a married connection.
+     * 'O' means no. 'I' means yes.
      *
      * @param string $marriageGrp
      *
      * @return self
      */
-    public function setMarriageGrp(?string $marriageGrp): self
+    public function setMarriageGrp(string $marriageGrp): self
     {
         $this->marriageGrp = $marriageGrp;
 
@@ -194,7 +200,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDe
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDestinationInformationFlightSegmentItemOperatingAirline
      */
-    public function getOperatingAirline(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDestinationInformationFlightSegmentItemOperatingAirline
+    public function getOperatingAirline(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDestinationInformationFlightSegmentItemOperatingAirline
     {
         return $this->operatingAirline;
     }
@@ -206,7 +212,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDe
      *
      * @return self
      */
-    public function setOperatingAirline(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDestinationInformationFlightSegmentItemOperatingAirline $operatingAirline): self
+    public function setOperatingAirline(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDestinationInformationFlightSegmentItemOperatingAirline $operatingAirline): self
     {
         $this->operatingAirline = $operatingAirline;
 
@@ -218,7 +224,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDe
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDestinationInformationFlightSegmentItemOriginLocation
      */
-    public function getOriginLocation(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDestinationInformationFlightSegmentItemOriginLocation
+    public function getOriginLocation(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDestinationInformationFlightSegmentItemOriginLocation
     {
         return $this->originLocation;
     }
@@ -230,7 +236,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDe
      *
      * @return self
      */
-    public function setOriginLocation(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDestinationInformationFlightSegmentItemOriginLocation $originLocation): self
+    public function setOriginLocation(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDestinationInformationFlightSegmentItemOriginLocation $originLocation): self
     {
         $this->originLocation = $originLocation;
 
@@ -238,23 +244,25 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDe
     }
 
     /**
-     * Used to specify the time and date of flight arrival. Please note that the value within this attribute if passed cannot be null.
+     * Used to specify the time and date of flight arrival.
+     * Please note that the value within this attribute if passed cannot be null.
      *
      * @return string
      */
-    public function getArrivalDateTime(): ?string
+    public function getArrivalDateTime(): string
     {
         return $this->arrivalDateTime;
     }
 
     /**
-     * Used to specify the time and date of flight arrival. Please note that the value within this attribute if passed cannot be null.
+     * Used to specify the time and date of flight arrival.
+     * Please note that the value within this attribute if passed cannot be null.
      *
      * @param string $arrivalDateTime
      *
      * @return self
      */
-    public function setArrivalDateTime(?string $arrivalDateTime): self
+    public function setArrivalDateTime(string $arrivalDateTime): self
     {
         $this->arrivalDateTime = $arrivalDateTime;
 
@@ -266,7 +274,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDe
      *
      * @return string
      */
-    public function getDepartureDateTime(): ?string
+    public function getDepartureDateTime(): string
     {
         return $this->departureDateTime;
     }
@@ -278,7 +286,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDe
      *
      * @return self
      */
-    public function setDepartureDateTime(?string $departureDateTime): self
+    public function setDepartureDateTime(string $departureDateTime): self
     {
         $this->departureDateTime = $departureDateTime;
 
@@ -286,23 +294,25 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDe
     }
 
     /**
-     * Used to specify the flight number. OPEN can also be passed if the user desires an open space ticket.
+     * Used to specify the flight number.
+     * OPEN can also be passed if the user desires an open space ticket.
      *
      * @return string
      */
-    public function getFlightNumber(): ?string
+    public function getFlightNumber(): string
     {
         return $this->flightNumber;
     }
 
     /**
-     * Used to specify the flight number. OPEN can also be passed if the user desires an open space ticket.
+     * Used to specify the flight number.
+     * OPEN can also be passed if the user desires an open space ticket.
      *
      * @param string $flightNumber
      *
      * @return self
      */
-    public function setFlightNumber(?string $flightNumber): self
+    public function setFlightNumber(string $flightNumber): self
     {
         $this->flightNumber = $flightNumber;
 
@@ -314,7 +324,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDe
      *
      * @return string
      */
-    public function getNumberInParty(): ?string
+    public function getNumberInParty(): string
     {
         return $this->numberInParty;
     }
@@ -326,7 +336,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDe
      *
      * @return self
      */
-    public function setNumberInParty(?string $numberInParty): self
+    public function setNumberInParty(string $numberInParty): self
     {
         $this->numberInParty = $numberInParty;
 
@@ -338,7 +348,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDe
      *
      * @return string
      */
-    public function getResBookDesigCode(): ?string
+    public function getResBookDesigCode(): string
     {
         return $this->resBookDesigCode;
     }
@@ -350,7 +360,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDe
      *
      * @return self
      */
-    public function setResBookDesigCode(?string $resBookDesigCode): self
+    public function setResBookDesigCode(string $resBookDesigCode): self
     {
         $this->resBookDesigCode = $resBookDesigCode;
 
@@ -358,23 +368,25 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDe
     }
 
     /**
-     * Used to specify the action code to be used to sell the flight inventory. Valid values for "Status": NN, HL, GK, QF, SA, MM, or OPEN.
+     * Used to specify the action code to be used to sell the flight inventory.
+     * Valid values for 'Status' are: 'NN', 'HL', 'GK', 'QF', 'SA', 'MM', or 'OPEN'.
      *
      * @return string
      */
-    public function getStatus(): ?string
+    public function getStatus(): string
     {
         return $this->status;
     }
 
     /**
-     * Used to specify the action code to be used to sell the flight inventory. Valid values for "Status": NN, HL, GK, QF, SA, MM, or OPEN.
+     * Used to specify the action code to be used to sell the flight inventory.
+     * Valid values for 'Status' are: 'NN', 'HL', 'GK', 'QF', 'SA', 'MM', or 'OPEN'.
      *
      * @param string $status
      *
      * @return self
      */
-    public function setStatus(?string $status): self
+    public function setStatus(string $status): self
     {
         $this->status = $status;
 
@@ -386,7 +398,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDe
      *
      * @return bool
      */
-    public function getInstantPurchase(): ?bool
+    public function getInstantPurchase(): bool
     {
         return $this->instantPurchase;
     }
@@ -398,7 +410,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDe
      *
      * @return self
      */
-    public function setInstantPurchase(?bool $instantPurchase): self
+    public function setInstantPurchase(bool $instantPurchase): self
     {
         $this->instantPurchase = $instantPurchase;
 

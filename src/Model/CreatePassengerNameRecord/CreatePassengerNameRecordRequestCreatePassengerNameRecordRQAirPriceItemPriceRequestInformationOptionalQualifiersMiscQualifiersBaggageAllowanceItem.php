@@ -21,13 +21,15 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      */
     protected $segment;
     /**
-     * Used to specify the quantity of checked bags. @Number and @Weight cannot combine.
+     * Used to specify the quantity of checked bags.
+     * 'Number' and 'Weight' cannot combine.
      *
      * @var string
      */
     protected $number;
     /**
-     * Used to specify the weight in kilos of checked bags.@Number and @Weight cannot combine.
+     * Used to specify the weight in kilos of checked bags.
+     * 'Number' and 'Weight' cannot combine.
      *
      * @var string
      */
@@ -38,7 +40,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersBaggageAllowanceItemSegment
      */
-    public function getSegment(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersBaggageAllowanceItemSegment
+    public function getSegment(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersBaggageAllowanceItemSegment
     {
         return $this->segment;
     }
@@ -50,7 +52,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return self
      */
-    public function setSegment(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersBaggageAllowanceItemSegment $segment): self
+    public function setSegment(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersBaggageAllowanceItemSegment $segment): self
     {
         $this->segment = $segment;
 
@@ -58,23 +60,25 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     }
 
     /**
-     * Used to specify the quantity of checked bags. @Number and @Weight cannot combine.
+     * Used to specify the quantity of checked bags.
+     * 'Number' and 'Weight' cannot combine.
      *
      * @return string
      */
-    public function getNumber(): ?string
+    public function getNumber(): string
     {
         return $this->number;
     }
 
     /**
-     * Used to specify the quantity of checked bags. @Number and @Weight cannot combine.
+     * Used to specify the quantity of checked bags.
+     * 'Number' and 'Weight' cannot combine.
      *
      * @param string $number
      *
      * @return self
      */
-    public function setNumber(?string $number): self
+    public function setNumber(string $number): self
     {
         $this->number = $number;
 
@@ -82,23 +86,25 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     }
 
     /**
-     * Used to specify the weight in kilos of checked bags.@Number and @Weight cannot combine.
+     * Used to specify the weight in kilos of checked bags.
+     * 'Number' and 'Weight' cannot combine.
      *
      * @return string
      */
-    public function getWeight(): ?string
+    public function getWeight(): string
     {
         return $this->weight;
     }
 
     /**
-     * Used to specify the weight in kilos of checked bags.@Number and @Weight cannot combine.
+     * Used to specify the weight in kilos of checked bags.
+     * 'Number' and 'Weight' cannot combine.
      *
      * @param string $weight
      *
      * @return self
      */
-    public function setWeight(?string $weight): self
+    public function setWeight(string $weight): self
     {
         $this->weight = $weight;
 

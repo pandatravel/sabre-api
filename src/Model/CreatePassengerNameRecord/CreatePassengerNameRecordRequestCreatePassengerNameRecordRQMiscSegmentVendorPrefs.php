@@ -15,30 +15,30 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQMiscSegmentVendorPrefs extends AbstractModel
 {
     /**
-     * Airline code.
+     * The airline code.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQMiscSegmentVendorPrefsAirline
      */
     protected $airline;
 
     /**
-     * Airline code.
+     * The airline code.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQMiscSegmentVendorPrefsAirline
      */
-    public function getAirline(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQMiscSegmentVendorPrefsAirline
+    public function getAirline(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQMiscSegmentVendorPrefsAirline
     {
         return $this->airline;
     }
 
     /**
-     * Airline code.
+     * The airline code.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQMiscSegmentVendorPrefsAirline $airline
      *
      * @return self
      */
-    public function setAirline(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQMiscSegmentVendorPrefsAirline $airline): self
+    public function setAirline(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQMiscSegmentVendorPrefsAirline $airline): self
     {
         $this->airline = $airline;
 

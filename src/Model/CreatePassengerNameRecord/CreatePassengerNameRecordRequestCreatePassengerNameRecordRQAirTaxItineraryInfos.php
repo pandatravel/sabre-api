@@ -15,30 +15,30 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfos extends AbstractModel
 {
     /**
-     * Itinerary information.
+     * The itinerary information.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItem[]
      */
     protected $itineraryInfo;
 
     /**
-     * Itinerary information.
+     * The itinerary information.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItem[]
      */
-    public function getItineraryInfo(): ?array
+    public function getItineraryInfo(): array
     {
         return $this->itineraryInfo;
     }
 
     /**
-     * Itinerary information.
+     * The itinerary information.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItem[] $itineraryInfo
      *
      * @return self
      */
-    public function setItineraryInfo(?array $itineraryInfo): self
+    public function setItineraryInfo(array $itineraryInfo): self
     {
         $this->itineraryInfo = $itineraryInfo;
 

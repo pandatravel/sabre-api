@@ -15,30 +15,30 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAddRemark extends AbstractModel
 {
     /**
-     * Details of the remark.
+     * The remark information.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAddRemarkRemarkInfo
      */
     protected $remarkInfo;
 
     /**
-     * Details of the remark.
+     * The remark information.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAddRemarkRemarkInfo
      */
-    public function getRemarkInfo(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAddRemarkRemarkInfo
+    public function getRemarkInfo(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAddRemarkRemarkInfo
     {
         return $this->remarkInfo;
     }
 
     /**
-     * Details of the remark.
+     * The remark information.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAddRemarkRemarkInfo $remarkInfo
      *
      * @return self
      */
-    public function setRemarkInfo(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAddRemarkRemarkInfo $remarkInfo): self
+    public function setRemarkInfo(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAddRemarkRemarkInfo $remarkInfo): self
     {
         $this->remarkInfo = $remarkInfo;
 

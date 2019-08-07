@@ -26,7 +26,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDe
      *
      * @return string
      */
-    public function getAirEquipType(): ?string
+    public function getAirEquipType(): string
     {
         return $this->airEquipType;
     }
@@ -38,7 +38,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDe
      *
      * @return self
      */
-    public function setAirEquipType(?string $airEquipType): self
+    public function setAirEquipType(string $airEquipType): self
     {
         $this->airEquipType = $airEquipType;
 

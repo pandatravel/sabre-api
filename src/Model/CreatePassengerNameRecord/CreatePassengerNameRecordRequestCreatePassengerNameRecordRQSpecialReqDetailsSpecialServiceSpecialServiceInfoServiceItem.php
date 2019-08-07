@@ -15,7 +15,7 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoServiceItem extends AbstractModel
 {
     /**
-     * Personal details.
+     * The personal details.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoServiceItemPersonName
      */
@@ -27,42 +27,45 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
      */
     protected $text;
     /**
-     * Airline preferences.
+     * The airline vendor preferences.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoServiceItemVendorPrefs
      */
     protected $vendorPrefs;
     /**
-     * Used to specify an itinerary segment to associate the SSR to. If SSR_Code="OSI" @SegmentNumber cannot be utilized.
+     * The segment number.
+     * Used to specify an itinerary segment to associate the SSR to.
+     * If SSR_Code="OSI" 'SegmentNumber' cannot be utilized.
      *
      * @var string
      */
     protected $segmentNumber;
     /**
-     * Used to specify an SSR code such as "WCHR", "WGML", etc.
+     * The SSR code.
+     * Used to specify an SSR code such as 'WCHR', 'WGML', etc.
      *
      * @var string
      */
     protected $sSRCode;
 
     /**
-     * Personal details.
+     * The personal details.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoServiceItemPersonName
      */
-    public function getPersonName(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoServiceItemPersonName
+    public function getPersonName(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoServiceItemPersonName
     {
         return $this->personName;
     }
 
     /**
-     * Personal details.
+     * The personal details.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoServiceItemPersonName $personName
      *
      * @return self
      */
-    public function setPersonName(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoServiceItemPersonName $personName): self
+    public function setPersonName(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoServiceItemPersonName $personName): self
     {
         $this->personName = $personName;
 
@@ -74,7 +77,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
      *
      * @return string
      */
-    public function getText(): ?string
+    public function getText(): string
     {
         return $this->text;
     }
@@ -86,7 +89,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
      *
      * @return self
      */
-    public function setText(?string $text): self
+    public function setText(string $text): self
     {
         $this->text = $text;
 
@@ -94,23 +97,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     }
 
     /**
-     * Airline preferences.
+     * The airline vendor preferences.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoServiceItemVendorPrefs
      */
-    public function getVendorPrefs(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoServiceItemVendorPrefs
+    public function getVendorPrefs(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoServiceItemVendorPrefs
     {
         return $this->vendorPrefs;
     }
 
     /**
-     * Airline preferences.
+     * The airline vendor preferences.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoServiceItemVendorPrefs $vendorPrefs
      *
      * @return self
      */
-    public function setVendorPrefs(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoServiceItemVendorPrefs $vendorPrefs): self
+    public function setVendorPrefs(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoServiceItemVendorPrefs $vendorPrefs): self
     {
         $this->vendorPrefs = $vendorPrefs;
 
@@ -118,23 +121,27 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     }
 
     /**
-     * Used to specify an itinerary segment to associate the SSR to. If SSR_Code="OSI" @SegmentNumber cannot be utilized.
+     * The segment number.
+     * Used to specify an itinerary segment to associate the SSR to.
+     * If SSR_Code="OSI" 'SegmentNumber' cannot be utilized.
      *
      * @return string
      */
-    public function getSegmentNumber(): ?string
+    public function getSegmentNumber(): string
     {
         return $this->segmentNumber;
     }
 
     /**
-     * Used to specify an itinerary segment to associate the SSR to. If SSR_Code="OSI" @SegmentNumber cannot be utilized.
+     * The segment number.
+     * Used to specify an itinerary segment to associate the SSR to.
+     * If SSR_Code="OSI" 'SegmentNumber' cannot be utilized.
      *
      * @param string $segmentNumber
      *
      * @return self
      */
-    public function setSegmentNumber(?string $segmentNumber): self
+    public function setSegmentNumber(string $segmentNumber): self
     {
         $this->segmentNumber = $segmentNumber;
 
@@ -142,23 +149,25 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     }
 
     /**
-     * Used to specify an SSR code such as "WCHR", "WGML", etc.
+     * The SSR code.
+     * Used to specify an SSR code such as 'WCHR', 'WGML', etc.
      *
      * @return string
      */
-    public function getSSRCode(): ?string
+    public function getSSRCode(): string
     {
         return $this->sSRCode;
     }
 
     /**
-     * Used to specify an SSR code such as "WCHR", "WGML", etc.
+     * The SSR code.
+     * Used to specify an SSR code such as 'WCHR', 'WGML', etc.
      *
      * @param string $sSRCode
      *
      * @return self
      */
-    public function setSSRCode(?string $sSRCode): self
+    public function setSSRCode(string $sSRCode): self
     {
         $this->sSRCode = $sSRCode;
 

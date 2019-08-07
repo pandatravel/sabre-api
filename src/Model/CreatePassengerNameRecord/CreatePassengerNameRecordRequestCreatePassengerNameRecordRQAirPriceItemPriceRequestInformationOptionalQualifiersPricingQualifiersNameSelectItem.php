@@ -15,36 +15,36 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersNameSelectItem extends AbstractModel
 {
     /**
-     * Name number.
+     * The name number.
      *
      * @var string
      */
     protected $nameNumber;
     /**
-     * End number within a range.
+     * The end name number within a range.
      *
      * @var string
      */
     protected $endNameNumber;
 
     /**
-     * Name number.
+     * The name number.
      *
      * @return string
      */
-    public function getNameNumber(): ?string
+    public function getNameNumber(): string
     {
         return $this->nameNumber;
     }
 
     /**
-     * Name number.
+     * The name number.
      *
      * @param string $nameNumber
      *
      * @return self
      */
-    public function setNameNumber(?string $nameNumber): self
+    public function setNameNumber(string $nameNumber): self
     {
         $this->nameNumber = $nameNumber;
 
@@ -52,23 +52,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     }
 
     /**
-     * End number within a range.
+     * The end name number within a range.
      *
      * @return string
      */
-    public function getEndNameNumber(): ?string
+    public function getEndNameNumber(): string
     {
         return $this->endNameNumber;
     }
 
     /**
-     * End number within a range.
+     * The end name number within a range.
      *
      * @param string $endNameNumber
      *
      * @return self
      */
-    public function setEndNameNumber(?string $endNameNumber): self
+    public function setEndNameNumber(string $endNameNumber): self
     {
         $this->endNameNumber = $endNameNumber;
 

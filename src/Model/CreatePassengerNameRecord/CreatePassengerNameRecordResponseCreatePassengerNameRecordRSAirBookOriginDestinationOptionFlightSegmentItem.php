@@ -15,90 +15,90 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginDestinationOptionFlightSegmentItem extends AbstractModel
 {
     /**
-     * Used to return the arrival airport code.
+     * The arrival airport code.
      *
      * @var CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginDestinationOptionFlightSegmentItemDestinationLocation
      */
     protected $destinationLocation;
     /**
-     * Used to return the marketing airline code.
+     * The marketing airline code.
      *
      * @var CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginDestinationOptionFlightSegmentItemMarketingAirline
      */
     protected $marketingAirline;
     /**
-     * Used to return married connection indicators associated with the particular flight segment if applicable.
+     * Used to return married connection indicators associated with the particular flight segment.
      *
      * @var CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginDestinationOptionFlightSegmentItemMarriageGrp
      */
     protected $marriageGrp;
     /**
-     * Used to return the departure airport code.
+     * The departure airport code.
      *
      * @var CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginDestinationOptionFlightSegmentItemOriginLocation
      */
     protected $originLocation;
     /**
-     * Used to return the date and time of flight arrival.
+     * The date and time of flight arrival.
      *
      * @var string
      */
     protected $arrivalDateTime;
     /**
-     * Used to return the date and time of flight departure.
+     * The date and time of flight departure.
      *
      * @var string
      */
     protected $departureDateTime;
     /**
-     * Used to indicate whether or not the flight is eTicket-eligible.
+     * Used to indicate whether or not the flight is eligible for eTicket.
      *
      * @var bool
      */
     protected $eTicket;
     /**
-     * Used to return the flight number.
+     * The flight number.
      *
      * @var string
      */
     protected $flightNumber;
     /**
-     * Used to return the number of passengers that need to be booked during this transaction.
+     * The number of passengers that have been booked during this transaction.
      *
      * @var string
      */
     protected $numberInParty;
     /**
-     * Used to return the booking class.
+     * The booking class.
      *
      * @var string
      */
     protected $resBookDesigCode;
     /**
-     * Used to return the action code associated with the booking transaction.
+     * The flight segment status associated with the booking transaction.
      *
      * @var string
      */
     protected $status;
 
     /**
-     * Used to return the arrival airport code.
+     * The arrival airport code.
      *
      * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginDestinationOptionFlightSegmentItemDestinationLocation
      */
-    public function getDestinationLocation(): ?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginDestinationOptionFlightSegmentItemDestinationLocation
+    public function getDestinationLocation(): CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginDestinationOptionFlightSegmentItemDestinationLocation
     {
         return $this->destinationLocation;
     }
 
     /**
-     * Used to return the arrival airport code.
+     * The arrival airport code.
      *
      * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginDestinationOptionFlightSegmentItemDestinationLocation $destinationLocation
      *
      * @return self
      */
-    public function setDestinationLocation(?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginDestinationOptionFlightSegmentItemDestinationLocation $destinationLocation): self
+    public function setDestinationLocation(CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginDestinationOptionFlightSegmentItemDestinationLocation $destinationLocation): self
     {
         $this->destinationLocation = $destinationLocation;
 
@@ -106,23 +106,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginD
     }
 
     /**
-     * Used to return the marketing airline code.
+     * The marketing airline code.
      *
      * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginDestinationOptionFlightSegmentItemMarketingAirline
      */
-    public function getMarketingAirline(): ?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginDestinationOptionFlightSegmentItemMarketingAirline
+    public function getMarketingAirline(): CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginDestinationOptionFlightSegmentItemMarketingAirline
     {
         return $this->marketingAirline;
     }
 
     /**
-     * Used to return the marketing airline code.
+     * The marketing airline code.
      *
      * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginDestinationOptionFlightSegmentItemMarketingAirline $marketingAirline
      *
      * @return self
      */
-    public function setMarketingAirline(?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginDestinationOptionFlightSegmentItemMarketingAirline $marketingAirline): self
+    public function setMarketingAirline(CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginDestinationOptionFlightSegmentItemMarketingAirline $marketingAirline): self
     {
         $this->marketingAirline = $marketingAirline;
 
@@ -130,23 +130,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginD
     }
 
     /**
-     * Used to return married connection indicators associated with the particular flight segment if applicable.
+     * Used to return married connection indicators associated with the particular flight segment.
      *
      * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginDestinationOptionFlightSegmentItemMarriageGrp
      */
-    public function getMarriageGrp(): ?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginDestinationOptionFlightSegmentItemMarriageGrp
+    public function getMarriageGrp(): CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginDestinationOptionFlightSegmentItemMarriageGrp
     {
         return $this->marriageGrp;
     }
 
     /**
-     * Used to return married connection indicators associated with the particular flight segment if applicable.
+     * Used to return married connection indicators associated with the particular flight segment.
      *
      * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginDestinationOptionFlightSegmentItemMarriageGrp $marriageGrp
      *
      * @return self
      */
-    public function setMarriageGrp(?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginDestinationOptionFlightSegmentItemMarriageGrp $marriageGrp): self
+    public function setMarriageGrp(CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginDestinationOptionFlightSegmentItemMarriageGrp $marriageGrp): self
     {
         $this->marriageGrp = $marriageGrp;
 
@@ -154,23 +154,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginD
     }
 
     /**
-     * Used to return the departure airport code.
+     * The departure airport code.
      *
      * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginDestinationOptionFlightSegmentItemOriginLocation
      */
-    public function getOriginLocation(): ?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginDestinationOptionFlightSegmentItemOriginLocation
+    public function getOriginLocation(): CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginDestinationOptionFlightSegmentItemOriginLocation
     {
         return $this->originLocation;
     }
 
     /**
-     * Used to return the departure airport code.
+     * The departure airport code.
      *
      * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginDestinationOptionFlightSegmentItemOriginLocation $originLocation
      *
      * @return self
      */
-    public function setOriginLocation(?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginDestinationOptionFlightSegmentItemOriginLocation $originLocation): self
+    public function setOriginLocation(CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginDestinationOptionFlightSegmentItemOriginLocation $originLocation): self
     {
         $this->originLocation = $originLocation;
 
@@ -178,23 +178,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginD
     }
 
     /**
-     * Used to return the date and time of flight arrival.
+     * The date and time of flight arrival.
      *
      * @return string
      */
-    public function getArrivalDateTime(): ?string
+    public function getArrivalDateTime(): string
     {
         return $this->arrivalDateTime;
     }
 
     /**
-     * Used to return the date and time of flight arrival.
+     * The date and time of flight arrival.
      *
      * @param string $arrivalDateTime
      *
      * @return self
      */
-    public function setArrivalDateTime(?string $arrivalDateTime): self
+    public function setArrivalDateTime(string $arrivalDateTime): self
     {
         $this->arrivalDateTime = $arrivalDateTime;
 
@@ -202,23 +202,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginD
     }
 
     /**
-     * Used to return the date and time of flight departure.
+     * The date and time of flight departure.
      *
      * @return string
      */
-    public function getDepartureDateTime(): ?string
+    public function getDepartureDateTime(): string
     {
         return $this->departureDateTime;
     }
 
     /**
-     * Used to return the date and time of flight departure.
+     * The date and time of flight departure.
      *
      * @param string $departureDateTime
      *
      * @return self
      */
-    public function setDepartureDateTime(?string $departureDateTime): self
+    public function setDepartureDateTime(string $departureDateTime): self
     {
         $this->departureDateTime = $departureDateTime;
 
@@ -226,23 +226,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginD
     }
 
     /**
-     * Used to indicate whether or not the flight is eTicket-eligible.
+     * Used to indicate whether or not the flight is eligible for eTicket.
      *
      * @return bool
      */
-    public function getETicket(): ?bool
+    public function getETicket(): bool
     {
         return $this->eTicket;
     }
 
     /**
-     * Used to indicate whether or not the flight is eTicket-eligible.
+     * Used to indicate whether or not the flight is eligible for eTicket.
      *
      * @param bool $eTicket
      *
      * @return self
      */
-    public function setETicket(?bool $eTicket): self
+    public function setETicket(bool $eTicket): self
     {
         $this->eTicket = $eTicket;
 
@@ -250,23 +250,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginD
     }
 
     /**
-     * Used to return the flight number.
+     * The flight number.
      *
      * @return string
      */
-    public function getFlightNumber(): ?string
+    public function getFlightNumber(): string
     {
         return $this->flightNumber;
     }
 
     /**
-     * Used to return the flight number.
+     * The flight number.
      *
      * @param string $flightNumber
      *
      * @return self
      */
-    public function setFlightNumber(?string $flightNumber): self
+    public function setFlightNumber(string $flightNumber): self
     {
         $this->flightNumber = $flightNumber;
 
@@ -274,23 +274,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginD
     }
 
     /**
-     * Used to return the number of passengers that need to be booked during this transaction.
+     * The number of passengers that have been booked during this transaction.
      *
      * @return string
      */
-    public function getNumberInParty(): ?string
+    public function getNumberInParty(): string
     {
         return $this->numberInParty;
     }
 
     /**
-     * Used to return the number of passengers that need to be booked during this transaction.
+     * The number of passengers that have been booked during this transaction.
      *
      * @param string $numberInParty
      *
      * @return self
      */
-    public function setNumberInParty(?string $numberInParty): self
+    public function setNumberInParty(string $numberInParty): self
     {
         $this->numberInParty = $numberInParty;
 
@@ -298,23 +298,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginD
     }
 
     /**
-     * Used to return the booking class.
+     * The booking class.
      *
      * @return string
      */
-    public function getResBookDesigCode(): ?string
+    public function getResBookDesigCode(): string
     {
         return $this->resBookDesigCode;
     }
 
     /**
-     * Used to return the booking class.
+     * The booking class.
      *
      * @param string $resBookDesigCode
      *
      * @return self
      */
-    public function setResBookDesigCode(?string $resBookDesigCode): self
+    public function setResBookDesigCode(string $resBookDesigCode): self
     {
         $this->resBookDesigCode = $resBookDesigCode;
 
@@ -322,23 +322,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginD
     }
 
     /**
-     * Used to return the action code associated with the booking transaction.
+     * The flight segment status associated with the booking transaction.
      *
      * @return string
      */
-    public function getStatus(): ?string
+    public function getStatus(): string
     {
         return $this->status;
     }
 
     /**
-     * Used to return the action code associated with the booking transaction.
+     * The flight segment status associated with the booking transaction.
      *
      * @param string $status
      *
      * @return self
      */
-    public function setStatus(?string $status): self
+    public function setStatus(string $status): self
     {
         $this->status = $status;
 

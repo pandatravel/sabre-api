@@ -32,7 +32,7 @@ class ProblemInformationSystemSpecificResultsItemMessageItem extends AbstractMod
      *
      * @return string
      */
-    public function getCode(): ?string
+    public function getCode(): string
     {
         return $this->code;
     }
@@ -44,7 +44,7 @@ class ProblemInformationSystemSpecificResultsItemMessageItem extends AbstractMod
      *
      * @return self
      */
-    public function setCode(?string $code): self
+    public function setCode(string $code): self
     {
         $this->code = $code;
 
@@ -56,7 +56,7 @@ class ProblemInformationSystemSpecificResultsItemMessageItem extends AbstractMod
      *
      * @return string
      */
-    public function getContent(): ?string
+    public function getContent(): string
     {
         return $this->content;
     }
@@ -68,7 +68,7 @@ class ProblemInformationSystemSpecificResultsItemMessageItem extends AbstractMod
      *
      * @return self
      */
-    public function setContent(?string $content): self
+    public function setContent(string $content): self
     {
         $this->content = $content;
 

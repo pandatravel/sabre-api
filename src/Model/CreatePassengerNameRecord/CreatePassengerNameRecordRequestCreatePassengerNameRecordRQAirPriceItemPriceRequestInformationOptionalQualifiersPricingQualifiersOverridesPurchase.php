@@ -15,30 +15,30 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersOverridesPurchase extends AbstractModel
 {
     /**
-     * Location code.
+     * The location code.
      *
      * @var string
      */
     protected $locationCode;
 
     /**
-     * Location code.
+     * The location code.
      *
      * @return string
      */
-    public function getLocationCode(): ?string
+    public function getLocationCode(): string
     {
         return $this->locationCode;
     }
 
     /**
-     * Location code.
+     * The location code.
      *
      * @param string $locationCode
      *
      * @return self
      */
-    public function setLocationCode(?string $locationCode): self
+    public function setLocationCode(string $locationCode): self
     {
         $this->locationCode = $locationCode;
 

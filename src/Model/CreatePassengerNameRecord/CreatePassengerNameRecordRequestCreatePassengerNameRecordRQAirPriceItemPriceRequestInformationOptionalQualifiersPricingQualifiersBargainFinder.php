@@ -32,7 +32,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return bool
      */
-    public function getHistorical(): ?bool
+    public function getHistorical(): bool
     {
         return $this->historical;
     }
@@ -44,7 +44,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return self
      */
-    public function setHistorical(?bool $historical): self
+    public function setHistorical(bool $historical): self
     {
         $this->historical = $historical;
 
@@ -56,7 +56,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return bool
      */
-    public function getRebook(): ?bool
+    public function getRebook(): bool
     {
         return $this->rebook;
     }
@@ -68,7 +68,7 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
      *
      * @return self
      */
-    public function setRebook(?bool $rebook): self
+    public function setRebook(bool $rebook): self
     {
         $this->rebook = $rebook;
 

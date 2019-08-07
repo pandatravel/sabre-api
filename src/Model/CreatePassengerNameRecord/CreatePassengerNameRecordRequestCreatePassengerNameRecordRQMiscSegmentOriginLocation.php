@@ -15,30 +15,30 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQMiscSegmentOriginLocation extends AbstractModel
 {
     /**
-     * Location Code.
+     * The origin location code.
      *
      * @var string
      */
     protected $locationCode;
 
     /**
-     * Location Code.
+     * The origin location code.
      *
      * @return string
      */
-    public function getLocationCode(): ?string
+    public function getLocationCode(): string
     {
         return $this->locationCode;
     }
 
     /**
-     * Location Code.
+     * The origin location code.
      *
      * @param string $locationCode
      *
      * @return self
      */
-    public function setLocationCode(?string $locationCode): self
+    public function setLocationCode(string $locationCode): self
     {
         $this->locationCode = $locationCode;
 

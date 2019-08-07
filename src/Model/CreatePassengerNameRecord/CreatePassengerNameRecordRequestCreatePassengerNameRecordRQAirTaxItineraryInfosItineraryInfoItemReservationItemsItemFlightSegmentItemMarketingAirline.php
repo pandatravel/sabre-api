@@ -15,30 +15,30 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItemMarketingAirline extends AbstractModel
 {
     /**
-     * Carrier code.
+     * 'Code' is used to describe the Marketing Carrier Code of the airline.
      *
      * @var string
      */
     protected $code;
 
     /**
-     * Carrier code.
+     * 'Code' is used to describe the Marketing Carrier Code of the airline.
      *
      * @return string
      */
-    public function getCode(): ?string
+    public function getCode(): string
     {
         return $this->code;
     }
 
     /**
-     * Carrier code.
+     * 'Code' is used to describe the Marketing Carrier Code of the airline.
      *
      * @param string $code
      *
      * @return self
      */
-    public function setCode(?string $code): self
+    public function setCode(string $code): self
     {
         $this->code = $code;
 

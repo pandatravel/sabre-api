@@ -15,48 +15,48 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemTicketingFeesItemFeeInformation extends AbstractModel
 {
     /**
-     * Returns ticketing fee account-related information.
+     * The account data.
      *
      * @var string
      */
     protected $accountData;
     /**
-     * Ticketing fee amount.
+     * The ticketing fee amount.
      *
      * @var string
      */
     protected $amount;
     /**
-     * Ticketing fee function code.
+     * The ticketing fee function code.
      *
      * @var string
      */
     protected $functionCode;
     /**
-     * Ticketing fee service type.
+     * The ticketing fee service type.
      *
      * @var string
      */
     protected $serviceType;
 
     /**
-     * Returns ticketing fee account-related information.
+     * The account data.
      *
      * @return string
      */
-    public function getAccountData(): ?string
+    public function getAccountData(): string
     {
         return $this->accountData;
     }
 
     /**
-     * Returns ticketing fee account-related information.
+     * The account data.
      *
      * @param string $accountData
      *
      * @return self
      */
-    public function setAccountData(?string $accountData): self
+    public function setAccountData(string $accountData): self
     {
         $this->accountData = $accountData;
 
@@ -64,23 +64,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     }
 
     /**
-     * Ticketing fee amount.
+     * The ticketing fee amount.
      *
      * @return string
      */
-    public function getAmount(): ?string
+    public function getAmount(): string
     {
         return $this->amount;
     }
 
     /**
-     * Ticketing fee amount.
+     * The ticketing fee amount.
      *
      * @param string $amount
      *
      * @return self
      */
-    public function setAmount(?string $amount): self
+    public function setAmount(string $amount): self
     {
         $this->amount = $amount;
 
@@ -88,23 +88,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     }
 
     /**
-     * Ticketing fee function code.
+     * The ticketing fee function code.
      *
      * @return string
      */
-    public function getFunctionCode(): ?string
+    public function getFunctionCode(): string
     {
         return $this->functionCode;
     }
 
     /**
-     * Ticketing fee function code.
+     * The ticketing fee function code.
      *
      * @param string $functionCode
      *
      * @return self
      */
-    public function setFunctionCode(?string $functionCode): self
+    public function setFunctionCode(string $functionCode): self
     {
         $this->functionCode = $functionCode;
 
@@ -112,23 +112,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     }
 
     /**
-     * Ticketing fee service type.
+     * The ticketing fee service type.
      *
      * @return string
      */
-    public function getServiceType(): ?string
+    public function getServiceType(): string
     {
         return $this->serviceType;
     }
 
     /**
-     * Ticketing fee service type.
+     * The ticketing fee service type.
      *
      * @param string $serviceType
      *
      * @return self
      */
-    public function setServiceType(?string $serviceType): self
+    public function setServiceType(string $serviceType): self
     {
         $this->serviceType = $serviceType;
 

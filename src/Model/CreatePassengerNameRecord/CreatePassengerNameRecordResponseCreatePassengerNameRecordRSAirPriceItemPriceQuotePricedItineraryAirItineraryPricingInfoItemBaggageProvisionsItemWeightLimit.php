@@ -15,36 +15,36 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemWeightLimit extends AbstractModel
 {
     /**
-     * Weight limit.
+     * The weight limit.
      *
      * @var string
      */
     protected $content;
     /**
-     * Weight units.
+     * The weight units.
      *
      * @var string
      */
     protected $units;
 
     /**
-     * Weight limit.
+     * The weight limit.
      *
      * @return string
      */
-    public function getContent(): ?string
+    public function getContent(): string
     {
         return $this->content;
     }
 
     /**
-     * Weight limit.
+     * The weight limit.
      *
      * @param string $content
      *
      * @return self
      */
-    public function setContent(?string $content): self
+    public function setContent(string $content): self
     {
         $this->content = $content;
 
@@ -52,23 +52,23 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     }
 
     /**
-     * Weight units.
+     * The weight units.
      *
      * @return string
      */
-    public function getUnits(): ?string
+    public function getUnits(): string
     {
         return $this->units;
     }
 
     /**
-     * Weight units.
+     * The weight units.
      *
      * @param string $units
      *
      * @return self
      */
-    public function setUnits(?string $units): self
+    public function setUnits(string $units): self
     {
         $this->units = $units;
 

@@ -15,36 +15,37 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersRetailerRuleQualifier extends AbstractModel
 {
     /**
-     * Retailer Rule Qualifier code.
+     * The Retailer Rule Qualifier code.
      *
      * @var string[]
      */
     protected $qualifier;
     /**
-     * Used to force only fares with a matched Business Rule containing the specified Retailer Rule Qualifier. "Force" can only be used with one "Qualifier".
+     * Used to force only fares with a matched Business Rule containing the specified Retailer Rule Qualifier.
+     * 'Force' can only be used with one 'Qualifier'.
      *
      * @var bool
      */
     protected $force;
 
     /**
-     * Retailer Rule Qualifier code.
+     * The Retailer Rule Qualifier code.
      *
      * @return string[]
      */
-    public function getQualifier(): ?array
+    public function getQualifier(): array
     {
         return $this->qualifier;
     }
 
     /**
-     * Retailer Rule Qualifier code.
+     * The Retailer Rule Qualifier code.
      *
      * @param string[] $qualifier
      *
      * @return self
      */
-    public function setQualifier(?array $qualifier): self
+    public function setQualifier(array $qualifier): self
     {
         $this->qualifier = $qualifier;
 
@@ -52,23 +53,25 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     }
 
     /**
-     * Used to force only fares with a matched Business Rule containing the specified Retailer Rule Qualifier. "Force" can only be used with one "Qualifier".
+     * Used to force only fares with a matched Business Rule containing the specified Retailer Rule Qualifier.
+     * 'Force' can only be used with one 'Qualifier'.
      *
      * @return bool
      */
-    public function getForce(): ?bool
+    public function getForce(): bool
     {
         return $this->force;
     }
 
     /**
-     * Used to force only fares with a matched Business Rule containing the specified Retailer Rule Qualifier. "Force" can only be used with one "Qualifier".
+     * Used to force only fares with a matched Business Rule containing the specified Retailer Rule Qualifier.
+     * 'Force' can only be used with one 'Qualifier'.
      *
      * @param bool $force
      *
      * @return self
      */
-    public function setForce(?bool $force): self
+    public function setForce(bool $force): self
     {
         $this->force = $force;
 

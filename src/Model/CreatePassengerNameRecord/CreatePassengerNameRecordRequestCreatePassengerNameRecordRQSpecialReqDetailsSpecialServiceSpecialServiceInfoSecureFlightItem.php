@@ -15,54 +15,90 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoSecureFlightItem extends AbstractModel
 {
     /**
-     * "KnownTravelerNumber" cannot combine with ".../PersonName@DateOfBirth" or ".../PersonName@Gender" and "RedressNumber".
+     * Used to pass the country of issue for 'KnownTravelerNumber' or 'RedressNumber'.
+     *
+     * @var string
+     */
+    protected $issueCountry;
+    /**
+     * The known traveler number.
+     * 'KnownTravelerNumber' cannot be combined with 'PersonName.DateOfBirth' or  'PersonName.Gender' and 'RedressNumber'.
      *
      * @var string
      */
     protected $knownTravelerNumber;
     /**
-     * Personal details.
+     * The personal details.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoSecureFlightItemPersonName
      */
     protected $personName;
     /**
-     * "RedressNumber" cannot combine with ".../PersonName@DateOfBirth" or ".../PersonName@Gender".
+     * The redress number.
+     * 'RedressNumber' cannot be combined with 'PersonName.DateOfBirth' or 'PersonName.Gender'.
      *
      * @var string
      */
     protected $redressNumber;
     /**
-     * Airline preferences.
+     * The airline vendor preferences.
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoSecureFlightItemVendorPrefs
      */
     protected $vendorPrefs;
     /**
-     * Used to specify an itinerary segment to associate the SSR to. "A" can be specified to associate the SSR to all segments.
+     * The segment number.
+     * Used to specify an itinerary segment to associate the SSR to.
+     * 'A' can be specified to associate the SSR to all segments.
      *
      * @var string
      */
     protected $segmentNumber;
 
     /**
-     * "KnownTravelerNumber" cannot combine with ".../PersonName@DateOfBirth" or ".../PersonName@Gender" and "RedressNumber".
+     * Used to pass the country of issue for 'KnownTravelerNumber' or 'RedressNumber'.
      *
      * @return string
      */
-    public function getKnownTravelerNumber(): ?string
+    public function getIssueCountry(): string
+    {
+        return $this->issueCountry;
+    }
+
+    /**
+     * Used to pass the country of issue for 'KnownTravelerNumber' or 'RedressNumber'.
+     *
+     * @param string $issueCountry
+     *
+     * @return self
+     */
+    public function setIssueCountry(string $issueCountry): self
+    {
+        $this->issueCountry = $issueCountry;
+
+        return $this;
+    }
+
+    /**
+     * The known traveler number.
+     * 'KnownTravelerNumber' cannot be combined with 'PersonName.DateOfBirth' or  'PersonName.Gender' and 'RedressNumber'.
+     *
+     * @return string
+     */
+    public function getKnownTravelerNumber(): string
     {
         return $this->knownTravelerNumber;
     }
 
     /**
-     * "KnownTravelerNumber" cannot combine with ".../PersonName@DateOfBirth" or ".../PersonName@Gender" and "RedressNumber".
+     * The known traveler number.
+     * 'KnownTravelerNumber' cannot be combined with 'PersonName.DateOfBirth' or  'PersonName.Gender' and 'RedressNumber'.
      *
      * @param string $knownTravelerNumber
      *
      * @return self
      */
-    public function setKnownTravelerNumber(?string $knownTravelerNumber): self
+    public function setKnownTravelerNumber(string $knownTravelerNumber): self
     {
         $this->knownTravelerNumber = $knownTravelerNumber;
 
@@ -70,23 +106,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     }
 
     /**
-     * Personal details.
+     * The personal details.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoSecureFlightItemPersonName
      */
-    public function getPersonName(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoSecureFlightItemPersonName
+    public function getPersonName(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoSecureFlightItemPersonName
     {
         return $this->personName;
     }
 
     /**
-     * Personal details.
+     * The personal details.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoSecureFlightItemPersonName $personName
      *
      * @return self
      */
-    public function setPersonName(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoSecureFlightItemPersonName $personName): self
+    public function setPersonName(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoSecureFlightItemPersonName $personName): self
     {
         $this->personName = $personName;
 
@@ -94,23 +130,25 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     }
 
     /**
-     * "RedressNumber" cannot combine with ".../PersonName@DateOfBirth" or ".../PersonName@Gender".
+     * The redress number.
+     * 'RedressNumber' cannot be combined with 'PersonName.DateOfBirth' or 'PersonName.Gender'.
      *
      * @return string
      */
-    public function getRedressNumber(): ?string
+    public function getRedressNumber(): string
     {
         return $this->redressNumber;
     }
 
     /**
-     * "RedressNumber" cannot combine with ".../PersonName@DateOfBirth" or ".../PersonName@Gender".
+     * The redress number.
+     * 'RedressNumber' cannot be combined with 'PersonName.DateOfBirth' or 'PersonName.Gender'.
      *
      * @param string $redressNumber
      *
      * @return self
      */
-    public function setRedressNumber(?string $redressNumber): self
+    public function setRedressNumber(string $redressNumber): self
     {
         $this->redressNumber = $redressNumber;
 
@@ -118,23 +156,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     }
 
     /**
-     * Airline preferences.
+     * The airline vendor preferences.
      *
      * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoSecureFlightItemVendorPrefs
      */
-    public function getVendorPrefs(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoSecureFlightItemVendorPrefs
+    public function getVendorPrefs(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoSecureFlightItemVendorPrefs
     {
         return $this->vendorPrefs;
     }
 
     /**
-     * Airline preferences.
+     * The airline vendor preferences.
      *
      * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoSecureFlightItemVendorPrefs $vendorPrefs
      *
      * @return self
      */
-    public function setVendorPrefs(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoSecureFlightItemVendorPrefs $vendorPrefs): self
+    public function setVendorPrefs(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoSecureFlightItemVendorPrefs $vendorPrefs): self
     {
         $this->vendorPrefs = $vendorPrefs;
 
@@ -142,23 +180,27 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     }
 
     /**
-     * Used to specify an itinerary segment to associate the SSR to. "A" can be specified to associate the SSR to all segments.
+     * The segment number.
+     * Used to specify an itinerary segment to associate the SSR to.
+     * 'A' can be specified to associate the SSR to all segments.
      *
      * @return string
      */
-    public function getSegmentNumber(): ?string
+    public function getSegmentNumber(): string
     {
         return $this->segmentNumber;
     }
 
     /**
-     * Used to specify an itinerary segment to associate the SSR to. "A" can be specified to associate the SSR to all segments.
+     * The segment number.
+     * Used to specify an itinerary segment to associate the SSR to.
+     * 'A' can be specified to associate the SSR to all segments.
      *
      * @param string $segmentNumber
      *
      * @return self
      */
-    public function setSegmentNumber(?string $segmentNumber): self
+    public function setSegmentNumber(string $segmentNumber): self
     {
         $this->segmentNumber = $segmentNumber;
 

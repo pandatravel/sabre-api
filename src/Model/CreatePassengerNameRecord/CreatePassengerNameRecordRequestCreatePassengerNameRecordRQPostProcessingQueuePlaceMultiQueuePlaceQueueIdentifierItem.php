@@ -15,42 +15,42 @@ use Ammonkc\SabreApi\AbstractModel;
 class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingQueuePlaceMultiQueuePlaceQueueIdentifierItem extends AbstractModel
 {
     /**
-     * Queue number.
+     * The queue number.
      *
      * @var string
      */
     protected $number;
     /**
-     * PIC code.
+     * The prefatory instruction code.
      *
      * @var string
      */
     protected $prefatoryInstructionCode;
     /**
-     * PCC.
+     * The pseudo city code.
      *
      * @var string
      */
     protected $pseudoCityCode;
 
     /**
-     * Queue number.
+     * The queue number.
      *
      * @return string
      */
-    public function getNumber(): ?string
+    public function getNumber(): string
     {
         return $this->number;
     }
 
     /**
-     * Queue number.
+     * The queue number.
      *
      * @param string $number
      *
      * @return self
      */
-    public function setNumber(?string $number): self
+    public function setNumber(string $number): self
     {
         $this->number = $number;
 
@@ -58,23 +58,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingQ
     }
 
     /**
-     * PIC code.
+     * The prefatory instruction code.
      *
      * @return string
      */
-    public function getPrefatoryInstructionCode(): ?string
+    public function getPrefatoryInstructionCode(): string
     {
         return $this->prefatoryInstructionCode;
     }
 
     /**
-     * PIC code.
+     * The prefatory instruction code.
      *
      * @param string $prefatoryInstructionCode
      *
      * @return self
      */
-    public function setPrefatoryInstructionCode(?string $prefatoryInstructionCode): self
+    public function setPrefatoryInstructionCode(string $prefatoryInstructionCode): self
     {
         $this->prefatoryInstructionCode = $prefatoryInstructionCode;
 
@@ -82,23 +82,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingQ
     }
 
     /**
-     * PCC.
+     * The pseudo city code.
      *
      * @return string
      */
-    public function getPseudoCityCode(): ?string
+    public function getPseudoCityCode(): string
     {
         return $this->pseudoCityCode;
     }
 
     /**
-     * PCC.
+     * The pseudo city code.
      *
      * @param string $pseudoCityCode
      *
      * @return self
      */
-    public function setPseudoCityCode(?string $pseudoCityCode): self
+    public function setPseudoCityCode(string $pseudoCityCode): self
     {
         $this->pseudoCityCode = $pseudoCityCode;
 
