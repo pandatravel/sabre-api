@@ -1,5 +1,5 @@
 # sabre-api
-Sabre API v1 Client
+Sabre REST API v1 Client
 
 ## About
 
@@ -7,7 +7,7 @@ This is the http api client to the sabre api
 
 ## Install
 ```bash
-composer require ammonkc/sabre-api dev-master
+composer require pandatravel/sabre-api dev-master
 ```
 
 ## Usage
