@@ -58,7 +58,7 @@ class AncillaryFeeDetailsType extends AbstractModel
     /**
      * @return float
      */
-    public function getAmount(): float
+    public function getAmount(): ?float
     {
         return $this->amount;
     }
@@ -68,7 +68,7 @@ class AncillaryFeeDetailsType extends AbstractModel
      *
      * @return self
      */
-    public function setAmount(float $amount): self
+    public function setAmount(?float $amount): self
     {
         $this->amount = $amount;
 
@@ -78,7 +78,7 @@ class AncillaryFeeDetailsType extends AbstractModel
     /**
      * @return string
      */
-    public function getAncillaryTypeCode(): string
+    public function getAncillaryTypeCode(): ?string
     {
         return $this->ancillaryTypeCode;
     }
@@ -88,7 +88,7 @@ class AncillaryFeeDetailsType extends AbstractModel
      *
      * @return self
      */
-    public function setAncillaryTypeCode(string $ancillaryTypeCode): self
+    public function setAncillaryTypeCode(?string $ancillaryTypeCode): self
     {
         $this->ancillaryTypeCode = $ancillaryTypeCode;
 
@@ -98,7 +98,7 @@ class AncillaryFeeDetailsType extends AbstractModel
     /**
      * @return int
      */
-    public function getBaggageId(): int
+    public function getBaggageId(): ?int
     {
         return $this->baggageId;
     }
@@ -108,7 +108,7 @@ class AncillaryFeeDetailsType extends AbstractModel
      *
      * @return self
      */
-    public function setBaggageId(int $baggageId): self
+    public function setBaggageId(?int $baggageId): self
     {
         $this->baggageId = $baggageId;
 
@@ -118,7 +118,7 @@ class AncillaryFeeDetailsType extends AbstractModel
     /**
      * @return string
      */
-    public function getCarrier(): string
+    public function getCarrier(): ?string
     {
         return $this->carrier;
     }
@@ -128,7 +128,7 @@ class AncillaryFeeDetailsType extends AbstractModel
      *
      * @return self
      */
-    public function setCarrier(string $carrier): self
+    public function setCarrier(?string $carrier): self
     {
         $this->carrier = $carrier;
 
@@ -138,7 +138,7 @@ class AncillaryFeeDetailsType extends AbstractModel
     /**
      * @return string
      */
-    public function getCode(): string
+    public function getCode(): ?string
     {
         return $this->code;
     }
@@ -148,7 +148,7 @@ class AncillaryFeeDetailsType extends AbstractModel
      *
      * @return self
      */
-    public function setCode(string $code): self
+    public function setCode(?string $code): self
     {
         $this->code = $code;
 
@@ -158,7 +158,7 @@ class AncillaryFeeDetailsType extends AbstractModel
     /**
      * @return string
      */
-    public function getDepartureDate(): string
+    public function getDepartureDate(): ?string
     {
         return $this->departureDate;
     }
@@ -168,7 +168,7 @@ class AncillaryFeeDetailsType extends AbstractModel
      *
      * @return self
      */
-    public function setDepartureDate(string $departureDate): self
+    public function setDepartureDate(?string $departureDate): self
     {
         $this->departureDate = $departureDate;
 
@@ -178,7 +178,7 @@ class AncillaryFeeDetailsType extends AbstractModel
     /**
      * @return string
      */
-    public function getDescription(): string
+    public function getDescription(): ?string
     {
         return $this->description;
     }
@@ -188,7 +188,7 @@ class AncillaryFeeDetailsType extends AbstractModel
      *
      * @return self
      */
-    public function setDescription(string $description): self
+    public function setDescription(?string $description): self
     {
         $this->description = $description;
 
@@ -198,7 +198,7 @@ class AncillaryFeeDetailsType extends AbstractModel
     /**
      * @return string
      */
-    public function getDestination(): string
+    public function getDestination(): ?string
     {
         return $this->destination;
     }
@@ -208,7 +208,7 @@ class AncillaryFeeDetailsType extends AbstractModel
      *
      * @return self
      */
-    public function setDestination(string $destination): self
+    public function setDestination(?string $destination): self
     {
         $this->destination = $destination;
 
@@ -218,7 +218,7 @@ class AncillaryFeeDetailsType extends AbstractModel
     /**
      * @return int
      */
-    public function getEndSegment(): int
+    public function getEndSegment(): ?int
     {
         return $this->endSegment;
     }
@@ -228,7 +228,7 @@ class AncillaryFeeDetailsType extends AbstractModel
      *
      * @return self
      */
-    public function setEndSegment(int $endSegment): self
+    public function setEndSegment(?int $endSegment): self
     {
         $this->endSegment = $endSegment;
 
@@ -238,7 +238,7 @@ class AncillaryFeeDetailsType extends AbstractModel
     /**
      * @return string
      */
-    public function getOrigin(): string
+    public function getOrigin(): ?string
     {
         return $this->origin;
     }
@@ -248,7 +248,7 @@ class AncillaryFeeDetailsType extends AbstractModel
      *
      * @return self
      */
-    public function setOrigin(string $origin): self
+    public function setOrigin(?string $origin): self
     {
         $this->origin = $origin;
 
@@ -258,7 +258,7 @@ class AncillaryFeeDetailsType extends AbstractModel
     /**
      * @return int
      */
-    public function getStartSegment(): int
+    public function getStartSegment(): ?int
     {
         return $this->startSegment;
     }
@@ -268,7 +268,7 @@ class AncillaryFeeDetailsType extends AbstractModel
      *
      * @return self
      */
-    public function setStartSegment(int $startSegment): self
+    public function setStartSegment(?int $startSegment): self
     {
         $this->startSegment = $startSegment;
 
@@ -278,7 +278,7 @@ class AncillaryFeeDetailsType extends AbstractModel
     /**
      * @return string
      */
-    public function getSubcode(): string
+    public function getSubcode(): ?string
     {
         return $this->subcode;
     }
@@ -288,7 +288,7 @@ class AncillaryFeeDetailsType extends AbstractModel
      *
      * @return self
      */
-    public function setSubcode(string $subcode): self
+    public function setSubcode(?string $subcode): self
     {
         $this->subcode = $subcode;
 

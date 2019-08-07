@@ -22,7 +22,7 @@ class AncillaryFeeGroupType extends AbstractModel
     /**
      * @return AncillaryFeeType[]
      */
-    public function getAncillaryFees(): array
+    public function getAncillaryFees(): ?array
     {
         return $this->ancillaryFees;
     }
@@ -32,7 +32,7 @@ class AncillaryFeeGroupType extends AbstractModel
      *
      * @return self
      */
-    public function setAncillaryFees(array $ancillaryFees): self
+    public function setAncillaryFees(?array $ancillaryFees): self
     {
         $this->ancillaryFees = $ancillaryFees;
 
@@ -42,7 +42,7 @@ class AncillaryFeeGroupType extends AbstractModel
     /**
      * @return string
      */
-    public function getMessage(): string
+    public function getMessage(): ?string
     {
         return $this->message;
     }
@@ -52,7 +52,7 @@ class AncillaryFeeGroupType extends AbstractModel
      *
      * @return self
      */
-    public function setMessage(string $message): self
+    public function setMessage(?string $message): self
     {
         $this->message = $message;
 
@@ -62,7 +62,7 @@ class AncillaryFeeGroupType extends AbstractModel
     /**
      * @return OrderStandardBag
      */
-    public function getOrderStandardBag(): OrderStandardBag
+    public function getOrderStandardBag(): ?OrderStandardBag
     {
         return $this->orderStandardBag;
     }
@@ -72,7 +72,7 @@ class AncillaryFeeGroupType extends AbstractModel
      *
      * @return self
      */
-    public function setOrderStandardBag(OrderStandardBag $orderStandardBag): self
+    public function setOrderStandardBag(?OrderStandardBag $orderStandardBag): self
     {
         $this->orderStandardBag = $orderStandardBag;
 
