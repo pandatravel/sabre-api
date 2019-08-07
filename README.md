@@ -13,8 +13,5 @@ composer require ammonkc/sabre-api dev-master
 ## Usage
 
 
-
 ### License
-
-The PTPkg project is closed-sourced software and is UNLICENSED.
-
+This project is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
