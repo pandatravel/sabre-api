@@ -12,17 +12,13 @@ class OrgOpentravelOta200305FareBasisType extends AbstractModel
      * @var string
      */
     protected $code;
-    /**
-     * @var string
-     */
-    protected $preferLevel;
 
     /**
      * One to fifteen character Fare Basis Code. Uppercase letters, numbers and wildcards "-" "?" "^" are allowed. Minus (-): zero or more characters. Question mark (?): exactly one character. Caret followed by an uppercase letter or a number (^X): exactly one character, excluding X (replace X with the charter you want to reject).,Defines preferred or excluded fare type codes for whole main fare.,Specify fare type code.
      *
      * @return string
      */
-    public function getCode(): string
+    public function getCode(): ?string
     {
         return $this->code;
     }
@@ -34,29 +30,9 @@ class OrgOpentravelOta200305FareBasisType extends AbstractModel
      *
      * @return self
      */
-    public function setCode(string $code): self
+    public function setCode(?string $code): self
     {
         $this->code = $code;
-
-        return $this;
-    }
-
-    /**
-     * @return string
-     */
-    public function getPreferLevel(): string
-    {
-        return $this->preferLevel;
-    }
-
-    /**
-     * @param string $preferLevel
-     *
-     * @return self
-     */
-    public function setPreferLevel(string $preferLevel): self
-    {
-        $this->preferLevel = $preferLevel;
 
         return $this;
     }
