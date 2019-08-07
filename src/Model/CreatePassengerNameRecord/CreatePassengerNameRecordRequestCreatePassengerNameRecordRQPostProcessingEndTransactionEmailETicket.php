@@ -30,9 +30,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingE
     /**
      * 'PDF' is used to send an email notification containing a PDF-based copy of the eTicket.
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmailETicketPDF
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmailETicketPDF|null
      */
-    public function getPDF(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmailETicketPDF
+    public function getPDF(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmailETicketPDF
     {
         return $this->pDF;
     }
@@ -40,11 +40,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingE
     /**
      * 'PDF' is used to send an email notification containing a PDF-based copy of the eTicket.
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmailETicketPDF $pDF
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmailETicketPDF|null $pDF
      *
      * @return self
      */
-    public function setPDF(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmailETicketPDF $pDF): self
+    public function setPDF(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmailETicketPDF $pDF): self
     {
         $this->pDF = $pDF;
 
@@ -54,9 +54,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingE
     /**
      * Used to indicate whether to send an email notification containing a text-based copy of the electronic ticket.
      *
-     * @return bool
+     * @return bool|null
      */
-    public function getInd(): bool
+    public function getInd(): ?bool
     {
         return $this->ind;
     }
@@ -64,11 +64,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingE
     /**
      * Used to indicate whether to send an email notification containing a text-based copy of the electronic ticket.
      *
-     * @param bool $ind
+     * @param bool|null $ind
      *
      * @return self
      */
-    public function setInd(bool $ind): self
+    public function setInd(?bool $ind): self
     {
         $this->ind = $ind;
 

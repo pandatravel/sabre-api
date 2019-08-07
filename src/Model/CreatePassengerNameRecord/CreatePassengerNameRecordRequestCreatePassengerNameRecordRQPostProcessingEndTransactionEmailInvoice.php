@@ -24,9 +24,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingE
     /**
      * Specifies whether an reservation invoice should be sent via e-mail.
      *
-     * @return bool
+     * @return bool|null
      */
-    public function getInd(): bool
+    public function getInd(): ?bool
     {
         return $this->ind;
     }
@@ -34,11 +34,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingE
     /**
      * Specifies whether an reservation invoice should be sent via e-mail.
      *
-     * @param bool $ind
+     * @param bool|null $ind
      *
      * @return self
      */
-    public function setInd(bool $ind): self
+    public function setInd(?bool $ind): self
     {
         $this->ind = $ind;
 

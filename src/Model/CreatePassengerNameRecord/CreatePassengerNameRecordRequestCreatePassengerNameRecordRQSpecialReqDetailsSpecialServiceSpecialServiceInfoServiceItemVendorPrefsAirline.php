@@ -16,7 +16,8 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
 {
     /**
      * The airline code.
-     * Applicable to the 'OSI' SSRCode, and is used to specify the airline that the SSR needs to be sent to.
+    Applicable to the 'OSI' SSRCode, and is used to specify the airline that the SSR needs to be sent to.
+
      *
      * @var string
      */
@@ -30,24 +31,26 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
 
     /**
      * The airline code.
-     * Applicable to the 'OSI' SSRCode, and is used to specify the airline that the SSR needs to be sent to.
+    Applicable to the 'OSI' SSRCode, and is used to specify the airline that the SSR needs to be sent to.
+
      *
-     * @return string
+     * @return string|null
      */
-    public function getCode(): string
+    public function getCode(): ?string
     {
         return $this->code;
     }
 
     /**
      * The airline code.
-     * Applicable to the 'OSI' SSRCode, and is used to specify the airline that the SSR needs to be sent to.
+    Applicable to the 'OSI' SSRCode, and is used to specify the airline that the SSR needs to be sent to.
+
      *
-     * @param string $code
+     * @param string|null $code
      *
      * @return self
      */
-    public function setCode(string $code): self
+    public function setCode(?string $code): self
     {
         $this->code = $code;
 
@@ -57,9 +60,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     /**
      * Defines if the receiving airline is a Sabre hosted carrier.
      *
-     * @return bool
+     * @return bool|null
      */
-    public function getHosted(): bool
+    public function getHosted(): ?bool
     {
         return $this->hosted;
     }
@@ -67,11 +70,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     /**
      * Defines if the receiving airline is a Sabre hosted carrier.
      *
-     * @param bool $hosted
+     * @param bool|null $hosted
      *
      * @return self
      */
-    public function setHosted(bool $hosted): self
+    public function setHosted(?bool $hosted): self
     {
         $this->hosted = $hosted;
 

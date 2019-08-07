@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\CreatePassengerNameRecord\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -36,62 +35,62 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemAssociations();
-        if (property_exists($data, 'CarrierCode')) {
+        if (property_exists($data, 'CarrierCode') && $data->{'CarrierCode'} !== null) {
             $values = [];
             foreach ($data->{'CarrierCode'} as $value) {
                 $values[] = $this->denormalizer->denormalize($value, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemAssociationsCarrierCodeItem', 'json', $context);
             }
             $object->setCarrierCode($values);
         }
-        if (property_exists($data, 'CountForSegmentAssociatedID')) {
+        if (property_exists($data, 'CountForSegmentAssociatedID') && $data->{'CountForSegmentAssociatedID'} !== null) {
             $object->setCountForSegmentAssociatedID($data->{'CountForSegmentAssociatedID'});
         }
-        if (property_exists($data, 'DepartureDate')) {
+        if (property_exists($data, 'DepartureDate') && $data->{'DepartureDate'} !== null) {
             $values_1 = [];
             foreach ($data->{'DepartureDate'} as $value_1) {
                 $values_1[] = $this->denormalizer->denormalize($value_1, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemAssociationsDepartureDateItem', 'json', $context);
             }
             $object->setDepartureDate($values_1);
         }
-        if (property_exists($data, 'DestinationLocation')) {
+        if (property_exists($data, 'DestinationLocation') && $data->{'DestinationLocation'} !== null) {
             $values_2 = [];
             foreach ($data->{'DestinationLocation'} as $value_2) {
                 $values_2[] = $this->denormalizer->denormalize($value_2, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemAssociationsDestinationLocationItem', 'json', $context);
             }
             $object->setDestinationLocation($values_2);
         }
-        if (property_exists($data, 'FlightNumber')) {
+        if (property_exists($data, 'FlightNumber') && $data->{'FlightNumber'} !== null) {
             $values_3 = [];
             foreach ($data->{'FlightNumber'} as $value_3) {
                 $values_3[] = $this->denormalizer->denormalize($value_3, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemAssociationsFlightNumberItem', 'json', $context);
             }
             $object->setFlightNumber($values_3);
         }
-        if (property_exists($data, 'OriginLocation')) {
+        if (property_exists($data, 'OriginLocation') && $data->{'OriginLocation'} !== null) {
             $values_4 = [];
             foreach ($data->{'OriginLocation'} as $value_4) {
                 $values_4[] = $this->denormalizer->denormalize($value_4, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemAssociationsOriginLocationItem', 'json', $context);
             }
             $object->setOriginLocation($values_4);
         }
-        if (property_exists($data, 'PNR_Segment')) {
+        if (property_exists($data, 'PNR_Segment') && $data->{'PNR_Segment'} !== null) {
             $values_5 = [];
             foreach ($data->{'PNR_Segment'} as $value_5) {
                 $values_5[] = $this->denormalizer->denormalize($value_5, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemAssociationsPNRSegmentItem', 'json', $context);
             }
             $object->setPNRSegment($values_5);
         }
-        if (property_exists($data, 'ResBookDesigCode')) {
+        if (property_exists($data, 'ResBookDesigCode') && $data->{'ResBookDesigCode'} !== null) {
             $values_6 = [];
             foreach ($data->{'ResBookDesigCode'} as $value_6) {
                 $values_6[] = $this->denormalizer->denormalize($value_6, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemAssociationsResBookDesigCodeItem', 'json', $context);
             }
             $object->setResBookDesigCode($values_6);
         }
-        if (property_exists($data, 'StatusCode')) {
+        if (property_exists($data, 'StatusCode') && $data->{'StatusCode'} !== null) {
             $values_7 = [];
             foreach ($data->{'StatusCode'} as $value_7) {
                 $values_7[] = $this->denormalizer->denormalize($value_7, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemAssociationsStatusCodeItem', 'json', $context);

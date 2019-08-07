@@ -34,19 +34,19 @@ class ApplicationResults extends AbstractModel
     protected $status;
 
     /**
-     * @return ProblemInformation[]
+     * @return ProblemInformation[]|null
      */
-    public function getSuccess(): array
+    public function getSuccess(): ?array
     {
         return $this->success;
     }
 
     /**
-     * @param ProblemInformation[] $success
+     * @param ProblemInformation[]|null $success
      *
      * @return self
      */
-    public function setSuccess(array $success): self
+    public function setSuccess(?array $success): self
     {
         $this->success = $success;
 
@@ -54,19 +54,19 @@ class ApplicationResults extends AbstractModel
     }
 
     /**
-     * @return ProblemInformation[]
+     * @return ProblemInformation[]|null
      */
-    public function getError(): array
+    public function getError(): ?array
     {
         return $this->error;
     }
 
     /**
-     * @param ProblemInformation[] $error
+     * @param ProblemInformation[]|null $error
      *
      * @return self
      */
-    public function setError(array $error): self
+    public function setError(?array $error): self
     {
         $this->error = $error;
 
@@ -74,19 +74,19 @@ class ApplicationResults extends AbstractModel
     }
 
     /**
-     * @return ProblemInformation[]
+     * @return ProblemInformation[]|null
      */
-    public function getWarning(): array
+    public function getWarning(): ?array
     {
         return $this->warning;
     }
 
     /**
-     * @param ProblemInformation[] $warning
+     * @param ProblemInformation[]|null $warning
      *
      * @return self
      */
-    public function setWarning(array $warning): self
+    public function setWarning(?array $warning): self
     {
         $this->warning = $warning;
 
@@ -96,9 +96,9 @@ class ApplicationResults extends AbstractModel
     /**
      * Transaction status.
      *
-     * @return string
+     * @return string|null
      */
-    public function getStatus(): string
+    public function getStatus(): ?string
     {
         return $this->status;
     }
@@ -106,11 +106,11 @@ class ApplicationResults extends AbstractModel
     /**
      * Transaction status.
      *
-     * @param string $status
+     * @param string|null $status
      *
      * @return self
      */
-    public function setStatus(string $status): self
+    public function setStatus(?string $status): self
     {
         $this->status = $status;
 

@@ -24,9 +24,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to instruct the system to return both match and no match alternative pricing options.
      *
-     * @return bool
+     * @return bool|null
      */
-    public function getInd(): bool
+    public function getInd(): ?bool
     {
         return $this->ind;
     }
@@ -34,11 +34,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to instruct the system to return both match and no match alternative pricing options.
      *
-     * @param bool $ind
+     * @param bool|null $ind
      *
      * @return self
      */
-    public function setInd(bool $ind): self
+    public function setInd(?bool $ind): self
     {
         $this->ind = $ind;
 

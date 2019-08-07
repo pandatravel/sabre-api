@@ -36,9 +36,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * 'ExtendedPayment' is used to pass the number of months by which to extend the payment.
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBSPTicketingMultipleMiscFOPFOPTwoExtendedPayment
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBSPTicketingMultipleMiscFOPFOPTwoExtendedPayment|null
      */
-    public function getExtendedPayment(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBSPTicketingMultipleMiscFOPFOPTwoExtendedPayment
+    public function getExtendedPayment(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBSPTicketingMultipleMiscFOPFOPTwoExtendedPayment
     {
         return $this->extendedPayment;
     }
@@ -46,11 +46,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * 'ExtendedPayment' is used to pass the number of months by which to extend the payment.
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBSPTicketingMultipleMiscFOPFOPTwoExtendedPayment $extendedPayment
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBSPTicketingMultipleMiscFOPFOPTwoExtendedPayment|null $extendedPayment
      *
      * @return self
      */
-    public function setExtendedPayment(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBSPTicketingMultipleMiscFOPFOPTwoExtendedPayment $extendedPayment): self
+    public function setExtendedPayment(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBSPTicketingMultipleMiscFOPFOPTwoExtendedPayment $extendedPayment): self
     {
         $this->extendedPayment = $extendedPayment;
 
@@ -60,9 +60,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * 'Type' is used to specify the miscellaneous payment type.
      *
-     * @return string
+     * @return string|null
      */
-    public function getType(): string
+    public function getType(): ?string
     {
         return $this->type;
     }
@@ -70,11 +70,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * 'Type' is used to specify the miscellaneous payment type.
      *
-     * @param string $type
+     * @param string|null $type
      *
      * @return self
      */
-    public function setType(string $type): self
+    public function setType(?string $type): self
     {
         $this->type = $type;
 
@@ -84,9 +84,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to reference a line number from PNR FOP field.
      *
-     * @return int
+     * @return int|null
      */
-    public function getReference(): int
+    public function getReference(): ?int
     {
         return $this->reference;
     }
@@ -94,11 +94,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to reference a line number from PNR FOP field.
      *
-     * @param int $reference
+     * @param int|null $reference
      *
      * @return self
      */
-    public function setReference(int $reference): self
+    public function setReference(?int $reference): self
     {
         $this->reference = $reference;
 

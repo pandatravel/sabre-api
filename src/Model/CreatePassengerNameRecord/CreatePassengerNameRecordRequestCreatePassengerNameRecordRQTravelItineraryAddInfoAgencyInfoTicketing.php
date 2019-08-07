@@ -40,18 +40,20 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
     protected $shortText;
     /**
      * 'TicketTimeLimit' is used to specify the ticket time limit.
-     * 'TicketTimeLimit' is shown in the following format - MM-DDTHH:00.
-     * 'TicketTimeLimit' must be at the top of the hour.
-     * This is a date time type that forces both the date and the time to be specified.
-     * The year and seconds can be omitted.
-     * Example formats - 'yyyy-mm-ddThh:mm:ss', 'mm-ddThh:mm:ss', 'mm-ddThh:mm', 'yyyy-mm-ddThh:mm'
+    'TicketTimeLimit' is shown in the following format - MM-DDTHH:00.
+    'TicketTimeLimit' must be at the top of the hour.
+    This is a date time type that forces both the date and the time to be specified.
+    The year and seconds can be omitted.
+    Example formats - 'yyyy-mm-ddThh:mm:ss', 'mm-ddThh:mm:ss', 'mm-ddThh:mm', 'yyyy-mm-ddThh:mm'
+
      *
      * @var string
      */
     protected $ticketTimeLimit;
     /**
      * Used to pass the ticketing type.
-     * Acceptable values are: '7TAW', '7TAX', '7T-A', '8(time)', or '8(time/(date)'.
+    Acceptable values are: '7TAW', '7TAX', '7T-A', '8(time)', or '8(time/(date)'.
+
      *
      * @var string
      */
@@ -60,9 +62,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
     /**
      * The pseudo city code.
      *
-     * @return string
+     * @return string|null
      */
-    public function getPseudoCityCode(): string
+    public function getPseudoCityCode(): ?string
     {
         return $this->pseudoCityCode;
     }
@@ -70,11 +72,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
     /**
      * The pseudo city code.
      *
-     * @param string $pseudoCityCode
+     * @param string|null $pseudoCityCode
      *
      * @return self
      */
-    public function setPseudoCityCode(string $pseudoCityCode): self
+    public function setPseudoCityCode(?string $pseudoCityCode): self
     {
         $this->pseudoCityCode = $pseudoCityCode;
 
@@ -84,9 +86,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
     /**
      * The queue number.
      *
-     * @return int
+     * @return int|null
      */
-    public function getQueueNumber(): int
+    public function getQueueNumber(): ?int
     {
         return $this->queueNumber;
     }
@@ -94,11 +96,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
     /**
      * The queue number.
      *
-     * @param int $queueNumber
+     * @param int|null $queueNumber
      *
      * @return self
      */
-    public function setQueueNumber(int $queueNumber): self
+    public function setQueueNumber(?int $queueNumber): self
     {
         $this->queueNumber = $queueNumber;
 
@@ -108,9 +110,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
     /**
      * The queue name.
      *
-     * @return string
+     * @return string|null
      */
-    public function getQueueName(): string
+    public function getQueueName(): ?string
     {
         return $this->queueName;
     }
@@ -118,11 +120,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
     /**
      * The queue name.
      *
-     * @param string $queueName
+     * @param string|null $queueName
      *
      * @return self
      */
-    public function setQueueName(string $queueName): self
+    public function setQueueName(?string $queueName): self
     {
         $this->queueName = $queueName;
 
@@ -132,9 +134,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
     /**
      * The miscellaneous free text.
      *
-     * @return string
+     * @return string|null
      */
-    public function getShortText(): string
+    public function getShortText(): ?string
     {
         return $this->shortText;
     }
@@ -142,11 +144,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
     /**
      * The miscellaneous free text.
      *
-     * @param string $shortText
+     * @param string|null $shortText
      *
      * @return self
      */
-    public function setShortText(string $shortText): self
+    public function setShortText(?string $shortText): self
     {
         $this->shortText = $shortText;
 
@@ -155,32 +157,34 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
 
     /**
      * 'TicketTimeLimit' is used to specify the ticket time limit.
-     * 'TicketTimeLimit' is shown in the following format - MM-DDTHH:00.
-     * 'TicketTimeLimit' must be at the top of the hour.
-     * This is a date time type that forces both the date and the time to be specified.
-     * The year and seconds can be omitted.
-     * Example formats - 'yyyy-mm-ddThh:mm:ss', 'mm-ddThh:mm:ss', 'mm-ddThh:mm', 'yyyy-mm-ddThh:mm'
+    'TicketTimeLimit' is shown in the following format - MM-DDTHH:00.
+    'TicketTimeLimit' must be at the top of the hour.
+    This is a date time type that forces both the date and the time to be specified.
+    The year and seconds can be omitted.
+    Example formats - 'yyyy-mm-ddThh:mm:ss', 'mm-ddThh:mm:ss', 'mm-ddThh:mm', 'yyyy-mm-ddThh:mm'
+
      *
-     * @return string
+     * @return string|null
      */
-    public function getTicketTimeLimit(): string
+    public function getTicketTimeLimit(): ?string
     {
         return $this->ticketTimeLimit;
     }
 
     /**
      * 'TicketTimeLimit' is used to specify the ticket time limit.
-     * 'TicketTimeLimit' is shown in the following format - MM-DDTHH:00.
-     * 'TicketTimeLimit' must be at the top of the hour.
-     * This is a date time type that forces both the date and the time to be specified.
-     * The year and seconds can be omitted.
-     * Example formats - 'yyyy-mm-ddThh:mm:ss', 'mm-ddThh:mm:ss', 'mm-ddThh:mm', 'yyyy-mm-ddThh:mm'
+    'TicketTimeLimit' is shown in the following format - MM-DDTHH:00.
+    'TicketTimeLimit' must be at the top of the hour.
+    This is a date time type that forces both the date and the time to be specified.
+    The year and seconds can be omitted.
+    Example formats - 'yyyy-mm-ddThh:mm:ss', 'mm-ddThh:mm:ss', 'mm-ddThh:mm', 'yyyy-mm-ddThh:mm'
+
      *
-     * @param string $ticketTimeLimit
+     * @param string|null $ticketTimeLimit
      *
      * @return self
      */
-    public function setTicketTimeLimit(string $ticketTimeLimit): self
+    public function setTicketTimeLimit(?string $ticketTimeLimit): self
     {
         $this->ticketTimeLimit = $ticketTimeLimit;
 
@@ -189,24 +193,26 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
 
     /**
      * Used to pass the ticketing type.
-     * Acceptable values are: '7TAW', '7TAX', '7T-A', '8(time)', or '8(time/(date)'.
+    Acceptable values are: '7TAW', '7TAX', '7T-A', '8(time)', or '8(time/(date)'.
+
      *
-     * @return string
+     * @return string|null
      */
-    public function getTicketType(): string
+    public function getTicketType(): ?string
     {
         return $this->ticketType;
     }
 
     /**
      * Used to pass the ticketing type.
-     * Acceptable values are: '7TAW', '7TAX', '7T-A', '8(time)', or '8(time/(date)'.
+    Acceptable values are: '7TAW', '7TAX', '7T-A', '8(time)', or '8(time/(date)'.
+
      *
-     * @param string $ticketType
+     * @param string|null $ticketType
      *
      * @return self
      */
-    public function setTicketType(string $ticketType): self
+    public function setTicketType(?string $ticketType): self
     {
         $this->ticketType = $ticketType;
 

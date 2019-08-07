@@ -66,9 +66,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     /**
      * The traveling airline code.
      *
-     * @return string
+     * @return string|null
      */
-    public function getTravelingCarrierCode(): string
+    public function getTravelingCarrierCode(): ?string
     {
         return $this->travelingCarrierCode;
     }
@@ -76,11 +76,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     /**
      * The traveling airline code.
      *
-     * @param string $travelingCarrierCode
+     * @param string|null $travelingCarrierCode
      *
      * @return self
      */
-    public function setTravelingCarrierCode(string $travelingCarrierCode): self
+    public function setTravelingCarrierCode(?string $travelingCarrierCode): self
     {
         $this->travelingCarrierCode = $travelingCarrierCode;
 
@@ -90,9 +90,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     /**
      * The passenger's frequent flyer number.
      *
-     * @return string
+     * @return string|null
      */
-    public function getMembershipID(): string
+    public function getMembershipID(): ?string
     {
         return $this->membershipID;
     }
@@ -100,11 +100,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     /**
      * The passenger's frequent flyer number.
      *
-     * @param string $membershipID
+     * @param string|null $membershipID
      *
      * @return self
      */
-    public function setMembershipID(string $membershipID): self
+    public function setMembershipID(?string $membershipID): self
     {
         $this->membershipID = $membershipID;
 
@@ -114,9 +114,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     /**
      * "NameNumber" is used to associate the particular frequent flyer number to a particular passenger within the record.
      *
-     * @return string
+     * @return string|null
      */
-    public function getNameNumber(): string
+    public function getNameNumber(): ?string
     {
         return $this->nameNumber;
     }
@@ -124,11 +124,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     /**
      * "NameNumber" is used to associate the particular frequent flyer number to a particular passenger within the record.
      *
-     * @param string $nameNumber
+     * @param string|null $nameNumber
      *
      * @return self
      */
-    public function setNameNumber(string $nameNumber): self
+    public function setNameNumber(?string $nameNumber): self
     {
         $this->nameNumber = $nameNumber;
 
@@ -138,9 +138,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     /**
      * The passenger's frequent flyer airline code.
      *
-     * @return string
+     * @return string|null
      */
-    public function getProgramID(): string
+    public function getProgramID(): ?string
     {
         return $this->programID;
     }
@@ -148,11 +148,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     /**
      * The passenger's frequent flyer airline code.
      *
-     * @param string $programID
+     * @param string|null $programID
      *
      * @return self
      */
-    public function setProgramID(string $programID): self
+    public function setProgramID(?string $programID): self
     {
         $this->programID = $programID;
 
@@ -162,9 +162,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     /**
      * The reference placeholder.
      *
-     * @return string
+     * @return string|null
      */
-    public function getRPH(): string
+    public function getRPH(): ?string
     {
         return $this->rPH;
     }
@@ -172,11 +172,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     /**
      * The reference placeholder.
      *
-     * @param string $rPH
+     * @param string|null $rPH
      *
      * @return self
      */
-    public function setRPH(string $rPH): self
+    public function setRPH(?string $rPH): self
     {
         $this->rPH = $rPH;
 
@@ -186,9 +186,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     /**
      * 'ShortText' is used to return miscellaneous frequent flyer-related information.
      *
-     * @return string
+     * @return string|null
      */
-    public function getShortText(): string
+    public function getShortText(): ?string
     {
         return $this->shortText;
     }
@@ -196,11 +196,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     /**
      * 'ShortText' is used to return miscellaneous frequent flyer-related information.
      *
-     * @param string $shortText
+     * @param string|null $shortText
      *
      * @return self
      */
-    public function setShortText(string $shortText): self
+    public function setShortText(?string $shortText): self
     {
         $this->shortText = $shortText;
 
@@ -210,9 +210,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     /**
      * The status code associated with the particular flight segment within the record.
      *
-     * @return string
+     * @return string|null
      */
-    public function getStatus(): string
+    public function getStatus(): ?string
     {
         return $this->status;
     }
@@ -220,11 +220,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     /**
      * The status code associated with the particular flight segment within the record.
      *
-     * @param string $status
+     * @param string|null $status
      *
      * @return self
      */
-    public function setStatus(string $status): self
+    public function setStatus(?string $status): self
     {
         $this->status = $status;
 
@@ -234,9 +234,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     /**
      * The reference ID.
      *
-     * @return string
+     * @return string|null
      */
-    public function getId(): string
+    public function getId(): ?string
     {
         return $this->id;
     }
@@ -244,11 +244,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     /**
      * The reference ID.
      *
-     * @param string $id
+     * @param string|null $id
      *
      * @return self
      */
-    public function setId(string $id): self
+    public function setId(?string $id): self
     {
         $this->id = $id;
 

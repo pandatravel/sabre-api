@@ -42,9 +42,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The stopover charge indicator.
      *
-     * @return string
+     * @return string|null
      */
-    public function getInd(): string
+    public function getInd(): ?string
     {
         return $this->ind;
     }
@@ -52,11 +52,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The stopover charge indicator.
      *
-     * @param string $ind
+     * @param string|null $ind
      *
      * @return self
      */
-    public function setInd(string $ind): self
+    public function setInd(?string $ind): self
     {
         $this->ind = $ind;
 
@@ -66,9 +66,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * Used to return city specific stopover charge.
      *
-     * @return string
+     * @return string|null
      */
-    public function getCitySpecificStopoverCharge(): string
+    public function getCitySpecificStopoverCharge(): ?string
     {
         return $this->citySpecificStopoverCharge;
     }
@@ -76,11 +76,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * Used to return city specific stopover charge.
      *
-     * @param string $citySpecificStopoverCharge
+     * @param string|null $citySpecificStopoverCharge
      *
      * @return self
      */
-    public function setCitySpecificStopoverCharge(string $citySpecificStopoverCharge): self
+    public function setCitySpecificStopoverCharge(?string $citySpecificStopoverCharge): self
     {
         $this->citySpecificStopoverCharge = $citySpecificStopoverCharge;
 
@@ -90,9 +90,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The transfer charge indicator.
      *
-     * @return string
+     * @return string|null
      */
-    public function getTransferChargeInd(): string
+    public function getTransferChargeInd(): ?string
     {
         return $this->transferChargeInd;
     }
@@ -100,11 +100,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The transfer charge indicator.
      *
-     * @param string $transferChargeInd
+     * @param string|null $transferChargeInd
      *
      * @return self
      */
-    public function setTransferChargeInd(string $transferChargeInd): self
+    public function setTransferChargeInd(?string $transferChargeInd): self
     {
         $this->transferChargeInd = $transferChargeInd;
 
@@ -114,9 +114,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The transfer charge.
      *
-     * @return string
+     * @return string|null
      */
-    public function getTransferCharge(): string
+    public function getTransferCharge(): ?string
     {
         return $this->transferCharge;
     }
@@ -124,11 +124,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The transfer charge.
      *
-     * @param string $transferCharge
+     * @param string|null $transferCharge
      *
      * @return self
      */
-    public function setTransferCharge(string $transferCharge): self
+    public function setTransferCharge(?string $transferCharge): self
     {
         $this->transferCharge = $transferCharge;
 

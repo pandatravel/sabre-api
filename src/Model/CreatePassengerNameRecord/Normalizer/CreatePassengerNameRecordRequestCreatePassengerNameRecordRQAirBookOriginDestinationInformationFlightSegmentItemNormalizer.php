@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\CreatePassengerNameRecord\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -36,46 +35,46 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDe
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDestinationInformationFlightSegmentItem();
-        if (property_exists($data, 'DestinationLocation')) {
+        if (property_exists($data, 'DestinationLocation') && $data->{'DestinationLocation'} !== null) {
             $object->setDestinationLocation($this->denormalizer->denormalize($data->{'DestinationLocation'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDestinationInformationFlightSegmentItemDestinationLocation', 'json', $context));
         }
-        if (property_exists($data, 'Equipment')) {
+        if (property_exists($data, 'Equipment') && $data->{'Equipment'} !== null) {
             $object->setEquipment($this->denormalizer->denormalize($data->{'Equipment'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDestinationInformationFlightSegmentItemEquipment', 'json', $context));
         }
-        if (property_exists($data, 'MarketingAirline')) {
+        if (property_exists($data, 'MarketingAirline') && $data->{'MarketingAirline'} !== null) {
             $object->setMarketingAirline($this->denormalizer->denormalize($data->{'MarketingAirline'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDestinationInformationFlightSegmentItemMarketingAirline', 'json', $context));
         }
-        if (property_exists($data, 'MarriageGrp')) {
+        if (property_exists($data, 'MarriageGrp') && $data->{'MarriageGrp'} !== null) {
             $object->setMarriageGrp($data->{'MarriageGrp'});
         }
-        if (property_exists($data, 'OperatingAirline')) {
+        if (property_exists($data, 'OperatingAirline') && $data->{'OperatingAirline'} !== null) {
             $object->setOperatingAirline($this->denormalizer->denormalize($data->{'OperatingAirline'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDestinationInformationFlightSegmentItemOperatingAirline', 'json', $context));
         }
-        if (property_exists($data, 'OriginLocation')) {
+        if (property_exists($data, 'OriginLocation') && $data->{'OriginLocation'} !== null) {
             $object->setOriginLocation($this->denormalizer->denormalize($data->{'OriginLocation'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDestinationInformationFlightSegmentItemOriginLocation', 'json', $context));
         }
-        if (property_exists($data, 'ArrivalDateTime')) {
+        if (property_exists($data, 'ArrivalDateTime') && $data->{'ArrivalDateTime'} !== null) {
             $object->setArrivalDateTime($data->{'ArrivalDateTime'});
         }
-        if (property_exists($data, 'DepartureDateTime')) {
+        if (property_exists($data, 'DepartureDateTime') && $data->{'DepartureDateTime'} !== null) {
             $object->setDepartureDateTime($data->{'DepartureDateTime'});
         }
-        if (property_exists($data, 'FlightNumber')) {
+        if (property_exists($data, 'FlightNumber') && $data->{'FlightNumber'} !== null) {
             $object->setFlightNumber($data->{'FlightNumber'});
         }
-        if (property_exists($data, 'NumberInParty')) {
+        if (property_exists($data, 'NumberInParty') && $data->{'NumberInParty'} !== null) {
             $object->setNumberInParty($data->{'NumberInParty'});
         }
-        if (property_exists($data, 'ResBookDesigCode')) {
+        if (property_exists($data, 'ResBookDesigCode') && $data->{'ResBookDesigCode'} !== null) {
             $object->setResBookDesigCode($data->{'ResBookDesigCode'});
         }
-        if (property_exists($data, 'Status')) {
+        if (property_exists($data, 'Status') && $data->{'Status'} !== null) {
             $object->setStatus($data->{'Status'});
         }
-        if (property_exists($data, 'InstantPurchase')) {
+        if (property_exists($data, 'InstantPurchase') && $data->{'InstantPurchase'} !== null) {
             $object->setInstantPurchase($data->{'InstantPurchase'});
         }
 

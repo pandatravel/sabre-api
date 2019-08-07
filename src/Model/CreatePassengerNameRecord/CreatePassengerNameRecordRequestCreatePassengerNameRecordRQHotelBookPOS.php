@@ -24,9 +24,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOS ex
     /**
      * Details of the point of sale.
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSource
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSource|null
      */
-    public function getSource(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSource
+    public function getSource(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSource
     {
         return $this->source;
     }
@@ -34,11 +34,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOS ex
     /**
      * Details of the point of sale.
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSource $source
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSource|null $source
      *
      * @return self
      */
-    public function setSource(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSource $source): self
+    public function setSource(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSource $source): self
     {
         $this->source = $source;
 

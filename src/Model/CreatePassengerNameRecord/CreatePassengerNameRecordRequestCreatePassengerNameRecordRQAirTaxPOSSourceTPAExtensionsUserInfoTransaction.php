@@ -24,9 +24,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSource
     /**
      * The transaction ID.
      *
-     * @return int
+     * @return int|null
      */
-    public function getID(): int
+    public function getID(): ?int
     {
         return $this->iD;
     }
@@ -34,11 +34,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSource
     /**
      * The transaction ID.
      *
-     * @param int $iD
+     * @param int|null $iD
      *
      * @return self
      */
-    public function setID(int $iD): self
+    public function setID(?int $iD): self
     {
         $this->iD = $iD;
 

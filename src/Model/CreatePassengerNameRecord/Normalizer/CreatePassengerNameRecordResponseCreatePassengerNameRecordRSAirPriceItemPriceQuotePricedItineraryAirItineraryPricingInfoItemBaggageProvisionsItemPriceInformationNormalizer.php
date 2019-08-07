@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\CreatePassengerNameRecord\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -36,19 +35,19 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemPriceInformation();
-        if (property_exists($data, 'Base')) {
+        if (property_exists($data, 'Base') && $data->{'Base'} !== null) {
             $object->setBase($this->denormalizer->denormalize($data->{'Base'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemPriceInformationBase', 'json', $context));
         }
-        if (property_exists($data, 'Equiv')) {
+        if (property_exists($data, 'Equiv') && $data->{'Equiv'} !== null) {
             $object->setEquiv($this->denormalizer->denormalize($data->{'Equiv'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemPriceInformationEquiv', 'json', $context));
         }
-        if (property_exists($data, 'TaxIndicator')) {
+        if (property_exists($data, 'TaxIndicator') && $data->{'TaxIndicator'} !== null) {
             $object->setTaxIndicator($data->{'TaxIndicator'});
         }
-        if (property_exists($data, 'Total')) {
+        if (property_exists($data, 'Total') && $data->{'Total'} !== null) {
             $object->setTotal($data->{'Total'});
         }
 

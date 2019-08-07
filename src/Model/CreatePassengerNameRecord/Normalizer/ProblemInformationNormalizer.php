@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\CreatePassengerNameRecord\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -36,20 +35,20 @@ class ProblemInformationNormalizer implements DenormalizerInterface, NormalizerI
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\ProblemInformation();
-        if (property_exists($data, 'SystemSpecificResults')) {
+        if (property_exists($data, 'SystemSpecificResults') && $data->{'SystemSpecificResults'} !== null) {
             $values = [];
             foreach ($data->{'SystemSpecificResults'} as $value) {
                 $values[] = $this->denormalizer->denormalize($value, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\ProblemInformationSystemSpecificResultsItem', 'json', $context);
             }
             $object->setSystemSpecificResults($values);
         }
-        if (property_exists($data, 'type')) {
+        if (property_exists($data, 'type') && $data->{'type'} !== null) {
             $object->setType($data->{'type'});
         }
-        if (property_exists($data, 'timeStamp')) {
+        if (property_exists($data, 'timeStamp') && $data->{'timeStamp'} !== null) {
             $object->setTimeStamp($data->{'timeStamp'});
         }
 

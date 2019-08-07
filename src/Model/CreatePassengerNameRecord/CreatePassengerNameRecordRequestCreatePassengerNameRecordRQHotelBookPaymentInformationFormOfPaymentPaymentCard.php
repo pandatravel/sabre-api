@@ -16,7 +16,8 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymen
 {
     /**
      * The payment type.
-     * Acceptable values include: 'CC' - credit card, 'CA' - cash or 'CK' - check.
+    Acceptable values include: 'CC' - credit card, 'CA' - cash or 'CK' - check.
+
      *
      * @var string
      */
@@ -72,24 +73,26 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymen
 
     /**
      * The payment type.
-     * Acceptable values include: 'CC' - credit card, 'CA' - cash or 'CK' - check.
+    Acceptable values include: 'CC' - credit card, 'CA' - cash or 'CK' - check.
+
      *
-     * @return string
+     * @return string|null
      */
-    public function getPaymentType(): string
+    public function getPaymentType(): ?string
     {
         return $this->paymentType;
     }
 
     /**
      * The payment type.
-     * Acceptable values include: 'CC' - credit card, 'CA' - cash or 'CK' - check.
+    Acceptable values include: 'CC' - credit card, 'CA' - cash or 'CK' - check.
+
      *
-     * @param string $paymentType
+     * @param string|null $paymentType
      *
      * @return self
      */
-    public function setPaymentType(string $paymentType): self
+    public function setPaymentType(?string $paymentType): self
     {
         $this->paymentType = $paymentType;
 
@@ -99,9 +102,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymen
     /**
      * The 2 character code of the credit card issuer.
      *
-     * @return string
+     * @return string|null
      */
-    public function getCardCode(): string
+    public function getCardCode(): ?string
     {
         return $this->cardCode;
     }
@@ -109,11 +112,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymen
     /**
      * The 2 character code of the credit card issuer.
      *
-     * @param string $cardCode
+     * @param string|null $cardCode
      *
      * @return self
      */
-    public function setCardCode(string $cardCode): self
+    public function setCardCode(?string $cardCode): self
     {
         $this->cardCode = $cardCode;
 
@@ -123,9 +126,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymen
     /**
      * The credit card number.
      *
-     * @return string
+     * @return string|null
      */
-    public function getCardNumber(): string
+    public function getCardNumber(): ?string
     {
         return $this->cardNumber;
     }
@@ -133,11 +136,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymen
     /**
      * The credit card number.
      *
-     * @param string $cardNumber
+     * @param string|null $cardNumber
      *
      * @return self
      */
-    public function setCardNumber(string $cardNumber): self
+    public function setCardNumber(?string $cardNumber): self
     {
         $this->cardNumber = $cardNumber;
 
@@ -147,9 +150,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymen
     /**
      * The month of expiration.
      *
-     * @return int
+     * @return int|null
      */
-    public function getExpiryMonth(): int
+    public function getExpiryMonth(): ?int
     {
         return $this->expiryMonth;
     }
@@ -157,11 +160,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymen
     /**
      * The month of expiration.
      *
-     * @param int $expiryMonth
+     * @param int|null $expiryMonth
      *
      * @return self
      */
-    public function setExpiryMonth(int $expiryMonth): self
+    public function setExpiryMonth(?int $expiryMonth): self
     {
         $this->expiryMonth = $expiryMonth;
 
@@ -171,9 +174,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymen
     /**
      * The 4-digit year of expiration: 2015, 2016, etc.
      *
-     * @return string
+     * @return string|null
      */
-    public function getExpiryYear(): string
+    public function getExpiryYear(): ?string
     {
         return $this->expiryYear;
     }
@@ -181,11 +184,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymen
     /**
      * The 4-digit year of expiration: 2015, 2016, etc.
      *
-     * @param string $expiryYear
+     * @param string|null $expiryYear
      *
      * @return self
      */
-    public function setExpiryYear(string $expiryYear): self
+    public function setExpiryYear(?string $expiryYear): self
     {
         $this->expiryYear = $expiryYear;
 
@@ -195,9 +198,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymen
     /**
      * The full card holder name.
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentPaymentCardFullCardHolderName
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentPaymentCardFullCardHolderName|null
      */
-    public function getFullCardHolderName(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentPaymentCardFullCardHolderName
+    public function getFullCardHolderName(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentPaymentCardFullCardHolderName
     {
         return $this->fullCardHolderName;
     }
@@ -205,11 +208,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymen
     /**
      * The full card holder name.
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentPaymentCardFullCardHolderName $fullCardHolderName
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentPaymentCardFullCardHolderName|null $fullCardHolderName
      *
      * @return self
      */
-    public function setFullCardHolderName(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentPaymentCardFullCardHolderName $fullCardHolderName): self
+    public function setFullCardHolderName(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentPaymentCardFullCardHolderName $fullCardHolderName): self
     {
         $this->fullCardHolderName = $fullCardHolderName;
 
@@ -219,9 +222,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymen
     /**
      * The card security code.
      *
-     * @return string
+     * @return string|null
      */
-    public function getCSC(): string
+    public function getCSC(): ?string
     {
         return $this->cSC;
     }
@@ -229,11 +232,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymen
     /**
      * The card security code.
      *
-     * @param string $cSC
+     * @param string|null $cSC
      *
      * @return self
      */
-    public function setCSC(string $cSC): self
+    public function setCSC(?string $cSC): self
     {
         $this->cSC = $cSC;
 
@@ -243,9 +246,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymen
     /**
      * The card holder address.
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentPaymentCardAddress
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentPaymentCardAddress|null
      */
-    public function getAddress(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentPaymentCardAddress
+    public function getAddress(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentPaymentCardAddress
     {
         return $this->address;
     }
@@ -253,11 +256,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymen
     /**
      * The card holder address.
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentPaymentCardAddress $address
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentPaymentCardAddress|null $address
      *
      * @return self
      */
-    public function setAddress(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentPaymentCardAddress $address): self
+    public function setAddress(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentPaymentCardAddress $address): self
     {
         $this->address = $address;
 
@@ -267,9 +270,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymen
     /**
      * The phone details.
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentPaymentCardPhone
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentPaymentCardPhone|null
      */
-    public function getPhone(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentPaymentCardPhone
+    public function getPhone(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentPaymentCardPhone
     {
         return $this->phone;
     }
@@ -277,11 +280,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymen
     /**
      * The phone details.
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentPaymentCardPhone $phone
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentPaymentCardPhone|null $phone
      *
      * @return self
      */
-    public function setPhone(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentPaymentCardPhone $phone): self
+    public function setPhone(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentPaymentCardPhone $phone): self
     {
         $this->phone = $phone;
 

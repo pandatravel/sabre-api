@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\CreatePassengerNameRecord\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -36,25 +35,25 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSou
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSource();
-        if (property_exists($data, 'RequestorID')) {
+        if (property_exists($data, 'RequestorID') && $data->{'RequestorID'} !== null) {
             $object->setRequestorID($this->denormalizer->denormalize($data->{'RequestorID'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSourceRequestorID', 'json', $context));
         }
-        if (property_exists($data, 'AgencyAddress')) {
+        if (property_exists($data, 'AgencyAddress') && $data->{'AgencyAddress'} !== null) {
             $object->setAgencyAddress($this->denormalizer->denormalize($data->{'AgencyAddress'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSourceAgencyAddress', 'json', $context));
         }
-        if (property_exists($data, 'AgencyContact')) {
+        if (property_exists($data, 'AgencyContact') && $data->{'AgencyContact'} !== null) {
             $object->setAgencyContact($this->denormalizer->denormalize($data->{'AgencyContact'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSourceAgencyContact', 'json', $context));
         }
-        if (property_exists($data, 'AgencyName')) {
+        if (property_exists($data, 'AgencyName') && $data->{'AgencyName'} !== null) {
             $object->setAgencyName($data->{'AgencyName'});
         }
-        if (property_exists($data, 'ISOCountryCode')) {
+        if (property_exists($data, 'ISOCountryCode') && $data->{'ISOCountryCode'} !== null) {
             $object->setISOCountryCode($data->{'ISOCountryCode'});
         }
-        if (property_exists($data, 'PseudoCityCode')) {
+        if (property_exists($data, 'PseudoCityCode') && $data->{'PseudoCityCode'} !== null) {
             $object->setPseudoCityCode($data->{'PseudoCityCode'});
         }
 

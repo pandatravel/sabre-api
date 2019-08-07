@@ -48,9 +48,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBook exten
     /**
      * The booking information details.
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookBookingInfo
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookBookingInfo|null
      */
-    public function getBookingInfo(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookBookingInfo
+    public function getBookingInfo(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookBookingInfo
     {
         return $this->bookingInfo;
     }
@@ -58,11 +58,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBook exten
     /**
      * The booking information details.
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookBookingInfo $bookingInfo
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookBookingInfo|null $bookingInfo
      *
      * @return self
      */
-    public function setBookingInfo(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookBookingInfo $bookingInfo): self
+    public function setBookingInfo(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookBookingInfo $bookingInfo): self
     {
         $this->bookingInfo = $bookingInfo;
 
@@ -72,9 +72,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBook exten
     /**
      * The room details.
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRooms
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRooms|null
      */
-    public function getRooms(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRooms
+    public function getRooms(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRooms
     {
         return $this->rooms;
     }
@@ -82,11 +82,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBook exten
     /**
      * The room details.
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRooms $rooms
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRooms|null $rooms
      *
      * @return self
      */
-    public function setRooms(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRooms $rooms): self
+    public function setRooms(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRooms $rooms): self
     {
         $this->rooms = $rooms;
 
@@ -96,9 +96,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBook exten
     /**
      * Used to specify special instructions.
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookSpecialInstructions
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookSpecialInstructions|null
      */
-    public function getSpecialInstructions(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookSpecialInstructions
+    public function getSpecialInstructions(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookSpecialInstructions
     {
         return $this->specialInstructions;
     }
@@ -106,11 +106,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBook exten
     /**
      * Used to specify special instructions.
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookSpecialInstructions $specialInstructions
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookSpecialInstructions|null $specialInstructions
      *
      * @return self
      */
-    public function setSpecialInstructions(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookSpecialInstructions $specialInstructions): self
+    public function setSpecialInstructions(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookSpecialInstructions $specialInstructions): self
     {
         $this->specialInstructions = $specialInstructions;
 
@@ -120,9 +120,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBook exten
     /**
      * The payment information.
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformation
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformation|null
      */
-    public function getPaymentInformation(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformation
+    public function getPaymentInformation(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformation
     {
         return $this->paymentInformation;
     }
@@ -130,11 +130,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBook exten
     /**
      * The payment information.
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformation $paymentInformation
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformation|null $paymentInformation
      *
      * @return self
      */
-    public function setPaymentInformation(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformation $paymentInformation): self
+    public function setPaymentInformation(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformation $paymentInformation): self
     {
         $this->paymentInformation = $paymentInformation;
 
@@ -144,9 +144,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBook exten
     /**
      * The point of sale information.
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOS
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOS|null
      */
-    public function getPOS(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOS
+    public function getPOS(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOS
     {
         return $this->pOS;
     }
@@ -154,11 +154,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBook exten
     /**
      * The point of sale information.
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOS $pOS
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOS|null $pOS
      *
      * @return self
      */
-    public function setPOS(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOS $pOS): self
+    public function setPOS(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOS $pOS): self
     {
         $this->pOS = $pOS;
 

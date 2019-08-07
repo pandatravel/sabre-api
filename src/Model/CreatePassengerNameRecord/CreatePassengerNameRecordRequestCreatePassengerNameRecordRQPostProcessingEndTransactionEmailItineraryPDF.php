@@ -24,9 +24,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingE
     /**
      * Used to indicate whether to send an email notification containing a PDF-based copy of the itinerary.
      *
-     * @return bool
+     * @return bool|null
      */
-    public function getInd(): bool
+    public function getInd(): ?bool
     {
         return $this->ind;
     }
@@ -34,11 +34,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingE
     /**
      * Used to indicate whether to send an email notification containing a PDF-based copy of the itinerary.
      *
-     * @param bool $ind
+     * @param bool|null $ind
      *
      * @return self
      */
-    public function setInd(bool $ind): self
+    public function setInd(?bool $ind): self
     {
         $this->ind = $ind;
 

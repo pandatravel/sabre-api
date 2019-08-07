@@ -48,9 +48,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
     /**
      * Used to add a phone number after or before an existing phone number.
      *
-     * @return int
+     * @return int|null
      */
-    public function getInsertAfter(): int
+    public function getInsertAfter(): ?int
     {
         return $this->insertAfter;
     }
@@ -58,11 +58,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
     /**
      * Used to add a phone number after or before an existing phone number.
      *
-     * @param int $insertAfter
+     * @param int|null $insertAfter
      *
      * @return self
      */
-    public function setInsertAfter(int $insertAfter): self
+    public function setInsertAfter(?int $insertAfter): self
     {
         $this->insertAfter = $insertAfter;
 
@@ -72,9 +72,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
     /**
      * Used to override the default city in the application's Travel Journal Record.
      *
-     * @return string
+     * @return string|null
      */
-    public function getLocationCode(): string
+    public function getLocationCode(): ?string
     {
         return $this->locationCode;
     }
@@ -82,11 +82,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
     /**
      * Used to override the default city in the application's Travel Journal Record.
      *
-     * @param string $locationCode
+     * @param string|null $locationCode
      *
      * @return self
      */
-    public function setLocationCode(string $locationCode): self
+    public function setLocationCode(?string $locationCode): self
     {
         $this->locationCode = $locationCode;
 
@@ -96,9 +96,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
     /**
      * Used to specify a passenger name number.
      *
-     * @return string
+     * @return string|null
      */
-    public function getNameNumber(): string
+    public function getNameNumber(): ?string
     {
         return $this->nameNumber;
     }
@@ -106,11 +106,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
     /**
      * Used to specify a passenger name number.
      *
-     * @param string $nameNumber
+     * @param string|null $nameNumber
      *
      * @return self
      */
-    public function setNameNumber(string $nameNumber): self
+    public function setNameNumber(?string $nameNumber): self
     {
         $this->nameNumber = $nameNumber;
 
@@ -120,9 +120,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
     /**
      * Used to add customer telephone numbers into the record.
      *
-     * @return string
+     * @return string|null
      */
-    public function getPhone(): string
+    public function getPhone(): ?string
     {
         return $this->phone;
     }
@@ -130,11 +130,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
     /**
      * Used to add customer telephone numbers into the record.
      *
-     * @param string $phone
+     * @param string|null $phone
      *
      * @return self
      */
-    public function setPhone(string $phone): self
+    public function setPhone(?string $phone): self
     {
         $this->phone = $phone;
 
@@ -144,9 +144,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
     /**
      * Used to specify if the number is agency "A", home "H", business "B" or fax "F".
      *
-     * @return string
+     * @return string|null
      */
-    public function getPhoneUseType(): string
+    public function getPhoneUseType(): ?string
     {
         return $this->phoneUseType;
     }
@@ -154,11 +154,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
     /**
      * Used to specify if the number is agency "A", home "H", business "B" or fax "F".
      *
-     * @param string $phoneUseType
+     * @param string|null $phoneUseType
      *
      * @return self
      */
-    public function setPhoneUseType(string $phoneUseType): self
+    public function setPhoneUseType(?string $phoneUseType): self
     {
         $this->phoneUseType = $phoneUseType;
 

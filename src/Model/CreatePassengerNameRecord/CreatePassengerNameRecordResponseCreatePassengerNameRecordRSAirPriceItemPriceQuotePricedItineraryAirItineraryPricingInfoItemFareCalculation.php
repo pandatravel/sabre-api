@@ -24,9 +24,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The details of the fare calculation line.
      *
-     * @return string
+     * @return string|null
      */
-    public function getText(): string
+    public function getText(): ?string
     {
         return $this->text;
     }
@@ -34,11 +34,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The details of the fare calculation line.
      *
-     * @param string $text
+     * @param string|null $text
      *
      * @return self
      */
-    public function setText(string $text): self
+    public function setText(?string $text): self
     {
         $this->text = $text;
 

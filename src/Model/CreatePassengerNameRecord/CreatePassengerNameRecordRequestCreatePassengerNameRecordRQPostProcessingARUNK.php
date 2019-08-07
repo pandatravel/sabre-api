@@ -24,9 +24,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingA
     /**
      * Used to add arrival unknown segments into a passenger name record after air segment sell but prior to pricing.
      *
-     * @return bool
+     * @return bool|null
      */
-    public function getPriorPricing(): bool
+    public function getPriorPricing(): ?bool
     {
         return $this->priorPricing;
     }
@@ -34,11 +34,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingA
     /**
      * Used to add arrival unknown segments into a passenger name record after air segment sell but prior to pricing.
      *
-     * @param bool $priorPricing
+     * @param bool|null $priorPricing
      *
      * @return self
      */
-    public function setPriorPricing(bool $priorPricing): self
+    public function setPriorPricing(?bool $priorPricing): self
     {
         $this->priorPricing = $priorPricing;
 

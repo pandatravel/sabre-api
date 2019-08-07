@@ -30,9 +30,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItem e
     /**
      * Used to return results of price comparison.
      *
-     * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceComparison
+     * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceComparison|null
      */
-    public function getPriceComparison(): CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceComparison
+    public function getPriceComparison(): ?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceComparison
     {
         return $this->priceComparison;
     }
@@ -40,11 +40,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItem e
     /**
      * Used to return results of price comparison.
      *
-     * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceComparison $priceComparison
+     * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceComparison|null $priceComparison
      *
      * @return self
      */
-    public function setPriceComparison(CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceComparison $priceComparison): self
+    public function setPriceComparison(?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceComparison $priceComparison): self
     {
         $this->priceComparison = $priceComparison;
 
@@ -54,9 +54,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItem e
     /**
      * The price quote details.
      *
-     * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuote
+     * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuote|null
      */
-    public function getPriceQuote(): CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuote
+    public function getPriceQuote(): ?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuote
     {
         return $this->priceQuote;
     }
@@ -64,11 +64,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItem e
     /**
      * The price quote details.
      *
-     * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuote $priceQuote
+     * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuote|null $priceQuote
      *
      * @return self
      */
-    public function setPriceQuote(CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuote $priceQuote): self
+    public function setPriceQuote(?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuote $priceQuote): self
     {
         $this->priceQuote = $priceQuote;
 

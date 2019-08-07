@@ -46,8 +46,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     protected $number;
     /**
      * Used to specify the document type. Acceptable values include:.
-     * "A" - Alien resident card, "C" - Permanent resident card, "F" - Facilitation document, "I" - National ID card, "IN" - Nexus Card.
-     * Also: "M" - Military, "N" - Naturalization certificate, "P" - Passport, "T" - Refugee travel document and re-entry permit, US Travel document, "V" - Border crossing card.
+    "A" - Alien resident card, "C" - Permanent resident card, "F" - Facilitation document, "I" - National ID card, "IN" - Nexus Card.
+    Also: "M" - Military, "N" - Naturalization certificate, "P" - Passport, "T" - Refugee travel document and re-entry permit, US Travel document, "V" - Border crossing card.
+
      *
      * @var string
      */
@@ -56,9 +57,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     /**
      * The document country of issue.
      *
-     * @return string
+     * @return string|null
      */
-    public function getIssueCountry(): string
+    public function getIssueCountry(): ?string
     {
         return $this->issueCountry;
     }
@@ -66,11 +67,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     /**
      * The document country of issue.
      *
-     * @param string $issueCountry
+     * @param string|null $issueCountry
      *
      * @return self
      */
-    public function setIssueCountry(string $issueCountry): self
+    public function setIssueCountry(?string $issueCountry): self
     {
         $this->issueCountry = $issueCountry;
 
@@ -80,9 +81,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     /**
      * The document nationality.
      *
-     * @return string
+     * @return string|null
      */
-    public function getNationalityCountry(): string
+    public function getNationalityCountry(): ?string
     {
         return $this->nationalityCountry;
     }
@@ -90,11 +91,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     /**
      * The document nationality.
      *
-     * @param string $nationalityCountry
+     * @param string|null $nationalityCountry
      *
      * @return self
      */
-    public function setNationalityCountry(string $nationalityCountry): self
+    public function setNationalityCountry(?string $nationalityCountry): self
     {
         $this->nationalityCountry = $nationalityCountry;
 
@@ -104,9 +105,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     /**
      * The Visa document details.
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoAdvancePassengerItemDocumentVisa
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoAdvancePassengerItemDocumentVisa|null
      */
-    public function getVisa(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoAdvancePassengerItemDocumentVisa
+    public function getVisa(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoAdvancePassengerItemDocumentVisa
     {
         return $this->visa;
     }
@@ -114,11 +115,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     /**
      * The Visa document details.
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoAdvancePassengerItemDocumentVisa $visa
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoAdvancePassengerItemDocumentVisa|null $visa
      *
      * @return self
      */
-    public function setVisa(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoAdvancePassengerItemDocumentVisa $visa): self
+    public function setVisa(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoAdvancePassengerItemDocumentVisa $visa): self
     {
         $this->visa = $visa;
 
@@ -128,9 +129,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     /**
      * Used to specify the document expiration date.
      *
-     * @return string
+     * @return string|null
      */
-    public function getExpirationDate(): string
+    public function getExpirationDate(): ?string
     {
         return $this->expirationDate;
     }
@@ -138,11 +139,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     /**
      * Used to specify the document expiration date.
      *
-     * @param string $expirationDate
+     * @param string|null $expirationDate
      *
      * @return self
      */
-    public function setExpirationDate(string $expirationDate): self
+    public function setExpirationDate(?string $expirationDate): self
     {
         $this->expirationDate = $expirationDate;
 
@@ -152,9 +153,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     /**
      * Used to specify the document number.
      *
-     * @return string
+     * @return string|null
      */
-    public function getNumber(): string
+    public function getNumber(): ?string
     {
         return $this->number;
     }
@@ -162,11 +163,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     /**
      * Used to specify the document number.
      *
-     * @param string $number
+     * @param string|null $number
      *
      * @return self
      */
-    public function setNumber(string $number): self
+    public function setNumber(?string $number): self
     {
         $this->number = $number;
 
@@ -175,26 +176,28 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
 
     /**
      * Used to specify the document type. Acceptable values include:.
-     * "A" - Alien resident card, "C" - Permanent resident card, "F" - Facilitation document, "I" - National ID card, "IN" - Nexus Card.
-     * Also: "M" - Military, "N" - Naturalization certificate, "P" - Passport, "T" - Refugee travel document and re-entry permit, US Travel document, "V" - Border crossing card.
+    "A" - Alien resident card, "C" - Permanent resident card, "F" - Facilitation document, "I" - National ID card, "IN" - Nexus Card.
+    Also: "M" - Military, "N" - Naturalization certificate, "P" - Passport, "T" - Refugee travel document and re-entry permit, US Travel document, "V" - Border crossing card.
+
      *
-     * @return string
+     * @return string|null
      */
-    public function getType(): string
+    public function getType(): ?string
     {
         return $this->type;
     }
 
     /**
      * Used to specify the document type. Acceptable values include:.
-     * "A" - Alien resident card, "C" - Permanent resident card, "F" - Facilitation document, "I" - National ID card, "IN" - Nexus Card.
-     * Also: "M" - Military, "N" - Naturalization certificate, "P" - Passport, "T" - Refugee travel document and re-entry permit, US Travel document, "V" - Border crossing card.
+    "A" - Alien resident card, "C" - Permanent resident card, "F" - Facilitation document, "I" - National ID card, "IN" - Nexus Card.
+    Also: "M" - Military, "N" - Naturalization certificate, "P" - Passport, "T" - Refugee travel document and re-entry permit, US Travel document, "V" - Border crossing card.
+
      *
-     * @param string $type
+     * @param string|null $type
      *
      * @return self
      */
-    public function setType(string $type): self
+    public function setType(?string $type): self
     {
         $this->type = $type;
 

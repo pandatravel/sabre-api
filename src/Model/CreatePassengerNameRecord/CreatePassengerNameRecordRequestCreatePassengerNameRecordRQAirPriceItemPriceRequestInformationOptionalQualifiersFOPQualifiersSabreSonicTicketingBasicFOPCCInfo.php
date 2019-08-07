@@ -30,9 +30,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to define the payment card details.
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingBasicFOPCCInfoPaymentCard
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingBasicFOPCCInfoPaymentCard|null
      */
-    public function getPaymentCard(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingBasicFOPCCInfoPaymentCard
+    public function getPaymentCard(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingBasicFOPCCInfoPaymentCard
     {
         return $this->paymentCard;
     }
@@ -40,11 +40,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to define the payment card details.
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingBasicFOPCCInfoPaymentCard $paymentCard
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingBasicFOPCCInfoPaymentCard|null $paymentCard
      *
      * @return self
      */
-    public function setPaymentCard(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingBasicFOPCCInfoPaymentCard $paymentCard): self
+    public function setPaymentCard(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingBasicFOPCCInfoPaymentCard $paymentCard): self
     {
         $this->paymentCard = $paymentCard;
 
@@ -54,9 +54,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to specify whether or not to suppress credit card information on an itinerary.
      *
-     * @return bool
+     * @return bool|null
      */
-    public function getSuppress(): bool
+    public function getSuppress(): ?bool
     {
         return $this->suppress;
     }
@@ -64,11 +64,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to specify whether or not to suppress credit card information on an itinerary.
      *
-     * @param bool $suppress
+     * @param bool|null $suppress
      *
      * @return self
      */
-    public function setSuppress(bool $suppress): self
+    public function setSuppress(?bool $suppress): self
     {
         $this->suppress = $suppress;
 

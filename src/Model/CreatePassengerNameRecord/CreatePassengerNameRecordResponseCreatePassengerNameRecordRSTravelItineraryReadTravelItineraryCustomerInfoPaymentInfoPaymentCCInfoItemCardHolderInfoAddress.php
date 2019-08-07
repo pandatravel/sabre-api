@@ -24,9 +24,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     /**
      * The address line information.
      *
-     * @return string[]
+     * @return string[]|null
      */
-    public function getAddressLine(): array
+    public function getAddressLine(): ?array
     {
         return $this->addressLine;
     }
@@ -34,11 +34,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     /**
      * The address line information.
      *
-     * @param string[] $addressLine
+     * @param string[]|null $addressLine
      *
      * @return self
      */
-    public function setAddressLine(array $addressLine): self
+    public function setAddressLine(?array $addressLine): self
     {
         $this->addressLine = $addressLine;
 

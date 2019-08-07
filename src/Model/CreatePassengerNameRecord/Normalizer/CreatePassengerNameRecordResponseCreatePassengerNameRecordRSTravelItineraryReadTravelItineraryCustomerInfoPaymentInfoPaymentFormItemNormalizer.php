@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\CreatePassengerNameRecord\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -36,20 +35,20 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPaymentInfoPaymentFormItem();
-        if (property_exists($data, 'Text')) {
+        if (property_exists($data, 'Text') && $data->{'Text'} !== null) {
             $values = [];
             foreach ($data->{'Text'} as $value) {
                 $values[] = $value;
             }
             $object->setText($values);
         }
-        if (property_exists($data, 'RPH')) {
+        if (property_exists($data, 'RPH') && $data->{'RPH'} !== null) {
             $object->setRPH($data->{'RPH'});
         }
-        if (property_exists($data, 'Id')) {
+        if (property_exists($data, 'Id') && $data->{'Id'} !== null) {
             $object->setId($data->{'Id'});
         }
 

@@ -16,15 +16,17 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingW
 {
     /**
      * The duration of the wait interval.
-     * The maximum time that can be set is 60 seconds.
-     * This applies to PostBookingHKValidation, WaitForAirlineRecLoc or both.
+    The maximum time that can be set is 60 seconds.
+    This applies to PostBookingHKValidation, WaitForAirlineRecLoc or both.
+
      *
      * @var int
      */
     protected $waitInterval;
     /**
-    * The number of attempts that the reservation will be re-displayed.
-    * If both 'PostBookingHKValidation' and 'WaitForAirlineRecLoc' have defined 'waitInterval' then the highest number will be used for both.
+     * The number of attempts that the reservation will be re-displayed.
+    If both 'PostBookingHKValidation' and 'WaitForAirlineRecLoc' have defined 'waitInterval' then the highest number will be used for both.
+
      *
      * @var int
      */
@@ -32,26 +34,28 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingW
 
     /**
      * The duration of the wait interval.
-     * The maximum time that can be set is 60 seconds.
-     * This applies to PostBookingHKValidation, WaitForAirlineRecLoc or both.
+    The maximum time that can be set is 60 seconds.
+    This applies to PostBookingHKValidation, WaitForAirlineRecLoc or both.
+
      *
-     * @return int
+     * @return int|null
      */
-    public function getWaitInterval(): int
+    public function getWaitInterval(): ?int
     {
         return $this->waitInterval;
     }
 
     /**
      * The duration of the wait interval.
-     * The maximum time that can be set is 60 seconds.
-     * This applies to PostBookingHKValidation, WaitForAirlineRecLoc or both.
+    The maximum time that can be set is 60 seconds.
+    This applies to PostBookingHKValidation, WaitForAirlineRecLoc or both.
+
      *
-     * @param int $waitInterval
+     * @param int|null $waitInterval
      *
      * @return self
      */
-    public function setWaitInterval(int $waitInterval): self
+    public function setWaitInterval(?int $waitInterval): self
     {
         $this->waitInterval = $waitInterval;
 
@@ -60,24 +64,26 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingW
 
     /**
      * The number of attempts that the reservation will be re-displayed.
-     * If both 'PostBookingHKValidation' and 'WaitForAirlineRecLoc' have defined 'waitInterval' then the highest number will be used for both.
+    If both 'PostBookingHKValidation' and 'WaitForAirlineRecLoc' have defined 'waitInterval' then the highest number will be used for both.
+
      *
-     * @return int
+     * @return int|null
      */
-    public function getNumAttempts(): int
+    public function getNumAttempts(): ?int
     {
         return $this->numAttempts;
     }
 
     /**
      * The number of attempts that the reservation will be re-displayed.
-     * If both 'PostBookingHKValidation' and 'WaitForAirlineRecLoc' have defined 'waitInterval' then the highest number will be used for both.
+    If both 'PostBookingHKValidation' and 'WaitForAirlineRecLoc' have defined 'waitInterval' then the highest number will be used for both.
+
      *
-     * @param int $numAttempts
+     * @param int|null $numAttempts
      *
      * @return self
      */
-    public function setNumAttempts(int $numAttempts): self
+    public function setNumAttempts(?int $numAttempts): self
     {
         $this->numAttempts = $numAttempts;
 

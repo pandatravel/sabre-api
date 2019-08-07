@@ -24,9 +24,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItinerary
     /**
      * The itinerary information.
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItem[]
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItem[]|null
      */
-    public function getItineraryInfo(): array
+    public function getItineraryInfo(): ?array
     {
         return $this->itineraryInfo;
     }
@@ -34,11 +34,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItinerary
     /**
      * The itinerary information.
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItem[] $itineraryInfo
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItem[]|null $itineraryInfo
      *
      * @return self
      */
-    public function setItineraryInfo(array $itineraryInfo): self
+    public function setItineraryInfo(?array $itineraryInfo): self
     {
         $this->itineraryInfo = $itineraryInfo;
 

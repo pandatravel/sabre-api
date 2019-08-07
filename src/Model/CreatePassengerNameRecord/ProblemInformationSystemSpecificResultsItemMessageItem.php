@@ -30,9 +30,9 @@ class ProblemInformationSystemSpecificResultsItemMessageItem extends AbstractMod
     /**
      * An abbreviated version of the error or warning in textual format.
      *
-     * @return string
+     * @return string|null
      */
-    public function getCode(): string
+    public function getCode(): ?string
     {
         return $this->code;
     }
@@ -40,11 +40,11 @@ class ProblemInformationSystemSpecificResultsItemMessageItem extends AbstractMod
     /**
      * An abbreviated version of the error or warning in textual format.
      *
-     * @param string $code
+     * @param string|null $code
      *
      * @return self
      */
-    public function setCode(string $code): self
+    public function setCode(?string $code): self
     {
         $this->code = $code;
 
@@ -54,9 +54,9 @@ class ProblemInformationSystemSpecificResultsItemMessageItem extends AbstractMod
     /**
      * An indication of the source of error or warning when processing the request.
      *
-     * @return string
+     * @return string|null
      */
-    public function getContent(): string
+    public function getContent(): ?string
     {
         return $this->content;
     }
@@ -64,11 +64,11 @@ class ProblemInformationSystemSpecificResultsItemMessageItem extends AbstractMod
     /**
      * An indication of the source of error or warning when processing the request.
      *
-     * @param string $content
+     * @param string|null $content
      *
      * @return self
      */
-    public function setContent(string $content): self
+    public function setContent(?string $content): self
     {
         $this->content = $content;
 

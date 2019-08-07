@@ -42,9 +42,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The account data.
      *
-     * @return string
+     * @return string|null
      */
-    public function getAccountData(): string
+    public function getAccountData(): ?string
     {
         return $this->accountData;
     }
@@ -52,11 +52,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The account data.
      *
-     * @param string $accountData
+     * @param string|null $accountData
      *
      * @return self
      */
-    public function setAccountData(string $accountData): self
+    public function setAccountData(?string $accountData): self
     {
         $this->accountData = $accountData;
 
@@ -66,9 +66,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The ticketing fee amount.
      *
-     * @return string
+     * @return string|null
      */
-    public function getAmount(): string
+    public function getAmount(): ?string
     {
         return $this->amount;
     }
@@ -76,11 +76,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The ticketing fee amount.
      *
-     * @param string $amount
+     * @param string|null $amount
      *
      * @return self
      */
-    public function setAmount(string $amount): self
+    public function setAmount(?string $amount): self
     {
         $this->amount = $amount;
 
@@ -90,9 +90,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The ticketing fee function code.
      *
-     * @return string
+     * @return string|null
      */
-    public function getFunctionCode(): string
+    public function getFunctionCode(): ?string
     {
         return $this->functionCode;
     }
@@ -100,11 +100,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The ticketing fee function code.
      *
-     * @param string $functionCode
+     * @param string|null $functionCode
      *
      * @return self
      */
-    public function setFunctionCode(string $functionCode): self
+    public function setFunctionCode(?string $functionCode): self
     {
         $this->functionCode = $functionCode;
 
@@ -114,9 +114,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The ticketing fee service type.
      *
-     * @return string
+     * @return string|null
      */
-    public function getServiceType(): string
+    public function getServiceType(): ?string
     {
         return $this->serviceType;
     }
@@ -124,11 +124,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The ticketing fee service type.
      *
-     * @param string $serviceType
+     * @param string|null $serviceType
      *
      * @return self
      */
-    public function setServiceType(string $serviceType): self
+    public function setServiceType(?string $serviceType): self
     {
         $this->serviceType = $serviceType;
 

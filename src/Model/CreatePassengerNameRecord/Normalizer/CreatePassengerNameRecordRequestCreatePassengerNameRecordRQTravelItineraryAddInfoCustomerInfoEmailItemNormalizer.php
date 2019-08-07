@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\CreatePassengerNameRecord\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -36,22 +35,22 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoCustomerInfoEmailItem();
-        if (property_exists($data, 'Address')) {
+        if (property_exists($data, 'Address') && $data->{'Address'} !== null) {
             $object->setAddress($data->{'Address'});
         }
-        if (property_exists($data, 'LanguageOverride')) {
+        if (property_exists($data, 'LanguageOverride') && $data->{'LanguageOverride'} !== null) {
             $object->setLanguageOverride($data->{'LanguageOverride'});
         }
-        if (property_exists($data, 'NameNumber')) {
+        if (property_exists($data, 'NameNumber') && $data->{'NameNumber'} !== null) {
             $object->setNameNumber($data->{'NameNumber'});
         }
-        if (property_exists($data, 'ShortText')) {
+        if (property_exists($data, 'ShortText') && $data->{'ShortText'} !== null) {
             $object->setShortText($data->{'ShortText'});
         }
-        if (property_exists($data, 'Type')) {
+        if (property_exists($data, 'Type') && $data->{'Type'} !== null) {
             $object->setType($data->{'Type'});
         }
 

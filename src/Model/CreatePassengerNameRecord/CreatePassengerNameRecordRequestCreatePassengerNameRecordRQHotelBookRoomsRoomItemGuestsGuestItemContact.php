@@ -36,9 +36,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsR
     /**
      * The main telephone number.
      *
-     * @return string
+     * @return string|null
      */
-    public function getPhone(): string
+    public function getPhone(): ?string
     {
         return $this->phone;
     }
@@ -46,11 +46,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsR
     /**
      * The main telephone number.
      *
-     * @param string $phone
+     * @param string|null $phone
      *
      * @return self
      */
-    public function setPhone(string $phone): self
+    public function setPhone(?string $phone): self
     {
         $this->phone = $phone;
 
@@ -60,9 +60,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsR
     /**
      * The mobile phone number.
      *
-     * @return string
+     * @return string|null
      */
-    public function getMobile(): string
+    public function getMobile(): ?string
     {
         return $this->mobile;
     }
@@ -70,11 +70,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsR
     /**
      * The mobile phone number.
      *
-     * @param string $mobile
+     * @param string|null $mobile
      *
      * @return self
      */
-    public function setMobile(string $mobile): self
+    public function setMobile(?string $mobile): self
     {
         $this->mobile = $mobile;
 
@@ -84,9 +84,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsR
     /**
      * The fax number.
      *
-     * @return string
+     * @return string|null
      */
-    public function getFax(): string
+    public function getFax(): ?string
     {
         return $this->fax;
     }
@@ -94,11 +94,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsR
     /**
      * The fax number.
      *
-     * @param string $fax
+     * @param string|null $fax
      *
      * @return self
      */
-    public function setFax(string $fax): self
+    public function setFax(?string $fax): self
     {
         $this->fax = $fax;
 

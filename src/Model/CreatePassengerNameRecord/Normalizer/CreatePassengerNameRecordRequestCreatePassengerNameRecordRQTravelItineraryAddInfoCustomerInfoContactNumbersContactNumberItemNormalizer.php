@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\CreatePassengerNameRecord\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -36,22 +35,22 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoCustomerInfoContactNumbersContactNumberItem();
-        if (property_exists($data, 'InsertAfter')) {
+        if (property_exists($data, 'InsertAfter') && $data->{'InsertAfter'} !== null) {
             $object->setInsertAfter($data->{'InsertAfter'});
         }
-        if (property_exists($data, 'LocationCode')) {
+        if (property_exists($data, 'LocationCode') && $data->{'LocationCode'} !== null) {
             $object->setLocationCode($data->{'LocationCode'});
         }
-        if (property_exists($data, 'NameNumber')) {
+        if (property_exists($data, 'NameNumber') && $data->{'NameNumber'} !== null) {
             $object->setNameNumber($data->{'NameNumber'});
         }
-        if (property_exists($data, 'Phone')) {
+        if (property_exists($data, 'Phone') && $data->{'Phone'} !== null) {
             $object->setPhone($data->{'Phone'});
         }
-        if (property_exists($data, 'PhoneUseType')) {
+        if (property_exists($data, 'PhoneUseType') && $data->{'PhoneUseType'} !== null) {
             $object->setPhoneUseType($data->{'PhoneUseType'});
         }
 

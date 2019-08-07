@@ -60,9 +60,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to display the original base fare and GST (when applicable), along with new information displaying the ASL amounts and any applicable GST.
      *
-     * @return bool
+     * @return bool|null
      */
-    public function getASLBreakdown(): bool
+    public function getASLBreakdown(): ?bool
     {
         return $this->aSLBreakdown;
     }
@@ -70,11 +70,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to display the original base fare and GST (when applicable), along with new information displaying the ASL amounts and any applicable GST.
      *
-     * @param bool $aSLBreakdown
+     * @param bool|null $aSLBreakdown
      *
      * @return self
      */
-    public function setASLBreakdown(bool $aSLBreakdown): self
+    public function setASLBreakdown(?bool $aSLBreakdown): self
     {
         $this->aSLBreakdown = $aSLBreakdown;
 
@@ -84,9 +84,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to instruct the system to ignore Adjusted Selling Level processing logic.
      *
-     * @return bool
+     * @return bool|null
      */
-    public function getASLIgnore(): bool
+    public function getASLIgnore(): ?bool
     {
         return $this->aSLIgnore;
     }
@@ -94,11 +94,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to instruct the system to ignore Adjusted Selling Level processing logic.
      *
-     * @param bool $aSLIgnore
+     * @param bool|null $aSLIgnore
      *
      * @return self
      */
-    public function setASLIgnore(bool $aSLIgnore): self
+    public function setASLIgnore(?bool $aSLIgnore): self
     {
         $this->aSLIgnore = $aSLIgnore;
 
@@ -108,9 +108,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to instruct the system to price the itinerary with an excursion fare.
      *
-     * @return bool
+     * @return bool|null
      */
-    public function getExcursion(): bool
+    public function getExcursion(): ?bool
     {
         return $this->excursion;
     }
@@ -118,11 +118,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to instruct the system to price the itinerary with an excursion fare.
      *
-     * @param bool $excursion
+     * @param bool|null $excursion
      *
      * @return self
      */
-    public function setExcursion(bool $excursion): self
+    public function setExcursion(?bool $excursion): self
     {
         $this->excursion = $excursion;
 
@@ -132,9 +132,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to to display the original base fare and GST (when applicable), along with new information displaying all handling fees (with applicable GST) in the response.
      *
-     * @return bool
+     * @return bool|null
      */
-    public function getHandlingFees(): bool
+    public function getHandlingFees(): ?bool
     {
         return $this->handlingFees;
     }
@@ -142,11 +142,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to to display the original base fare and GST (when applicable), along with new information displaying all handling fees (with applicable GST) in the response.
      *
-     * @param bool $handlingFees
+     * @param bool|null $handlingFees
      *
      * @return self
      */
-    public function setHandlingFees(bool $handlingFees): self
+    public function setHandlingFees(?bool $handlingFees): self
     {
         $this->handlingFees = $handlingFees;
 
@@ -156,9 +156,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to instruct the system to price the itinerary with a net fare.
      *
-     * @return bool
+     * @return bool|null
      */
-    public function getNet(): bool
+    public function getNet(): ?bool
     {
         return $this->net;
     }
@@ -166,11 +166,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to instruct the system to price the itinerary with a net fare.
      *
-     * @param bool $net
+     * @param bool|null $net
      *
      * @return self
      */
-    public function setNet(bool $net): self
+    public function setNet(?bool $net): self
     {
         $this->net = $net;
 
@@ -180,9 +180,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to instruct the system to price the itinerary with a private fare.
      *
-     * @return bool
+     * @return bool|null
      */
-    public function getPrivate(): bool
+    public function getPrivate(): ?bool
     {
         return $this->private;
     }
@@ -190,11 +190,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to instruct the system to price the itinerary with a private fare.
      *
-     * @param bool $private
+     * @param bool|null $private
      *
      * @return self
      */
-    public function setPrivate(bool $private): self
+    public function setPrivate(?bool $private): self
     {
         $this->private = $private;
 
@@ -204,9 +204,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to instruct the system to price the itinerary with a public fare.
      *
-     * @return bool
+     * @return bool|null
      */
-    public function getPublic(): bool
+    public function getPublic(): ?bool
     {
         return $this->public;
     }
@@ -214,11 +214,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to instruct the system to price the itinerary with a public fare.
      *
-     * @param bool $public
+     * @param bool|null $public
      *
      * @return self
      */
-    public function setPublic(bool $public): self
+    public function setPublic(?bool $public): self
     {
         $this->public = $public;
 

@@ -24,9 +24,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymen
     /**
      * The corporate identifier.
      *
-     * @return string
+     * @return string|null
      */
-    public function getCorporateId(): string
+    public function getCorporateId(): ?string
     {
         return $this->corporateId;
     }
@@ -34,11 +34,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymen
     /**
      * The corporate identifier.
      *
-     * @param string $corporateId
+     * @param string|null $corporateId
      *
      * @return self
      */
-    public function setCorporateId(string $corporateId): self
+    public function setCorporateId(?string $corporateId): self
     {
         $this->corporateId = $corporateId;
 

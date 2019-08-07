@@ -30,9 +30,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingQ
     /**
      * The single queue details.
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingQueuePlaceQueueInfoQueueIdentifierItem[]
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingQueuePlaceQueueInfoQueueIdentifierItem[]|null
      */
-    public function getQueueIdentifier(): array
+    public function getQueueIdentifier(): ?array
     {
         return $this->queueIdentifier;
     }
@@ -40,11 +40,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingQ
     /**
      * The single queue details.
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingQueuePlaceQueueInfoQueueIdentifierItem[] $queueIdentifier
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingQueuePlaceQueueInfoQueueIdentifierItem[]|null $queueIdentifier
      *
      * @return self
      */
-    public function setQueueIdentifier(array $queueIdentifier): self
+    public function setQueueIdentifier(?array $queueIdentifier): self
     {
         $this->queueIdentifier = $queueIdentifier;
 
@@ -54,9 +54,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingQ
     /**
      * This element is not used by this API.
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingQueuePlaceQueueInfoUniqueIDItem[]
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingQueuePlaceQueueInfoUniqueIDItem[]|null
      */
-    public function getUniqueID(): array
+    public function getUniqueID(): ?array
     {
         return $this->uniqueID;
     }
@@ -64,11 +64,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingQ
     /**
      * This element is not used by this API.
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingQueuePlaceQueueInfoUniqueIDItem[] $uniqueID
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingQueuePlaceQueueInfoUniqueIDItem[]|null $uniqueID
      *
      * @return self
      */
-    public function setUniqueID(array $uniqueID): self
+    public function setUniqueID(?array $uniqueID): self
     {
         $this->uniqueID = $uniqueID;
 

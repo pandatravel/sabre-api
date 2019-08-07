@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\CreatePassengerNameRecord\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -36,16 +35,16 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareCommission();
-        if (property_exists($data, 'Amount')) {
+        if (property_exists($data, 'Amount') && $data->{'Amount'} !== null) {
             $object->setAmount($data->{'Amount'});
         }
-        if (property_exists($data, 'CapAmountInd')) {
+        if (property_exists($data, 'CapAmountInd') && $data->{'CapAmountInd'} !== null) {
             $object->setCapAmountInd($data->{'CapAmountInd'});
         }
-        if (property_exists($data, 'Percent')) {
+        if (property_exists($data, 'Percent') && $data->{'Percent'} !== null) {
             $object->setPercent($data->{'Percent'});
         }
 

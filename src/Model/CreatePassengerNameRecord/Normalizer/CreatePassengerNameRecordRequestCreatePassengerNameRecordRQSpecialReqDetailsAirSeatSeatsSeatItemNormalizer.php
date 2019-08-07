@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\CreatePassengerNameRecord\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -36,25 +35,25 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAirSeatSeatsSeatItem();
-        if (property_exists($data, 'BoardingPass')) {
+        if (property_exists($data, 'BoardingPass') && $data->{'BoardingPass'} !== null) {
             $object->setBoardingPass($data->{'BoardingPass'});
         }
-        if (property_exists($data, 'ChangeOfGauge')) {
+        if (property_exists($data, 'ChangeOfGauge') && $data->{'ChangeOfGauge'} !== null) {
             $object->setChangeOfGauge($data->{'ChangeOfGauge'});
         }
-        if (property_exists($data, 'NameNumber')) {
+        if (property_exists($data, 'NameNumber') && $data->{'NameNumber'} !== null) {
             $object->setNameNumber($data->{'NameNumber'});
         }
-        if (property_exists($data, 'Number')) {
+        if (property_exists($data, 'Number') && $data->{'Number'} !== null) {
             $object->setNumber($data->{'Number'});
         }
-        if (property_exists($data, 'Preference')) {
+        if (property_exists($data, 'Preference') && $data->{'Preference'} !== null) {
             $object->setPreference($data->{'Preference'});
         }
-        if (property_exists($data, 'SegmentNumber')) {
+        if (property_exists($data, 'SegmentNumber') && $data->{'SegmentNumber'} !== null) {
             $object->setSegmentNumber($data->{'SegmentNumber'});
         }
 

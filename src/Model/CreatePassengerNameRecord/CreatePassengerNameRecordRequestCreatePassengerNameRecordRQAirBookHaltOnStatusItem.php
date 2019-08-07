@@ -16,8 +16,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookHaltOnSt
 {
     /**
      * Used to specify values that cause subsequent pricing, and beyond processing to stop if they appear.
-     * In order to successfully price an air itinerary the status code associated with the individual segments cannot be 'NN', 'NO', 'UC' or 'US'.
-     * After successfully booking flights, the system will compare the status codes returned from the carrier against the client-specified codes to determine if subsequent pricing, and beyond processing should occur.
+    In order to successfully price an air itinerary the status code associated with the individual segments cannot be 'NN', 'NO', 'UC' or 'US'.
+    After successfully booking flights, the system will compare the status codes returned from the carrier against the client-specified codes to determine if subsequent pricing, and beyond processing should occur.
+
      *
      * @var string
      */
@@ -25,26 +26,28 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookHaltOnSt
 
     /**
      * Used to specify values that cause subsequent pricing, and beyond processing to stop if they appear.
-     * In order to successfully price an air itinerary the status code associated with the individual segments cannot be 'NN', 'NO', 'UC' or 'US'.
-     * After successfully booking flights, the system will compare the status codes returned from the carrier against the client-specified codes to determine if subsequent pricing, and beyond processing should occur.
+    In order to successfully price an air itinerary the status code associated with the individual segments cannot be 'NN', 'NO', 'UC' or 'US'.
+    After successfully booking flights, the system will compare the status codes returned from the carrier against the client-specified codes to determine if subsequent pricing, and beyond processing should occur.
+
      *
-     * @return string
+     * @return string|null
      */
-    public function getCode(): string
+    public function getCode(): ?string
     {
         return $this->code;
     }
 
     /**
      * Used to specify values that cause subsequent pricing, and beyond processing to stop if they appear.
-     * In order to successfully price an air itinerary the status code associated with the individual segments cannot be 'NN', 'NO', 'UC' or 'US'.
-     * After successfully booking flights, the system will compare the status codes returned from the carrier against the client-specified codes to determine if subsequent pricing, and beyond processing should occur.
+    In order to successfully price an air itinerary the status code associated with the individual segments cannot be 'NN', 'NO', 'UC' or 'US'.
+    After successfully booking flights, the system will compare the status codes returned from the carrier against the client-specified codes to determine if subsequent pricing, and beyond processing should occur.
+
      *
-     * @param string $code
+     * @param string|null $code
      *
      * @return self
      */
-    public function setCode(string $code): self
+    public function setCode(?string $code): self
     {
         $this->code = $code;
 

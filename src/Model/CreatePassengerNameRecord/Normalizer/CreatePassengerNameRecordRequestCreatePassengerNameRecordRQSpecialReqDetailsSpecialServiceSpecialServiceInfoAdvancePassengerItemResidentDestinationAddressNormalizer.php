@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\CreatePassengerNameRecord\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -36,25 +35,25 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoAdvancePassengerItemResidentDestinationAddress();
-        if (property_exists($data, 'City')) {
+        if (property_exists($data, 'City') && $data->{'City'} !== null) {
             $object->setCity($data->{'City'});
         }
-        if (property_exists($data, 'Country')) {
+        if (property_exists($data, 'Country') && $data->{'Country'} !== null) {
             $object->setCountry($data->{'Country'});
         }
-        if (property_exists($data, 'Street')) {
+        if (property_exists($data, 'Street') && $data->{'Street'} !== null) {
             $object->setStreet($data->{'Street'});
         }
-        if (property_exists($data, 'State')) {
+        if (property_exists($data, 'State') && $data->{'State'} !== null) {
             $object->setState($data->{'State'});
         }
-        if (property_exists($data, 'Zip')) {
+        if (property_exists($data, 'Zip') && $data->{'Zip'} !== null) {
             $object->setZip($data->{'Zip'});
         }
-        if (property_exists($data, 'Type')) {
+        if (property_exists($data, 'Type') && $data->{'Type'} !== null) {
             $object->setType($data->{'Type'});
         }
 

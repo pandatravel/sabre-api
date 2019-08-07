@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\CreatePassengerNameRecord\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -36,38 +35,38 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItinerary();
-        if (property_exists($data, 'AirItineraryPricingInfo')) {
+        if (property_exists($data, 'AirItineraryPricingInfo') && $data->{'AirItineraryPricingInfo'} !== null) {
             $values = [];
             foreach ($data->{'AirItineraryPricingInfo'} as $value) {
                 $values[] = $this->denormalizer->denormalize($value, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItem', 'json', $context);
             }
             $object->setAirItineraryPricingInfo($values);
         }
-        if (property_exists($data, 'AlternativePricing')) {
+        if (property_exists($data, 'AlternativePricing') && $data->{'AlternativePricing'} !== null) {
             $object->setAlternativePricing($data->{'AlternativePricing'});
         }
-        if (property_exists($data, 'CurrencyCode')) {
+        if (property_exists($data, 'CurrencyCode') && $data->{'CurrencyCode'} !== null) {
             $object->setCurrencyCode($data->{'CurrencyCode'});
         }
-        if (property_exists($data, 'MultiTicket')) {
+        if (property_exists($data, 'MultiTicket') && $data->{'MultiTicket'} !== null) {
             $object->setMultiTicket($data->{'MultiTicket'});
         }
-        if (property_exists($data, 'MultiTicketShortText')) {
+        if (property_exists($data, 'MultiTicketShortText') && $data->{'MultiTicketShortText'} !== null) {
             $object->setMultiTicketShortText($data->{'MultiTicketShortText'});
         }
-        if (property_exists($data, 'ServiceFeeAmount')) {
+        if (property_exists($data, 'ServiceFeeAmount') && $data->{'ServiceFeeAmount'} !== null) {
             $object->setServiceFeeAmount($data->{'ServiceFeeAmount'});
         }
-        if (property_exists($data, 'ServiceFeeCurrencyCode')) {
+        if (property_exists($data, 'ServiceFeeCurrencyCode') && $data->{'ServiceFeeCurrencyCode'} !== null) {
             $object->setServiceFeeCurrencyCode($data->{'ServiceFeeCurrencyCode'});
         }
-        if (property_exists($data, 'ServiceFeeTax')) {
+        if (property_exists($data, 'ServiceFeeTax') && $data->{'ServiceFeeTax'} !== null) {
             $object->setServiceFeeTax($data->{'ServiceFeeTax'});
         }
-        if (property_exists($data, 'TotalAmount')) {
+        if (property_exists($data, 'TotalAmount') && $data->{'TotalAmount'} !== null) {
             $object->setTotalAmount($data->{'TotalAmount'});
         }
 

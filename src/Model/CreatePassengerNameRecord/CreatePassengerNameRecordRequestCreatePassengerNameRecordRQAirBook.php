@@ -42,9 +42,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBook extends
     /**
      * Used to specify if re-booking of segments is required when UC segment status is encountered.
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookRetryRebook
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookRetryRebook|null
      */
-    public function getRetryRebook(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookRetryRebook
+    public function getRetryRebook(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookRetryRebook
     {
         return $this->retryRebook;
     }
@@ -52,11 +52,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBook extends
     /**
      * Used to specify if re-booking of segments is required when UC segment status is encountered.
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookRetryRebook $retryRebook
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookRetryRebook|null $retryRebook
      *
      * @return self
      */
-    public function setRetryRebook(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookRetryRebook $retryRebook): self
+    public function setRetryRebook(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookRetryRebook $retryRebook): self
     {
         $this->retryRebook = $retryRebook;
 
@@ -66,9 +66,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBook extends
     /**
      * Used to specify values that cause subsequent pricing, and beyond processing to stop if they appear.
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookHaltOnStatusItem[]
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookHaltOnStatusItem[]|null
      */
-    public function getHaltOnStatus(): array
+    public function getHaltOnStatus(): ?array
     {
         return $this->haltOnStatus;
     }
@@ -76,11 +76,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBook extends
     /**
      * Used to specify values that cause subsequent pricing, and beyond processing to stop if they appear.
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookHaltOnStatusItem[] $haltOnStatus
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookHaltOnStatusItem[]|null $haltOnStatus
      *
      * @return self
      */
-    public function setHaltOnStatus(array $haltOnStatus): self
+    public function setHaltOnStatus(?array $haltOnStatus): self
     {
         $this->haltOnStatus = $haltOnStatus;
 
@@ -90,9 +90,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBook extends
     /**
      * Used to specify the air segments to be booked.
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDestinationInformation
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDestinationInformation|null
      */
-    public function getOriginDestinationInformation(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDestinationInformation
+    public function getOriginDestinationInformation(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDestinationInformation
     {
         return $this->originDestinationInformation;
     }
@@ -100,11 +100,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBook extends
     /**
      * Used to specify the air segments to be booked.
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDestinationInformation $originDestinationInformation
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDestinationInformation|null $originDestinationInformation
      *
      * @return self
      */
-    public function setOriginDestinationInformation(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDestinationInformation $originDestinationInformation): self
+    public function setOriginDestinationInformation(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDestinationInformation $originDestinationInformation): self
     {
         $this->originDestinationInformation = $originDestinationInformation;
 
@@ -114,9 +114,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBook extends
     /**
      * Used to request a redisplay reservation attempt to validate if the desired segment status code remains unaltered.
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookRedisplayReservation
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookRedisplayReservation|null
      */
-    public function getRedisplayReservation(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookRedisplayReservation
+    public function getRedisplayReservation(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookRedisplayReservation
     {
         return $this->redisplayReservation;
     }
@@ -124,11 +124,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBook extends
     /**
      * Used to request a redisplay reservation attempt to validate if the desired segment status code remains unaltered.
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookRedisplayReservation $redisplayReservation
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookRedisplayReservation|null $redisplayReservation
      *
      * @return self
      */
-    public function setRedisplayReservation(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookRedisplayReservation $redisplayReservation): self
+    public function setRedisplayReservation(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookRedisplayReservation $redisplayReservation): self
     {
         $this->redisplayReservation = $redisplayReservation;
 

@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\CreatePassengerNameRecord\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -36,16 +35,16 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemAgencyCommissionItem();
-        if (property_exists($data, 'CommissionContract')) {
+        if (property_exists($data, 'CommissionContract') && $data->{'CommissionContract'} !== null) {
             $object->setCommissionContract($data->{'CommissionContract'});
         }
-        if (property_exists($data, 'TotalPricedCommission')) {
+        if (property_exists($data, 'TotalPricedCommission') && $data->{'TotalPricedCommission'} !== null) {
             $object->setTotalPricedCommission($data->{'TotalPricedCommission'});
         }
-        if (property_exists($data, 'ValidatingCarrier')) {
+        if (property_exists($data, 'ValidatingCarrier') && $data->{'ValidatingCarrier'} !== null) {
             $object->setValidatingCarrier($data->{'ValidatingCarrier'});
         }
 

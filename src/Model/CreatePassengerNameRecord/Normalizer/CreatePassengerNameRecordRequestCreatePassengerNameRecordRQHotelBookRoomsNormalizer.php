@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\CreatePassengerNameRecord\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -36,17 +35,17 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsN
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRooms();
-        if (property_exists($data, 'Room')) {
+        if (property_exists($data, 'Room') && $data->{'Room'} !== null) {
             $values = [];
             foreach ($data->{'Room'} as $value) {
                 $values[] = $this->denormalizer->denormalize($value, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsRoomItem', 'json', $context);
             }
             $object->setRoom($values);
         }
-        if (property_exists($data, 'NumberOfRooms')) {
+        if (property_exists($data, 'NumberOfRooms') && $data->{'NumberOfRooms'} !== null) {
             $object->setNumberOfRooms($data->{'NumberOfRooms'});
         }
 

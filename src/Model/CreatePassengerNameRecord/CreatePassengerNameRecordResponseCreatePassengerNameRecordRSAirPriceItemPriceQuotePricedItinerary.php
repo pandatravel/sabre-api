@@ -72,9 +72,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * A single pricing solution.
      *
-     * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItem[]
+     * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItem[]|null
      */
-    public function getAirItineraryPricingInfo(): array
+    public function getAirItineraryPricingInfo(): ?array
     {
         return $this->airItineraryPricingInfo;
     }
@@ -82,11 +82,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * A single pricing solution.
      *
-     * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItem[] $airItineraryPricingInfo
+     * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItem[]|null $airItineraryPricingInfo
      *
      * @return self
      */
-    public function setAirItineraryPricingInfo(array $airItineraryPricingInfo): self
+    public function setAirItineraryPricingInfo(?array $airItineraryPricingInfo): self
     {
         $this->airItineraryPricingInfo = $airItineraryPricingInfo;
 
@@ -96,9 +96,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * This attribute is not in use.
      *
-     * @return string
+     * @return string|null
      */
-    public function getAlternativePricing(): string
+    public function getAlternativePricing(): ?string
     {
         return $this->alternativePricing;
     }
@@ -106,11 +106,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * This attribute is not in use.
      *
-     * @param string $alternativePricing
+     * @param string|null $alternativePricing
      *
      * @return self
      */
-    public function setAlternativePricing(string $alternativePricing): self
+    public function setAlternativePricing(?string $alternativePricing): self
     {
         $this->alternativePricing = $alternativePricing;
 
@@ -120,9 +120,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The applicable currency code.
      *
-     * @return string
+     * @return string|null
      */
-    public function getCurrencyCode(): string
+    public function getCurrencyCode(): ?string
     {
         return $this->currencyCode;
     }
@@ -130,11 +130,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The applicable currency code.
      *
-     * @param string $currencyCode
+     * @param string|null $currencyCode
      *
      * @return self
      */
-    public function setCurrencyCode(string $currencyCode): self
+    public function setCurrencyCode(?string $currencyCode): self
     {
         $this->currencyCode = $currencyCode;
 
@@ -144,9 +144,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * Used to denote that multi-ticket-based pricing options apply.
      *
-     * @return bool
+     * @return bool|null
      */
-    public function getMultiTicket(): bool
+    public function getMultiTicket(): ?bool
     {
         return $this->multiTicket;
     }
@@ -154,11 +154,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * Used to denote that multi-ticket-based pricing options apply.
      *
-     * @param bool $multiTicket
+     * @param bool|null $multiTicket
      *
      * @return self
      */
-    public function setMultiTicket(bool $multiTicket): self
+    public function setMultiTicket(?bool $multiTicket): self
     {
         $this->multiTicket = $multiTicket;
 
@@ -168,9 +168,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The miscellaneous multi-ticket-based pricing option-related information.
      *
-     * @return string
+     * @return string|null
      */
-    public function getMultiTicketShortText(): string
+    public function getMultiTicketShortText(): ?string
     {
         return $this->multiTicketShortText;
     }
@@ -178,11 +178,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The miscellaneous multi-ticket-based pricing option-related information.
      *
-     * @param string $multiTicketShortText
+     * @param string|null $multiTicketShortText
      *
      * @return self
      */
-    public function setMultiTicketShortText(string $multiTicketShortText): self
+    public function setMultiTicketShortText(?string $multiTicketShortText): self
     {
         $this->multiTicketShortText = $multiTicketShortText;
 
@@ -192,9 +192,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The service fee amount.
      *
-     * @return string
+     * @return string|null
      */
-    public function getServiceFeeAmount(): string
+    public function getServiceFeeAmount(): ?string
     {
         return $this->serviceFeeAmount;
     }
@@ -202,11 +202,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The service fee amount.
      *
-     * @param string $serviceFeeAmount
+     * @param string|null $serviceFeeAmount
      *
      * @return self
      */
-    public function setServiceFeeAmount(string $serviceFeeAmount): self
+    public function setServiceFeeAmount(?string $serviceFeeAmount): self
     {
         $this->serviceFeeAmount = $serviceFeeAmount;
 
@@ -216,9 +216,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The service fee currency code.
      *
-     * @return string
+     * @return string|null
      */
-    public function getServiceFeeCurrencyCode(): string
+    public function getServiceFeeCurrencyCode(): ?string
     {
         return $this->serviceFeeCurrencyCode;
     }
@@ -226,11 +226,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The service fee currency code.
      *
-     * @param string $serviceFeeCurrencyCode
+     * @param string|null $serviceFeeCurrencyCode
      *
      * @return self
      */
-    public function setServiceFeeCurrencyCode(string $serviceFeeCurrencyCode): self
+    public function setServiceFeeCurrencyCode(?string $serviceFeeCurrencyCode): self
     {
         $this->serviceFeeCurrencyCode = $serviceFeeCurrencyCode;
 
@@ -240,9 +240,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The service fee tax.
      *
-     * @return string
+     * @return string|null
      */
-    public function getServiceFeeTax(): string
+    public function getServiceFeeTax(): ?string
     {
         return $this->serviceFeeTax;
     }
@@ -250,11 +250,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The service fee tax.
      *
-     * @param string $serviceFeeTax
+     * @param string|null $serviceFeeTax
      *
      * @return self
      */
-    public function setServiceFeeTax(string $serviceFeeTax): self
+    public function setServiceFeeTax(?string $serviceFeeTax): self
     {
         $this->serviceFeeTax = $serviceFeeTax;
 
@@ -264,9 +264,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The total amount associated with the particular itinerary.
      *
-     * @return string
+     * @return string|null
      */
-    public function getTotalAmount(): string
+    public function getTotalAmount(): ?string
     {
         return $this->totalAmount;
     }
@@ -274,11 +274,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The total amount associated with the particular itinerary.
      *
-     * @param string $totalAmount
+     * @param string|null $totalAmount
      *
      * @return self
      */
-    public function setTotalAmount(string $totalAmount): self
+    public function setTotalAmount(?string $totalAmount): self
     {
         $this->totalAmount = $totalAmount;
 

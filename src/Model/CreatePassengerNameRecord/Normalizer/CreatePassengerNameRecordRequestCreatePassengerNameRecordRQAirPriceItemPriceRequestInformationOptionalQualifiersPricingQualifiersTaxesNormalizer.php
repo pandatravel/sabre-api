@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\CreatePassengerNameRecord\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -36,20 +35,20 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersTaxes();
-        if (property_exists($data, 'NoTax')) {
+        if (property_exists($data, 'NoTax') && $data->{'NoTax'} !== null) {
             $object->setNoTax($this->denormalizer->denormalize($data->{'NoTax'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersTaxesNoTax', 'json', $context));
         }
-        if (property_exists($data, 'TaxExempt')) {
+        if (property_exists($data, 'TaxExempt') && $data->{'TaxExempt'} !== null) {
             $values = [];
             foreach ($data->{'TaxExempt'} as $value) {
                 $values[] = $this->denormalizer->denormalize($value, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersTaxesTaxExemptItem', 'json', $context);
             }
             $object->setTaxExempt($values);
         }
-        if (property_exists($data, 'TaxOverride')) {
+        if (property_exists($data, 'TaxOverride') && $data->{'TaxOverride'} !== null) {
             $values_1 = [];
             foreach ($data->{'TaxOverride'} as $value_1) {
                 $values_1[] = $this->denormalizer->denormalize($value_1, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersTaxesTaxOverrideItem', 'json', $context);

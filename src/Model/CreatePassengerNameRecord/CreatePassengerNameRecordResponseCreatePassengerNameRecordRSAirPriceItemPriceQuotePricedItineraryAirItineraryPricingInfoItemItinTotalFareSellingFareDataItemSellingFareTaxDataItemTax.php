@@ -72,9 +72,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The tax code.
      *
-     * @return string
+     * @return string|null
      */
-    public function getCode(): string
+    public function getCode(): ?string
     {
         return $this->code;
     }
@@ -82,11 +82,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The tax code.
      *
-     * @param string $code
+     * @param string|null $code
      *
      * @return self
      */
-    public function setCode(string $code): self
+    public function setCode(?string $code): self
     {
         $this->code = $code;
 
@@ -96,9 +96,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The tax description.
      *
-     * @return string
+     * @return string|null
      */
-    public function getDescription(): string
+    public function getDescription(): ?string
     {
         return $this->description;
     }
@@ -106,11 +106,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The tax description.
      *
-     * @param string $description
+     * @param string|null $description
      *
      * @return self
      */
-    public function setDescription(string $description): self
+    public function setDescription(?string $description): self
     {
         $this->description = $description;
 
@@ -120,9 +120,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The tax amount.
      *
-     * @return string
+     * @return string|null
      */
-    public function getAmount(): string
+    public function getAmount(): ?string
     {
         return $this->amount;
     }
@@ -130,11 +130,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The tax amount.
      *
-     * @param string $amount
+     * @param string|null $amount
      *
      * @return self
      */
-    public function setAmount(string $amount): self
+    public function setAmount(?string $amount): self
     {
         $this->amount = $amount;
 
@@ -144,9 +144,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The tax currency code.
      *
-     * @return string
+     * @return string|null
      */
-    public function getCurrencyCode(): string
+    public function getCurrencyCode(): ?string
     {
         return $this->currencyCode;
     }
@@ -154,11 +154,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The tax currency code.
      *
-     * @param string $currencyCode
+     * @param string|null $currencyCode
      *
      * @return self
      */
-    public function setCurrencyCode(string $currencyCode): self
+    public function setCurrencyCode(?string $currencyCode): self
     {
         $this->currencyCode = $currencyCode;
 
@@ -168,9 +168,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The published amount.
      *
-     * @return string
+     * @return string|null
      */
-    public function getAmountPublished(): string
+    public function getAmountPublished(): ?string
     {
         return $this->amountPublished;
     }
@@ -178,11 +178,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The published amount.
      *
-     * @param string $amountPublished
+     * @param string|null $amountPublished
      *
      * @return self
      */
-    public function setAmountPublished(string $amountPublished): self
+    public function setAmountPublished(?string $amountPublished): self
     {
         $this->amountPublished = $amountPublished;
 
@@ -192,9 +192,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The published currency code.
      *
-     * @return string
+     * @return string|null
      */
-    public function getPublishedCurrencyCode(): string
+    public function getPublishedCurrencyCode(): ?string
     {
         return $this->publishedCurrencyCode;
     }
@@ -202,11 +202,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The published currency code.
      *
-     * @param string $publishedCurrencyCode
+     * @param string|null $publishedCurrencyCode
      *
      * @return self
      */
-    public function setPublishedCurrencyCode(string $publishedCurrencyCode): self
+    public function setPublishedCurrencyCode(?string $publishedCurrencyCode): self
     {
         $this->publishedCurrencyCode = $publishedCurrencyCode;
 
@@ -216,9 +216,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The station code.
      *
-     * @return string
+     * @return string|null
      */
-    public function getStationCode(): string
+    public function getStationCode(): ?string
     {
         return $this->stationCode;
     }
@@ -226,11 +226,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The station code.
      *
-     * @param string $stationCode
+     * @param string|null $stationCode
      *
      * @return self
      */
-    public function setStationCode(string $stationCode): self
+    public function setStationCode(?string $stationCode): self
     {
         $this->stationCode = $stationCode;
 
@@ -240,9 +240,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The country code.
      *
-     * @return string
+     * @return string|null
      */
-    public function getCountryCode(): string
+    public function getCountryCode(): ?string
     {
         return $this->countryCode;
     }
@@ -250,11 +250,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The country code.
      *
-     * @param string $countryCode
+     * @param string|null $countryCode
      *
      * @return self
      */
-    public function setCountryCode(string $countryCode): self
+    public function setCountryCode(?string $countryCode): self
     {
         $this->countryCode = $countryCode;
 
@@ -264,9 +264,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The goods and services tax indicator.
      *
-     * @return bool
+     * @return bool|null
      */
-    public function getGoodAndServicesInd(): bool
+    public function getGoodAndServicesInd(): ?bool
     {
         return $this->goodAndServicesInd;
     }
@@ -274,11 +274,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The goods and services tax indicator.
      *
-     * @param bool $goodAndServicesInd
+     * @param bool|null $goodAndServicesInd
      *
      * @return self
      */
-    public function setGoodAndServicesInd(bool $goodAndServicesInd): self
+    public function setGoodAndServicesInd(?bool $goodAndServicesInd): self
     {
         $this->goodAndServicesInd = $goodAndServicesInd;
 

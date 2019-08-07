@@ -24,9 +24,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSItineraryRef e
     /**
      * The locator of the ended passenger name record.
      *
-     * @return string
+     * @return string|null
      */
-    public function getID(): string
+    public function getID(): ?string
     {
         return $this->iD;
     }
@@ -34,11 +34,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSItineraryRef e
     /**
      * The locator of the ended passenger name record.
      *
-     * @param string $iD
+     * @param string|null $iD
      *
      * @return self
      */
-    public function setID(string $iD): self
+    public function setID(?string $iD): self
     {
         $this->iD = $iD;
 

@@ -16,8 +16,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
 {
     /**
      * 'Hosted' is used to specify if the request is based in a hosted or a non-hosted carrier.
-     * For Travel Network customers, 'Hosted' should be set to 'false'.
-     * For SabreSonic RES hosted customers, 'Hosted' should be set to 'true'.
+    For Travel Network customers, 'Hosted' should be set to 'false'.
+    For SabreSonic RES hosted customers, 'Hosted' should be set to 'true'.
+
      *
      * @var bool
      */
@@ -25,26 +26,28 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
 
     /**
      * 'Hosted' is used to specify if the request is based in a hosted or a non-hosted carrier.
-     * For Travel Network customers, 'Hosted' should be set to 'false'.
-     * For SabreSonic RES hosted customers, 'Hosted' should be set to 'true'.
+    For Travel Network customers, 'Hosted' should be set to 'false'.
+    For SabreSonic RES hosted customers, 'Hosted' should be set to 'true'.
+
      *
-     * @return bool
+     * @return bool|null
      */
-    public function getHosted(): bool
+    public function getHosted(): ?bool
     {
         return $this->hosted;
     }
 
     /**
      * 'Hosted' is used to specify if the request is based in a hosted or a non-hosted carrier.
-     * For Travel Network customers, 'Hosted' should be set to 'false'.
-     * For SabreSonic RES hosted customers, 'Hosted' should be set to 'true'.
+    For Travel Network customers, 'Hosted' should be set to 'false'.
+    For SabreSonic RES hosted customers, 'Hosted' should be set to 'true'.
+
      *
-     * @param bool $hosted
+     * @param bool|null $hosted
      *
      * @return self
      */
-    public function setHosted(bool $hosted): self
+    public function setHosted(?bool $hosted): self
     {
         $this->hosted = $hosted;
 

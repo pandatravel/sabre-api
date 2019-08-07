@@ -30,9 +30,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The departure date.
      *
-     * @return string
+     * @return string|null
      */
-    public function getContent(): string
+    public function getContent(): ?string
     {
         return $this->content;
     }
@@ -40,11 +40,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The departure date.
      *
-     * @param string $content
+     * @param string|null $content
      *
      * @return self
      */
-    public function setContent(string $content): self
+    public function setContent(?string $content): self
     {
         $this->content = $content;
 
@@ -54,9 +54,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * Used as a reference place holder.
      *
-     * @return int
+     * @return int|null
      */
-    public function getRPH(): int
+    public function getRPH(): ?int
     {
         return $this->rPH;
     }
@@ -64,11 +64,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * Used as a reference place holder.
      *
-     * @param int $rPH
+     * @param int|null $rPH
      *
      * @return self
      */
-    public function setRPH(int $rPH): self
+    public function setRPH(?int $rPH): self
     {
         $this->rPH = $rPH;
 

@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\CreatePassengerNameRecord\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -36,28 +35,28 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoAgencyInfoAddress();
-        if (property_exists($data, 'AddressLine')) {
+        if (property_exists($data, 'AddressLine') && $data->{'AddressLine'} !== null) {
             $object->setAddressLine($data->{'AddressLine'});
         }
-        if (property_exists($data, 'CityName')) {
+        if (property_exists($data, 'CityName') && $data->{'CityName'} !== null) {
             $object->setCityName($data->{'CityName'});
         }
-        if (property_exists($data, 'CountryCode')) {
+        if (property_exists($data, 'CountryCode') && $data->{'CountryCode'} !== null) {
             $object->setCountryCode($data->{'CountryCode'});
         }
-        if (property_exists($data, 'PostalCode')) {
+        if (property_exists($data, 'PostalCode') && $data->{'PostalCode'} !== null) {
             $object->setPostalCode($data->{'PostalCode'});
         }
-        if (property_exists($data, 'StateCountyProv')) {
+        if (property_exists($data, 'StateCountyProv') && $data->{'StateCountyProv'} !== null) {
             $object->setStateCountyProv($this->denormalizer->denormalize($data->{'StateCountyProv'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoAgencyInfoAddressStateCountyProv', 'json', $context));
         }
-        if (property_exists($data, 'StreetNmbr')) {
+        if (property_exists($data, 'StreetNmbr') && $data->{'StreetNmbr'} !== null) {
             $object->setStreetNmbr($data->{'StreetNmbr'});
         }
-        if (property_exists($data, 'VendorPrefs')) {
+        if (property_exists($data, 'VendorPrefs') && $data->{'VendorPrefs'} !== null) {
             $object->setVendorPrefs($this->denormalizer->denormalize($data->{'VendorPrefs'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoAgencyInfoAddressVendorPrefs', 'json', $context));
         }
 

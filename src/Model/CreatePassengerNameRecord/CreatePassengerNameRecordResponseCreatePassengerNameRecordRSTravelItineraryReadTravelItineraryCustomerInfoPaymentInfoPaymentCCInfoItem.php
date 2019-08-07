@@ -36,9 +36,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     /**
      * The cardholder information.
      *
-     * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPaymentInfoPaymentCCInfoItemCardHolderInfo
+     * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPaymentInfoPaymentCCInfoItemCardHolderInfo|null
      */
-    public function getCardHolderInfo(): CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPaymentInfoPaymentCCInfoItemCardHolderInfo
+    public function getCardHolderInfo(): ?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPaymentInfoPaymentCCInfoItemCardHolderInfo
     {
         return $this->cardHolderInfo;
     }
@@ -46,11 +46,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     /**
      * The cardholder information.
      *
-     * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPaymentInfoPaymentCCInfoItemCardHolderInfo $cardHolderInfo
+     * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPaymentInfoPaymentCCInfoItemCardHolderInfo|null $cardHolderInfo
      *
      * @return self
      */
-    public function setCardHolderInfo(CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPaymentInfoPaymentCCInfoItemCardHolderInfo $cardHolderInfo): self
+    public function setCardHolderInfo(?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPaymentInfoPaymentCCInfoItemCardHolderInfo $cardHolderInfo): self
     {
         $this->cardHolderInfo = $cardHolderInfo;
 
@@ -60,9 +60,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     /**
      * 'PreferredCustomer' is used to indicate whether or not the cardholder is a preferred customer.
      *
-     * @return string
+     * @return string|null
      */
-    public function getPreferredCustomer(): string
+    public function getPreferredCustomer(): ?string
     {
         return $this->preferredCustomer;
     }
@@ -70,11 +70,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     /**
      * 'PreferredCustomer' is used to indicate whether or not the cardholder is a preferred customer.
      *
-     * @param string $preferredCustomer
+     * @param string|null $preferredCustomer
      *
      * @return self
      */
-    public function setPreferredCustomer(string $preferredCustomer): self
+    public function setPreferredCustomer(?string $preferredCustomer): self
     {
         $this->preferredCustomer = $preferredCustomer;
 
@@ -84,9 +84,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     /**
      * 'ShortText' is used to return miscellaneous credit card-related information.
      *
-     * @return string
+     * @return string|null
      */
-    public function getShortText(): string
+    public function getShortText(): ?string
     {
         return $this->shortText;
     }
@@ -94,11 +94,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     /**
      * 'ShortText' is used to return miscellaneous credit card-related information.
      *
-     * @param string $shortText
+     * @param string|null $shortText
      *
      * @return self
      */
-    public function setShortText(string $shortText): self
+    public function setShortText(?string $shortText): self
     {
         $this->shortText = $shortText;
 

@@ -22,7 +22,8 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     protected $optionalQualifiers;
     /**
      * Used to instruct the system to request Alternative Pricing.
-     * Please note that 'AlternativePricing' cannot be combined with 'PricingQualifiers.BargainFinder'.
+    Please note that 'AlternativePricing' cannot be combined with 'PricingQualifiers.BargainFinder'.
+
      *
      * @var bool
      */
@@ -49,9 +50,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to define all the pricing qualifiers.
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiers
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiers|null
      */
-    public function getOptionalQualifiers(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiers
+    public function getOptionalQualifiers(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiers
     {
         return $this->optionalQualifiers;
     }
@@ -59,11 +60,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to define all the pricing qualifiers.
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiers $optionalQualifiers
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiers|null $optionalQualifiers
      *
      * @return self
      */
-    public function setOptionalQualifiers(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiers $optionalQualifiers): self
+    public function setOptionalQualifiers(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiers $optionalQualifiers): self
     {
         $this->optionalQualifiers = $optionalQualifiers;
 
@@ -72,24 +73,26 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
 
     /**
      * Used to instruct the system to request Alternative Pricing.
-     * Please note that 'AlternativePricing' cannot be combined with 'PricingQualifiers.BargainFinder'.
+    Please note that 'AlternativePricing' cannot be combined with 'PricingQualifiers.BargainFinder'.
+
      *
-     * @return bool
+     * @return bool|null
      */
-    public function getAlternativePricing(): bool
+    public function getAlternativePricing(): ?bool
     {
         return $this->alternativePricing;
     }
 
     /**
      * Used to instruct the system to request Alternative Pricing.
-     * Please note that 'AlternativePricing' cannot be combined with 'PricingQualifiers.BargainFinder'.
+    Please note that 'AlternativePricing' cannot be combined with 'PricingQualifiers.BargainFinder'.
+
      *
-     * @param bool $alternativePricing
+     * @param bool|null $alternativePricing
      *
      * @return self
      */
-    public function setAlternativePricing(bool $alternativePricing): self
+    public function setAlternativePricing(?bool $alternativePricing): self
     {
         $this->alternativePricing = $alternativePricing;
 
@@ -99,9 +102,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to instruct the system to create an FP line for future ticketing.
      *
-     * @return bool
+     * @return bool|null
      */
-    public function getFutureTicket(): bool
+    public function getFutureTicket(): ?bool
     {
         return $this->futureTicket;
     }
@@ -109,11 +112,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to instruct the system to create an FP line for future ticketing.
      *
-     * @param bool $futureTicket
+     * @param bool|null $futureTicket
      *
      * @return self
      */
-    public function setFutureTicket(bool $futureTicket): self
+    public function setFutureTicket(?bool $futureTicket): self
     {
         $this->futureTicket = $futureTicket;
 
@@ -123,9 +126,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * This attribute is not used.
      *
-     * @return bool
+     * @return bool|null
      */
-    public function getManual(): bool
+    public function getManual(): ?bool
     {
         return $this->manual;
     }
@@ -133,11 +136,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * This attribute is not used.
      *
-     * @param bool $manual
+     * @param bool|null $manual
      *
      * @return self
      */
-    public function setManual(bool $manual): self
+    public function setManual(?bool $manual): self
     {
         $this->manual = $manual;
 
@@ -147,9 +150,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to instruct the system to retain the pricing response and create a price quote record.
      *
-     * @return bool
+     * @return bool|null
      */
-    public function getRetain(): bool
+    public function getRetain(): ?bool
     {
         return $this->retain;
     }
@@ -157,11 +160,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to instruct the system to retain the pricing response and create a price quote record.
      *
-     * @param bool $retain
+     * @param bool|null $retain
      *
      * @return self
      */
-    public function setRetain(bool $retain): self
+    public function setRetain(?bool $retain): self
     {
         $this->retain = $retain;
 

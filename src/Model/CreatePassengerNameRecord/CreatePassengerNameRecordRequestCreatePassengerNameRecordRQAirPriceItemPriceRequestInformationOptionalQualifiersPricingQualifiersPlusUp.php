@@ -30,9 +30,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * The ticket designator.
      *
-     * @return string
+     * @return string|null
      */
-    public function getTicketDesignator(): string
+    public function getTicketDesignator(): ?string
     {
         return $this->ticketDesignator;
     }
@@ -40,11 +40,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * The ticket designator.
      *
-     * @param string $ticketDesignator
+     * @param string|null $ticketDesignator
      *
      * @return self
      */
-    public function setTicketDesignator(string $ticketDesignator): self
+    public function setTicketDesignator(?string $ticketDesignator): self
     {
         $this->ticketDesignator = $ticketDesignator;
 
@@ -54,9 +54,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to specify an amount to add on top of the fare.
      *
-     * @return string
+     * @return string|null
      */
-    public function getAmount(): string
+    public function getAmount(): ?string
     {
         return $this->amount;
     }
@@ -64,11 +64,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to specify an amount to add on top of the fare.
      *
-     * @param string $amount
+     * @param string|null $amount
      *
      * @return self
      */
-    public function setAmount(string $amount): self
+    public function setAmount(?string $amount): self
     {
         $this->amount = $amount;
 

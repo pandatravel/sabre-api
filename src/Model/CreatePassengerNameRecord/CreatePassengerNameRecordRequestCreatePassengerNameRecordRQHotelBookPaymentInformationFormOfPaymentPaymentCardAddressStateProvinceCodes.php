@@ -24,9 +24,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymen
     /**
      * The state or province codes.
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentPaymentCardAddressStateProvinceCodesCodeItem[]
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentPaymentCardAddressStateProvinceCodesCodeItem[]|null
      */
-    public function getCode(): array
+    public function getCode(): ?array
     {
         return $this->code;
     }
@@ -34,11 +34,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymen
     /**
      * The state or province codes.
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentPaymentCardAddressStateProvinceCodesCodeItem[] $code
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentPaymentCardAddressStateProvinceCodesCodeItem[]|null $code
      *
      * @return self
      */
-    public function setCode(array $code): self
+    public function setCode(?array $code): self
     {
         $this->code = $code;
 

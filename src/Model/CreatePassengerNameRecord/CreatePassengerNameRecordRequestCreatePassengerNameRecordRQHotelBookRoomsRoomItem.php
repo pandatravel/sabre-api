@@ -28,15 +28,17 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsR
     protected $roomExtras;
     /**
      * The non smoking indicator.
-     * By default this is 'true'.
-     * 'false' == smoking and 'true' == non smoking.
+    By default this is 'true'.
+    'false' == smoking and 'true' == non smoking.
+
      *
      * @var bool
      */
     protected $nonSmoking;
     /**
      * Allows users to request a specific bed type code.
-     * Used by EAN aggregator.
+    Used by EAN aggregator.
+
      *
      * @var int
      */
@@ -49,7 +51,8 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsR
     protected $accessibilityInformation;
     /**
      * Identifies the number of rooms being booked.
-     * For multi room bookings please specify '1' for the first room, '2' for the second room, etc.
+    For multi room bookings please specify '1' for the first room, '2' for the second room, etc.
+
      *
      * @var int
      */
@@ -58,9 +61,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsR
     /**
      * Used to pass guest details.
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsRoomItemGuests
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsRoomItemGuests|null
      */
-    public function getGuests(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsRoomItemGuests
+    public function getGuests(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsRoomItemGuests
     {
         return $this->guests;
     }
@@ -68,11 +71,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsR
     /**
      * Used to pass guest details.
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsRoomItemGuests $guests
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsRoomItemGuests|null $guests
      *
      * @return self
      */
-    public function setGuests(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsRoomItemGuests $guests): self
+    public function setGuests(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsRoomItemGuests $guests): self
     {
         $this->guests = $guests;
 
@@ -82,9 +85,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsR
     /**
      * Used to pass room extra information.
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsRoomItemRoomExtras
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsRoomItemRoomExtras|null
      */
-    public function getRoomExtras(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsRoomItemRoomExtras
+    public function getRoomExtras(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsRoomItemRoomExtras
     {
         return $this->roomExtras;
     }
@@ -92,11 +95,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsR
     /**
      * Used to pass room extra information.
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsRoomItemRoomExtras $roomExtras
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsRoomItemRoomExtras|null $roomExtras
      *
      * @return self
      */
-    public function setRoomExtras(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsRoomItemRoomExtras $roomExtras): self
+    public function setRoomExtras(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsRoomItemRoomExtras $roomExtras): self
     {
         $this->roomExtras = $roomExtras;
 
@@ -105,26 +108,28 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsR
 
     /**
      * The non smoking indicator.
-     * By default this is 'true'.
-     * 'false' == smoking and 'true' == non smoking.
+    By default this is 'true'.
+    'false' == smoking and 'true' == non smoking.
+
      *
-     * @return bool
+     * @return bool|null
      */
-    public function getNonSmoking(): bool
+    public function getNonSmoking(): ?bool
     {
         return $this->nonSmoking;
     }
 
     /**
      * The non smoking indicator.
-     * By default this is 'true'.
-     * 'false' == smoking and 'true' == non smoking.
+    By default this is 'true'.
+    'false' == smoking and 'true' == non smoking.
+
      *
-     * @param bool $nonSmoking
+     * @param bool|null $nonSmoking
      *
      * @return self
      */
-    public function setNonSmoking(bool $nonSmoking): self
+    public function setNonSmoking(?bool $nonSmoking): self
     {
         $this->nonSmoking = $nonSmoking;
 
@@ -133,24 +138,26 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsR
 
     /**
      * Allows users to request a specific bed type code.
-     * Used by EAN aggregator.
+    Used by EAN aggregator.
+
      *
-     * @return int
+     * @return int|null
      */
-    public function getBedTypeCode(): int
+    public function getBedTypeCode(): ?int
     {
         return $this->bedTypeCode;
     }
 
     /**
      * Allows users to request a specific bed type code.
-     * Used by EAN aggregator.
+    Used by EAN aggregator.
+
      *
-     * @param int $bedTypeCode
+     * @param int|null $bedTypeCode
      *
      * @return self
      */
-    public function setBedTypeCode(int $bedTypeCode): self
+    public function setBedTypeCode(?int $bedTypeCode): self
     {
         $this->bedTypeCode = $bedTypeCode;
 
@@ -160,9 +167,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsR
     /**
      * Used to allow a customer to request special accessibility rooms.
      *
-     * @return int
+     * @return int|null
      */
-    public function getAccessibilityInformation(): int
+    public function getAccessibilityInformation(): ?int
     {
         return $this->accessibilityInformation;
     }
@@ -170,11 +177,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsR
     /**
      * Used to allow a customer to request special accessibility rooms.
      *
-     * @param int $accessibilityInformation
+     * @param int|null $accessibilityInformation
      *
      * @return self
      */
-    public function setAccessibilityInformation(int $accessibilityInformation): self
+    public function setAccessibilityInformation(?int $accessibilityInformation): self
     {
         $this->accessibilityInformation = $accessibilityInformation;
 
@@ -183,24 +190,26 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsR
 
     /**
      * Identifies the number of rooms being booked.
-     * For multi room bookings please specify '1' for the first room, '2' for the second room, etc.
+    For multi room bookings please specify '1' for the first room, '2' for the second room, etc.
+
      *
-     * @return int
+     * @return int|null
      */
-    public function getRoomIndex(): int
+    public function getRoomIndex(): ?int
     {
         return $this->roomIndex;
     }
 
     /**
      * Identifies the number of rooms being booked.
-     * For multi room bookings please specify '1' for the first room, '2' for the second room, etc.
+    For multi room bookings please specify '1' for the first room, '2' for the second room, etc.
+
      *
-     * @param int $roomIndex
+     * @param int|null $roomIndex
      *
      * @return self
      */
-    public function setRoomIndex(int $roomIndex): self
+    public function setRoomIndex(?int $roomIndex): self
     {
         $this->roomIndex = $roomIndex;
 

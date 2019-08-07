@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\CreatePassengerNameRecord\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -36,25 +35,25 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoAgencyInfoTicketing();
-        if (property_exists($data, 'PseudoCityCode')) {
+        if (property_exists($data, 'PseudoCityCode') && $data->{'PseudoCityCode'} !== null) {
             $object->setPseudoCityCode($data->{'PseudoCityCode'});
         }
-        if (property_exists($data, 'QueueNumber')) {
+        if (property_exists($data, 'QueueNumber') && $data->{'QueueNumber'} !== null) {
             $object->setQueueNumber($data->{'QueueNumber'});
         }
-        if (property_exists($data, 'QueueName')) {
+        if (property_exists($data, 'QueueName') && $data->{'QueueName'} !== null) {
             $object->setQueueName($data->{'QueueName'});
         }
-        if (property_exists($data, 'ShortText')) {
+        if (property_exists($data, 'ShortText') && $data->{'ShortText'} !== null) {
             $object->setShortText($data->{'ShortText'});
         }
-        if (property_exists($data, 'TicketTimeLimit')) {
+        if (property_exists($data, 'TicketTimeLimit') && $data->{'TicketTimeLimit'} !== null) {
             $object->setTicketTimeLimit($data->{'TicketTimeLimit'});
         }
-        if (property_exists($data, 'TicketType')) {
+        if (property_exists($data, 'TicketType') && $data->{'TicketType'} !== null) {
             $object->setTicketType($data->{'TicketType'});
         }
 

@@ -36,9 +36,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * The discount amount.
      *
-     * @return string
+     * @return string|null
      */
-    public function getAmount(): string
+    public function getAmount(): ?string
     {
         return $this->amount;
     }
@@ -46,11 +46,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * The discount amount.
      *
-     * @param string $amount
+     * @param string|null $amount
      *
      * @return self
      */
-    public function setAmount(string $amount): self
+    public function setAmount(?string $amount): self
     {
         $this->amount = $amount;
 
@@ -60,9 +60,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * The discount authorization code.
      *
-     * @return string
+     * @return string|null
      */
-    public function getAuthCode(): string
+    public function getAuthCode(): ?string
     {
         return $this->authCode;
     }
@@ -70,11 +70,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * The discount authorization code.
      *
-     * @param string $authCode
+     * @param string|null $authCode
      *
      * @return self
      */
-    public function setAuthCode(string $authCode): self
+    public function setAuthCode(?string $authCode): self
     {
         $this->authCode = $authCode;
 
@@ -84,9 +84,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * The discount percentage.
      *
-     * @return string
+     * @return string|null
      */
-    public function getPercent(): string
+    public function getPercent(): ?string
     {
         return $this->percent;
     }
@@ -94,11 +94,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * The discount percentage.
      *
-     * @param string $percent
+     * @param string|null $percent
      *
      * @return self
      */
-    public function setPercent(string $percent): self
+    public function setPercent(?string $percent): self
     {
         $this->percent = $percent;
 

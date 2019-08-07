@@ -16,7 +16,8 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
 {
     /**
      * Used to specify a fare type.
-     * Acceptable values are 'NL' for normal fare, 'EX' for special fare, and 'IT' for inclusive tour.
+    Acceptable values are 'NL' for normal fare, 'EX' for special fare, and 'IT' for inclusive tour.
+
      *
      * @var string
      */
@@ -24,24 +25,26 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
 
     /**
      * Used to specify a fare type.
-     * Acceptable values are 'NL' for normal fare, 'EX' for special fare, and 'IT' for inclusive tour.
+    Acceptable values are 'NL' for normal fare, 'EX' for special fare, and 'IT' for inclusive tour.
+
      *
-     * @return string
+     * @return string|null
      */
-    public function getType(): string
+    public function getType(): ?string
     {
         return $this->type;
     }
 
     /**
      * Used to specify a fare type.
-     * Acceptable values are 'NL' for normal fare, 'EX' for special fare, and 'IT' for inclusive tour.
+    Acceptable values are 'NL' for normal fare, 'EX' for special fare, and 'IT' for inclusive tour.
+
      *
-     * @param string $type
+     * @param string|null $type
      *
      * @return self
      */
-    public function setType(string $type): self
+    public function setType(?string $type): self
     {
         $this->type = $type;
 

@@ -24,9 +24,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQMiscSegmentVend
     /**
      * The airline code.
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQMiscSegmentVendorPrefsAirline
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQMiscSegmentVendorPrefsAirline|null
      */
-    public function getAirline(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQMiscSegmentVendorPrefsAirline
+    public function getAirline(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQMiscSegmentVendorPrefsAirline
     {
         return $this->airline;
     }
@@ -34,11 +34,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQMiscSegmentVend
     /**
      * The airline code.
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQMiscSegmentVendorPrefsAirline $airline
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQMiscSegmentVendorPrefsAirline|null $airline
      *
      * @return self
      */
-    public function setAirline(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQMiscSegmentVendorPrefsAirline $airline): self
+    public function setAirline(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQMiscSegmentVendorPrefsAirline $airline): self
     {
         $this->airline = $airline;
 

@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\CreatePassengerNameRecord\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -36,25 +35,25 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoAdvancePassengerItemDocument();
-        if (property_exists($data, 'IssueCountry')) {
+        if (property_exists($data, 'IssueCountry') && $data->{'IssueCountry'} !== null) {
             $object->setIssueCountry($data->{'IssueCountry'});
         }
-        if (property_exists($data, 'NationalityCountry')) {
+        if (property_exists($data, 'NationalityCountry') && $data->{'NationalityCountry'} !== null) {
             $object->setNationalityCountry($data->{'NationalityCountry'});
         }
-        if (property_exists($data, 'Visa')) {
+        if (property_exists($data, 'Visa') && $data->{'Visa'} !== null) {
             $object->setVisa($this->denormalizer->denormalize($data->{'Visa'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoAdvancePassengerItemDocumentVisa', 'json', $context));
         }
-        if (property_exists($data, 'ExpirationDate')) {
+        if (property_exists($data, 'ExpirationDate') && $data->{'ExpirationDate'} !== null) {
             $object->setExpirationDate($data->{'ExpirationDate'});
         }
-        if (property_exists($data, 'Number')) {
+        if (property_exists($data, 'Number') && $data->{'Number'} !== null) {
             $object->setNumber($data->{'Number'});
         }
-        if (property_exists($data, 'Type')) {
+        if (property_exists($data, 'Type') && $data->{'Type'} !== null) {
             $object->setType($data->{'Type'});
         }
 

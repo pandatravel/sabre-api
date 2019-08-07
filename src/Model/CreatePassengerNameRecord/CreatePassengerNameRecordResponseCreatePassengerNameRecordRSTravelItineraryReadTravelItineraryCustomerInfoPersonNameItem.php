@@ -88,9 +88,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     /**
      * The passenger's email address information.
      *
-     * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPersonNameItemEmailItem[]
+     * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPersonNameItemEmailItem[]|null
      */
-    public function getEmail(): array
+    public function getEmail(): ?array
     {
         return $this->email;
     }
@@ -98,11 +98,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     /**
      * The passenger's email address information.
      *
-     * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPersonNameItemEmailItem[] $email
+     * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPersonNameItemEmailItem[]|null $email
      *
      * @return self
      */
-    public function setEmail(array $email): self
+    public function setEmail(?array $email): self
     {
         $this->email = $email;
 
@@ -112,9 +112,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     /**
      * The passenger's given (first) name.
      *
-     * @return string
+     * @return string|null
      */
-    public function getGivenName(): string
+    public function getGivenName(): ?string
     {
         return $this->givenName;
     }
@@ -122,11 +122,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     /**
      * The passenger's given (first) name.
      *
-     * @param string $givenName
+     * @param string|null $givenName
      *
      * @return self
      */
-    public function setGivenName(string $givenName): self
+    public function setGivenName(?string $givenName): self
     {
         $this->givenName = $givenName;
 
@@ -134,19 +134,19 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     }
 
     /**
-     * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPersonNameItemGroupInfo
+     * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPersonNameItemGroupInfo|null
      */
-    public function getGroupInfo(): CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPersonNameItemGroupInfo
+    public function getGroupInfo(): ?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPersonNameItemGroupInfo
     {
         return $this->groupInfo;
     }
 
     /**
-     * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPersonNameItemGroupInfo $groupInfo
+     * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPersonNameItemGroupInfo|null $groupInfo
      *
      * @return self
      */
-    public function setGroupInfo(CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPersonNameItemGroupInfo $groupInfo): self
+    public function setGroupInfo(?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPersonNameItemGroupInfo $groupInfo): self
     {
         $this->groupInfo = $groupInfo;
 
@@ -156,9 +156,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     /**
      * The profile index information.
      *
-     * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPersonNameItemProfileIndexItem[]
+     * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPersonNameItemProfileIndexItem[]|null
      */
-    public function getProfileIndex(): array
+    public function getProfileIndex(): ?array
     {
         return $this->profileIndex;
     }
@@ -166,11 +166,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     /**
      * The profile index information.
      *
-     * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPersonNameItemProfileIndexItem[] $profileIndex
+     * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPersonNameItemProfileIndexItem[]|null $profileIndex
      *
      * @return self
      */
-    public function setProfileIndex(array $profileIndex): self
+    public function setProfileIndex(?array $profileIndex): self
     {
         $this->profileIndex = $profileIndex;
 
@@ -180,9 +180,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     /**
      * The passenger's last name.
      *
-     * @return string
+     * @return string|null
      */
-    public function getSurname(): string
+    public function getSurname(): ?string
     {
         return $this->surname;
     }
@@ -190,11 +190,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     /**
      * The passenger's last name.
      *
-     * @param string $surname
+     * @param string|null $surname
      *
      * @return self
      */
-    public function setSurname(string $surname): self
+    public function setSurname(?string $surname): self
     {
         $this->surname = $surname;
 
@@ -204,9 +204,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     /**
      * 'WithInfant' is used to indicate whether or not the passenger is an infant.
      *
-     * @return string
+     * @return string|null
      */
-    public function getWithInfant(): string
+    public function getWithInfant(): ?string
     {
         return $this->withInfant;
     }
@@ -214,11 +214,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     /**
      * 'WithInfant' is used to indicate whether or not the passenger is an infant.
      *
-     * @param string $withInfant
+     * @param string|null $withInfant
      *
      * @return self
      */
-    public function setWithInfant(string $withInfant): self
+    public function setWithInfant(?string $withInfant): self
     {
         $this->withInfant = $withInfant;
 
@@ -228,9 +228,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     /**
      * The passenger name number.
      *
-     * @return string
+     * @return string|null
      */
-    public function getNameNumber(): string
+    public function getNameNumber(): ?string
     {
         return $this->nameNumber;
     }
@@ -238,11 +238,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     /**
      * The passenger name number.
      *
-     * @param string $nameNumber
+     * @param string|null $nameNumber
      *
      * @return self
      */
-    public function setNameNumber(string $nameNumber): self
+    public function setNameNumber(?string $nameNumber): self
     {
         $this->nameNumber = $nameNumber;
 
@@ -252,9 +252,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     /**
      * 'NameReference' is used to return miscellaneous name reference-related information.
      *
-     * @return string
+     * @return string|null
      */
-    public function getNameReference(): string
+    public function getNameReference(): ?string
     {
         return $this->nameReference;
     }
@@ -262,11 +262,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     /**
      * 'NameReference' is used to return miscellaneous name reference-related information.
      *
-     * @param string $nameReference
+     * @param string|null $nameReference
      *
      * @return self
      */
-    public function setNameReference(string $nameReference): self
+    public function setNameReference(?string $nameReference): self
     {
         $this->nameReference = $nameReference;
 
@@ -276,9 +276,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     /**
      * The passenger type code associated with the particular passenger.
      *
-     * @return string
+     * @return string|null
      */
-    public function getPassengerType(): string
+    public function getPassengerType(): ?string
     {
         return $this->passengerType;
     }
@@ -286,11 +286,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     /**
      * The passenger type code associated with the particular passenger.
      *
-     * @param string $passengerType
+     * @param string|null $passengerType
      *
      * @return self
      */
-    public function setPassengerType(string $passengerType): self
+    public function setPassengerType(?string $passengerType): self
     {
         $this->passengerType = $passengerType;
 
@@ -300,9 +300,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     /**
      * The reference place holder.
      *
-     * @return string
+     * @return string|null
      */
-    public function getRPH(): string
+    public function getRPH(): ?string
     {
         return $this->rPH;
     }
@@ -310,11 +310,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     /**
      * The reference place holder.
      *
-     * @param string $rPH
+     * @param string|null $rPH
      *
      * @return self
      */
-    public function setRPH(string $rPH): self
+    public function setRPH(?string $rPH): self
     {
         $this->rPH = $rPH;
 
@@ -324,9 +324,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     /**
      * The reference ID.
      *
-     * @return string
+     * @return string|null
      */
-    public function getId(): string
+    public function getId(): ?string
     {
         return $this->id;
     }
@@ -334,11 +334,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     /**
      * The reference ID.
      *
-     * @param string $id
+     * @param string|null $id
      *
      * @return self
      */
-    public function setId(string $id): self
+    public function setId(?string $id): self
     {
         $this->id = $id;
 
@@ -348,9 +348,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     /**
      * Element ID.
      *
-     * @return string
+     * @return string|null
      */
-    public function getElementId(): string
+    public function getElementId(): ?string
     {
         return $this->elementId;
     }
@@ -358,11 +358,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     /**
      * Element ID.
      *
-     * @param string $elementId
+     * @param string|null $elementId
      *
      * @return self
      */
-    public function setElementId(string $elementId): self
+    public function setElementId(?string $elementId): self
     {
         $this->elementId = $elementId;
 

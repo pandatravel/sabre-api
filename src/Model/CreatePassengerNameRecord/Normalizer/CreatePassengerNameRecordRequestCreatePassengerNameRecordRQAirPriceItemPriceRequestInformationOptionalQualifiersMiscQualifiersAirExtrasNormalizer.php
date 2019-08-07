@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\CreatePassengerNameRecord\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -36,41 +35,41 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersAirExtras();
-        if (property_exists($data, 'CustLoyalty')) {
+        if (property_exists($data, 'CustLoyalty') && $data->{'CustLoyalty'} !== null) {
             $values = [];
             foreach ($data->{'CustLoyalty'} as $value) {
                 $values[] = $this->denormalizer->denormalize($value, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersAirExtrasCustLoyaltyItem', 'json', $context);
             }
             $object->setCustLoyalty($values);
         }
-        if (property_exists($data, 'Qualifier')) {
+        if (property_exists($data, 'Qualifier') && $data->{'Qualifier'} !== null) {
             $values_1 = [];
             foreach ($data->{'Qualifier'} as $value_1) {
                 $values_1[] = $value_1;
             }
             $object->setQualifier($values_1);
         }
-        if (property_exists($data, 'SSR_Code')) {
+        if (property_exists($data, 'SSR_Code') && $data->{'SSR_Code'} !== null) {
             $values_2 = [];
             foreach ($data->{'SSR_Code'} as $value_2) {
                 $values_2[] = $value_2;
             }
             $object->setSSRCode($values_2);
         }
-        if (property_exists($data, 'Ticketing')) {
+        if (property_exists($data, 'Ticketing') && $data->{'Ticketing'} !== null) {
             $values_3 = [];
             foreach ($data->{'Ticketing'} as $value_3) {
                 $values_3[] = $this->denormalizer->denormalize($value_3, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersAirExtrasTicketingItem', 'json', $context);
             }
             $object->setTicketing($values_3);
         }
-        if (property_exists($data, 'Ind')) {
+        if (property_exists($data, 'Ind') && $data->{'Ind'} !== null) {
             $object->setInd($data->{'Ind'});
         }
-        if (property_exists($data, 'Summary')) {
+        if (property_exists($data, 'Summary') && $data->{'Summary'} !== null) {
             $object->setSummary($data->{'Summary'});
         }
 

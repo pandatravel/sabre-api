@@ -30,9 +30,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSou
     /**
      * The agency state or province name.
      *
-     * @return string
+     * @return string|null
      */
-    public function getContent(): string
+    public function getContent(): ?string
     {
         return $this->content;
     }
@@ -40,11 +40,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSou
     /**
      * The agency state or province name.
      *
-     * @param string $content
+     * @param string|null $content
      *
      * @return self
      */
-    public function setContent(string $content): self
+    public function setContent(?string $content): self
     {
         $this->content = $content;
 
@@ -54,9 +54,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSou
     /**
      * The agency state or province code.
      *
-     * @return string
+     * @return string|null
      */
-    public function getStateCode(): string
+    public function getStateCode(): ?string
     {
         return $this->stateCode;
     }
@@ -64,11 +64,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSou
     /**
      * The agency state or province code.
      *
-     * @param string $stateCode
+     * @param string|null $stateCode
      *
      * @return self
      */
-    public function setStateCode(string $stateCode): self
+    public function setStateCode(?string $stateCode): self
     {
         $this->stateCode = $stateCode;
 

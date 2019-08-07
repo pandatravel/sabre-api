@@ -22,7 +22,8 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDe
     protected $code;
     /**
      * Used to specify the flight number.
-     * 'OPEN' can also be passed if the user desires an open space ticket.
+    'OPEN' can also be passed if the user desires an open space ticket.
+
      *
      * @var string
      */
@@ -31,9 +32,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDe
     /**
      * Used to specify the marketing airline code.
      *
-     * @return string
+     * @return string|null
      */
-    public function getCode(): string
+    public function getCode(): ?string
     {
         return $this->code;
     }
@@ -41,11 +42,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDe
     /**
      * Used to specify the marketing airline code.
      *
-     * @param string $code
+     * @param string|null $code
      *
      * @return self
      */
-    public function setCode(string $code): self
+    public function setCode(?string $code): self
     {
         $this->code = $code;
 
@@ -54,24 +55,26 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDe
 
     /**
      * Used to specify the flight number.
-     * 'OPEN' can also be passed if the user desires an open space ticket.
+    'OPEN' can also be passed if the user desires an open space ticket.
+
      *
-     * @return string
+     * @return string|null
      */
-    public function getFlightNumber(): string
+    public function getFlightNumber(): ?string
     {
         return $this->flightNumber;
     }
 
     /**
      * Used to specify the flight number.
-     * 'OPEN' can also be passed if the user desires an open space ticket.
+    'OPEN' can also be passed if the user desires an open space ticket.
+
      *
-     * @param string $flightNumber
+     * @param string|null $flightNumber
      *
      * @return self
      */
-    public function setFlightNumber(string $flightNumber): self
+    public function setFlightNumber(?string $flightNumber): self
     {
         $this->flightNumber = $flightNumber;
 

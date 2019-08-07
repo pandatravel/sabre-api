@@ -52,9 +52,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to instruct the system to break the fare at a specified segment.
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersItineraryOptionsBreakFareItem[]
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersItineraryOptionsBreakFareItem[]|null
      */
-    public function getBreakFare(): array
+    public function getBreakFare(): ?array
     {
         return $this->breakFare;
     }
@@ -62,11 +62,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to instruct the system to break the fare at a specified segment.
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersItineraryOptionsBreakFareItem[] $breakFare
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersItineraryOptionsBreakFareItem[]|null $breakFare
      *
      * @return self
      */
-    public function setBreakFare(array $breakFare): self
+    public function setBreakFare(?array $breakFare): self
     {
         $this->breakFare = $breakFare;
 
@@ -76,9 +76,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to instruct the system to force a connection at a specified segment.
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersItineraryOptionsForceConnectionItem[]
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersItineraryOptionsForceConnectionItem[]|null
      */
-    public function getForceConnection(): array
+    public function getForceConnection(): ?array
     {
         return $this->forceConnection;
     }
@@ -86,11 +86,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to instruct the system to force a connection at a specified segment.
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersItineraryOptionsForceConnectionItem[] $forceConnection
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersItineraryOptionsForceConnectionItem[]|null $forceConnection
      *
      * @return self
      */
-    public function setForceConnection(array $forceConnection): self
+    public function setForceConnection(?array $forceConnection): self
     {
         $this->forceConnection = $forceConnection;
 
@@ -100,9 +100,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to instruct the system to force a stopover at a specified segment.
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersItineraryOptionsForceStopOverItem[]
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersItineraryOptionsForceStopOverItem[]|null
      */
-    public function getForceStopOver(): array
+    public function getForceStopOver(): ?array
     {
         return $this->forceStopOver;
     }
@@ -110,11 +110,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to instruct the system to force a stopover at a specified segment.
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersItineraryOptionsForceStopOverItem[] $forceStopOver
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersItineraryOptionsForceStopOverItem[]|null $forceStopOver
      *
      * @return self
      */
-    public function setForceStopOver(array $forceStopOver): self
+    public function setForceStopOver(?array $forceStopOver): self
     {
         $this->forceStopOver = $forceStopOver;
 
@@ -124,9 +124,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to instruct the system to override a fare break.
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersItineraryOptionsOverrideBreakItem[]
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersItineraryOptionsOverrideBreakItem[]|null
      */
-    public function getOverrideBreak(): array
+    public function getOverrideBreak(): ?array
     {
         return $this->overrideBreak;
     }
@@ -134,11 +134,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to instruct the system to override a fare break.
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersItineraryOptionsOverrideBreakItem[] $overrideBreak
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersItineraryOptionsOverrideBreakItem[]|null $overrideBreak
      *
      * @return self
      */
-    public function setOverrideBreak(array $overrideBreak): self
+    public function setOverrideBreak(?array $overrideBreak): self
     {
         $this->overrideBreak = $overrideBreak;
 
@@ -148,9 +148,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to instruct the system to price specified itinerary segments.
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersItineraryOptionsSegmentSelectItem[]
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersItineraryOptionsSegmentSelectItem[]|null
      */
-    public function getSegmentSelect(): array
+    public function getSegmentSelect(): ?array
     {
         return $this->segmentSelect;
     }
@@ -158,11 +158,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to instruct the system to price specified itinerary segments.
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersItineraryOptionsSegmentSelectItem[] $segmentSelect
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersItineraryOptionsSegmentSelectItem[]|null $segmentSelect
      *
      * @return self
      */
-    public function setSegmentSelect(array $segmentSelect): self
+    public function setSegmentSelect(?array $segmentSelect): self
     {
         $this->segmentSelect = $segmentSelect;
 
@@ -170,19 +170,19 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     }
 
     /**
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersItineraryOptionsSideTrip
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersItineraryOptionsSideTrip|null
      */
-    public function getSideTrip(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersItineraryOptionsSideTrip
+    public function getSideTrip(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersItineraryOptionsSideTrip
     {
         return $this->sideTrip;
     }
 
     /**
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersItineraryOptionsSideTrip $sideTrip
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersItineraryOptionsSideTrip|null $sideTrip
      *
      * @return self
      */
-    public function setSideTrip(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersItineraryOptionsSideTrip $sideTrip): self
+    public function setSideTrip(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersItineraryOptionsSideTrip $sideTrip): self
     {
         $this->sideTrip = $sideTrip;
 

@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\CreatePassengerNameRecord\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -36,28 +35,28 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingN
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessing();
-        if (property_exists($data, 'ARUNK')) {
+        if (property_exists($data, 'ARUNK') && $data->{'ARUNK'} !== null) {
             $object->setARUNK($this->denormalizer->denormalize($data->{'ARUNK'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingARUNK', 'json', $context));
         }
-        if (property_exists($data, 'QueuePlace')) {
+        if (property_exists($data, 'QueuePlace') && $data->{'QueuePlace'} !== null) {
             $object->setQueuePlace($this->denormalizer->denormalize($data->{'QueuePlace'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingQueuePlace', 'json', $context));
         }
-        if (property_exists($data, 'EndTransaction')) {
+        if (property_exists($data, 'EndTransaction') && $data->{'EndTransaction'} !== null) {
             $object->setEndTransaction($this->denormalizer->denormalize($data->{'EndTransaction'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransaction', 'json', $context));
         }
-        if (property_exists($data, 'PostBookingHKValidation')) {
+        if (property_exists($data, 'PostBookingHKValidation') && $data->{'PostBookingHKValidation'} !== null) {
             $object->setPostBookingHKValidation($this->denormalizer->denormalize($data->{'PostBookingHKValidation'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingPostBookingHKValidation', 'json', $context));
         }
-        if (property_exists($data, 'WaitForAirlineRecLoc')) {
+        if (property_exists($data, 'WaitForAirlineRecLoc') && $data->{'WaitForAirlineRecLoc'} !== null) {
             $object->setWaitForAirlineRecLoc($this->denormalizer->denormalize($data->{'WaitForAirlineRecLoc'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingWaitForAirlineRecLoc', 'json', $context));
         }
-        if (property_exists($data, 'RedisplayReservation')) {
+        if (property_exists($data, 'RedisplayReservation') && $data->{'RedisplayReservation'} !== null) {
             $object->setRedisplayReservation($this->denormalizer->denormalize($data->{'RedisplayReservation'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingRedisplayReservation', 'json', $context));
         }
-        if (property_exists($data, 'unmaskCreditCard')) {
+        if (property_exists($data, 'unmaskCreditCard') && $data->{'unmaskCreditCard'} !== null) {
             $object->setUnmaskCreditCard($data->{'unmaskCreditCard'});
         }
 

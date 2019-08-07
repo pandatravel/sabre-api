@@ -42,9 +42,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     /**
      * The associated passenger name record locator.
      *
-     * @return string
+     * @return string|null
      */
-    public function getRecordLocator(): string
+    public function getRecordLocator(): ?string
     {
         return $this->recordLocator;
     }
@@ -52,11 +52,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     /**
      * The associated passenger name record locator.
      *
-     * @param string $recordLocator
+     * @param string|null $recordLocator
      *
      * @return self
      */
-    public function setRecordLocator(string $recordLocator): self
+    public function setRecordLocator(?string $recordLocator): self
     {
         $this->recordLocator = $recordLocator;
 
@@ -66,9 +66,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     /**
      * The number of seats in the Associated PNR.
      *
-     * @return string
+     * @return string|null
      */
-    public function getNumberOfSeats(): string
+    public function getNumberOfSeats(): ?string
     {
         return $this->numberOfSeats;
     }
@@ -76,11 +76,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     /**
      * The number of seats in the Associated PNR.
      *
-     * @param string $numberOfSeats
+     * @param string|null $numberOfSeats
      *
      * @return self
      */
-    public function setNumberOfSeats(string $numberOfSeats): self
+    public function setNumberOfSeats(?string $numberOfSeats): self
     {
         $this->numberOfSeats = $numberOfSeats;
 
@@ -90,9 +90,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     /**
      * The ticketing time limit for the Associated PNR.
      *
-     * @return string
+     * @return string|null
      */
-    public function getTicketingTimeLimitInfo(): string
+    public function getTicketingTimeLimitInfo(): ?string
     {
         return $this->ticketingTimeLimitInfo;
     }
@@ -100,11 +100,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     /**
      * The ticketing time limit for the Associated PNR.
      *
-     * @param string $ticketingTimeLimitInfo
+     * @param string|null $ticketingTimeLimitInfo
      *
      * @return self
      */
-    public function setTicketingTimeLimitInfo(string $ticketingTimeLimitInfo): self
+    public function setTicketingTimeLimitInfo(?string $ticketingTimeLimitInfo): self
     {
         $this->ticketingTimeLimitInfo = $ticketingTimeLimitInfo;
 
@@ -114,9 +114,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     /**
      * 'FreeText' is used to return miscellaneous free text associated with the particular Associated PNR.
      *
-     * @return string
+     * @return string|null
      */
-    public function getFreeText(): string
+    public function getFreeText(): ?string
     {
         return $this->freeText;
     }
@@ -124,11 +124,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     /**
      * 'FreeText' is used to return miscellaneous free text associated with the particular Associated PNR.
      *
-     * @param string $freeText
+     * @param string|null $freeText
      *
      * @return self
      */
-    public function setFreeText(string $freeText): self
+    public function setFreeText(?string $freeText): self
     {
         $this->freeText = $freeText;
 

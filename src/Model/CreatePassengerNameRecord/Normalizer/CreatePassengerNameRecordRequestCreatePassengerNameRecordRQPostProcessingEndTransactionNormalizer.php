@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\CreatePassengerNameRecord\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -36,13 +35,13 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingE
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransaction();
-        if (property_exists($data, 'Source')) {
+        if (property_exists($data, 'Source') && $data->{'Source'} !== null) {
             $object->setSource($this->denormalizer->denormalize($data->{'Source'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionSource', 'json', $context));
         }
-        if (property_exists($data, 'Email')) {
+        if (property_exists($data, 'Email') && $data->{'Email'} !== null) {
             $object->setEmail($this->denormalizer->denormalize($data->{'Email'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmail', 'json', $context));
         }
 

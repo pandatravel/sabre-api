@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\CreatePassengerNameRecord\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -36,16 +35,16 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersBaggageAllowanceItem();
-        if (property_exists($data, 'Segment')) {
+        if (property_exists($data, 'Segment') && $data->{'Segment'} !== null) {
             $object->setSegment($this->denormalizer->denormalize($data->{'Segment'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersBaggageAllowanceItemSegment', 'json', $context));
         }
-        if (property_exists($data, 'Number')) {
+        if (property_exists($data, 'Number') && $data->{'Number'} !== null) {
             $object->setNumber($data->{'Number'});
         }
-        if (property_exists($data, 'Weight')) {
+        if (property_exists($data, 'Weight') && $data->{'Weight'} !== null) {
             $object->setWeight($data->{'Weight'});
         }
 

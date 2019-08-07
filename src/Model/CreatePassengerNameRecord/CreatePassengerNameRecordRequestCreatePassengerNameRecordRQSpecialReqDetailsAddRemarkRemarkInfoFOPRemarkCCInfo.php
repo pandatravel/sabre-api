@@ -30,9 +30,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     /**
      * The payment card details.
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAddRemarkRemarkInfoFOPRemarkCCInfoPaymentCard
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAddRemarkRemarkInfoFOPRemarkCCInfoPaymentCard|null
      */
-    public function getPaymentCard(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAddRemarkRemarkInfoFOPRemarkCCInfoPaymentCard
+    public function getPaymentCard(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAddRemarkRemarkInfoFOPRemarkCCInfoPaymentCard
     {
         return $this->paymentCard;
     }
@@ -40,11 +40,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     /**
      * The payment card details.
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAddRemarkRemarkInfoFOPRemarkCCInfoPaymentCard $paymentCard
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAddRemarkRemarkInfoFOPRemarkCCInfoPaymentCard|null $paymentCard
      *
      * @return self
      */
-    public function setPaymentCard(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAddRemarkRemarkInfoFOPRemarkCCInfoPaymentCard $paymentCard): self
+    public function setPaymentCard(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAddRemarkRemarkInfoFOPRemarkCCInfoPaymentCard $paymentCard): self
     {
         $this->paymentCard = $paymentCard;
 
@@ -54,9 +54,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     /**
      * Used to specify whether or not to suppress credit card information on an itinerary.
      *
-     * @return bool
+     * @return bool|null
      */
-    public function getSuppress(): bool
+    public function getSuppress(): ?bool
     {
         return $this->suppress;
     }
@@ -64,11 +64,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     /**
      * Used to specify whether or not to suppress credit card information on an itinerary.
      *
-     * @param bool $suppress
+     * @param bool|null $suppress
      *
      * @return self
      */
-    public function setSuppress(bool $suppress): self
+    public function setSuppress(?bool $suppress): self
     {
         $this->suppress = $suppress;
 

@@ -60,9 +60,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
     /**
      * The agency address.
      *
-     * @return string
+     * @return string|null
      */
-    public function getAddressLine(): string
+    public function getAddressLine(): ?string
     {
         return $this->addressLine;
     }
@@ -70,11 +70,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
     /**
      * The agency address.
      *
-     * @param string $addressLine
+     * @param string|null $addressLine
      *
      * @return self
      */
-    public function setAddressLine(string $addressLine): self
+    public function setAddressLine(?string $addressLine): self
     {
         $this->addressLine = $addressLine;
 
@@ -84,9 +84,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
     /**
      * The agency city name.
      *
-     * @return string
+     * @return string|null
      */
-    public function getCityName(): string
+    public function getCityName(): ?string
     {
         return $this->cityName;
     }
@@ -94,11 +94,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
     /**
      * The agency city name.
      *
-     * @param string $cityName
+     * @param string|null $cityName
      *
      * @return self
      */
-    public function setCityName(string $cityName): self
+    public function setCityName(?string $cityName): self
     {
         $this->cityName = $cityName;
 
@@ -108,9 +108,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
     /**
      * The agency country code.
      *
-     * @return string
+     * @return string|null
      */
-    public function getCountryCode(): string
+    public function getCountryCode(): ?string
     {
         return $this->countryCode;
     }
@@ -118,11 +118,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
     /**
      * The agency country code.
      *
-     * @param string $countryCode
+     * @param string|null $countryCode
      *
      * @return self
      */
-    public function setCountryCode(string $countryCode): self
+    public function setCountryCode(?string $countryCode): self
     {
         $this->countryCode = $countryCode;
 
@@ -132,9 +132,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
     /**
      * The agency postal code.
      *
-     * @return string
+     * @return string|null
      */
-    public function getPostalCode(): string
+    public function getPostalCode(): ?string
     {
         return $this->postalCode;
     }
@@ -142,11 +142,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
     /**
      * The agency postal code.
      *
-     * @param string $postalCode
+     * @param string|null $postalCode
      *
      * @return self
      */
-    public function setPostalCode(string $postalCode): self
+    public function setPostalCode(?string $postalCode): self
     {
         $this->postalCode = $postalCode;
 
@@ -156,9 +156,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
     /**
      * The state, county or province details.
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoAgencyInfoAddressStateCountyProv
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoAgencyInfoAddressStateCountyProv|null
      */
-    public function getStateCountyProv(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoAgencyInfoAddressStateCountyProv
+    public function getStateCountyProv(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoAgencyInfoAddressStateCountyProv
     {
         return $this->stateCountyProv;
     }
@@ -166,11 +166,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
     /**
      * The state, county or province details.
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoAgencyInfoAddressStateCountyProv $stateCountyProv
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoAgencyInfoAddressStateCountyProv|null $stateCountyProv
      *
      * @return self
      */
-    public function setStateCountyProv(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoAgencyInfoAddressStateCountyProv $stateCountyProv): self
+    public function setStateCountyProv(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoAgencyInfoAddressStateCountyProv $stateCountyProv): self
     {
         $this->stateCountyProv = $stateCountyProv;
 
@@ -180,9 +180,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
     /**
      * The street number.
      *
-     * @return string
+     * @return string|null
      */
-    public function getStreetNmbr(): string
+    public function getStreetNmbr(): ?string
     {
         return $this->streetNmbr;
     }
@@ -190,11 +190,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
     /**
      * The street number.
      *
-     * @param string $streetNmbr
+     * @param string|null $streetNmbr
      *
      * @return self
      */
-    public function setStreetNmbr(string $streetNmbr): self
+    public function setStreetNmbr(?string $streetNmbr): self
     {
         $this->streetNmbr = $streetNmbr;
 
@@ -204,9 +204,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
     /**
      * Used to specify if the request is based upon a hosted or a non-hosted carrier.
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoAgencyInfoAddressVendorPrefs
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoAgencyInfoAddressVendorPrefs|null
      */
-    public function getVendorPrefs(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoAgencyInfoAddressVendorPrefs
+    public function getVendorPrefs(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoAgencyInfoAddressVendorPrefs
     {
         return $this->vendorPrefs;
     }
@@ -214,11 +214,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
     /**
      * Used to specify if the request is based upon a hosted or a non-hosted carrier.
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoAgencyInfoAddressVendorPrefs $vendorPrefs
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoAgencyInfoAddressVendorPrefs|null $vendorPrefs
      *
      * @return self
      */
-    public function setVendorPrefs(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoAgencyInfoAddressVendorPrefs $vendorPrefs): self
+    public function setVendorPrefs(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoAgencyInfoAddressVendorPrefs $vendorPrefs): self
     {
         $this->vendorPrefs = $vendorPrefs;
 

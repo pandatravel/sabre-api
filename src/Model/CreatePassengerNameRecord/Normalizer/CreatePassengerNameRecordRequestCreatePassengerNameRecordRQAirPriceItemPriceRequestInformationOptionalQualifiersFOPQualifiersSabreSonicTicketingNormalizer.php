@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\CreatePassengerNameRecord\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -36,16 +35,16 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketing();
-        if (property_exists($data, 'BasicFOP')) {
+        if (property_exists($data, 'BasicFOP') && $data->{'BasicFOP'} !== null) {
             $object->setBasicFOP($this->denormalizer->denormalize($data->{'BasicFOP'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingBasicFOP', 'json', $context));
         }
-        if (property_exists($data, 'EnhancedMultipleFOP')) {
+        if (property_exists($data, 'EnhancedMultipleFOP') && $data->{'EnhancedMultipleFOP'} !== null) {
             $object->setEnhancedMultipleFOP($this->denormalizer->denormalize($data->{'EnhancedMultipleFOP'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingEnhancedMultipleFOP', 'json', $context));
         }
-        if (property_exists($data, 'MultipleFOP')) {
+        if (property_exists($data, 'MultipleFOP') && $data->{'MultipleFOP'} !== null) {
             $object->setMultipleFOP($this->denormalizer->denormalize($data->{'MultipleFOP'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingMultipleFOP', 'json', $context));
         }
 

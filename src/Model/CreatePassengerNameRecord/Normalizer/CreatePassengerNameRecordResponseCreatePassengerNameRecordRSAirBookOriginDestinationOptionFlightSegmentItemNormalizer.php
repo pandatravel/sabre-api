@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\CreatePassengerNameRecord\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -36,40 +35,40 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginD
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginDestinationOptionFlightSegmentItem();
-        if (property_exists($data, 'DestinationLocation')) {
+        if (property_exists($data, 'DestinationLocation') && $data->{'DestinationLocation'} !== null) {
             $object->setDestinationLocation($this->denormalizer->denormalize($data->{'DestinationLocation'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginDestinationOptionFlightSegmentItemDestinationLocation', 'json', $context));
         }
-        if (property_exists($data, 'MarketingAirline')) {
+        if (property_exists($data, 'MarketingAirline') && $data->{'MarketingAirline'} !== null) {
             $object->setMarketingAirline($this->denormalizer->denormalize($data->{'MarketingAirline'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginDestinationOptionFlightSegmentItemMarketingAirline', 'json', $context));
         }
-        if (property_exists($data, 'MarriageGrp')) {
+        if (property_exists($data, 'MarriageGrp') && $data->{'MarriageGrp'} !== null) {
             $object->setMarriageGrp($this->denormalizer->denormalize($data->{'MarriageGrp'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginDestinationOptionFlightSegmentItemMarriageGrp', 'json', $context));
         }
-        if (property_exists($data, 'OriginLocation')) {
+        if (property_exists($data, 'OriginLocation') && $data->{'OriginLocation'} !== null) {
             $object->setOriginLocation($this->denormalizer->denormalize($data->{'OriginLocation'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginDestinationOptionFlightSegmentItemOriginLocation', 'json', $context));
         }
-        if (property_exists($data, 'ArrivalDateTime')) {
+        if (property_exists($data, 'ArrivalDateTime') && $data->{'ArrivalDateTime'} !== null) {
             $object->setArrivalDateTime($data->{'ArrivalDateTime'});
         }
-        if (property_exists($data, 'DepartureDateTime')) {
+        if (property_exists($data, 'DepartureDateTime') && $data->{'DepartureDateTime'} !== null) {
             $object->setDepartureDateTime($data->{'DepartureDateTime'});
         }
-        if (property_exists($data, 'eTicket')) {
+        if (property_exists($data, 'eTicket') && $data->{'eTicket'} !== null) {
             $object->setETicket($data->{'eTicket'});
         }
-        if (property_exists($data, 'FlightNumber')) {
+        if (property_exists($data, 'FlightNumber') && $data->{'FlightNumber'} !== null) {
             $object->setFlightNumber($data->{'FlightNumber'});
         }
-        if (property_exists($data, 'NumberInParty')) {
+        if (property_exists($data, 'NumberInParty') && $data->{'NumberInParty'} !== null) {
             $object->setNumberInParty($data->{'NumberInParty'});
         }
-        if (property_exists($data, 'ResBookDesigCode')) {
+        if (property_exists($data, 'ResBookDesigCode') && $data->{'ResBookDesigCode'} !== null) {
             $object->setResBookDesigCode($data->{'ResBookDesigCode'});
         }
-        if (property_exists($data, 'Status')) {
+        if (property_exists($data, 'Status') && $data->{'Status'} !== null) {
             $object->setStatus($data->{'Status'});
         }
 

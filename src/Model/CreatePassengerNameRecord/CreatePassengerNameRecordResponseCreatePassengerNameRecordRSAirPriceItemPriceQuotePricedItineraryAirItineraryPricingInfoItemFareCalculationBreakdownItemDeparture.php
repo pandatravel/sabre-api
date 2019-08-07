@@ -72,9 +72,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The city code.
      *
-     * @return string
+     * @return string|null
      */
-    public function getCityCode(): string
+    public function getCityCode(): ?string
     {
         return $this->cityCode;
     }
@@ -82,11 +82,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The city code.
      *
-     * @param string $cityCode
+     * @param string|null $cityCode
      *
      * @return self
      */
-    public function setCityCode(string $cityCode): self
+    public function setCityCode(?string $cityCode): self
     {
         $this->cityCode = $cityCode;
 
@@ -96,9 +96,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The airport code.
      *
-     * @return string
+     * @return string|null
      */
-    public function getAirportCode(): string
+    public function getAirportCode(): ?string
     {
         return $this->airportCode;
     }
@@ -106,11 +106,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The airport code.
      *
-     * @param string $airportCode
+     * @param string|null $airportCode
      *
      * @return self
      */
-    public function setAirportCode(string $airportCode): self
+    public function setAirportCode(?string $airportCode): self
     {
         $this->airportCode = $airportCode;
 
@@ -120,9 +120,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The type of side trip.
      *
-     * @return string
+     * @return string|null
      */
-    public function getSideTripIndicator(): string
+    public function getSideTripIndicator(): ?string
     {
         return $this->sideTripIndicator;
     }
@@ -130,11 +130,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The type of side trip.
      *
-     * @param string $sideTripIndicator
+     * @param string|null $sideTripIndicator
      *
      * @return self
      */
-    public function setSideTripIndicator(string $sideTripIndicator): self
+    public function setSideTripIndicator(?string $sideTripIndicator): self
     {
         $this->sideTripIndicator = $sideTripIndicator;
 
@@ -144,9 +144,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The airline code.
      *
-     * @return string
+     * @return string|null
      */
-    public function getAirlineCode(): string
+    public function getAirlineCode(): ?string
     {
         return $this->airlineCode;
     }
@@ -154,11 +154,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The airline code.
      *
-     * @param string $airlineCode
+     * @param string|null $airlineCode
      *
      * @return self
      */
-    public function setAirlineCode(string $airlineCode): self
+    public function setAirlineCode(?string $airlineCode): self
     {
         $this->airlineCode = $airlineCode;
 
@@ -168,9 +168,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The generic indicator associated with the particular flight segment.
      *
-     * @return string
+     * @return string|null
      */
-    public function getGenericInd(): string
+    public function getGenericInd(): ?string
     {
         return $this->genericInd;
     }
@@ -178,11 +178,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The generic indicator associated with the particular flight segment.
      *
-     * @param string $genericInd
+     * @param string|null $genericInd
      *
      * @return self
      */
-    public function setGenericInd(string $genericInd): self
+    public function setGenericInd(?string $genericInd): self
     {
         $this->genericInd = $genericInd;
 
@@ -192,9 +192,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The global indicator associated with the particular flight segment.
      *
-     * @return string
+     * @return string|null
      */
-    public function getGlobalInd(): string
+    public function getGlobalInd(): ?string
     {
         return $this->globalInd;
     }
@@ -202,11 +202,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The global indicator associated with the particular flight segment.
      *
-     * @param string $globalInd
+     * @param string|null $globalInd
      *
      * @return self
      */
-    public function setGlobalInd(string $globalInd): self
+    public function setGlobalInd(?string $globalInd): self
     {
         $this->globalInd = $globalInd;
 
@@ -216,9 +216,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The arrival city code.
      *
-     * @return string
+     * @return string|null
      */
-    public function getArrivalCityCode(): string
+    public function getArrivalCityCode(): ?string
     {
         return $this->arrivalCityCode;
     }
@@ -226,11 +226,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The arrival city code.
      *
-     * @param string $arrivalCityCode
+     * @param string|null $arrivalCityCode
      *
      * @return self
      */
-    public function setArrivalCityCode(string $arrivalCityCode): self
+    public function setArrivalCityCode(?string $arrivalCityCode): self
     {
         $this->arrivalCityCode = $arrivalCityCode;
 
@@ -240,9 +240,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The arrival airport code.
      *
-     * @return string
+     * @return string|null
      */
-    public function getArrivalAirportCode(): string
+    public function getArrivalAirportCode(): ?string
     {
         return $this->arrivalAirportCode;
     }
@@ -250,11 +250,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The arrival airport code.
      *
-     * @param string $arrivalAirportCode
+     * @param string|null $arrivalAirportCode
      *
      * @return self
      */
-    public function setArrivalAirportCode(string $arrivalAirportCode): self
+    public function setArrivalAirportCode(?string $arrivalAirportCode): self
     {
         $this->arrivalAirportCode = $arrivalAirportCode;
 
@@ -264,9 +264,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The information on fare construction city for an infant fare.
      *
-     * @return string
+     * @return string|null
      */
-    public function getInfantFareConstructionCity(): string
+    public function getInfantFareConstructionCity(): ?string
     {
         return $this->infantFareConstructionCity;
     }
@@ -274,11 +274,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The information on fare construction city for an infant fare.
      *
-     * @param string $infantFareConstructionCity
+     * @param string|null $infantFareConstructionCity
      *
      * @return self
      */
-    public function setInfantFareConstructionCity(string $infantFareConstructionCity): self
+    public function setInfantFareConstructionCity(?string $infantFareConstructionCity): self
     {
         $this->infantFareConstructionCity = $infantFareConstructionCity;
 

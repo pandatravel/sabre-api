@@ -16,7 +16,8 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsR
 {
     /**
      * The room extra 'Type'.
-     * Currently supported types are: Crib (26), Rollaway Bed (91) and Extra Person (131).
+    Currently supported types are: Crib (26), Rollaway Bed (91) and Extra Person (131).
+
      *
      * @var int
      */
@@ -36,24 +37,26 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsR
 
     /**
      * The room extra 'Type'.
-     * Currently supported types are: Crib (26), Rollaway Bed (91) and Extra Person (131).
+    Currently supported types are: Crib (26), Rollaway Bed (91) and Extra Person (131).
+
      *
-     * @return int
+     * @return int|null
      */
-    public function getType(): int
+    public function getType(): ?int
     {
         return $this->type;
     }
 
     /**
      * The room extra 'Type'.
-     * Currently supported types are: Crib (26), Rollaway Bed (91) and Extra Person (131).
+    Currently supported types are: Crib (26), Rollaway Bed (91) and Extra Person (131).
+
      *
-     * @param int $type
+     * @param int|null $type
      *
      * @return self
      */
-    public function setType(int $type): self
+    public function setType(?int $type): self
     {
         $this->type = $type;
 
@@ -63,9 +66,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsR
     /**
      * The room extra quantity.
      *
-     * @return int
+     * @return int|null
      */
-    public function getQuantity(): int
+    public function getQuantity(): ?int
     {
         return $this->quantity;
     }
@@ -73,11 +76,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsR
     /**
      * The room extra quantity.
      *
-     * @param int $quantity
+     * @param int|null $quantity
      *
      * @return self
      */
-    public function setQuantity(int $quantity): self
+    public function setQuantity(?int $quantity): self
     {
         $this->quantity = $quantity;
 
@@ -87,9 +90,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsR
     /**
      * The room extra amount.
      *
-     * @return float
+     * @return float|null
      */
-    public function getAmount(): float
+    public function getAmount(): ?float
     {
         return $this->amount;
     }
@@ -97,11 +100,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsR
     /**
      * The room extra amount.
      *
-     * @param float $amount
+     * @param float|null $amount
      *
      * @return self
      */
-    public function setAmount(float $amount): self
+    public function setAmount(?float $amount): self
     {
         $this->amount = $amount;
 

@@ -24,9 +24,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingR
     /**
      * 'waitInterval' is used to specify an interval that the system should wait in milliseconds before making redisplay service calls.
      *
-     * @return int
+     * @return int|null
      */
-    public function getWaitInterval(): int
+    public function getWaitInterval(): ?int
     {
         return $this->waitInterval;
     }
@@ -34,11 +34,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingR
     /**
      * 'waitInterval' is used to specify an interval that the system should wait in milliseconds before making redisplay service calls.
      *
-     * @param int $waitInterval
+     * @param int|null $waitInterval
      *
      * @return self
      */
-    public function setWaitInterval(int $waitInterval): self
+    public function setWaitInterval(?int $waitInterval): self
     {
         $this->waitInterval = $waitInterval;
 

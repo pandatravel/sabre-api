@@ -36,9 +36,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * Used to return commission contract details.
      *
-     * @return string
+     * @return string|null
      */
-    public function getCommissionContract(): string
+    public function getCommissionContract(): ?string
     {
         return $this->commissionContract;
     }
@@ -46,11 +46,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * Used to return commission contract details.
      *
-     * @param string $commissionContract
+     * @param string|null $commissionContract
      *
      * @return self
      */
-    public function setCommissionContract(string $commissionContract): self
+    public function setCommissionContract(?string $commissionContract): self
     {
         $this->commissionContract = $commissionContract;
 
@@ -60,9 +60,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * Used to return total priced commission value.
      *
-     * @return string
+     * @return string|null
      */
-    public function getTotalPricedCommission(): string
+    public function getTotalPricedCommission(): ?string
     {
         return $this->totalPricedCommission;
     }
@@ -70,11 +70,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * Used to return total priced commission value.
      *
-     * @param string $totalPricedCommission
+     * @param string|null $totalPricedCommission
      *
      * @return self
      */
-    public function setTotalPricedCommission(string $totalPricedCommission): self
+    public function setTotalPricedCommission(?string $totalPricedCommission): self
     {
         $this->totalPricedCommission = $totalPricedCommission;
 
@@ -84,9 +84,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * Used to return related validating carrier details.
      *
-     * @return string
+     * @return string|null
      */
-    public function getValidatingCarrier(): string
+    public function getValidatingCarrier(): ?string
     {
         return $this->validatingCarrier;
     }
@@ -94,11 +94,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * Used to return related validating carrier details.
      *
-     * @param string $validatingCarrier
+     * @param string|null $validatingCarrier
      *
      * @return self
      */
-    public function setValidatingCarrier(string $validatingCarrier): self
+    public function setValidatingCarrier(?string $validatingCarrier): self
     {
         $this->validatingCarrier = $validatingCarrier;
 

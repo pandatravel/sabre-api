@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\CreatePassengerNameRecord\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -36,19 +35,19 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoAdvancePassengerItemDocumentVisa();
-        if (property_exists($data, 'ApplicableCountry')) {
+        if (property_exists($data, 'ApplicableCountry') && $data->{'ApplicableCountry'} !== null) {
             $object->setApplicableCountry($data->{'ApplicableCountry'});
         }
-        if (property_exists($data, 'PlaceOfBirth')) {
+        if (property_exists($data, 'PlaceOfBirth') && $data->{'PlaceOfBirth'} !== null) {
             $object->setPlaceOfBirth($data->{'PlaceOfBirth'});
         }
-        if (property_exists($data, 'PlaceOfIssue')) {
+        if (property_exists($data, 'PlaceOfIssue') && $data->{'PlaceOfIssue'} !== null) {
             $object->setPlaceOfIssue($data->{'PlaceOfIssue'});
         }
-        if (property_exists($data, 'IssueDate')) {
+        if (property_exists($data, 'IssueDate') && $data->{'IssueDate'} !== null) {
             $object->setIssueDate($data->{'IssueDate'});
         }
 

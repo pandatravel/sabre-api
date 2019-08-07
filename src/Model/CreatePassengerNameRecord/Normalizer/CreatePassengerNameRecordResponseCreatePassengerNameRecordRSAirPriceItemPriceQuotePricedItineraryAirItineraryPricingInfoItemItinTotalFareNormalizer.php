@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\CreatePassengerNameRecord\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -36,50 +35,50 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFare();
-        if (property_exists($data, 'BaggageInfo')) {
+        if (property_exists($data, 'BaggageInfo') && $data->{'BaggageInfo'} !== null) {
             $object->setBaggageInfo($this->denormalizer->denormalize($data->{'BaggageInfo'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareBaggageInfo', 'json', $context));
         }
-        if (property_exists($data, 'BaseFare')) {
+        if (property_exists($data, 'BaseFare') && $data->{'BaseFare'} !== null) {
             $object->setBaseFare($this->denormalizer->denormalize($data->{'BaseFare'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareBaseFare', 'json', $context));
         }
-        if (property_exists($data, 'Commission')) {
+        if (property_exists($data, 'Commission') && $data->{'Commission'} !== null) {
             $object->setCommission($this->denormalizer->denormalize($data->{'Commission'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareCommission', 'json', $context));
         }
-        if (property_exists($data, 'Construction')) {
+        if (property_exists($data, 'Construction') && $data->{'Construction'} !== null) {
             $object->setConstruction($this->denormalizer->denormalize($data->{'Construction'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareConstruction', 'json', $context));
         }
-        if (property_exists($data, 'DiscountTypeMessage')) {
+        if (property_exists($data, 'DiscountTypeMessage') && $data->{'DiscountTypeMessage'} !== null) {
             $object->setDiscountTypeMessage($data->{'DiscountTypeMessage'});
         }
-        if (property_exists($data, 'Endorsements')) {
+        if (property_exists($data, 'Endorsements') && $data->{'Endorsements'} !== null) {
             $object->setEndorsements($this->denormalizer->denormalize($data->{'Endorsements'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareEndorsements', 'json', $context));
         }
-        if (property_exists($data, 'EquivFare')) {
+        if (property_exists($data, 'EquivFare') && $data->{'EquivFare'} !== null) {
             $object->setEquivFare($this->denormalizer->denormalize($data->{'EquivFare'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareEquivFare', 'json', $context));
         }
-        if (property_exists($data, 'PrivateFare')) {
+        if (property_exists($data, 'PrivateFare') && $data->{'PrivateFare'} !== null) {
             $object->setPrivateFare($this->denormalizer->denormalize($data->{'PrivateFare'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFarePrivateFare', 'json', $context));
         }
-        if (property_exists($data, 'Taxes')) {
+        if (property_exists($data, 'Taxes') && $data->{'Taxes'} !== null) {
             $object->setTaxes($this->denormalizer->denormalize($data->{'Taxes'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareTaxes', 'json', $context));
         }
-        if (property_exists($data, 'TotalFare')) {
+        if (property_exists($data, 'TotalFare') && $data->{'TotalFare'} !== null) {
             $object->setTotalFare($this->denormalizer->denormalize($data->{'TotalFare'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareTotalFare', 'json', $context));
         }
-        if (property_exists($data, 'Warnings')) {
+        if (property_exists($data, 'Warnings') && $data->{'Warnings'} !== null) {
             $object->setWarnings($this->denormalizer->denormalize($data->{'Warnings'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareWarnings', 'json', $context));
         }
-        if (property_exists($data, 'SellingFareData')) {
+        if (property_exists($data, 'SellingFareData') && $data->{'SellingFareData'} !== null) {
             $values = [];
             foreach ($data->{'SellingFareData'} as $value) {
                 $values[] = $this->denormalizer->denormalize($value, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareSellingFareDataItem', 'json', $context);
             }
             $object->setSellingFareData($values);
         }
-        if (property_exists($data, 'NonRefundableInd')) {
+        if (property_exists($data, 'NonRefundableInd') && $data->{'NonRefundableInd'} !== null) {
             $object->setNonRefundableInd($data->{'NonRefundableInd'});
         }
 

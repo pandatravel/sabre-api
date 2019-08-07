@@ -40,7 +40,8 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     protected $sSRCode;
     /**
      * The SSR type associated with the particular SSR segment.
-     * Example: WCHR.
+    Example: WCHR.
+
      *
      * @var string
      */
@@ -49,9 +50,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     /**
      * The airline information.
      *
-     * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItinerarySpecialServiceInfoItemServiceAirline
+     * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItinerarySpecialServiceInfoItemServiceAirline|null
      */
-    public function getAirline(): CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItinerarySpecialServiceInfoItemServiceAirline
+    public function getAirline(): ?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItinerarySpecialServiceInfoItemServiceAirline
     {
         return $this->airline;
     }
@@ -59,11 +60,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     /**
      * The airline information.
      *
-     * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItinerarySpecialServiceInfoItemServiceAirline $airline
+     * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItinerarySpecialServiceInfoItemServiceAirline|null $airline
      *
      * @return self
      */
-    public function setAirline(CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItinerarySpecialServiceInfoItemServiceAirline $airline): self
+    public function setAirline(?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItinerarySpecialServiceInfoItemServiceAirline $airline): self
     {
         $this->airline = $airline;
 
@@ -73,9 +74,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     /**
      * The passenger name information.
      *
-     * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItinerarySpecialServiceInfoItemServicePersonNameItem[]
+     * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItinerarySpecialServiceInfoItemServicePersonNameItem[]|null
      */
-    public function getPersonName(): array
+    public function getPersonName(): ?array
     {
         return $this->personName;
     }
@@ -83,11 +84,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     /**
      * The passenger name information.
      *
-     * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItinerarySpecialServiceInfoItemServicePersonNameItem[] $personName
+     * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItinerarySpecialServiceInfoItemServicePersonNameItem[]|null $personName
      *
      * @return self
      */
-    public function setPersonName(array $personName): self
+    public function setPersonName(?array $personName): self
     {
         $this->personName = $personName;
 
@@ -97,9 +98,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     /**
      * The miscellaneous SSR-related text information.
      *
-     * @return string[]
+     * @return string[]|null
      */
-    public function getText(): array
+    public function getText(): ?array
     {
         return $this->text;
     }
@@ -107,11 +108,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     /**
      * The miscellaneous SSR-related text information.
      *
-     * @param string[] $text
+     * @param string[]|null $text
      *
      * @return self
      */
-    public function setText(array $text): self
+    public function setText(?array $text): self
     {
         $this->text = $text;
 
@@ -121,9 +122,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     /**
      * The SSR code associated with the particular SSR segment.
      *
-     * @return string
+     * @return string|null
      */
-    public function getSSRCode(): string
+    public function getSSRCode(): ?string
     {
         return $this->sSRCode;
     }
@@ -131,11 +132,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     /**
      * The SSR code associated with the particular SSR segment.
      *
-     * @param string $sSRCode
+     * @param string|null $sSRCode
      *
      * @return self
      */
-    public function setSSRCode(string $sSRCode): self
+    public function setSSRCode(?string $sSRCode): self
     {
         $this->sSRCode = $sSRCode;
 
@@ -144,24 +145,26 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
 
     /**
      * The SSR type associated with the particular SSR segment.
-     * Example: WCHR.
+    Example: WCHR.
+
      *
-     * @return string
+     * @return string|null
      */
-    public function getSSRType(): string
+    public function getSSRType(): ?string
     {
         return $this->sSRType;
     }
 
     /**
      * The SSR type associated with the particular SSR segment.
-     * Example: WCHR.
+    Example: WCHR.
+
      *
-     * @param string $sSRType
+     * @param string|null $sSRType
      *
      * @return self
      */
-    public function setSSRType(string $sSRType): self
+    public function setSSRType(?string $sSRType): self
     {
         $this->sSRType = $sSRType;
 

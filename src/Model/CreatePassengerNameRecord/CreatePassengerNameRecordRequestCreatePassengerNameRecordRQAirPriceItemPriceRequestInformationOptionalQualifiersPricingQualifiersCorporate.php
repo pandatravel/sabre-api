@@ -30,9 +30,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to specify a corporate ID to price with.
      *
-     * @return string[]
+     * @return string[]|null
      */
-    public function getID(): array
+    public function getID(): ?array
     {
         return $this->iD;
     }
@@ -40,11 +40,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to specify a corporate ID to price with.
      *
-     * @param string[] $iD
+     * @param string[]|null $iD
      *
      * @return self
      */
-    public function setID(array $iD): self
+    public function setID(?array $iD): self
     {
         $this->iD = $iD;
 
@@ -54,9 +54,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to instruct the system to price with corporate fares only.
      *
-     * @return string
+     * @return string|null
      */
-    public function getForce(): string
+    public function getForce(): ?string
     {
         return $this->force;
     }
@@ -64,11 +64,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to instruct the system to price with corporate fares only.
      *
-     * @param string $force
+     * @param string|null $force
      *
      * @return self
      */
-    public function setForce(string $force): self
+    public function setForce(?string $force): self
     {
         $this->force = $force;
 

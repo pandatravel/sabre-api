@@ -40,7 +40,8 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
     protected $shortText;
     /**
      * Used to specify the type of email address.
-     * Acceptable values for 'Type' are: 'BC' for blind copy, 'CC' for carbon copy, 'FR' for from, or 'To' for to.
+    Acceptable values for 'Type' are: 'BC' for blind copy, 'CC' for carbon copy, 'FR' for from, or 'To' for to.
+
      *
      * @var string
      */
@@ -49,9 +50,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
     /**
      * Used to add an email address into the record.
      *
-     * @return string
+     * @return string|null
      */
-    public function getAddress(): string
+    public function getAddress(): ?string
     {
         return $this->address;
     }
@@ -59,11 +60,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
     /**
      * Used to add an email address into the record.
      *
-     * @param string $address
+     * @param string|null $address
      *
      * @return self
      */
-    public function setAddress(string $address): self
+    public function setAddress(?string $address): self
     {
         $this->address = $address;
 
@@ -73,9 +74,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
     /**
      * Used to override the language in the agency's Travel Journal Record (TJR).
      *
-     * @return string
+     * @return string|null
      */
-    public function getLanguageOverride(): string
+    public function getLanguageOverride(): ?string
     {
         return $this->languageOverride;
     }
@@ -83,11 +84,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
     /**
      * Used to override the language in the agency's Travel Journal Record (TJR).
      *
-     * @param string $languageOverride
+     * @param string|null $languageOverride
      *
      * @return self
      */
-    public function setLanguageOverride(string $languageOverride): self
+    public function setLanguageOverride(?string $languageOverride): self
     {
         $this->languageOverride = $languageOverride;
 
@@ -97,9 +98,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
     /**
      * Used to specify a passenger name number.
      *
-     * @return string
+     * @return string|null
      */
-    public function getNameNumber(): string
+    public function getNameNumber(): ?string
     {
         return $this->nameNumber;
     }
@@ -107,11 +108,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
     /**
      * Used to specify a passenger name number.
      *
-     * @param string $nameNumber
+     * @param string|null $nameNumber
      *
      * @return self
      */
-    public function setNameNumber(string $nameNumber): self
+    public function setNameNumber(?string $nameNumber): self
     {
         $this->nameNumber = $nameNumber;
 
@@ -121,9 +122,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
     /**
      * Used to specify the miscellaneous email address-related free text information.
      *
-     * @return string
+     * @return string|null
      */
-    public function getShortText(): string
+    public function getShortText(): ?string
     {
         return $this->shortText;
     }
@@ -131,11 +132,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
     /**
      * Used to specify the miscellaneous email address-related free text information.
      *
-     * @param string $shortText
+     * @param string|null $shortText
      *
      * @return self
      */
-    public function setShortText(string $shortText): self
+    public function setShortText(?string $shortText): self
     {
         $this->shortText = $shortText;
 
@@ -144,24 +145,26 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
 
     /**
      * Used to specify the type of email address.
-     * Acceptable values for 'Type' are: 'BC' for blind copy, 'CC' for carbon copy, 'FR' for from, or 'To' for to.
+    Acceptable values for 'Type' are: 'BC' for blind copy, 'CC' for carbon copy, 'FR' for from, or 'To' for to.
+
      *
-     * @return string
+     * @return string|null
      */
-    public function getType(): string
+    public function getType(): ?string
     {
         return $this->type;
     }
 
     /**
      * Used to specify the type of email address.
-     * Acceptable values for 'Type' are: 'BC' for blind copy, 'CC' for carbon copy, 'FR' for from, or 'To' for to.
+    Acceptable values for 'Type' are: 'BC' for blind copy, 'CC' for carbon copy, 'FR' for from, or 'To' for to.
+
      *
-     * @param string $type
+     * @param string|null $type
      *
      * @return self
      */
-    public function setType(string $type): self
+    public function setType(?string $type): self
     {
         $this->type = $type;
 

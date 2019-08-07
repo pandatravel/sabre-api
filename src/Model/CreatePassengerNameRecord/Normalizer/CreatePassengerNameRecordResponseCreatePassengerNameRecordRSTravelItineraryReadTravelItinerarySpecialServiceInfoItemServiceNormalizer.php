@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\CreatePassengerNameRecord\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -36,30 +35,30 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItinerarySpecialServiceInfoItemService();
-        if (property_exists($data, 'Airline')) {
+        if (property_exists($data, 'Airline') && $data->{'Airline'} !== null) {
             $object->setAirline($this->denormalizer->denormalize($data->{'Airline'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItinerarySpecialServiceInfoItemServiceAirline', 'json', $context));
         }
-        if (property_exists($data, 'PersonName')) {
+        if (property_exists($data, 'PersonName') && $data->{'PersonName'} !== null) {
             $values = [];
             foreach ($data->{'PersonName'} as $value) {
                 $values[] = $this->denormalizer->denormalize($value, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItinerarySpecialServiceInfoItemServicePersonNameItem', 'json', $context);
             }
             $object->setPersonName($values);
         }
-        if (property_exists($data, 'Text')) {
+        if (property_exists($data, 'Text') && $data->{'Text'} !== null) {
             $values_1 = [];
             foreach ($data->{'Text'} as $value_1) {
                 $values_1[] = $value_1;
             }
             $object->setText($values_1);
         }
-        if (property_exists($data, 'SSR_Code')) {
+        if (property_exists($data, 'SSR_Code') && $data->{'SSR_Code'} !== null) {
             $object->setSSRCode($data->{'SSR_Code'});
         }
-        if (property_exists($data, 'SSR_Type')) {
+        if (property_exists($data, 'SSR_Type') && $data->{'SSR_Type'} !== null) {
             $object->setSSRType($data->{'SSR_Type'});
         }
 

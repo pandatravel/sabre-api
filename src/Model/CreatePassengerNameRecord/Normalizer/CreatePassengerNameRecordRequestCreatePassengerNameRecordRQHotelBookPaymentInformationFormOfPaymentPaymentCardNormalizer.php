@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\CreatePassengerNameRecord\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -36,34 +35,34 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymen
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentPaymentCard();
-        if (property_exists($data, 'PaymentType')) {
+        if (property_exists($data, 'PaymentType') && $data->{'PaymentType'} !== null) {
             $object->setPaymentType($data->{'PaymentType'});
         }
-        if (property_exists($data, 'CardCode')) {
+        if (property_exists($data, 'CardCode') && $data->{'CardCode'} !== null) {
             $object->setCardCode($data->{'CardCode'});
         }
-        if (property_exists($data, 'CardNumber')) {
+        if (property_exists($data, 'CardNumber') && $data->{'CardNumber'} !== null) {
             $object->setCardNumber($data->{'CardNumber'});
         }
-        if (property_exists($data, 'ExpiryMonth')) {
+        if (property_exists($data, 'ExpiryMonth') && $data->{'ExpiryMonth'} !== null) {
             $object->setExpiryMonth($data->{'ExpiryMonth'});
         }
-        if (property_exists($data, 'ExpiryYear')) {
+        if (property_exists($data, 'ExpiryYear') && $data->{'ExpiryYear'} !== null) {
             $object->setExpiryYear($data->{'ExpiryYear'});
         }
-        if (property_exists($data, 'FullCardHolderName')) {
+        if (property_exists($data, 'FullCardHolderName') && $data->{'FullCardHolderName'} !== null) {
             $object->setFullCardHolderName($this->denormalizer->denormalize($data->{'FullCardHolderName'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentPaymentCardFullCardHolderName', 'json', $context));
         }
-        if (property_exists($data, 'CSC')) {
+        if (property_exists($data, 'CSC') && $data->{'CSC'} !== null) {
             $object->setCSC($data->{'CSC'});
         }
-        if (property_exists($data, 'Address')) {
+        if (property_exists($data, 'Address') && $data->{'Address'} !== null) {
             $object->setAddress($this->denormalizer->denormalize($data->{'Address'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentPaymentCardAddress', 'json', $context));
         }
-        if (property_exists($data, 'Phone')) {
+        if (property_exists($data, 'Phone') && $data->{'Phone'} !== null) {
             $object->setPhone($this->denormalizer->denormalize($data->{'Phone'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentPaymentCardPhone', 'json', $context));
         }
 

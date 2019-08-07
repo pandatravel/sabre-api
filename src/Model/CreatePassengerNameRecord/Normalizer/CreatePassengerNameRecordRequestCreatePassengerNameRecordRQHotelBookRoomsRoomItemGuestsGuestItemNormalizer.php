@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\CreatePassengerNameRecord\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -36,40 +35,40 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsR
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsRoomItemGuestsGuestItem();
-        if (property_exists($data, 'Contact')) {
+        if (property_exists($data, 'Contact') && $data->{'Contact'} !== null) {
             $object->setContact($this->denormalizer->denormalize($data->{'Contact'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsRoomItemGuestsGuestItemContact', 'json', $context));
         }
-        if (property_exists($data, 'Type')) {
+        if (property_exists($data, 'Type') && $data->{'Type'} !== null) {
             $object->setType($data->{'Type'});
         }
-        if (property_exists($data, 'Email')) {
+        if (property_exists($data, 'Email') && $data->{'Email'} !== null) {
             $object->setEmail($data->{'Email'});
         }
-        if (property_exists($data, 'Age')) {
+        if (property_exists($data, 'Age') && $data->{'Age'} !== null) {
             $object->setAge($data->{'Age'});
         }
-        if (property_exists($data, 'Index')) {
+        if (property_exists($data, 'Index') && $data->{'Index'} !== null) {
             $object->setIndex($data->{'Index'});
         }
-        if (property_exists($data, 'LeadGuest')) {
+        if (property_exists($data, 'LeadGuest') && $data->{'LeadGuest'} !== null) {
             $object->setLeadGuest($data->{'LeadGuest'});
         }
-        if (property_exists($data, 'FrequentFlyerNumber')) {
+        if (property_exists($data, 'FrequentFlyerNumber') && $data->{'FrequentFlyerNumber'} !== null) {
             $object->setFrequentFlyerNumber($data->{'FrequentFlyerNumber'});
         }
-        if (property_exists($data, 'LoyaltyId')) {
+        if (property_exists($data, 'LoyaltyId') && $data->{'LoyaltyId'} !== null) {
             $object->setLoyaltyId($data->{'LoyaltyId'});
         }
-        if (property_exists($data, 'Title')) {
+        if (property_exists($data, 'Title') && $data->{'Title'} !== null) {
             $object->setTitle($data->{'Title'});
         }
-        if (property_exists($data, 'FirstName')) {
+        if (property_exists($data, 'FirstName') && $data->{'FirstName'} !== null) {
             $object->setFirstName($data->{'FirstName'});
         }
-        if (property_exists($data, 'LastName')) {
+        if (property_exists($data, 'LastName') && $data->{'LastName'} !== null) {
             $object->setLastName($data->{'LastName'});
         }
 

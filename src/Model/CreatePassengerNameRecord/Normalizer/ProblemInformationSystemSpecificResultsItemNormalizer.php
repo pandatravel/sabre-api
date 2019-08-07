@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\CreatePassengerNameRecord\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -36,35 +35,35 @@ class ProblemInformationSystemSpecificResultsItemNormalizer implements Denormali
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\ProblemInformationSystemSpecificResultsItem();
-        if (property_exists($data, 'HostCommand')) {
+        if (property_exists($data, 'HostCommand') && $data->{'HostCommand'} !== null) {
             $object->setHostCommand($this->denormalizer->denormalize($data->{'HostCommand'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\ProblemInformationSystemSpecificResultsItemHostCommand', 'json', $context));
         }
-        if (property_exists($data, 'Message')) {
+        if (property_exists($data, 'Message') && $data->{'Message'} !== null) {
             $values = [];
             foreach ($data->{'Message'} as $value) {
                 $values[] = $this->denormalizer->denormalize($value, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\ProblemInformationSystemSpecificResultsItemMessageItem', 'json', $context);
             }
             $object->setMessage($values);
         }
-        if (property_exists($data, 'ShortText')) {
+        if (property_exists($data, 'ShortText') && $data->{'ShortText'} !== null) {
             $object->setShortText($data->{'ShortText'});
         }
-        if (property_exists($data, 'Element')) {
+        if (property_exists($data, 'Element') && $data->{'Element'} !== null) {
             $object->setElement($data->{'Element'});
         }
-        if (property_exists($data, 'RecordID')) {
+        if (property_exists($data, 'RecordID') && $data->{'RecordID'} !== null) {
             $object->setRecordID($data->{'RecordID'});
         }
-        if (property_exists($data, 'DocURL')) {
+        if (property_exists($data, 'DocURL') && $data->{'DocURL'} !== null) {
             $object->setDocURL($data->{'DocURL'});
         }
-        if (property_exists($data, 'timeStamp')) {
+        if (property_exists($data, 'timeStamp') && $data->{'timeStamp'} !== null) {
             $object->setTimeStamp($data->{'timeStamp'});
         }
-        if (property_exists($data, 'reference')) {
+        if (property_exists($data, 'reference') && $data->{'reference'} !== null) {
             $object->setReference($data->{'reference'});
         }
 

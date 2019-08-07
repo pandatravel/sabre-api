@@ -36,9 +36,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     /**
      * The form of payment text information.
      *
-     * @return string[]
+     * @return string[]|null
      */
-    public function getText(): array
+    public function getText(): ?array
     {
         return $this->text;
     }
@@ -46,11 +46,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     /**
      * The form of payment text information.
      *
-     * @param string[] $text
+     * @param string[]|null $text
      *
      * @return self
      */
-    public function setText(array $text): self
+    public function setText(?array $text): self
     {
         $this->text = $text;
 
@@ -60,9 +60,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     /**
      * The reference place holder.
      *
-     * @return string
+     * @return string|null
      */
-    public function getRPH(): string
+    public function getRPH(): ?string
     {
         return $this->rPH;
     }
@@ -70,11 +70,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     /**
      * The reference place holder.
      *
-     * @param string $rPH
+     * @param string|null $rPH
      *
      * @return self
      */
-    public function setRPH(string $rPH): self
+    public function setRPH(?string $rPH): self
     {
         $this->rPH = $rPH;
 
@@ -84,9 +84,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     /**
      * The reference ID.
      *
-     * @return string
+     * @return string|null
      */
-    public function getId(): string
+    public function getId(): ?string
     {
         return $this->id;
     }
@@ -94,11 +94,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     /**
      * The reference ID.
      *
-     * @param string $id
+     * @param string|null $id
      *
      * @return self
      */
-    public function setId(string $id): self
+    public function setId(?string $id): self
     {
         $this->id = $id;
 

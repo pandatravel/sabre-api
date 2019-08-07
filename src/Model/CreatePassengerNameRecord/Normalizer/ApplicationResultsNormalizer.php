@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\CreatePassengerNameRecord\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -36,31 +35,31 @@ class ApplicationResultsNormalizer implements DenormalizerInterface, NormalizerI
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\ApplicationResults();
-        if (property_exists($data, 'Success')) {
+        if (property_exists($data, 'Success') && $data->{'Success'} !== null) {
             $values = [];
             foreach ($data->{'Success'} as $value) {
                 $values[] = $this->denormalizer->denormalize($value, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\ProblemInformation', 'json', $context);
             }
             $object->setSuccess($values);
         }
-        if (property_exists($data, 'Error')) {
+        if (property_exists($data, 'Error') && $data->{'Error'} !== null) {
             $values_1 = [];
             foreach ($data->{'Error'} as $value_1) {
                 $values_1[] = $this->denormalizer->denormalize($value_1, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\ProblemInformation', 'json', $context);
             }
             $object->setError($values_1);
         }
-        if (property_exists($data, 'Warning')) {
+        if (property_exists($data, 'Warning') && $data->{'Warning'} !== null) {
             $values_2 = [];
             foreach ($data->{'Warning'} as $value_2) {
                 $values_2[] = $this->denormalizer->denormalize($value_2, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\ProblemInformation', 'json', $context);
             }
             $object->setWarning($values_2);
         }
-        if (property_exists($data, 'status')) {
+        if (property_exists($data, 'status') && $data->{'status'} !== null) {
             $object->setStatus($data->{'status'});
         }
 

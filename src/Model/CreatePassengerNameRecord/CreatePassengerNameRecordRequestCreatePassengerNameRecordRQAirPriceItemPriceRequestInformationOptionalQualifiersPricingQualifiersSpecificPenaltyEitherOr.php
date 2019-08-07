@@ -28,9 +28,10 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     protected $currencyCode;
     /**
      * Used to specify the maximum refund OR change penalty.
-     * If a value of '0' is input no penalty is preferred.
-     * If a value of 'N' is input only non-changeable options are requested.
-     * Please note that monetary amount that includes a decimal is not allowed.
+    If a value of '0' is input no penalty is preferred.
+    If a value of 'N' is input only non-changeable options are requested.
+    Please note that monetary amount that includes a decimal is not allowed.
+
      *
      * @var string
      */
@@ -43,7 +44,8 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     protected $beforeDeparture;
     /**
      * Used to query for after departure fees.
-     * It is not possible to combine 'BeforeDeparture' and 'AfterDeparture' within one object.
+    It is not possible to combine 'BeforeDeparture' and 'AfterDeparture' within one object.
+
      *
      * @var bool
      */
@@ -52,9 +54,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to specify any refundable OR changeable pricing fare options.
      *
-     * @return bool
+     * @return bool|null
      */
-    public function getAny(): bool
+    public function getAny(): ?bool
     {
         return $this->any;
     }
@@ -62,11 +64,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to specify any refundable OR changeable pricing fare options.
      *
-     * @param bool $any
+     * @param bool|null $any
      *
      * @return self
      */
-    public function setAny(bool $any): self
+    public function setAny(?bool $any): self
     {
         $this->any = $any;
 
@@ -76,9 +78,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to specify the specific currency for either maximum refund OR change penalty.
      *
-     * @return string
+     * @return string|null
      */
-    public function getCurrencyCode(): string
+    public function getCurrencyCode(): ?string
     {
         return $this->currencyCode;
     }
@@ -86,11 +88,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to specify the specific currency for either maximum refund OR change penalty.
      *
-     * @param string $currencyCode
+     * @param string|null $currencyCode
      *
      * @return self
      */
-    public function setCurrencyCode(string $currencyCode): self
+    public function setCurrencyCode(?string $currencyCode): self
     {
         $this->currencyCode = $currencyCode;
 
@@ -99,28 +101,30 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
 
     /**
      * Used to specify the maximum refund OR change penalty.
-     * If a value of '0' is input no penalty is preferred.
-     * If a value of 'N' is input only non-changeable options are requested.
-     * Please note that monetary amount that includes a decimal is not allowed.
+    If a value of '0' is input no penalty is preferred.
+    If a value of 'N' is input only non-changeable options are requested.
+    Please note that monetary amount that includes a decimal is not allowed.
+
      *
-     * @return string
+     * @return string|null
      */
-    public function getMaxPenalty(): string
+    public function getMaxPenalty(): ?string
     {
         return $this->maxPenalty;
     }
 
     /**
      * Used to specify the maximum refund OR change penalty.
-     * If a value of '0' is input no penalty is preferred.
-     * If a value of 'N' is input only non-changeable options are requested.
-     * Please note that monetary amount that includes a decimal is not allowed.
+    If a value of '0' is input no penalty is preferred.
+    If a value of 'N' is input only non-changeable options are requested.
+    Please note that monetary amount that includes a decimal is not allowed.
+
      *
-     * @param string $maxPenalty
+     * @param string|null $maxPenalty
      *
      * @return self
      */
-    public function setMaxPenalty(string $maxPenalty): self
+    public function setMaxPenalty(?string $maxPenalty): self
     {
         $this->maxPenalty = $maxPenalty;
 
@@ -130,9 +134,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to query for before departure fees.
      *
-     * @return bool
+     * @return bool|null
      */
-    public function getBeforeDeparture(): bool
+    public function getBeforeDeparture(): ?bool
     {
         return $this->beforeDeparture;
     }
@@ -140,11 +144,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to query for before departure fees.
      *
-     * @param bool $beforeDeparture
+     * @param bool|null $beforeDeparture
      *
      * @return self
      */
-    public function setBeforeDeparture(bool $beforeDeparture): self
+    public function setBeforeDeparture(?bool $beforeDeparture): self
     {
         $this->beforeDeparture = $beforeDeparture;
 
@@ -153,24 +157,26 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
 
     /**
      * Used to query for after departure fees.
-     * It is not possible to combine 'BeforeDeparture' and 'AfterDeparture' within one object.
+    It is not possible to combine 'BeforeDeparture' and 'AfterDeparture' within one object.
+
      *
-     * @return bool
+     * @return bool|null
      */
-    public function getAfterDeparture(): bool
+    public function getAfterDeparture(): ?bool
     {
         return $this->afterDeparture;
     }
 
     /**
      * Used to query for after departure fees.
-     * It is not possible to combine 'BeforeDeparture' and 'AfterDeparture' within one object.
+    It is not possible to combine 'BeforeDeparture' and 'AfterDeparture' within one object.
+
      *
-     * @param bool $afterDeparture
+     * @param bool|null $afterDeparture
      *
      * @return self
      */
-    public function setAfterDeparture(bool $afterDeparture): self
+    public function setAfterDeparture(?bool $afterDeparture): self
     {
         $this->afterDeparture = $afterDeparture;
 

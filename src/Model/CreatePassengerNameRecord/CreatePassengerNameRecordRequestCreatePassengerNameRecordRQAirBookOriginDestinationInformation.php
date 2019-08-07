@@ -24,9 +24,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDe
     /**
      * Used to specify the air flight segment to be booked.
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDestinationInformationFlightSegmentItem[]
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDestinationInformationFlightSegmentItem[]|null
      */
-    public function getFlightSegment(): array
+    public function getFlightSegment(): ?array
     {
         return $this->flightSegment;
     }
@@ -34,11 +34,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDe
     /**
      * Used to specify the air flight segment to be booked.
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDestinationInformationFlightSegmentItem[] $flightSegment
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDestinationInformationFlightSegmentItem[]|null $flightSegment
      *
      * @return self
      */
-    public function setFlightSegment(array $flightSegment): self
+    public function setFlightSegment(?array $flightSegment): self
     {
         $this->flightSegment = $flightSegment;
 

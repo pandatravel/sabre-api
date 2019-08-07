@@ -16,28 +16,32 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
 {
     /**
      * Used to define a single form of payment.
-     * 'BasicFOP' cannot be combined with 'BSP_Ticketing', or 'SabreSonicTicketing', or 'MultipleCC_FOP'.
+    'BasicFOP' cannot be combined with 'BSP_Ticketing', or 'SabreSonicTicketing', or 'MultipleCC_FOP'.
+
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBasicFOP
      */
     protected $basicFOP;
     /**
      * Used to define forms of payment acceptable within BSP region.
-     * 'BSP_Ticketing' cannot be combined with 'SabreSonicTicketing', or 'MultipleCC_FOP'
+    'BSP_Ticketing' cannot be combined with 'SabreSonicTicketing', or 'MultipleCC_FOP'
+
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBSPTicketing
      */
     protected $bSPTicketing;
     /**
      * Used to specify multiple credit card form of payment.
-     * 'MultipleCC_FOP' cannot be combined with 'BSP_Ticketing', or 'SabreSonicTicketing'.
+    'MultipleCC_FOP' cannot be combined with 'BSP_Ticketing', or 'SabreSonicTicketing'.
+
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersMultipleCCFOP
      */
     protected $multipleCCFOP;
     /**
      * Valid for SabreSonic-based airlines.
-     * 'SabreSonicTicketing' cannot be combined with 'BSP_Ticketing' or 'MultipleCC_FOP'.
+    'SabreSonicTicketing' cannot be combined with 'BSP_Ticketing' or 'MultipleCC_FOP'.
+
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketing
      */
@@ -51,24 +55,26 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
 
     /**
      * Used to define a single form of payment.
-     * 'BasicFOP' cannot be combined with 'BSP_Ticketing', or 'SabreSonicTicketing', or 'MultipleCC_FOP'.
+    'BasicFOP' cannot be combined with 'BSP_Ticketing', or 'SabreSonicTicketing', or 'MultipleCC_FOP'.
+
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBasicFOP
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBasicFOP|null
      */
-    public function getBasicFOP(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBasicFOP
+    public function getBasicFOP(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBasicFOP
     {
         return $this->basicFOP;
     }
 
     /**
      * Used to define a single form of payment.
-     * 'BasicFOP' cannot be combined with 'BSP_Ticketing', or 'SabreSonicTicketing', or 'MultipleCC_FOP'.
+    'BasicFOP' cannot be combined with 'BSP_Ticketing', or 'SabreSonicTicketing', or 'MultipleCC_FOP'.
+
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBasicFOP $basicFOP
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBasicFOP|null $basicFOP
      *
      * @return self
      */
-    public function setBasicFOP(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBasicFOP $basicFOP): self
+    public function setBasicFOP(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBasicFOP $basicFOP): self
     {
         $this->basicFOP = $basicFOP;
 
@@ -77,24 +83,26 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
 
     /**
      * Used to define forms of payment acceptable within BSP region.
-     * 'BSP_Ticketing' cannot be combined with 'SabreSonicTicketing', or 'MultipleCC_FOP'
+    'BSP_Ticketing' cannot be combined with 'SabreSonicTicketing', or 'MultipleCC_FOP'
+
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBSPTicketing
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBSPTicketing|null
      */
-    public function getBSPTicketing(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBSPTicketing
+    public function getBSPTicketing(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBSPTicketing
     {
         return $this->bSPTicketing;
     }
 
     /**
      * Used to define forms of payment acceptable within BSP region.
-     * 'BSP_Ticketing' cannot be combined with 'SabreSonicTicketing', or 'MultipleCC_FOP'
+    'BSP_Ticketing' cannot be combined with 'SabreSonicTicketing', or 'MultipleCC_FOP'
+
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBSPTicketing $bSPTicketing
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBSPTicketing|null $bSPTicketing
      *
      * @return self
      */
-    public function setBSPTicketing(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBSPTicketing $bSPTicketing): self
+    public function setBSPTicketing(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBSPTicketing $bSPTicketing): self
     {
         $this->bSPTicketing = $bSPTicketing;
 
@@ -103,24 +111,26 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
 
     /**
      * Used to specify multiple credit card form of payment.
-     * 'MultipleCC_FOP' cannot be combined with 'BSP_Ticketing', or 'SabreSonicTicketing'.
+    'MultipleCC_FOP' cannot be combined with 'BSP_Ticketing', or 'SabreSonicTicketing'.
+
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersMultipleCCFOP
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersMultipleCCFOP|null
      */
-    public function getMultipleCCFOP(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersMultipleCCFOP
+    public function getMultipleCCFOP(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersMultipleCCFOP
     {
         return $this->multipleCCFOP;
     }
 
     /**
      * Used to specify multiple credit card form of payment.
-     * 'MultipleCC_FOP' cannot be combined with 'BSP_Ticketing', or 'SabreSonicTicketing'.
+    'MultipleCC_FOP' cannot be combined with 'BSP_Ticketing', or 'SabreSonicTicketing'.
+
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersMultipleCCFOP $multipleCCFOP
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersMultipleCCFOP|null $multipleCCFOP
      *
      * @return self
      */
-    public function setMultipleCCFOP(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersMultipleCCFOP $multipleCCFOP): self
+    public function setMultipleCCFOP(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersMultipleCCFOP $multipleCCFOP): self
     {
         $this->multipleCCFOP = $multipleCCFOP;
 
@@ -129,24 +139,26 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
 
     /**
      * Valid for SabreSonic-based airlines.
-     * 'SabreSonicTicketing' cannot be combined with 'BSP_Ticketing' or 'MultipleCC_FOP'.
+    'SabreSonicTicketing' cannot be combined with 'BSP_Ticketing' or 'MultipleCC_FOP'.
+
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketing
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketing|null
      */
-    public function getSabreSonicTicketing(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketing
+    public function getSabreSonicTicketing(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketing
     {
         return $this->sabreSonicTicketing;
     }
 
     /**
      * Valid for SabreSonic-based airlines.
-     * 'SabreSonicTicketing' cannot be combined with 'BSP_Ticketing' or 'MultipleCC_FOP'.
+    'SabreSonicTicketing' cannot be combined with 'BSP_Ticketing' or 'MultipleCC_FOP'.
+
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketing $sabreSonicTicketing
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketing|null $sabreSonicTicketing
      *
      * @return self
      */
-    public function setSabreSonicTicketing(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketing $sabreSonicTicketing): self
+    public function setSabreSonicTicketing(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketing $sabreSonicTicketing): self
     {
         $this->sabreSonicTicketing = $sabreSonicTicketing;
 
@@ -156,9 +168,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * This attribute is not in use.
      *
-     * @return bool
+     * @return bool|null
      */
-    public function getIgnoreStoredFOP(): bool
+    public function getIgnoreStoredFOP(): ?bool
     {
         return $this->ignoreStoredFOP;
     }
@@ -166,11 +178,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * This attribute is not in use.
      *
-     * @param bool $ignoreStoredFOP
+     * @param bool|null $ignoreStoredFOP
      *
      * @return self
      */
-    public function setIgnoreStoredFOP(bool $ignoreStoredFOP): self
+    public function setIgnoreStoredFOP(?bool $ignoreStoredFOP): self
     {
         $this->ignoreStoredFOP = $ignoreStoredFOP;
 

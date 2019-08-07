@@ -24,9 +24,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingE
     /**
      * The source name.
      *
-     * @return string
+     * @return string|null
      */
-    public function getReceivedFrom(): string
+    public function getReceivedFrom(): ?string
     {
         return $this->receivedFrom;
     }
@@ -34,11 +34,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingE
     /**
      * The source name.
      *
-     * @param string $receivedFrom
+     * @param string|null $receivedFrom
      *
      * @return self
      */
-    public function setReceivedFrom(string $receivedFrom): self
+    public function setReceivedFrom(?string $receivedFrom): self
     {
         $this->receivedFrom = $receivedFrom;
 

@@ -28,7 +28,8 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     protected $id;
     /**
      * Indicates type of information.
-     * Ex. O  - Other, N - Name, A - Address, C - City and State, Z - Zip code, B - Business.
+    Ex. O  - Other, N - Name, A - Address, C - City and State, Z - Zip code, B - Business.
+
      *
      * @var string
      */
@@ -37,9 +38,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     /**
      * The customer address information.
      *
-     * @return string
+     * @return string|null
      */
-    public function getContent(): string
+    public function getContent(): ?string
     {
         return $this->content;
     }
@@ -47,11 +48,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     /**
      * The customer address information.
      *
-     * @param string $content
+     * @param string|null $content
      *
      * @return self
      */
-    public function setContent(string $content): self
+    public function setContent(?string $content): self
     {
         $this->content = $content;
 
@@ -61,9 +62,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     /**
      * The reference ID.
      *
-     * @return string
+     * @return string|null
      */
-    public function getId(): string
+    public function getId(): ?string
     {
         return $this->id;
     }
@@ -71,11 +72,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     /**
      * The reference ID.
      *
-     * @param string $id
+     * @param string|null $id
      *
      * @return self
      */
-    public function setId(string $id): self
+    public function setId(?string $id): self
     {
         $this->id = $id;
 
@@ -84,24 +85,26 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
 
     /**
      * Indicates type of information.
-     * Ex. O  - Other, N - Name, A - Address, C - City and State, Z - Zip code, B - Business.
+    Ex. O  - Other, N - Name, A - Address, C - City and State, Z - Zip code, B - Business.
+
      *
-     * @return string
+     * @return string|null
      */
-    public function getType(): string
+    public function getType(): ?string
     {
         return $this->type;
     }
 
     /**
      * Indicates type of information.
-     * Ex. O  - Other, N - Name, A - Address, C - City and State, Z - Zip code, B - Business.
+    Ex. O  - Other, N - Name, A - Address, C - City and State, Z - Zip code, B - Business.
+
      *
-     * @param string $type
+     * @param string|null $type
      *
      * @return self
      */
-    public function setType(string $type): self
+    public function setType(?string $type): self
     {
         $this->type = $type;
 

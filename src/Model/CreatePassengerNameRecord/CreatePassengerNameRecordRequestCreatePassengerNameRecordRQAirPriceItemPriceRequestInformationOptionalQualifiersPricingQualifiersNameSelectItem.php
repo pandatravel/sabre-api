@@ -30,9 +30,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * The name number.
      *
-     * @return string
+     * @return string|null
      */
-    public function getNameNumber(): string
+    public function getNameNumber(): ?string
     {
         return $this->nameNumber;
     }
@@ -40,11 +40,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * The name number.
      *
-     * @param string $nameNumber
+     * @param string|null $nameNumber
      *
      * @return self
      */
-    public function setNameNumber(string $nameNumber): self
+    public function setNameNumber(?string $nameNumber): self
     {
         $this->nameNumber = $nameNumber;
 
@@ -54,9 +54,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * The end name number within a range.
      *
-     * @return string
+     * @return string|null
      */
-    public function getEndNameNumber(): string
+    public function getEndNameNumber(): ?string
     {
         return $this->endNameNumber;
     }
@@ -64,11 +64,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * The end name number within a range.
      *
-     * @param string $endNameNumber
+     * @param string|null $endNameNumber
      *
      * @return self
      */
-    public function setEndNameNumber(string $endNameNumber): self
+    public function setEndNameNumber(?string $endNameNumber): self
     {
         $this->endNameNumber = $endNameNumber;
 

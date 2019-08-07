@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\CreatePassengerNameRecord\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -36,51 +35,51 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemAncillaryFeesItemFeeInformation();
-        if (property_exists($data, 'CreditCardFOP_MatchingBin')) {
+        if (property_exists($data, 'CreditCardFOP_MatchingBin') && $data->{'CreditCardFOP_MatchingBin'} !== null) {
             $object->setCreditCardFOPMatchingBin($data->{'CreditCardFOP_MatchingBin'});
         }
-        if (property_exists($data, 'CreditCard_ResidualAmount')) {
+        if (property_exists($data, 'CreditCard_ResidualAmount') && $data->{'CreditCard_ResidualAmount'} !== null) {
             $object->setCreditCardResidualAmount($data->{'CreditCard_ResidualAmount'});
         }
-        if (property_exists($data, 'MaximumServiceFeeAmount')) {
+        if (property_exists($data, 'MaximumServiceFeeAmount') && $data->{'MaximumServiceFeeAmount'} !== null) {
             $object->setMaximumServiceFeeAmount($data->{'MaximumServiceFeeAmount'});
         }
-        if (property_exists($data, 'OB_FeeTicketTotalFareAmount')) {
+        if (property_exists($data, 'OB_FeeTicketTotalFareAmount') && $data->{'OB_FeeTicketTotalFareAmount'} !== null) {
             $object->setOBFeeTicketTotalFareAmount($data->{'OB_FeeTicketTotalFareAmount'});
         }
-        if (property_exists($data, 'ServiceFeePercentage')) {
+        if (property_exists($data, 'ServiceFeePercentage') && $data->{'ServiceFeePercentage'} !== null) {
             $object->setServiceFeePercentage($data->{'ServiceFeePercentage'});
         }
-        if (property_exists($data, 'TaxAmount')) {
+        if (property_exists($data, 'TaxAmount') && $data->{'TaxAmount'} !== null) {
             $values = [];
             foreach ($data->{'TaxAmount'} as $value) {
                 $values[] = $value;
             }
             $object->setTaxAmount($values);
         }
-        if (property_exists($data, 'TaxID')) {
+        if (property_exists($data, 'TaxID') && $data->{'TaxID'} !== null) {
             $values_1 = [];
             foreach ($data->{'TaxID'} as $value_1) {
                 $values_1[] = $value_1;
             }
             $object->setTaxID($values_1);
         }
-        if (property_exists($data, 'Amount')) {
+        if (property_exists($data, 'Amount') && $data->{'Amount'} !== null) {
             $object->setAmount($data->{'Amount'});
         }
-        if (property_exists($data, 'Code')) {
+        if (property_exists($data, 'Code') && $data->{'Code'} !== null) {
             $object->setCode($data->{'Code'});
         }
-        if (property_exists($data, 'NumFees')) {
+        if (property_exists($data, 'NumFees') && $data->{'NumFees'} !== null) {
             $object->setNumFees($data->{'NumFees'});
         }
-        if (property_exists($data, 'NameNumber')) {
+        if (property_exists($data, 'NameNumber') && $data->{'NameNumber'} !== null) {
             $object->setNameNumber($data->{'NameNumber'});
         }
-        if (property_exists($data, 'SegmentNumber')) {
+        if (property_exists($data, 'SegmentNumber') && $data->{'SegmentNumber'} !== null) {
             $object->setSegmentNumber($data->{'SegmentNumber'});
         }
 

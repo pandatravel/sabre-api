@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\CreatePassengerNameRecord\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -36,49 +35,49 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemFareCalculationBreakdownItemFareBasis();
-        if (property_exists($data, 'Code')) {
+        if (property_exists($data, 'Code') && $data->{'Code'} !== null) {
             $object->setCode($data->{'Code'});
         }
-        if (property_exists($data, 'ContractNumber')) {
+        if (property_exists($data, 'ContractNumber') && $data->{'ContractNumber'} !== null) {
             $object->setContractNumber($data->{'ContractNumber'});
         }
-        if (property_exists($data, 'CorporateID')) {
+        if (property_exists($data, 'CorporateID') && $data->{'CorporateID'} !== null) {
             $object->setCorporateID($data->{'CorporateID'});
         }
-        if (property_exists($data, 'InclusiveTour')) {
+        if (property_exists($data, 'InclusiveTour') && $data->{'InclusiveTour'} !== null) {
             $object->setInclusiveTour($data->{'InclusiveTour'});
         }
-        if (property_exists($data, 'FareAmount')) {
+        if (property_exists($data, 'FareAmount') && $data->{'FareAmount'} !== null) {
             $object->setFareAmount($data->{'FareAmount'});
         }
-        if (property_exists($data, 'FarePassengerType')) {
+        if (property_exists($data, 'FarePassengerType') && $data->{'FarePassengerType'} !== null) {
             $object->setFarePassengerType($data->{'FarePassengerType'});
         }
-        if (property_exists($data, 'FareType')) {
+        if (property_exists($data, 'FareType') && $data->{'FareType'} !== null) {
             $object->setFareType($data->{'FareType'});
         }
-        if (property_exists($data, 'FilingCarrier')) {
+        if (property_exists($data, 'FilingCarrier') && $data->{'FilingCarrier'} !== null) {
             $object->setFilingCarrier($data->{'FilingCarrier'});
         }
-        if (property_exists($data, 'GlobalInd')) {
+        if (property_exists($data, 'GlobalInd') && $data->{'GlobalInd'} !== null) {
             $object->setGlobalInd($data->{'GlobalInd'});
         }
-        if (property_exists($data, 'TripTypeInd')) {
+        if (property_exists($data, 'TripTypeInd') && $data->{'TripTypeInd'} !== null) {
             $object->setTripTypeInd($data->{'TripTypeInd'});
         }
-        if (property_exists($data, 'Market')) {
+        if (property_exists($data, 'Market') && $data->{'Market'} !== null) {
             $object->setMarket($data->{'Market'});
         }
-        if (property_exists($data, 'SurfaceSegment')) {
+        if (property_exists($data, 'SurfaceSegment') && $data->{'SurfaceSegment'} !== null) {
             $object->setSurfaceSegment($data->{'SurfaceSegment'});
         }
-        if (property_exists($data, 'TicketDesignator')) {
+        if (property_exists($data, 'TicketDesignator') && $data->{'TicketDesignator'} !== null) {
             $object->setTicketDesignator($data->{'TicketDesignator'});
         }
-        if (property_exists($data, 'Cabin')) {
+        if (property_exists($data, 'Cabin') && $data->{'Cabin'} !== null) {
             $object->setCabin($data->{'Cabin'});
         }
 

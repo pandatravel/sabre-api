@@ -22,7 +22,8 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     protected $content;
     /**
      * Used to match up with 'SegmentSelect'.
-     * 'Brand.RPH' cannot be combined with 'CommandPricing.RPH'.
+    'Brand.RPH' cannot be combined with 'CommandPricing.RPH'.
+
      *
      * @var int
      */
@@ -31,9 +32,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to specify a brand code.
      *
-     * @return string
+     * @return string|null
      */
-    public function getContent(): string
+    public function getContent(): ?string
     {
         return $this->content;
     }
@@ -41,11 +42,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to specify a brand code.
      *
-     * @param string $content
+     * @param string|null $content
      *
      * @return self
      */
-    public function setContent(string $content): self
+    public function setContent(?string $content): self
     {
         $this->content = $content;
 
@@ -54,24 +55,26 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
 
     /**
      * Used to match up with 'SegmentSelect'.
-     * 'Brand.RPH' cannot be combined with 'CommandPricing.RPH'.
+    'Brand.RPH' cannot be combined with 'CommandPricing.RPH'.
+
      *
-     * @return int
+     * @return int|null
      */
-    public function getRPH(): int
+    public function getRPH(): ?int
     {
         return $this->rPH;
     }
 
     /**
      * Used to match up with 'SegmentSelect'.
-     * 'Brand.RPH' cannot be combined with 'CommandPricing.RPH'.
+    'Brand.RPH' cannot be combined with 'CommandPricing.RPH'.
+
      *
-     * @param int $rPH
+     * @param int|null $rPH
      *
      * @return self
      */
-    public function setRPH(int $rPH): self
+    public function setRPH(?int $rPH): self
     {
         $this->rPH = $rPH;
 

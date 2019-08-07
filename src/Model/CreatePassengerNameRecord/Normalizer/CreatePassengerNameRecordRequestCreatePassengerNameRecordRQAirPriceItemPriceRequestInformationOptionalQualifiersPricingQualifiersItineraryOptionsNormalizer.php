@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\CreatePassengerNameRecord\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -36,45 +35,45 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersItineraryOptions();
-        if (property_exists($data, 'BreakFare')) {
+        if (property_exists($data, 'BreakFare') && $data->{'BreakFare'} !== null) {
             $values = [];
             foreach ($data->{'BreakFare'} as $value) {
                 $values[] = $this->denormalizer->denormalize($value, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersItineraryOptionsBreakFareItem', 'json', $context);
             }
             $object->setBreakFare($values);
         }
-        if (property_exists($data, 'ForceConnection')) {
+        if (property_exists($data, 'ForceConnection') && $data->{'ForceConnection'} !== null) {
             $values_1 = [];
             foreach ($data->{'ForceConnection'} as $value_1) {
                 $values_1[] = $this->denormalizer->denormalize($value_1, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersItineraryOptionsForceConnectionItem', 'json', $context);
             }
             $object->setForceConnection($values_1);
         }
-        if (property_exists($data, 'ForceStopOver')) {
+        if (property_exists($data, 'ForceStopOver') && $data->{'ForceStopOver'} !== null) {
             $values_2 = [];
             foreach ($data->{'ForceStopOver'} as $value_2) {
                 $values_2[] = $this->denormalizer->denormalize($value_2, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersItineraryOptionsForceStopOverItem', 'json', $context);
             }
             $object->setForceStopOver($values_2);
         }
-        if (property_exists($data, 'OverrideBreak')) {
+        if (property_exists($data, 'OverrideBreak') && $data->{'OverrideBreak'} !== null) {
             $values_3 = [];
             foreach ($data->{'OverrideBreak'} as $value_3) {
                 $values_3[] = $this->denormalizer->denormalize($value_3, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersItineraryOptionsOverrideBreakItem', 'json', $context);
             }
             $object->setOverrideBreak($values_3);
         }
-        if (property_exists($data, 'SegmentSelect')) {
+        if (property_exists($data, 'SegmentSelect') && $data->{'SegmentSelect'} !== null) {
             $values_4 = [];
             foreach ($data->{'SegmentSelect'} as $value_4) {
                 $values_4[] = $this->denormalizer->denormalize($value_4, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersItineraryOptionsSegmentSelectItem', 'json', $context);
             }
             $object->setSegmentSelect($values_4);
         }
-        if (property_exists($data, 'SideTrip')) {
+        if (property_exists($data, 'SideTrip') && $data->{'SideTrip'} !== null) {
             $object->setSideTrip($this->denormalizer->denormalize($data->{'SideTrip'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersItineraryOptionsSideTrip', 'json', $context));
         }
 

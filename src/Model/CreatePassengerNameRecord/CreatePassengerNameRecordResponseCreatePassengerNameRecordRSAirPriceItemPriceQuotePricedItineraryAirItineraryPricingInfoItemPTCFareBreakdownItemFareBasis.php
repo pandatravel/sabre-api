@@ -84,9 +84,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The fare basis code.
      *
-     * @return string
+     * @return string|null
      */
-    public function getCode(): string
+    public function getCode(): ?string
     {
         return $this->code;
     }
@@ -94,11 +94,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The fare basis code.
      *
-     * @param string $code
+     * @param string|null $code
      *
      * @return self
      */
-    public function setCode(string $code): self
+    public function setCode(?string $code): self
     {
         $this->code = $code;
 
@@ -108,9 +108,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The contract number.
      *
-     * @return string
+     * @return string|null
      */
-    public function getContractNumber(): string
+    public function getContractNumber(): ?string
     {
         return $this->contractNumber;
     }
@@ -118,11 +118,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The contract number.
      *
-     * @param string $contractNumber
+     * @param string|null $contractNumber
      *
      * @return self
      */
-    public function setContractNumber(string $contractNumber): self
+    public function setContractNumber(?string $contractNumber): self
     {
         $this->contractNumber = $contractNumber;
 
@@ -132,9 +132,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The corporate ID.
      *
-     * @return string
+     * @return string|null
      */
-    public function getCorporateID(): string
+    public function getCorporateID(): ?string
     {
         return $this->corporateID;
     }
@@ -142,11 +142,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The corporate ID.
      *
-     * @param string $corporateID
+     * @param string|null $corporateID
      *
      * @return self
      */
-    public function setCorporateID(string $corporateID): self
+    public function setCorporateID(?string $corporateID): self
     {
         $this->corporateID = $corporateID;
 
@@ -156,9 +156,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The fare amount.
      *
-     * @return string
+     * @return string|null
      */
-    public function getFareAmount(): string
+    public function getFareAmount(): ?string
     {
         return $this->fareAmount;
     }
@@ -166,11 +166,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The fare amount.
      *
-     * @param string $fareAmount
+     * @param string|null $fareAmount
      *
      * @return self
      */
-    public function setFareAmount(string $fareAmount): self
+    public function setFareAmount(?string $fareAmount): self
     {
         $this->fareAmount = $fareAmount;
 
@@ -180,9 +180,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The passenger type associated with the fare basis code.
      *
-     * @return string
+     * @return string|null
      */
-    public function getFarePassengerType(): string
+    public function getFarePassengerType(): ?string
     {
         return $this->farePassengerType;
     }
@@ -190,11 +190,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The passenger type associated with the fare basis code.
      *
-     * @param string $farePassengerType
+     * @param string|null $farePassengerType
      *
      * @return self
      */
-    public function setFarePassengerType(string $farePassengerType): self
+    public function setFarePassengerType(?string $farePassengerType): self
     {
         $this->farePassengerType = $farePassengerType;
 
@@ -204,9 +204,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The fare type.
      *
-     * @return string
+     * @return string|null
      */
-    public function getFareType(): string
+    public function getFareType(): ?string
     {
         return $this->fareType;
     }
@@ -214,11 +214,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The fare type.
      *
-     * @param string $fareType
+     * @param string|null $fareType
      *
      * @return self
      */
-    public function setFareType(string $fareType): self
+    public function setFareType(?string $fareType): self
     {
         $this->fareType = $fareType;
 
@@ -228,9 +228,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The filing carrier.
      *
-     * @return string
+     * @return string|null
      */
-    public function getFilingCarrier(): string
+    public function getFilingCarrier(): ?string
     {
         return $this->filingCarrier;
     }
@@ -238,11 +238,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The filing carrier.
      *
-     * @param string $filingCarrier
+     * @param string|null $filingCarrier
      *
      * @return self
      */
-    public function setFilingCarrier(string $filingCarrier): self
+    public function setFilingCarrier(?string $filingCarrier): self
     {
         $this->filingCarrier = $filingCarrier;
 
@@ -252,9 +252,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The global indicator.
      *
-     * @return string
+     * @return string|null
      */
-    public function getGlobalInd(): string
+    public function getGlobalInd(): ?string
     {
         return $this->globalInd;
     }
@@ -262,11 +262,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The global indicator.
      *
-     * @param string $globalInd
+     * @param string|null $globalInd
      *
      * @return self
      */
-    public function setGlobalInd(string $globalInd): self
+    public function setGlobalInd(?string $globalInd): self
     {
         $this->globalInd = $globalInd;
 
@@ -276,9 +276,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The market.
      *
-     * @return string
+     * @return string|null
      */
-    public function getMarket(): string
+    public function getMarket(): ?string
     {
         return $this->market;
     }
@@ -286,11 +286,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The market.
      *
-     * @param string $market
+     * @param string|null $market
      *
      * @return self
      */
-    public function setMarket(string $market): self
+    public function setMarket(?string $market): self
     {
         $this->market = $market;
 
@@ -300,9 +300,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * Indicates that the particular fare basis is associated with an ARNK segment.
      *
-     * @return string
+     * @return string|null
      */
-    public function getSurfaceSegment(): string
+    public function getSurfaceSegment(): ?string
     {
         return $this->surfaceSegment;
     }
@@ -310,11 +310,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * Indicates that the particular fare basis is associated with an ARNK segment.
      *
-     * @param string $surfaceSegment
+     * @param string|null $surfaceSegment
      *
      * @return self
      */
-    public function setSurfaceSegment(string $surfaceSegment): self
+    public function setSurfaceSegment(?string $surfaceSegment): self
     {
         $this->surfaceSegment = $surfaceSegment;
 
@@ -324,9 +324,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The ticket designator associated with the particular fare basis code.
      *
-     * @return string
+     * @return string|null
      */
-    public function getTicketDesignator(): string
+    public function getTicketDesignator(): ?string
     {
         return $this->ticketDesignator;
     }
@@ -334,11 +334,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The ticket designator associated with the particular fare basis code.
      *
-     * @param string $ticketDesignator
+     * @param string|null $ticketDesignator
      *
      * @return self
      */
-    public function setTicketDesignator(string $ticketDesignator): self
+    public function setTicketDesignator(?string $ticketDesignator): self
     {
         $this->ticketDesignator = $ticketDesignator;
 

@@ -24,9 +24,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItinerary
     /**
      * The airplane equipment type.
      *
-     * @return string
+     * @return string|null
      */
-    public function getAirEquipType(): string
+    public function getAirEquipType(): ?string
     {
         return $this->airEquipType;
     }
@@ -34,11 +34,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItinerary
     /**
      * The airplane equipment type.
      *
-     * @param string $airEquipType
+     * @param string|null $airEquipType
      *
      * @return self
      */
-    public function setAirEquipType(string $airEquipType): self
+    public function setAirEquipType(?string $airEquipType): self
     {
         $this->airEquipType = $airEquipType;
 

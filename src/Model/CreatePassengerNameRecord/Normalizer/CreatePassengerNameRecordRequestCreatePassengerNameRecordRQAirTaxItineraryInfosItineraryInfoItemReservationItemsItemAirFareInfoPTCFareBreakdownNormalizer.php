@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\CreatePassengerNameRecord\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -36,16 +35,16 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItinerary
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemAirFareInfoPTCFareBreakdown();
-        if (property_exists($data, 'FareBasisCode')) {
+        if (property_exists($data, 'FareBasisCode') && $data->{'FareBasisCode'} !== null) {
             $object->setFareBasisCode($data->{'FareBasisCode'});
         }
-        if (property_exists($data, 'PassengerFare')) {
+        if (property_exists($data, 'PassengerFare') && $data->{'PassengerFare'} !== null) {
             $object->setPassengerFare($this->denormalizer->denormalize($data->{'PassengerFare'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemAirFareInfoPTCFareBreakdownPassengerFare', 'json', $context));
         }
-        if (property_exists($data, 'PassengerType')) {
+        if (property_exists($data, 'PassengerType') && $data->{'PassengerType'} !== null) {
             $object->setPassengerType($this->denormalizer->denormalize($data->{'PassengerType'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemAirFareInfoPTCFareBreakdownPassengerType', 'json', $context));
         }
 

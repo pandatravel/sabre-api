@@ -32,19 +32,19 @@ class ProblemInformation extends AbstractModel
     protected $timeStamp;
 
     /**
-     * @return ProblemInformationSystemSpecificResultsItem[]
+     * @return ProblemInformationSystemSpecificResultsItem[]|null
      */
-    public function getSystemSpecificResults(): array
+    public function getSystemSpecificResults(): ?array
     {
         return $this->systemSpecificResults;
     }
 
     /**
-     * @param ProblemInformationSystemSpecificResultsItem[] $systemSpecificResults
+     * @param ProblemInformationSystemSpecificResultsItem[]|null $systemSpecificResults
      *
      * @return self
      */
-    public function setSystemSpecificResults(array $systemSpecificResults): self
+    public function setSystemSpecificResults(?array $systemSpecificResults): self
     {
         $this->systemSpecificResults = $systemSpecificResults;
 
@@ -54,9 +54,9 @@ class ProblemInformation extends AbstractModel
     /**
      * An indication of the source of error or warning when processing the request.
      *
-     * @return string
+     * @return string|null
      */
-    public function getType(): string
+    public function getType(): ?string
     {
         return $this->type;
     }
@@ -64,11 +64,11 @@ class ProblemInformation extends AbstractModel
     /**
      * An indication of the source of error or warning when processing the request.
      *
-     * @param string $type
+     * @param string|null $type
      *
      * @return self
      */
-    public function setType(string $type): self
+    public function setType(?string $type): self
     {
         $this->type = $type;
 
@@ -78,9 +78,9 @@ class ProblemInformation extends AbstractModel
     /**
      * Transaction time stamp in "yyyy-mm-ddThh:mm:ss.SSSZ" format.
      *
-     * @return string
+     * @return string|null
      */
-    public function getTimeStamp(): string
+    public function getTimeStamp(): ?string
     {
         return $this->timeStamp;
     }
@@ -88,11 +88,11 @@ class ProblemInformation extends AbstractModel
     /**
      * Transaction time stamp in "yyyy-mm-ddThh:mm:ss.SSSZ" format.
      *
-     * @param string $timeStamp
+     * @param string|null $timeStamp
      *
      * @return self
      */
-    public function setTimeStamp(string $timeStamp): self
+    public function setTimeStamp(?string $timeStamp): self
     {
         $this->timeStamp = $timeStamp;
 

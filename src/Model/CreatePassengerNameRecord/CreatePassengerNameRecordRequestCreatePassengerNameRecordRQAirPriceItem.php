@@ -30,9 +30,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItem ex
     /**
      * Used to specify a specific total price threshold which is acceptable.
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceComparison
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceComparison|null
      */
-    public function getPriceComparison(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceComparison
+    public function getPriceComparison(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceComparison
     {
         return $this->priceComparison;
     }
@@ -40,11 +40,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItem ex
     /**
      * Used to specify a specific total price threshold which is acceptable.
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceComparison $priceComparison
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceComparison|null $priceComparison
      *
      * @return self
      */
-    public function setPriceComparison(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceComparison $priceComparison): self
+    public function setPriceComparison(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceComparison $priceComparison): self
     {
         $this->priceComparison = $priceComparison;
 
@@ -54,9 +54,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItem ex
     /**
      * Used to define the pricing qualifiers.
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformation
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformation|null
      */
-    public function getPriceRequestInformation(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformation
+    public function getPriceRequestInformation(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformation
     {
         return $this->priceRequestInformation;
     }
@@ -64,11 +64,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItem ex
     /**
      * Used to define the pricing qualifiers.
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformation $priceRequestInformation
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformation|null $priceRequestInformation
      *
      * @return self
      */
-    public function setPriceRequestInformation(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformation $priceRequestInformation): self
+    public function setPriceRequestInformation(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformation $priceRequestInformation): self
     {
         $this->priceRequestInformation = $priceRequestInformation;
 

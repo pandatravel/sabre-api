@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\CreatePassengerNameRecord\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -36,41 +35,41 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiers();
-        if (property_exists($data, 'AirExtras')) {
+        if (property_exists($data, 'AirExtras') && $data->{'AirExtras'} !== null) {
             $object->setAirExtras($this->denormalizer->denormalize($data->{'AirExtras'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersAirExtras', 'json', $context));
         }
-        if (property_exists($data, 'BaggageAllowance')) {
+        if (property_exists($data, 'BaggageAllowance') && $data->{'BaggageAllowance'} !== null) {
             $values = [];
             foreach ($data->{'BaggageAllowance'} as $value) {
                 $values[] = $this->denormalizer->denormalize($value, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersBaggageAllowanceItem', 'json', $context);
             }
             $object->setBaggageAllowance($values);
         }
-        if (property_exists($data, 'Commission')) {
+        if (property_exists($data, 'Commission') && $data->{'Commission'} !== null) {
             $object->setCommission($this->denormalizer->denormalize($data->{'Commission'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersCommission', 'json', $context));
         }
-        if (property_exists($data, 'Customer')) {
+        if (property_exists($data, 'Customer') && $data->{'Customer'} !== null) {
             $object->setCustomer($this->denormalizer->denormalize($data->{'Customer'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersCustomer', 'json', $context));
         }
-        if (property_exists($data, 'Endorsements')) {
+        if (property_exists($data, 'Endorsements') && $data->{'Endorsements'} !== null) {
             $object->setEndorsements($this->denormalizer->denormalize($data->{'Endorsements'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersEndorsements', 'json', $context));
         }
-        if (property_exists($data, 'HemisphereCode')) {
+        if (property_exists($data, 'HemisphereCode') && $data->{'HemisphereCode'} !== null) {
             $object->setHemisphereCode($data->{'HemisphereCode'});
         }
-        if (property_exists($data, 'JourneyCode')) {
+        if (property_exists($data, 'JourneyCode') && $data->{'JourneyCode'} !== null) {
             $object->setJourneyCode($data->{'JourneyCode'});
         }
-        if (property_exists($data, 'MultiTicket')) {
+        if (property_exists($data, 'MultiTicket') && $data->{'MultiTicket'} !== null) {
             $object->setMultiTicket($this->denormalizer->denormalize($data->{'MultiTicket'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersMultiTicket', 'json', $context));
         }
-        if (property_exists($data, 'TourCode')) {
+        if (property_exists($data, 'TourCode') && $data->{'TourCode'} !== null) {
             $object->setTourCode($this->denormalizer->denormalize($data->{'TourCode'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersTourCode', 'json', $context));
         }
-        if (property_exists($data, 'ValidationMethod')) {
+        if (property_exists($data, 'ValidationMethod') && $data->{'ValidationMethod'} !== null) {
             $object->setValidationMethod($data->{'ValidationMethod'});
         }
 

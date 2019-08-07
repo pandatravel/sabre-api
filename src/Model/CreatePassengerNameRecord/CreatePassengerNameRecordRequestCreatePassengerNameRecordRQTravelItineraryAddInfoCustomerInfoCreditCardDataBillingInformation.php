@@ -40,8 +40,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
     protected $city;
     /**
      * 'stateOrProvince' is used to specify the state or province of the card holder.
-     * 'stateOrProvince' with a state code is required for addresses in the United States, U.S. Virgin Islands, and Puerto Rico.
-     * 'stateOrProvince' with a province code is required for addresses outside the United States, U.S. Virgin Islands, and Puerto Rico.
+    'stateOrProvince' with a state code is required for addresses in the United States, U.S. Virgin Islands, and Puerto Rico.
+    'stateOrProvince' with a province code is required for addresses outside the United States, U.S. Virgin Islands, and Puerto Rico.
+
      *
      * @var string
      */
@@ -50,9 +51,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
     /**
      * Used to specify the zip code of the card holder.
      *
-     * @return string
+     * @return string|null
      */
-    public function getZip(): string
+    public function getZip(): ?string
     {
         return $this->zip;
     }
@@ -60,11 +61,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
     /**
      * Used to specify the zip code of the card holder.
      *
-     * @param string $zip
+     * @param string|null $zip
      *
      * @return self
      */
-    public function setZip(string $zip): self
+    public function setZip(?string $zip): self
     {
         $this->zip = $zip;
 
@@ -74,9 +75,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
     /**
      * Used to specify the name of the card holder.
      *
-     * @return string
+     * @return string|null
      */
-    public function getCardHolderName(): string
+    public function getCardHolderName(): ?string
     {
         return $this->cardHolderName;
     }
@@ -84,11 +85,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
     /**
      * Used to specify the name of the card holder.
      *
-     * @param string $cardHolderName
+     * @param string|null $cardHolderName
      *
      * @return self
      */
-    public function setCardHolderName(string $cardHolderName): self
+    public function setCardHolderName(?string $cardHolderName): self
     {
         $this->cardHolderName = $cardHolderName;
 
@@ -98,9 +99,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
     /**
      * Used to specify the street address of the card holder.
      *
-     * @return string
+     * @return string|null
      */
-    public function getStreetAddress(): string
+    public function getStreetAddress(): ?string
     {
         return $this->streetAddress;
     }
@@ -108,11 +109,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
     /**
      * Used to specify the street address of the card holder.
      *
-     * @param string $streetAddress
+     * @param string|null $streetAddress
      *
      * @return self
      */
-    public function setStreetAddress(string $streetAddress): self
+    public function setStreetAddress(?string $streetAddress): self
     {
         $this->streetAddress = $streetAddress;
 
@@ -122,9 +123,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
     /**
      * Used to specify the city of the card holder.
      *
-     * @return string
+     * @return string|null
      */
-    public function getCity(): string
+    public function getCity(): ?string
     {
         return $this->city;
     }
@@ -132,11 +133,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
     /**
      * Used to specify the city of the card holder.
      *
-     * @param string $city
+     * @param string|null $city
      *
      * @return self
      */
-    public function setCity(string $city): self
+    public function setCity(?string $city): self
     {
         $this->city = $city;
 
@@ -145,26 +146,28 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
 
     /**
      * 'stateOrProvince' is used to specify the state or province of the card holder.
-     * 'stateOrProvince' with a state code is required for addresses in the United States, U.S. Virgin Islands, and Puerto Rico.
-     * 'stateOrProvince' with a province code is required for addresses outside the United States, U.S. Virgin Islands, and Puerto Rico.
+    'stateOrProvince' with a state code is required for addresses in the United States, U.S. Virgin Islands, and Puerto Rico.
+    'stateOrProvince' with a province code is required for addresses outside the United States, U.S. Virgin Islands, and Puerto Rico.
+
      *
-     * @return string
+     * @return string|null
      */
-    public function getStateOrProvince(): string
+    public function getStateOrProvince(): ?string
     {
         return $this->stateOrProvince;
     }
 
     /**
      * 'stateOrProvince' is used to specify the state or province of the card holder.
-     * 'stateOrProvince' with a state code is required for addresses in the United States, U.S. Virgin Islands, and Puerto Rico.
-     * 'stateOrProvince' with a province code is required for addresses outside the United States, U.S. Virgin Islands, and Puerto Rico.
+    'stateOrProvince' with a state code is required for addresses in the United States, U.S. Virgin Islands, and Puerto Rico.
+    'stateOrProvince' with a province code is required for addresses outside the United States, U.S. Virgin Islands, and Puerto Rico.
+
      *
-     * @param string $stateOrProvince
+     * @param string|null $stateOrProvince
      *
      * @return self
      */
-    public function setStateOrProvince(string $stateOrProvince): self
+    public function setStateOrProvince(?string $stateOrProvince): self
     {
         $this->stateOrProvince = $stateOrProvince;
 

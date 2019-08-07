@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\CreatePassengerNameRecord\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -36,20 +35,20 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingE
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmailItinerary();
-        if (property_exists($data, 'PDF')) {
+        if (property_exists($data, 'PDF') && $data->{'PDF'} !== null) {
             $object->setPDF($this->denormalizer->denormalize($data->{'PDF'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmailItineraryPDF', 'json', $context));
         }
-        if (property_exists($data, 'Segment')) {
+        if (property_exists($data, 'Segment') && $data->{'Segment'} !== null) {
             $values = [];
             foreach ($data->{'Segment'} as $value) {
                 $values[] = $this->denormalizer->denormalize($value, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmailItinerarySegmentItem', 'json', $context);
             }
             $object->setSegment($values);
         }
-        if (property_exists($data, 'Ind')) {
+        if (property_exists($data, 'Ind') && $data->{'Ind'} !== null) {
             $object->setInd($data->{'Ind'});
         }
 

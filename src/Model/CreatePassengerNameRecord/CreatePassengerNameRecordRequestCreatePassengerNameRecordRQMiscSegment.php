@@ -52,7 +52,8 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQMiscSegment ext
     protected $numberInParty;
     /**
      * Used to specify the action code to be used to sell the segment.
-     * Example: 'GK'.
+    Example: 'GK'.
+
      *
      * @var string
      */
@@ -67,9 +68,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQMiscSegment ext
     /**
      * Used to specify the location to be associated with the miscellaneous segment.
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQMiscSegmentOriginLocation
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQMiscSegmentOriginLocation|null
      */
-    public function getOriginLocation(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQMiscSegmentOriginLocation
+    public function getOriginLocation(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQMiscSegmentOriginLocation
     {
         return $this->originLocation;
     }
@@ -77,11 +78,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQMiscSegment ext
     /**
      * Used to specify the location to be associated with the miscellaneous segment.
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQMiscSegmentOriginLocation $originLocation
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQMiscSegmentOriginLocation|null $originLocation
      *
      * @return self
      */
-    public function setOriginLocation(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQMiscSegmentOriginLocation $originLocation): self
+    public function setOriginLocation(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQMiscSegmentOriginLocation $originLocation): self
     {
         $this->originLocation = $originLocation;
 
@@ -91,9 +92,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQMiscSegment ext
     /**
      * Used to specify free text information to be associated with the miscellaneous segment.
      *
-     * @return string
+     * @return string|null
      */
-    public function getText(): string
+    public function getText(): ?string
     {
         return $this->text;
     }
@@ -101,11 +102,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQMiscSegment ext
     /**
      * Used to specify free text information to be associated with the miscellaneous segment.
      *
-     * @param string $text
+     * @param string|null $text
      *
      * @return self
      */
-    public function setText(string $text): self
+    public function setText(?string $text): self
     {
         $this->text = $text;
 
@@ -115,9 +116,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQMiscSegment ext
     /**
      * Used to specify a particular vendor code.
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQMiscSegmentVendorPrefs
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQMiscSegmentVendorPrefs|null
      */
-    public function getVendorPrefs(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQMiscSegmentVendorPrefs
+    public function getVendorPrefs(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQMiscSegmentVendorPrefs
     {
         return $this->vendorPrefs;
     }
@@ -125,11 +126,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQMiscSegment ext
     /**
      * Used to specify a particular vendor code.
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQMiscSegmentVendorPrefs $vendorPrefs
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQMiscSegmentVendorPrefs|null $vendorPrefs
      *
      * @return self
      */
-    public function setVendorPrefs(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQMiscSegmentVendorPrefs $vendorPrefs): self
+    public function setVendorPrefs(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQMiscSegmentVendorPrefs $vendorPrefs): self
     {
         $this->vendorPrefs = $vendorPrefs;
 
@@ -139,9 +140,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQMiscSegment ext
     /**
      * Used to specify the date and time associated with the miscellaneous segment.
      *
-     * @return string
+     * @return string|null
      */
-    public function getDepartureDateTime(): string
+    public function getDepartureDateTime(): ?string
     {
         return $this->departureDateTime;
     }
@@ -149,11 +150,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQMiscSegment ext
     /**
      * Used to specify the date and time associated with the miscellaneous segment.
      *
-     * @param string $departureDateTime
+     * @param string|null $departureDateTime
      *
      * @return self
      */
-    public function setDepartureDateTime(string $departureDateTime): self
+    public function setDepartureDateTime(?string $departureDateTime): self
     {
         $this->departureDateTime = $departureDateTime;
 
@@ -163,9 +164,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQMiscSegment ext
     /**
      * Used to denote a segment after which the miscellaneous segment needs to be placed.
      *
-     * @return int
+     * @return int|null
      */
-    public function getInsertAfter(): int
+    public function getInsertAfter(): ?int
     {
         return $this->insertAfter;
     }
@@ -173,11 +174,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQMiscSegment ext
     /**
      * Used to denote a segment after which the miscellaneous segment needs to be placed.
      *
-     * @param int $insertAfter
+     * @param int|null $insertAfter
      *
      * @return self
      */
-    public function setInsertAfter(int $insertAfter): self
+    public function setInsertAfter(?int $insertAfter): self
     {
         $this->insertAfter = $insertAfter;
 
@@ -187,9 +188,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQMiscSegment ext
     /**
      * Used to specify the number of passengers associated with the miscellaneous segment.
      *
-     * @return int
+     * @return int|null
      */
-    public function getNumberInParty(): int
+    public function getNumberInParty(): ?int
     {
         return $this->numberInParty;
     }
@@ -197,11 +198,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQMiscSegment ext
     /**
      * Used to specify the number of passengers associated with the miscellaneous segment.
      *
-     * @param int $numberInParty
+     * @param int|null $numberInParty
      *
      * @return self
      */
-    public function setNumberInParty(int $numberInParty): self
+    public function setNumberInParty(?int $numberInParty): self
     {
         $this->numberInParty = $numberInParty;
 
@@ -210,24 +211,26 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQMiscSegment ext
 
     /**
      * Used to specify the action code to be used to sell the segment.
-     * Example: 'GK'.
+    Example: 'GK'.
+
      *
-     * @return string
+     * @return string|null
      */
-    public function getStatus(): string
+    public function getStatus(): ?string
     {
         return $this->status;
     }
 
     /**
      * Used to specify the action code to be used to sell the segment.
-     * Example: 'GK'.
+    Example: 'GK'.
+
      *
-     * @param string $status
+     * @param string|null $status
      *
      * @return self
      */
-    public function setStatus(string $status): self
+    public function setStatus(?string $status): self
     {
         $this->status = $status;
 
@@ -237,9 +240,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQMiscSegment ext
     /**
      * Used to specify the type of the miscellaneous segment.
      *
-     * @return string
+     * @return string|null
      */
-    public function getType(): string
+    public function getType(): ?string
     {
         return $this->type;
     }
@@ -247,11 +250,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQMiscSegment ext
     /**
      * Used to specify the type of the miscellaneous segment.
      *
-     * @param string $type
+     * @param string|null $type
      *
      * @return self
      */
-    public function setType(string $type): self
+    public function setType(?string $type): self
     {
         $this->type = $type;
 

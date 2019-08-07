@@ -30,9 +30,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The sub code for allowance information.
      *
-     * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemSubCodeInfoSubCodeForAllowanceItem[]
+     * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemSubCodeInfoSubCodeForAllowanceItem[]|null
      */
-    public function getSubCodeForAllowance(): array
+    public function getSubCodeForAllowance(): ?array
     {
         return $this->subCodeForAllowance;
     }
@@ -40,11 +40,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The sub code for allowance information.
      *
-     * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemSubCodeInfoSubCodeForAllowanceItem[] $subCodeForAllowance
+     * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemSubCodeInfoSubCodeForAllowanceItem[]|null $subCodeForAllowance
      *
      * @return self
      */
-    public function setSubCodeForAllowance(array $subCodeForAllowance): self
+    public function setSubCodeForAllowance(?array $subCodeForAllowance): self
     {
         $this->subCodeForAllowance = $subCodeForAllowance;
 
@@ -54,9 +54,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The sub code associated with charges.
      *
-     * @return string
+     * @return string|null
      */
-    public function getSubCodeForChargesOthers(): string
+    public function getSubCodeForChargesOthers(): ?string
     {
         return $this->subCodeForChargesOthers;
     }
@@ -64,11 +64,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The sub code associated with charges.
      *
-     * @param string $subCodeForChargesOthers
+     * @param string|null $subCodeForChargesOthers
      *
      * @return self
      */
-    public function setSubCodeForChargesOthers(string $subCodeForChargesOthers): self
+    public function setSubCodeForChargesOthers(?string $subCodeForChargesOthers): self
     {
         $this->subCodeForChargesOthers = $subCodeForChargesOthers;
 

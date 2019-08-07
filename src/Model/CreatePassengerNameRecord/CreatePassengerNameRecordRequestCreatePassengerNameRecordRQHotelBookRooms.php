@@ -30,9 +30,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRooms 
     /**
      * The list of Rooms.
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsRoomItem[]
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsRoomItem[]|null
      */
-    public function getRoom(): array
+    public function getRoom(): ?array
     {
         return $this->room;
     }
@@ -40,11 +40,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRooms 
     /**
      * The list of Rooms.
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsRoomItem[] $room
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsRoomItem[]|null $room
      *
      * @return self
      */
-    public function setRoom(array $room): self
+    public function setRoom(?array $room): self
     {
         $this->room = $room;
 
@@ -54,9 +54,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRooms 
     /**
      * Indicates the number of rooms to be booked.
      *
-     * @return int
+     * @return int|null
      */
-    public function getNumberOfRooms(): int
+    public function getNumberOfRooms(): ?int
     {
         return $this->numberOfRooms;
     }
@@ -64,11 +64,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRooms 
     /**
      * Indicates the number of rooms to be booked.
      *
-     * @param int $numberOfRooms
+     * @param int|null $numberOfRooms
      *
      * @return self
      */
-    public function setNumberOfRooms(int $numberOfRooms): self
+    public function setNumberOfRooms(?int $numberOfRooms): self
     {
         $this->numberOfRooms = $numberOfRooms;
 

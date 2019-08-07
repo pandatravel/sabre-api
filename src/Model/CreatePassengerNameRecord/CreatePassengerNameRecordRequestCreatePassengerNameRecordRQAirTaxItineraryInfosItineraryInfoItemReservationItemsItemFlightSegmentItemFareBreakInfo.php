@@ -16,21 +16,24 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItinerary
 {
     /**
      * The base fare.
-     * BaseFare element is needed only with the last flight segment in a fare break.
+    BaseFare element is needed only with the last flight segment in a fare break.
+
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItemFareBreakInfoBaseFare
      */
     protected $baseFare;
     /**
      * The equivalent fare.
-     * 'EquivalentFare' element is needed only with the last flight segment in a fare break.
+    'EquivalentFare' element is needed only with the last flight segment in a fare break.
+
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItemFareBreakInfoEquivFare
      */
     protected $equivFare;
     /**
      * The Fare basis code.
-     * 'FareBasisCode' information is needed only with the last flight segment in a fare break.
+    'FareBasisCode' information is needed only with the last flight segment in a fare break.
+
      *
      * @var string
      */
@@ -49,14 +52,16 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItinerary
     protected $sideTripEndInd;
     /**
      * Used to indicate the side trip number to which this flight segment belongs.
-     * If more than one side trips in the itinerary, identify side trip to which each flight segment belongs using the SideTripNumber.
+    If more than one side trips in the itinerary, identify side trip to which each flight segment belongs using the SideTripNumber.
+
      *
      * @var int
      */
     protected $sideTripNumber;
     /**
      * Used to indicate the fare component number to which the flight segment belongs.
-     * If more than one fare break is needed, identify the fare component to which each flight segment belongs using the FareComponentNumber.
+    If more than one fare break is needed, identify the fare component to which each flight segment belongs using the FareComponentNumber.
+
      *
      * @var int
      */
@@ -64,24 +69,26 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItinerary
 
     /**
      * The base fare.
-     * BaseFare element is needed only with the last flight segment in a fare break.
+    BaseFare element is needed only with the last flight segment in a fare break.
+
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItemFareBreakInfoBaseFare
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItemFareBreakInfoBaseFare|null
      */
-    public function getBaseFare(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItemFareBreakInfoBaseFare
+    public function getBaseFare(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItemFareBreakInfoBaseFare
     {
         return $this->baseFare;
     }
 
     /**
      * The base fare.
-     * BaseFare element is needed only with the last flight segment in a fare break.
+    BaseFare element is needed only with the last flight segment in a fare break.
+
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItemFareBreakInfoBaseFare $baseFare
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItemFareBreakInfoBaseFare|null $baseFare
      *
      * @return self
      */
-    public function setBaseFare(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItemFareBreakInfoBaseFare $baseFare): self
+    public function setBaseFare(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItemFareBreakInfoBaseFare $baseFare): self
     {
         $this->baseFare = $baseFare;
 
@@ -90,24 +97,26 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItinerary
 
     /**
      * The equivalent fare.
-     * 'EquivalentFare' element is needed only with the last flight segment in a fare break.
+    'EquivalentFare' element is needed only with the last flight segment in a fare break.
+
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItemFareBreakInfoEquivFare
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItemFareBreakInfoEquivFare|null
      */
-    public function getEquivFare(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItemFareBreakInfoEquivFare
+    public function getEquivFare(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItemFareBreakInfoEquivFare
     {
         return $this->equivFare;
     }
 
     /**
      * The equivalent fare.
-     * 'EquivalentFare' element is needed only with the last flight segment in a fare break.
+    'EquivalentFare' element is needed only with the last flight segment in a fare break.
+
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItemFareBreakInfoEquivFare $equivFare
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItemFareBreakInfoEquivFare|null $equivFare
      *
      * @return self
      */
-    public function setEquivFare(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItemFareBreakInfoEquivFare $equivFare): self
+    public function setEquivFare(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItemFareBreakInfoEquivFare $equivFare): self
     {
         $this->equivFare = $equivFare;
 
@@ -116,24 +125,26 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItinerary
 
     /**
      * The Fare basis code.
-     * 'FareBasisCode' information is needed only with the last flight segment in a fare break.
+    'FareBasisCode' information is needed only with the last flight segment in a fare break.
+
      *
-     * @return string
+     * @return string|null
      */
-    public function getFareBasisCode(): string
+    public function getFareBasisCode(): ?string
     {
         return $this->fareBasisCode;
     }
 
     /**
      * The Fare basis code.
-     * 'FareBasisCode' information is needed only with the last flight segment in a fare break.
+    'FareBasisCode' information is needed only with the last flight segment in a fare break.
+
      *
-     * @param string $fareBasisCode
+     * @param string|null $fareBasisCode
      *
      * @return self
      */
-    public function setFareBasisCode(string $fareBasisCode): self
+    public function setFareBasisCode(?string $fareBasisCode): self
     {
         $this->fareBasisCode = $fareBasisCode;
 
@@ -143,9 +154,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItinerary
     /**
      * Used to indicate if a flight segment is the start of a side trip.
      *
-     * @return bool
+     * @return bool|null
      */
-    public function getSideTripStartInd(): bool
+    public function getSideTripStartInd(): ?bool
     {
         return $this->sideTripStartInd;
     }
@@ -153,11 +164,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItinerary
     /**
      * Used to indicate if a flight segment is the start of a side trip.
      *
-     * @param bool $sideTripStartInd
+     * @param bool|null $sideTripStartInd
      *
      * @return self
      */
-    public function setSideTripStartInd(bool $sideTripStartInd): self
+    public function setSideTripStartInd(?bool $sideTripStartInd): self
     {
         $this->sideTripStartInd = $sideTripStartInd;
 
@@ -167,9 +178,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItinerary
     /**
      * Used to indicate if a flight segment is the end of a side trip.
      *
-     * @return bool
+     * @return bool|null
      */
-    public function getSideTripEndInd(): bool
+    public function getSideTripEndInd(): ?bool
     {
         return $this->sideTripEndInd;
     }
@@ -177,11 +188,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItinerary
     /**
      * Used to indicate if a flight segment is the end of a side trip.
      *
-     * @param bool $sideTripEndInd
+     * @param bool|null $sideTripEndInd
      *
      * @return self
      */
-    public function setSideTripEndInd(bool $sideTripEndInd): self
+    public function setSideTripEndInd(?bool $sideTripEndInd): self
     {
         $this->sideTripEndInd = $sideTripEndInd;
 
@@ -190,24 +201,26 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItinerary
 
     /**
      * Used to indicate the side trip number to which this flight segment belongs.
-     * If more than one side trips in the itinerary, identify side trip to which each flight segment belongs using the SideTripNumber.
+    If more than one side trips in the itinerary, identify side trip to which each flight segment belongs using the SideTripNumber.
+
      *
-     * @return int
+     * @return int|null
      */
-    public function getSideTripNumber(): int
+    public function getSideTripNumber(): ?int
     {
         return $this->sideTripNumber;
     }
 
     /**
      * Used to indicate the side trip number to which this flight segment belongs.
-     * If more than one side trips in the itinerary, identify side trip to which each flight segment belongs using the SideTripNumber.
+    If more than one side trips in the itinerary, identify side trip to which each flight segment belongs using the SideTripNumber.
+
      *
-     * @param int $sideTripNumber
+     * @param int|null $sideTripNumber
      *
      * @return self
      */
-    public function setSideTripNumber(int $sideTripNumber): self
+    public function setSideTripNumber(?int $sideTripNumber): self
     {
         $this->sideTripNumber = $sideTripNumber;
 
@@ -216,24 +229,26 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItinerary
 
     /**
      * Used to indicate the fare component number to which the flight segment belongs.
-     * If more than one fare break is needed, identify the fare component to which each flight segment belongs using the FareComponentNumber.
+    If more than one fare break is needed, identify the fare component to which each flight segment belongs using the FareComponentNumber.
+
      *
-     * @return int
+     * @return int|null
      */
-    public function getFareComponentNumber(): int
+    public function getFareComponentNumber(): ?int
     {
         return $this->fareComponentNumber;
     }
 
     /**
      * Used to indicate the fare component number to which the flight segment belongs.
-     * If more than one fare break is needed, identify the fare component to which each flight segment belongs using the FareComponentNumber.
+    If more than one fare break is needed, identify the fare component to which each flight segment belongs using the FareComponentNumber.
+
      *
-     * @param int $fareComponentNumber
+     * @param int|null $fareComponentNumber
      *
      * @return self
      */
-    public function setFareComponentNumber(int $fareComponentNumber): self
+    public function setFareComponentNumber(?int $fareComponentNumber): self
     {
         $this->fareComponentNumber = $fareComponentNumber;
 

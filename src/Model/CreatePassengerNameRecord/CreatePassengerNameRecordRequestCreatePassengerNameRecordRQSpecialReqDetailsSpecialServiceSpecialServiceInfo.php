@@ -36,9 +36,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     /**
      * Used to specify the APIS (Advance Passenger Information).
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoAdvancePassengerItem[]
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoAdvancePassengerItem[]|null
      */
-    public function getAdvancePassenger(): array
+    public function getAdvancePassenger(): ?array
     {
         return $this->advancePassenger;
     }
@@ -46,11 +46,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     /**
      * Used to specify the APIS (Advance Passenger Information).
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoAdvancePassengerItem[] $advancePassenger
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoAdvancePassengerItem[]|null $advancePassenger
      *
      * @return self
      */
-    public function setAdvancePassenger(array $advancePassenger): self
+    public function setAdvancePassenger(?array $advancePassenger): self
     {
         $this->advancePassenger = $advancePassenger;
 
@@ -60,9 +60,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     /**
      * Used to specify Secure Flight Passenger Data (SFPD).
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoSecureFlightItem[]
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoSecureFlightItem[]|null
      */
-    public function getSecureFlight(): array
+    public function getSecureFlight(): ?array
     {
         return $this->secureFlight;
     }
@@ -70,11 +70,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     /**
      * Used to specify Secure Flight Passenger Data (SFPD).
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoSecureFlightItem[] $secureFlight
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoSecureFlightItem[]|null $secureFlight
      *
      * @return self
      */
-    public function setSecureFlight(array $secureFlight): self
+    public function setSecureFlight(?array $secureFlight): self
     {
         $this->secureFlight = $secureFlight;
 
@@ -84,9 +84,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     /**
      * Used to specify Special Service Request (SSR).
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoServiceItem[]
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoServiceItem[]|null
      */
-    public function getService(): array
+    public function getService(): ?array
     {
         return $this->service;
     }
@@ -94,11 +94,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     /**
      * Used to specify Special Service Request (SSR).
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoServiceItem[] $service
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoServiceItem[]|null $service
      *
      * @return self
      */
-    public function setService(array $service): self
+    public function setService(?array $service): self
     {
         $this->service = $service;
 

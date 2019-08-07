@@ -36,9 +36,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymen
     /**
      * The phone use type.
      *
-     * @return string
+     * @return string|null
      */
-    public function getPhoneUseType(): string
+    public function getPhoneUseType(): ?string
     {
         return $this->phoneUseType;
     }
@@ -46,11 +46,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymen
     /**
      * The phone use type.
      *
-     * @param string $phoneUseType
+     * @param string|null $phoneUseType
      *
      * @return self
      */
-    public function setPhoneUseType(string $phoneUseType): self
+    public function setPhoneUseType(?string $phoneUseType): self
     {
         $this->phoneUseType = $phoneUseType;
 
@@ -60,9 +60,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymen
     /**
      * The phone country code.
      *
-     * @return string
+     * @return string|null
      */
-    public function getPhoneCountryCode(): string
+    public function getPhoneCountryCode(): ?string
     {
         return $this->phoneCountryCode;
     }
@@ -70,11 +70,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymen
     /**
      * The phone country code.
      *
-     * @param string $phoneCountryCode
+     * @param string|null $phoneCountryCode
      *
      * @return self
      */
-    public function setPhoneCountryCode(string $phoneCountryCode): self
+    public function setPhoneCountryCode(?string $phoneCountryCode): self
     {
         $this->phoneCountryCode = $phoneCountryCode;
 
@@ -84,9 +84,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymen
     /**
      * The phone number.
      *
-     * @return string
+     * @return string|null
      */
-    public function getPhoneNumber(): string
+    public function getPhoneNumber(): ?string
     {
         return $this->phoneNumber;
     }
@@ -94,11 +94,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymen
     /**
      * The phone number.
      *
-     * @param string $phoneNumber
+     * @param string|null $phoneNumber
      *
      * @return self
      */
-    public function setPhoneNumber(string $phoneNumber): self
+    public function setPhoneNumber(?string $phoneNumber): self
     {
         $this->phoneNumber = $phoneNumber;
 

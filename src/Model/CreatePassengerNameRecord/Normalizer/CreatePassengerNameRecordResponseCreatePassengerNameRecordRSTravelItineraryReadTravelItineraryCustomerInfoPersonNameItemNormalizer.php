@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\CreatePassengerNameRecord\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -36,51 +35,51 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPersonNameItem();
-        if (property_exists($data, 'Email')) {
+        if (property_exists($data, 'Email') && $data->{'Email'} !== null) {
             $values = [];
             foreach ($data->{'Email'} as $value) {
                 $values[] = $this->denormalizer->denormalize($value, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPersonNameItemEmailItem', 'json', $context);
             }
             $object->setEmail($values);
         }
-        if (property_exists($data, 'GivenName')) {
+        if (property_exists($data, 'GivenName') && $data->{'GivenName'} !== null) {
             $object->setGivenName($data->{'GivenName'});
         }
-        if (property_exists($data, 'GroupInfo')) {
+        if (property_exists($data, 'GroupInfo') && $data->{'GroupInfo'} !== null) {
             $object->setGroupInfo($this->denormalizer->denormalize($data->{'GroupInfo'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPersonNameItemGroupInfo', 'json', $context));
         }
-        if (property_exists($data, 'ProfileIndex')) {
+        if (property_exists($data, 'ProfileIndex') && $data->{'ProfileIndex'} !== null) {
             $values_1 = [];
             foreach ($data->{'ProfileIndex'} as $value_1) {
                 $values_1[] = $this->denormalizer->denormalize($value_1, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPersonNameItemProfileIndexItem', 'json', $context);
             }
             $object->setProfileIndex($values_1);
         }
-        if (property_exists($data, 'Surname')) {
+        if (property_exists($data, 'Surname') && $data->{'Surname'} !== null) {
             $object->setSurname($data->{'Surname'});
         }
-        if (property_exists($data, 'WithInfant')) {
+        if (property_exists($data, 'WithInfant') && $data->{'WithInfant'} !== null) {
             $object->setWithInfant($data->{'WithInfant'});
         }
-        if (property_exists($data, 'NameNumber')) {
+        if (property_exists($data, 'NameNumber') && $data->{'NameNumber'} !== null) {
             $object->setNameNumber($data->{'NameNumber'});
         }
-        if (property_exists($data, 'NameReference')) {
+        if (property_exists($data, 'NameReference') && $data->{'NameReference'} !== null) {
             $object->setNameReference($data->{'NameReference'});
         }
-        if (property_exists($data, 'PassengerType')) {
+        if (property_exists($data, 'PassengerType') && $data->{'PassengerType'} !== null) {
             $object->setPassengerType($data->{'PassengerType'});
         }
-        if (property_exists($data, 'RPH')) {
+        if (property_exists($data, 'RPH') && $data->{'RPH'} !== null) {
             $object->setRPH($data->{'RPH'});
         }
-        if (property_exists($data, 'Id')) {
+        if (property_exists($data, 'Id') && $data->{'Id'} !== null) {
             $object->setId($data->{'Id'});
         }
-        if (property_exists($data, 'elementId')) {
+        if (property_exists($data, 'elementId') && $data->{'elementId'} !== null) {
             $object->setElementId($data->{'elementId'});
         }
 

@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\CreatePassengerNameRecord\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -36,19 +35,19 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAddRemarkRemarkInfoRemarkItem();
-        if (property_exists($data, 'Text')) {
+        if (property_exists($data, 'Text') && $data->{'Text'} !== null) {
             $object->setText($data->{'Text'});
         }
-        if (property_exists($data, 'Code')) {
+        if (property_exists($data, 'Code') && $data->{'Code'} !== null) {
             $object->setCode($data->{'Code'});
         }
-        if (property_exists($data, 'SegmentNumber')) {
+        if (property_exists($data, 'SegmentNumber') && $data->{'SegmentNumber'} !== null) {
             $object->setSegmentNumber($data->{'SegmentNumber'});
         }
-        if (property_exists($data, 'Type')) {
+        if (property_exists($data, 'Type') && $data->{'Type'} !== null) {
             $object->setType($data->{'Type'});
         }
 

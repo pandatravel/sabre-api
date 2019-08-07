@@ -34,14 +34,16 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
     protected $programID;
     /**
      * Used to add a segment number to associate the frequent traveler number to.
-     * SegmentNumber and TravelingCarrierCode cannot combine.
+    SegmentNumber and TravelingCarrierCode cannot combine.
+
      *
      * @var string
      */
     protected $segmentNumber;
     /**
      * Used to transmit the frequent traveler number of one airline to accrue mileage on another carrier.
-     * SegmentNumber and TravelingCarrierCode cannot combine.
+    SegmentNumber and TravelingCarrierCode cannot combine.
+
      *
      * @var string
      */
@@ -50,9 +52,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
     /**
      * Used to add a frequent traveler number into the record.
      *
-     * @return string
+     * @return string|null
      */
-    public function getMembershipID(): string
+    public function getMembershipID(): ?string
     {
         return $this->membershipID;
     }
@@ -60,11 +62,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
     /**
      * Used to add a frequent traveler number into the record.
      *
-     * @param string $membershipID
+     * @param string|null $membershipID
      *
      * @return self
      */
-    public function setMembershipID(string $membershipID): self
+    public function setMembershipID(?string $membershipID): self
     {
         $this->membershipID = $membershipID;
 
@@ -74,9 +76,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
     /**
      * Used to specify a passenger name number.
      *
-     * @return string
+     * @return string|null
      */
-    public function getNameNumber(): string
+    public function getNameNumber(): ?string
     {
         return $this->nameNumber;
     }
@@ -84,11 +86,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
     /**
      * Used to specify a passenger name number.
      *
-     * @param string $nameNumber
+     * @param string|null $nameNumber
      *
      * @return self
      */
-    public function setNameNumber(string $nameNumber): self
+    public function setNameNumber(?string $nameNumber): self
     {
         $this->nameNumber = $nameNumber;
 
@@ -98,9 +100,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
     /**
      * Used to add the carrier code associated with the frequent traveler number.
      *
-     * @return string
+     * @return string|null
      */
-    public function getProgramID(): string
+    public function getProgramID(): ?string
     {
         return $this->programID;
     }
@@ -108,11 +110,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
     /**
      * Used to add the carrier code associated with the frequent traveler number.
      *
-     * @param string $programID
+     * @param string|null $programID
      *
      * @return self
      */
-    public function setProgramID(string $programID): self
+    public function setProgramID(?string $programID): self
     {
         $this->programID = $programID;
 
@@ -121,24 +123,26 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
 
     /**
      * Used to add a segment number to associate the frequent traveler number to.
-     * SegmentNumber and TravelingCarrierCode cannot combine.
+    SegmentNumber and TravelingCarrierCode cannot combine.
+
      *
-     * @return string
+     * @return string|null
      */
-    public function getSegmentNumber(): string
+    public function getSegmentNumber(): ?string
     {
         return $this->segmentNumber;
     }
 
     /**
      * Used to add a segment number to associate the frequent traveler number to.
-     * SegmentNumber and TravelingCarrierCode cannot combine.
+    SegmentNumber and TravelingCarrierCode cannot combine.
+
      *
-     * @param string $segmentNumber
+     * @param string|null $segmentNumber
      *
      * @return self
      */
-    public function setSegmentNumber(string $segmentNumber): self
+    public function setSegmentNumber(?string $segmentNumber): self
     {
         $this->segmentNumber = $segmentNumber;
 
@@ -147,24 +151,26 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
 
     /**
      * Used to transmit the frequent traveler number of one airline to accrue mileage on another carrier.
-     * SegmentNumber and TravelingCarrierCode cannot combine.
+    SegmentNumber and TravelingCarrierCode cannot combine.
+
      *
-     * @return string
+     * @return string|null
      */
-    public function getTravelingCarrierCode(): string
+    public function getTravelingCarrierCode(): ?string
     {
         return $this->travelingCarrierCode;
     }
 
     /**
      * Used to transmit the frequent traveler number of one airline to accrue mileage on another carrier.
-     * SegmentNumber and TravelingCarrierCode cannot combine.
+    SegmentNumber and TravelingCarrierCode cannot combine.
+
      *
-     * @param string $travelingCarrierCode
+     * @param string|null $travelingCarrierCode
      *
      * @return self
      */
-    public function setTravelingCarrierCode(string $travelingCarrierCode): self
+    public function setTravelingCarrierCode(?string $travelingCarrierCode): self
     {
         $this->travelingCarrierCode = $travelingCarrierCode;
 

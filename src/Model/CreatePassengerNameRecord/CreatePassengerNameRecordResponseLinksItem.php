@@ -30,9 +30,9 @@ class CreatePassengerNameRecordResponseLinksItem extends AbstractModel
     /**
      * Describes relationship between href and current request.
      *
-     * @return string
+     * @return string|null
      */
-    public function getRel(): string
+    public function getRel(): ?string
     {
         return $this->rel;
     }
@@ -40,11 +40,11 @@ class CreatePassengerNameRecordResponseLinksItem extends AbstractModel
     /**
      * Describes relationship between href and current request.
      *
-     * @param string $rel
+     * @param string|null $rel
      *
      * @return self
      */
-    public function setRel(string $rel): self
+    public function setRel(?string $rel): self
     {
         $this->rel = $rel;
 
@@ -54,9 +54,9 @@ class CreatePassengerNameRecordResponseLinksItem extends AbstractModel
     /**
      * Link to related API request.
      *
-     * @return string
+     * @return string|null
      */
-    public function getHref(): string
+    public function getHref(): ?string
     {
         return $this->href;
     }
@@ -64,11 +64,11 @@ class CreatePassengerNameRecordResponseLinksItem extends AbstractModel
     /**
      * Link to related API request.
      *
-     * @param string $href
+     * @param string|null $href
      *
      * @return self
      */
-    public function setHref(string $href): self
+    public function setHref(?string $href): self
     {
         $this->href = $href;
 

@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\CreatePassengerNameRecord\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -36,19 +35,19 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemPTCFareBreakdownItemBrandedFareInformation();
-        if (property_exists($data, 'BrandCode')) {
+        if (property_exists($data, 'BrandCode') && $data->{'BrandCode'} !== null) {
             $object->setBrandCode($data->{'BrandCode'});
         }
-        if (property_exists($data, 'BrandName')) {
+        if (property_exists($data, 'BrandName') && $data->{'BrandName'} !== null) {
             $object->setBrandName($data->{'BrandName'});
         }
-        if (property_exists($data, 'ProgramCode')) {
+        if (property_exists($data, 'ProgramCode') && $data->{'ProgramCode'} !== null) {
             $object->setProgramCode($data->{'ProgramCode'});
         }
-        if (property_exists($data, 'ProgramName')) {
+        if (property_exists($data, 'ProgramName') && $data->{'ProgramName'} !== null) {
             $object->setProgramName($data->{'ProgramName'});
         }
 

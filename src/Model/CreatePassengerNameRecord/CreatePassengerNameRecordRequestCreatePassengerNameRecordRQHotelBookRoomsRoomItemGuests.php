@@ -24,9 +24,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsR
     /**
      * Used to pass details for a single guest.
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsRoomItemGuestsGuestItem[]
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsRoomItemGuestsGuestItem[]|null
      */
-    public function getGuest(): array
+    public function getGuest(): ?array
     {
         return $this->guest;
     }
@@ -34,11 +34,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsR
     /**
      * Used to pass details for a single guest.
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsRoomItemGuestsGuestItem[] $guest
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsRoomItemGuestsGuestItem[]|null $guest
      *
      * @return self
      */
-    public function setGuest(array $guest): self
+    public function setGuest(?array $guest): self
     {
         $this->guest = $guest;
 

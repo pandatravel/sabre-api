@@ -24,9 +24,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     /**
      * Defines if the receiving airline is a Sabre hosted carrier.
      *
-     * @return bool
+     * @return bool|null
      */
-    public function getHosted(): bool
+    public function getHosted(): ?bool
     {
         return $this->hosted;
     }
@@ -34,11 +34,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     /**
      * Defines if the receiving airline is a Sabre hosted carrier.
      *
-     * @param bool $hosted
+     * @param bool|null $hosted
      *
      * @return self
      */
-    public function setHosted(bool $hosted): self
+    public function setHosted(?bool $hosted): self
     {
         $this->hosted = $hosted;
 

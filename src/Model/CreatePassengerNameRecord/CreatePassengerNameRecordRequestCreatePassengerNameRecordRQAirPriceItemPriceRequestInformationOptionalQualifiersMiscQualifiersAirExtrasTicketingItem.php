@@ -36,9 +36,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to specify an end of range line number in the PNR's ticketing field to view air extra-related information for.
      *
-     * @return int
+     * @return int|null
      */
-    public function getEndNumber(): int
+    public function getEndNumber(): ?int
     {
         return $this->endNumber;
     }
@@ -46,11 +46,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to specify an end of range line number in the PNR's ticketing field to view air extra-related information for.
      *
-     * @param int $endNumber
+     * @param int|null $endNumber
      *
      * @return self
      */
-    public function setEndNumber(int $endNumber): self
+    public function setEndNumber(?int $endNumber): self
     {
         $this->endNumber = $endNumber;
 
@@ -60,9 +60,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to specify an eTicket number to view air extra-related information for.
      *
-     * @return int
+     * @return int|null
      */
-    public function getETicketNumber(): int
+    public function getETicketNumber(): ?int
     {
         return $this->eTicketNumber;
     }
@@ -70,11 +70,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to specify an eTicket number to view air extra-related information for.
      *
-     * @param int $eTicketNumber
+     * @param int|null $eTicketNumber
      *
      * @return self
      */
-    public function setETicketNumber(int $eTicketNumber): self
+    public function setETicketNumber(?int $eTicketNumber): self
     {
         $this->eTicketNumber = $eTicketNumber;
 
@@ -84,9 +84,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to specify a particular line from the PNR's ticketing field to view air extra-related information for.
      *
-     * @return int
+     * @return int|null
      */
-    public function getNumber(): int
+    public function getNumber(): ?int
     {
         return $this->number;
     }
@@ -94,11 +94,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to specify a particular line from the PNR's ticketing field to view air extra-related information for.
      *
-     * @param int $number
+     * @param int|null $number
      *
      * @return self
      */
-    public function setNumber(int $number): self
+    public function setNumber(?int $number): self
     {
         $this->number = $number;
 

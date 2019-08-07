@@ -22,7 +22,8 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     protected $qualifier;
     /**
      * Used to force only fares with a matched Business Rule containing the specified Retailer Rule Qualifier.
-     * 'Force' can only be used with one 'Qualifier'.
+    'Force' can only be used with one 'Qualifier'.
+
      *
      * @var bool
      */
@@ -31,9 +32,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * The Retailer Rule Qualifier code.
      *
-     * @return string[]
+     * @return string[]|null
      */
-    public function getQualifier(): array
+    public function getQualifier(): ?array
     {
         return $this->qualifier;
     }
@@ -41,11 +42,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * The Retailer Rule Qualifier code.
      *
-     * @param string[] $qualifier
+     * @param string[]|null $qualifier
      *
      * @return self
      */
-    public function setQualifier(array $qualifier): self
+    public function setQualifier(?array $qualifier): self
     {
         $this->qualifier = $qualifier;
 
@@ -54,24 +55,26 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
 
     /**
      * Used to force only fares with a matched Business Rule containing the specified Retailer Rule Qualifier.
-     * 'Force' can only be used with one 'Qualifier'.
+    'Force' can only be used with one 'Qualifier'.
+
      *
-     * @return bool
+     * @return bool|null
      */
-    public function getForce(): bool
+    public function getForce(): ?bool
     {
         return $this->force;
     }
 
     /**
      * Used to force only fares with a matched Business Rule containing the specified Retailer Rule Qualifier.
-     * 'Force' can only be used with one 'Qualifier'.
+    'Force' can only be used with one 'Qualifier'.
+
      *
-     * @param bool $force
+     * @param bool|null $force
      *
      * @return self
      */
-    public function setForce(bool $force): self
+    public function setForce(?bool $force): self
     {
         $this->force = $force;
 

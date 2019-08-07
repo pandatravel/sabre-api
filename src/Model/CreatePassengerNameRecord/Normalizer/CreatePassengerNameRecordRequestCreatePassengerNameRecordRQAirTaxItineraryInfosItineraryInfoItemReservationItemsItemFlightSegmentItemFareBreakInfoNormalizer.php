@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\CreatePassengerNameRecord\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -36,28 +35,28 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItinerary
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItemFareBreakInfo();
-        if (property_exists($data, 'BaseFare')) {
+        if (property_exists($data, 'BaseFare') && $data->{'BaseFare'} !== null) {
             $object->setBaseFare($this->denormalizer->denormalize($data->{'BaseFare'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItemFareBreakInfoBaseFare', 'json', $context));
         }
-        if (property_exists($data, 'EquivFare')) {
+        if (property_exists($data, 'EquivFare') && $data->{'EquivFare'} !== null) {
             $object->setEquivFare($this->denormalizer->denormalize($data->{'EquivFare'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItemFareBreakInfoEquivFare', 'json', $context));
         }
-        if (property_exists($data, 'FareBasisCode')) {
+        if (property_exists($data, 'FareBasisCode') && $data->{'FareBasisCode'} !== null) {
             $object->setFareBasisCode($data->{'FareBasisCode'});
         }
-        if (property_exists($data, 'SideTripStartInd')) {
+        if (property_exists($data, 'SideTripStartInd') && $data->{'SideTripStartInd'} !== null) {
             $object->setSideTripStartInd($data->{'SideTripStartInd'});
         }
-        if (property_exists($data, 'SideTripEndInd')) {
+        if (property_exists($data, 'SideTripEndInd') && $data->{'SideTripEndInd'} !== null) {
             $object->setSideTripEndInd($data->{'SideTripEndInd'});
         }
-        if (property_exists($data, 'SideTripNumber')) {
+        if (property_exists($data, 'SideTripNumber') && $data->{'SideTripNumber'} !== null) {
             $object->setSideTripNumber($data->{'SideTripNumber'});
         }
-        if (property_exists($data, 'FareComponentNumber')) {
+        if (property_exists($data, 'FareComponentNumber') && $data->{'FareComponentNumber'} !== null) {
             $object->setFareComponentNumber($data->{'FareComponentNumber'});
         }
 

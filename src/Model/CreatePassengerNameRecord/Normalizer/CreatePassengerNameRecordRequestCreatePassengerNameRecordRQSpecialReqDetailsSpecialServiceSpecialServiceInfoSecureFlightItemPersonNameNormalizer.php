@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\CreatePassengerNameRecord\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -36,22 +35,22 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoSecureFlightItemPersonName();
-        if (property_exists($data, 'GivenName')) {
+        if (property_exists($data, 'GivenName') && $data->{'GivenName'} !== null) {
             $object->setGivenName($data->{'GivenName'});
         }
-        if (property_exists($data, 'Surname')) {
+        if (property_exists($data, 'Surname') && $data->{'Surname'} !== null) {
             $object->setSurname($data->{'Surname'});
         }
-        if (property_exists($data, 'DateOfBirth')) {
+        if (property_exists($data, 'DateOfBirth') && $data->{'DateOfBirth'} !== null) {
             $object->setDateOfBirth($data->{'DateOfBirth'});
         }
-        if (property_exists($data, 'Gender')) {
+        if (property_exists($data, 'Gender') && $data->{'Gender'} !== null) {
             $object->setGender($data->{'Gender'});
         }
-        if (property_exists($data, 'NameNumber')) {
+        if (property_exists($data, 'NameNumber') && $data->{'NameNumber'} !== null) {
             $object->setNameNumber($data->{'NameNumber'});
         }
 

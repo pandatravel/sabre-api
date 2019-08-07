@@ -24,9 +24,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDe
     /**
      * Used to specify the departure airport code.
      *
-     * @return string
+     * @return string|null
      */
-    public function getLocationCode(): string
+    public function getLocationCode(): ?string
     {
         return $this->locationCode;
     }
@@ -34,11 +34,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDe
     /**
      * Used to specify the departure airport code.
      *
-     * @param string $locationCode
+     * @param string|null $locationCode
      *
      * @return self
      */
-    public function setLocationCode(string $locationCode): self
+    public function setLocationCode(?string $locationCode): self
     {
         $this->locationCode = $locationCode;
 

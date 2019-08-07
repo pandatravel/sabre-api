@@ -84,9 +84,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginD
     /**
      * The arrival airport code.
      *
-     * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginDestinationOptionFlightSegmentItemDestinationLocation
+     * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginDestinationOptionFlightSegmentItemDestinationLocation|null
      */
-    public function getDestinationLocation(): CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginDestinationOptionFlightSegmentItemDestinationLocation
+    public function getDestinationLocation(): ?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginDestinationOptionFlightSegmentItemDestinationLocation
     {
         return $this->destinationLocation;
     }
@@ -94,11 +94,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginD
     /**
      * The arrival airport code.
      *
-     * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginDestinationOptionFlightSegmentItemDestinationLocation $destinationLocation
+     * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginDestinationOptionFlightSegmentItemDestinationLocation|null $destinationLocation
      *
      * @return self
      */
-    public function setDestinationLocation(CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginDestinationOptionFlightSegmentItemDestinationLocation $destinationLocation): self
+    public function setDestinationLocation(?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginDestinationOptionFlightSegmentItemDestinationLocation $destinationLocation): self
     {
         $this->destinationLocation = $destinationLocation;
 
@@ -108,9 +108,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginD
     /**
      * The marketing airline code.
      *
-     * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginDestinationOptionFlightSegmentItemMarketingAirline
+     * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginDestinationOptionFlightSegmentItemMarketingAirline|null
      */
-    public function getMarketingAirline(): CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginDestinationOptionFlightSegmentItemMarketingAirline
+    public function getMarketingAirline(): ?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginDestinationOptionFlightSegmentItemMarketingAirline
     {
         return $this->marketingAirline;
     }
@@ -118,11 +118,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginD
     /**
      * The marketing airline code.
      *
-     * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginDestinationOptionFlightSegmentItemMarketingAirline $marketingAirline
+     * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginDestinationOptionFlightSegmentItemMarketingAirline|null $marketingAirline
      *
      * @return self
      */
-    public function setMarketingAirline(CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginDestinationOptionFlightSegmentItemMarketingAirline $marketingAirline): self
+    public function setMarketingAirline(?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginDestinationOptionFlightSegmentItemMarketingAirline $marketingAirline): self
     {
         $this->marketingAirline = $marketingAirline;
 
@@ -132,9 +132,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginD
     /**
      * Used to return married connection indicators associated with the particular flight segment.
      *
-     * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginDestinationOptionFlightSegmentItemMarriageGrp
+     * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginDestinationOptionFlightSegmentItemMarriageGrp|null
      */
-    public function getMarriageGrp(): CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginDestinationOptionFlightSegmentItemMarriageGrp
+    public function getMarriageGrp(): ?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginDestinationOptionFlightSegmentItemMarriageGrp
     {
         return $this->marriageGrp;
     }
@@ -142,11 +142,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginD
     /**
      * Used to return married connection indicators associated with the particular flight segment.
      *
-     * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginDestinationOptionFlightSegmentItemMarriageGrp $marriageGrp
+     * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginDestinationOptionFlightSegmentItemMarriageGrp|null $marriageGrp
      *
      * @return self
      */
-    public function setMarriageGrp(CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginDestinationOptionFlightSegmentItemMarriageGrp $marriageGrp): self
+    public function setMarriageGrp(?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginDestinationOptionFlightSegmentItemMarriageGrp $marriageGrp): self
     {
         $this->marriageGrp = $marriageGrp;
 
@@ -156,9 +156,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginD
     /**
      * The departure airport code.
      *
-     * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginDestinationOptionFlightSegmentItemOriginLocation
+     * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginDestinationOptionFlightSegmentItemOriginLocation|null
      */
-    public function getOriginLocation(): CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginDestinationOptionFlightSegmentItemOriginLocation
+    public function getOriginLocation(): ?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginDestinationOptionFlightSegmentItemOriginLocation
     {
         return $this->originLocation;
     }
@@ -166,11 +166,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginD
     /**
      * The departure airport code.
      *
-     * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginDestinationOptionFlightSegmentItemOriginLocation $originLocation
+     * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginDestinationOptionFlightSegmentItemOriginLocation|null $originLocation
      *
      * @return self
      */
-    public function setOriginLocation(CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginDestinationOptionFlightSegmentItemOriginLocation $originLocation): self
+    public function setOriginLocation(?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginDestinationOptionFlightSegmentItemOriginLocation $originLocation): self
     {
         $this->originLocation = $originLocation;
 
@@ -180,9 +180,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginD
     /**
      * The date and time of flight arrival.
      *
-     * @return string
+     * @return string|null
      */
-    public function getArrivalDateTime(): string
+    public function getArrivalDateTime(): ?string
     {
         return $this->arrivalDateTime;
     }
@@ -190,11 +190,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginD
     /**
      * The date and time of flight arrival.
      *
-     * @param string $arrivalDateTime
+     * @param string|null $arrivalDateTime
      *
      * @return self
      */
-    public function setArrivalDateTime(string $arrivalDateTime): self
+    public function setArrivalDateTime(?string $arrivalDateTime): self
     {
         $this->arrivalDateTime = $arrivalDateTime;
 
@@ -204,9 +204,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginD
     /**
      * The date and time of flight departure.
      *
-     * @return string
+     * @return string|null
      */
-    public function getDepartureDateTime(): string
+    public function getDepartureDateTime(): ?string
     {
         return $this->departureDateTime;
     }
@@ -214,11 +214,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginD
     /**
      * The date and time of flight departure.
      *
-     * @param string $departureDateTime
+     * @param string|null $departureDateTime
      *
      * @return self
      */
-    public function setDepartureDateTime(string $departureDateTime): self
+    public function setDepartureDateTime(?string $departureDateTime): self
     {
         $this->departureDateTime = $departureDateTime;
 
@@ -228,9 +228,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginD
     /**
      * Used to indicate whether or not the flight is eligible for eTicket.
      *
-     * @return bool
+     * @return bool|null
      */
-    public function getETicket(): bool
+    public function getETicket(): ?bool
     {
         return $this->eTicket;
     }
@@ -238,11 +238,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginD
     /**
      * Used to indicate whether or not the flight is eligible for eTicket.
      *
-     * @param bool $eTicket
+     * @param bool|null $eTicket
      *
      * @return self
      */
-    public function setETicket(bool $eTicket): self
+    public function setETicket(?bool $eTicket): self
     {
         $this->eTicket = $eTicket;
 
@@ -252,9 +252,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginD
     /**
      * The flight number.
      *
-     * @return string
+     * @return string|null
      */
-    public function getFlightNumber(): string
+    public function getFlightNumber(): ?string
     {
         return $this->flightNumber;
     }
@@ -262,11 +262,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginD
     /**
      * The flight number.
      *
-     * @param string $flightNumber
+     * @param string|null $flightNumber
      *
      * @return self
      */
-    public function setFlightNumber(string $flightNumber): self
+    public function setFlightNumber(?string $flightNumber): self
     {
         $this->flightNumber = $flightNumber;
 
@@ -276,9 +276,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginD
     /**
      * The number of passengers that have been booked during this transaction.
      *
-     * @return string
+     * @return string|null
      */
-    public function getNumberInParty(): string
+    public function getNumberInParty(): ?string
     {
         return $this->numberInParty;
     }
@@ -286,11 +286,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginD
     /**
      * The number of passengers that have been booked during this transaction.
      *
-     * @param string $numberInParty
+     * @param string|null $numberInParty
      *
      * @return self
      */
-    public function setNumberInParty(string $numberInParty): self
+    public function setNumberInParty(?string $numberInParty): self
     {
         $this->numberInParty = $numberInParty;
 
@@ -300,9 +300,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginD
     /**
      * The booking class.
      *
-     * @return string
+     * @return string|null
      */
-    public function getResBookDesigCode(): string
+    public function getResBookDesigCode(): ?string
     {
         return $this->resBookDesigCode;
     }
@@ -310,11 +310,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginD
     /**
      * The booking class.
      *
-     * @param string $resBookDesigCode
+     * @param string|null $resBookDesigCode
      *
      * @return self
      */
-    public function setResBookDesigCode(string $resBookDesigCode): self
+    public function setResBookDesigCode(?string $resBookDesigCode): self
     {
         $this->resBookDesigCode = $resBookDesigCode;
 
@@ -324,9 +324,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginD
     /**
      * The flight segment status associated with the booking transaction.
      *
-     * @return string
+     * @return string|null
      */
-    public function getStatus(): string
+    public function getStatus(): ?string
     {
         return $this->status;
     }
@@ -334,11 +334,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginD
     /**
      * The flight segment status associated with the booking transaction.
      *
-     * @param string $status
+     * @param string|null $status
      *
      * @return self
      */
-    public function setStatus(string $status): self
+    public function setStatus(?string $status): self
     {
         $this->status = $status;
 

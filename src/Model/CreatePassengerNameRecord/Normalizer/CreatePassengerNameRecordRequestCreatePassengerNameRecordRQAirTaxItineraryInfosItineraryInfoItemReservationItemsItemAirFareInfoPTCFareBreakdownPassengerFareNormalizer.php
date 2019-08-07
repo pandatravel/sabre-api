@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\CreatePassengerNameRecord\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -36,16 +35,16 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItinerary
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemAirFareInfoPTCFareBreakdownPassengerFare();
-        if (property_exists($data, 'BaseFare')) {
+        if (property_exists($data, 'BaseFare') && $data->{'BaseFare'} !== null) {
             $object->setBaseFare($this->denormalizer->denormalize($data->{'BaseFare'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemAirFareInfoPTCFareBreakdownPassengerFareBaseFare', 'json', $context));
         }
-        if (property_exists($data, 'EquivFare')) {
+        if (property_exists($data, 'EquivFare') && $data->{'EquivFare'} !== null) {
             $object->setEquivFare($this->denormalizer->denormalize($data->{'EquivFare'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemAirFareInfoPTCFareBreakdownPassengerFareEquivFare', 'json', $context));
         }
-        if (property_exists($data, 'AncillaryServiceCode')) {
+        if (property_exists($data, 'AncillaryServiceCode') && $data->{'AncillaryServiceCode'} !== null) {
             $object->setAncillaryServiceCode($data->{'AncillaryServiceCode'});
         }
 

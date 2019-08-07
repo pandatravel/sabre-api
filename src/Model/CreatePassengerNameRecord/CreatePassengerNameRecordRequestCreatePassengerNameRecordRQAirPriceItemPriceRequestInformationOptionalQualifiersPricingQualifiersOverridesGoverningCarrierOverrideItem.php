@@ -22,7 +22,8 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     protected $airline;
     /**
      * Used to tie a governing carrier override to particular segments.
-     * If a client application needs to utilize a governing carrier override from a particular segment or segments the application can use 'GoverningCarrierOverride' in conjunction with 'ItineraryOptions.SegmentSelect'.
+    If a client application needs to utilize a governing carrier override from a particular segment or segments the application can use 'GoverningCarrierOverride' in conjunction with 'ItineraryOptions.SegmentSelect'.
+
      *
      * @var string
      */
@@ -31,9 +32,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * The airline code.
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersOverridesGoverningCarrierOverrideItemAirline
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersOverridesGoverningCarrierOverrideItemAirline|null
      */
-    public function getAirline(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersOverridesGoverningCarrierOverrideItemAirline
+    public function getAirline(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersOverridesGoverningCarrierOverrideItemAirline
     {
         return $this->airline;
     }
@@ -41,11 +42,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * The airline code.
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersOverridesGoverningCarrierOverrideItemAirline $airline
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersOverridesGoverningCarrierOverrideItemAirline|null $airline
      *
      * @return self
      */
-    public function setAirline(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersOverridesGoverningCarrierOverrideItemAirline $airline): self
+    public function setAirline(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersOverridesGoverningCarrierOverrideItemAirline $airline): self
     {
         $this->airline = $airline;
 
@@ -54,24 +55,26 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
 
     /**
      * Used to tie a governing carrier override to particular segments.
-     * If a client application needs to utilize a governing carrier override from a particular segment or segments the application can use 'GoverningCarrierOverride' in conjunction with 'ItineraryOptions.SegmentSelect'.
+    If a client application needs to utilize a governing carrier override from a particular segment or segments the application can use 'GoverningCarrierOverride' in conjunction with 'ItineraryOptions.SegmentSelect'.
+
      *
-     * @return string
+     * @return string|null
      */
-    public function getRPH(): string
+    public function getRPH(): ?string
     {
         return $this->rPH;
     }
 
     /**
      * Used to tie a governing carrier override to particular segments.
-     * If a client application needs to utilize a governing carrier override from a particular segment or segments the application can use 'GoverningCarrierOverride' in conjunction with 'ItineraryOptions.SegmentSelect'.
+    If a client application needs to utilize a governing carrier override from a particular segment or segments the application can use 'GoverningCarrierOverride' in conjunction with 'ItineraryOptions.SegmentSelect'.
+
      *
-     * @param string $rPH
+     * @param string|null $rPH
      *
      * @return self
      */
-    public function setRPH(string $rPH): self
+    public function setRPH(?string $rPH): self
     {
         $this->rPH = $rPH;
 

@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\CreatePassengerNameRecord\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -36,22 +35,22 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformation();
-        if (property_exists($data, 'OptionalQualifiers')) {
+        if (property_exists($data, 'OptionalQualifiers') && $data->{'OptionalQualifiers'} !== null) {
             $object->setOptionalQualifiers($this->denormalizer->denormalize($data->{'OptionalQualifiers'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiers', 'json', $context));
         }
-        if (property_exists($data, 'AlternativePricing')) {
+        if (property_exists($data, 'AlternativePricing') && $data->{'AlternativePricing'} !== null) {
             $object->setAlternativePricing($data->{'AlternativePricing'});
         }
-        if (property_exists($data, 'FutureTicket')) {
+        if (property_exists($data, 'FutureTicket') && $data->{'FutureTicket'} !== null) {
             $object->setFutureTicket($data->{'FutureTicket'});
         }
-        if (property_exists($data, 'Manual')) {
+        if (property_exists($data, 'Manual') && $data->{'Manual'} !== null) {
             $object->setManual($data->{'Manual'});
         }
-        if (property_exists($data, 'Retain')) {
+        if (property_exists($data, 'Retain') && $data->{'Retain'} !== null) {
             $object->setRetain($data->{'Retain'});
         }
 

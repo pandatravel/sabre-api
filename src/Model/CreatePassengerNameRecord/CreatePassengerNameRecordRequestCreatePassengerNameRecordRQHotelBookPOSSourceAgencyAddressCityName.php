@@ -30,9 +30,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSou
     /**
      * The agency city name.
      *
-     * @return string
+     * @return string|null
      */
-    public function getContent(): string
+    public function getContent(): ?string
     {
         return $this->content;
     }
@@ -40,11 +40,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSou
     /**
      * The agency city name.
      *
-     * @param string $content
+     * @param string|null $content
      *
      * @return self
      */
-    public function setContent(string $content): self
+    public function setContent(?string $content): self
     {
         $this->content = $content;
 
@@ -54,9 +54,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSou
     /**
      * The agency city code.
      *
-     * @return string
+     * @return string|null
      */
-    public function getCityCode(): string
+    public function getCityCode(): ?string
     {
         return $this->cityCode;
     }
@@ -64,11 +64,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSou
     /**
      * The agency city code.
      *
-     * @param string $cityCode
+     * @param string|null $cityCode
      *
      * @return self
      */
-    public function setCityCode(string $cityCode): self
+    public function setCityCode(?string $cityCode): self
     {
         $this->cityCode = $cityCode;
 

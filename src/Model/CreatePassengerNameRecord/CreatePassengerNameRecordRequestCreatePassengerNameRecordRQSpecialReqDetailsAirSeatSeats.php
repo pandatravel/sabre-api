@@ -24,9 +24,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     /**
      * A single seat request.
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAirSeatSeatsSeatItem[]
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAirSeatSeatsSeatItem[]|null
      */
-    public function getSeat(): array
+    public function getSeat(): ?array
     {
         return $this->seat;
     }
@@ -34,11 +34,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     /**
      * A single seat request.
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAirSeatSeatsSeatItem[] $seat
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAirSeatSeatsSeatItem[]|null $seat
      *
      * @return self
      */
-    public function setSeat(array $seat): self
+    public function setSeat(?array $seat): self
     {
         $this->seat = $seat;
 

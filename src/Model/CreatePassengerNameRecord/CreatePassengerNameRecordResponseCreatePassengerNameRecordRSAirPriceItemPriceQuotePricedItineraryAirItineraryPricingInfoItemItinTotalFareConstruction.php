@@ -36,9 +36,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The construction amount information.
      *
-     * @return string
+     * @return string|null
      */
-    public function getAmount(): string
+    public function getAmount(): ?string
     {
         return $this->amount;
     }
@@ -46,11 +46,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The construction amount information.
      *
-     * @param string $amount
+     * @param string|null $amount
      *
      * @return self
      */
-    public function setAmount(string $amount): self
+    public function setAmount(?string $amount): self
     {
         $this->amount = $amount;
 
@@ -60,9 +60,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The applicable currency code.
      *
-     * @return string
+     * @return string|null
      */
-    public function getCurrencyCode(): string
+    public function getCurrencyCode(): ?string
     {
         return $this->currencyCode;
     }
@@ -70,11 +70,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The applicable currency code.
      *
-     * @param string $currencyCode
+     * @param string|null $currencyCode
      *
      * @return self
      */
-    public function setCurrencyCode(string $currencyCode): self
+    public function setCurrencyCode(?string $currencyCode): self
     {
         $this->currencyCode = $currencyCode;
 
@@ -84,9 +84,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The rate of exchange.
      *
-     * @return string
+     * @return string|null
      */
-    public function getRateOfExchange(): string
+    public function getRateOfExchange(): ?string
     {
         return $this->rateOfExchange;
     }
@@ -94,11 +94,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The rate of exchange.
      *
-     * @param string $rateOfExchange
+     * @param string|null $rateOfExchange
      *
      * @return self
      */
-    public function setRateOfExchange(string $rateOfExchange): self
+    public function setRateOfExchange(?string $rateOfExchange): self
     {
         $this->rateOfExchange = $rateOfExchange;
 

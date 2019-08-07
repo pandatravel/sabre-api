@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\CreatePassengerNameRecord\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -36,25 +35,25 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoSecureFlightItem();
-        if (property_exists($data, 'IssueCountry')) {
+        if (property_exists($data, 'IssueCountry') && $data->{'IssueCountry'} !== null) {
             $object->setIssueCountry($data->{'IssueCountry'});
         }
-        if (property_exists($data, 'KnownTravelerNumber')) {
+        if (property_exists($data, 'KnownTravelerNumber') && $data->{'KnownTravelerNumber'} !== null) {
             $object->setKnownTravelerNumber($data->{'KnownTravelerNumber'});
         }
-        if (property_exists($data, 'PersonName')) {
+        if (property_exists($data, 'PersonName') && $data->{'PersonName'} !== null) {
             $object->setPersonName($this->denormalizer->denormalize($data->{'PersonName'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoSecureFlightItemPersonName', 'json', $context));
         }
-        if (property_exists($data, 'RedressNumber')) {
+        if (property_exists($data, 'RedressNumber') && $data->{'RedressNumber'} !== null) {
             $object->setRedressNumber($data->{'RedressNumber'});
         }
-        if (property_exists($data, 'VendorPrefs')) {
+        if (property_exists($data, 'VendorPrefs') && $data->{'VendorPrefs'} !== null) {
             $object->setVendorPrefs($this->denormalizer->denormalize($data->{'VendorPrefs'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoSecureFlightItemVendorPrefs', 'json', $context));
         }
-        if (property_exists($data, 'SegmentNumber')) {
+        if (property_exists($data, 'SegmentNumber') && $data->{'SegmentNumber'} !== null) {
             $object->setSegmentNumber($data->{'SegmentNumber'});
         }
 

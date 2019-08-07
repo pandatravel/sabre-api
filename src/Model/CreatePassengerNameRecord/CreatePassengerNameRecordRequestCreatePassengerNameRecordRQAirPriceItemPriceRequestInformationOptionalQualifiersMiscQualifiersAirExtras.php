@@ -52,9 +52,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to pass the frequent flyer information.
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersAirExtrasCustLoyaltyItem[]
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersAirExtrasCustLoyaltyItem[]|null
      */
-    public function getCustLoyalty(): array
+    public function getCustLoyalty(): ?array
     {
         return $this->custLoyalty;
     }
@@ -62,11 +62,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to pass the frequent flyer information.
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersAirExtrasCustLoyaltyItem[] $custLoyalty
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersAirExtrasCustLoyaltyItem[]|null $custLoyalty
      *
      * @return self
      */
-    public function setCustLoyalty(array $custLoyalty): self
+    public function setCustLoyalty(?array $custLoyalty): self
     {
         $this->custLoyalty = $custLoyalty;
 
@@ -76,9 +76,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to specify a particular air extra to be included.
      *
-     * @return string[]
+     * @return string[]|null
      */
-    public function getQualifier(): array
+    public function getQualifier(): ?array
     {
         return $this->qualifier;
     }
@@ -86,11 +86,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to specify a particular air extra to be included.
      *
-     * @param string[] $qualifier
+     * @param string[]|null $qualifier
      *
      * @return self
      */
-    public function setQualifier(array $qualifier): self
+    public function setQualifier(?array $qualifier): self
     {
         $this->qualifier = $qualifier;
 
@@ -98,19 +98,19 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     }
 
     /**
-     * @return string[]
+     * @return string[]|null
      */
-    public function getSSRCode(): array
+    public function getSSRCode(): ?array
     {
         return $this->sSRCode;
     }
 
     /**
-     * @param string[] $sSRCode
+     * @param string[]|null $sSRCode
      *
      * @return self
      */
-    public function setSSRCode(array $sSRCode): self
+    public function setSSRCode(?array $sSRCode): self
     {
         $this->sSRCode = $sSRCode;
 
@@ -120,9 +120,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to specify an eTicket number to view air extra-related information for.
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersAirExtrasTicketingItem[]
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersAirExtrasTicketingItem[]|null
      */
-    public function getTicketing(): array
+    public function getTicketing(): ?array
     {
         return $this->ticketing;
     }
@@ -130,11 +130,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to specify an eTicket number to view air extra-related information for.
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersAirExtrasTicketingItem[] $ticketing
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersAirExtrasTicketingItem[]|null $ticketing
      *
      * @return self
      */
-    public function setTicketing(array $ticketing): self
+    public function setTicketing(?array $ticketing): self
     {
         $this->ticketing = $ticketing;
 
@@ -144,9 +144,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to indicate for the system to include air extras.
      *
-     * @return bool
+     * @return bool|null
      */
-    public function getInd(): bool
+    public function getInd(): ?bool
     {
         return $this->ind;
     }
@@ -154,11 +154,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to indicate for the system to include air extras.
      *
-     * @param bool $ind
+     * @param bool|null $ind
      *
      * @return self
      */
-    public function setInd(bool $ind): self
+    public function setInd(?bool $ind): self
     {
         $this->ind = $ind;
 
@@ -168,9 +168,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * This attribute is not in use.
      *
-     * @return bool
+     * @return bool|null
      */
-    public function getSummary(): bool
+    public function getSummary(): ?bool
     {
         return $this->summary;
     }
@@ -178,11 +178,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * This attribute is not in use.
      *
-     * @param bool $summary
+     * @param bool|null $summary
      *
      * @return self
      */
-    public function setSummary(bool $summary): self
+    public function setSummary(?bool $summary): self
     {
         $this->summary = $summary;
 

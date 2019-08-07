@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\CreatePassengerNameRecord\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -36,33 +35,33 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfo();
-        if (property_exists($data, 'Address')) {
+        if (property_exists($data, 'Address') && $data->{'Address'} !== null) {
             $object->setAddress($this->denormalizer->denormalize($data->{'Address'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoAddress', 'json', $context));
         }
-        if (property_exists($data, 'ContactNumbers')) {
+        if (property_exists($data, 'ContactNumbers') && $data->{'ContactNumbers'} !== null) {
             $object->setContactNumbers($this->denormalizer->denormalize($data->{'ContactNumbers'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoContactNumbers', 'json', $context));
         }
-        if (property_exists($data, 'CustLoyalty')) {
+        if (property_exists($data, 'CustLoyalty') && $data->{'CustLoyalty'} !== null) {
             $values = [];
             foreach ($data->{'CustLoyalty'} as $value) {
                 $values[] = $this->denormalizer->denormalize($value, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoCustLoyaltyItem', 'json', $context);
             }
             $object->setCustLoyalty($values);
         }
-        if (property_exists($data, 'Passport')) {
+        if (property_exists($data, 'Passport') && $data->{'Passport'} !== null) {
             $values_1 = [];
             foreach ($data->{'Passport'} as $value_1) {
                 $values_1[] = $this->denormalizer->denormalize($value_1, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPassportItem', 'json', $context);
             }
             $object->setPassport($values_1);
         }
-        if (property_exists($data, 'PaymentInfo')) {
+        if (property_exists($data, 'PaymentInfo') && $data->{'PaymentInfo'} !== null) {
             $object->setPaymentInfo($this->denormalizer->denormalize($data->{'PaymentInfo'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPaymentInfo', 'json', $context));
         }
-        if (property_exists($data, 'PersonName')) {
+        if (property_exists($data, 'PersonName') && $data->{'PersonName'} !== null) {
             $values_2 = [];
             foreach ($data->{'PersonName'} as $value_2) {
                 $values_2[] = $this->denormalizer->denormalize($value_2, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPersonNameItem', 'json', $context);

@@ -24,9 +24,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookRetryReb
     /**
      * 'Option' is used to specify if re-booking of segments is required when UC segment status is encountered in any of the segments which is being booked.
      *
-     * @return bool
+     * @return bool|null
      */
-    public function getOption(): bool
+    public function getOption(): ?bool
     {
         return $this->option;
     }
@@ -34,11 +34,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookRetryReb
     /**
      * 'Option' is used to specify if re-booking of segments is required when UC segment status is encountered in any of the segments which is being booked.
      *
-     * @param bool $option
+     * @param bool|null $option
      *
      * @return self
      */
-    public function setOption(bool $option): self
+    public function setOption(?bool $option): self
     {
         $this->option = $option;
 

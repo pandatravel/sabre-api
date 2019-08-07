@@ -24,9 +24,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSource
     /**
      * The user branch.
      *
-     * @return int
+     * @return int|null
      */
-    public function getCode(): int
+    public function getCode(): ?int
     {
         return $this->code;
     }
@@ -34,11 +34,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSource
     /**
      * The user branch.
      *
-     * @param int $code
+     * @param int|null $code
      *
      * @return self
      */
-    public function setCode(int $code): self
+    public function setCode(?int $code): self
     {
         $this->code = $code;
 

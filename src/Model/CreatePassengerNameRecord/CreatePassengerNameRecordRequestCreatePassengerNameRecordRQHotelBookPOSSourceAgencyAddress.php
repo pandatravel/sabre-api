@@ -60,9 +60,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSou
     /**
      * The first agency address line.
      *
-     * @return string
+     * @return string|null
      */
-    public function getAddressLine1(): string
+    public function getAddressLine1(): ?string
     {
         return $this->addressLine1;
     }
@@ -70,11 +70,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSou
     /**
      * The first agency address line.
      *
-     * @param string $addressLine1
+     * @param string|null $addressLine1
      *
      * @return self
      */
-    public function setAddressLine1(string $addressLine1): self
+    public function setAddressLine1(?string $addressLine1): self
     {
         $this->addressLine1 = $addressLine1;
 
@@ -84,9 +84,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSou
     /**
      * The second agency address line.
      *
-     * @return string
+     * @return string|null
      */
-    public function getAddressLine2(): string
+    public function getAddressLine2(): ?string
     {
         return $this->addressLine2;
     }
@@ -94,11 +94,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSou
     /**
      * The second agency address line.
      *
-     * @param string $addressLine2
+     * @param string|null $addressLine2
      *
      * @return self
      */
-    public function setAddressLine2(string $addressLine2): self
+    public function setAddressLine2(?string $addressLine2): self
     {
         $this->addressLine2 = $addressLine2;
 
@@ -108,9 +108,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSou
     /**
      * The third agency address line.
      *
-     * @return string
+     * @return string|null
      */
-    public function getAddressLine3(): string
+    public function getAddressLine3(): ?string
     {
         return $this->addressLine3;
     }
@@ -118,11 +118,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSou
     /**
      * The third agency address line.
      *
-     * @param string $addressLine3
+     * @param string|null $addressLine3
      *
      * @return self
      */
-    public function setAddressLine3(string $addressLine3): self
+    public function setAddressLine3(?string $addressLine3): self
     {
         $this->addressLine3 = $addressLine3;
 
@@ -132,9 +132,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSou
     /**
      * The agency city name information.
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSourceAgencyAddressCityName
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSourceAgencyAddressCityName|null
      */
-    public function getCityName(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSourceAgencyAddressCityName
+    public function getCityName(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSourceAgencyAddressCityName
     {
         return $this->cityName;
     }
@@ -142,11 +142,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSou
     /**
      * The agency city name information.
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSourceAgencyAddressCityName $cityName
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSourceAgencyAddressCityName|null $cityName
      *
      * @return self
      */
-    public function setCityName(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSourceAgencyAddressCityName $cityName): self
+    public function setCityName(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSourceAgencyAddressCityName $cityName): self
     {
         $this->cityName = $cityName;
 
@@ -156,9 +156,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSou
     /**
      * The agency state or province code information.
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSourceAgencyAddressStateProv
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSourceAgencyAddressStateProv|null
      */
-    public function getStateProv(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSourceAgencyAddressStateProv
+    public function getStateProv(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSourceAgencyAddressStateProv
     {
         return $this->stateProv;
     }
@@ -166,11 +166,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSou
     /**
      * The agency state or province code information.
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSourceAgencyAddressStateProv $stateProv
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSourceAgencyAddressStateProv|null $stateProv
      *
      * @return self
      */
-    public function setStateProv(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSourceAgencyAddressStateProv $stateProv): self
+    public function setStateProv(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSourceAgencyAddressStateProv $stateProv): self
     {
         $this->stateProv = $stateProv;
 
@@ -180,9 +180,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSou
     /**
      * The agency postal code.
      *
-     * @return string
+     * @return string|null
      */
-    public function getPostalCode(): string
+    public function getPostalCode(): ?string
     {
         return $this->postalCode;
     }
@@ -190,11 +190,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSou
     /**
      * The agency postal code.
      *
-     * @param string $postalCode
+     * @param string|null $postalCode
      *
      * @return self
      */
-    public function setPostalCode(string $postalCode): self
+    public function setPostalCode(?string $postalCode): self
     {
         $this->postalCode = $postalCode;
 
@@ -204,9 +204,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSou
     /**
      * The agency country and name information.
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSourceAgencyAddressCountryName
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSourceAgencyAddressCountryName|null
      */
-    public function getCountryName(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSourceAgencyAddressCountryName
+    public function getCountryName(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSourceAgencyAddressCountryName
     {
         return $this->countryName;
     }
@@ -214,11 +214,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSou
     /**
      * The agency country and name information.
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSourceAgencyAddressCountryName $countryName
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSourceAgencyAddressCountryName|null $countryName
      *
      * @return self
      */
-    public function setCountryName(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSourceAgencyAddressCountryName $countryName): self
+    public function setCountryName(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSourceAgencyAddressCountryName $countryName): self
     {
         $this->countryName = $countryName;
 

@@ -34,9 +34,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingE
     /**
      * 'PDF' is used to send an email notification containing a PDF-based copy of the itinerary.
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmailItineraryPDF
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmailItineraryPDF|null
      */
-    public function getPDF(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmailItineraryPDF
+    public function getPDF(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmailItineraryPDF
     {
         return $this->pDF;
     }
@@ -44,11 +44,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingE
     /**
      * 'PDF' is used to send an email notification containing a PDF-based copy of the itinerary.
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmailItineraryPDF $pDF
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmailItineraryPDF|null $pDF
      *
      * @return self
      */
-    public function setPDF(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmailItineraryPDF $pDF): self
+    public function setPDF(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmailItineraryPDF $pDF): self
     {
         $this->pDF = $pDF;
 
@@ -56,19 +56,19 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingE
     }
 
     /**
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmailItinerarySegmentItem[]
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmailItinerarySegmentItem[]|null
      */
-    public function getSegment(): array
+    public function getSegment(): ?array
     {
         return $this->segment;
     }
 
     /**
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmailItinerarySegmentItem[] $segment
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmailItinerarySegmentItem[]|null $segment
      *
      * @return self
      */
-    public function setSegment(array $segment): self
+    public function setSegment(?array $segment): self
     {
         $this->segment = $segment;
 
@@ -78,9 +78,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingE
     /**
      * Used to indicate whether to send an e-mail notification containing a text-based copy of the itinerary.
      *
-     * @return bool
+     * @return bool|null
      */
-    public function getInd(): bool
+    public function getInd(): ?bool
     {
         return $this->ind;
     }
@@ -88,11 +88,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingE
     /**
      * Used to indicate whether to send an e-mail notification containing a text-based copy of the itinerary.
      *
-     * @param bool $ind
+     * @param bool|null $ind
      *
      * @return self
      */
-    public function setInd(bool $ind): self
+    public function setInd(?bool $ind): self
     {
         $this->ind = $ind;
 

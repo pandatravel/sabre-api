@@ -30,9 +30,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The actual total amount associated with the particular itinerary.
      *
-     * @return string
+     * @return string|null
      */
-    public function getAmountReturned(): string
+    public function getAmountReturned(): ?string
     {
         return $this->amountReturned;
     }
@@ -40,11 +40,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The actual total amount associated with the particular itinerary.
      *
-     * @param string $amountReturned
+     * @param string|null $amountReturned
      *
      * @return self
      */
-    public function setAmountReturned(string $amountReturned): self
+    public function setAmountReturned(?string $amountReturned): self
     {
         $this->amountReturned = $amountReturned;
 
@@ -54,9 +54,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The amount specified in the CPNR request that was derived from the total amount returned via the previous shopping process for comparision purposes against the current price being returned for the same itinerary.
      *
-     * @return string
+     * @return string|null
      */
-    public function getAmountSpecified(): string
+    public function getAmountSpecified(): ?string
     {
         return $this->amountSpecified;
     }
@@ -64,11 +64,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The amount specified in the CPNR request that was derived from the total amount returned via the previous shopping process for comparision purposes against the current price being returned for the same itinerary.
      *
-     * @param string $amountSpecified
+     * @param string|null $amountSpecified
      *
      * @return self
      */
-    public function setAmountSpecified(string $amountSpecified): self
+    public function setAmountSpecified(?string $amountSpecified): self
     {
         $this->amountSpecified = $amountSpecified;
 

@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\CreatePassengerNameRecord\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -36,22 +35,22 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingE
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmail();
-        if (property_exists($data, 'eTicket')) {
+        if (property_exists($data, 'eTicket') && $data->{'eTicket'} !== null) {
             $object->setETicket($this->denormalizer->denormalize($data->{'eTicket'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmailETicket', 'json', $context));
         }
-        if (property_exists($data, 'Invoice')) {
+        if (property_exists($data, 'Invoice') && $data->{'Invoice'} !== null) {
             $object->setInvoice($this->denormalizer->denormalize($data->{'Invoice'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmailInvoice', 'json', $context));
         }
-        if (property_exists($data, 'Itinerary')) {
+        if (property_exists($data, 'Itinerary') && $data->{'Itinerary'} !== null) {
             $object->setItinerary($this->denormalizer->denormalize($data->{'Itinerary'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmailItinerary', 'json', $context));
         }
-        if (property_exists($data, 'PersonName')) {
+        if (property_exists($data, 'PersonName') && $data->{'PersonName'} !== null) {
             $object->setPersonName($this->denormalizer->denormalize($data->{'PersonName'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmailPersonName', 'json', $context));
         }
-        if (property_exists($data, 'Ind')) {
+        if (property_exists($data, 'Ind') && $data->{'Ind'} !== null) {
             $object->setInd($data->{'Ind'});
         }
 

@@ -30,9 +30,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to specify an account code to price with.
      *
-     * @return string[]
+     * @return string[]|null
      */
-    public function getCode(): array
+    public function getCode(): ?array
     {
         return $this->code;
     }
@@ -40,11 +40,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to specify an account code to price with.
      *
-     * @param string[] $code
+     * @param string[]|null $code
      *
      * @return self
      */
-    public function setCode(array $code): self
+    public function setCode(?array $code): self
     {
         $this->code = $code;
 
@@ -54,9 +54,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to instruct the system to force the specific account code.
      *
-     * @return string
+     * @return string|null
      */
-    public function getForce(): string
+    public function getForce(): ?string
     {
         return $this->force;
     }
@@ -64,11 +64,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to instruct the system to force the specific account code.
      *
-     * @param string $force
+     * @param string|null $force
      *
      * @return self
      */
-    public function setForce(string $force): self
+    public function setForce(?string $force): self
     {
         $this->force = $force;
 

@@ -30,9 +30,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to instruct the system to return the lowest fare ever offered for the particular itinerary regardless of whether or not it is currently available.
      *
-     * @return bool
+     * @return bool|null
      */
-    public function getHistorical(): bool
+    public function getHistorical(): ?bool
     {
         return $this->historical;
     }
@@ -40,11 +40,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to instruct the system to return the lowest fare ever offered for the particular itinerary regardless of whether or not it is currently available.
      *
-     * @param bool $historical
+     * @param bool|null $historical
      *
      * @return self
      */
-    public function setHistorical(bool $historical): self
+    public function setHistorical(?bool $historical): self
     {
         $this->historical = $historical;
 
@@ -54,9 +54,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to instruct the system to rebook the flights in the applicable classes of service to get the lower fare.
      *
-     * @return bool
+     * @return bool|null
      */
-    public function getRebook(): bool
+    public function getRebook(): ?bool
     {
         return $this->rebook;
     }
@@ -64,11 +64,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to instruct the system to rebook the flights in the applicable classes of service to get the lower fare.
      *
-     * @param bool $rebook
+     * @param bool|null $rebook
      *
      * @return self
      */
-    public function setRebook(bool $rebook): self
+    public function setRebook(?bool $rebook): self
     {
         $this->rebook = $rebook;
 

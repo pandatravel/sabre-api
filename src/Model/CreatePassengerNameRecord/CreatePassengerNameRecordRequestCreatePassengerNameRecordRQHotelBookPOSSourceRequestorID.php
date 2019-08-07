@@ -16,7 +16,8 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSou
 {
     /**
      * The IATA identifier type.
-     * OTA Table UIT : Value 5 for travel agency.
+    OTA Table UIT : Value 5 for travel agency.
+
      *
      * @var int
      */
@@ -36,24 +37,26 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSou
 
     /**
      * The IATA identifier type.
-     * OTA Table UIT : Value 5 for travel agency.
+    OTA Table UIT : Value 5 for travel agency.
+
      *
-     * @return int
+     * @return int|null
      */
-    public function getType(): int
+    public function getType(): ?int
     {
         return $this->type;
     }
 
     /**
      * The IATA identifier type.
-     * OTA Table UIT : Value 5 for travel agency.
+    OTA Table UIT : Value 5 for travel agency.
+
      *
-     * @param int $type
+     * @param int|null $type
      *
      * @return self
      */
-    public function setType(int $type): self
+    public function setType(?int $type): self
     {
         $this->type = $type;
 
@@ -63,9 +66,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSou
     /**
      * The agency IATA id.
      *
-     * @return string
+     * @return string|null
      */
-    public function getId(): string
+    public function getId(): ?string
     {
         return $this->id;
     }
@@ -73,11 +76,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSou
     /**
      * The agency IATA id.
      *
-     * @param string $id
+     * @param string|null $id
      *
      * @return self
      */
-    public function setId(string $id): self
+    public function setId(?string $id): self
     {
         $this->id = $id;
 
@@ -87,9 +90,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSou
     /**
      * The agency IATA id context.
      *
-     * @return string
+     * @return string|null
      */
-    public function getIdContext(): string
+    public function getIdContext(): ?string
     {
         return $this->idContext;
     }
@@ -97,11 +100,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSou
     /**
      * The agency IATA id context.
      *
-     * @param string $idContext
+     * @param string|null $idContext
      *
      * @return self
      */
-    public function setIdContext(string $idContext): self
+    public function setIdContext(?string $idContext): self
     {
         $this->idContext = $idContext;
 

@@ -22,7 +22,8 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     protected $amount;
     /**
      * The tax code.
-     * For more information please refer to OpenTravel Code List Fee Tax Type(FTT).
+    For more information please refer to OpenTravel Code List Fee Tax Type(FTT).
+
      *
      * @var string
      */
@@ -35,7 +36,8 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     protected $taxName;
     /**
      * The ticketing tax code.
-     * For more information please refer to OpenTravel Code List Fee Tax Type(FTT).
+    For more information please refer to OpenTravel Code List Fee Tax Type(FTT).
+
      *
      * @var string
      */
@@ -44,9 +46,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The tax amount.
      *
-     * @return string
+     * @return string|null
      */
-    public function getAmount(): string
+    public function getAmount(): ?string
     {
         return $this->amount;
     }
@@ -54,11 +56,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The tax amount.
      *
-     * @param string $amount
+     * @param string|null $amount
      *
      * @return self
      */
-    public function setAmount(string $amount): self
+    public function setAmount(?string $amount): self
     {
         $this->amount = $amount;
 
@@ -67,24 +69,26 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
 
     /**
      * The tax code.
-     * For more information please refer to OpenTravel Code List Fee Tax Type(FTT).
+    For more information please refer to OpenTravel Code List Fee Tax Type(FTT).
+
      *
-     * @return string
+     * @return string|null
      */
-    public function getTaxCode(): string
+    public function getTaxCode(): ?string
     {
         return $this->taxCode;
     }
 
     /**
      * The tax code.
-     * For more information please refer to OpenTravel Code List Fee Tax Type(FTT).
+    For more information please refer to OpenTravel Code List Fee Tax Type(FTT).
+
      *
-     * @param string $taxCode
+     * @param string|null $taxCode
      *
      * @return self
      */
-    public function setTaxCode(string $taxCode): self
+    public function setTaxCode(?string $taxCode): self
     {
         $this->taxCode = $taxCode;
 
@@ -94,9 +98,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The tax name.
      *
-     * @return string
+     * @return string|null
      */
-    public function getTaxName(): string
+    public function getTaxName(): ?string
     {
         return $this->taxName;
     }
@@ -104,11 +108,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The tax name.
      *
-     * @param string $taxName
+     * @param string|null $taxName
      *
      * @return self
      */
-    public function setTaxName(string $taxName): self
+    public function setTaxName(?string $taxName): self
     {
         $this->taxName = $taxName;
 
@@ -117,24 +121,26 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
 
     /**
      * The ticketing tax code.
-     * For more information please refer to OpenTravel Code List Fee Tax Type(FTT).
+    For more information please refer to OpenTravel Code List Fee Tax Type(FTT).
+
      *
-     * @return string
+     * @return string|null
      */
-    public function getTicketingTaxCode(): string
+    public function getTicketingTaxCode(): ?string
     {
         return $this->ticketingTaxCode;
     }
 
     /**
      * The ticketing tax code.
-     * For more information please refer to OpenTravel Code List Fee Tax Type(FTT).
+    For more information please refer to OpenTravel Code List Fee Tax Type(FTT).
+
      *
-     * @param string $ticketingTaxCode
+     * @param string|null $ticketingTaxCode
      *
      * @return self
      */
-    public function setTicketingTaxCode(string $ticketingTaxCode): self
+    public function setTicketingTaxCode(?string $ticketingTaxCode): self
     {
         $this->ticketingTaxCode = $ticketingTaxCode;
 

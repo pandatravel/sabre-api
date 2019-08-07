@@ -24,9 +24,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The private fare indicator.
      *
-     * @return string
+     * @return string|null
      */
-    public function getInd(): string
+    public function getInd(): ?string
     {
         return $this->ind;
     }
@@ -34,11 +34,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The private fare indicator.
      *
-     * @param string $ind
+     * @param string|null $ind
      *
      * @return self
      */
-    public function setInd(string $ind): self
+    public function setInd(?string $ind): self
     {
         $this->ind = $ind;
 

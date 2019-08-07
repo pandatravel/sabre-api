@@ -20,19 +20,19 @@ class CreatePassengerNameRecordRequest extends AbstractModel
     protected $createPassengerNameRecordRQ;
 
     /**
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQ
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQ|null
      */
-    public function getCreatePassengerNameRecordRQ(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQ
+    public function getCreatePassengerNameRecordRQ(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQ
     {
         return $this->createPassengerNameRecordRQ;
     }
 
     /**
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQ $createPassengerNameRecordRQ
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQ|null $createPassengerNameRecordRQ
      *
      * @return self
      */
-    public function setCreatePassengerNameRecordRQ(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQ $createPassengerNameRecordRQ): self
+    public function setCreatePassengerNameRecordRQ(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQ $createPassengerNameRecordRQ): self
     {
         $this->createPassengerNameRecordRQ = $createPassengerNameRecordRQ;
 

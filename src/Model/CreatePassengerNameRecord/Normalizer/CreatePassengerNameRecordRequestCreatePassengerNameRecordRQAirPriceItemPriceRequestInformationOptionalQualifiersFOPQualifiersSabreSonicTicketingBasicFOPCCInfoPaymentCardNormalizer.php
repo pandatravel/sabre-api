@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\CreatePassengerNameRecord\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -36,25 +35,25 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingBasicFOPCCInfoPaymentCard();
-        if (property_exists($data, 'CardSecurityCode')) {
+        if (property_exists($data, 'CardSecurityCode') && $data->{'CardSecurityCode'} !== null) {
             $object->setCardSecurityCode($data->{'CardSecurityCode'});
         }
-        if (property_exists($data, 'Code')) {
+        if (property_exists($data, 'Code') && $data->{'Code'} !== null) {
             $object->setCode($data->{'Code'});
         }
-        if (property_exists($data, 'ExpireDate')) {
+        if (property_exists($data, 'ExpireDate') && $data->{'ExpireDate'} !== null) {
             $object->setExpireDate($data->{'ExpireDate'});
         }
-        if (property_exists($data, 'ExtendedPayment')) {
+        if (property_exists($data, 'ExtendedPayment') && $data->{'ExtendedPayment'} !== null) {
             $object->setExtendedPayment($data->{'ExtendedPayment'});
         }
-        if (property_exists($data, 'ManualApprovalCode')) {
+        if (property_exists($data, 'ManualApprovalCode') && $data->{'ManualApprovalCode'} !== null) {
             $object->setManualApprovalCode($data->{'ManualApprovalCode'});
         }
-        if (property_exists($data, 'Number')) {
+        if (property_exists($data, 'Number') && $data->{'Number'} !== null) {
             $object->setNumber($data->{'Number'});
         }
 

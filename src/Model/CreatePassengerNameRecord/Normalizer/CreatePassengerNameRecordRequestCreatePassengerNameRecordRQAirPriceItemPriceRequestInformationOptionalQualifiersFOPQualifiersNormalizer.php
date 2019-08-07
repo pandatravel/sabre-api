@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\CreatePassengerNameRecord\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -36,22 +35,22 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiers();
-        if (property_exists($data, 'BasicFOP')) {
+        if (property_exists($data, 'BasicFOP') && $data->{'BasicFOP'} !== null) {
             $object->setBasicFOP($this->denormalizer->denormalize($data->{'BasicFOP'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBasicFOP', 'json', $context));
         }
-        if (property_exists($data, 'BSP_Ticketing')) {
+        if (property_exists($data, 'BSP_Ticketing') && $data->{'BSP_Ticketing'} !== null) {
             $object->setBSPTicketing($this->denormalizer->denormalize($data->{'BSP_Ticketing'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBSPTicketing', 'json', $context));
         }
-        if (property_exists($data, 'MultipleCC_FOP')) {
+        if (property_exists($data, 'MultipleCC_FOP') && $data->{'MultipleCC_FOP'} !== null) {
             $object->setMultipleCCFOP($this->denormalizer->denormalize($data->{'MultipleCC_FOP'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersMultipleCCFOP', 'json', $context));
         }
-        if (property_exists($data, 'SabreSonicTicketing')) {
+        if (property_exists($data, 'SabreSonicTicketing') && $data->{'SabreSonicTicketing'} !== null) {
             $object->setSabreSonicTicketing($this->denormalizer->denormalize($data->{'SabreSonicTicketing'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketing', 'json', $context));
         }
-        if (property_exists($data, 'IgnoreStoredFOP')) {
+        if (property_exists($data, 'IgnoreStoredFOP') && $data->{'IgnoreStoredFOP'} !== null) {
             $object->setIgnoreStoredFOP($data->{'IgnoreStoredFOP'});
         }
 

@@ -30,9 +30,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingE
     /**
      * Used to identify the entity that authorized the changes in a passenger name record.
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionSource
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionSource|null
      */
-    public function getSource(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionSource
+    public function getSource(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionSource
     {
         return $this->source;
     }
@@ -40,11 +40,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingE
     /**
      * Used to identify the entity that authorized the changes in a passenger name record.
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionSource $source
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionSource|null $source
      *
      * @return self
      */
-    public function setSource(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionSource $source): self
+    public function setSource(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionSource $source): self
     {
         $this->source = $source;
 
@@ -54,9 +54,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingE
     /**
      * Used to request e-mail notifications after ending the passenger name record.
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmail
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmail|null
      */
-    public function getEmail(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmail
+    public function getEmail(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmail
     {
         return $this->email;
     }
@@ -64,11 +64,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingE
     /**
      * Used to request e-mail notifications after ending the passenger name record.
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmail $email
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmail|null $email
      *
      * @return self
      */
-    public function setEmail(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmail $email): self
+    public function setEmail(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmail $email): self
     {
         $this->email = $email;
 

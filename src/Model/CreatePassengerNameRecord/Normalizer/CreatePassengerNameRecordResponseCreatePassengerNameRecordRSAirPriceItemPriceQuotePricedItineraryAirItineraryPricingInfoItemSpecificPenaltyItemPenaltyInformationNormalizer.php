@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\CreatePassengerNameRecord\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -36,36 +35,36 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemSpecificPenaltyItemPenaltyInformation();
-        if (property_exists($data, 'FareBasisCode')) {
+        if (property_exists($data, 'FareBasisCode') && $data->{'FareBasisCode'} !== null) {
             $values = [];
             foreach ($data->{'FareBasisCode'} as $value) {
                 $values[] = $value;
             }
             $object->setFareBasisCode($values);
         }
-        if (property_exists($data, 'FareComponent')) {
+        if (property_exists($data, 'FareComponent') && $data->{'FareComponent'} !== null) {
             $values_1 = [];
             foreach ($data->{'FareComponent'} as $value_1) {
                 $values_1[] = $value_1;
             }
             $object->setFareComponent($values_1);
         }
-        if (property_exists($data, 'Amount')) {
+        if (property_exists($data, 'Amount') && $data->{'Amount'} !== null) {
             $object->setAmount($data->{'Amount'});
         }
-        if (property_exists($data, 'Cat16')) {
+        if (property_exists($data, 'Cat16') && $data->{'Cat16'} !== null) {
             $object->setCat16($data->{'Cat16'});
         }
-        if (property_exists($data, 'Currency')) {
+        if (property_exists($data, 'Currency') && $data->{'Currency'} !== null) {
             $object->setCurrency($data->{'Currency'});
         }
-        if (property_exists($data, 'NotApplicable')) {
+        if (property_exists($data, 'NotApplicable') && $data->{'NotApplicable'} !== null) {
             $object->setNotApplicable($data->{'NotApplicable'});
         }
-        if (property_exists($data, 'Type')) {
+        if (property_exists($data, 'Type') && $data->{'Type'} !== null) {
             $object->setType($data->{'Type'});
         }
 

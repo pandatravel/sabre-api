@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\CreatePassengerNameRecord\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -36,34 +35,34 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSource
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSourceTPAExtensionsUserInfo();
-        if (property_exists($data, 'AAACity')) {
+        if (property_exists($data, 'AAACity') && $data->{'AAACity'} !== null) {
             $object->setAAACity($this->denormalizer->denormalize($data->{'AAACity'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSourceTPAExtensionsUserInfoAAACity', 'json', $context));
         }
-        if (property_exists($data, 'Action')) {
+        if (property_exists($data, 'Action') && $data->{'Action'} !== null) {
             $object->setAction($this->denormalizer->denormalize($data->{'Action'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSourceTPAExtensionsUserInfoAction', 'json', $context));
         }
-        if (property_exists($data, 'AgentSine')) {
+        if (property_exists($data, 'AgentSine') && $data->{'AgentSine'} !== null) {
             $object->setAgentSine($this->denormalizer->denormalize($data->{'AgentSine'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSourceTPAExtensionsUserInfoAgentSine', 'json', $context));
         }
-        if (property_exists($data, 'Branch')) {
+        if (property_exists($data, 'Branch') && $data->{'Branch'} !== null) {
             $object->setBranch($this->denormalizer->denormalize($data->{'Branch'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSourceTPAExtensionsUserInfoBranch', 'json', $context));
         }
-        if (property_exists($data, 'Partition')) {
+        if (property_exists($data, 'Partition') && $data->{'Partition'} !== null) {
             $object->setPartition($this->denormalizer->denormalize($data->{'Partition'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSourceTPAExtensionsUserInfoPartition', 'json', $context));
         }
-        if (property_exists($data, 'Service')) {
+        if (property_exists($data, 'Service') && $data->{'Service'} !== null) {
             $object->setService($this->denormalizer->denormalize($data->{'Service'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSourceTPAExtensionsUserInfoService', 'json', $context));
         }
-        if (property_exists($data, 'SetAddress')) {
+        if (property_exists($data, 'SetAddress') && $data->{'SetAddress'} !== null) {
             $object->setSetAddress($data->{'SetAddress'});
         }
-        if (property_exists($data, 'Station')) {
+        if (property_exists($data, 'Station') && $data->{'Station'} !== null) {
             $object->setStation($this->denormalizer->denormalize($data->{'Station'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSourceTPAExtensionsUserInfoStation', 'json', $context));
         }
-        if (property_exists($data, 'Transaction')) {
+        if (property_exists($data, 'Transaction') && $data->{'Transaction'} !== null) {
             $object->setTransaction($this->denormalizer->denormalize($data->{'Transaction'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSourceTPAExtensionsUserInfoTransaction', 'json', $context));
         }
 

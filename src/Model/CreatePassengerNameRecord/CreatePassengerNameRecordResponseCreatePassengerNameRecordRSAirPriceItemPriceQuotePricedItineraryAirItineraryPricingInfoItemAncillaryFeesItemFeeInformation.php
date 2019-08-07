@@ -90,9 +90,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The BIN number of the CC used.
      *
-     * @return string
+     * @return string|null
      */
-    public function getCreditCardFOPMatchingBin(): string
+    public function getCreditCardFOPMatchingBin(): ?string
     {
         return $this->creditCardFOPMatchingBin;
     }
@@ -100,11 +100,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The BIN number of the CC used.
      *
-     * @param string $creditCardFOPMatchingBin
+     * @param string|null $creditCardFOPMatchingBin
      *
      * @return self
      */
-    public function setCreditCardFOPMatchingBin(string $creditCardFOPMatchingBin): self
+    public function setCreditCardFOPMatchingBin(?string $creditCardFOPMatchingBin): self
     {
         $this->creditCardFOPMatchingBin = $creditCardFOPMatchingBin;
 
@@ -114,9 +114,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The residual amount for the CC used.
      *
-     * @return float
+     * @return float|null
      */
-    public function getCreditCardResidualAmount(): float
+    public function getCreditCardResidualAmount(): ?float
     {
         return $this->creditCardResidualAmount;
     }
@@ -124,11 +124,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The residual amount for the CC used.
      *
-     * @param float $creditCardResidualAmount
+     * @param float|null $creditCardResidualAmount
      *
      * @return self
      */
-    public function setCreditCardResidualAmount(float $creditCardResidualAmount): self
+    public function setCreditCardResidualAmount(?float $creditCardResidualAmount): self
     {
         $this->creditCardResidualAmount = $creditCardResidualAmount;
 
@@ -138,9 +138,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The maximum service fee amount.
      *
-     * @return string
+     * @return string|null
      */
-    public function getMaximumServiceFeeAmount(): string
+    public function getMaximumServiceFeeAmount(): ?string
     {
         return $this->maximumServiceFeeAmount;
     }
@@ -148,11 +148,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The maximum service fee amount.
      *
-     * @param string $maximumServiceFeeAmount
+     * @param string|null $maximumServiceFeeAmount
      *
      * @return self
      */
-    public function setMaximumServiceFeeAmount(string $maximumServiceFeeAmount): self
+    public function setMaximumServiceFeeAmount(?string $maximumServiceFeeAmount): self
     {
         $this->maximumServiceFeeAmount = $maximumServiceFeeAmount;
 
@@ -162,9 +162,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The ticket total fare amount-related information.
      *
-     * @return string
+     * @return string|null
      */
-    public function getOBFeeTicketTotalFareAmount(): string
+    public function getOBFeeTicketTotalFareAmount(): ?string
     {
         return $this->oBFeeTicketTotalFareAmount;
     }
@@ -172,11 +172,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The ticket total fare amount-related information.
      *
-     * @param string $oBFeeTicketTotalFareAmount
+     * @param string|null $oBFeeTicketTotalFareAmount
      *
      * @return self
      */
-    public function setOBFeeTicketTotalFareAmount(string $oBFeeTicketTotalFareAmount): self
+    public function setOBFeeTicketTotalFareAmount(?string $oBFeeTicketTotalFareAmount): self
     {
         $this->oBFeeTicketTotalFareAmount = $oBFeeTicketTotalFareAmount;
 
@@ -186,9 +186,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The service fee percentage.
      *
-     * @return string
+     * @return string|null
      */
-    public function getServiceFeePercentage(): string
+    public function getServiceFeePercentage(): ?string
     {
         return $this->serviceFeePercentage;
     }
@@ -196,11 +196,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The service fee percentage.
      *
-     * @param string $serviceFeePercentage
+     * @param string|null $serviceFeePercentage
      *
      * @return self
      */
-    public function setServiceFeePercentage(string $serviceFeePercentage): self
+    public function setServiceFeePercentage(?string $serviceFeePercentage): self
     {
         $this->serviceFeePercentage = $serviceFeePercentage;
 
@@ -210,9 +210,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The tax amount associated with the fee.
      *
-     * @return string[]
+     * @return string[]|null
      */
-    public function getTaxAmount(): array
+    public function getTaxAmount(): ?array
     {
         return $this->taxAmount;
     }
@@ -220,11 +220,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The tax amount associated with the fee.
      *
-     * @param string[] $taxAmount
+     * @param string[]|null $taxAmount
      *
      * @return self
      */
-    public function setTaxAmount(array $taxAmount): self
+    public function setTaxAmount(?array $taxAmount): self
     {
         $this->taxAmount = $taxAmount;
 
@@ -234,9 +234,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The tax ID associated with the fee.
      *
-     * @return string[]
+     * @return string[]|null
      */
-    public function getTaxID(): array
+    public function getTaxID(): ?array
     {
         return $this->taxID;
     }
@@ -244,11 +244,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The tax ID associated with the fee.
      *
-     * @param string[] $taxID
+     * @param string[]|null $taxID
      *
      * @return self
      */
-    public function setTaxID(array $taxID): self
+    public function setTaxID(?array $taxID): self
     {
         $this->taxID = $taxID;
 
@@ -258,9 +258,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The amount associated with the fee.
      *
-     * @return string
+     * @return string|null
      */
-    public function getAmount(): string
+    public function getAmount(): ?string
     {
         return $this->amount;
     }
@@ -268,11 +268,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The amount associated with the fee.
      *
-     * @param string $amount
+     * @param string|null $amount
      *
      * @return self
      */
-    public function setAmount(string $amount): self
+    public function setAmount(?string $amount): self
     {
         $this->amount = $amount;
 
@@ -282,9 +282,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The fee code.
      *
-     * @return string
+     * @return string|null
      */
-    public function getCode(): string
+    public function getCode(): ?string
     {
         return $this->code;
     }
@@ -292,11 +292,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The fee code.
      *
-     * @param string $code
+     * @param string|null $code
      *
      * @return self
      */
-    public function setCode(string $code): self
+    public function setCode(?string $code): self
     {
         $this->code = $code;
 
@@ -306,9 +306,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The number of fees contained in the FeeAmount.
      *
-     * @return string
+     * @return string|null
      */
-    public function getNumFees(): string
+    public function getNumFees(): ?string
     {
         return $this->numFees;
     }
@@ -316,11 +316,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The number of fees contained in the FeeAmount.
      *
-     * @param string $numFees
+     * @param string|null $numFees
      *
      * @return self
      */
-    public function setNumFees(string $numFees): self
+    public function setNumFees(?string $numFees): self
     {
         $this->numFees = $numFees;
 
@@ -330,9 +330,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The passenger name number that the fee is associated to.
      *
-     * @return string
+     * @return string|null
      */
-    public function getNameNumber(): string
+    public function getNameNumber(): ?string
     {
         return $this->nameNumber;
     }
@@ -340,11 +340,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The passenger name number that the fee is associated to.
      *
-     * @param string $nameNumber
+     * @param string|null $nameNumber
      *
      * @return self
      */
-    public function setNameNumber(string $nameNumber): self
+    public function setNameNumber(?string $nameNumber): self
     {
         $this->nameNumber = $nameNumber;
 
@@ -354,9 +354,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The segment number that the fee is associated to.
      *
-     * @return string
+     * @return string|null
      */
-    public function getSegmentNumber(): string
+    public function getSegmentNumber(): ?string
     {
         return $this->segmentNumber;
     }
@@ -364,11 +364,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The segment number that the fee is associated to.
      *
-     * @param string $segmentNumber
+     * @param string|null $segmentNumber
      *
      * @return self
      */
-    public function setSegmentNumber(string $segmentNumber): self
+    public function setSegmentNumber(?string $segmentNumber): self
     {
         $this->segmentNumber = $segmentNumber;
 

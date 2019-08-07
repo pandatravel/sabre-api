@@ -16,8 +16,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
 {
     /**
      * Used to add a corporate ID into the record.
-     * Please note that this qualifier is not applicable to Sabre Sonic Res-based clients.
-     * Furthermore, Sabre Travel Network-based customers need to first have this functionality activated for their particular location by their account representative prior to attempting to utilize this element.
+    Please note that this qualifier is not applicable to Sabre Sonic Res-based clients.
+    Furthermore, Sabre Travel Network-based customers need to first have this functionality activated for their particular location by their account representative prior to attempting to utilize this element.
+
      *
      * @var string
      */
@@ -25,26 +26,28 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
 
     /**
      * Used to add a corporate ID into the record.
-     * Please note that this qualifier is not applicable to Sabre Sonic Res-based clients.
-     * Furthermore, Sabre Travel Network-based customers need to first have this functionality activated for their particular location by their account representative prior to attempting to utilize this element.
+    Please note that this qualifier is not applicable to Sabre Sonic Res-based clients.
+    Furthermore, Sabre Travel Network-based customers need to first have this functionality activated for their particular location by their account representative prior to attempting to utilize this element.
+
      *
-     * @return string
+     * @return string|null
      */
-    public function getID(): string
+    public function getID(): ?string
     {
         return $this->iD;
     }
 
     /**
      * Used to add a corporate ID into the record.
-     * Please note that this qualifier is not applicable to Sabre Sonic Res-based clients.
-     * Furthermore, Sabre Travel Network-based customers need to first have this functionality activated for their particular location by their account representative prior to attempting to utilize this element.
+    Please note that this qualifier is not applicable to Sabre Sonic Res-based clients.
+    Furthermore, Sabre Travel Network-based customers need to first have this functionality activated for their particular location by their account representative prior to attempting to utilize this element.
+
      *
-     * @param string $iD
+     * @param string|null $iD
      *
      * @return self
      */
-    public function setID(string $iD): self
+    public function setID(?string $iD): self
     {
         $this->iD = $iD;
 

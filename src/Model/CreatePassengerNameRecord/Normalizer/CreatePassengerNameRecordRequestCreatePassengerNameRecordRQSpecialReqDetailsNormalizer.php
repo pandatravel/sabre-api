@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\CreatePassengerNameRecord\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -36,16 +35,16 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetails();
-        if (property_exists($data, 'AddRemark')) {
+        if (property_exists($data, 'AddRemark') && $data->{'AddRemark'} !== null) {
             $object->setAddRemark($this->denormalizer->denormalize($data->{'AddRemark'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAddRemark', 'json', $context));
         }
-        if (property_exists($data, 'AirSeat')) {
+        if (property_exists($data, 'AirSeat') && $data->{'AirSeat'} !== null) {
             $object->setAirSeat($this->denormalizer->denormalize($data->{'AirSeat'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAirSeat', 'json', $context));
         }
-        if (property_exists($data, 'SpecialService')) {
+        if (property_exists($data, 'SpecialService') && $data->{'SpecialService'} !== null) {
             $object->setSpecialService($this->denormalizer->denormalize($data->{'SpecialService'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialService', 'json', $context));
         }
 

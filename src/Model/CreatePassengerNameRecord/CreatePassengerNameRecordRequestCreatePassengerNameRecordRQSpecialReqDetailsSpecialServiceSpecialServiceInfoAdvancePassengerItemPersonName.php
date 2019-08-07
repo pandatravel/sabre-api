@@ -52,14 +52,16 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     protected $gender;
     /**
      * Used to identify information associated with a lap child.
-     * It can only be used together with SpecialServiceInfo.AdvancePassenger.Document.Visa and SpecialServiceInfo.AdvancePassenger.ResidentDestinationAddress.
+    It can only be used together with SpecialServiceInfo.AdvancePassenger.Document.Visa and SpecialServiceInfo.AdvancePassenger.ResidentDestinationAddress.
+
      *
      * @var bool
      */
     protected $lapChild;
     /**
      * The name number.
-     * I. e. 1.1, 2.1 etc.
+    I. e. 1.1, 2.1 etc.
+
      *
      * @var string
      */
@@ -68,9 +70,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     /**
      * The first name.
      *
-     * @return string
+     * @return string|null
      */
-    public function getGivenName(): string
+    public function getGivenName(): ?string
     {
         return $this->givenName;
     }
@@ -78,11 +80,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     /**
      * The first name.
      *
-     * @param string $givenName
+     * @param string|null $givenName
      *
      * @return self
      */
-    public function setGivenName(string $givenName): self
+    public function setGivenName(?string $givenName): self
     {
         $this->givenName = $givenName;
 
@@ -92,9 +94,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     /**
      * The middle name.
      *
-     * @return string
+     * @return string|null
      */
-    public function getMiddleName(): string
+    public function getMiddleName(): ?string
     {
         return $this->middleName;
     }
@@ -102,11 +104,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     /**
      * The middle name.
      *
-     * @param string $middleName
+     * @param string|null $middleName
      *
      * @return self
      */
-    public function setMiddleName(string $middleName): self
+    public function setMiddleName(?string $middleName): self
     {
         $this->middleName = $middleName;
 
@@ -116,9 +118,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     /**
      * The surname.
      *
-     * @return string
+     * @return string|null
      */
-    public function getSurname(): string
+    public function getSurname(): ?string
     {
         return $this->surname;
     }
@@ -126,11 +128,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     /**
      * The surname.
      *
-     * @param string $surname
+     * @param string|null $surname
      *
      * @return self
      */
-    public function setSurname(string $surname): self
+    public function setSurname(?string $surname): self
     {
         $this->surname = $surname;
 
@@ -140,9 +142,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     /**
      * The date of birth.
      *
-     * @return string
+     * @return string|null
      */
-    public function getDateOfBirth(): string
+    public function getDateOfBirth(): ?string
     {
         return $this->dateOfBirth;
     }
@@ -150,11 +152,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     /**
      * The date of birth.
      *
-     * @param string $dateOfBirth
+     * @param string|null $dateOfBirth
      *
      * @return self
      */
-    public function setDateOfBirth(string $dateOfBirth): self
+    public function setDateOfBirth(?string $dateOfBirth): self
     {
         $this->dateOfBirth = $dateOfBirth;
 
@@ -164,9 +166,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     /**
      * Used to identify the primary passport holder when the passport document is issued for multiple passengers.
      *
-     * @return bool
+     * @return bool|null
      */
-    public function getDocumentHolder(): bool
+    public function getDocumentHolder(): ?bool
     {
         return $this->documentHolder;
     }
@@ -174,11 +176,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     /**
      * Used to identify the primary passport holder when the passport document is issued for multiple passengers.
      *
-     * @param bool $documentHolder
+     * @param bool|null $documentHolder
      *
      * @return self
      */
-    public function setDocumentHolder(bool $documentHolder): self
+    public function setDocumentHolder(?bool $documentHolder): self
     {
         $this->documentHolder = $documentHolder;
 
@@ -188,9 +190,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     /**
      * The gender.
      *
-     * @return string
+     * @return string|null
      */
-    public function getGender(): string
+    public function getGender(): ?string
     {
         return $this->gender;
     }
@@ -198,11 +200,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     /**
      * The gender.
      *
-     * @param string $gender
+     * @param string|null $gender
      *
      * @return self
      */
-    public function setGender(string $gender): self
+    public function setGender(?string $gender): self
     {
         $this->gender = $gender;
 
@@ -211,24 +213,26 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
 
     /**
      * Used to identify information associated with a lap child.
-     * It can only be used together with SpecialServiceInfo.AdvancePassenger.Document.Visa and SpecialServiceInfo.AdvancePassenger.ResidentDestinationAddress.
+    It can only be used together with SpecialServiceInfo.AdvancePassenger.Document.Visa and SpecialServiceInfo.AdvancePassenger.ResidentDestinationAddress.
+
      *
-     * @return bool
+     * @return bool|null
      */
-    public function getLapChild(): bool
+    public function getLapChild(): ?bool
     {
         return $this->lapChild;
     }
 
     /**
      * Used to identify information associated with a lap child.
-     * It can only be used together with SpecialServiceInfo.AdvancePassenger.Document.Visa and SpecialServiceInfo.AdvancePassenger.ResidentDestinationAddress.
+    It can only be used together with SpecialServiceInfo.AdvancePassenger.Document.Visa and SpecialServiceInfo.AdvancePassenger.ResidentDestinationAddress.
+
      *
-     * @param bool $lapChild
+     * @param bool|null $lapChild
      *
      * @return self
      */
-    public function setLapChild(bool $lapChild): self
+    public function setLapChild(?bool $lapChild): self
     {
         $this->lapChild = $lapChild;
 
@@ -237,24 +241,26 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
 
     /**
      * The name number.
-     * I. e. 1.1, 2.1 etc.
+    I. e. 1.1, 2.1 etc.
+
      *
-     * @return string
+     * @return string|null
      */
-    public function getNameNumber(): string
+    public function getNameNumber(): ?string
     {
         return $this->nameNumber;
     }
 
     /**
      * The name number.
-     * I. e. 1.1, 2.1 etc.
+    I. e. 1.1, 2.1 etc.
+
      *
-     * @param string $nameNumber
+     * @param string|null $nameNumber
      *
      * @return self
      */
-    public function setNameNumber(string $nameNumber): self
+    public function setNameNumber(?string $nameNumber): self
     {
         $this->nameNumber = $nameNumber;
 

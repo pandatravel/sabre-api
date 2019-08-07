@@ -30,9 +30,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The destination location code associated with a specific baggage provision.
      *
-     * @return string
+     * @return string|null
      */
-    public function getLocationCode(): string
+    public function getLocationCode(): ?string
     {
         return $this->locationCode;
     }
@@ -40,11 +40,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The destination location code associated with a specific baggage provision.
      *
-     * @param string $locationCode
+     * @param string|null $locationCode
      *
      * @return self
      */
-    public function setLocationCode(string $locationCode): self
+    public function setLocationCode(?string $locationCode): self
     {
         $this->locationCode = $locationCode;
 
@@ -54,9 +54,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * Used as a reference place holder.
      *
-     * @return int
+     * @return int|null
      */
-    public function getRPH(): int
+    public function getRPH(): ?int
     {
         return $this->rPH;
     }
@@ -64,11 +64,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * Used as a reference place holder.
      *
-     * @param int $rPH
+     * @param int|null $rPH
      *
      * @return self
      */
-    public function setRPH(int $rPH): self
+    public function setRPH(?int $rPH): self
     {
         $this->rPH = $rPH;
 

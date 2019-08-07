@@ -42,9 +42,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The brand code.
      *
-     * @return string
+     * @return string|null
      */
-    public function getBrandCode(): string
+    public function getBrandCode(): ?string
     {
         return $this->brandCode;
     }
@@ -52,11 +52,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The brand code.
      *
-     * @param string $brandCode
+     * @param string|null $brandCode
      *
      * @return self
      */
-    public function setBrandCode(string $brandCode): self
+    public function setBrandCode(?string $brandCode): self
     {
         $this->brandCode = $brandCode;
 
@@ -66,9 +66,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The brand name.
      *
-     * @return string
+     * @return string|null
      */
-    public function getBrandName(): string
+    public function getBrandName(): ?string
     {
         return $this->brandName;
     }
@@ -76,11 +76,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The brand name.
      *
-     * @param string $brandName
+     * @param string|null $brandName
      *
      * @return self
      */
-    public function setBrandName(string $brandName): self
+    public function setBrandName(?string $brandName): self
     {
         $this->brandName = $brandName;
 
@@ -90,9 +90,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The program code.
      *
-     * @return string
+     * @return string|null
      */
-    public function getProgramCode(): string
+    public function getProgramCode(): ?string
     {
         return $this->programCode;
     }
@@ -100,11 +100,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The program code.
      *
-     * @param string $programCode
+     * @param string|null $programCode
      *
      * @return self
      */
-    public function setProgramCode(string $programCode): self
+    public function setProgramCode(?string $programCode): self
     {
         $this->programCode = $programCode;
 
@@ -114,9 +114,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The program name.
      *
-     * @return string
+     * @return string|null
      */
-    public function getProgramName(): string
+    public function getProgramName(): ?string
     {
         return $this->programName;
     }
@@ -124,11 +124,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The program name.
      *
-     * @param string $programName
+     * @param string|null $programName
      *
      * @return self
      */
-    public function setProgramName(string $programName): self
+    public function setProgramName(?string $programName): self
     {
         $this->programName = $programName;
 

@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\CreatePassengerNameRecord\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -36,25 +35,25 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsR
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsRoomItem();
-        if (property_exists($data, 'Guests')) {
+        if (property_exists($data, 'Guests') && $data->{'Guests'} !== null) {
             $object->setGuests($this->denormalizer->denormalize($data->{'Guests'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsRoomItemGuests', 'json', $context));
         }
-        if (property_exists($data, 'RoomExtras')) {
+        if (property_exists($data, 'RoomExtras') && $data->{'RoomExtras'} !== null) {
             $object->setRoomExtras($this->denormalizer->denormalize($data->{'RoomExtras'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsRoomItemRoomExtras', 'json', $context));
         }
-        if (property_exists($data, 'NonSmoking')) {
+        if (property_exists($data, 'NonSmoking') && $data->{'NonSmoking'} !== null) {
             $object->setNonSmoking($data->{'NonSmoking'});
         }
-        if (property_exists($data, 'BedTypeCode')) {
+        if (property_exists($data, 'BedTypeCode') && $data->{'BedTypeCode'} !== null) {
             $object->setBedTypeCode($data->{'BedTypeCode'});
         }
-        if (property_exists($data, 'AccessibilityInformation')) {
+        if (property_exists($data, 'AccessibilityInformation') && $data->{'AccessibilityInformation'} !== null) {
             $object->setAccessibilityInformation($data->{'AccessibilityInformation'});
         }
-        if (property_exists($data, 'RoomIndex')) {
+        if (property_exists($data, 'RoomIndex') && $data->{'RoomIndex'} !== null) {
             $object->setRoomIndex($data->{'RoomIndex'});
         }
 

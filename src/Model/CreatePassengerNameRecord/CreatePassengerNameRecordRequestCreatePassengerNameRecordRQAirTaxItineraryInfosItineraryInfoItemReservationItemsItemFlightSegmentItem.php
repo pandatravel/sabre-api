@@ -34,8 +34,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItinerary
     protected $equipment;
     /**
      * If more than one fare break is needed, identify the fare component to which each flight segment belongs using FareComponentNumber.
-     * If There are more than one side trips in the itinerary, identify the side trip to which each flight segment belongs using the 'SideTripNumber'.
-     * 'SideTripStartInd', 'SideTripEndInd' and 'SideTripNumber' are currently not used in tax calculations.
+    If There are more than one side trips in the itinerary, identify the side trip to which each flight segment belongs using the 'SideTripNumber'.
+    'SideTripStartInd', 'SideTripEndInd' and 'SideTripNumber' are currently not used in tax calculations.
+
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItemFareBreakInfo
      */
@@ -68,7 +69,8 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItinerary
     protected $departureDateTime;
     /**
      * 'ArrivalDateTime' is used to describe the date and time of the traveler's arrival.
-     * It is shown in the "YYYY-MM-DDThh:mm:ss" format.
+    It is shown in the "YYYY-MM-DDThh:mm:ss" format.
+
      *
      * @var string
      */
@@ -101,9 +103,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItinerary
     /**
      * The arrival airport.
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItemArrivalAirport
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItemArrivalAirport|null
      */
-    public function getArrivalAirport(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItemArrivalAirport
+    public function getArrivalAirport(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItemArrivalAirport
     {
         return $this->arrivalAirport;
     }
@@ -111,11 +113,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItinerary
     /**
      * The arrival airport.
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItemArrivalAirport $arrivalAirport
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItemArrivalAirport|null $arrivalAirport
      *
      * @return self
      */
-    public function setArrivalAirport(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItemArrivalAirport $arrivalAirport): self
+    public function setArrivalAirport(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItemArrivalAirport $arrivalAirport): self
     {
         $this->arrivalAirport = $arrivalAirport;
 
@@ -125,9 +127,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItinerary
     /**
      * The departure airport.
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItemDepartureAirport
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItemDepartureAirport|null
      */
-    public function getDepartureAirport(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItemDepartureAirport
+    public function getDepartureAirport(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItemDepartureAirport
     {
         return $this->departureAirport;
     }
@@ -135,11 +137,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItinerary
     /**
      * The departure airport.
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItemDepartureAirport $departureAirport
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItemDepartureAirport|null $departureAirport
      *
      * @return self
      */
-    public function setDepartureAirport(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItemDepartureAirport $departureAirport): self
+    public function setDepartureAirport(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItemDepartureAirport $departureAirport): self
     {
         $this->departureAirport = $departureAirport;
 
@@ -149,9 +151,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItinerary
     /**
      * The airplane equipment type.
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItemEquipment
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItemEquipment|null
      */
-    public function getEquipment(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItemEquipment
+    public function getEquipment(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItemEquipment
     {
         return $this->equipment;
     }
@@ -159,11 +161,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItinerary
     /**
      * The airplane equipment type.
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItemEquipment $equipment
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItemEquipment|null $equipment
      *
      * @return self
      */
-    public function setEquipment(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItemEquipment $equipment): self
+    public function setEquipment(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItemEquipment $equipment): self
     {
         $this->equipment = $equipment;
 
@@ -172,26 +174,28 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItinerary
 
     /**
      * If more than one fare break is needed, identify the fare component to which each flight segment belongs using FareComponentNumber.
-     * If There are more than one side trips in the itinerary, identify the side trip to which each flight segment belongs using the 'SideTripNumber'.
-     * 'SideTripStartInd', 'SideTripEndInd' and 'SideTripNumber' are currently not used in tax calculations.
+    If There are more than one side trips in the itinerary, identify the side trip to which each flight segment belongs using the 'SideTripNumber'.
+    'SideTripStartInd', 'SideTripEndInd' and 'SideTripNumber' are currently not used in tax calculations.
+
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItemFareBreakInfo
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItemFareBreakInfo|null
      */
-    public function getFareBreakInfo(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItemFareBreakInfo
+    public function getFareBreakInfo(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItemFareBreakInfo
     {
         return $this->fareBreakInfo;
     }
 
     /**
      * If more than one fare break is needed, identify the fare component to which each flight segment belongs using FareComponentNumber.
-     * If There are more than one side trips in the itinerary, identify the side trip to which each flight segment belongs using the 'SideTripNumber'.
-     * 'SideTripStartInd', 'SideTripEndInd' and 'SideTripNumber' are currently not used in tax calculations.
+    If There are more than one side trips in the itinerary, identify the side trip to which each flight segment belongs using the 'SideTripNumber'.
+    'SideTripStartInd', 'SideTripEndInd' and 'SideTripNumber' are currently not used in tax calculations.
+
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItemFareBreakInfo $fareBreakInfo
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItemFareBreakInfo|null $fareBreakInfo
      *
      * @return self
      */
-    public function setFareBreakInfo(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItemFareBreakInfo $fareBreakInfo): self
+    public function setFareBreakInfo(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItemFareBreakInfo $fareBreakInfo): self
     {
         $this->fareBreakInfo = $fareBreakInfo;
 
@@ -201,9 +205,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItinerary
     /**
      * Used to pass the hidden city / via code.
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItemHiddenStops
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItemHiddenStops|null
      */
-    public function getHiddenStops(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItemHiddenStops
+    public function getHiddenStops(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItemHiddenStops
     {
         return $this->hiddenStops;
     }
@@ -211,11 +215,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItinerary
     /**
      * Used to pass the hidden city / via code.
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItemHiddenStops $hiddenStops
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItemHiddenStops|null $hiddenStops
      *
      * @return self
      */
-    public function setHiddenStops(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItemHiddenStops $hiddenStops): self
+    public function setHiddenStops(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItemHiddenStops $hiddenStops): self
     {
         $this->hiddenStops = $hiddenStops;
 
@@ -225,9 +229,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItinerary
     /**
      * The marketing airline code.
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItemMarketingAirline
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItemMarketingAirline|null
      */
-    public function getMarketingAirline(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItemMarketingAirline
+    public function getMarketingAirline(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItemMarketingAirline
     {
         return $this->marketingAirline;
     }
@@ -235,11 +239,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItinerary
     /**
      * The marketing airline code.
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItemMarketingAirline $marketingAirline
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItemMarketingAirline|null $marketingAirline
      *
      * @return self
      */
-    public function setMarketingAirline(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItemMarketingAirline $marketingAirline): self
+    public function setMarketingAirline(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItemMarketingAirline $marketingAirline): self
     {
         $this->marketingAirline = $marketingAirline;
 
@@ -249,9 +253,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItinerary
     /**
      * The operating airline code.
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItemOperatingAirline
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItemOperatingAirline|null
      */
-    public function getOperatingAirline(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItemOperatingAirline
+    public function getOperatingAirline(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItemOperatingAirline
     {
         return $this->operatingAirline;
     }
@@ -259,11 +263,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItinerary
     /**
      * The operating airline code.
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItemOperatingAirline $operatingAirline
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItemOperatingAirline|null $operatingAirline
      *
      * @return self
      */
-    public function setOperatingAirline(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItemOperatingAirline $operatingAirline): self
+    public function setOperatingAirline(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItemOperatingAirline $operatingAirline): self
     {
         $this->operatingAirline = $operatingAirline;
 
@@ -272,24 +276,26 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItinerary
 
     /**
      * 'DepartureDateTime' is used to describe the date and time of the traveler's departure.
-     * It is shown in the "YYYY-MM-DDThh:mm:ss" format.
+    It is shown in the "YYYY-MM-DDThh:mm:ss" format.
+
      *
-     * @return string
+     * @return string|null
      */
-    public function getDepartureDateTime(): string
+    public function getDepartureDateTime(): ?string
     {
         return $this->departureDateTime;
     }
 
     /**
      * 'DepartureDateTime' is used to describe the date and time of the traveler's departure.
-     * It is shown in the "YYYY-MM-DDThh:mm:ss" format.
+    It is shown in the "YYYY-MM-DDThh:mm:ss" format.
+
      *
-     * @param string $departureDateTime
+     * @param string|null $departureDateTime
      *
      * @return self
      */
-    public function setDepartureDateTime(string $departureDateTime): self
+    public function setDepartureDateTime(?string $departureDateTime): self
     {
         $this->departureDateTime = $departureDateTime;
 
@@ -298,24 +304,26 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItinerary
 
     /**
      * 'ArrivalDateTime' is used to describe the date and time of the traveler's arrival.
-     * It is shown in the "YYYY-MM-DDThh:mm:ss" format.
+    It is shown in the "YYYY-MM-DDThh:mm:ss" format.
+
      *
-     * @return string
+     * @return string|null
      */
-    public function getArrivalDateTime(): string
+    public function getArrivalDateTime(): ?string
     {
         return $this->arrivalDateTime;
     }
 
     /**
      * 'ArrivalDateTime' is used to describe the date and time of the traveler's arrival.
-     * It is shown in the "YYYY-MM-DDThh:mm:ss" format.
+    It is shown in the "YYYY-MM-DDThh:mm:ss" format.
+
      *
-     * @param string $arrivalDateTime
+     * @param string|null $arrivalDateTime
      *
      * @return self
      */
-    public function setArrivalDateTime(string $arrivalDateTime): self
+    public function setArrivalDateTime(?string $arrivalDateTime): self
     {
         $this->arrivalDateTime = $arrivalDateTime;
 
@@ -325,9 +333,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItinerary
     /**
      * The marketing flight number.
      *
-     * @return int
+     * @return int|null
      */
-    public function getFlightNumber(): int
+    public function getFlightNumber(): ?int
     {
         return $this->flightNumber;
     }
@@ -335,11 +343,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItinerary
     /**
      * The marketing flight number.
      *
-     * @param int $flightNumber
+     * @param int|null $flightNumber
      *
      * @return self
      */
-    public function setFlightNumber(int $flightNumber): self
+    public function setFlightNumber(?int $flightNumber): self
     {
         $this->flightNumber = $flightNumber;
 
@@ -349,9 +357,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItinerary
     /**
      * The booking code.
      *
-     * @return string
+     * @return string|null
      */
-    public function getResBookDesigCode(): string
+    public function getResBookDesigCode(): ?string
     {
         return $this->resBookDesigCode;
     }
@@ -359,11 +367,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItinerary
     /**
      * The booking code.
      *
-     * @param string $resBookDesigCode
+     * @param string|null $resBookDesigCode
      *
      * @return self
      */
-    public function setResBookDesigCode(string $resBookDesigCode): self
+    public function setResBookDesigCode(?string $resBookDesigCode): self
     {
         $this->resBookDesigCode = $resBookDesigCode;
 
@@ -373,9 +381,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItinerary
     /**
      * Used to indicate whether the Flight segment is a forced connection.
      *
-     * @return bool
+     * @return bool|null
      */
-    public function getForceConnectionInd(): bool
+    public function getForceConnectionInd(): ?bool
     {
         return $this->forceConnectionInd;
     }
@@ -383,11 +391,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItinerary
     /**
      * Used to indicate whether the Flight segment is a forced connection.
      *
-     * @param bool $forceConnectionInd
+     * @param bool|null $forceConnectionInd
      *
      * @return self
      */
-    public function setForceConnectionInd(bool $forceConnectionInd): self
+    public function setForceConnectionInd(?bool $forceConnectionInd): self
     {
         $this->forceConnectionInd = $forceConnectionInd;
 
@@ -397,9 +405,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItinerary
     /**
      * Used to indicate whether the Flight segment is a forced stop over.
      *
-     * @return bool
+     * @return bool|null
      */
-    public function getForceStopOverInd(): bool
+    public function getForceStopOverInd(): ?bool
     {
         return $this->forceStopOverInd;
     }
@@ -407,11 +415,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItinerary
     /**
      * Used to indicate whether the Flight segment is a forced stop over.
      *
-     * @param bool $forceStopOverInd
+     * @param bool|null $forceStopOverInd
      *
      * @return self
      */
-    public function setForceStopOverInd(bool $forceStopOverInd): self
+    public function setForceStopOverInd(?bool $forceStopOverInd): self
     {
         $this->forceStopOverInd = $forceStopOverInd;
 

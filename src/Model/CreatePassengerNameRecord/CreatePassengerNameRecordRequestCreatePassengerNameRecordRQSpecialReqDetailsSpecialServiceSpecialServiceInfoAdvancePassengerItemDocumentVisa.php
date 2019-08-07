@@ -16,7 +16,8 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
 {
     /**
      * The applicable country code.
-     * You must use a valid 2 or 3 character country code (alpha characters only).
+    You must use a valid 2 or 3 character country code (alpha characters only).
+
      *
      * @var string
      */
@@ -42,24 +43,26 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
 
     /**
      * The applicable country code.
-     * You must use a valid 2 or 3 character country code (alpha characters only).
+    You must use a valid 2 or 3 character country code (alpha characters only).
+
      *
-     * @return string
+     * @return string|null
      */
-    public function getApplicableCountry(): string
+    public function getApplicableCountry(): ?string
     {
         return $this->applicableCountry;
     }
 
     /**
      * The applicable country code.
-     * You must use a valid 2 or 3 character country code (alpha characters only).
+    You must use a valid 2 or 3 character country code (alpha characters only).
+
      *
-     * @param string $applicableCountry
+     * @param string|null $applicableCountry
      *
      * @return self
      */
-    public function setApplicableCountry(string $applicableCountry): self
+    public function setApplicableCountry(?string $applicableCountry): self
     {
         $this->applicableCountry = $applicableCountry;
 
@@ -69,9 +72,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     /**
      * The place of birth.
      *
-     * @return string
+     * @return string|null
      */
-    public function getPlaceOfBirth(): string
+    public function getPlaceOfBirth(): ?string
     {
         return $this->placeOfBirth;
     }
@@ -79,11 +82,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     /**
      * The place of birth.
      *
-     * @param string $placeOfBirth
+     * @param string|null $placeOfBirth
      *
      * @return self
      */
-    public function setPlaceOfBirth(string $placeOfBirth): self
+    public function setPlaceOfBirth(?string $placeOfBirth): self
     {
         $this->placeOfBirth = $placeOfBirth;
 
@@ -93,9 +96,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     /**
      * The place of issue.
      *
-     * @return string
+     * @return string|null
      */
-    public function getPlaceOfIssue(): string
+    public function getPlaceOfIssue(): ?string
     {
         return $this->placeOfIssue;
     }
@@ -103,11 +106,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     /**
      * The place of issue.
      *
-     * @param string $placeOfIssue
+     * @param string|null $placeOfIssue
      *
      * @return self
      */
-    public function setPlaceOfIssue(string $placeOfIssue): self
+    public function setPlaceOfIssue(?string $placeOfIssue): self
     {
         $this->placeOfIssue = $placeOfIssue;
 
@@ -117,9 +120,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     /**
      * The issue date.
      *
-     * @return string
+     * @return string|null
      */
-    public function getIssueDate(): string
+    public function getIssueDate(): ?string
     {
         return $this->issueDate;
     }
@@ -127,11 +130,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     /**
      * The issue date.
      *
-     * @param string $issueDate
+     * @param string|null $issueDate
      *
      * @return self
      */
-    public function setIssueDate(string $issueDate): self
+    public function setIssueDate(?string $issueDate): self
     {
         $this->issueDate = $issueDate;
 

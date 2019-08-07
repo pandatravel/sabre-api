@@ -48,9 +48,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to specify to suppress the fare amount on the ticket and replace with BT.
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersTourCodeSuppressFareReplaceWithBT
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersTourCodeSuppressFareReplaceWithBT|null
      */
-    public function getSuppressFareReplaceWithBT(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersTourCodeSuppressFareReplaceWithBT
+    public function getSuppressFareReplaceWithBT(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersTourCodeSuppressFareReplaceWithBT
     {
         return $this->suppressFareReplaceWithBT;
     }
@@ -58,11 +58,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to specify to suppress the fare amount on the ticket and replace with BT.
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersTourCodeSuppressFareReplaceWithBT $suppressFareReplaceWithBT
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersTourCodeSuppressFareReplaceWithBT|null $suppressFareReplaceWithBT
      *
      * @return self
      */
-    public function setSuppressFareReplaceWithBT(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersTourCodeSuppressFareReplaceWithBT $suppressFareReplaceWithBT): self
+    public function setSuppressFareReplaceWithBT(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersTourCodeSuppressFareReplaceWithBT $suppressFareReplaceWithBT): self
     {
         $this->suppressFareReplaceWithBT = $suppressFareReplaceWithBT;
 
@@ -72,9 +72,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to specify to suppress the fare amount on the ticket and replace with IT.
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersTourCodeSuppressFareReplaceWithIT
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersTourCodeSuppressFareReplaceWithIT|null
      */
-    public function getSuppressFareReplaceWithIT(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersTourCodeSuppressFareReplaceWithIT
+    public function getSuppressFareReplaceWithIT(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersTourCodeSuppressFareReplaceWithIT
     {
         return $this->suppressFareReplaceWithIT;
     }
@@ -82,11 +82,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to specify to suppress the fare amount on the ticket and replace with IT.
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersTourCodeSuppressFareReplaceWithIT $suppressFareReplaceWithIT
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersTourCodeSuppressFareReplaceWithIT|null $suppressFareReplaceWithIT
      *
      * @return self
      */
-    public function setSuppressFareReplaceWithIT(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersTourCodeSuppressFareReplaceWithIT $suppressFareReplaceWithIT): self
+    public function setSuppressFareReplaceWithIT(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersTourCodeSuppressFareReplaceWithIT $suppressFareReplaceWithIT): self
     {
         $this->suppressFareReplaceWithIT = $suppressFareReplaceWithIT;
 
@@ -96,9 +96,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to specify to to suppress the IT in the tourcode box from printing.
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersTourCodeSuppressIT
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersTourCodeSuppressIT|null
      */
-    public function getSuppressIT(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersTourCodeSuppressIT
+    public function getSuppressIT(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersTourCodeSuppressIT
     {
         return $this->suppressIT;
     }
@@ -106,11 +106,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to specify to to suppress the IT in the tourcode box from printing.
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersTourCodeSuppressIT $suppressIT
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersTourCodeSuppressIT|null $suppressIT
      *
      * @return self
      */
-    public function setSuppressIT(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersTourCodeSuppressIT $suppressIT): self
+    public function setSuppressIT(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersTourCodeSuppressIT $suppressIT): self
     {
         $this->suppressIT = $suppressIT;
 
@@ -120,9 +120,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to specify to specify to suppress IT from printing in the tour box on the ticket and to suppress fare amounts from printing on the ticket.
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersTourCodeSuppressITSupressFare
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersTourCodeSuppressITSupressFare|null
      */
-    public function getSuppressITSupressFare(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersTourCodeSuppressITSupressFare
+    public function getSuppressITSupressFare(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersTourCodeSuppressITSupressFare
     {
         return $this->suppressITSupressFare;
     }
@@ -130,11 +130,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to specify to specify to suppress IT from printing in the tour box on the ticket and to suppress fare amounts from printing on the ticket.
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersTourCodeSuppressITSupressFare $suppressITSupressFare
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersTourCodeSuppressITSupressFare|null $suppressITSupressFare
      *
      * @return self
      */
-    public function setSuppressITSupressFare(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersTourCodeSuppressITSupressFare $suppressITSupressFare): self
+    public function setSuppressITSupressFare(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersTourCodeSuppressITSupressFare $suppressITSupressFare): self
     {
         $this->suppressITSupressFare = $suppressITSupressFare;
 
@@ -144,9 +144,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to specify tour code.
      *
-     * @return string
+     * @return string|null
      */
-    public function getText(): string
+    public function getText(): ?string
     {
         return $this->text;
     }
@@ -154,11 +154,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to specify tour code.
      *
-     * @param string $text
+     * @param string|null $text
      *
      * @return self
      */
-    public function setText(string $text): self
+    public function setText(?string $text): self
     {
         $this->text = $text;
 

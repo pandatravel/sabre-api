@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\CreatePassengerNameRecord\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -36,13 +35,13 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemNor
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItem();
-        if (property_exists($data, 'PriceComparison')) {
+        if (property_exists($data, 'PriceComparison') && $data->{'PriceComparison'} !== null) {
             $object->setPriceComparison($this->denormalizer->denormalize($data->{'PriceComparison'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceComparison', 'json', $context));
         }
-        if (property_exists($data, 'PriceRequestInformation')) {
+        if (property_exists($data, 'PriceRequestInformation') && $data->{'PriceRequestInformation'} !== null) {
             $object->setPriceRequestInformation($this->denormalizer->denormalize($data->{'PriceRequestInformation'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformation', 'json', $context));
         }
 

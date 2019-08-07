@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\CreatePassengerNameRecord\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -36,35 +35,35 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersOverrides();
-        if (property_exists($data, 'FuelSurchargeOverride')) {
+        if (property_exists($data, 'FuelSurchargeOverride') && $data->{'FuelSurchargeOverride'} !== null) {
             $object->setFuelSurchargeOverride($this->denormalizer->denormalize($data->{'FuelSurchargeOverride'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersOverridesFuelSurchargeOverride', 'json', $context));
         }
-        if (property_exists($data, 'GoverningCarrierOverride')) {
+        if (property_exists($data, 'GoverningCarrierOverride') && $data->{'GoverningCarrierOverride'} !== null) {
             $values = [];
             foreach ($data->{'GoverningCarrierOverride'} as $value) {
                 $values[] = $this->denormalizer->denormalize($value, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersOverridesGoverningCarrierOverrideItem', 'json', $context);
             }
             $object->setGoverningCarrierOverride($values);
         }
-        if (property_exists($data, 'NoAdvancePurchase')) {
+        if (property_exists($data, 'NoAdvancePurchase') && $data->{'NoAdvancePurchase'} !== null) {
             $object->setNoAdvancePurchase($this->denormalizer->denormalize($data->{'NoAdvancePurchase'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersOverridesNoAdvancePurchase', 'json', $context));
         }
-        if (property_exists($data, 'NoFareRestrictions')) {
+        if (property_exists($data, 'NoFareRestrictions') && $data->{'NoFareRestrictions'} !== null) {
             $object->setNoFareRestrictions($this->denormalizer->denormalize($data->{'NoFareRestrictions'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersOverridesNoFareRestrictions', 'json', $context));
         }
-        if (property_exists($data, 'NoMinMaxStay')) {
+        if (property_exists($data, 'NoMinMaxStay') && $data->{'NoMinMaxStay'} !== null) {
             $object->setNoMinMaxStay($this->denormalizer->denormalize($data->{'NoMinMaxStay'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersOverridesNoMinMaxStay', 'json', $context));
         }
-        if (property_exists($data, 'NoPenalty')) {
+        if (property_exists($data, 'NoPenalty') && $data->{'NoPenalty'} !== null) {
             $object->setNoPenalty($this->denormalizer->denormalize($data->{'NoPenalty'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersOverridesNoPenalty', 'json', $context));
         }
-        if (property_exists($data, 'Purchase')) {
+        if (property_exists($data, 'Purchase') && $data->{'Purchase'} !== null) {
             $object->setPurchase($this->denormalizer->denormalize($data->{'Purchase'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersOverridesPurchase', 'json', $context));
         }
-        if (property_exists($data, 'Ticketing')) {
+        if (property_exists($data, 'Ticketing') && $data->{'Ticketing'} !== null) {
             $object->setTicketing($this->denormalizer->denormalize($data->{'Ticketing'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersOverridesTicketing', 'json', $context));
         }
 

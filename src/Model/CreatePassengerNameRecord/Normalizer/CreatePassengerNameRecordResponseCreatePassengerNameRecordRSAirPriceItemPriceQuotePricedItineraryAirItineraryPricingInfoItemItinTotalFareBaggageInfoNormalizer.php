@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\CreatePassengerNameRecord\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -36,13 +35,13 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareBaggageInfo();
-        if (property_exists($data, 'NonUS_DOT_Disclosure')) {
+        if (property_exists($data, 'NonUS_DOT_Disclosure') && $data->{'NonUS_DOT_Disclosure'} !== null) {
             $object->setNonUSDOTDisclosure($this->denormalizer->denormalize($data->{'NonUS_DOT_Disclosure'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareBaggageInfoNonUSDOTDisclosure', 'json', $context));
         }
-        if (property_exists($data, 'US_DOT_Disclosure')) {
+        if (property_exists($data, 'US_DOT_Disclosure') && $data->{'US_DOT_Disclosure'} !== null) {
             $object->setUSDOTDisclosure($this->denormalizer->denormalize($data->{'US_DOT_Disclosure'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareBaggageInfoUSDOTDisclosure', 'json', $context));
         }
 

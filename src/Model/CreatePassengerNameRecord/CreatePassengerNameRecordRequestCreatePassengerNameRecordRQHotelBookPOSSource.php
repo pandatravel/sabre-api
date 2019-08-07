@@ -16,14 +16,16 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSou
 {
     /**
      * The IATA identifier information.
-     * 'RequestorID' is mandatory for GDS Booking.
+    'RequestorID' is mandatory for GDS Booking.
+
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSourceRequestorID
      */
     protected $requestorID;
     /**
      * The agency address information.
-     * 'AgencyAddress' is mandatory for GDS Booking.
+    'AgencyAddress' is mandatory for GDS Booking.
+
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSourceAgencyAddress
      */
@@ -55,24 +57,26 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSou
 
     /**
      * The IATA identifier information.
-     * 'RequestorID' is mandatory for GDS Booking.
+    'RequestorID' is mandatory for GDS Booking.
+
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSourceRequestorID
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSourceRequestorID|null
      */
-    public function getRequestorID(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSourceRequestorID
+    public function getRequestorID(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSourceRequestorID
     {
         return $this->requestorID;
     }
 
     /**
      * The IATA identifier information.
-     * 'RequestorID' is mandatory for GDS Booking.
+    'RequestorID' is mandatory for GDS Booking.
+
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSourceRequestorID $requestorID
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSourceRequestorID|null $requestorID
      *
      * @return self
      */
-    public function setRequestorID(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSourceRequestorID $requestorID): self
+    public function setRequestorID(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSourceRequestorID $requestorID): self
     {
         $this->requestorID = $requestorID;
 
@@ -81,24 +85,26 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSou
 
     /**
      * The agency address information.
-     * 'AgencyAddress' is mandatory for GDS Booking.
+    'AgencyAddress' is mandatory for GDS Booking.
+
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSourceAgencyAddress
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSourceAgencyAddress|null
      */
-    public function getAgencyAddress(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSourceAgencyAddress
+    public function getAgencyAddress(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSourceAgencyAddress
     {
         return $this->agencyAddress;
     }
 
     /**
      * The agency address information.
-     * 'AgencyAddress' is mandatory for GDS Booking.
+    'AgencyAddress' is mandatory for GDS Booking.
+
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSourceAgencyAddress $agencyAddress
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSourceAgencyAddress|null $agencyAddress
      *
      * @return self
      */
-    public function setAgencyAddress(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSourceAgencyAddress $agencyAddress): self
+    public function setAgencyAddress(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSourceAgencyAddress $agencyAddress): self
     {
         $this->agencyAddress = $agencyAddress;
 
@@ -108,9 +114,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSou
     /**
      * The agency contact information.
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSourceAgencyContact
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSourceAgencyContact|null
      */
-    public function getAgencyContact(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSourceAgencyContact
+    public function getAgencyContact(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSourceAgencyContact
     {
         return $this->agencyContact;
     }
@@ -118,11 +124,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSou
     /**
      * The agency contact information.
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSourceAgencyContact $agencyContact
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSourceAgencyContact|null $agencyContact
      *
      * @return self
      */
-    public function setAgencyContact(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSourceAgencyContact $agencyContact): self
+    public function setAgencyContact(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSourceAgencyContact $agencyContact): self
     {
         $this->agencyContact = $agencyContact;
 
@@ -132,9 +138,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSou
     /**
      * The agency name.
      *
-     * @return string
+     * @return string|null
      */
-    public function getAgencyName(): string
+    public function getAgencyName(): ?string
     {
         return $this->agencyName;
     }
@@ -142,11 +148,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSou
     /**
      * The agency name.
      *
-     * @param string $agencyName
+     * @param string|null $agencyName
      *
      * @return self
      */
-    public function setAgencyName(string $agencyName): self
+    public function setAgencyName(?string $agencyName): self
     {
         $this->agencyName = $agencyName;
 
@@ -156,9 +162,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSou
     /**
      * The agency ISO country code.
      *
-     * @return string
+     * @return string|null
      */
-    public function getISOCountryCode(): string
+    public function getISOCountryCode(): ?string
     {
         return $this->iSOCountryCode;
     }
@@ -166,11 +172,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSou
     /**
      * The agency ISO country code.
      *
-     * @param string $iSOCountryCode
+     * @param string|null $iSOCountryCode
      *
      * @return self
      */
-    public function setISOCountryCode(string $iSOCountryCode): self
+    public function setISOCountryCode(?string $iSOCountryCode): self
     {
         $this->iSOCountryCode = $iSOCountryCode;
 
@@ -180,9 +186,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSou
     /**
      * The agency PCC.
      *
-     * @return string
+     * @return string|null
      */
-    public function getPseudoCityCode(): string
+    public function getPseudoCityCode(): ?string
     {
         return $this->pseudoCityCode;
     }
@@ -190,11 +196,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPOSSou
     /**
      * The agency PCC.
      *
-     * @param string $pseudoCityCode
+     * @param string|null $pseudoCityCode
      *
      * @return self
      */
-    public function setPseudoCityCode(string $pseudoCityCode): self
+    public function setPseudoCityCode(?string $pseudoCityCode): self
     {
         $this->pseudoCityCode = $pseudoCityCode;
 

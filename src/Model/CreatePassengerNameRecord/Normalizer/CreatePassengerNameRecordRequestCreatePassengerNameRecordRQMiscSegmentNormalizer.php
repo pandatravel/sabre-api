@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\CreatePassengerNameRecord\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -36,31 +35,31 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQMiscSegmentNorm
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQMiscSegment();
-        if (property_exists($data, 'OriginLocation')) {
+        if (property_exists($data, 'OriginLocation') && $data->{'OriginLocation'} !== null) {
             $object->setOriginLocation($this->denormalizer->denormalize($data->{'OriginLocation'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQMiscSegmentOriginLocation', 'json', $context));
         }
-        if (property_exists($data, 'Text')) {
+        if (property_exists($data, 'Text') && $data->{'Text'} !== null) {
             $object->setText($data->{'Text'});
         }
-        if (property_exists($data, 'VendorPrefs')) {
+        if (property_exists($data, 'VendorPrefs') && $data->{'VendorPrefs'} !== null) {
             $object->setVendorPrefs($this->denormalizer->denormalize($data->{'VendorPrefs'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQMiscSegmentVendorPrefs', 'json', $context));
         }
-        if (property_exists($data, 'DepartureDateTime')) {
+        if (property_exists($data, 'DepartureDateTime') && $data->{'DepartureDateTime'} !== null) {
             $object->setDepartureDateTime($data->{'DepartureDateTime'});
         }
-        if (property_exists($data, 'InsertAfter')) {
+        if (property_exists($data, 'InsertAfter') && $data->{'InsertAfter'} !== null) {
             $object->setInsertAfter($data->{'InsertAfter'});
         }
-        if (property_exists($data, 'NumberInParty')) {
+        if (property_exists($data, 'NumberInParty') && $data->{'NumberInParty'} !== null) {
             $object->setNumberInParty($data->{'NumberInParty'});
         }
-        if (property_exists($data, 'Status')) {
+        if (property_exists($data, 'Status') && $data->{'Status'} !== null) {
             $object->setStatus($data->{'Status'});
         }
-        if (property_exists($data, 'Type')) {
+        if (property_exists($data, 'Type') && $data->{'Type'} !== null) {
             $object->setType($data->{'Type'});
         }
 

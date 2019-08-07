@@ -16,7 +16,8 @@ class ProblemInformationSystemSpecificResultsItemHostCommand extends AbstractMod
 {
     /**
      * 'LNIATA' is an abbreviation for Line / Interface Adapter / Terminal Address.
-     * It is a 3-byte terminal address, usually seen as a 6-character hexadecimal field, such as '0358DC'.
+    It is a 3-byte terminal address, usually seen as a 6-character hexadecimal field, such as '0358DC'.
+
      *
      * @var string
      */
@@ -30,24 +31,26 @@ class ProblemInformationSystemSpecificResultsItemHostCommand extends AbstractMod
 
     /**
      * 'LNIATA' is an abbreviation for Line / Interface Adapter / Terminal Address.
-     * It is a 3-byte terminal address, usually seen as a 6-character hexadecimal field, such as '0358DC'.
+    It is a 3-byte terminal address, usually seen as a 6-character hexadecimal field, such as '0358DC'.
+
      *
-     * @return string
+     * @return string|null
      */
-    public function getLNIATA(): string
+    public function getLNIATA(): ?string
     {
         return $this->lNIATA;
     }
 
     /**
      * 'LNIATA' is an abbreviation for Line / Interface Adapter / Terminal Address.
-     * It is a 3-byte terminal address, usually seen as a 6-character hexadecimal field, such as '0358DC'.
+    It is a 3-byte terminal address, usually seen as a 6-character hexadecimal field, such as '0358DC'.
+
      *
-     * @param string $lNIATA
+     * @param string|null $lNIATA
      *
      * @return self
      */
-    public function setLNIATA(string $lNIATA): self
+    public function setLNIATA(?string $lNIATA): self
     {
         $this->lNIATA = $lNIATA;
 
@@ -57,9 +60,9 @@ class ProblemInformationSystemSpecificResultsItemHostCommand extends AbstractMod
     /**
      * Sabre host system command.
      *
-     * @return string
+     * @return string|null
      */
-    public function getContent(): string
+    public function getContent(): ?string
     {
         return $this->content;
     }
@@ -67,11 +70,11 @@ class ProblemInformationSystemSpecificResultsItemHostCommand extends AbstractMod
     /**
      * Sabre host system command.
      *
-     * @param string $content
+     * @param string|null $content
      *
      * @return self
      */
-    public function setContent(string $content): self
+    public function setContent(?string $content): self
     {
         $this->content = $content;
 

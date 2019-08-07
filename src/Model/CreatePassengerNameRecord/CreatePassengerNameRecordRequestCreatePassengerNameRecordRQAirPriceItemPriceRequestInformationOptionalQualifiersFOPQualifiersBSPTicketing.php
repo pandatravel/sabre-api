@@ -16,21 +16,24 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
 {
     /**
      * Used to define multiple forms of payment.
-     * 'MultipleFOP' cannot be combined with 'MultipleMiscFOP', or 'PayLaterPlan'.
+    'MultipleFOP' cannot be combined with 'MultipleMiscFOP', or 'PayLaterPlan'.
+
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBSPTicketingMultipleFOP
      */
     protected $multipleFOP;
     /**
      * Used to define multiple miscellaneous forms of payment.
-     * 'MultipleMiscFOP' cannot be combined with 'MultipleFOP', or 'PayLaterPlan'.
+    'MultipleMiscFOP' cannot be combined with 'MultipleFOP', or 'PayLaterPlan'.
+
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBSPTicketingMultipleMiscFOP
      */
     protected $multipleMiscFOP;
     /**
      * Only applicable to Brazil.
-     * 'PayLaterPlan' cannot be combined with 'MultipleFOP', or 'MultipleMiscFOP'.
+    'PayLaterPlan' cannot be combined with 'MultipleFOP', or 'MultipleMiscFOP'.
+
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBSPTicketingPayLaterPlan
      */
@@ -38,24 +41,26 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
 
     /**
      * Used to define multiple forms of payment.
-     * 'MultipleFOP' cannot be combined with 'MultipleMiscFOP', or 'PayLaterPlan'.
+    'MultipleFOP' cannot be combined with 'MultipleMiscFOP', or 'PayLaterPlan'.
+
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBSPTicketingMultipleFOP
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBSPTicketingMultipleFOP|null
      */
-    public function getMultipleFOP(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBSPTicketingMultipleFOP
+    public function getMultipleFOP(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBSPTicketingMultipleFOP
     {
         return $this->multipleFOP;
     }
 
     /**
      * Used to define multiple forms of payment.
-     * 'MultipleFOP' cannot be combined with 'MultipleMiscFOP', or 'PayLaterPlan'.
+    'MultipleFOP' cannot be combined with 'MultipleMiscFOP', or 'PayLaterPlan'.
+
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBSPTicketingMultipleFOP $multipleFOP
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBSPTicketingMultipleFOP|null $multipleFOP
      *
      * @return self
      */
-    public function setMultipleFOP(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBSPTicketingMultipleFOP $multipleFOP): self
+    public function setMultipleFOP(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBSPTicketingMultipleFOP $multipleFOP): self
     {
         $this->multipleFOP = $multipleFOP;
 
@@ -64,24 +69,26 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
 
     /**
      * Used to define multiple miscellaneous forms of payment.
-     * 'MultipleMiscFOP' cannot be combined with 'MultipleFOP', or 'PayLaterPlan'.
+    'MultipleMiscFOP' cannot be combined with 'MultipleFOP', or 'PayLaterPlan'.
+
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBSPTicketingMultipleMiscFOP
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBSPTicketingMultipleMiscFOP|null
      */
-    public function getMultipleMiscFOP(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBSPTicketingMultipleMiscFOP
+    public function getMultipleMiscFOP(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBSPTicketingMultipleMiscFOP
     {
         return $this->multipleMiscFOP;
     }
 
     /**
      * Used to define multiple miscellaneous forms of payment.
-     * 'MultipleMiscFOP' cannot be combined with 'MultipleFOP', or 'PayLaterPlan'.
+    'MultipleMiscFOP' cannot be combined with 'MultipleFOP', or 'PayLaterPlan'.
+
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBSPTicketingMultipleMiscFOP $multipleMiscFOP
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBSPTicketingMultipleMiscFOP|null $multipleMiscFOP
      *
      * @return self
      */
-    public function setMultipleMiscFOP(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBSPTicketingMultipleMiscFOP $multipleMiscFOP): self
+    public function setMultipleMiscFOP(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBSPTicketingMultipleMiscFOP $multipleMiscFOP): self
     {
         $this->multipleMiscFOP = $multipleMiscFOP;
 
@@ -90,24 +97,26 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
 
     /**
      * Only applicable to Brazil.
-     * 'PayLaterPlan' cannot be combined with 'MultipleFOP', or 'MultipleMiscFOP'.
+    'PayLaterPlan' cannot be combined with 'MultipleFOP', or 'MultipleMiscFOP'.
+
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBSPTicketingPayLaterPlan
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBSPTicketingPayLaterPlan|null
      */
-    public function getPayLaterPlan(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBSPTicketingPayLaterPlan
+    public function getPayLaterPlan(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBSPTicketingPayLaterPlan
     {
         return $this->payLaterPlan;
     }
 
     /**
      * Only applicable to Brazil.
-     * 'PayLaterPlan' cannot be combined with 'MultipleFOP', or 'MultipleMiscFOP'.
+    'PayLaterPlan' cannot be combined with 'MultipleFOP', or 'MultipleMiscFOP'.
+
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBSPTicketingPayLaterPlan $payLaterPlan
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBSPTicketingPayLaterPlan|null $payLaterPlan
      *
      * @return self
      */
-    public function setPayLaterPlan(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBSPTicketingPayLaterPlan $payLaterPlan): self
+    public function setPayLaterPlan(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBSPTicketingPayLaterPlan $payLaterPlan): self
     {
         $this->payLaterPlan = $payLaterPlan;
 

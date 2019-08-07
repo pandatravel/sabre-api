@@ -50,19 +50,19 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     protected $soldNumberOfSeats;
 
     /**
-     * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPersonNameItemGroupInfoAssociatedReferenceInformation
+     * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPersonNameItemGroupInfoAssociatedReferenceInformation|null
      */
-    public function getAssociatedReferenceInformation(): CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPersonNameItemGroupInfoAssociatedReferenceInformation
+    public function getAssociatedReferenceInformation(): ?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPersonNameItemGroupInfoAssociatedReferenceInformation
     {
         return $this->associatedReferenceInformation;
     }
 
     /**
-     * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPersonNameItemGroupInfoAssociatedReferenceInformation $associatedReferenceInformation
+     * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPersonNameItemGroupInfoAssociatedReferenceInformation|null $associatedReferenceInformation
      *
      * @return self
      */
-    public function setAssociatedReferenceInformation(CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPersonNameItemGroupInfoAssociatedReferenceInformation $associatedReferenceInformation): self
+    public function setAssociatedReferenceInformation(?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPersonNameItemGroupInfoAssociatedReferenceInformation $associatedReferenceInformation): self
     {
         $this->associatedReferenceInformation = $associatedReferenceInformation;
 
@@ -72,9 +72,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     /**
      * The corporate/group name.
      *
-     * @return string
+     * @return string|null
      */
-    public function getName(): string
+    public function getName(): ?string
     {
         return $this->name;
     }
@@ -82,11 +82,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     /**
      * The corporate/group name.
      *
-     * @param string $name
+     * @param string|null $name
      *
      * @return self
      */
-    public function setName(string $name): self
+    public function setName(?string $name): self
     {
         $this->name = $name;
 
@@ -96,9 +96,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     /**
      * The original number of seats requested in the BSG.
      *
-     * @return string
+     * @return string|null
      */
-    public function getOriginalNumberOfSeats(): string
+    public function getOriginalNumberOfSeats(): ?string
     {
         return $this->originalNumberOfSeats;
     }
@@ -106,11 +106,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     /**
      * The original number of seats requested in the BSG.
      *
-     * @param string $originalNumberOfSeats
+     * @param string|null $originalNumberOfSeats
      *
      * @return self
      */
-    public function setOriginalNumberOfSeats(string $originalNumberOfSeats): self
+    public function setOriginalNumberOfSeats(?string $originalNumberOfSeats): self
     {
         $this->originalNumberOfSeats = $originalNumberOfSeats;
 
@@ -120,9 +120,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     /**
      * The passenger name number in relation to the rest of the group.
      *
-     * @return string
+     * @return string|null
      */
-    public function getGroupNameNumber(): string
+    public function getGroupNameNumber(): ?string
     {
         return $this->groupNameNumber;
     }
@@ -130,11 +130,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     /**
      * The passenger name number in relation to the rest of the group.
      *
-     * @param string $groupNameNumber
+     * @param string|null $groupNameNumber
      *
      * @return self
      */
-    public function setGroupNameNumber(string $groupNameNumber): self
+    public function setGroupNameNumber(?string $groupNameNumber): self
     {
         $this->groupNameNumber = $groupNameNumber;
 
@@ -144,9 +144,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     /**
      * The number of remaining seats.
      *
-     * @return string
+     * @return string|null
      */
-    public function getNumSeatsRemaining(): string
+    public function getNumSeatsRemaining(): ?string
     {
         return $this->numSeatsRemaining;
     }
@@ -154,11 +154,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     /**
      * The number of remaining seats.
      *
-     * @param string $numSeatsRemaining
+     * @param string|null $numSeatsRemaining
      *
      * @return self
      */
-    public function setNumSeatsRemaining(string $numSeatsRemaining): self
+    public function setNumSeatsRemaining(?string $numSeatsRemaining): self
     {
         $this->numSeatsRemaining = $numSeatsRemaining;
 
@@ -168,9 +168,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     /**
      * The number of seats sold from the BSG.
      *
-     * @return string
+     * @return string|null
      */
-    public function getSoldNumberOfSeats(): string
+    public function getSoldNumberOfSeats(): ?string
     {
         return $this->soldNumberOfSeats;
     }
@@ -178,11 +178,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     /**
      * The number of seats sold from the BSG.
      *
-     * @param string $soldNumberOfSeats
+     * @param string|null $soldNumberOfSeats
      *
      * @return self
      */
-    public function setSoldNumberOfSeats(string $soldNumberOfSeats): self
+    public function setSoldNumberOfSeats(?string $soldNumberOfSeats): self
     {
         $this->soldNumberOfSeats = $soldNumberOfSeats;
 

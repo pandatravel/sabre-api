@@ -30,9 +30,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginD
     /**
      * The airline code.
      *
-     * @return string
+     * @return string|null
      */
-    public function getCode(): string
+    public function getCode(): ?string
     {
         return $this->code;
     }
@@ -40,11 +40,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginD
     /**
      * The airline code.
      *
-     * @param string $code
+     * @param string|null $code
      *
      * @return self
      */
-    public function setCode(string $code): self
+    public function setCode(?string $code): self
     {
         $this->code = $code;
 
@@ -54,9 +54,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginD
     /**
      * The flight number.
      *
-     * @return string
+     * @return string|null
      */
-    public function getFlightNumber(): string
+    public function getFlightNumber(): ?string
     {
         return $this->flightNumber;
     }
@@ -64,11 +64,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginD
     /**
      * The flight number.
      *
-     * @param string $flightNumber
+     * @param string|null $flightNumber
      *
      * @return self
      */
-    public function setFlightNumber(string $flightNumber): self
+    public function setFlightNumber(?string $flightNumber): self
     {
         $this->flightNumber = $flightNumber;
 

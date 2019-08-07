@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\CreatePassengerNameRecord\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -36,28 +35,28 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoCustomerInfoPersonNameItem();
-        if (property_exists($data, 'GivenName')) {
+        if (property_exists($data, 'GivenName') && $data->{'GivenName'} !== null) {
             $object->setGivenName($data->{'GivenName'});
         }
-        if (property_exists($data, 'GroupInfo')) {
+        if (property_exists($data, 'GroupInfo') && $data->{'GroupInfo'} !== null) {
             $object->setGroupInfo($this->denormalizer->denormalize($data->{'GroupInfo'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoCustomerInfoPersonNameItemGroupInfo', 'json', $context));
         }
-        if (property_exists($data, 'Surname')) {
+        if (property_exists($data, 'Surname') && $data->{'Surname'} !== null) {
             $object->setSurname($data->{'Surname'});
         }
-        if (property_exists($data, 'Infant')) {
+        if (property_exists($data, 'Infant') && $data->{'Infant'} !== null) {
             $object->setInfant($data->{'Infant'});
         }
-        if (property_exists($data, 'NameNumber')) {
+        if (property_exists($data, 'NameNumber') && $data->{'NameNumber'} !== null) {
             $object->setNameNumber($data->{'NameNumber'});
         }
-        if (property_exists($data, 'NameReference')) {
+        if (property_exists($data, 'NameReference') && $data->{'NameReference'} !== null) {
             $object->setNameReference($data->{'NameReference'});
         }
-        if (property_exists($data, 'PassengerType')) {
+        if (property_exists($data, 'PassengerType') && $data->{'PassengerType'} !== null) {
             $object->setPassengerType($data->{'PassengerType'});
         }
 

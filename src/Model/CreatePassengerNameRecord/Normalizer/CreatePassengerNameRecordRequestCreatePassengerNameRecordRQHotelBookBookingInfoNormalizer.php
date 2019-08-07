@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\CreatePassengerNameRecord\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -36,16 +35,16 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookBookin
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookBookingInfo();
-        if (property_exists($data, 'BookingKey')) {
+        if (property_exists($data, 'BookingKey') && $data->{'BookingKey'} !== null) {
             $object->setBookingKey($data->{'BookingKey'});
         }
-        if (property_exists($data, 'CorpDiscount')) {
+        if (property_exists($data, 'CorpDiscount') && $data->{'CorpDiscount'} !== null) {
             $object->setCorpDiscount($data->{'CorpDiscount'});
         }
-        if (property_exists($data, 'RequestorID')) {
+        if (property_exists($data, 'RequestorID') && $data->{'RequestorID'} !== null) {
             $object->setRequestorID($data->{'RequestorID'});
         }
 

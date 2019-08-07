@@ -24,9 +24,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * 'NumMonths' is used to pass the number of months by which to extend the payment.
      *
-     * @return int
+     * @return int|null
      */
-    public function getNumMonths(): int
+    public function getNumMonths(): ?int
     {
         return $this->numMonths;
     }
@@ -34,11 +34,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * 'NumMonths' is used to pass the number of months by which to extend the payment.
      *
-     * @param int $numMonths
+     * @param int|null $numMonths
      *
      * @return self
      */
-    public function setNumMonths(int $numMonths): self
+    public function setNumMonths(?int $numMonths): self
     {
         $this->numMonths = $numMonths;
 

@@ -30,9 +30,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The individual tax details.
      *
-     * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareTaxesTaxItem[]
+     * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareTaxesTaxItem[]|null
      */
-    public function getTax(): array
+    public function getTax(): ?array
     {
         return $this->tax;
     }
@@ -40,11 +40,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The individual tax details.
      *
-     * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareTaxesTaxItem[] $tax
+     * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareTaxesTaxItem[]|null $tax
      *
      * @return self
      */
-    public function setTax(array $tax): self
+    public function setTax(?array $tax): self
     {
         $this->tax = $tax;
 
@@ -54,9 +54,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The tax total amount.
      *
-     * @return string
+     * @return string|null
      */
-    public function getTotalAmount(): string
+    public function getTotalAmount(): ?string
     {
         return $this->totalAmount;
     }
@@ -64,11 +64,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The tax total amount.
      *
-     * @param string $totalAmount
+     * @param string|null $totalAmount
      *
      * @return self
      */
-    public function setTotalAmount(string $totalAmount): self
+    public function setTotalAmount(?string $totalAmount): self
     {
         $this->totalAmount = $totalAmount;
 

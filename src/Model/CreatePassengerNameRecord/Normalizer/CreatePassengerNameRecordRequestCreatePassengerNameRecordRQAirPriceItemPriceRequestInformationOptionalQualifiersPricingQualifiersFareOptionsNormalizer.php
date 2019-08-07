@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\CreatePassengerNameRecord\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -36,28 +35,28 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersFareOptions();
-        if (property_exists($data, 'ASLBreakdown')) {
+        if (property_exists($data, 'ASLBreakdown') && $data->{'ASLBreakdown'} !== null) {
             $object->setASLBreakdown($data->{'ASLBreakdown'});
         }
-        if (property_exists($data, 'ASLIgnore')) {
+        if (property_exists($data, 'ASLIgnore') && $data->{'ASLIgnore'} !== null) {
             $object->setASLIgnore($data->{'ASLIgnore'});
         }
-        if (property_exists($data, 'Excursion')) {
+        if (property_exists($data, 'Excursion') && $data->{'Excursion'} !== null) {
             $object->setExcursion($data->{'Excursion'});
         }
-        if (property_exists($data, 'HandlingFees')) {
+        if (property_exists($data, 'HandlingFees') && $data->{'HandlingFees'} !== null) {
             $object->setHandlingFees($data->{'HandlingFees'});
         }
-        if (property_exists($data, 'Net')) {
+        if (property_exists($data, 'Net') && $data->{'Net'} !== null) {
             $object->setNet($data->{'Net'});
         }
-        if (property_exists($data, 'Private')) {
+        if (property_exists($data, 'Private') && $data->{'Private'} !== null) {
             $object->setPrivate($data->{'Private'});
         }
-        if (property_exists($data, 'Public')) {
+        if (property_exists($data, 'Public') && $data->{'Public'} !== null) {
             $object->setPublic($data->{'Public'});
         }
 

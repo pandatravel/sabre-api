@@ -24,9 +24,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOS exten
     /**
      * The point of Sale details.
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSource
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSource|null
      */
-    public function getSource(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSource
+    public function getSource(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSource
     {
         return $this->source;
     }
@@ -34,11 +34,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOS exten
     /**
      * The point of Sale details.
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSource $source
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSource|null $source
      *
      * @return self
      */
-    public function setSource(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSource $source): self
+    public function setSource(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOSSource $source): self
     {
         $this->source = $source;
 

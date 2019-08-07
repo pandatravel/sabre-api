@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\CreatePassengerNameRecord\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -36,34 +35,34 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemFareCalculationBreakdownItemDeparture();
-        if (property_exists($data, 'CityCode')) {
+        if (property_exists($data, 'CityCode') && $data->{'CityCode'} !== null) {
             $object->setCityCode($data->{'CityCode'});
         }
-        if (property_exists($data, 'AirportCode')) {
+        if (property_exists($data, 'AirportCode') && $data->{'AirportCode'} !== null) {
             $object->setAirportCode($data->{'AirportCode'});
         }
-        if (property_exists($data, 'SideTripIndicator')) {
+        if (property_exists($data, 'SideTripIndicator') && $data->{'SideTripIndicator'} !== null) {
             $object->setSideTripIndicator($data->{'SideTripIndicator'});
         }
-        if (property_exists($data, 'AirlineCode')) {
+        if (property_exists($data, 'AirlineCode') && $data->{'AirlineCode'} !== null) {
             $object->setAirlineCode($data->{'AirlineCode'});
         }
-        if (property_exists($data, 'GenericInd')) {
+        if (property_exists($data, 'GenericInd') && $data->{'GenericInd'} !== null) {
             $object->setGenericInd($data->{'GenericInd'});
         }
-        if (property_exists($data, 'GlobalInd')) {
+        if (property_exists($data, 'GlobalInd') && $data->{'GlobalInd'} !== null) {
             $object->setGlobalInd($data->{'GlobalInd'});
         }
-        if (property_exists($data, 'ArrivalCityCode')) {
+        if (property_exists($data, 'ArrivalCityCode') && $data->{'ArrivalCityCode'} !== null) {
             $object->setArrivalCityCode($data->{'ArrivalCityCode'});
         }
-        if (property_exists($data, 'ArrivalAirportCode')) {
+        if (property_exists($data, 'ArrivalAirportCode') && $data->{'ArrivalAirportCode'} !== null) {
             $object->setArrivalAirportCode($data->{'ArrivalAirportCode'});
         }
-        if (property_exists($data, 'InfantFareConstructionCity')) {
+        if (property_exists($data, 'InfantFareConstructionCity') && $data->{'InfantFareConstructionCity'} !== null) {
             $object->setInfantFareConstructionCity($data->{'InfantFareConstructionCity'});
         }
 

@@ -22,7 +22,8 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsR
     protected $contact;
     /**
      * 'Type' defines whether the guest is an adult or child.
-     * '10'=Adult, '8'=Child - Valid values are only Adult and Child Types.
+    '10'=Adult, '8'=Child - Valid values are only Adult and Child Types.
+
      *
      * @var int
      */
@@ -35,7 +36,8 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsR
     protected $email;
     /**
      * The guest age.
-     * Age is mandatory for a child.
+    Age is mandatory for a child.
+
      *
      * @var int
      */
@@ -48,28 +50,32 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsR
     protected $index;
     /**
      * 'LeadGuest' is the main guest for the booking.
-     * At least one and only one adult guest must be defined.
+    At least one and only one adult guest must be defined.
+
      *
      * @var bool
      */
     protected $leadGuest;
     /**
      * The frequent traveler number.
-     * Applies only to the lead guest.
+    Applies only to the lead guest.
+
      *
      * @var string
      */
     protected $frequentFlyerNumber;
     /**
      * The loyalty identifier.
-     * Applies only to the lead guest.
+    Applies only to the lead guest.
+
      *
      * @var string
      */
     protected $loyaltyId;
     /**
      * The guest 'Title'.
-     * 'Title' can include MR./MS. etc.
+    'Title' can include MR./MS. etc.
+
      *
      * @var string
      */
@@ -90,9 +96,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsR
     /**
      * The guest contact details.
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsRoomItemGuestsGuestItemContact
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsRoomItemGuestsGuestItemContact|null
      */
-    public function getContact(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsRoomItemGuestsGuestItemContact
+    public function getContact(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsRoomItemGuestsGuestItemContact
     {
         return $this->contact;
     }
@@ -100,11 +106,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsR
     /**
      * The guest contact details.
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsRoomItemGuestsGuestItemContact $contact
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsRoomItemGuestsGuestItemContact|null $contact
      *
      * @return self
      */
-    public function setContact(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsRoomItemGuestsGuestItemContact $contact): self
+    public function setContact(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsRoomItemGuestsGuestItemContact $contact): self
     {
         $this->contact = $contact;
 
@@ -113,24 +119,26 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsR
 
     /**
      * 'Type' defines whether the guest is an adult or child.
-     * '10'=Adult, '8'=Child - Valid values are only Adult and Child Types.
+    '10'=Adult, '8'=Child - Valid values are only Adult and Child Types.
+
      *
-     * @return int
+     * @return int|null
      */
-    public function getType(): int
+    public function getType(): ?int
     {
         return $this->type;
     }
 
     /**
      * 'Type' defines whether the guest is an adult or child.
-     * '10'=Adult, '8'=Child - Valid values are only Adult and Child Types.
+    '10'=Adult, '8'=Child - Valid values are only Adult and Child Types.
+
      *
-     * @param int $type
+     * @param int|null $type
      *
      * @return self
      */
-    public function setType(int $type): self
+    public function setType(?int $type): self
     {
         $this->type = $type;
 
@@ -140,9 +148,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsR
     /**
      * 'Email' address for the guest.
      *
-     * @return string
+     * @return string|null
      */
-    public function getEmail(): string
+    public function getEmail(): ?string
     {
         return $this->email;
     }
@@ -150,11 +158,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsR
     /**
      * 'Email' address for the guest.
      *
-     * @param string $email
+     * @param string|null $email
      *
      * @return self
      */
-    public function setEmail(string $email): self
+    public function setEmail(?string $email): self
     {
         $this->email = $email;
 
@@ -163,24 +171,26 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsR
 
     /**
      * The guest age.
-     * Age is mandatory for a child.
+    Age is mandatory for a child.
+
      *
-     * @return int
+     * @return int|null
      */
-    public function getAge(): int
+    public function getAge(): ?int
     {
         return $this->age;
     }
 
     /**
      * The guest age.
-     * Age is mandatory for a child.
+    Age is mandatory for a child.
+
      *
-     * @param int $age
+     * @param int|null $age
      *
      * @return self
      */
-    public function setAge(int $age): self
+    public function setAge(?int $age): self
     {
         $this->age = $age;
 
@@ -190,9 +200,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsR
     /**
      * The guest index.
      *
-     * @return int
+     * @return int|null
      */
-    public function getIndex(): int
+    public function getIndex(): ?int
     {
         return $this->index;
     }
@@ -200,11 +210,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsR
     /**
      * The guest index.
      *
-     * @param int $index
+     * @param int|null $index
      *
      * @return self
      */
-    public function setIndex(int $index): self
+    public function setIndex(?int $index): self
     {
         $this->index = $index;
 
@@ -213,24 +223,26 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsR
 
     /**
      * 'LeadGuest' is the main guest for the booking.
-     * At least one and only one adult guest must be defined.
+    At least one and only one adult guest must be defined.
+
      *
-     * @return bool
+     * @return bool|null
      */
-    public function getLeadGuest(): bool
+    public function getLeadGuest(): ?bool
     {
         return $this->leadGuest;
     }
 
     /**
      * 'LeadGuest' is the main guest for the booking.
-     * At least one and only one adult guest must be defined.
+    At least one and only one adult guest must be defined.
+
      *
-     * @param bool $leadGuest
+     * @param bool|null $leadGuest
      *
      * @return self
      */
-    public function setLeadGuest(bool $leadGuest): self
+    public function setLeadGuest(?bool $leadGuest): self
     {
         $this->leadGuest = $leadGuest;
 
@@ -239,24 +251,26 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsR
 
     /**
      * The frequent traveler number.
-     * Applies only to the lead guest.
+    Applies only to the lead guest.
+
      *
-     * @return string
+     * @return string|null
      */
-    public function getFrequentFlyerNumber(): string
+    public function getFrequentFlyerNumber(): ?string
     {
         return $this->frequentFlyerNumber;
     }
 
     /**
      * The frequent traveler number.
-     * Applies only to the lead guest.
+    Applies only to the lead guest.
+
      *
-     * @param string $frequentFlyerNumber
+     * @param string|null $frequentFlyerNumber
      *
      * @return self
      */
-    public function setFrequentFlyerNumber(string $frequentFlyerNumber): self
+    public function setFrequentFlyerNumber(?string $frequentFlyerNumber): self
     {
         $this->frequentFlyerNumber = $frequentFlyerNumber;
 
@@ -265,24 +279,26 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsR
 
     /**
      * The loyalty identifier.
-     * Applies only to the lead guest.
+    Applies only to the lead guest.
+
      *
-     * @return string
+     * @return string|null
      */
-    public function getLoyaltyId(): string
+    public function getLoyaltyId(): ?string
     {
         return $this->loyaltyId;
     }
 
     /**
      * The loyalty identifier.
-     * Applies only to the lead guest.
+    Applies only to the lead guest.
+
      *
-     * @param string $loyaltyId
+     * @param string|null $loyaltyId
      *
      * @return self
      */
-    public function setLoyaltyId(string $loyaltyId): self
+    public function setLoyaltyId(?string $loyaltyId): self
     {
         $this->loyaltyId = $loyaltyId;
 
@@ -291,24 +307,26 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsR
 
     /**
      * The guest 'Title'.
-     * 'Title' can include MR./MS. etc.
+    'Title' can include MR./MS. etc.
+
      *
-     * @return string
+     * @return string|null
      */
-    public function getTitle(): string
+    public function getTitle(): ?string
     {
         return $this->title;
     }
 
     /**
      * The guest 'Title'.
-     * 'Title' can include MR./MS. etc.
+    'Title' can include MR./MS. etc.
+
      *
-     * @param string $title
+     * @param string|null $title
      *
      * @return self
      */
-    public function setTitle(string $title): self
+    public function setTitle(?string $title): self
     {
         $this->title = $title;
 
@@ -318,9 +336,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsR
     /**
      * The 'FirstName' of the guest.
      *
-     * @return string
+     * @return string|null
      */
-    public function getFirstName(): string
+    public function getFirstName(): ?string
     {
         return $this->firstName;
     }
@@ -328,11 +346,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsR
     /**
      * The 'FirstName' of the guest.
      *
-     * @param string $firstName
+     * @param string|null $firstName
      *
      * @return self
      */
-    public function setFirstName(string $firstName): self
+    public function setFirstName(?string $firstName): self
     {
         $this->firstName = $firstName;
 
@@ -342,9 +360,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsR
     /**
      * The 'LastName' of the guest.
      *
-     * @return string
+     * @return string|null
      */
-    public function getLastName(): string
+    public function getLastName(): ?string
     {
         return $this->lastName;
     }
@@ -352,11 +370,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsR
     /**
      * The 'LastName' of the guest.
      *
-     * @param string $lastName
+     * @param string|null $lastName
      *
      * @return self
      */
-    public function setLastName(string $lastName): self
+    public function setLastName(?string $lastName): self
     {
         $this->lastName = $lastName;
 

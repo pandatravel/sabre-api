@@ -30,9 +30,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingE
     /**
      * Used to specify an ending segment in the range within the range that is to be included in the email message.
      *
-     * @return int
+     * @return int|null
      */
-    public function getEndNumber(): int
+    public function getEndNumber(): ?int
     {
         return $this->endNumber;
     }
@@ -40,11 +40,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingE
     /**
      * Used to specify an ending segment in the range within the range that is to be included in the email message.
      *
-     * @param int $endNumber
+     * @param int|null $endNumber
      *
      * @return self
      */
-    public function setEndNumber(int $endNumber): self
+    public function setEndNumber(?int $endNumber): self
     {
         $this->endNumber = $endNumber;
 
@@ -54,9 +54,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingE
     /**
      * Used to specify a segment number.
      *
-     * @return int
+     * @return int|null
      */
-    public function getNumber(): int
+    public function getNumber(): ?int
     {
         return $this->number;
     }
@@ -64,11 +64,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingE
     /**
      * Used to specify a segment number.
      *
-     * @param int $number
+     * @param int|null $number
      *
      * @return self
      */
-    public function setNumber(int $number): self
+    public function setNumber(?int $number): self
     {
         $this->number = $number;
 

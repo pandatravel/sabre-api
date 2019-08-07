@@ -30,9 +30,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The retailer rule for the adjustment selling level.
      *
-     * @return string
+     * @return string|null
      */
-    public function getAdjustmentSellingLevel(): string
+    public function getAdjustmentSellingLevel(): ?string
     {
         return $this->adjustmentSellingLevel;
     }
@@ -40,11 +40,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The retailer rule for the adjustment selling level.
      *
-     * @param string $adjustmentSellingLevel
+     * @param string|null $adjustmentSellingLevel
      *
      * @return self
      */
-    public function setAdjustmentSellingLevel(string $adjustmentSellingLevel): self
+    public function setAdjustmentSellingLevel(?string $adjustmentSellingLevel): self
     {
         $this->adjustmentSellingLevel = $adjustmentSellingLevel;
 
@@ -54,9 +54,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The retailer rule for pricing transactions.
      *
-     * @return string
+     * @return string|null
      */
-    public function getPricingTransaction(): string
+    public function getPricingTransaction(): ?string
     {
         return $this->pricingTransaction;
     }
@@ -64,11 +64,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The retailer rule for pricing transactions.
      *
-     * @param string $pricingTransaction
+     * @param string|null $pricingTransaction
      *
      * @return self
      */
-    public function setPricingTransaction(string $pricingTransaction): self
+    public function setPricingTransaction(?string $pricingTransaction): self
     {
         $this->pricingTransaction = $pricingTransaction;
 

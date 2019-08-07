@@ -30,9 +30,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * The fare basis code.
      *
-     * @return string
+     * @return string|null
      */
-    public function getCode(): string
+    public function getCode(): ?string
     {
         return $this->code;
     }
@@ -40,11 +40,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * The fare basis code.
      *
-     * @param string $code
+     * @param string|null $code
      *
      * @return self
      */
-    public function setCode(string $code): self
+    public function setCode(?string $code): self
     {
         $this->code = $code;
 
@@ -54,9 +54,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to specify a ticket designator.
      *
-     * @return string
+     * @return string|null
      */
-    public function getTicketDesignator(): string
+    public function getTicketDesignator(): ?string
     {
         return $this->ticketDesignator;
     }
@@ -64,11 +64,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to specify a ticket designator.
      *
-     * @param string $ticketDesignator
+     * @param string|null $ticketDesignator
      *
      * @return self
      */
-    public function setTicketDesignator(string $ticketDesignator): self
+    public function setTicketDesignator(?string $ticketDesignator): self
     {
         $this->ticketDesignator = $ticketDesignator;
 

@@ -24,9 +24,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItinerary
     /**
      * Used to pass the hidden city / via code.
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItemHiddenStopsHiddenStopItem[]
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItemHiddenStopsHiddenStopItem[]|null
      */
-    public function getHiddenStop(): array
+    public function getHiddenStop(): ?array
     {
         return $this->hiddenStop;
     }
@@ -34,11 +34,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItinerary
     /**
      * Used to pass the hidden city / via code.
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItemHiddenStopsHiddenStopItem[] $hiddenStop
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItemHiddenStopsHiddenStopItem[]|null $hiddenStop
      *
      * @return self
      */
-    public function setHiddenStop(array $hiddenStop): self
+    public function setHiddenStop(?array $hiddenStop): self
     {
         $this->hiddenStop = $hiddenStop;
 

@@ -36,9 +36,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to define the acceptable price increase threshold.
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceComparisonAcceptablePriceIncrease
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceComparisonAcceptablePriceIncrease|null
      */
-    public function getAcceptablePriceIncrease(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceComparisonAcceptablePriceIncrease
+    public function getAcceptablePriceIncrease(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceComparisonAcceptablePriceIncrease
     {
         return $this->acceptablePriceIncrease;
     }
@@ -46,11 +46,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to define the acceptable price increase threshold.
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceComparisonAcceptablePriceIncrease $acceptablePriceIncrease
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceComparisonAcceptablePriceIncrease|null $acceptablePriceIncrease
      *
      * @return self
      */
-    public function setAcceptablePriceIncrease(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceComparisonAcceptablePriceIncrease $acceptablePriceIncrease): self
+    public function setAcceptablePriceIncrease(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceComparisonAcceptablePriceIncrease $acceptablePriceIncrease): self
     {
         $this->acceptablePriceIncrease = $acceptablePriceIncrease;
 
@@ -60,9 +60,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to define the acceptable price decrease threshold.
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceComparisonAcceptablePriceDecrease
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceComparisonAcceptablePriceDecrease|null
      */
-    public function getAcceptablePriceDecrease(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceComparisonAcceptablePriceDecrease
+    public function getAcceptablePriceDecrease(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceComparisonAcceptablePriceDecrease
     {
         return $this->acceptablePriceDecrease;
     }
@@ -70,11 +70,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to define the acceptable price decrease threshold.
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceComparisonAcceptablePriceDecrease $acceptablePriceDecrease
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceComparisonAcceptablePriceDecrease|null $acceptablePriceDecrease
      *
      * @return self
      */
-    public function setAcceptablePriceDecrease(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceComparisonAcceptablePriceDecrease $acceptablePriceDecrease): self
+    public function setAcceptablePriceDecrease(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceComparisonAcceptablePriceDecrease $acceptablePriceDecrease): self
     {
         $this->acceptablePriceDecrease = $acceptablePriceDecrease;
 
@@ -84,9 +84,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to specify the total amount associated with the itinerary returned via the previous shopping method for comparision purposes against the current price being returned for the same itinerary.
      *
-     * @return float
+     * @return float|null
      */
-    public function getAmountSpecified(): float
+    public function getAmountSpecified(): ?float
     {
         return $this->amountSpecified;
     }
@@ -94,11 +94,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to specify the total amount associated with the itinerary returned via the previous shopping method for comparision purposes against the current price being returned for the same itinerary.
      *
-     * @param float $amountSpecified
+     * @param float|null $amountSpecified
      *
      * @return self
      */
-    public function setAmountSpecified(float $amountSpecified): self
+    public function setAmountSpecified(?float $amountSpecified): self
     {
         $this->amountSpecified = $amountSpecified;
 

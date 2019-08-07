@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\CreatePassengerNameRecord\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -36,22 +35,22 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoCustomerInfoCreditCardDataBillingInformation();
-        if (property_exists($data, 'Zip')) {
+        if (property_exists($data, 'Zip') && $data->{'Zip'} !== null) {
             $object->setZip($data->{'Zip'});
         }
-        if (property_exists($data, 'cardHolderName')) {
+        if (property_exists($data, 'cardHolderName') && $data->{'cardHolderName'} !== null) {
             $object->setCardHolderName($data->{'cardHolderName'});
         }
-        if (property_exists($data, 'streetAddress')) {
+        if (property_exists($data, 'streetAddress') && $data->{'streetAddress'} !== null) {
             $object->setStreetAddress($data->{'streetAddress'});
         }
-        if (property_exists($data, 'city')) {
+        if (property_exists($data, 'city') && $data->{'city'} !== null) {
             $object->setCity($data->{'city'});
         }
-        if (property_exists($data, 'stateOrProvince')) {
+        if (property_exists($data, 'stateOrProvince') && $data->{'stateOrProvince'} !== null) {
             $object->setStateOrProvince($data->{'stateOrProvince'});
         }
 

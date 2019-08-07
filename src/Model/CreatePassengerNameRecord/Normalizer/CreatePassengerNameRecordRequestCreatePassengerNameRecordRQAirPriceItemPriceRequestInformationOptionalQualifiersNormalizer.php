@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\CreatePassengerNameRecord\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -36,19 +35,19 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiers();
-        if (property_exists($data, 'FlightQualifiers')) {
+        if (property_exists($data, 'FlightQualifiers') && $data->{'FlightQualifiers'} !== null) {
             $object->setFlightQualifiers($this->denormalizer->denormalize($data->{'FlightQualifiers'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFlightQualifiers', 'json', $context));
         }
-        if (property_exists($data, 'FOP_Qualifiers')) {
+        if (property_exists($data, 'FOP_Qualifiers') && $data->{'FOP_Qualifiers'} !== null) {
             $object->setFOPQualifiers($this->denormalizer->denormalize($data->{'FOP_Qualifiers'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiers', 'json', $context));
         }
-        if (property_exists($data, 'MiscQualifiers')) {
+        if (property_exists($data, 'MiscQualifiers') && $data->{'MiscQualifiers'} !== null) {
             $object->setMiscQualifiers($this->denormalizer->denormalize($data->{'MiscQualifiers'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiers', 'json', $context));
         }
-        if (property_exists($data, 'PricingQualifiers')) {
+        if (property_exists($data, 'PricingQualifiers') && $data->{'PricingQualifiers'} !== null) {
             $object->setPricingQualifiers($this->denormalizer->denormalize($data->{'PricingQualifiers'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiers', 'json', $context));
         }
 

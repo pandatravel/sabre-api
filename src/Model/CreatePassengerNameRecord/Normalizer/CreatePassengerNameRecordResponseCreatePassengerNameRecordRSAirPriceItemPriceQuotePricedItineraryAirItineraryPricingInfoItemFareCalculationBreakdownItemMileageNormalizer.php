@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\CreatePassengerNameRecord\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -36,31 +35,31 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemFareCalculationBreakdownItemMileage();
-        if (property_exists($data, 'ExtraAllowanceInd')) {
+        if (property_exists($data, 'ExtraAllowanceInd') && $data->{'ExtraAllowanceInd'} !== null) {
             $object->setExtraAllowanceInd($data->{'ExtraAllowanceInd'});
         }
-        if (property_exists($data, 'MileageExclusionInd')) {
+        if (property_exists($data, 'MileageExclusionInd') && $data->{'MileageExclusionInd'} !== null) {
             $object->setMileageExclusionInd($data->{'MileageExclusionInd'});
         }
-        if (property_exists($data, 'MileageReductionPTInd')) {
+        if (property_exists($data, 'MileageReductionPTInd') && $data->{'MileageReductionPTInd'} !== null) {
             $object->setMileageReductionPTInd($data->{'MileageReductionPTInd'});
         }
-        if (property_exists($data, 'MileageEqualizationInd')) {
+        if (property_exists($data, 'MileageEqualizationInd') && $data->{'MileageEqualizationInd'} !== null) {
             $object->setMileageEqualizationInd($data->{'MileageEqualizationInd'});
         }
-        if (property_exists($data, 'MileageSymbol')) {
+        if (property_exists($data, 'MileageSymbol') && $data->{'MileageSymbol'} !== null) {
             $object->setMileageSymbol($data->{'MileageSymbol'});
         }
-        if (property_exists($data, 'MileageSurchargeInd')) {
+        if (property_exists($data, 'MileageSurchargeInd') && $data->{'MileageSurchargeInd'} !== null) {
             $object->setMileageSurchargeInd($data->{'MileageSurchargeInd'});
         }
-        if (property_exists($data, 'HIPConstructionCityCode')) {
+        if (property_exists($data, 'HIPConstructionCityCode') && $data->{'HIPConstructionCityCode'} !== null) {
             $object->setHIPConstructionCityCode($data->{'HIPConstructionCityCode'});
         }
-        if (property_exists($data, 'HIPCityCodes')) {
+        if (property_exists($data, 'HIPCityCodes') && $data->{'HIPCityCodes'} !== null) {
             $object->setHIPCityCodes($data->{'HIPCityCodes'});
         }
 

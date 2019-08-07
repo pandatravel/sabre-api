@@ -36,9 +36,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingQ
     /**
      * The queue number.
      *
-     * @return string
+     * @return string|null
      */
-    public function getNumber(): string
+    public function getNumber(): ?string
     {
         return $this->number;
     }
@@ -46,11 +46,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingQ
     /**
      * The queue number.
      *
-     * @param string $number
+     * @param string|null $number
      *
      * @return self
      */
-    public function setNumber(string $number): self
+    public function setNumber(?string $number): self
     {
         $this->number = $number;
 
@@ -60,9 +60,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingQ
     /**
      * The prefatory instruction code.
      *
-     * @return string
+     * @return string|null
      */
-    public function getPrefatoryInstructionCode(): string
+    public function getPrefatoryInstructionCode(): ?string
     {
         return $this->prefatoryInstructionCode;
     }
@@ -70,11 +70,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingQ
     /**
      * The prefatory instruction code.
      *
-     * @param string $prefatoryInstructionCode
+     * @param string|null $prefatoryInstructionCode
      *
      * @return self
      */
-    public function setPrefatoryInstructionCode(string $prefatoryInstructionCode): self
+    public function setPrefatoryInstructionCode(?string $prefatoryInstructionCode): self
     {
         $this->prefatoryInstructionCode = $prefatoryInstructionCode;
 
@@ -84,9 +84,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingQ
     /**
      * The pseudo city code.
      *
-     * @return string
+     * @return string|null
      */
-    public function getPseudoCityCode(): string
+    public function getPseudoCityCode(): ?string
     {
         return $this->pseudoCityCode;
     }
@@ -94,11 +94,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingQ
     /**
      * The pseudo city code.
      *
-     * @param string $pseudoCityCode
+     * @param string|null $pseudoCityCode
      *
      * @return self
      */
-    public function setPseudoCityCode(string $pseudoCityCode): self
+    public function setPseudoCityCode(?string $pseudoCityCode): self
     {
         $this->pseudoCityCode = $pseudoCityCode;
 

@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\CreatePassengerNameRecord\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -36,23 +35,23 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookNormaliz
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBook();
-        if (property_exists($data, 'RetryRebook')) {
+        if (property_exists($data, 'RetryRebook') && $data->{'RetryRebook'} !== null) {
             $object->setRetryRebook($this->denormalizer->denormalize($data->{'RetryRebook'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookRetryRebook', 'json', $context));
         }
-        if (property_exists($data, 'HaltOnStatus')) {
+        if (property_exists($data, 'HaltOnStatus') && $data->{'HaltOnStatus'} !== null) {
             $values = [];
             foreach ($data->{'HaltOnStatus'} as $value) {
                 $values[] = $this->denormalizer->denormalize($value, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookHaltOnStatusItem', 'json', $context);
             }
             $object->setHaltOnStatus($values);
         }
-        if (property_exists($data, 'OriginDestinationInformation')) {
+        if (property_exists($data, 'OriginDestinationInformation') && $data->{'OriginDestinationInformation'} !== null) {
             $object->setOriginDestinationInformation($this->denormalizer->denormalize($data->{'OriginDestinationInformation'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookOriginDestinationInformation', 'json', $context));
         }
-        if (property_exists($data, 'RedisplayReservation')) {
+        if (property_exists($data, 'RedisplayReservation') && $data->{'RedisplayReservation'} !== null) {
             $object->setRedisplayReservation($this->denormalizer->denormalize($data->{'RedisplayReservation'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookRedisplayReservation', 'json', $context));
         }
 

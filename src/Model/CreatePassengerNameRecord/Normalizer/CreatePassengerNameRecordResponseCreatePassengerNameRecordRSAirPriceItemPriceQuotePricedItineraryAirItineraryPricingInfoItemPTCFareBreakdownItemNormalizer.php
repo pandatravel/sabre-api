@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\CreatePassengerNameRecord\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -36,22 +35,22 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemPTCFareBreakdownItem();
-        if (property_exists($data, 'BrandedFareInformation')) {
+        if (property_exists($data, 'BrandedFareInformation') && $data->{'BrandedFareInformation'} !== null) {
             $object->setBrandedFareInformation($this->denormalizer->denormalize($data->{'BrandedFareInformation'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemPTCFareBreakdownItemBrandedFareInformation', 'json', $context));
         }
-        if (property_exists($data, 'Cabin')) {
+        if (property_exists($data, 'Cabin') && $data->{'Cabin'} !== null) {
             $object->setCabin($data->{'Cabin'});
         }
-        if (property_exists($data, 'FareBasis')) {
+        if (property_exists($data, 'FareBasis') && $data->{'FareBasis'} !== null) {
             $object->setFareBasis($this->denormalizer->denormalize($data->{'FareBasis'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemPTCFareBreakdownItemFareBasis', 'json', $context));
         }
-        if (property_exists($data, 'FreeBaggageAllowance')) {
+        if (property_exists($data, 'FreeBaggageAllowance') && $data->{'FreeBaggageAllowance'} !== null) {
             $object->setFreeBaggageAllowance($data->{'FreeBaggageAllowance'});
         }
-        if (property_exists($data, 'Surcharges')) {
+        if (property_exists($data, 'Surcharges') && $data->{'Surcharges'} !== null) {
             $values = [];
             foreach ($data->{'Surcharges'} as $value) {
                 $values[] = $this->denormalizer->denormalize($value, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemPTCFareBreakdownItemSurchargesItem', 'json', $context);

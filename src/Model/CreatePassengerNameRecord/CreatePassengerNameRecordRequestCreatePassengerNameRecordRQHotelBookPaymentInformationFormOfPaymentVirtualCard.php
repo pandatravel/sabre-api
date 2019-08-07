@@ -24,9 +24,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymen
     /**
      * The customer account code.
      *
-     * @return string
+     * @return string|null
      */
-    public function getCustomerAccountCode(): string
+    public function getCustomerAccountCode(): ?string
     {
         return $this->customerAccountCode;
     }
@@ -34,11 +34,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymen
     /**
      * The customer account code.
      *
-     * @param string $customerAccountCode
+     * @param string|null $customerAccountCode
      *
      * @return self
      */
-    public function setCustomerAccountCode(string $customerAccountCode): self
+    public function setCustomerAccountCode(?string $customerAccountCode): self
     {
         $this->customerAccountCode = $customerAccountCode;
 

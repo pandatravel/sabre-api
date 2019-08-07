@@ -24,9 +24,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     /**
      * The customer address line information.
      *
-     * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoAddressAddressLineItem[]
+     * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoAddressAddressLineItem[]|null
      */
-    public function getAddressLine(): array
+    public function getAddressLine(): ?array
     {
         return $this->addressLine;
     }
@@ -34,11 +34,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     /**
      * The customer address line information.
      *
-     * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoAddressAddressLineItem[] $addressLine
+     * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoAddressAddressLineItem[]|null $addressLine
      *
      * @return self
      */
-    public function setAddressLine(array $addressLine): self
+    public function setAddressLine(?array $addressLine): self
     {
         $this->addressLine = $addressLine;
 

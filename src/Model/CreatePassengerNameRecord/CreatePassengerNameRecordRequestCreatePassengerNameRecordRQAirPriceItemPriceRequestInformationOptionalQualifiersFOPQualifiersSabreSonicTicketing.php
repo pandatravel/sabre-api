@@ -16,14 +16,16 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
 {
     /**
      * Used to define a single form of payment.
-     * 'BasicFOP' cannot be combined with 'EnhancedMultipleFOP' or 'MultipleFOP'.
+    'BasicFOP' cannot be combined with 'EnhancedMultipleFOP' or 'MultipleFOP'.
+
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingBasicFOP
      */
     protected $basicFOP;
     /**
      * Valid for SabreSonic-based airlines who have activated the enhanced multiple form of payment option.
-     * 'EnhancedMultipleFOP' cannot be combined with 'MultipleFOP'.
+    'EnhancedMultipleFOP' cannot be combined with 'MultipleFOP'.
+
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingEnhancedMultipleFOP
      */
@@ -37,24 +39,26 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
 
     /**
      * Used to define a single form of payment.
-     * 'BasicFOP' cannot be combined with 'EnhancedMultipleFOP' or 'MultipleFOP'.
+    'BasicFOP' cannot be combined with 'EnhancedMultipleFOP' or 'MultipleFOP'.
+
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingBasicFOP
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingBasicFOP|null
      */
-    public function getBasicFOP(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingBasicFOP
+    public function getBasicFOP(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingBasicFOP
     {
         return $this->basicFOP;
     }
 
     /**
      * Used to define a single form of payment.
-     * 'BasicFOP' cannot be combined with 'EnhancedMultipleFOP' or 'MultipleFOP'.
+    'BasicFOP' cannot be combined with 'EnhancedMultipleFOP' or 'MultipleFOP'.
+
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingBasicFOP $basicFOP
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingBasicFOP|null $basicFOP
      *
      * @return self
      */
-    public function setBasicFOP(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingBasicFOP $basicFOP): self
+    public function setBasicFOP(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingBasicFOP $basicFOP): self
     {
         $this->basicFOP = $basicFOP;
 
@@ -63,24 +67,26 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
 
     /**
      * Valid for SabreSonic-based airlines who have activated the enhanced multiple form of payment option.
-     * 'EnhancedMultipleFOP' cannot be combined with 'MultipleFOP'.
+    'EnhancedMultipleFOP' cannot be combined with 'MultipleFOP'.
+
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingEnhancedMultipleFOP
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingEnhancedMultipleFOP|null
      */
-    public function getEnhancedMultipleFOP(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingEnhancedMultipleFOP
+    public function getEnhancedMultipleFOP(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingEnhancedMultipleFOP
     {
         return $this->enhancedMultipleFOP;
     }
 
     /**
      * Valid for SabreSonic-based airlines who have activated the enhanced multiple form of payment option.
-     * 'EnhancedMultipleFOP' cannot be combined with 'MultipleFOP'.
+    'EnhancedMultipleFOP' cannot be combined with 'MultipleFOP'.
+
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingEnhancedMultipleFOP $enhancedMultipleFOP
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingEnhancedMultipleFOP|null $enhancedMultipleFOP
      *
      * @return self
      */
-    public function setEnhancedMultipleFOP(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingEnhancedMultipleFOP $enhancedMultipleFOP): self
+    public function setEnhancedMultipleFOP(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingEnhancedMultipleFOP $enhancedMultipleFOP): self
     {
         $this->enhancedMultipleFOP = $enhancedMultipleFOP;
 
@@ -90,9 +96,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * 'MultipleFOP' cannot be combined with 'EnhancedMultipleFOP'.
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingMultipleFOP
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingMultipleFOP|null
      */
-    public function getMultipleFOP(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingMultipleFOP
+    public function getMultipleFOP(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingMultipleFOP
     {
         return $this->multipleFOP;
     }
@@ -100,11 +106,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * 'MultipleFOP' cannot be combined with 'EnhancedMultipleFOP'.
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingMultipleFOP $multipleFOP
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingMultipleFOP|null $multipleFOP
      *
      * @return self
      */
-    public function setMultipleFOP(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingMultipleFOP $multipleFOP): self
+    public function setMultipleFOP(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingMultipleFOP $multipleFOP): self
     {
         $this->multipleFOP = $multipleFOP;
 

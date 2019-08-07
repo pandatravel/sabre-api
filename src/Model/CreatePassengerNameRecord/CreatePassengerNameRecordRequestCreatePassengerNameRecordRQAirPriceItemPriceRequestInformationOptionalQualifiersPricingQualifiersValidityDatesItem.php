@@ -42,9 +42,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     'NotValidAfter' follows this format: 'MM-DD' or 'YYYY-MM-DD'.
 
      *
-     * @return string
+     * @return string|null
      */
-    public function getNotValidAfter(): string
+    public function getNotValidAfter(): ?string
     {
         return $this->notValidAfter;
     }
@@ -54,11 +54,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     'NotValidAfter' follows this format: 'MM-DD' or 'YYYY-MM-DD'.
 
      *
-     * @param string $notValidAfter
+     * @param string|null $notValidAfter
      *
      * @return self
      */
-    public function setNotValidAfter(string $notValidAfter): self
+    public function setNotValidAfter(?string $notValidAfter): self
     {
         $this->notValidAfter = $notValidAfter;
 
@@ -70,9 +70,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     'NotValidBefore' follows this format: 'MM-DD' or 'YYYY-MM-DD'.
 
      *
-     * @return string
+     * @return string|null
      */
-    public function getNotValidBefore(): string
+    public function getNotValidBefore(): ?string
     {
         return $this->notValidBefore;
     }
@@ -82,11 +82,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     'NotValidBefore' follows this format: 'MM-DD' or 'YYYY-MM-DD'.
 
      *
-     * @param string $notValidBefore
+     * @param string|null $notValidBefore
      *
      * @return self
      */
-    public function setNotValidBefore(string $notValidBefore): self
+    public function setNotValidBefore(?string $notValidBefore): self
     {
         $this->notValidBefore = $notValidBefore;
 
@@ -96,9 +96,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to specify the relevant itinerary segments.
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersValidityDatesItemSegment
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersValidityDatesItemSegment|null
      */
-    public function getSegment(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersValidityDatesItemSegment
+    public function getSegment(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersValidityDatesItemSegment
     {
         return $this->segment;
     }
@@ -106,11 +106,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to specify the relevant itinerary segments.
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersValidityDatesItemSegment $segment
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersValidityDatesItemSegment|null $segment
      *
      * @return self
      */
-    public function setSegment(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersValidityDatesItemSegment $segment): self
+    public function setSegment(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersValidityDatesItemSegment $segment): self
     {
         $this->segment = $segment;
 

@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\CreatePassengerNameRecord\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -36,19 +35,19 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareTaxesTaxItem();
-        if (property_exists($data, 'Amount')) {
+        if (property_exists($data, 'Amount') && $data->{'Amount'} !== null) {
             $object->setAmount($data->{'Amount'});
         }
-        if (property_exists($data, 'TaxCode')) {
+        if (property_exists($data, 'TaxCode') && $data->{'TaxCode'} !== null) {
             $object->setTaxCode($data->{'TaxCode'});
         }
-        if (property_exists($data, 'TaxName')) {
+        if (property_exists($data, 'TaxName') && $data->{'TaxName'} !== null) {
             $object->setTaxName($data->{'TaxName'});
         }
-        if (property_exists($data, 'TicketingTaxCode')) {
+        if (property_exists($data, 'TicketingTaxCode') && $data->{'TicketingTaxCode'} !== null) {
             $object->setTicketingTaxCode($data->{'TicketingTaxCode'});
         }
 

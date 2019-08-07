@@ -30,9 +30,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * The segment number.
      *
-     * @return string
+     * @return string|null
      */
-    public function getNumber(): string
+    public function getNumber(): ?string
     {
         return $this->number;
     }
@@ -40,11 +40,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * The segment number.
      *
-     * @param string $number
+     * @param string|null $number
      *
      * @return self
      */
-    public function setNumber(string $number): self
+    public function setNumber(?string $number): self
     {
         $this->number = $number;
 
@@ -54,9 +54,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * The segment end number in range.
      *
-     * @return string
+     * @return string|null
      */
-    public function getEndNumber(): string
+    public function getEndNumber(): ?string
     {
         return $this->endNumber;
     }
@@ -64,11 +64,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * The segment end number in range.
      *
-     * @param string $endNumber
+     * @param string|null $endNumber
      *
      * @return self
      */
-    public function setEndNumber(string $endNumber): self
+    public function setEndNumber(?string $endNumber): self
     {
         $this->endNumber = $endNumber;
 

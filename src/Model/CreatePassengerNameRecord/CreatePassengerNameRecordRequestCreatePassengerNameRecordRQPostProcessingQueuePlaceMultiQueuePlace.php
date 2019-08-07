@@ -1,4 +1,4 @@
-<?php
+extends AbstractModel<?php
 
 declare(strict_types=1);
 
@@ -24,9 +24,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingQ
     /**
      * A single queue details.
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingQueuePlaceMultiQueuePlaceQueueIdentifierItem[]
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingQueuePlaceMultiQueuePlaceQueueIdentifierItem[]|null
      */
-    public function getQueueIdentifier(): array
+    public function getQueueIdentifier(): ?array
     {
         return $this->queueIdentifier;
     }
@@ -34,11 +34,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingQ
     /**
      * A single queue details.
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingQueuePlaceMultiQueuePlaceQueueIdentifierItem[] $queueIdentifier
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingQueuePlaceMultiQueuePlaceQueueIdentifierItem[]|null $queueIdentifier
      *
      * @return self
      */
-    public function setQueueIdentifier(array $queueIdentifier): self
+    public function setQueueIdentifier(?array $queueIdentifier): self
     {
         $this->queueIdentifier = $queueIdentifier;
 

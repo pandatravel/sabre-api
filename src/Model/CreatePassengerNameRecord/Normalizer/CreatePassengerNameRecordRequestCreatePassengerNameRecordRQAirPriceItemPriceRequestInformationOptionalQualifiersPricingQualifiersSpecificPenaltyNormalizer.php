@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\CreatePassengerNameRecord\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -36,19 +35,19 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersSpecificPenalty();
-        if (property_exists($data, 'Changeable')) {
+        if (property_exists($data, 'Changeable') && $data->{'Changeable'} !== null) {
             $object->setChangeable($this->denormalizer->denormalize($data->{'Changeable'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersSpecificPenaltyChangeable', 'json', $context));
         }
-        if (property_exists($data, 'EitherOr')) {
+        if (property_exists($data, 'EitherOr') && $data->{'EitherOr'} !== null) {
             $object->setEitherOr($this->denormalizer->denormalize($data->{'EitherOr'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersSpecificPenaltyEitherOr', 'json', $context));
         }
-        if (property_exists($data, 'Refundable')) {
+        if (property_exists($data, 'Refundable') && $data->{'Refundable'} !== null) {
             $object->setRefundable($this->denormalizer->denormalize($data->{'Refundable'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersSpecificPenaltyRefundable', 'json', $context));
         }
-        if (property_exists($data, 'AdditionalInfo')) {
+        if (property_exists($data, 'AdditionalInfo') && $data->{'AdditionalInfo'} !== null) {
             $object->setAdditionalInfo($data->{'AdditionalInfo'});
         }
 

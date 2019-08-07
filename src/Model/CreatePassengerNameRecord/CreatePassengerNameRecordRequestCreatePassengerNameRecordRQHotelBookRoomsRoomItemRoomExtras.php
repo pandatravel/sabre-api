@@ -24,9 +24,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsR
     /**
      * Details of an individual room extra requested.
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsRoomItemRoomExtrasRoomExtraItem[]
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsRoomItemRoomExtrasRoomExtraItem[]|null
      */
-    public function getRoomExtra(): array
+    public function getRoomExtra(): ?array
     {
         return $this->roomExtra;
     }
@@ -34,11 +34,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsR
     /**
      * Details of an individual room extra requested.
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsRoomItemRoomExtrasRoomExtraItem[] $roomExtra
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookRoomsRoomItemRoomExtrasRoomExtraItem[]|null $roomExtra
      *
      * @return self
      */
-    public function setRoomExtra(array $roomExtra): self
+    public function setRoomExtra(?array $roomExtra): self
     {
         $this->roomExtra = $roomExtra;
 

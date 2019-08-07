@@ -22,7 +22,8 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItinerary
     protected $amount;
     /**
      * 'CurrencyCode' is optional and is used to describe the equivalent fare currency code.
-     * 'CurrencyCode' is currently not used in tax calculations.
+    'CurrencyCode' is currently not used in tax calculations.
+
      *
      * @var string
      */
@@ -31,9 +32,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItinerary
     /**
      * 'Amount' is optional and used to describe the total equivalent fare amount.
      *
-     * @return float
+     * @return float|null
      */
-    public function getAmount(): float
+    public function getAmount(): ?float
     {
         return $this->amount;
     }
@@ -41,11 +42,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItinerary
     /**
      * 'Amount' is optional and used to describe the total equivalent fare amount.
      *
-     * @param float $amount
+     * @param float|null $amount
      *
      * @return self
      */
-    public function setAmount(float $amount): self
+    public function setAmount(?float $amount): self
     {
         $this->amount = $amount;
 
@@ -54,24 +55,26 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItinerary
 
     /**
      * 'CurrencyCode' is optional and is used to describe the equivalent fare currency code.
-     * 'CurrencyCode' is currently not used in tax calculations.
+    'CurrencyCode' is currently not used in tax calculations.
+
      *
-     * @return string
+     * @return string|null
      */
-    public function getCurrencyCode(): string
+    public function getCurrencyCode(): ?string
     {
         return $this->currencyCode;
     }
 
     /**
      * 'CurrencyCode' is optional and is used to describe the equivalent fare currency code.
-     * 'CurrencyCode' is currently not used in tax calculations.
+    'CurrencyCode' is currently not used in tax calculations.
+
      *
-     * @param string $currencyCode
+     * @param string|null $currencyCode
      *
      * @return self
      */
-    public function setCurrencyCode(string $currencyCode): self
+    public function setCurrencyCode(?string $currencyCode): self
     {
         $this->currencyCode = $currencyCode;
 

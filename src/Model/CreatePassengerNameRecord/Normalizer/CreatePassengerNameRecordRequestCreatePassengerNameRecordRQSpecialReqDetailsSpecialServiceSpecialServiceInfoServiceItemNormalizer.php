@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\CreatePassengerNameRecord\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -36,22 +35,22 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoServiceItem();
-        if (property_exists($data, 'PersonName')) {
+        if (property_exists($data, 'PersonName') && $data->{'PersonName'} !== null) {
             $object->setPersonName($this->denormalizer->denormalize($data->{'PersonName'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoServiceItemPersonName', 'json', $context));
         }
-        if (property_exists($data, 'Text')) {
+        if (property_exists($data, 'Text') && $data->{'Text'} !== null) {
             $object->setText($data->{'Text'});
         }
-        if (property_exists($data, 'VendorPrefs')) {
+        if (property_exists($data, 'VendorPrefs') && $data->{'VendorPrefs'} !== null) {
             $object->setVendorPrefs($this->denormalizer->denormalize($data->{'VendorPrefs'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialServiceSpecialServiceInfoServiceItemVendorPrefs', 'json', $context));
         }
-        if (property_exists($data, 'SegmentNumber')) {
+        if (property_exists($data, 'SegmentNumber') && $data->{'SegmentNumber'} !== null) {
             $object->setSegmentNumber($data->{'SegmentNumber'});
         }
-        if (property_exists($data, 'SSR_Code')) {
+        if (property_exists($data, 'SSR_Code') && $data->{'SSR_Code'} !== null) {
             $object->setSSRCode($data->{'SSR_Code'});
         }
 

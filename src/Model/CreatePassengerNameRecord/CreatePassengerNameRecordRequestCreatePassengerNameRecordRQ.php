@@ -46,15 +46,17 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQ extends Abstra
     protected $airTax;
     /**
      * Used to book GDS or Aggregator chain hotels.
-     * Please note that for the successful PNR creation TravelItineraryAddInfo.AgencyInfo.Address and TravelItineraryAddInfo.CustomerInfo.PersonName need to be provided.
+    Please note that for the successful PNR creation TravelItineraryAddInfo.AgencyInfo.Address and TravelItineraryAddInfo.CustomerInfo.PersonName need to be provided.
+
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBook
      */
     protected $hotelBook;
     /**
      * The miscellaneous segment details.
-     * This section of the API is used to book miscellaneous segments such as:
-     * Miscellaneous Charge Orders (MCO), Insurance Segments (INS) or Other product segments (OTH).
+    This section of the API is used to book miscellaneous segments such as:
+    Miscellaneous Charge Orders (MCO), Insurance Segments (INS) or Other product segments (OTH).
+
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQMiscSegment
      */
@@ -79,7 +81,8 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQ extends Abstra
     protected $sPInternal;
     /**
      * Used to specify whether or not the API should change context to a desired pseudo city code.
-     * If 'targetCity' is empty or equals current city the API does not change the context.
+    If 'targetCity' is empty or equals current city the API does not change the context.
+
      *
      * @var string
      */
@@ -106,9 +109,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQ extends Abstra
     /**
      * Used to add profile information.
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQProfile
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQProfile|null
      */
-    public function getProfile(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQProfile
+    public function getProfile(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQProfile
     {
         return $this->profile;
     }
@@ -116,11 +119,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQ extends Abstra
     /**
      * Used to add profile information.
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQProfile $profile
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQProfile|null $profile
      *
      * @return self
      */
-    public function setProfile(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQProfile $profile): self
+    public function setProfile(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQProfile $profile): self
     {
         $this->profile = $profile;
 
@@ -130,9 +133,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQ extends Abstra
     /**
      * Used to add the passenger/agency information.
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfo
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfo|null
      */
-    public function getTravelItineraryAddInfo(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfo
+    public function getTravelItineraryAddInfo(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfo
     {
         return $this->travelItineraryAddInfo;
     }
@@ -140,11 +143,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQ extends Abstra
     /**
      * Used to add the passenger/agency information.
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfo $travelItineraryAddInfo
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfo|null $travelItineraryAddInfo
      *
      * @return self
      */
-    public function setTravelItineraryAddInfo(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfo $travelItineraryAddInfo): self
+    public function setTravelItineraryAddInfo(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfo $travelItineraryAddInfo): self
     {
         $this->travelItineraryAddInfo = $travelItineraryAddInfo;
 
@@ -154,9 +157,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQ extends Abstra
     /**
      * Used to add air segments.
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBook
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBook|null
      */
-    public function getAirBook(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBook
+    public function getAirBook(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBook
     {
         return $this->airBook;
     }
@@ -164,11 +167,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQ extends Abstra
     /**
      * Used to add air segments.
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBook $airBook
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBook|null $airBook
      *
      * @return self
      */
-    public function setAirBook(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBook $airBook): self
+    public function setAirBook(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBook $airBook): self
     {
         $this->airBook = $airBook;
 
@@ -178,9 +181,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQ extends Abstra
     /**
      * Used to price the air segments.
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItem[]
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItem[]|null
      */
-    public function getAirPrice(): array
+    public function getAirPrice(): ?array
     {
         return $this->airPrice;
     }
@@ -188,11 +191,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQ extends Abstra
     /**
      * Used to price the air segments.
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItem[] $airPrice
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItem[]|null $airPrice
      *
      * @return self
      */
-    public function setAirPrice(array $airPrice): self
+    public function setAirPrice(?array $airPrice): self
     {
         $this->airPrice = $airPrice;
 
@@ -202,9 +205,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQ extends Abstra
     /**
      * Used to request air tax information.
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTax
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTax|null
      */
-    public function getAirTax(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTax
+    public function getAirTax(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTax
     {
         return $this->airTax;
     }
@@ -212,11 +215,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQ extends Abstra
     /**
      * Used to request air tax information.
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTax $airTax
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTax|null $airTax
      *
      * @return self
      */
-    public function setAirTax(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTax $airTax): self
+    public function setAirTax(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTax $airTax): self
     {
         $this->airTax = $airTax;
 
@@ -225,24 +228,26 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQ extends Abstra
 
     /**
      * Used to book GDS or Aggregator chain hotels.
-     * Please note that for the successful PNR creation TravelItineraryAddInfo.AgencyInfo.Address and TravelItineraryAddInfo.CustomerInfo.PersonName need to be provided.
+    Please note that for the successful PNR creation TravelItineraryAddInfo.AgencyInfo.Address and TravelItineraryAddInfo.CustomerInfo.PersonName need to be provided.
+
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBook
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBook|null
      */
-    public function getHotelBook(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBook
+    public function getHotelBook(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBook
     {
         return $this->hotelBook;
     }
 
     /**
      * Used to book GDS or Aggregator chain hotels.
-     * Please note that for the successful PNR creation TravelItineraryAddInfo.AgencyInfo.Address and TravelItineraryAddInfo.CustomerInfo.PersonName need to be provided.
+    Please note that for the successful PNR creation TravelItineraryAddInfo.AgencyInfo.Address and TravelItineraryAddInfo.CustomerInfo.PersonName need to be provided.
+
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBook $hotelBook
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBook|null $hotelBook
      *
      * @return self
      */
-    public function setHotelBook(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBook $hotelBook): self
+    public function setHotelBook(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBook $hotelBook): self
     {
         $this->hotelBook = $hotelBook;
 
@@ -251,26 +256,28 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQ extends Abstra
 
     /**
      * The miscellaneous segment details.
-     * This section of the API is used to book miscellaneous segments such as:
-     * Miscellaneous Charge Orders (MCO), Insurance Segments (INS) or Other product segments (OTH).
+    This section of the API is used to book miscellaneous segments such as:
+    Miscellaneous Charge Orders (MCO), Insurance Segments (INS) or Other product segments (OTH).
+
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQMiscSegment
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQMiscSegment|null
      */
-    public function getMiscSegment(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQMiscSegment
+    public function getMiscSegment(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQMiscSegment
     {
         return $this->miscSegment;
     }
 
     /**
      * The miscellaneous segment details.
-     * This section of the API is used to book miscellaneous segments such as:
-     * Miscellaneous Charge Orders (MCO), Insurance Segments (INS) or Other product segments (OTH).
+    This section of the API is used to book miscellaneous segments such as:
+    Miscellaneous Charge Orders (MCO), Insurance Segments (INS) or Other product segments (OTH).
+
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQMiscSegment $miscSegment
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQMiscSegment|null $miscSegment
      *
      * @return self
      */
-    public function setMiscSegment(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQMiscSegment $miscSegment): self
+    public function setMiscSegment(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQMiscSegment $miscSegment): self
     {
         $this->miscSegment = $miscSegment;
 
@@ -280,9 +287,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQ extends Abstra
     /**
      * Used to add additional special requests such as seats, remarks, SSRs.
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetails
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetails|null
      */
-    public function getSpecialReqDetails(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetails
+    public function getSpecialReqDetails(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetails
     {
         return $this->specialReqDetails;
     }
@@ -290,11 +297,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQ extends Abstra
     /**
      * Used to add additional special requests such as seats, remarks, SSRs.
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetails $specialReqDetails
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetails|null $specialReqDetails
      *
      * @return self
      */
-    public function setSpecialReqDetails(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetails $specialReqDetails): self
+    public function setSpecialReqDetails(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetails $specialReqDetails): self
     {
         $this->specialReqDetails = $specialReqDetails;
 
@@ -304,9 +311,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQ extends Abstra
     /**
      * Additional variables used to finalize the PNR creation.
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessing
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessing|null
      */
-    public function getPostProcessing(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessing
+    public function getPostProcessing(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessing
     {
         return $this->postProcessing;
     }
@@ -314,11 +321,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQ extends Abstra
     /**
      * Additional variables used to finalize the PNR creation.
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessing $postProcessing
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessing|null $postProcessing
      *
      * @return self
      */
-    public function setPostProcessing(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessing $postProcessing): self
+    public function setPostProcessing(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessing $postProcessing): self
     {
         $this->postProcessing = $postProcessing;
 
@@ -328,9 +335,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQ extends Abstra
     /**
      * Used for internal processing.
      *
-     * @return string
+     * @return string|null
      */
-    public function getSPInternal(): string
+    public function getSPInternal(): ?string
     {
         return $this->sPInternal;
     }
@@ -338,11 +345,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQ extends Abstra
     /**
      * Used for internal processing.
      *
-     * @param string $sPInternal
+     * @param string|null $sPInternal
      *
      * @return self
      */
-    public function setSPInternal(string $sPInternal): self
+    public function setSPInternal(?string $sPInternal): self
     {
         $this->sPInternal = $sPInternal;
 
@@ -351,24 +358,26 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQ extends Abstra
 
     /**
      * Used to specify whether or not the API should change context to a desired pseudo city code.
-     * If 'targetCity' is empty or equals current city the API does not change the context.
+    If 'targetCity' is empty or equals current city the API does not change the context.
+
      *
-     * @return string
+     * @return string|null
      */
-    public function getTargetCity(): string
+    public function getTargetCity(): ?string
     {
         return $this->targetCity;
     }
 
     /**
      * Used to specify whether or not the API should change context to a desired pseudo city code.
-     * If 'targetCity' is empty or equals current city the API does not change the context.
+    If 'targetCity' is empty or equals current city the API does not change the context.
+
      *
-     * @param string $targetCity
+     * @param string|null $targetCity
      *
      * @return self
      */
-    public function setTargetCity(string $targetCity): self
+    public function setTargetCity(?string $targetCity): self
     {
         $this->targetCity = $targetCity;
 
@@ -378,9 +387,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQ extends Abstra
     /**
      * Used to specify whether the service should stop processing upon encountering an error during air booking and pricing.
      *
-     * @return bool
+     * @return bool|null
      */
-    public function getHaltOnAirPriceError(): bool
+    public function getHaltOnAirPriceError(): ?bool
     {
         return $this->haltOnAirPriceError;
     }
@@ -388,11 +397,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQ extends Abstra
     /**
      * Used to specify whether the service should stop processing upon encountering an error during air booking and pricing.
      *
-     * @param bool $haltOnAirPriceError
+     * @param bool|null $haltOnAirPriceError
      *
      * @return self
      */
-    public function setHaltOnAirPriceError(bool $haltOnAirPriceError): self
+    public function setHaltOnAirPriceError(?bool $haltOnAirPriceError): self
     {
         $this->haltOnAirPriceError = $haltOnAirPriceError;
 
@@ -402,9 +411,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQ extends Abstra
     /**
      * Used to specify whether the service should stop processing upon encountering an error during hotel booking.
      *
-     * @return bool
+     * @return bool|null
      */
-    public function getHaltOnHotelBookError(): bool
+    public function getHaltOnHotelBookError(): ?bool
     {
         return $this->haltOnHotelBookError;
     }
@@ -412,11 +421,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQ extends Abstra
     /**
      * Used to specify whether the service should stop processing upon encountering an error during hotel booking.
      *
-     * @param bool $haltOnHotelBookError
+     * @param bool|null $haltOnHotelBookError
      *
      * @return self
      */
-    public function setHaltOnHotelBookError(bool $haltOnHotelBookError): self
+    public function setHaltOnHotelBookError(?bool $haltOnHotelBookError): self
     {
         $this->haltOnHotelBookError = $haltOnHotelBookError;
 
@@ -426,9 +435,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQ extends Abstra
     /**
      * The API version.
      *
-     * @return string
+     * @return string|null
      */
-    public function getVersion(): string
+    public function getVersion(): ?string
     {
         return $this->version;
     }
@@ -436,11 +445,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQ extends Abstra
     /**
      * The API version.
      *
-     * @param string $version
+     * @param string|null $version
      *
      * @return self
      */
-    public function setVersion(string $version): self
+    public function setVersion(?string $version): self
     {
         $this->version = $version;
 

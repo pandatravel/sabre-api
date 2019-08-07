@@ -24,9 +24,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The endorsement text information.
      *
-     * @return string[]
+     * @return string[]|null
      */
-    public function getText(): array
+    public function getText(): ?array
     {
         return $this->text;
     }
@@ -34,11 +34,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The endorsement text information.
      *
-     * @param string[] $text
+     * @param string[]|null $text
      *
      * @return self
      */
-    public function setText(array $text): self
+    public function setText(?array $text): self
     {
         $this->text = $text;
 

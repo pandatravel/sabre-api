@@ -30,9 +30,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingQ
     /**
      * Used to request to place the newly created PNR on multiple queues.
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingQueuePlaceMultiQueuePlace
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingQueuePlaceMultiQueuePlace|null
      */
-    public function getMultiQueuePlace(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingQueuePlaceMultiQueuePlace
+    public function getMultiQueuePlace(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingQueuePlaceMultiQueuePlace
     {
         return $this->multiQueuePlace;
     }
@@ -40,11 +40,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingQ
     /**
      * Used to request to place the newly created PNR on multiple queues.
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingQueuePlaceMultiQueuePlace $multiQueuePlace
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingQueuePlaceMultiQueuePlace|null $multiQueuePlace
      *
      * @return self
      */
-    public function setMultiQueuePlace(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingQueuePlaceMultiQueuePlace $multiQueuePlace): self
+    public function setMultiQueuePlace(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingQueuePlaceMultiQueuePlace $multiQueuePlace): self
     {
         $this->multiQueuePlace = $multiQueuePlace;
 
@@ -54,9 +54,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingQ
     /**
      * Used to request to place the newly created PNR on a queue.
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingQueuePlaceQueueInfo
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingQueuePlaceQueueInfo|null
      */
-    public function getQueueInfo(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingQueuePlaceQueueInfo
+    public function getQueueInfo(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingQueuePlaceQueueInfo
     {
         return $this->queueInfo;
     }
@@ -64,11 +64,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingQ
     /**
      * Used to request to place the newly created PNR on a queue.
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingQueuePlaceQueueInfo $queueInfo
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingQueuePlaceQueueInfo|null $queueInfo
      *
      * @return self
      */
-    public function setQueueInfo(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingQueuePlaceQueueInfo $queueInfo): self
+    public function setQueueInfo(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingQueuePlaceQueueInfo $queueInfo): self
     {
         $this->queueInfo = $queueInfo;
 

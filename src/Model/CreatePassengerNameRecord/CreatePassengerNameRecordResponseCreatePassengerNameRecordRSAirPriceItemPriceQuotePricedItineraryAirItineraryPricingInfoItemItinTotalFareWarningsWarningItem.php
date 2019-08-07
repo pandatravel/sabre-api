@@ -24,9 +24,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The short text information.
      *
-     * @return string
+     * @return string|null
      */
-    public function getShortText(): string
+    public function getShortText(): ?string
     {
         return $this->shortText;
     }
@@ -34,11 +34,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The short text information.
      *
-     * @param string $shortText
+     * @param string|null $shortText
      *
      * @return self
      */
-    public function setShortText(string $shortText): self
+    public function setShortText(?string $shortText): self
     {
         $this->shortText = $shortText;
 

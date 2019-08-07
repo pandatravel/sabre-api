@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\CreatePassengerNameRecord\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -36,19 +35,19 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersNetRemit();
-        if (property_exists($data, 'CAR')) {
+        if (property_exists($data, 'CAR') && $data->{'CAR'} !== null) {
             $object->setCAR($this->denormalizer->denormalize($data->{'CAR'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersNetRemitCAR', 'json', $context));
         }
-        if (property_exists($data, 'Cash')) {
+        if (property_exists($data, 'Cash') && $data->{'Cash'} !== null) {
             $object->setCash($this->denormalizer->denormalize($data->{'Cash'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersNetRemitCash', 'json', $context));
         }
-        if (property_exists($data, 'Credit')) {
+        if (property_exists($data, 'Credit') && $data->{'Credit'} !== null) {
             $object->setCredit($this->denormalizer->denormalize($data->{'Credit'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersPricingQualifiersNetRemitCredit', 'json', $context));
         }
-        if (property_exists($data, 'Code')) {
+        if (property_exists($data, 'Code') && $data->{'Code'} !== null) {
             $object->setCode($data->{'Code'});
         }
 

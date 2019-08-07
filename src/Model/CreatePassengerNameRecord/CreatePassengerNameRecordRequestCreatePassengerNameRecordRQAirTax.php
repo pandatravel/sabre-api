@@ -30,9 +30,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTax extends 
     /**
      * The itinerary information.
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfos
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfos|null
      */
-    public function getItineraryInfos(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfos
+    public function getItineraryInfos(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfos
     {
         return $this->itineraryInfos;
     }
@@ -40,11 +40,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTax extends 
     /**
      * The itinerary information.
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfos $itineraryInfos
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfos|null $itineraryInfos
      *
      * @return self
      */
-    public function setItineraryInfos(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfos $itineraryInfos): self
+    public function setItineraryInfos(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfos $itineraryInfos): self
     {
         $this->itineraryInfos = $itineraryInfos;
 
@@ -54,9 +54,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTax extends 
     /**
      * The point of Sale details.
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOS
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOS|null
      */
-    public function getPOS(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOS
+    public function getPOS(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOS
     {
         return $this->pOS;
     }
@@ -64,11 +64,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTax extends 
     /**
      * The point of Sale details.
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOS $pOS
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOS|null $pOS
      *
      * @return self
      */
-    public function setPOS(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOS $pOS): self
+    public function setPOS(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxPOS $pOS): self
     {
         $this->pOS = $pOS;
 

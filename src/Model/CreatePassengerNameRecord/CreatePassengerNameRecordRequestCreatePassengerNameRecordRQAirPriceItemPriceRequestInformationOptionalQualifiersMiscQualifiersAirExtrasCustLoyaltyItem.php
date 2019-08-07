@@ -30,9 +30,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * The Program ID.
      *
-     * @return string
+     * @return string|null
      */
-    public function getProgramID(): string
+    public function getProgramID(): ?string
     {
         return $this->programID;
     }
@@ -40,11 +40,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * The Program ID.
      *
-     * @param string $programID
+     * @param string|null $programID
      *
      * @return self
      */
-    public function setProgramID(string $programID): self
+    public function setProgramID(?string $programID): self
     {
         $this->programID = $programID;
 
@@ -54,9 +54,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * The frequent flyer tier level.
      *
-     * @return string
+     * @return string|null
      */
-    public function getTierLevel(): string
+    public function getTierLevel(): ?string
     {
         return $this->tierLevel;
     }
@@ -64,11 +64,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * The frequent flyer tier level.
      *
-     * @param string $tierLevel
+     * @param string|null $tierLevel
      *
      * @return self
      */
-    public function setTierLevel(string $tierLevel): self
+    public function setTierLevel(?string $tierLevel): self
     {
         $this->tierLevel = $tierLevel;
 

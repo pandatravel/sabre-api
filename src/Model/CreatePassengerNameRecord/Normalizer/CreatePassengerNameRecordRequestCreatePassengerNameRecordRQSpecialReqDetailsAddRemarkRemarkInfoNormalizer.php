@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\CreatePassengerNameRecord\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -36,16 +35,16 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAddRemarkRemarkInfo();
-        if (property_exists($data, 'FOP_Remark')) {
+        if (property_exists($data, 'FOP_Remark') && $data->{'FOP_Remark'} !== null) {
             $object->setFOPRemark($this->denormalizer->denormalize($data->{'FOP_Remark'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAddRemarkRemarkInfoFOPRemark', 'json', $context));
         }
-        if (property_exists($data, 'FutureQueuePlaceRemark')) {
+        if (property_exists($data, 'FutureQueuePlaceRemark') && $data->{'FutureQueuePlaceRemark'} !== null) {
             $object->setFutureQueuePlaceRemark($this->denormalizer->denormalize($data->{'FutureQueuePlaceRemark'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAddRemarkRemarkInfoFutureQueuePlaceRemark', 'json', $context));
         }
-        if (property_exists($data, 'Remark')) {
+        if (property_exists($data, 'Remark') && $data->{'Remark'} !== null) {
             $values = [];
             foreach ($data->{'Remark'} as $value) {
                 $values[] = $this->denormalizer->denormalize($value, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAddRemarkRemarkInfoRemarkItem', 'json', $context);

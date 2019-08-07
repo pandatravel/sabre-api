@@ -30,9 +30,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * The tax amount.
      *
-     * @return string
+     * @return string|null
      */
-    public function getAmount(): string
+    public function getAmount(): ?string
     {
         return $this->amount;
     }
@@ -40,11 +40,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * The tax amount.
      *
-     * @param string $amount
+     * @param string|null $amount
      *
      * @return self
      */
-    public function setAmount(string $amount): self
+    public function setAmount(?string $amount): self
     {
         $this->amount = $amount;
 
@@ -54,9 +54,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * 'TaxCode' is used to specify the tax code, refer to OpenTravel Code List Fee Tax Type(FTT).
      *
-     * @return string
+     * @return string|null
      */
-    public function getTaxCode(): string
+    public function getTaxCode(): ?string
     {
         return $this->taxCode;
     }
@@ -64,11 +64,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * 'TaxCode' is used to specify the tax code, refer to OpenTravel Code List Fee Tax Type(FTT).
      *
-     * @param string $taxCode
+     * @param string|null $taxCode
      *
      * @return self
      */
-    public function setTaxCode(string $taxCode): self
+    public function setTaxCode(?string $taxCode): self
     {
         $this->taxCode = $taxCode;
 

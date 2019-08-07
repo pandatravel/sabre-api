@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\CreatePassengerNameRecord\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -36,19 +35,19 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymen
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPaymentPaymentCardFullCardHolderName();
-        if (property_exists($data, 'Title')) {
+        if (property_exists($data, 'Title') && $data->{'Title'} !== null) {
             $object->setTitle($data->{'Title'});
         }
-        if (property_exists($data, 'FirstName')) {
+        if (property_exists($data, 'FirstName') && $data->{'FirstName'} !== null) {
             $object->setFirstName($data->{'FirstName'});
         }
-        if (property_exists($data, 'LastName')) {
+        if (property_exists($data, 'LastName') && $data->{'LastName'} !== null) {
             $object->setLastName($data->{'LastName'});
         }
-        if (property_exists($data, 'Email')) {
+        if (property_exists($data, 'Email') && $data->{'Email'} !== null) {
             $object->setEmail($data->{'Email'});
         }
 

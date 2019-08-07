@@ -22,21 +22,24 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingE
     protected $eTicket;
     /**
      * 'Invoice' is used to send an email notification containing a text-based copy of the invoice.
-     * 'Invoice' cannot be combined with 'eTicket', or 'Itinerary'.
+    'Invoice' cannot be combined with 'eTicket', or 'Itinerary'.
+
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmailInvoice
      */
     protected $invoice;
     /**
      * 'Itinerary' is used to send an email notification containing a text-based copy of the itinerary.
-     * The itinerary cannot be combined with 'eTicket', or .'Invoice'.
+    The itinerary cannot be combined with 'eTicket', or .'Invoice'.
+
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmailItinerary
      */
     protected $itinerary;
     /**
      * 'NameNumber' is used to specify a particular passenger name number to send the email notification to.
-     * Please note that the email address in the PNR's email field must be the name associated with the specified name number.
+    Please note that the email address in the PNR's email field must be the name associated with the specified name number.
+
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmailPersonName
      */
@@ -51,9 +54,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingE
     /**
      * 'eTicket' related e-mail request information.
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmailETicket
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmailETicket|null
      */
-    public function getETicket(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmailETicket
+    public function getETicket(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmailETicket
     {
         return $this->eTicket;
     }
@@ -61,11 +64,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingE
     /**
      * 'eTicket' related e-mail request information.
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmailETicket $eTicket
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmailETicket|null $eTicket
      *
      * @return self
      */
-    public function setETicket(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmailETicket $eTicket): self
+    public function setETicket(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmailETicket $eTicket): self
     {
         $this->eTicket = $eTicket;
 
@@ -74,24 +77,26 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingE
 
     /**
      * 'Invoice' is used to send an email notification containing a text-based copy of the invoice.
-     * 'Invoice' cannot be combined with 'eTicket', or 'Itinerary'.
+    'Invoice' cannot be combined with 'eTicket', or 'Itinerary'.
+
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmailInvoice
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmailInvoice|null
      */
-    public function getInvoice(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmailInvoice
+    public function getInvoice(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmailInvoice
     {
         return $this->invoice;
     }
 
     /**
      * 'Invoice' is used to send an email notification containing a text-based copy of the invoice.
-     * 'Invoice' cannot be combined with 'eTicket', or 'Itinerary'.
+    'Invoice' cannot be combined with 'eTicket', or 'Itinerary'.
+
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmailInvoice $invoice
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmailInvoice|null $invoice
      *
      * @return self
      */
-    public function setInvoice(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmailInvoice $invoice): self
+    public function setInvoice(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmailInvoice $invoice): self
     {
         $this->invoice = $invoice;
 
@@ -100,24 +105,26 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingE
 
     /**
      * 'Itinerary' is used to send an email notification containing a text-based copy of the itinerary.
-     * The itinerary cannot be combined with 'eTicket', or .'Invoice'.
+    The itinerary cannot be combined with 'eTicket', or .'Invoice'.
+
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmailItinerary
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmailItinerary|null
      */
-    public function getItinerary(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmailItinerary
+    public function getItinerary(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmailItinerary
     {
         return $this->itinerary;
     }
 
     /**
      * 'Itinerary' is used to send an email notification containing a text-based copy of the itinerary.
-     * The itinerary cannot be combined with 'eTicket', or .'Invoice'.
+    The itinerary cannot be combined with 'eTicket', or .'Invoice'.
+
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmailItinerary $itinerary
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmailItinerary|null $itinerary
      *
      * @return self
      */
-    public function setItinerary(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmailItinerary $itinerary): self
+    public function setItinerary(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmailItinerary $itinerary): self
     {
         $this->itinerary = $itinerary;
 
@@ -126,24 +133,26 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingE
 
     /**
      * 'NameNumber' is used to specify a particular passenger name number to send the email notification to.
-     * Please note that the email address in the PNR's email field must be the name associated with the specified name number.
+    Please note that the email address in the PNR's email field must be the name associated with the specified name number.
+
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmailPersonName
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmailPersonName|null
      */
-    public function getPersonName(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmailPersonName
+    public function getPersonName(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmailPersonName
     {
         return $this->personName;
     }
 
     /**
      * 'NameNumber' is used to specify a particular passenger name number to send the email notification to.
-     * Please note that the email address in the PNR's email field must be the name associated with the specified name number.
+    Please note that the email address in the PNR's email field must be the name associated with the specified name number.
+
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmailPersonName $personName
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmailPersonName|null $personName
      *
      * @return self
      */
-    public function setPersonName(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmailPersonName $personName): self
+    public function setPersonName(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingEndTransactionEmailPersonName $personName): self
     {
         $this->personName = $personName;
 
@@ -153,9 +162,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingE
     /**
      * Used to send an email notification upon end transaction to any email addresses contained within the particular record.
      *
-     * @return bool
+     * @return bool|null
      */
-    public function getInd(): bool
+    public function getInd(): ?bool
     {
         return $this->ind;
     }
@@ -163,11 +172,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingE
     /**
      * Used to send an email notification upon end transaction to any email addresses contained within the particular record.
      *
-     * @param bool $ind
+     * @param bool|null $ind
      *
      * @return self
      */
-    public function setInd(bool $ind): self
+    public function setInd(?bool $ind): self
     {
         $this->ind = $ind;
 

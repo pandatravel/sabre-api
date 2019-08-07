@@ -28,8 +28,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     protected $manualApprovalCode;
     /**
      * Used to specify the payment type. Acceptable values are 'CA' (cash), 'CK' (check), 'CQ' (cheque), 'PT', 'PTACA' (PTA cash), 'PTAGTCK' (PTA agency check) or 'PTCK' (PTA check).
-     * If utilizing a credit card please omit 'Type', and populate the 'CC_Info' object, unless needing to specify a PTA credit card form of payment.
-     * For a PTA credit card form of payment the client should pass Type='PT' and populate the 'CC_Info' object with the relevant credit card information.
+    If utilizing a credit card please omit 'Type', and populate the 'CC_Info' object, unless needing to specify a PTA credit card form of payment.
+    For a PTA credit card form of payment the client should pass Type='PT' and populate the 'CC_Info' object with the relevant credit card information.
+
      *
      * @var string
      */
@@ -38,9 +39,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to pass the credit card information.
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingBasicFOPCCInfo
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingBasicFOPCCInfo|null
      */
-    public function getCCInfo(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingBasicFOPCCInfo
+    public function getCCInfo(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingBasicFOPCCInfo
     {
         return $this->cCInfo;
     }
@@ -48,11 +49,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to pass the credit card information.
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingBasicFOPCCInfo $cCInfo
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingBasicFOPCCInfo|null $cCInfo
      *
      * @return self
      */
-    public function setCCInfo(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingBasicFOPCCInfo $cCInfo): self
+    public function setCCInfo(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersSabreSonicTicketingBasicFOPCCInfo $cCInfo): self
     {
         $this->cCInfo = $cCInfo;
 
@@ -62,9 +63,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * 'ManualApprovalCode' is used to pass a manual credit card approval code if it applies to the credit card.
      *
-     * @return string
+     * @return string|null
      */
-    public function getManualApprovalCode(): string
+    public function getManualApprovalCode(): ?string
     {
         return $this->manualApprovalCode;
     }
@@ -72,11 +73,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * 'ManualApprovalCode' is used to pass a manual credit card approval code if it applies to the credit card.
      *
-     * @param string $manualApprovalCode
+     * @param string|null $manualApprovalCode
      *
      * @return self
      */
-    public function setManualApprovalCode(string $manualApprovalCode): self
+    public function setManualApprovalCode(?string $manualApprovalCode): self
     {
         $this->manualApprovalCode = $manualApprovalCode;
 
@@ -85,26 +86,28 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
 
     /**
      * Used to specify the payment type. Acceptable values are 'CA' (cash), 'CK' (check), 'CQ' (cheque), 'PT', 'PTACA' (PTA cash), 'PTAGTCK' (PTA agency check) or 'PTCK' (PTA check).
-     * If utilizing a credit card please omit 'Type', and populate the 'CC_Info' object, unless needing to specify a PTA credit card form of payment.
-     * For a PTA credit card form of payment the client should pass Type='PT' and populate the 'CC_Info' object with the relevant credit card information.
+    If utilizing a credit card please omit 'Type', and populate the 'CC_Info' object, unless needing to specify a PTA credit card form of payment.
+    For a PTA credit card form of payment the client should pass Type='PT' and populate the 'CC_Info' object with the relevant credit card information.
+
      *
-     * @return string
+     * @return string|null
      */
-    public function getType(): string
+    public function getType(): ?string
     {
         return $this->type;
     }
 
     /**
      * Used to specify the payment type. Acceptable values are 'CA' (cash), 'CK' (check), 'CQ' (cheque), 'PT', 'PTACA' (PTA cash), 'PTAGTCK' (PTA agency check) or 'PTCK' (PTA check).
-     * If utilizing a credit card please omit 'Type', and populate the 'CC_Info' object, unless needing to specify a PTA credit card form of payment.
-     * For a PTA credit card form of payment the client should pass Type='PT' and populate the 'CC_Info' object with the relevant credit card information.
+    If utilizing a credit card please omit 'Type', and populate the 'CC_Info' object, unless needing to specify a PTA credit card form of payment.
+    For a PTA credit card form of payment the client should pass Type='PT' and populate the 'CC_Info' object with the relevant credit card information.
+
      *
-     * @param string $type
+     * @param string|null $type
      *
      * @return self
      */
-    public function setType(string $type): self
+    public function setType(?string $type): self
     {
         $this->type = $type;
 

@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\CreatePassengerNameRecord\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -36,74 +35,74 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItem();
-        if (property_exists($data, 'Associations')) {
+        if (property_exists($data, 'Associations') && $data->{'Associations'} !== null) {
             $object->setAssociations($this->denormalizer->denormalize($data->{'Associations'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemAssociations', 'json', $context));
         }
-        if (property_exists($data, 'CarrierWhoseBaggageProvisionsApply')) {
+        if (property_exists($data, 'CarrierWhoseBaggageProvisionsApply') && $data->{'CarrierWhoseBaggageProvisionsApply'} !== null) {
             $object->setCarrierWhoseBaggageProvisionsApply($data->{'CarrierWhoseBaggageProvisionsApply'});
         }
-        if (property_exists($data, 'Commissionable')) {
+        if (property_exists($data, 'Commissionable') && $data->{'Commissionable'} !== null) {
             $object->setCommissionable($data->{'Commissionable'});
         }
-        if (property_exists($data, 'FeeApplicationIndicator')) {
+        if (property_exists($data, 'FeeApplicationIndicator') && $data->{'FeeApplicationIndicator'} !== null) {
             $object->setFeeApplicationIndicator($data->{'FeeApplicationIndicator'});
         }
-        if (property_exists($data, 'FeeNotGuaranteedIndicator')) {
+        if (property_exists($data, 'FeeNotGuaranteedIndicator') && $data->{'FeeNotGuaranteedIndicator'} !== null) {
             $object->setFeeNotGuaranteedIndicator($data->{'FeeNotGuaranteedIndicator'});
         }
-        if (property_exists($data, 'FirstOccurrence')) {
+        if (property_exists($data, 'FirstOccurrence') && $data->{'FirstOccurrence'} !== null) {
             $object->setFirstOccurrence($data->{'FirstOccurrence'});
         }
-        if (property_exists($data, 'FQTV_CarrierFiledTierLevel')) {
+        if (property_exists($data, 'FQTV_CarrierFiledTierLevel') && $data->{'FQTV_CarrierFiledTierLevel'} !== null) {
             $object->setFQTVCarrierFiledTierLevel($data->{'FQTV_CarrierFiledTierLevel'});
         }
-        if (property_exists($data, 'Interlineable')) {
+        if (property_exists($data, 'Interlineable') && $data->{'Interlineable'} !== null) {
             $object->setInterlineable($data->{'Interlineable'});
         }
-        if (property_exists($data, 'LastOccurrence')) {
+        if (property_exists($data, 'LastOccurrence') && $data->{'LastOccurrence'} !== null) {
             $object->setLastOccurrence($data->{'LastOccurrence'});
         }
-        if (property_exists($data, 'NoChargeNotAvailableIndicator')) {
+        if (property_exists($data, 'NoChargeNotAvailableIndicator') && $data->{'NoChargeNotAvailableIndicator'} !== null) {
             $object->setNoChargeNotAvailableIndicator($data->{'NoChargeNotAvailableIndicator'});
         }
-        if (property_exists($data, 'NumPiecesBDI')) {
+        if (property_exists($data, 'NumPiecesBDI') && $data->{'NumPiecesBDI'} !== null) {
             $object->setNumPiecesBDI($data->{'NumPiecesBDI'});
         }
-        if (property_exists($data, 'NumPiecesITR')) {
+        if (property_exists($data, 'NumPiecesITR') && $data->{'NumPiecesITR'} !== null) {
             $values = [];
             foreach ($data->{'NumPiecesITR'} as $value) {
                 $values[] = $value;
             }
             $object->setNumPiecesITR($values);
         }
-        if (property_exists($data, 'PassengerType')) {
+        if (property_exists($data, 'PassengerType') && $data->{'PassengerType'} !== null) {
             $object->setPassengerType($this->denormalizer->denormalize($data->{'PassengerType'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemPassengerType', 'json', $context));
         }
-        if (property_exists($data, 'PriceInformation')) {
+        if (property_exists($data, 'PriceInformation') && $data->{'PriceInformation'} !== null) {
             $object->setPriceInformation($this->denormalizer->denormalize($data->{'PriceInformation'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemPriceInformation', 'json', $context));
         }
-        if (property_exists($data, 'ProvisionType')) {
+        if (property_exists($data, 'ProvisionType') && $data->{'ProvisionType'} !== null) {
             $object->setProvisionType($data->{'ProvisionType'});
         }
-        if (property_exists($data, 'RefundForm')) {
+        if (property_exists($data, 'RefundForm') && $data->{'RefundForm'} !== null) {
             $object->setRefundForm($data->{'RefundForm'});
         }
-        if (property_exists($data, 'RefundReissue')) {
+        if (property_exists($data, 'RefundReissue') && $data->{'RefundReissue'} !== null) {
             $object->setRefundReissue($data->{'RefundReissue'});
         }
-        if (property_exists($data, 'SimultaneousTicketIndicator')) {
+        if (property_exists($data, 'SimultaneousTicketIndicator') && $data->{'SimultaneousTicketIndicator'} !== null) {
             $object->setSimultaneousTicketIndicator($data->{'SimultaneousTicketIndicator'});
         }
-        if (property_exists($data, 'SubCodeInfo')) {
+        if (property_exists($data, 'SubCodeInfo') && $data->{'SubCodeInfo'} !== null) {
             $object->setSubCodeInfo($this->denormalizer->denormalize($data->{'SubCodeInfo'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemSubCodeInfo', 'json', $context));
         }
-        if (property_exists($data, 'WeightLimit')) {
+        if (property_exists($data, 'WeightLimit') && $data->{'WeightLimit'} !== null) {
             $object->setWeightLimit($this->denormalizer->denormalize($data->{'WeightLimit'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemBaggageProvisionsItemWeightLimit', 'json', $context));
         }
-        if (property_exists($data, 'RPH')) {
+        if (property_exists($data, 'RPH') && $data->{'RPH'} !== null) {
             $object->setRPH($data->{'RPH'});
         }
 

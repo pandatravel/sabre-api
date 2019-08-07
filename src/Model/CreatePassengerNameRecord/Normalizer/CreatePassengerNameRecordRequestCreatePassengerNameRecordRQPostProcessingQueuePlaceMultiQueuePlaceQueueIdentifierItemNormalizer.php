@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\CreatePassengerNameRecord\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -36,16 +35,16 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingQ
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQPostProcessingQueuePlaceMultiQueuePlaceQueueIdentifierItem();
-        if (property_exists($data, 'Number')) {
+        if (property_exists($data, 'Number') && $data->{'Number'} !== null) {
             $object->setNumber($data->{'Number'});
         }
-        if (property_exists($data, 'PrefatoryInstructionCode')) {
+        if (property_exists($data, 'PrefatoryInstructionCode') && $data->{'PrefatoryInstructionCode'} !== null) {
             $object->setPrefatoryInstructionCode($data->{'PrefatoryInstructionCode'});
         }
-        if (property_exists($data, 'PseudoCityCode')) {
+        if (property_exists($data, 'PseudoCityCode') && $data->{'PseudoCityCode'} !== null) {
             $object->setPseudoCityCode($data->{'PseudoCityCode'});
         }
 

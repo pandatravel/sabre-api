@@ -16,7 +16,8 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymen
 {
     /**
      * Used to pass along different forms of payment.
-     * Please choose only one of them.
+    Please choose only one of them.
+
      *
      * @var CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPayment
      */
@@ -30,24 +31,26 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymen
 
     /**
      * Used to pass along different forms of payment.
-     * Please choose only one of them.
+    Please choose only one of them.
+
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPayment
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPayment|null
      */
-    public function getFormOfPayment(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPayment
+    public function getFormOfPayment(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPayment
     {
         return $this->formOfPayment;
     }
 
     /**
      * Used to pass along different forms of payment.
-     * Please choose only one of them.
+    Please choose only one of them.
+
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPayment $formOfPayment
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPayment|null $formOfPayment
      *
      * @return self
      */
-    public function setFormOfPayment(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPayment $formOfPayment): self
+    public function setFormOfPayment(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymentInformationFormOfPayment $formOfPayment): self
     {
         $this->formOfPayment = $formOfPayment;
 
@@ -57,9 +60,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymen
     /**
      * The form of payment 'Type'.
      *
-     * @return string
+     * @return string|null
      */
-    public function getType(): string
+    public function getType(): ?string
     {
         return $this->type;
     }
@@ -67,11 +70,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookPaymen
     /**
      * The form of payment 'Type'.
      *
-     * @param string $type
+     * @param string|null $type
      *
      * @return self
      */
-    public function setType(string $type): self
+    public function setType(?string $type): self
     {
         $this->type = $type;
 

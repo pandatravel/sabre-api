@@ -24,9 +24,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
     /**
      * Used to pass the contact details for a specific passenger.
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoCustomerInfoContactNumbersContactNumberItem[]
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoCustomerInfoContactNumbersContactNumberItem[]|null
      */
-    public function getContactNumber(): array
+    public function getContactNumber(): ?array
     {
         return $this->contactNumber;
     }
@@ -34,11 +34,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
     /**
      * Used to pass the contact details for a specific passenger.
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoCustomerInfoContactNumbersContactNumberItem[] $contactNumber
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoCustomerInfoContactNumbersContactNumberItem[]|null $contactNumber
      *
      * @return self
      */
-    public function setContactNumber(array $contactNumber): self
+    public function setContactNumber(?array $contactNumber): self
     {
         $this->contactNumber = $contactNumber;
 

@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\CreatePassengerNameRecord\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -36,22 +35,22 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersTourCode();
-        if (property_exists($data, 'SuppressFareReplaceWithBT')) {
+        if (property_exists($data, 'SuppressFareReplaceWithBT') && $data->{'SuppressFareReplaceWithBT'} !== null) {
             $object->setSuppressFareReplaceWithBT($this->denormalizer->denormalize($data->{'SuppressFareReplaceWithBT'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersTourCodeSuppressFareReplaceWithBT', 'json', $context));
         }
-        if (property_exists($data, 'SuppressFareReplaceWithIT')) {
+        if (property_exists($data, 'SuppressFareReplaceWithIT') && $data->{'SuppressFareReplaceWithIT'} !== null) {
             $object->setSuppressFareReplaceWithIT($this->denormalizer->denormalize($data->{'SuppressFareReplaceWithIT'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersTourCodeSuppressFareReplaceWithIT', 'json', $context));
         }
-        if (property_exists($data, 'SuppressIT')) {
+        if (property_exists($data, 'SuppressIT') && $data->{'SuppressIT'} !== null) {
             $object->setSuppressIT($this->denormalizer->denormalize($data->{'SuppressIT'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersTourCodeSuppressIT', 'json', $context));
         }
-        if (property_exists($data, 'SuppressITSupressFare')) {
+        if (property_exists($data, 'SuppressITSupressFare') && $data->{'SuppressITSupressFare'} !== null) {
             $object->setSuppressITSupressFare($this->denormalizer->denormalize($data->{'SuppressITSupressFare'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersMiscQualifiersTourCodeSuppressITSupressFare', 'json', $context));
         }
-        if (property_exists($data, 'Text')) {
+        if (property_exists($data, 'Text') && $data->{'Text'} !== null) {
             $object->setText($data->{'Text'});
         }
 

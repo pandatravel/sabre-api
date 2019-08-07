@@ -22,7 +22,8 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     protected $markDown;
     /**
      * Used to instruct the system to price the itinerary with a mark up amount.
-     * MarkDown cannot be combined with MarkUp.
+    MarkDown cannot be combined with MarkUp.
+
      *
      * @var float
      */
@@ -31,9 +32,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to instruct the system to price the itinerary with a mark down amount.
      *
-     * @return float
+     * @return float|null
      */
-    public function getMarkDown(): float
+    public function getMarkDown(): ?float
     {
         return $this->markDown;
     }
@@ -41,11 +42,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to instruct the system to price the itinerary with a mark down amount.
      *
-     * @param float $markDown
+     * @param float|null $markDown
      *
      * @return self
      */
-    public function setMarkDown(float $markDown): self
+    public function setMarkDown(?float $markDown): self
     {
         $this->markDown = $markDown;
 
@@ -54,24 +55,26 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
 
     /**
      * Used to instruct the system to price the itinerary with a mark up amount.
-     * MarkDown cannot be combined with MarkUp.
+    MarkDown cannot be combined with MarkUp.
+
      *
-     * @return float
+     * @return float|null
      */
-    public function getMarkUp(): float
+    public function getMarkUp(): ?float
     {
         return $this->markUp;
     }
 
     /**
      * Used to instruct the system to price the itinerary with a mark up amount.
-     * MarkDown cannot be combined with MarkUp.
+    MarkDown cannot be combined with MarkUp.
+
      *
-     * @param float $markUp
+     * @param float|null $markUp
      *
      * @return self
      */
-    public function setMarkUp(float $markUp): self
+    public function setMarkUp(?float $markUp): self
     {
         $this->markUp = $markUp;
 

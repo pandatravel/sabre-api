@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\CreatePassengerNameRecord\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -36,49 +35,49 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareSellingFareDataItem();
-        if (property_exists($data, 'BaseFare')) {
+        if (property_exists($data, 'BaseFare') && $data->{'BaseFare'} !== null) {
             $object->setBaseFare($this->denormalizer->denormalize($data->{'BaseFare'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareSellingFareDataItemBaseFare', 'json', $context));
         }
-        if (property_exists($data, 'ConstructedTotal')) {
+        if (property_exists($data, 'ConstructedTotal') && $data->{'ConstructedTotal'} !== null) {
             $object->setConstructedTotal($this->denormalizer->denormalize($data->{'ConstructedTotal'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareSellingFareDataItemConstructedTotal', 'json', $context));
         }
-        if (property_exists($data, 'Equivalent')) {
+        if (property_exists($data, 'Equivalent') && $data->{'Equivalent'} !== null) {
             $object->setEquivalent($this->denormalizer->denormalize($data->{'Equivalent'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareSellingFareDataItemEquivalent', 'json', $context));
         }
-        if (property_exists($data, 'TotalTaxes')) {
+        if (property_exists($data, 'TotalTaxes') && $data->{'TotalTaxes'} !== null) {
             $object->setTotalTaxes($this->denormalizer->denormalize($data->{'TotalTaxes'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareSellingFareDataItemTotalTaxes', 'json', $context));
         }
-        if (property_exists($data, 'TotalPerPassenger')) {
+        if (property_exists($data, 'TotalPerPassenger') && $data->{'TotalPerPassenger'} !== null) {
             $object->setTotalPerPassenger($this->denormalizer->denormalize($data->{'TotalPerPassenger'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareSellingFareDataItemTotalPerPassenger', 'json', $context));
         }
-        if (property_exists($data, 'FareCalculation')) {
+        if (property_exists($data, 'FareCalculation') && $data->{'FareCalculation'} !== null) {
             $object->setFareCalculation($this->denormalizer->denormalize($data->{'FareCalculation'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareSellingFareDataItemFareCalculation', 'json', $context));
         }
-        if (property_exists($data, 'SellingFareTaxData')) {
+        if (property_exists($data, 'SellingFareTaxData') && $data->{'SellingFareTaxData'} !== null) {
             $values = [];
             foreach ($data->{'SellingFareTaxData'} as $value) {
                 $values[] = $this->denormalizer->denormalize($value, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareSellingFareDataItemSellingFareTaxDataItem', 'json', $context);
             }
             $object->setSellingFareTaxData($values);
         }
-        if (property_exists($data, 'SellingFareTaxBreakdown')) {
+        if (property_exists($data, 'SellingFareTaxBreakdown') && $data->{'SellingFareTaxBreakdown'} !== null) {
             $values_1 = [];
             foreach ($data->{'SellingFareTaxBreakdown'} as $value_1) {
                 $values_1[] = $this->denormalizer->denormalize($value_1, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareSellingFareDataItemSellingFareTaxBreakdownItem', 'json', $context);
             }
             $object->setSellingFareTaxBreakdown($values_1);
         }
-        if (property_exists($data, 'Summary')) {
+        if (property_exists($data, 'Summary') && $data->{'Summary'} !== null) {
             $values_2 = [];
             foreach ($data->{'Summary'} as $value_2) {
                 $values_2[] = $this->denormalizer->denormalize($value_2, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPriceQuotePricedItineraryAirItineraryPricingInfoItemItinTotalFareSellingFareDataItemSummaryItem', 'json', $context);
             }
             $object->setSummary($values_2);
         }
-        if (property_exists($data, 'LayerTypeName')) {
+        if (property_exists($data, 'LayerTypeName') && $data->{'LayerTypeName'} !== null) {
             $object->setLayerTypeName($data->{'LayerTypeName'});
         }
 

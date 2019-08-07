@@ -48,9 +48,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The branch PCC information.
      *
-     * @return string
+     * @return string|null
      */
-    public function getPCC(): string
+    public function getPCC(): ?string
     {
         return $this->pCC;
     }
@@ -58,11 +58,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The branch PCC information.
      *
-     * @param string $pCC
+     * @param string|null $pCC
      *
      * @return self
      */
-    public function setPCC(string $pCC): self
+    public function setPCC(?string $pCC): self
     {
         $this->pCC = $pCC;
 
@@ -72,9 +72,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * Indicates a country where a ship is documented and given nationality.
      *
-     * @return string
+     * @return string|null
      */
-    public function getCountryOfShipRegistry(): string
+    public function getCountryOfShipRegistry(): ?string
     {
         return $this->countryOfShipRegistry;
     }
@@ -82,11 +82,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * Indicates a country where a ship is documented and given nationality.
      *
-     * @param string $countryOfShipRegistry
+     * @param string|null $countryOfShipRegistry
      *
      * @return self
      */
-    public function setCountryOfShipRegistry(string $countryOfShipRegistry): self
+    public function setCountryOfShipRegistry(?string $countryOfShipRegistry): self
     {
         $this->countryOfShipRegistry = $countryOfShipRegistry;
 
@@ -96,9 +96,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * Used to indicate the Governing carrier/Primary carrier or 1st carrier on joint fare.
      *
-     * @return string
+     * @return string|null
      */
-    public function getFirstJointCarrier(): string
+    public function getFirstJointCarrier(): ?string
     {
         return $this->firstJointCarrier;
     }
@@ -106,11 +106,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * Used to indicate the Governing carrier/Primary carrier or 1st carrier on joint fare.
      *
-     * @param string $firstJointCarrier
+     * @param string|null $firstJointCarrier
      *
      * @return self
      */
-    public function setFirstJointCarrier(string $firstJointCarrier): self
+    public function setFirstJointCarrier(?string $firstJointCarrier): self
     {
         $this->firstJointCarrier = $firstJointCarrier;
 
@@ -120,9 +120,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * Used to indicate 2nd carrier on the joint fare.
      *
-     * @return string
+     * @return string|null
      */
-    public function getSecondJointCarrier(): string
+    public function getSecondJointCarrier(): ?string
     {
         return $this->secondJointCarrier;
     }
@@ -130,11 +130,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * Used to indicate 2nd carrier on the joint fare.
      *
-     * @param string $secondJointCarrier
+     * @param string|null $secondJointCarrier
      *
      * @return self
      */
-    public function setSecondJointCarrier(string $secondJointCarrier): self
+    public function setSecondJointCarrier(?string $secondJointCarrier): self
     {
         $this->secondJointCarrier = $secondJointCarrier;
 
@@ -144,9 +144,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * Used to indicate if the carrier is IATA authorized.
      *
-     * @return string
+     * @return string|null
      */
-    public function getIATAAuthorizedCarrier(): string
+    public function getIATAAuthorizedCarrier(): ?string
     {
         return $this->iATAAuthorizedCarrier;
     }
@@ -154,11 +154,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * Used to indicate if the carrier is IATA authorized.
      *
-     * @param string $iATAAuthorizedCarrier
+     * @param string|null $iATAAuthorizedCarrier
      *
      * @return self
      */
-    public function setIATAAuthorizedCarrier(string $iATAAuthorizedCarrier): self
+    public function setIATAAuthorizedCarrier(?string $iATAAuthorizedCarrier): self
     {
         $this->iATAAuthorizedCarrier = $iATAAuthorizedCarrier;
 

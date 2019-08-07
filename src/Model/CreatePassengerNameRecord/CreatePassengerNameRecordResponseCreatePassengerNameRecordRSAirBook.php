@@ -24,9 +24,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBook extend
     /**
      * The air segments details.
      *
-     * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginDestinationOption
+     * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginDestinationOption|null
      */
-    public function getOriginDestinationOption(): CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginDestinationOption
+    public function getOriginDestinationOption(): ?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginDestinationOption
     {
         return $this->originDestinationOption;
     }
@@ -34,11 +34,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBook extend
     /**
      * The air segments details.
      *
-     * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginDestinationOption $originDestinationOption
+     * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginDestinationOption|null $originDestinationOption
      *
      * @return self
      */
-    public function setOriginDestinationOption(CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginDestinationOption $originDestinationOption): self
+    public function setOriginDestinationOption(?CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginDestinationOption $originDestinationOption): self
     {
         $this->originDestinationOption = $originDestinationOption;
 

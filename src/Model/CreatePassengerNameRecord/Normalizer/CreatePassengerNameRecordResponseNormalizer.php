@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\CreatePassengerNameRecord\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -36,17 +35,17 @@ class CreatePassengerNameRecordResponseNormalizer implements DenormalizerInterfa
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordResponse();
-        if (property_exists($data, 'Links')) {
+        if (property_exists($data, 'Links') && $data->{'Links'} !== null) {
             $values = [];
             foreach ($data->{'Links'} as $value) {
                 $values[] = $this->denormalizer->denormalize($value, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordResponseLinksItem', 'json', $context);
             }
             $object->setLinks($values);
         }
-        if (property_exists($data, 'CreatePassengerNameRecordRS')) {
+        if (property_exists($data, 'CreatePassengerNameRecordRS') && $data->{'CreatePassengerNameRecordRS'} !== null) {
             $object->setCreatePassengerNameRecordRS($this->denormalizer->denormalize($data->{'CreatePassengerNameRecordRS'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordResponseCreatePassengerNameRecordRS', 'json', $context));
         }
 

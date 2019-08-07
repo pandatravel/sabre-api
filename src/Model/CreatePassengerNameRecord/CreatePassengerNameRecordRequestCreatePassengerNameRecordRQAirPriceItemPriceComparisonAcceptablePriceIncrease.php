@@ -30,9 +30,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to define an amount threshold.
      *
-     * @return float
+     * @return float|null
      */
-    public function getAmount(): float
+    public function getAmount(): ?float
     {
         return $this->amount;
     }
@@ -40,11 +40,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * Used to define an amount threshold.
      *
-     * @param float $amount
+     * @param float|null $amount
      *
      * @return self
      */
-    public function setAmount(float $amount): self
+    public function setAmount(?float $amount): self
     {
         $this->amount = $amount;
 
@@ -54,9 +54,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * 'HaltOnNonAcceptablePrice' is used to specify whether the service should be stopped when the actual price is greater than 'AmountSpecified' + percent or amount increase.
      *
-     * @return bool
+     * @return bool|null
      */
-    public function getHaltOnNonAcceptablePrice(): bool
+    public function getHaltOnNonAcceptablePrice(): ?bool
     {
         return $this->haltOnNonAcceptablePrice;
     }
@@ -64,11 +64,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     /**
      * 'HaltOnNonAcceptablePrice' is used to specify whether the service should be stopped when the actual price is greater than 'AmountSpecified' + percent or amount increase.
      *
-     * @param bool $haltOnNonAcceptablePrice
+     * @param bool|null $haltOnNonAcceptablePrice
      *
      * @return self
      */
-    public function setHaltOnNonAcceptablePrice(bool $haltOnNonAcceptablePrice): self
+    public function setHaltOnNonAcceptablePrice(?bool $haltOnNonAcceptablePrice): self
     {
         $this->haltOnNonAcceptablePrice = $haltOnNonAcceptablePrice;
 

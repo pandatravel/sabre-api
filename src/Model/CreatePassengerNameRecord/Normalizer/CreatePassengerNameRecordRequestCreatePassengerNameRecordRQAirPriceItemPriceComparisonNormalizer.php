@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\CreatePassengerNameRecord\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -36,16 +35,16 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceComparison();
-        if (property_exists($data, 'AcceptablePriceIncrease')) {
+        if (property_exists($data, 'AcceptablePriceIncrease') && $data->{'AcceptablePriceIncrease'} !== null) {
             $object->setAcceptablePriceIncrease($this->denormalizer->denormalize($data->{'AcceptablePriceIncrease'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceComparisonAcceptablePriceIncrease', 'json', $context));
         }
-        if (property_exists($data, 'AcceptablePriceDecrease')) {
+        if (property_exists($data, 'AcceptablePriceDecrease') && $data->{'AcceptablePriceDecrease'} !== null) {
             $object->setAcceptablePriceDecrease($this->denormalizer->denormalize($data->{'AcceptablePriceDecrease'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceComparisonAcceptablePriceDecrease', 'json', $context));
         }
-        if (property_exists($data, 'AmountSpecified')) {
+        if (property_exists($data, 'AmountSpecified') && $data->{'AmountSpecified'} !== null) {
             $object->setAmountSpecified($data->{'AmountSpecified'});
         }
 

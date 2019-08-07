@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\CreatePassengerNameRecord\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -36,16 +35,16 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPri
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBSPTicketing();
-        if (property_exists($data, 'MultipleFOP')) {
+        if (property_exists($data, 'MultipleFOP') && $data->{'MultipleFOP'} !== null) {
             $object->setMultipleFOP($this->denormalizer->denormalize($data->{'MultipleFOP'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBSPTicketingMultipleFOP', 'json', $context));
         }
-        if (property_exists($data, 'MultipleMiscFOP')) {
+        if (property_exists($data, 'MultipleMiscFOP') && $data->{'MultipleMiscFOP'} !== null) {
             $object->setMultipleMiscFOP($this->denormalizer->denormalize($data->{'MultipleMiscFOP'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBSPTicketingMultipleMiscFOP', 'json', $context));
         }
-        if (property_exists($data, 'PayLaterPlan')) {
+        if (property_exists($data, 'PayLaterPlan') && $data->{'PayLaterPlan'} !== null) {
             $object->setPayLaterPlan($this->denormalizer->denormalize($data->{'PayLaterPlan'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirPriceItemPriceRequestInformationOptionalQualifiersFOPQualifiersBSPTicketingPayLaterPlan', 'json', $context));
         }
 

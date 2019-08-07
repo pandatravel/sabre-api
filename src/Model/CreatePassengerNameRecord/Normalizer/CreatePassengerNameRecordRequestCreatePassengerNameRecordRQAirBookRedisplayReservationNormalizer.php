@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\CreatePassengerNameRecord\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -36,13 +35,13 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookRedispla
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookRedisplayReservation();
-        if (property_exists($data, 'NumAttempts')) {
+        if (property_exists($data, 'NumAttempts') && $data->{'NumAttempts'} !== null) {
             $object->setNumAttempts($data->{'NumAttempts'});
         }
-        if (property_exists($data, 'WaitInterval')) {
+        if (property_exists($data, 'WaitInterval') && $data->{'WaitInterval'} !== null) {
             $object->setWaitInterval($data->{'WaitInterval'});
         }
 

@@ -20,19 +20,19 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItinerar
     protected $associatedPNRSummary;
 
     /**
-     * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPersonNameItemGroupInfoAssociatedReferenceInformationAssociatedPNRSummariesAssociatedPNRSummaryItem[]
+     * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPersonNameItemGroupInfoAssociatedReferenceInformationAssociatedPNRSummariesAssociatedPNRSummaryItem[]|null
      */
-    public function getAssociatedPNRSummary(): array
+    public function getAssociatedPNRSummary(): ?array
     {
         return $this->associatedPNRSummary;
     }
 
     /**
-     * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPersonNameItemGroupInfoAssociatedReferenceInformationAssociatedPNRSummariesAssociatedPNRSummaryItem[] $associatedPNRSummary
+     * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSTravelItineraryReadTravelItineraryCustomerInfoPersonNameItemGroupInfoAssociatedReferenceInformationAssociatedPNRSummariesAssociatedPNRSummaryItem[]|null $associatedPNRSummary
      *
      * @return self
      */
-    public function setAssociatedPNRSummary(array $associatedPNRSummary): self
+    public function setAssociatedPNRSummary(?array $associatedPNRSummary): self
     {
         $this->associatedPNRSummary = $associatedPNRSummary;
 

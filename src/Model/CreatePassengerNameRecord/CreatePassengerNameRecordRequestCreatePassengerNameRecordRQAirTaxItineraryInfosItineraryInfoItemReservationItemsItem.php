@@ -28,7 +28,8 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItinerary
     protected $flightSegment;
     /**
      * 'RPH' is used to pass Sequence Number of the itineraries.
-     * For example, 1 for itinerary #1 and 2 or itinerary #2.
+    For example, 1 for itinerary #1 and 2 or itinerary #2.
+
      *
      * @var int
      */
@@ -55,9 +56,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItinerary
     /**
      * The fare details.
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemAirFareInfo
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemAirFareInfo|null
      */
-    public function getAirFareInfo(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemAirFareInfo
+    public function getAirFareInfo(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemAirFareInfo
     {
         return $this->airFareInfo;
     }
@@ -65,11 +66,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItinerary
     /**
      * The fare details.
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemAirFareInfo $airFareInfo
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemAirFareInfo|null $airFareInfo
      *
      * @return self
      */
-    public function setAirFareInfo(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemAirFareInfo $airFareInfo): self
+    public function setAirFareInfo(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemAirFareInfo $airFareInfo): self
     {
         $this->airFareInfo = $airFareInfo;
 
@@ -79,9 +80,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItinerary
     /**
      * The air segment details.
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItem[]
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItem[]|null
      */
-    public function getFlightSegment(): array
+    public function getFlightSegment(): ?array
     {
         return $this->flightSegment;
     }
@@ -89,11 +90,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItinerary
     /**
      * The air segment details.
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItem[] $flightSegment
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItineraryInfosItineraryInfoItemReservationItemsItemFlightSegmentItem[]|null $flightSegment
      *
      * @return self
      */
-    public function setFlightSegment(array $flightSegment): self
+    public function setFlightSegment(?array $flightSegment): self
     {
         $this->flightSegment = $flightSegment;
 
@@ -102,24 +103,26 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItinerary
 
     /**
      * 'RPH' is used to pass Sequence Number of the itineraries.
-     * For example, 1 for itinerary #1 and 2 or itinerary #2.
+    For example, 1 for itinerary #1 and 2 or itinerary #2.
+
      *
-     * @return int
+     * @return int|null
      */
-    public function getRPH(): int
+    public function getRPH(): ?int
     {
         return $this->rPH;
     }
 
     /**
      * 'RPH' is used to pass Sequence Number of the itineraries.
-     * For example, 1 for itinerary #1 and 2 or itinerary #2.
+    For example, 1 for itinerary #1 and 2 or itinerary #2.
+
      *
-     * @param int $rPH
+     * @param int|null $rPH
      *
      * @return self
      */
-    public function setRPH(int $rPH): self
+    public function setRPH(?int $rPH): self
     {
         $this->rPH = $rPH;
 
@@ -129,9 +132,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItinerary
     /**
      * 'TicketingCarrier' is used to pass the Ticketing Carrier.
      *
-     * @return string
+     * @return string|null
      */
-    public function getTicketingCarrier(): string
+    public function getTicketingCarrier(): ?string
     {
         return $this->ticketingCarrier;
     }
@@ -139,11 +142,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItinerary
     /**
      * 'TicketingCarrier' is used to pass the Ticketing Carrier.
      *
-     * @param string $ticketingCarrier
+     * @param string|null $ticketingCarrier
      *
      * @return self
      */
-    public function setTicketingCarrier(string $ticketingCarrier): self
+    public function setTicketingCarrier(?string $ticketingCarrier): self
     {
         $this->ticketingCarrier = $ticketingCarrier;
 
@@ -153,9 +156,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItinerary
     /**
      * 'ValidatingCarrier' is used to pass the Validating Carrier.
      *
-     * @return string
+     * @return string|null
      */
-    public function getValidatingCarrier(): string
+    public function getValidatingCarrier(): ?string
     {
         return $this->validatingCarrier;
     }
@@ -163,11 +166,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItinerary
     /**
      * 'ValidatingCarrier' is used to pass the Validating Carrier.
      *
-     * @param string $validatingCarrier
+     * @param string|null $validatingCarrier
      *
      * @return self
      */
-    public function setValidatingCarrier(string $validatingCarrier): self
+    public function setValidatingCarrier(?string $validatingCarrier): self
     {
         $this->validatingCarrier = $validatingCarrier;
 
@@ -177,9 +180,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItinerary
     /**
      * If "SalePseudoCityCode" is an invalid Sabre PCC, no tax processing will be done and an error response will be sent back.
      *
-     * @return string
+     * @return string|null
      */
-    public function getSalePseudoCityCode(): string
+    public function getSalePseudoCityCode(): ?string
     {
         return $this->salePseudoCityCode;
     }
@@ -187,11 +190,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirTaxItinerary
     /**
      * If "SalePseudoCityCode" is an invalid Sabre PCC, no tax processing will be done and an error response will be sent back.
      *
-     * @param string $salePseudoCityCode
+     * @param string|null $salePseudoCityCode
      *
      * @return self
      */
-    public function setSalePseudoCityCode(string $salePseudoCityCode): self
+    public function setSalePseudoCityCode(?string $salePseudoCityCode): self
     {
         $this->salePseudoCityCode = $salePseudoCityCode;
 

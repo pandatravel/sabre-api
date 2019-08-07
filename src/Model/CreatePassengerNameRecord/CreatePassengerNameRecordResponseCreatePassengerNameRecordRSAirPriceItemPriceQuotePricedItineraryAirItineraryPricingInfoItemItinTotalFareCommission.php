@@ -36,9 +36,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The commission amount.
      *
-     * @return string
+     * @return string|null
      */
-    public function getAmount(): string
+    public function getAmount(): ?string
     {
         return $this->amount;
     }
@@ -46,11 +46,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The commission amount.
      *
-     * @param string $amount
+     * @param string|null $amount
      *
      * @return self
      */
-    public function setAmount(string $amount): self
+    public function setAmount(?string $amount): self
     {
         $this->amount = $amount;
 
@@ -60,9 +60,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The commission cap amount indicator.
      *
-     * @return string
+     * @return string|null
      */
-    public function getCapAmountInd(): string
+    public function getCapAmountInd(): ?string
     {
         return $this->capAmountInd;
     }
@@ -70,11 +70,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The commission cap amount indicator.
      *
-     * @param string $capAmountInd
+     * @param string|null $capAmountInd
      *
      * @return self
      */
-    public function setCapAmountInd(string $capAmountInd): self
+    public function setCapAmountInd(?string $capAmountInd): self
     {
         $this->capAmountInd = $capAmountInd;
 
@@ -84,9 +84,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The commission percent.
      *
-     * @return string
+     * @return string|null
      */
-    public function getPercent(): string
+    public function getPercent(): ?string
     {
         return $this->percent;
     }
@@ -94,11 +94,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirPriceItemPr
     /**
      * The commission percent.
      *
-     * @param string $percent
+     * @param string|null $percent
      *
      * @return self
      */
-    public function setPercent(string $percent): self
+    public function setPercent(?string $percent): self
     {
         $this->percent = $percent;
 

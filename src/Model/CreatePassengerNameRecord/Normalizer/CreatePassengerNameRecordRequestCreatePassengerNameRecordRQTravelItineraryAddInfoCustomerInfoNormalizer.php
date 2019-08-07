@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Ammonkc\SabreApi\Model\CreatePassengerNameRecord\Normalizer;
 
-use Symfony\Component\Serializer\Exception\InvalidArgumentException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
@@ -36,36 +35,36 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItinerary
     public function denormalize($data, $class, $format = null, array $context = [])
     {
         if (!is_object($data)) {
-            throw new InvalidArgumentException();
+            return null;
         }
         $object = new \Ammonkc\SabreApi\Model\CreatePassengerNameRecord\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoCustomerInfo();
-        if (property_exists($data, 'ContactNumbers')) {
+        if (property_exists($data, 'ContactNumbers') && $data->{'ContactNumbers'} !== null) {
             $object->setContactNumbers($this->denormalizer->denormalize($data->{'ContactNumbers'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoCustomerInfoContactNumbers', 'json', $context));
         }
-        if (property_exists($data, 'Corporate')) {
+        if (property_exists($data, 'Corporate') && $data->{'Corporate'} !== null) {
             $object->setCorporate($this->denormalizer->denormalize($data->{'Corporate'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoCustomerInfoCorporate', 'json', $context));
         }
-        if (property_exists($data, 'CreditCardData')) {
+        if (property_exists($data, 'CreditCardData') && $data->{'CreditCardData'} !== null) {
             $object->setCreditCardData($this->denormalizer->denormalize($data->{'CreditCardData'}, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoCustomerInfoCreditCardData', 'json', $context));
         }
-        if (property_exists($data, 'CustLoyalty')) {
+        if (property_exists($data, 'CustLoyalty') && $data->{'CustLoyalty'} !== null) {
             $values = [];
             foreach ($data->{'CustLoyalty'} as $value) {
                 $values[] = $this->denormalizer->denormalize($value, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoCustomerInfoCustLoyaltyItem', 'json', $context);
             }
             $object->setCustLoyalty($values);
         }
-        if (property_exists($data, 'CustomerIdentifier')) {
+        if (property_exists($data, 'CustomerIdentifier') && $data->{'CustomerIdentifier'} !== null) {
             $object->setCustomerIdentifier($data->{'CustomerIdentifier'});
         }
-        if (property_exists($data, 'Email')) {
+        if (property_exists($data, 'Email') && $data->{'Email'} !== null) {
             $values_1 = [];
             foreach ($data->{'Email'} as $value_1) {
                 $values_1[] = $this->denormalizer->denormalize($value_1, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoCustomerInfoEmailItem', 'json', $context);
             }
             $object->setEmail($values_1);
         }
-        if (property_exists($data, 'PersonName')) {
+        if (property_exists($data, 'PersonName') && $data->{'PersonName'} !== null) {
             $values_2 = [];
             foreach ($data->{'PersonName'} as $value_2) {
                 $values_2[] = $this->denormalizer->denormalize($value_2, 'Ammonkc\\SabreApi\\Model\\CreatePassengerNameRecord\\CreatePassengerNameRecordRequestCreatePassengerNameRecordRQTravelItineraryAddInfoCustomerInfoPersonNameItem', 'json', $context);

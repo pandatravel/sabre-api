@@ -24,9 +24,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookSpecia
     /**
      * Used to specify special instructions.
      *
-     * @return string[]
+     * @return string[]|null
      */
-    public function getSpecialInstruction(): array
+    public function getSpecialInstruction(): ?array
     {
         return $this->specialInstruction;
     }
@@ -34,11 +34,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQHotelBookSpecia
     /**
      * Used to specify special instructions.
      *
-     * @param string[] $specialInstruction
+     * @param string[]|null $specialInstruction
      *
      * @return self
      */
-    public function setSpecialInstruction(array $specialInstruction): self
+    public function setSpecialInstruction(?array $specialInstruction): self
     {
         $this->specialInstruction = $specialInstruction;
 

@@ -36,9 +36,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     /**
      * Used to add remarks.
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAddRemark
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAddRemark|null
      */
-    public function getAddRemark(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAddRemark
+    public function getAddRemark(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAddRemark
     {
         return $this->addRemark;
     }
@@ -46,11 +46,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     /**
      * Used to add remarks.
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAddRemark $addRemark
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAddRemark|null $addRemark
      *
      * @return self
      */
-    public function setAddRemark(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAddRemark $addRemark): self
+    public function setAddRemark(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAddRemark $addRemark): self
     {
         $this->addRemark = $addRemark;
 
@@ -60,9 +60,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     /**
      * Used to book seats.
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAirSeat
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAirSeat|null
      */
-    public function getAirSeat(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAirSeat
+    public function getAirSeat(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAirSeat
     {
         return $this->airSeat;
     }
@@ -70,11 +70,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     /**
      * Used to book seats.
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAirSeat $airSeat
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAirSeat|null $airSeat
      *
      * @return self
      */
-    public function setAirSeat(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAirSeat $airSeat): self
+    public function setAirSeat(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsAirSeat $airSeat): self
     {
         $this->airSeat = $airSeat;
 
@@ -84,9 +84,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     /**
      * Used to add many types of SSRs.
      *
-     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialService
+     * @return CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialService|null
      */
-    public function getSpecialService(): CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialService
+    public function getSpecialService(): ?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialService
     {
         return $this->specialService;
     }
@@ -94,11 +94,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetai
     /**
      * Used to add many types of SSRs.
      *
-     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialService $specialService
+     * @param CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialService|null $specialService
      *
      * @return self
      */
-    public function setSpecialService(CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialService $specialService): self
+    public function setSpecialService(?CreatePassengerNameRecordRequestCreatePassengerNameRecordRQSpecialReqDetailsSpecialService $specialService): self
     {
         $this->specialService = $specialService;
 

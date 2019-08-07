@@ -24,9 +24,9 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginD
     /**
      * A single flight segment details.
      *
-     * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginDestinationOptionFlightSegmentItem[]
+     * @return CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginDestinationOptionFlightSegmentItem[]|null
      */
-    public function getFlightSegment(): array
+    public function getFlightSegment(): ?array
     {
         return $this->flightSegment;
     }
@@ -34,11 +34,11 @@ class CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginD
     /**
      * A single flight segment details.
      *
-     * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginDestinationOptionFlightSegmentItem[] $flightSegment
+     * @param CreatePassengerNameRecordResponseCreatePassengerNameRecordRSAirBookOriginDestinationOptionFlightSegmentItem[]|null $flightSegment
      *
      * @return self
      */
-    public function setFlightSegment(array $flightSegment): self
+    public function setFlightSegment(?array $flightSegment): self
     {
         $this->flightSegment = $flightSegment;
 

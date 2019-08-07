@@ -30,9 +30,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookRedispla
     /**
      * Used to specify a number of times to make the TravelItineraryReadRQ service call before proceeding to the OTA_AirPriceLLSRQ or the next service call.
      *
-     * @return int
+     * @return int|null
      */
-    public function getNumAttempts(): int
+    public function getNumAttempts(): ?int
     {
         return $this->numAttempts;
     }
@@ -40,11 +40,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookRedispla
     /**
      * Used to specify a number of times to make the TravelItineraryReadRQ service call before proceeding to the OTA_AirPriceLLSRQ or the next service call.
      *
-     * @param int $numAttempts
+     * @param int|null $numAttempts
      *
      * @return self
      */
-    public function setNumAttempts(int $numAttempts): self
+    public function setNumAttempts(?int $numAttempts): self
     {
         $this->numAttempts = $numAttempts;
 
@@ -54,9 +54,9 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookRedispla
     /**
      * Used to specify an interval (in milliseconds) that the system should wait in milliseconds before making re-display service calls.
      *
-     * @return int
+     * @return int|null
      */
-    public function getWaitInterval(): int
+    public function getWaitInterval(): ?int
     {
         return $this->waitInterval;
     }
@@ -64,11 +64,11 @@ class CreatePassengerNameRecordRequestCreatePassengerNameRecordRQAirBookRedispla
     /**
      * Used to specify an interval (in milliseconds) that the system should wait in milliseconds before making re-display service calls.
      *
-     * @param int $waitInterval
+     * @param int|null $waitInterval
      *
      * @return self
      */
-    public function setWaitInterval(int $waitInterval): self
+    public function setWaitInterval(?int $waitInterval): self
     {
         $this->waitInterval = $waitInterval;
 
