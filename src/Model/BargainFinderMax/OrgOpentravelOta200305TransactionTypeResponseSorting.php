@@ -18,7 +18,7 @@ class OrgOpentravelOta200305TransactionTypeResponseSorting extends AbstractModel
     /**
      * @return bool
      */
-    public function getEnableChronologicalSorting(): bool
+    public function getEnableChronologicalSorting(): ?bool
     {
         return $this->enableChronologicalSorting;
     }
@@ -28,7 +28,7 @@ class OrgOpentravelOta200305TransactionTypeResponseSorting extends AbstractModel
      *
      * @return self
      */
-    public function setEnableChronologicalSorting(bool $enableChronologicalSorting): self
+    public function setEnableChronologicalSorting(?bool $enableChronologicalSorting): self
     {
         $this->enableChronologicalSorting = $enableChronologicalSorting;
 
@@ -38,7 +38,7 @@ class OrgOpentravelOta200305TransactionTypeResponseSorting extends AbstractModel
     /**
      * @return bool
      */
-    public function getSortFaresInsideItin(): bool
+    public function getSortFaresInsideItin(): ?bool
     {
         return $this->sortFaresInsideItin;
     }
@@ -48,7 +48,7 @@ class OrgOpentravelOta200305TransactionTypeResponseSorting extends AbstractModel
      *
      * @return self
      */
-    public function setSortFaresInsideItin(bool $sortFaresInsideItin): self
+    public function setSortFaresInsideItin(?bool $sortFaresInsideItin): self
     {
         $this->sortFaresInsideItin = $sortFaresInsideItin;
 

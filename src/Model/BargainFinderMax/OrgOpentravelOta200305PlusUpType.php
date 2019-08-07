@@ -60,7 +60,7 @@ class OrgOpentravelOta200305PlusUpType extends AbstractModel
      *
      * @return float
      */
-    public function getAmount(): float
+    public function getAmount(): ?float
     {
         return $this->amount;
     }
@@ -72,7 +72,7 @@ class OrgOpentravelOta200305PlusUpType extends AbstractModel
      *
      * @return self
      */
-    public function setAmount(float $amount): self
+    public function setAmount(?float $amount): self
     {
         $this->amount = $amount;
 
@@ -84,7 +84,7 @@ class OrgOpentravelOta200305PlusUpType extends AbstractModel
      *
      * @return string
      */
-    public function getCountryOfPayment(): string
+    public function getCountryOfPayment(): ?string
     {
         return $this->countryOfPayment;
     }
@@ -96,7 +96,7 @@ class OrgOpentravelOta200305PlusUpType extends AbstractModel
      *
      * @return self
      */
-    public function setCountryOfPayment(string $countryOfPayment): self
+    public function setCountryOfPayment(?string $countryOfPayment): self
     {
         $this->countryOfPayment = $countryOfPayment;
 
@@ -108,7 +108,7 @@ class OrgOpentravelOta200305PlusUpType extends AbstractModel
      *
      * @return string
      */
-    public function getDestinationCity(): string
+    public function getDestinationCity(): ?string
     {
         return $this->destinationCity;
     }
@@ -120,7 +120,7 @@ class OrgOpentravelOta200305PlusUpType extends AbstractModel
      *
      * @return self
      */
-    public function setDestinationCity(string $destinationCity): self
+    public function setDestinationCity(?string $destinationCity): self
     {
         $this->destinationCity = $destinationCity;
 
@@ -132,7 +132,7 @@ class OrgOpentravelOta200305PlusUpType extends AbstractModel
      *
      * @return string
      */
-    public function getFareDestinationCity(): string
+    public function getFareDestinationCity(): ?string
     {
         return $this->fareDestinationCity;
     }
@@ -144,7 +144,7 @@ class OrgOpentravelOta200305PlusUpType extends AbstractModel
      *
      * @return self
      */
-    public function setFareDestinationCity(string $fareDestinationCity): self
+    public function setFareDestinationCity(?string $fareDestinationCity): self
     {
         $this->fareDestinationCity = $fareDestinationCity;
 
@@ -156,7 +156,7 @@ class OrgOpentravelOta200305PlusUpType extends AbstractModel
      *
      * @return string
      */
-    public function getFareOriginCity(): string
+    public function getFareOriginCity(): ?string
     {
         return $this->fareOriginCity;
     }
@@ -168,7 +168,7 @@ class OrgOpentravelOta200305PlusUpType extends AbstractModel
      *
      * @return self
      */
-    public function setFareOriginCity(string $fareOriginCity): self
+    public function setFareOriginCity(?string $fareOriginCity): self
     {
         $this->fareOriginCity = $fareOriginCity;
 
@@ -180,7 +180,7 @@ class OrgOpentravelOta200305PlusUpType extends AbstractModel
      *
      * @return string
      */
-    public function getMessage(): string
+    public function getMessage(): ?string
     {
         return $this->message;
     }
@@ -192,7 +192,7 @@ class OrgOpentravelOta200305PlusUpType extends AbstractModel
      *
      * @return self
      */
-    public function setMessage(string $message): self
+    public function setMessage(?string $message): self
     {
         $this->message = $message;
 
@@ -204,7 +204,7 @@ class OrgOpentravelOta200305PlusUpType extends AbstractModel
      *
      * @return string
      */
-    public function getOriginCity(): string
+    public function getOriginCity(): ?string
     {
         return $this->originCity;
     }
@@ -216,7 +216,7 @@ class OrgOpentravelOta200305PlusUpType extends AbstractModel
      *
      * @return self
      */
-    public function setOriginCity(string $originCity): self
+    public function setOriginCity(?string $originCity): self
     {
         $this->originCity = $originCity;
 
@@ -228,7 +228,7 @@ class OrgOpentravelOta200305PlusUpType extends AbstractModel
      *
      * @return string
      */
-    public function getViaCity(): string
+    public function getViaCity(): ?string
     {
         return $this->viaCity;
     }
@@ -240,7 +240,7 @@ class OrgOpentravelOta200305PlusUpType extends AbstractModel
      *
      * @return self
      */
-    public function setViaCity(string $viaCity): self
+    public function setViaCity(?string $viaCity): self
     {
         $this->viaCity = $viaCity;
 

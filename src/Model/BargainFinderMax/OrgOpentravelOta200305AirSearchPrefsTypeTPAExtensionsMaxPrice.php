@@ -18,7 +18,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsMaxPrice extends Abst
      *
      * @return float
      */
-    public function getValue(): float
+    public function getValue(): ?float
     {
         return $this->value;
     }
@@ -30,7 +30,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsMaxPrice extends Abst
      *
      * @return self
      */
-    public function setValue(float $value): self
+    public function setValue(?float $value): self
     {
         $this->value = $value;
 

@@ -14,7 +14,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsDiversityParametersTi
     /**
      * @return OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsDiversityParametersTimeOfDayDistributionTimeOfDayRange[]
      */
-    public function getTimeOfDayRange(): array
+    public function getTimeOfDayRange(): ?array
     {
         return $this->timeOfDayRange;
     }
@@ -24,7 +24,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsDiversityParametersTi
      *
      * @return self
      */
-    public function setTimeOfDayRange(array $timeOfDayRange): self
+    public function setTimeOfDayRange(?array $timeOfDayRange): self
     {
         $this->timeOfDayRange = $timeOfDayRange;
 

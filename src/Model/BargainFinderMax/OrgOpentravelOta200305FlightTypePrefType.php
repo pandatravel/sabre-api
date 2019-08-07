@@ -22,7 +22,7 @@ class OrgOpentravelOta200305FlightTypePrefType extends AbstractModel
     /**
      * @return string
      */
-    public function getFlightType(): string
+    public function getFlightType(): ?string
     {
         return $this->flightType;
     }
@@ -32,7 +32,7 @@ class OrgOpentravelOta200305FlightTypePrefType extends AbstractModel
      *
      * @return self
      */
-    public function setFlightType(string $flightType): self
+    public function setFlightType(?string $flightType): self
     {
         $this->flightType = $flightType;
 
@@ -42,7 +42,7 @@ class OrgOpentravelOta200305FlightTypePrefType extends AbstractModel
     /**
      * @return string
      */
-    public function getMaxConnections(): string
+    public function getMaxConnections(): ?string
     {
         return $this->maxConnections;
     }
@@ -52,7 +52,7 @@ class OrgOpentravelOta200305FlightTypePrefType extends AbstractModel
      *
      * @return self
      */
-    public function setMaxConnections(string $maxConnections): self
+    public function setMaxConnections(?string $maxConnections): self
     {
         $this->maxConnections = $maxConnections;
 
@@ -62,7 +62,7 @@ class OrgOpentravelOta200305FlightTypePrefType extends AbstractModel
     /**
      * @return string
      */
-    public function getPreferLevel(): string
+    public function getPreferLevel(): ?string
     {
         return $this->preferLevel;
     }
@@ -72,7 +72,7 @@ class OrgOpentravelOta200305FlightTypePrefType extends AbstractModel
      *
      * @return self
      */
-    public function setPreferLevel(string $preferLevel): self
+    public function setPreferLevel(?string $preferLevel): self
     {
         $this->preferLevel = $preferLevel;
 

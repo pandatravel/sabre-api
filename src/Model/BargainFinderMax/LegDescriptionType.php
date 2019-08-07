@@ -22,7 +22,7 @@ class LegDescriptionType extends AbstractModel
     /**
      * @return string
      */
-    public function getArrivalLocation(): string
+    public function getArrivalLocation(): ?string
     {
         return $this->arrivalLocation;
     }
@@ -32,7 +32,7 @@ class LegDescriptionType extends AbstractModel
      *
      * @return self
      */
-    public function setArrivalLocation(string $arrivalLocation): self
+    public function setArrivalLocation(?string $arrivalLocation): self
     {
         $this->arrivalLocation = $arrivalLocation;
 
@@ -42,7 +42,7 @@ class LegDescriptionType extends AbstractModel
     /**
      * @return string
      */
-    public function getDepartureDate(): string
+    public function getDepartureDate(): ?string
     {
         return $this->departureDate;
     }
@@ -52,7 +52,7 @@ class LegDescriptionType extends AbstractModel
      *
      * @return self
      */
-    public function setDepartureDate(string $departureDate): self
+    public function setDepartureDate(?string $departureDate): self
     {
         $this->departureDate = $departureDate;
 
@@ -62,7 +62,7 @@ class LegDescriptionType extends AbstractModel
     /**
      * @return string
      */
-    public function getDepartureLocation(): string
+    public function getDepartureLocation(): ?string
     {
         return $this->departureLocation;
     }
@@ -72,7 +72,7 @@ class LegDescriptionType extends AbstractModel
      *
      * @return self
      */
-    public function setDepartureLocation(string $departureLocation): self
+    public function setDepartureLocation(?string $departureLocation): self
     {
         $this->departureLocation = $departureLocation;
 

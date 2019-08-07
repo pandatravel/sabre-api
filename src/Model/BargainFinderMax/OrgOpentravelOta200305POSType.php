@@ -14,7 +14,7 @@ class OrgOpentravelOta200305POSType extends AbstractModel
     /**
      * @return OrgOpentravelOta200305SourceType[]
      */
-    public function getSource(): array
+    public function getSource(): ?array
     {
         return $this->source;
     }
@@ -24,7 +24,7 @@ class OrgOpentravelOta200305POSType extends AbstractModel
      *
      * @return self
      */
-    public function setSource(array $source): self
+    public function setSource(?array $source): self
     {
         $this->source = $source;
 

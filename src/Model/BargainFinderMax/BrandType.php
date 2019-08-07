@@ -48,7 +48,7 @@ class BrandType extends AbstractModel
      *
      * @return string
      */
-    public function getBrandName(): string
+    public function getBrandName(): ?string
     {
         return $this->brandName;
     }
@@ -60,7 +60,7 @@ class BrandType extends AbstractModel
      *
      * @return self
      */
-    public function setBrandName(string $brandName): self
+    public function setBrandName(?string $brandName): self
     {
         $this->brandName = $brandName;
 
@@ -72,7 +72,7 @@ class BrandType extends AbstractModel
      *
      * @return string
      */
-    public function getCode(): string
+    public function getCode(): ?string
     {
         return $this->code;
     }
@@ -84,7 +84,7 @@ class BrandType extends AbstractModel
      *
      * @return self
      */
-    public function setCode(string $code): self
+    public function setCode(?string $code): self
     {
         $this->code = $code;
 
@@ -96,7 +96,7 @@ class BrandType extends AbstractModel
      *
      * @return string
      */
-    public function getProgramCode(): string
+    public function getProgramCode(): ?string
     {
         return $this->programCode;
     }
@@ -108,7 +108,7 @@ class BrandType extends AbstractModel
      *
      * @return self
      */
-    public function setProgramCode(string $programCode): self
+    public function setProgramCode(?string $programCode): self
     {
         $this->programCode = $programCode;
 
@@ -120,7 +120,7 @@ class BrandType extends AbstractModel
      *
      * @return string
      */
-    public function getProgramDescription(): string
+    public function getProgramDescription(): ?string
     {
         return $this->programDescription;
     }
@@ -132,7 +132,7 @@ class BrandType extends AbstractModel
      *
      * @return self
      */
-    public function setProgramDescription(string $programDescription): self
+    public function setProgramDescription(?string $programDescription): self
     {
         $this->programDescription = $programDescription;
 
@@ -144,7 +144,7 @@ class BrandType extends AbstractModel
      *
      * @return string
      */
-    public function getProgramId(): string
+    public function getProgramId(): ?string
     {
         return $this->programId;
     }
@@ -156,7 +156,7 @@ class BrandType extends AbstractModel
      *
      * @return self
      */
-    public function setProgramId(string $programId): self
+    public function setProgramId(?string $programId): self
     {
         $this->programId = $programId;
 
@@ -168,7 +168,7 @@ class BrandType extends AbstractModel
      *
      * @return string
      */
-    public function getProgramSystemCode(): string
+    public function getProgramSystemCode(): ?string
     {
         return $this->programSystemCode;
     }
@@ -180,7 +180,7 @@ class BrandType extends AbstractModel
      *
      * @return self
      */
-    public function setProgramSystemCode(string $programSystemCode): self
+    public function setProgramSystemCode(?string $programSystemCode): self
     {
         $this->programSystemCode = $programSystemCode;
 

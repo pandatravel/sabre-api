@@ -114,7 +114,7 @@ class TotalFareType extends AbstractModel
      *
      * @return float
      */
-    public function getAirExtrasAmount(): float
+    public function getAirExtrasAmount(): ?float
     {
         return $this->airExtrasAmount;
     }
@@ -126,7 +126,7 @@ class TotalFareType extends AbstractModel
      *
      * @return self
      */
-    public function setAirExtrasAmount(float $airExtrasAmount): self
+    public function setAirExtrasAmount(?float $airExtrasAmount): self
     {
         $this->airExtrasAmount = $airExtrasAmount;
 
@@ -138,7 +138,7 @@ class TotalFareType extends AbstractModel
      *
      * @return float
      */
-    public function getBaseFareAmount(): float
+    public function getBaseFareAmount(): ?float
     {
         return $this->baseFareAmount;
     }
@@ -150,7 +150,7 @@ class TotalFareType extends AbstractModel
      *
      * @return self
      */
-    public function setBaseFareAmount(float $baseFareAmount): self
+    public function setBaseFareAmount(?float $baseFareAmount): self
     {
         $this->baseFareAmount = $baseFareAmount;
 
@@ -162,7 +162,7 @@ class TotalFareType extends AbstractModel
      *
      * @return string
      */
-    public function getBaseFareCurrency(): string
+    public function getBaseFareCurrency(): ?string
     {
         return $this->baseFareCurrency;
     }
@@ -174,7 +174,7 @@ class TotalFareType extends AbstractModel
      *
      * @return self
      */
-    public function setBaseFareCurrency(string $baseFareCurrency): self
+    public function setBaseFareCurrency(?string $baseFareCurrency): self
     {
         $this->baseFareCurrency = $baseFareCurrency;
 
@@ -186,7 +186,7 @@ class TotalFareType extends AbstractModel
      *
      * @return float
      */
-    public function getBookingFeeAmount(): float
+    public function getBookingFeeAmount(): ?float
     {
         return $this->bookingFeeAmount;
     }
@@ -198,7 +198,7 @@ class TotalFareType extends AbstractModel
      *
      * @return self
      */
-    public function setBookingFeeAmount(float $bookingFeeAmount): self
+    public function setBookingFeeAmount(?float $bookingFeeAmount): self
     {
         $this->bookingFeeAmount = $bookingFeeAmount;
 
@@ -210,7 +210,7 @@ class TotalFareType extends AbstractModel
      *
      * @return float
      */
-    public function getConstructionAmount(): float
+    public function getConstructionAmount(): ?float
     {
         return $this->constructionAmount;
     }
@@ -222,7 +222,7 @@ class TotalFareType extends AbstractModel
      *
      * @return self
      */
-    public function setConstructionAmount(float $constructionAmount): self
+    public function setConstructionAmount(?float $constructionAmount): self
     {
         $this->constructionAmount = $constructionAmount;
 
@@ -234,7 +234,7 @@ class TotalFareType extends AbstractModel
      *
      * @return string
      */
-    public function getConstructionCurrency(): string
+    public function getConstructionCurrency(): ?string
     {
         return $this->constructionCurrency;
     }
@@ -246,7 +246,7 @@ class TotalFareType extends AbstractModel
      *
      * @return self
      */
-    public function setConstructionCurrency(string $constructionCurrency): self
+    public function setConstructionCurrency(?string $constructionCurrency): self
     {
         $this->constructionCurrency = $constructionCurrency;
 
@@ -258,7 +258,7 @@ class TotalFareType extends AbstractModel
      *
      * @return float
      */
-    public function getCreditCardFeeAmount(): float
+    public function getCreditCardFeeAmount(): ?float
     {
         return $this->creditCardFeeAmount;
     }
@@ -270,7 +270,7 @@ class TotalFareType extends AbstractModel
      *
      * @return self
      */
-    public function setCreditCardFeeAmount(float $creditCardFeeAmount): self
+    public function setCreditCardFeeAmount(?float $creditCardFeeAmount): self
     {
         $this->creditCardFeeAmount = $creditCardFeeAmount;
 
@@ -282,7 +282,7 @@ class TotalFareType extends AbstractModel
      *
      * @return string
      */
-    public function getCurrency(): string
+    public function getCurrency(): ?string
     {
         return $this->currency;
     }
@@ -294,7 +294,7 @@ class TotalFareType extends AbstractModel
      *
      * @return self
      */
-    public function setCurrency(string $currency): self
+    public function setCurrency(?string $currency): self
     {
         $this->currency = $currency;
 
@@ -306,7 +306,7 @@ class TotalFareType extends AbstractModel
      *
      * @return float
      */
-    public function getEffectivePriceDeviation(): float
+    public function getEffectivePriceDeviation(): ?float
     {
         return $this->effectivePriceDeviation;
     }
@@ -318,7 +318,7 @@ class TotalFareType extends AbstractModel
      *
      * @return self
      */
-    public function setEffectivePriceDeviation(float $effectivePriceDeviation): self
+    public function setEffectivePriceDeviation(?float $effectivePriceDeviation): self
     {
         $this->effectivePriceDeviation = $effectivePriceDeviation;
 
@@ -330,7 +330,7 @@ class TotalFareType extends AbstractModel
      *
      * @return float
      */
-    public function getEquivalentAmount(): float
+    public function getEquivalentAmount(): ?float
     {
         return $this->equivalentAmount;
     }
@@ -342,7 +342,7 @@ class TotalFareType extends AbstractModel
      *
      * @return self
      */
-    public function setEquivalentAmount(float $equivalentAmount): self
+    public function setEquivalentAmount(?float $equivalentAmount): self
     {
         $this->equivalentAmount = $equivalentAmount;
 
@@ -354,7 +354,7 @@ class TotalFareType extends AbstractModel
      *
      * @return string
      */
-    public function getEquivalentCurrency(): string
+    public function getEquivalentCurrency(): ?string
     {
         return $this->equivalentCurrency;
     }
@@ -366,7 +366,7 @@ class TotalFareType extends AbstractModel
      *
      * @return self
      */
-    public function setEquivalentCurrency(string $equivalentCurrency): self
+    public function setEquivalentCurrency(?string $equivalentCurrency): self
     {
         $this->equivalentCurrency = $equivalentCurrency;
 
@@ -378,7 +378,7 @@ class TotalFareType extends AbstractModel
      *
      * @return float
      */
-    public function getServiceFeeAmount(): float
+    public function getServiceFeeAmount(): ?float
     {
         return $this->serviceFeeAmount;
     }
@@ -390,7 +390,7 @@ class TotalFareType extends AbstractModel
      *
      * @return self
      */
-    public function setServiceFeeAmount(float $serviceFeeAmount): self
+    public function setServiceFeeAmount(?float $serviceFeeAmount): self
     {
         $this->serviceFeeAmount = $serviceFeeAmount;
 
@@ -402,7 +402,7 @@ class TotalFareType extends AbstractModel
      *
      * @return float
      */
-    public function getServiceFeeTax(): float
+    public function getServiceFeeTax(): ?float
     {
         return $this->serviceFeeTax;
     }
@@ -414,7 +414,7 @@ class TotalFareType extends AbstractModel
      *
      * @return self
      */
-    public function setServiceFeeTax(float $serviceFeeTax): self
+    public function setServiceFeeTax(?float $serviceFeeTax): self
     {
         $this->serviceFeeTax = $serviceFeeTax;
 
@@ -426,7 +426,7 @@ class TotalFareType extends AbstractModel
      *
      * @return float
      */
-    public function getTotalPrice(): float
+    public function getTotalPrice(): ?float
     {
         return $this->totalPrice;
     }
@@ -438,7 +438,7 @@ class TotalFareType extends AbstractModel
      *
      * @return self
      */
-    public function setTotalPrice(float $totalPrice): self
+    public function setTotalPrice(?float $totalPrice): self
     {
         $this->totalPrice = $totalPrice;
 
@@ -450,7 +450,7 @@ class TotalFareType extends AbstractModel
      *
      * @return float
      */
-    public function getTotalPriceWithAirExtras(): float
+    public function getTotalPriceWithAirExtras(): ?float
     {
         return $this->totalPriceWithAirExtras;
     }
@@ -462,7 +462,7 @@ class TotalFareType extends AbstractModel
      *
      * @return self
      */
-    public function setTotalPriceWithAirExtras(float $totalPriceWithAirExtras): self
+    public function setTotalPriceWithAirExtras(?float $totalPriceWithAirExtras): self
     {
         $this->totalPriceWithAirExtras = $totalPriceWithAirExtras;
 
@@ -474,7 +474,7 @@ class TotalFareType extends AbstractModel
      *
      * @return float
      */
-    public function getTotalTaxAmount(): float
+    public function getTotalTaxAmount(): ?float
     {
         return $this->totalTaxAmount;
     }
@@ -486,7 +486,7 @@ class TotalFareType extends AbstractModel
      *
      * @return self
      */
-    public function setTotalTaxAmount(float $totalTaxAmount): self
+    public function setTotalTaxAmount(?float $totalTaxAmount): self
     {
         $this->totalTaxAmount = $totalTaxAmount;
 
@@ -498,7 +498,7 @@ class TotalFareType extends AbstractModel
      *
      * @return float
      */
-    public function getTotalTtypeObFee(): float
+    public function getTotalTtypeObFee(): ?float
     {
         return $this->totalTtypeObFee;
     }
@@ -510,7 +510,7 @@ class TotalFareType extends AbstractModel
      *
      * @return self
      */
-    public function setTotalTtypeObFee(float $totalTtypeObFee): self
+    public function setTotalTtypeObFee(?float $totalTtypeObFee): self
     {
         $this->totalTtypeObFee = $totalTtypeObFee;
 

@@ -14,7 +14,7 @@ class OrgOpentravelOta200305FlexibleFaresType extends AbstractModel
     /**
      * @return OrgOpentravelOta200305FlexibleFaresTypeFareParameters[]
      */
-    public function getFareParameters(): array
+    public function getFareParameters(): ?array
     {
         return $this->fareParameters;
     }
@@ -24,7 +24,7 @@ class OrgOpentravelOta200305FlexibleFaresType extends AbstractModel
      *
      * @return self
      */
-    public function setFareParameters(array $fareParameters): self
+    public function setFareParameters(?array $fareParameters): self
     {
         $this->fareParameters = $fareParameters;
 

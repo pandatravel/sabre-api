@@ -30,7 +30,7 @@ class BaggageInformationType extends AbstractModel
     /**
      * @return string
      */
-    public function getAirlineCode(): string
+    public function getAirlineCode(): ?string
     {
         return $this->airlineCode;
     }
@@ -40,7 +40,7 @@ class BaggageInformationType extends AbstractModel
      *
      * @return self
      */
-    public function setAirlineCode(string $airlineCode): self
+    public function setAirlineCode(?string $airlineCode): self
     {
         $this->airlineCode = $airlineCode;
 
@@ -50,7 +50,7 @@ class BaggageInformationType extends AbstractModel
     /**
      * @return Allowance
      */
-    public function getAllowance(): Allowance
+    public function getAllowance(): ?Allowance
     {
         return $this->allowance;
     }
@@ -60,7 +60,7 @@ class BaggageInformationType extends AbstractModel
      *
      * @return self
      */
-    public function setAllowance(Allowance $allowance): self
+    public function setAllowance(?Allowance $allowance): self
     {
         $this->allowance = $allowance;
 
@@ -70,7 +70,7 @@ class BaggageInformationType extends AbstractModel
     /**
      * @return Charge
      */
-    public function getCharge(): Charge
+    public function getCharge(): ?Charge
     {
         return $this->charge;
     }
@@ -80,7 +80,7 @@ class BaggageInformationType extends AbstractModel
      *
      * @return self
      */
-    public function setCharge(Charge $charge): self
+    public function setCharge(?Charge $charge): self
     {
         $this->charge = $charge;
 
@@ -90,7 +90,7 @@ class BaggageInformationType extends AbstractModel
     /**
      * @return string
      */
-    public function getProvisionType(): string
+    public function getProvisionType(): ?string
     {
         return $this->provisionType;
     }
@@ -100,7 +100,7 @@ class BaggageInformationType extends AbstractModel
      *
      * @return self
      */
-    public function setProvisionType(string $provisionType): self
+    public function setProvisionType(?string $provisionType): self
     {
         $this->provisionType = $provisionType;
 
@@ -110,7 +110,7 @@ class BaggageInformationType extends AbstractModel
     /**
      * @return Segment[]
      */
-    public function getSegments(): array
+    public function getSegments(): ?array
     {
         return $this->segments;
     }
@@ -120,7 +120,7 @@ class BaggageInformationType extends AbstractModel
      *
      * @return self
      */
-    public function setSegments(array $segments): self
+    public function setSegments(?array $segments): self
     {
         $this->segments = $segments;
 

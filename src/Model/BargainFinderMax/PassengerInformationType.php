@@ -90,7 +90,7 @@ class PassengerInformationType extends AbstractModel
     /**
      * @return BaggageInformationType[]
      */
-    public function getBaggageInformation(): array
+    public function getBaggageInformation(): ?array
     {
         return $this->baggageInformation;
     }
@@ -100,7 +100,7 @@ class PassengerInformationType extends AbstractModel
      *
      * @return self
      */
-    public function setBaggageInformation(array $baggageInformation): self
+    public function setBaggageInformation(?array $baggageInformation): self
     {
         $this->baggageInformation = $baggageInformation;
 
@@ -110,7 +110,7 @@ class PassengerInformationType extends AbstractModel
     /**
      * @return CurrencyConversionType
      */
-    public function getCurrencyConversion(): CurrencyConversionType
+    public function getCurrencyConversion(): ?CurrencyConversionType
     {
         return $this->currencyConversion;
     }
@@ -120,7 +120,7 @@ class PassengerInformationType extends AbstractModel
      *
      * @return self
      */
-    public function setCurrencyConversion(CurrencyConversionType $currencyConversion): self
+    public function setCurrencyConversion(?CurrencyConversionType $currencyConversion): self
     {
         $this->currencyConversion = $currencyConversion;
 
@@ -130,7 +130,7 @@ class PassengerInformationType extends AbstractModel
     /**
      * @return bool
      */
-    public function getDivide(): bool
+    public function getDivide(): ?bool
     {
         return $this->divide;
     }
@@ -140,7 +140,7 @@ class PassengerInformationType extends AbstractModel
      *
      * @return self
      */
-    public function setDivide(bool $divide): self
+    public function setDivide(?bool $divide): self
     {
         $this->divide = $divide;
 
@@ -150,7 +150,7 @@ class PassengerInformationType extends AbstractModel
     /**
      * @return FareComponentIDType[]
      */
-    public function getFareComponents(): array
+    public function getFareComponents(): ?array
     {
         return $this->fareComponents;
     }
@@ -160,7 +160,7 @@ class PassengerInformationType extends AbstractModel
      *
      * @return self
      */
-    public function setFareComponents(array $fareComponents): self
+    public function setFareComponents(?array $fareComponents): self
     {
         $this->fareComponents = $fareComponents;
 
@@ -170,7 +170,7 @@ class PassengerInformationType extends AbstractModel
     /**
      * @return FareMessageType[]
      */
-    public function getFareMessages(): array
+    public function getFareMessages(): ?array
     {
         return $this->fareMessages;
     }
@@ -180,7 +180,7 @@ class PassengerInformationType extends AbstractModel
      *
      * @return self
      */
-    public function setFareMessages(array $fareMessages): self
+    public function setFareMessages(?array $fareMessages): self
     {
         $this->fareMessages = $fareMessages;
 
@@ -190,7 +190,7 @@ class PassengerInformationType extends AbstractModel
     /**
      * @return PricingLegType[]
      */
-    public function getLegs(): array
+    public function getLegs(): ?array
     {
         return $this->legs;
     }
@@ -200,7 +200,7 @@ class PassengerInformationType extends AbstractModel
      *
      * @return self
      */
-    public function setLegs(array $legs): self
+    public function setLegs(?array $legs): self
     {
         $this->legs = $legs;
 
@@ -210,7 +210,7 @@ class PassengerInformationType extends AbstractModel
     /**
      * @return bool
      */
-    public function getNonRefundable(): bool
+    public function getNonRefundable(): ?bool
     {
         return $this->nonRefundable;
     }
@@ -220,7 +220,7 @@ class PassengerInformationType extends AbstractModel
      *
      * @return self
      */
-    public function setNonRefundable(bool $nonRefundable): self
+    public function setNonRefundable(?bool $nonRefundable): self
     {
         $this->nonRefundable = $nonRefundable;
 
@@ -230,7 +230,7 @@ class PassengerInformationType extends AbstractModel
     /**
      * @return OBFeeIDType[]
      */
-    public function getObFees(): array
+    public function getObFees(): ?array
     {
         return $this->obFees;
     }
@@ -240,7 +240,7 @@ class PassengerInformationType extends AbstractModel
      *
      * @return self
      */
-    public function setObFees(array $obFees): self
+    public function setObFees(?array $obFees): self
     {
         $this->obFees = $obFees;
 
@@ -250,7 +250,7 @@ class PassengerInformationType extends AbstractModel
     /**
      * @return int
      */
-    public function getPassengerNumber(): int
+    public function getPassengerNumber(): ?int
     {
         return $this->passengerNumber;
     }
@@ -260,7 +260,7 @@ class PassengerInformationType extends AbstractModel
      *
      * @return self
      */
-    public function setPassengerNumber(int $passengerNumber): self
+    public function setPassengerNumber(?int $passengerNumber): self
     {
         $this->passengerNumber = $passengerNumber;
 
@@ -270,7 +270,7 @@ class PassengerInformationType extends AbstractModel
     /**
      * @return PassengerTotalFareType
      */
-    public function getPassengerTotalFare(): PassengerTotalFareType
+    public function getPassengerTotalFare(): ?PassengerTotalFareType
     {
         return $this->passengerTotalFare;
     }
@@ -280,7 +280,7 @@ class PassengerInformationType extends AbstractModel
      *
      * @return self
      */
-    public function setPassengerTotalFare(PassengerTotalFareType $passengerTotalFare): self
+    public function setPassengerTotalFare(?PassengerTotalFareType $passengerTotalFare): self
     {
         $this->passengerTotalFare = $passengerTotalFare;
 
@@ -290,7 +290,7 @@ class PassengerInformationType extends AbstractModel
     /**
      * @return string
      */
-    public function getPassengerType(): string
+    public function getPassengerType(): ?string
     {
         return $this->passengerType;
     }
@@ -300,7 +300,7 @@ class PassengerInformationType extends AbstractModel
      *
      * @return self
      */
-    public function setPassengerType(string $passengerType): self
+    public function setPassengerType(?string $passengerType): self
     {
         $this->passengerType = $passengerType;
 
@@ -310,7 +310,7 @@ class PassengerInformationType extends AbstractModel
     /**
      * @return PenaltiesType
      */
-    public function getPenaltiesInfo(): PenaltiesType
+    public function getPenaltiesInfo(): ?PenaltiesType
     {
         return $this->penaltiesInfo;
     }
@@ -320,7 +320,7 @@ class PassengerInformationType extends AbstractModel
      *
      * @return self
      */
-    public function setPenaltiesInfo(PenaltiesType $penaltiesInfo): self
+    public function setPenaltiesInfo(?PenaltiesType $penaltiesInfo): self
     {
         $this->penaltiesInfo = $penaltiesInfo;
 
@@ -330,7 +330,7 @@ class PassengerInformationType extends AbstractModel
     /**
      * @return PlusUpInformationType[]
      */
-    public function getPlusUps(): array
+    public function getPlusUps(): ?array
     {
         return $this->plusUps;
     }
@@ -340,7 +340,7 @@ class PassengerInformationType extends AbstractModel
      *
      * @return self
      */
-    public function setPlusUps(array $plusUps): self
+    public function setPlusUps(?array $plusUps): self
     {
         $this->plusUps = $plusUps;
 
@@ -350,7 +350,7 @@ class PassengerInformationType extends AbstractModel
     /**
      * @return ReissueType
      */
-    public function getReissue(): ReissueType
+    public function getReissue(): ?ReissueType
     {
         return $this->reissue;
     }
@@ -360,7 +360,7 @@ class PassengerInformationType extends AbstractModel
      *
      * @return self
      */
-    public function setReissue(ReissueType $reissue): self
+    public function setReissue(?ReissueType $reissue): self
     {
         $this->reissue = $reissue;
 
@@ -370,7 +370,7 @@ class PassengerInformationType extends AbstractModel
     /**
      * @return SellingFareDataType[]
      */
-    public function getSellingFareData(): array
+    public function getSellingFareData(): ?array
     {
         return $this->sellingFareData;
     }
@@ -380,7 +380,7 @@ class PassengerInformationType extends AbstractModel
      *
      * @return self
      */
-    public function setSellingFareData(array $sellingFareData): self
+    public function setSellingFareData(?array $sellingFareData): self
     {
         $this->sellingFareData = $sellingFareData;
 
@@ -390,7 +390,7 @@ class PassengerInformationType extends AbstractModel
     /**
      * @return int
      */
-    public function getStopover(): int
+    public function getStopover(): ?int
     {
         return $this->stopover;
     }
@@ -400,7 +400,7 @@ class PassengerInformationType extends AbstractModel
      *
      * @return self
      */
-    public function setStopover(int $stopover): self
+    public function setStopover(?int $stopover): self
     {
         $this->stopover = $stopover;
 
@@ -410,7 +410,7 @@ class PassengerInformationType extends AbstractModel
     /**
      * @return TaxSummaryIDType[]
      */
-    public function getTaxSummaries(): array
+    public function getTaxSummaries(): ?array
     {
         return $this->taxSummaries;
     }
@@ -420,7 +420,7 @@ class PassengerInformationType extends AbstractModel
      *
      * @return self
      */
-    public function setTaxSummaries(array $taxSummaries): self
+    public function setTaxSummaries(?array $taxSummaries): self
     {
         $this->taxSummaries = $taxSummaries;
 
@@ -430,7 +430,7 @@ class PassengerInformationType extends AbstractModel
     /**
      * @return TaxIDType[]
      */
-    public function getTaxes(): array
+    public function getTaxes(): ?array
     {
         return $this->taxes;
     }
@@ -440,7 +440,7 @@ class PassengerInformationType extends AbstractModel
      *
      * @return self
      */
-    public function setTaxes(array $taxes): self
+    public function setTaxes(?array $taxes): self
     {
         $this->taxes = $taxes;
 
@@ -450,7 +450,7 @@ class PassengerInformationType extends AbstractModel
     /**
      * @return int
      */
-    public function getTotal(): int
+    public function getTotal(): ?int
     {
         return $this->total;
     }
@@ -460,7 +460,7 @@ class PassengerInformationType extends AbstractModel
      *
      * @return self
      */
-    public function setTotal(int $total): self
+    public function setTotal(?int $total): self
     {
         $this->total = $total;
 
@@ -470,7 +470,7 @@ class PassengerInformationType extends AbstractModel
     /**
      * @return ValidatingCarrierCommissionInfoType[]
      */
-    public function getValidatingCarrierCommissionInfo(): array
+    public function getValidatingCarrierCommissionInfo(): ?array
     {
         return $this->validatingCarrierCommissionInfo;
     }
@@ -480,7 +480,7 @@ class PassengerInformationType extends AbstractModel
      *
      * @return self
      */
-    public function setValidatingCarrierCommissionInfo(array $validatingCarrierCommissionInfo): self
+    public function setValidatingCarrierCommissionInfo(?array $validatingCarrierCommissionInfo): self
     {
         $this->validatingCarrierCommissionInfo = $validatingCarrierCommissionInfo;
 

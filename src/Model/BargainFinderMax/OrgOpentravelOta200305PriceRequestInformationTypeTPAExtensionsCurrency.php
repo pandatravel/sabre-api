@@ -24,7 +24,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsCurrency ext
      *
      * @return string
      */
-    public function getDual(): string
+    public function getDual(): ?string
     {
         return $this->dual;
     }
@@ -36,7 +36,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsCurrency ext
      *
      * @return self
      */
-    public function setDual(string $dual): self
+    public function setDual(?string $dual): self
     {
         $this->dual = $dual;
 
@@ -48,7 +48,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsCurrency ext
      *
      * @return bool
      */
-    public function getMOverride(): bool
+    public function getMOverride(): ?bool
     {
         return $this->mOverride;
     }
@@ -60,7 +60,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsCurrency ext
      *
      * @return self
      */
-    public function setMOverride(bool $mOverride): self
+    public function setMOverride(?bool $mOverride): self
     {
         $this->mOverride = $mOverride;
 

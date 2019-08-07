@@ -26,7 +26,7 @@ class OrgOpentravelOta200305RoutingLegType extends AbstractModel
     /**
      * @return string[]
      */
-    public function getConnectPoint(): array
+    public function getConnectPoint(): ?array
     {
         return $this->connectPoint;
     }
@@ -36,7 +36,7 @@ class OrgOpentravelOta200305RoutingLegType extends AbstractModel
      *
      * @return self
      */
-    public function setConnectPoint(array $connectPoint): self
+    public function setConnectPoint(?array $connectPoint): self
     {
         $this->connectPoint = $connectPoint;
 
@@ -46,7 +46,7 @@ class OrgOpentravelOta200305RoutingLegType extends AbstractModel
     /**
      * @return string[]
      */
-    public function getInboundCarrier(): array
+    public function getInboundCarrier(): ?array
     {
         return $this->inboundCarrier;
     }
@@ -56,7 +56,7 @@ class OrgOpentravelOta200305RoutingLegType extends AbstractModel
      *
      * @return self
      */
-    public function setInboundCarrier(array $inboundCarrier): self
+    public function setInboundCarrier(?array $inboundCarrier): self
     {
         $this->inboundCarrier = $inboundCarrier;
 
@@ -66,7 +66,7 @@ class OrgOpentravelOta200305RoutingLegType extends AbstractModel
     /**
      * @return string[]
      */
-    public function getInboundOutboundCarrier(): array
+    public function getInboundOutboundCarrier(): ?array
     {
         return $this->inboundOutboundCarrier;
     }
@@ -76,7 +76,7 @@ class OrgOpentravelOta200305RoutingLegType extends AbstractModel
      *
      * @return self
      */
-    public function setInboundOutboundCarrier(array $inboundOutboundCarrier): self
+    public function setInboundOutboundCarrier(?array $inboundOutboundCarrier): self
     {
         $this->inboundOutboundCarrier = $inboundOutboundCarrier;
 
@@ -86,7 +86,7 @@ class OrgOpentravelOta200305RoutingLegType extends AbstractModel
     /**
      * @return string[]
      */
-    public function getOutboundCarrier(): array
+    public function getOutboundCarrier(): ?array
     {
         return $this->outboundCarrier;
     }
@@ -96,7 +96,7 @@ class OrgOpentravelOta200305RoutingLegType extends AbstractModel
      *
      * @return self
      */
-    public function setOutboundCarrier(array $outboundCarrier): self
+    public function setOutboundCarrier(?array $outboundCarrier): self
     {
         $this->outboundCarrier = $outboundCarrier;
 

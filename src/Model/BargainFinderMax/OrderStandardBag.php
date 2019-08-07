@@ -14,7 +14,7 @@ class OrderStandardBag extends AbstractModel
     /**
      * @return PassengerBags[]
      */
-    public function getPassengerBags(): array
+    public function getPassengerBags(): ?array
     {
         return $this->passengerBags;
     }
@@ -24,7 +24,7 @@ class OrderStandardBag extends AbstractModel
      *
      * @return self
      */
-    public function setPassengerBags(array $passengerBags): self
+    public function setPassengerBags(?array $passengerBags): self
     {
         $this->passengerBags = $passengerBags;
 

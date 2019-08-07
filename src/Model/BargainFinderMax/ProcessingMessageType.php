@@ -18,7 +18,7 @@ class ProcessingMessageType extends AbstractModel
     /**
      * @return string
      */
-    public function getPricingSource(): string
+    public function getPricingSource(): ?string
     {
         return $this->pricingSource;
     }
@@ -28,7 +28,7 @@ class ProcessingMessageType extends AbstractModel
      *
      * @return self
      */
-    public function setPricingSource(string $pricingSource): self
+    public function setPricingSource(?string $pricingSource): self
     {
         $this->pricingSource = $pricingSource;
 
@@ -38,7 +38,7 @@ class ProcessingMessageType extends AbstractModel
     /**
      * @return string
      */
-    public function getText(): string
+    public function getText(): ?string
     {
         return $this->text;
     }
@@ -48,7 +48,7 @@ class ProcessingMessageType extends AbstractModel
      *
      * @return self
      */
-    public function setText(string $text): self
+    public function setText(?string $text): self
     {
         $this->text = $text;
 

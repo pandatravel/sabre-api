@@ -14,7 +14,7 @@ class OrgOpentravelOta200305PassengerTypeQuantityTypeTPAExtensionsAge extends Ab
     /**
      * @return float
      */
-    public function getYears(): float
+    public function getYears(): ?float
     {
         return $this->years;
     }
@@ -24,7 +24,7 @@ class OrgOpentravelOta200305PassengerTypeQuantityTypeTPAExtensionsAge extends Ab
      *
      * @return self
      */
-    public function setYears(float $years): self
+    public function setYears(?float $years): self
     {
         $this->years = $years;
 

@@ -14,7 +14,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeNumOneWayOpt
     /**
      * @return int
      */
-    public function getNumber(): int
+    public function getNumber(): ?int
     {
         return $this->number;
     }
@@ -24,7 +24,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeNumOneWayOpt
      *
      * @return self
      */
-    public function setNumber(int $number): self
+    public function setNumber(?int $number): self
     {
         $this->number = $number;
 

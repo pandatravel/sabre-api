@@ -14,7 +14,7 @@ class OrgOpentravelOta200305TravelDateTimeTypeDepartureDatesLengthOfStay extends
     /**
      * @return int
      */
-    public function getDays(): int
+    public function getDays(): ?int
     {
         return $this->days;
     }
@@ -24,7 +24,7 @@ class OrgOpentravelOta200305TravelDateTimeTypeDepartureDatesLengthOfStay extends
      *
      * @return self
      */
-    public function setDays(int $days): self
+    public function setDays(?int $days): self
     {
         $this->days = $days;
 

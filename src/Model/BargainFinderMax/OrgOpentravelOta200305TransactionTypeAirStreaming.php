@@ -24,7 +24,7 @@ class OrgOpentravelOta200305TransactionTypeAirStreaming extends AbstractModel
      *
      * @return int
      */
-    public function getMaxItinsPerChunk(): int
+    public function getMaxItinsPerChunk(): ?int
     {
         return $this->maxItinsPerChunk;
     }
@@ -36,7 +36,7 @@ class OrgOpentravelOta200305TransactionTypeAirStreaming extends AbstractModel
      *
      * @return self
      */
-    public function setMaxItinsPerChunk(int $maxItinsPerChunk): self
+    public function setMaxItinsPerChunk(?int $maxItinsPerChunk): self
     {
         $this->maxItinsPerChunk = $maxItinsPerChunk;
 
@@ -48,7 +48,7 @@ class OrgOpentravelOta200305TransactionTypeAirStreaming extends AbstractModel
      *
      * @return string
      */
-    public function getMethod(): string
+    public function getMethod(): ?string
     {
         return $this->method;
     }
@@ -60,7 +60,7 @@ class OrgOpentravelOta200305TransactionTypeAirStreaming extends AbstractModel
      *
      * @return self
      */
-    public function setMethod(string $method): self
+    public function setMethod(?string $method): self
     {
         $this->method = $method;
 

@@ -46,7 +46,7 @@ class OrgOpentravelOta200305VoluntaryChangesTypePenalty extends AbstractModel
      *
      * @return float
      */
-    public function getAmount(): float
+    public function getAmount(): ?float
     {
         return $this->amount;
     }
@@ -58,7 +58,7 @@ class OrgOpentravelOta200305VoluntaryChangesTypePenalty extends AbstractModel
      *
      * @return self
      */
-    public function setAmount(float $amount): self
+    public function setAmount(?float $amount): self
     {
         $this->amount = $amount;
 
@@ -70,7 +70,7 @@ class OrgOpentravelOta200305VoluntaryChangesTypePenalty extends AbstractModel
      *
      * @return string
      */
-    public function getCurrencyCode(): string
+    public function getCurrencyCode(): ?string
     {
         return $this->currencyCode;
     }
@@ -82,7 +82,7 @@ class OrgOpentravelOta200305VoluntaryChangesTypePenalty extends AbstractModel
      *
      * @return self
      */
-    public function setCurrencyCode(string $currencyCode): self
+    public function setCurrencyCode(?string $currencyCode): self
     {
         $this->currencyCode = $currencyCode;
 
@@ -94,7 +94,7 @@ class OrgOpentravelOta200305VoluntaryChangesTypePenalty extends AbstractModel
      *
      * @return int
      */
-    public function getDecimalPlaces(): int
+    public function getDecimalPlaces(): ?int
     {
         return $this->decimalPlaces;
     }
@@ -106,7 +106,7 @@ class OrgOpentravelOta200305VoluntaryChangesTypePenalty extends AbstractModel
      *
      * @return self
      */
-    public function setDecimalPlaces(int $decimalPlaces): self
+    public function setDecimalPlaces(?int $decimalPlaces): self
     {
         $this->decimalPlaces = $decimalPlaces;
 
@@ -118,7 +118,7 @@ class OrgOpentravelOta200305VoluntaryChangesTypePenalty extends AbstractModel
      *
      * @return string
      */
-    public function getDepartureStatus(): string
+    public function getDepartureStatus(): ?string
     {
         return $this->departureStatus;
     }
@@ -130,7 +130,7 @@ class OrgOpentravelOta200305VoluntaryChangesTypePenalty extends AbstractModel
      *
      * @return self
      */
-    public function setDepartureStatus(string $departureStatus): self
+    public function setDepartureStatus(?string $departureStatus): self
     {
         $this->departureStatus = $departureStatus;
 
@@ -140,7 +140,7 @@ class OrgOpentravelOta200305VoluntaryChangesTypePenalty extends AbstractModel
     /**
      * @return string
      */
-    public function getPenaltyType(): string
+    public function getPenaltyType(): ?string
     {
         return $this->penaltyType;
     }
@@ -150,7 +150,7 @@ class OrgOpentravelOta200305VoluntaryChangesTypePenalty extends AbstractModel
      *
      * @return self
      */
-    public function setPenaltyType(string $penaltyType): self
+    public function setPenaltyType(?string $penaltyType): self
     {
         $this->penaltyType = $penaltyType;
 
@@ -162,7 +162,7 @@ class OrgOpentravelOta200305VoluntaryChangesTypePenalty extends AbstractModel
      *
      * @return float
      */
-    public function getPercent(): float
+    public function getPercent(): ?float
     {
         return $this->percent;
     }
@@ -174,7 +174,7 @@ class OrgOpentravelOta200305VoluntaryChangesTypePenalty extends AbstractModel
      *
      * @return self
      */
-    public function setPercent(float $percent): self
+    public function setPercent(?float $percent): self
     {
         $this->percent = $percent;
 

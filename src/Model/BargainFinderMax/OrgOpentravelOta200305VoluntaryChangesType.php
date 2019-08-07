@@ -24,7 +24,7 @@ class OrgOpentravelOta200305VoluntaryChangesType extends AbstractModel
      *
      * @return OrgOpentravelOta200305VoluntaryChangesTypePenalty
      */
-    public function getPenalty(): OrgOpentravelOta200305VoluntaryChangesTypePenalty
+    public function getPenalty(): ?OrgOpentravelOta200305VoluntaryChangesTypePenalty
     {
         return $this->penalty;
     }
@@ -36,7 +36,7 @@ class OrgOpentravelOta200305VoluntaryChangesType extends AbstractModel
      *
      * @return self
      */
-    public function setPenalty(OrgOpentravelOta200305VoluntaryChangesTypePenalty $penalty): self
+    public function setPenalty(?OrgOpentravelOta200305VoluntaryChangesTypePenalty $penalty): self
     {
         $this->penalty = $penalty;
 
@@ -48,7 +48,7 @@ class OrgOpentravelOta200305VoluntaryChangesType extends AbstractModel
      *
      * @return bool
      */
-    public function getVolChangeInd(): bool
+    public function getVolChangeInd(): ?bool
     {
         return $this->volChangeInd;
     }
@@ -60,7 +60,7 @@ class OrgOpentravelOta200305VoluntaryChangesType extends AbstractModel
      *
      * @return self
      */
-    public function setVolChangeInd(bool $volChangeInd): self
+    public function setVolChangeInd(?bool $volChangeInd): self
     {
         $this->volChangeInd = $volChangeInd;
 

@@ -20,7 +20,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeSisterOrigin
     /**
      * @return bool
      */
-    public function getAllowBorderCross(): bool
+    public function getAllowBorderCross(): ?bool
     {
         return $this->allowBorderCross;
     }
@@ -30,7 +30,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeSisterOrigin
      *
      * @return self
      */
-    public function setAllowBorderCross(bool $allowBorderCross): self
+    public function setAllowBorderCross(?bool $allowBorderCross): self
     {
         $this->allowBorderCross = $allowBorderCross;
 
@@ -42,7 +42,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeSisterOrigin
      *
      * @return int
      */
-    public function getNumber(): int
+    public function getNumber(): ?int
     {
         return $this->number;
     }
@@ -54,7 +54,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeSisterOrigin
      *
      * @return self
      */
-    public function setNumber(int $number): self
+    public function setNumber(?int $number): self
     {
         $this->number = $number;
 

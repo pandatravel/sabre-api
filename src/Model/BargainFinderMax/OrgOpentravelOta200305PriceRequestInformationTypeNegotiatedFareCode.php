@@ -56,7 +56,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeNegotiatedFareCode extend
      *
      * @return string
      */
-    public function getCode(): string
+    public function getCode(): ?string
     {
         return $this->code;
     }
@@ -68,7 +68,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeNegotiatedFareCode extend
      *
      * @return self
      */
-    public function setCode(string $code): self
+    public function setCode(?string $code): self
     {
         $this->code = $code;
 
@@ -80,7 +80,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeNegotiatedFareCode extend
      *
      * @return string
      */
-    public function getCodeContext(): string
+    public function getCodeContext(): ?string
     {
         return $this->codeContext;
     }
@@ -92,7 +92,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeNegotiatedFareCode extend
      *
      * @return self
      */
-    public function setCodeContext(string $codeContext): self
+    public function setCodeContext(?string $codeContext): self
     {
         $this->codeContext = $codeContext;
 
@@ -104,7 +104,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeNegotiatedFareCode extend
      *
      * @return int
      */
-    public function getQuantity(): int
+    public function getQuantity(): ?int
     {
         return $this->quantity;
     }
@@ -116,7 +116,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeNegotiatedFareCode extend
      *
      * @return self
      */
-    public function setQuantity(int $quantity): self
+    public function setQuantity(?int $quantity): self
     {
         $this->quantity = $quantity;
 
@@ -128,7 +128,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeNegotiatedFareCode extend
      *
      * @return string
      */
-    public function getSecondaryCode(): string
+    public function getSecondaryCode(): ?string
     {
         return $this->secondaryCode;
     }
@@ -140,7 +140,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeNegotiatedFareCode extend
      *
      * @return self
      */
-    public function setSecondaryCode(string $secondaryCode): self
+    public function setSecondaryCode(?string $secondaryCode): self
     {
         $this->secondaryCode = $secondaryCode;
 
@@ -150,7 +150,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeNegotiatedFareCode extend
     /**
      * @return OrgOpentravelOta200305CompanyNameType[]
      */
-    public function getSupplier(): array
+    public function getSupplier(): ?array
     {
         return $this->supplier;
     }
@@ -160,7 +160,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeNegotiatedFareCode extend
      *
      * @return self
      */
-    public function setSupplier(array $supplier): self
+    public function setSupplier(?array $supplier): self
     {
         $this->supplier = $supplier;
 
@@ -172,7 +172,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeNegotiatedFareCode extend
      *
      * @return string
      */
-    public function getSupplierCode(): string
+    public function getSupplierCode(): ?string
     {
         return $this->supplierCode;
     }
@@ -184,7 +184,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeNegotiatedFareCode extend
      *
      * @return self
      */
-    public function setSupplierCode(string $supplierCode): self
+    public function setSupplierCode(?string $supplierCode): self
     {
         $this->supplierCode = $supplierCode;
 
@@ -194,7 +194,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeNegotiatedFareCode extend
     /**
      * @return string[]
      */
-    public function getTPAExtensions(): array
+    public function getTPAExtensions(): ?array
     {
         return $this->tPAExtensions;
     }
@@ -204,7 +204,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeNegotiatedFareCode extend
      *
      * @return self
      */
-    public function setTPAExtensions(array $tPAExtensions): self
+    public function setTPAExtensions(?array $tPAExtensions): self
     {
         $this->tPAExtensions = $tPAExtensions;
 
@@ -216,7 +216,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeNegotiatedFareCode extend
      *
      * @return string
      */
-    public function getURI(): string
+    public function getURI(): ?string
     {
         return $this->uRI;
     }
@@ -228,7 +228,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeNegotiatedFareCode extend
      *
      * @return self
      */
-    public function setURI(string $uRI): self
+    public function setURI(?string $uRI): self
     {
         $this->uRI = $uRI;
 

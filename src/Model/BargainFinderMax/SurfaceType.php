@@ -42,7 +42,7 @@ class SurfaceType extends AbstractModel
      *
      * @return bool
      */
-    public function getExtraMileageAllowance(): bool
+    public function getExtraMileageAllowance(): ?bool
     {
         return $this->extraMileageAllowance;
     }
@@ -54,7 +54,7 @@ class SurfaceType extends AbstractModel
      *
      * @return self
      */
-    public function setExtraMileageAllowance(bool $extraMileageAllowance): self
+    public function setExtraMileageAllowance(?bool $extraMileageAllowance): self
     {
         $this->extraMileageAllowance = $extraMileageAllowance;
 
@@ -66,7 +66,7 @@ class SurfaceType extends AbstractModel
      *
      * @return bool
      */
-    public function getStopover(): bool
+    public function getStopover(): ?bool
     {
         return $this->stopover;
     }
@@ -78,7 +78,7 @@ class SurfaceType extends AbstractModel
      *
      * @return self
      */
-    public function setStopover(bool $stopover): self
+    public function setStopover(?bool $stopover): self
     {
         $this->stopover = $stopover;
 
@@ -90,7 +90,7 @@ class SurfaceType extends AbstractModel
      *
      * @return float
      */
-    public function getStopoverCharge(): float
+    public function getStopoverCharge(): ?float
     {
         return $this->stopoverCharge;
     }
@@ -102,7 +102,7 @@ class SurfaceType extends AbstractModel
      *
      * @return self
      */
-    public function setStopoverCharge(float $stopoverCharge): self
+    public function setStopoverCharge(?float $stopoverCharge): self
     {
         $this->stopoverCharge = $stopoverCharge;
 
@@ -114,7 +114,7 @@ class SurfaceType extends AbstractModel
      *
      * @return string
      */
-    public function getStopoverChargeCurrency(): string
+    public function getStopoverChargeCurrency(): ?string
     {
         return $this->stopoverChargeCurrency;
     }
@@ -126,7 +126,7 @@ class SurfaceType extends AbstractModel
      *
      * @return self
      */
-    public function setStopoverChargeCurrency(string $stopoverChargeCurrency): self
+    public function setStopoverChargeCurrency(?string $stopoverChargeCurrency): self
     {
         $this->stopoverChargeCurrency = $stopoverChargeCurrency;
 
@@ -138,7 +138,7 @@ class SurfaceType extends AbstractModel
      *
      * @return bool
      */
-    public function getUnchargeable(): bool
+    public function getUnchargeable(): ?bool
     {
         return $this->unchargeable;
     }
@@ -150,7 +150,7 @@ class SurfaceType extends AbstractModel
      *
      * @return self
      */
-    public function setUnchargeable(bool $unchargeable): self
+    public function setUnchargeable(?bool $unchargeable): self
     {
         $this->unchargeable = $unchargeable;
 

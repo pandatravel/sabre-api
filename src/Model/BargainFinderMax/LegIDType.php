@@ -18,7 +18,7 @@ class LegIDType extends AbstractModel
     /**
      * @return string
      */
-    public function getDepartureDate(): string
+    public function getDepartureDate(): ?string
     {
         return $this->departureDate;
     }
@@ -28,7 +28,7 @@ class LegIDType extends AbstractModel
      *
      * @return self
      */
-    public function setDepartureDate(string $departureDate): self
+    public function setDepartureDate(?string $departureDate): self
     {
         $this->departureDate = $departureDate;
 
@@ -38,7 +38,7 @@ class LegIDType extends AbstractModel
     /**
      * @return int
      */
-    public function getRef(): int
+    public function getRef(): ?int
     {
         return $this->ref;
     }
@@ -48,7 +48,7 @@ class LegIDType extends AbstractModel
      *
      * @return self
      */
-    public function setRef(int $ref): self
+    public function setRef(?int $ref): self
     {
         $this->ref = $ref;
 

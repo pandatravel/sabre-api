@@ -26,7 +26,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsLongConnectTime exten
     /**
      * @return bool
      */
-    public function getEnable(): bool
+    public function getEnable(): ?bool
     {
         return $this->enable;
     }
@@ -36,7 +36,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsLongConnectTime exten
      *
      * @return self
      */
-    public function setEnable(bool $enable): self
+    public function setEnable(?bool $enable): self
     {
         $this->enable = $enable;
 
@@ -46,7 +46,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsLongConnectTime exten
     /**
      * @return float
      */
-    public function getMax(): float
+    public function getMax(): ?float
     {
         return $this->max;
     }
@@ -56,7 +56,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsLongConnectTime exten
      *
      * @return self
      */
-    public function setMax(float $max): self
+    public function setMax(?float $max): self
     {
         $this->max = $max;
 
@@ -66,7 +66,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsLongConnectTime exten
     /**
      * @return float
      */
-    public function getMin(): float
+    public function getMin(): ?float
     {
         return $this->min;
     }
@@ -76,7 +76,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsLongConnectTime exten
      *
      * @return self
      */
-    public function setMin(float $min): self
+    public function setMin(?float $min): self
     {
         $this->min = $min;
 
@@ -86,7 +86,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsLongConnectTime exten
     /**
      * @return string
      */
-    public function getNumberOfSolutions(): string
+    public function getNumberOfSolutions(): ?string
     {
         return $this->numberOfSolutions;
     }
@@ -96,7 +96,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsLongConnectTime exten
      *
      * @return self
      */
-    public function setNumberOfSolutions(string $numberOfSolutions): self
+    public function setNumberOfSolutions(?string $numberOfSolutions): self
     {
         $this->numberOfSolutions = $numberOfSolutions;
 

@@ -18,7 +18,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsSplitTaxes extends
     /**
      * @return bool
      */
-    public function getByFareComponent(): bool
+    public function getByFareComponent(): ?bool
     {
         return $this->byFareComponent;
     }
@@ -28,7 +28,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsSplitTaxes extends
      *
      * @return self
      */
-    public function setByFareComponent(bool $byFareComponent): self
+    public function setByFareComponent(?bool $byFareComponent): self
     {
         $this->byFareComponent = $byFareComponent;
 
@@ -38,7 +38,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsSplitTaxes extends
     /**
      * @return bool
      */
-    public function getByLeg(): bool
+    public function getByLeg(): ?bool
     {
         return $this->byLeg;
     }
@@ -48,7 +48,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsSplitTaxes extends
      *
      * @return self
      */
-    public function setByLeg(bool $byLeg): self
+    public function setByLeg(?bool $byLeg): self
     {
         $this->byLeg = $byLeg;
 

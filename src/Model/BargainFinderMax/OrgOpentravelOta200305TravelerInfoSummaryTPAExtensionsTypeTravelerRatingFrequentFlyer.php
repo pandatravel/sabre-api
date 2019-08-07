@@ -24,7 +24,7 @@ class OrgOpentravelOta200305TravelerInfoSummaryTPAExtensionsTypeTravelerRatingFr
      *
      * @return string
      */
-    public function getCarrier(): string
+    public function getCarrier(): ?string
     {
         return $this->carrier;
     }
@@ -36,7 +36,7 @@ class OrgOpentravelOta200305TravelerInfoSummaryTPAExtensionsTypeTravelerRatingFr
      *
      * @return self
      */
-    public function setCarrier(string $carrier): self
+    public function setCarrier(?string $carrier): self
     {
         $this->carrier = $carrier;
 
@@ -48,7 +48,7 @@ class OrgOpentravelOta200305TravelerInfoSummaryTPAExtensionsTypeTravelerRatingFr
      *
      * @return int
      */
-    public function getTier(): int
+    public function getTier(): ?int
     {
         return $this->tier;
     }
@@ -60,7 +60,7 @@ class OrgOpentravelOta200305TravelerInfoSummaryTPAExtensionsTypeTravelerRatingFr
      *
      * @return self
      */
-    public function setTier(int $tier): self
+    public function setTier(?int $tier): self
     {
         $this->tier = $tier;
 

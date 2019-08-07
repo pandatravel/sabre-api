@@ -14,7 +14,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsNumOfLowFareSol exten
     /**
      * @return float
      */
-    public function getValue(): float
+    public function getValue(): ?float
     {
         return $this->value;
     }
@@ -24,7 +24,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsNumOfLowFareSol exten
      *
      * @return self
      */
-    public function setValue(float $value): self
+    public function setValue(?float $value): self
     {
         $this->value = $value;
 

@@ -14,7 +14,7 @@ class OrgOpentravelOta200305CachePartitionGroupType extends AbstractModel
     /**
      * @return OrgOpentravelOta200305CachePartitionType[]
      */
-    public function getPartition(): array
+    public function getPartition(): ?array
     {
         return $this->partition;
     }
@@ -24,7 +24,7 @@ class OrgOpentravelOta200305CachePartitionGroupType extends AbstractModel
      *
      * @return self
      */
-    public function setPartition(array $partition): self
+    public function setPartition(?array $partition): self
     {
         $this->partition = $partition;
 

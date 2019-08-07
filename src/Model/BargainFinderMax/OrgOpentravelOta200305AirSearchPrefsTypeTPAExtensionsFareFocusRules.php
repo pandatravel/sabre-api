@@ -18,7 +18,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsFareFocusRules extend
      *
      * @return bool
      */
-    public function getExclude(): bool
+    public function getExclude(): ?bool
     {
         return $this->exclude;
     }
@@ -30,7 +30,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsFareFocusRules extend
      *
      * @return self
      */
-    public function setExclude(bool $exclude): self
+    public function setExclude(?bool $exclude): self
     {
         $this->exclude = $exclude;
 

@@ -18,7 +18,7 @@ class OrgOpentravelOta200305AlternatePCCTypeTravelPreferencesTPAExtensions exten
     /**
      * @return OrgOpentravelOta200305AllianceType[]
      */
-    public function getExcludeAlliancePref(): array
+    public function getExcludeAlliancePref(): ?array
     {
         return $this->excludeAlliancePref;
     }
@@ -28,7 +28,7 @@ class OrgOpentravelOta200305AlternatePCCTypeTravelPreferencesTPAExtensions exten
      *
      * @return self
      */
-    public function setExcludeAlliancePref(array $excludeAlliancePref): self
+    public function setExcludeAlliancePref(?array $excludeAlliancePref): self
     {
         $this->excludeAlliancePref = $excludeAlliancePref;
 
@@ -38,7 +38,7 @@ class OrgOpentravelOta200305AlternatePCCTypeTravelPreferencesTPAExtensions exten
     /**
      * @return OrgOpentravelOta200305AllianceType[]
      */
-    public function getIncludeAlliancePref(): array
+    public function getIncludeAlliancePref(): ?array
     {
         return $this->includeAlliancePref;
     }
@@ -48,7 +48,7 @@ class OrgOpentravelOta200305AlternatePCCTypeTravelPreferencesTPAExtensions exten
      *
      * @return self
      */
-    public function setIncludeAlliancePref(array $includeAlliancePref): self
+    public function setIncludeAlliancePref(?array $includeAlliancePref): self
     {
         $this->includeAlliancePref = $includeAlliancePref;
 

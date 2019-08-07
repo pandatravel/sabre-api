@@ -18,7 +18,7 @@ class PassengerInfoListElementType extends AbstractModel
     /**
      * @return PassengerInformationType
      */
-    public function getPassengerInfo(): PassengerInformationType
+    public function getPassengerInfo(): ?PassengerInformationType
     {
         return $this->passengerInfo;
     }
@@ -28,7 +28,7 @@ class PassengerInfoListElementType extends AbstractModel
      *
      * @return self
      */
-    public function setPassengerInfo(PassengerInformationType $passengerInfo): self
+    public function setPassengerInfo(?PassengerInformationType $passengerInfo): self
     {
         $this->passengerInfo = $passengerInfo;
 
@@ -38,7 +38,7 @@ class PassengerInfoListElementType extends AbstractModel
     /**
      * @return PassengerNotAvailableInfoType
      */
-    public function getPassengerNotAvailableInfo(): PassengerNotAvailableInfoType
+    public function getPassengerNotAvailableInfo(): ?PassengerNotAvailableInfoType
     {
         return $this->passengerNotAvailableInfo;
     }
@@ -48,7 +48,7 @@ class PassengerInfoListElementType extends AbstractModel
      *
      * @return self
      */
-    public function setPassengerNotAvailableInfo(PassengerNotAvailableInfoType $passengerNotAvailableInfo): self
+    public function setPassengerNotAvailableInfo(?PassengerNotAvailableInfoType $passengerNotAvailableInfo): self
     {
         $this->passengerNotAvailableInfo = $passengerNotAvailableInfo;
 

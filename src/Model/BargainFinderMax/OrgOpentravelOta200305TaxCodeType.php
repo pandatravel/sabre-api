@@ -18,7 +18,7 @@ class OrgOpentravelOta200305TaxCodeType extends AbstractModel
      *
      * @return string
      */
-    public function getTaxCode(): string
+    public function getTaxCode(): ?string
     {
         return $this->taxCode;
     }
@@ -30,7 +30,7 @@ class OrgOpentravelOta200305TaxCodeType extends AbstractModel
      *
      * @return self
      */
-    public function setTaxCode(string $taxCode): self
+    public function setTaxCode(?string $taxCode): self
     {
         $this->taxCode = $taxCode;
 

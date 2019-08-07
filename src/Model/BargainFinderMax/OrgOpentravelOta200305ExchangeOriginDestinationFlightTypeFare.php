@@ -66,7 +66,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationFlightTypeFare extends Abst
     /**
      * @return OrgOpentravelOta200305ExchangeOriginDestinationFlightTypeFareAdjustment
      */
-    public function getAdjustment(): OrgOpentravelOta200305ExchangeOriginDestinationFlightTypeFareAdjustment
+    public function getAdjustment(): ?OrgOpentravelOta200305ExchangeOriginDestinationFlightTypeFareAdjustment
     {
         return $this->adjustment;
     }
@@ -76,7 +76,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationFlightTypeFare extends Abst
      *
      * @return self
      */
-    public function setAdjustment(OrgOpentravelOta200305ExchangeOriginDestinationFlightTypeFareAdjustment $adjustment): self
+    public function setAdjustment(?OrgOpentravelOta200305ExchangeOriginDestinationFlightTypeFareAdjustment $adjustment): self
     {
         $this->adjustment = $adjustment;
 
@@ -88,7 +88,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationFlightTypeFare extends Abst
      *
      * @return float
      */
-    public function getAmount(): float
+    public function getAmount(): ?float
     {
         return $this->amount;
     }
@@ -100,7 +100,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationFlightTypeFare extends Abst
      *
      * @return self
      */
-    public function setAmount(float $amount): self
+    public function setAmount(?float $amount): self
     {
         $this->amount = $amount;
 
@@ -112,7 +112,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationFlightTypeFare extends Abst
      *
      * @return string
      */
-    public function getBasisCode(): string
+    public function getBasisCode(): ?string
     {
         return $this->basisCode;
     }
@@ -124,7 +124,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationFlightTypeFare extends Abst
      *
      * @return self
      */
-    public function setBasisCode(string $basisCode): self
+    public function setBasisCode(?string $basisCode): self
     {
         $this->basisCode = $basisCode;
 
@@ -136,7 +136,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationFlightTypeFare extends Abst
      *
      * @return string
      */
-    public function getBrandID(): string
+    public function getBrandID(): ?string
     {
         return $this->brandID;
     }
@@ -148,7 +148,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationFlightTypeFare extends Abst
      *
      * @return self
      */
-    public function setBrandID(string $brandID): self
+    public function setBrandID(?string $brandID): self
     {
         $this->brandID = $brandID;
 
@@ -160,7 +160,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationFlightTypeFare extends Abst
      *
      * @return float
      */
-    public function getComponentNo(): float
+    public function getComponentNo(): ?float
     {
         return $this->componentNo;
     }
@@ -172,7 +172,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationFlightTypeFare extends Abst
      *
      * @return self
      */
-    public function setComponentNo(float $componentNo): self
+    public function setComponentNo(?float $componentNo): self
     {
         $this->componentNo = $componentNo;
 
@@ -182,7 +182,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationFlightTypeFare extends Abst
     /**
      * @return int
      */
-    public function getProgramID(): int
+    public function getProgramID(): ?int
     {
         return $this->programID;
     }
@@ -192,7 +192,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationFlightTypeFare extends Abst
      *
      * @return self
      */
-    public function setProgramID(int $programID): self
+    public function setProgramID(?int $programID): self
     {
         $this->programID = $programID;
 
@@ -204,7 +204,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationFlightTypeFare extends Abst
      *
      * @return string
      */
-    public function getRuleNumber(): string
+    public function getRuleNumber(): ?string
     {
         return $this->ruleNumber;
     }
@@ -216,7 +216,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationFlightTypeFare extends Abst
      *
      * @return self
      */
-    public function setRuleNumber(string $ruleNumber): self
+    public function setRuleNumber(?string $ruleNumber): self
     {
         $this->ruleNumber = $ruleNumber;
 
@@ -228,7 +228,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationFlightTypeFare extends Abst
      *
      * @return string
      */
-    public function getSourceVendor(): string
+    public function getSourceVendor(): ?string
     {
         return $this->sourceVendor;
     }
@@ -240,7 +240,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationFlightTypeFare extends Abst
      *
      * @return self
      */
-    public function setSourceVendor(string $sourceVendor): self
+    public function setSourceVendor(?string $sourceVendor): self
     {
         $this->sourceVendor = $sourceVendor;
 
@@ -252,7 +252,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationFlightTypeFare extends Abst
      *
      * @return string
      */
-    public function getTariff(): string
+    public function getTariff(): ?string
     {
         return $this->tariff;
     }
@@ -264,7 +264,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationFlightTypeFare extends Abst
      *
      * @return self
      */
-    public function setTariff(string $tariff): self
+    public function setTariff(?string $tariff): self
     {
         $this->tariff = $tariff;
 
@@ -276,7 +276,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationFlightTypeFare extends Abst
      *
      * @return string
      */
-    public function getVendor(): string
+    public function getVendor(): ?string
     {
         return $this->vendor;
     }
@@ -288,7 +288,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationFlightTypeFare extends Abst
      *
      * @return self
      */
-    public function setVendor(string $vendor): self
+    public function setVendor(?string $vendor): self
     {
         $this->vendor = $vendor;
 

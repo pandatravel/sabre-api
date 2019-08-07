@@ -24,7 +24,7 @@ class BrandFeatureIDType extends AbstractModel
      *
      * @return int
      */
-    public function getRef(): int
+    public function getRef(): ?int
     {
         return $this->ref;
     }
@@ -36,7 +36,7 @@ class BrandFeatureIDType extends AbstractModel
      *
      * @return self
      */
-    public function setRef(int $ref): self
+    public function setRef(?int $ref): self
     {
         $this->ref = $ref;
 
@@ -48,7 +48,7 @@ class BrandFeatureIDType extends AbstractModel
      *
      * @return string
      */
-    public function getServiceId(): string
+    public function getServiceId(): ?string
     {
         return $this->serviceId;
     }
@@ -60,7 +60,7 @@ class BrandFeatureIDType extends AbstractModel
      *
      * @return self
      */
-    public function setServiceId(string $serviceId): self
+    public function setServiceId(?string $serviceId): self
     {
         $this->serviceId = $serviceId;
 

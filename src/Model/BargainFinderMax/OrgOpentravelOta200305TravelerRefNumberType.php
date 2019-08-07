@@ -18,7 +18,7 @@ class OrgOpentravelOta200305TravelerRefNumberType extends AbstractModel
      *
      * @return string
      */
-    public function getRPH(): string
+    public function getRPH(): ?string
     {
         return $this->rPH;
     }
@@ -30,7 +30,7 @@ class OrgOpentravelOta200305TravelerRefNumberType extends AbstractModel
      *
      * @return self
      */
-    public function setRPH(string $rPH): self
+    public function setRPH(?string $rPH): self
     {
         $this->rPH = $rPH;
 

@@ -30,7 +30,7 @@ class OrgOpentravelOta200305ArunkType extends AbstractModel
      *
      * @return OrgOpentravelOta200305RequestLocationType
      */
-    public function getDestinationLocation(): OrgOpentravelOta200305RequestLocationType
+    public function getDestinationLocation(): ?OrgOpentravelOta200305RequestLocationType
     {
         return $this->destinationLocation;
     }
@@ -42,7 +42,7 @@ class OrgOpentravelOta200305ArunkType extends AbstractModel
      *
      * @return self
      */
-    public function setDestinationLocation(OrgOpentravelOta200305RequestLocationType $destinationLocation): self
+    public function setDestinationLocation(?OrgOpentravelOta200305RequestLocationType $destinationLocation): self
     {
         $this->destinationLocation = $destinationLocation;
 
@@ -54,7 +54,7 @@ class OrgOpentravelOta200305ArunkType extends AbstractModel
      *
      * @return OrgOpentravelOta200305RequestLocationType
      */
-    public function getOriginLocation(): OrgOpentravelOta200305RequestLocationType
+    public function getOriginLocation(): ?OrgOpentravelOta200305RequestLocationType
     {
         return $this->originLocation;
     }
@@ -66,7 +66,7 @@ class OrgOpentravelOta200305ArunkType extends AbstractModel
      *
      * @return self
      */
-    public function setOriginLocation(OrgOpentravelOta200305RequestLocationType $originLocation): self
+    public function setOriginLocation(?OrgOpentravelOta200305RequestLocationType $originLocation): self
     {
         $this->originLocation = $originLocation;
 
@@ -78,7 +78,7 @@ class OrgOpentravelOta200305ArunkType extends AbstractModel
      *
      * @return OrgOpentravelOta200305SideTripType
      */
-    public function getSideTrip(): OrgOpentravelOta200305SideTripType
+    public function getSideTrip(): ?OrgOpentravelOta200305SideTripType
     {
         return $this->sideTrip;
     }
@@ -90,7 +90,7 @@ class OrgOpentravelOta200305ArunkType extends AbstractModel
      *
      * @return self
      */
-    public function setSideTrip(OrgOpentravelOta200305SideTripType $sideTrip): self
+    public function setSideTrip(?OrgOpentravelOta200305SideTripType $sideTrip): self
     {
         $this->sideTrip = $sideTrip;
 

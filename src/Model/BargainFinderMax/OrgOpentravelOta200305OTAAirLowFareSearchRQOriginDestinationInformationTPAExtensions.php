@@ -128,7 +128,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQOriginDestinationInformationTPA
      *
      * @return OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeAlternateTime
      */
-    public function getAlternateTime(): OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeAlternateTime
+    public function getAlternateTime(): ?OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeAlternateTime
     {
         return $this->alternateTime;
     }
@@ -140,7 +140,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQOriginDestinationInformationTPA
      *
      * @return self
      */
-    public function setAlternateTime(OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeAlternateTime $alternateTime): self
+    public function setAlternateTime(?OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeAlternateTime $alternateTime): self
     {
         $this->alternateTime = $alternateTime;
 
@@ -152,7 +152,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQOriginDestinationInformationTPA
      *
      * @return OrgOpentravelOta200305BaggageType
      */
-    public function getBaggage(): OrgOpentravelOta200305BaggageType
+    public function getBaggage(): ?OrgOpentravelOta200305BaggageType
     {
         return $this->baggage;
     }
@@ -164,7 +164,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQOriginDestinationInformationTPA
      *
      * @return self
      */
-    public function setBaggage(OrgOpentravelOta200305BaggageType $baggage): self
+    public function setBaggage(?OrgOpentravelOta200305BaggageType $baggage): self
     {
         $this->baggage = $baggage;
 
@@ -176,7 +176,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQOriginDestinationInformationTPA
      *
      * @return OrgOpentravelOta200305BrandFiltersType
      */
-    public function getBrandFilters(): OrgOpentravelOta200305BrandFiltersType
+    public function getBrandFilters(): ?OrgOpentravelOta200305BrandFiltersType
     {
         return $this->brandFilters;
     }
@@ -188,7 +188,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQOriginDestinationInformationTPA
      *
      * @return self
      */
-    public function setBrandFilters(OrgOpentravelOta200305BrandFiltersType $brandFilters): self
+    public function setBrandFilters(?OrgOpentravelOta200305BrandFiltersType $brandFilters): self
     {
         $this->brandFilters = $brandFilters;
 
@@ -200,7 +200,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQOriginDestinationInformationTPA
      *
      * @return OrgOpentravelOta200305CabinPrefType
      */
-    public function getCabinPref(): OrgOpentravelOta200305CabinPrefType
+    public function getCabinPref(): ?OrgOpentravelOta200305CabinPrefType
     {
         return $this->cabinPref;
     }
@@ -212,7 +212,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQOriginDestinationInformationTPA
      *
      * @return self
      */
-    public function setCabinPref(OrgOpentravelOta200305CabinPrefType $cabinPref): self
+    public function setCabinPref(?OrgOpentravelOta200305CabinPrefType $cabinPref): self
     {
         $this->cabinPref = $cabinPref;
 
@@ -222,7 +222,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQOriginDestinationInformationTPA
     /**
      * @return OrgOpentravelOta200305ClassOfServiceElemType[]
      */
-    public function getClassOfService(): array
+    public function getClassOfService(): ?array
     {
         return $this->classOfService;
     }
@@ -232,7 +232,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQOriginDestinationInformationTPA
      *
      * @return self
      */
-    public function setClassOfService(array $classOfService): self
+    public function setClassOfService(?array $classOfService): self
     {
         $this->classOfService = $classOfService;
 
@@ -244,7 +244,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQOriginDestinationInformationTPA
      *
      * @return OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeConnectionTime
      */
-    public function getConnectionTime(): OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeConnectionTime
+    public function getConnectionTime(): ?OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeConnectionTime
     {
         return $this->connectionTime;
     }
@@ -256,7 +256,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQOriginDestinationInformationTPA
      *
      * @return self
      */
-    public function setConnectionTime(OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeConnectionTime $connectionTime): self
+    public function setConnectionTime(?OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeConnectionTime $connectionTime): self
     {
         $this->connectionTime = $connectionTime;
 
@@ -266,7 +266,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQOriginDestinationInformationTPA
     /**
      * @return OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeDateFlexibility[]
      */
-    public function getDateFlexibility(): array
+    public function getDateFlexibility(): ?array
     {
         return $this->dateFlexibility;
     }
@@ -276,7 +276,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQOriginDestinationInformationTPA
      *
      * @return self
      */
-    public function setDateFlexibility(array $dateFlexibility): self
+    public function setDateFlexibility(?array $dateFlexibility): self
     {
         $this->dateFlexibility = $dateFlexibility;
 
@@ -288,7 +288,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQOriginDestinationInformationTPA
      *
      * @return OrgOpentravelOta200305DepartureDaysType
      */
-    public function getDepartureDays(): OrgOpentravelOta200305DepartureDaysType
+    public function getDepartureDays(): ?OrgOpentravelOta200305DepartureDaysType
     {
         return $this->departureDays;
     }
@@ -300,7 +300,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQOriginDestinationInformationTPA
      *
      * @return self
      */
-    public function setDepartureDays(OrgOpentravelOta200305DepartureDaysType $departureDays): self
+    public function setDepartureDays(?OrgOpentravelOta200305DepartureDaysType $departureDays): self
     {
         $this->departureDays = $departureDays;
 
@@ -310,7 +310,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQOriginDestinationInformationTPA
     /**
      * @return OrgOpentravelOta200305FareBasisType[]
      */
-    public function getFareBasis(): array
+    public function getFareBasis(): ?array
     {
         return $this->fareBasis;
     }
@@ -320,7 +320,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQOriginDestinationInformationTPA
      *
      * @return self
      */
-    public function setFareBasis(array $fareBasis): self
+    public function setFareBasis(?array $fareBasis): self
     {
         $this->fareBasis = $fareBasis;
 
@@ -330,7 +330,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQOriginDestinationInformationTPA
     /**
      * @return OrgOpentravelOta200305FareTypePrefType[]
      */
-    public function getFareType(): array
+    public function getFareType(): ?array
     {
         return $this->fareType;
     }
@@ -340,7 +340,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQOriginDestinationInformationTPA
      *
      * @return self
      */
-    public function setFareType(array $fareType): self
+    public function setFareType(?array $fareType): self
     {
         $this->fareType = $fareType;
 
@@ -350,7 +350,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQOriginDestinationInformationTPA
     /**
      * @return OrgOpentravelOta200305OriginDestinationFlightType[]
      */
-    public function getFlight(): array
+    public function getFlight(): ?array
     {
         return $this->flight;
     }
@@ -360,7 +360,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQOriginDestinationInformationTPA
      *
      * @return self
      */
-    public function setFlight(array $flight): self
+    public function setFlight(?array $flight): self
     {
         $this->flight = $flight;
 
@@ -370,7 +370,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQOriginDestinationInformationTPA
     /**
      * @return OrgOpentravelOta200305AllianceType[]
      */
-    public function getIncludeAlliancePref(): array
+    public function getIncludeAlliancePref(): ?array
     {
         return $this->includeAlliancePref;
     }
@@ -380,7 +380,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQOriginDestinationInformationTPA
      *
      * @return self
      */
-    public function setIncludeAlliancePref(array $includeAlliancePref): self
+    public function setIncludeAlliancePref(?array $includeAlliancePref): self
     {
         $this->includeAlliancePref = $includeAlliancePref;
 
@@ -390,7 +390,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQOriginDestinationInformationTPA
     /**
      * @return OrgOpentravelOta200305IncludeVendorPrefType[]
      */
-    public function getIncludeVendorPref(): array
+    public function getIncludeVendorPref(): ?array
     {
         return $this->includeVendorPref;
     }
@@ -400,7 +400,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQOriginDestinationInformationTPA
      *
      * @return self
      */
-    public function setIncludeVendorPref(array $includeVendorPref): self
+    public function setIncludeVendorPref(?array $includeVendorPref): self
     {
         $this->includeVendorPref = $includeVendorPref;
 
@@ -412,7 +412,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQOriginDestinationInformationTPA
      *
      * @return OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeMaxOneWayOptions
      */
-    public function getMaxOneWayOptions(): OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeMaxOneWayOptions
+    public function getMaxOneWayOptions(): ?OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeMaxOneWayOptions
     {
         return $this->maxOneWayOptions;
     }
@@ -424,7 +424,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQOriginDestinationInformationTPA
      *
      * @return self
      */
-    public function setMaxOneWayOptions(OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeMaxOneWayOptions $maxOneWayOptions): self
+    public function setMaxOneWayOptions(?OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeMaxOneWayOptions $maxOneWayOptions): self
     {
         $this->maxOneWayOptions = $maxOneWayOptions;
 
@@ -436,7 +436,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQOriginDestinationInformationTPA
      *
      * @return OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeNumOneWayOptions
      */
-    public function getNumOneWayOptions(): OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeNumOneWayOptions
+    public function getNumOneWayOptions(): ?OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeNumOneWayOptions
     {
         return $this->numOneWayOptions;
     }
@@ -448,7 +448,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQOriginDestinationInformationTPA
      *
      * @return self
      */
-    public function setNumOneWayOptions(OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeNumOneWayOptions $numOneWayOptions): self
+    public function setNumOneWayOptions(?OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeNumOneWayOptions $numOneWayOptions): self
     {
         $this->numOneWayOptions = $numOneWayOptions;
 
@@ -458,7 +458,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQOriginDestinationInformationTPA
     /**
      * @return OrgOpentravelOta200305PassengerPriceAdjustmentType[]
      */
-    public function getPassengerPriceAdjustment(): array
+    public function getPassengerPriceAdjustment(): ?array
     {
         return $this->passengerPriceAdjustment;
     }
@@ -468,7 +468,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQOriginDestinationInformationTPA
      *
      * @return self
      */
-    public function setPassengerPriceAdjustment(array $passengerPriceAdjustment): self
+    public function setPassengerPriceAdjustment(?array $passengerPriceAdjustment): self
     {
         $this->passengerPriceAdjustment = $passengerPriceAdjustment;
 
@@ -478,7 +478,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQOriginDestinationInformationTPA
     /**
      * @return OrgOpentravelOta200305RoutingDefinitionType[]
      */
-    public function getRouting(): array
+    public function getRouting(): ?array
     {
         return $this->routing;
     }
@@ -488,7 +488,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQOriginDestinationInformationTPA
      *
      * @return self
      */
-    public function setRouting(array $routing): self
+    public function setRouting(?array $routing): self
     {
         $this->routing = $routing;
 
@@ -498,7 +498,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQOriginDestinationInformationTPA
     /**
      * @return OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeSegmentType
      */
-    public function getSegmentType(): OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeSegmentType
+    public function getSegmentType(): ?OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeSegmentType
     {
         return $this->segmentType;
     }
@@ -508,7 +508,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQOriginDestinationInformationTPA
      *
      * @return self
      */
-    public function setSegmentType(OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeSegmentType $segmentType): self
+    public function setSegmentType(?OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeSegmentType $segmentType): self
     {
         $this->segmentType = $segmentType;
 
@@ -518,7 +518,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQOriginDestinationInformationTPA
     /**
      * @return OrgOpentravelOta200305RequestSpecifiedLocationType[]
      */
-    public function getSisterDestinationLocation(): array
+    public function getSisterDestinationLocation(): ?array
     {
         return $this->sisterDestinationLocation;
     }
@@ -528,7 +528,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQOriginDestinationInformationTPA
      *
      * @return self
      */
-    public function setSisterDestinationLocation(array $sisterDestinationLocation): self
+    public function setSisterDestinationLocation(?array $sisterDestinationLocation): self
     {
         $this->sisterDestinationLocation = $sisterDestinationLocation;
 
@@ -538,7 +538,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQOriginDestinationInformationTPA
     /**
      * @return OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeSisterDestinationMileage
      */
-    public function getSisterDestinationMileage(): OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeSisterDestinationMileage
+    public function getSisterDestinationMileage(): ?OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeSisterDestinationMileage
     {
         return $this->sisterDestinationMileage;
     }
@@ -548,7 +548,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQOriginDestinationInformationTPA
      *
      * @return self
      */
-    public function setSisterDestinationMileage(OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeSisterDestinationMileage $sisterDestinationMileage): self
+    public function setSisterDestinationMileage(?OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeSisterDestinationMileage $sisterDestinationMileage): self
     {
         $this->sisterDestinationMileage = $sisterDestinationMileage;
 
@@ -558,7 +558,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQOriginDestinationInformationTPA
     /**
      * @return OrgOpentravelOta200305RequestSpecifiedLocationType[]
      */
-    public function getSisterOriginLocation(): array
+    public function getSisterOriginLocation(): ?array
     {
         return $this->sisterOriginLocation;
     }
@@ -568,7 +568,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQOriginDestinationInformationTPA
      *
      * @return self
      */
-    public function setSisterOriginLocation(array $sisterOriginLocation): self
+    public function setSisterOriginLocation(?array $sisterOriginLocation): self
     {
         $this->sisterOriginLocation = $sisterOriginLocation;
 
@@ -578,7 +578,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQOriginDestinationInformationTPA
     /**
      * @return OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeSisterOriginMileage
      */
-    public function getSisterOriginMileage(): OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeSisterOriginMileage
+    public function getSisterOriginMileage(): ?OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeSisterOriginMileage
     {
         return $this->sisterOriginMileage;
     }
@@ -588,7 +588,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQOriginDestinationInformationTPA
      *
      * @return self
      */
-    public function setSisterOriginMileage(OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeSisterOriginMileage $sisterOriginMileage): self
+    public function setSisterOriginMileage(?OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeSisterOriginMileage $sisterOriginMileage): self
     {
         $this->sisterOriginMileage = $sisterOriginMileage;
 
@@ -600,7 +600,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQOriginDestinationInformationTPA
      *
      * @return OrgOpentravelOta200305StopoverType
      */
-    public function getStopover(): OrgOpentravelOta200305StopoverType
+    public function getStopover(): ?OrgOpentravelOta200305StopoverType
     {
         return $this->stopover;
     }
@@ -612,7 +612,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQOriginDestinationInformationTPA
      *
      * @return self
      */
-    public function setStopover(OrgOpentravelOta200305StopoverType $stopover): self
+    public function setStopover(?OrgOpentravelOta200305StopoverType $stopover): self
     {
         $this->stopover = $stopover;
 
@@ -624,7 +624,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQOriginDestinationInformationTPA
      *
      * @return OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeTotalTravelTime
      */
-    public function getTotalTravelTime(): OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeTotalTravelTime
+    public function getTotalTravelTime(): ?OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeTotalTravelTime
     {
         return $this->totalTravelTime;
     }
@@ -636,7 +636,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQOriginDestinationInformationTPA
      *
      * @return self
      */
-    public function setTotalTravelTime(OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeTotalTravelTime $totalTravelTime): self
+    public function setTotalTravelTime(?OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeTotalTravelTime $totalTravelTime): self
     {
         $this->totalTravelTime = $totalTravelTime;
 

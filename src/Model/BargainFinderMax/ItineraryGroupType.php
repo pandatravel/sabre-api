@@ -22,7 +22,7 @@ class ItineraryGroupType extends AbstractModel
     /**
      * @return GroupDescription
      */
-    public function getGroupDescription(): GroupDescription
+    public function getGroupDescription(): ?GroupDescription
     {
         return $this->groupDescription;
     }
@@ -32,7 +32,7 @@ class ItineraryGroupType extends AbstractModel
      *
      * @return self
      */
-    public function setGroupDescription(GroupDescription $groupDescription): self
+    public function setGroupDescription(?GroupDescription $groupDescription): self
     {
         $this->groupDescription = $groupDescription;
 
@@ -42,7 +42,7 @@ class ItineraryGroupType extends AbstractModel
     /**
      * @return ItineraryType[]
      */
-    public function getItineraries(): array
+    public function getItineraries(): ?array
     {
         return $this->itineraries;
     }
@@ -52,7 +52,7 @@ class ItineraryGroupType extends AbstractModel
      *
      * @return self
      */
-    public function setItineraries(array $itineraries): self
+    public function setItineraries(?array $itineraries): self
     {
         $this->itineraries = $itineraries;
 
@@ -62,7 +62,7 @@ class ItineraryGroupType extends AbstractModel
     /**
      * @return ProcessingMessageType[]
      */
-    public function getProcessingMessages(): array
+    public function getProcessingMessages(): ?array
     {
         return $this->processingMessages;
     }
@@ -72,7 +72,7 @@ class ItineraryGroupType extends AbstractModel
      *
      * @return self
      */
-    public function setProcessingMessages(array $processingMessages): self
+    public function setProcessingMessages(?array $processingMessages): self
     {
         $this->processingMessages = $processingMessages;
 

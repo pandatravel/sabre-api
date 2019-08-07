@@ -14,7 +14,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsMaxNumOfSingleStpOnlS
     /**
      * @return float
      */
-    public function getValue(): float
+    public function getValue(): ?float
     {
         return $this->value;
     }
@@ -24,7 +24,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsMaxNumOfSingleStpOnlS
      *
      * @return self
      */
-    public function setValue(float $value): self
+    public function setValue(?float $value): self
     {
         $this->value = $value;
 

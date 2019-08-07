@@ -18,7 +18,7 @@ class OrgOpentravelOta200305StopoverTypeStopoverPoint extends AbstractModel
     /**
      * @return string
      */
-    public function getLocationCode(): string
+    public function getLocationCode(): ?string
     {
         return $this->locationCode;
     }
@@ -28,7 +28,7 @@ class OrgOpentravelOta200305StopoverTypeStopoverPoint extends AbstractModel
      *
      * @return self
      */
-    public function setLocationCode(string $locationCode): self
+    public function setLocationCode(?string $locationCode): self
     {
         $this->locationCode = $locationCode;
 
@@ -38,7 +38,7 @@ class OrgOpentravelOta200305StopoverTypeStopoverPoint extends AbstractModel
     /**
      * @return string
      */
-    public function getLocationType(): string
+    public function getLocationType(): ?string
     {
         return $this->locationType;
     }
@@ -48,7 +48,7 @@ class OrgOpentravelOta200305StopoverTypeStopoverPoint extends AbstractModel
      *
      * @return self
      */
-    public function setLocationType(string $locationType): self
+    public function setLocationType(?string $locationType): self
     {
         $this->locationType = $locationType;
 

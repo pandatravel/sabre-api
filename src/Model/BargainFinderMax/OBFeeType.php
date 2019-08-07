@@ -30,7 +30,7 @@ class OBFeeType extends AbstractModel
     /**
      * @return float
      */
-    public function getAmount(): float
+    public function getAmount(): ?float
     {
         return $this->amount;
     }
@@ -40,7 +40,7 @@ class OBFeeType extends AbstractModel
      *
      * @return self
      */
-    public function setAmount(float $amount): self
+    public function setAmount(?float $amount): self
     {
         $this->amount = $amount;
 
@@ -50,7 +50,7 @@ class OBFeeType extends AbstractModel
     /**
      * @return string
      */
-    public function getCurrency(): string
+    public function getCurrency(): ?string
     {
         return $this->currency;
     }
@@ -60,7 +60,7 @@ class OBFeeType extends AbstractModel
      *
      * @return self
      */
-    public function setCurrency(string $currency): self
+    public function setCurrency(?string $currency): self
     {
         $this->currency = $currency;
 
@@ -70,7 +70,7 @@ class OBFeeType extends AbstractModel
     /**
      * @return string
      */
-    public function getDescription(): string
+    public function getDescription(): ?string
     {
         return $this->description;
     }
@@ -80,7 +80,7 @@ class OBFeeType extends AbstractModel
      *
      * @return self
      */
-    public function setDescription(string $description): self
+    public function setDescription(?string $description): self
     {
         $this->description = $description;
 
@@ -90,7 +90,7 @@ class OBFeeType extends AbstractModel
     /**
      * @return int
      */
-    public function getId(): int
+    public function getId(): ?int
     {
         return $this->id;
     }
@@ -100,7 +100,7 @@ class OBFeeType extends AbstractModel
      *
      * @return self
      */
-    public function setId(int $id): self
+    public function setId(?int $id): self
     {
         $this->id = $id;
 
@@ -110,7 +110,7 @@ class OBFeeType extends AbstractModel
     /**
      * @return string
      */
-    public function getType(): string
+    public function getType(): ?string
     {
         return $this->type;
     }
@@ -120,7 +120,7 @@ class OBFeeType extends AbstractModel
      *
      * @return self
      */
-    public function setType(string $type): self
+    public function setType(?string $type): self
     {
         $this->type = $type;
 

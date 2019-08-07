@@ -18,7 +18,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsItineraryCache ext
     /**
      * @return float
      */
-    public function getPublicTimeToLive(): float
+    public function getPublicTimeToLive(): ?float
     {
         return $this->publicTimeToLive;
     }
@@ -28,7 +28,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsItineraryCache ext
      *
      * @return self
      */
-    public function setPublicTimeToLive(float $publicTimeToLive): self
+    public function setPublicTimeToLive(?float $publicTimeToLive): self
     {
         $this->publicTimeToLive = $publicTimeToLive;
 
@@ -38,7 +38,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsItineraryCache ext
     /**
      * @return bool
      */
-    public function getRemovePreviousOnUpdate(): bool
+    public function getRemovePreviousOnUpdate(): ?bool
     {
         return $this->removePreviousOnUpdate;
     }
@@ -48,7 +48,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsItineraryCache ext
      *
      * @return self
      */
-    public function setRemovePreviousOnUpdate(bool $removePreviousOnUpdate): self
+    public function setRemovePreviousOnUpdate(?bool $removePreviousOnUpdate): self
     {
         $this->removePreviousOnUpdate = $removePreviousOnUpdate;
 

@@ -14,7 +14,7 @@ class OrgOpentravelOta200305FlexibleFaresTypeFareParametersMinMaxStay extends Ab
     /**
      * @return bool
      */
-    public function getInd(): bool
+    public function getInd(): ?bool
     {
         return $this->ind;
     }
@@ -24,7 +24,7 @@ class OrgOpentravelOta200305FlexibleFaresTypeFareParametersMinMaxStay extends Ab
      *
      * @return self
      */
-    public function setInd(bool $ind): self
+    public function setInd(?bool $ind): self
     {
         $this->ind = $ind;
 

@@ -22,7 +22,7 @@ class ScheduleType extends AbstractModel
     /**
      * @return int
      */
-    public function getDepartureDateAdjustment(): int
+    public function getDepartureDateAdjustment(): ?int
     {
         return $this->departureDateAdjustment;
     }
@@ -32,7 +32,7 @@ class ScheduleType extends AbstractModel
      *
      * @return self
      */
-    public function setDepartureDateAdjustment(int $departureDateAdjustment): self
+    public function setDepartureDateAdjustment(?int $departureDateAdjustment): self
     {
         $this->departureDateAdjustment = $departureDateAdjustment;
 
@@ -42,7 +42,7 @@ class ScheduleType extends AbstractModel
     /**
      * @return int
      */
-    public function getRef(): int
+    public function getRef(): ?int
     {
         return $this->ref;
     }
@@ -52,7 +52,7 @@ class ScheduleType extends AbstractModel
      *
      * @return self
      */
-    public function setRef(int $ref): self
+    public function setRef(?int $ref): self
     {
         $this->ref = $ref;
 
@@ -62,7 +62,7 @@ class ScheduleType extends AbstractModel
     /**
      * @return bool
      */
-    public function getRequestedStopover(): bool
+    public function getRequestedStopover(): ?bool
     {
         return $this->requestedStopover;
     }
@@ -72,7 +72,7 @@ class ScheduleType extends AbstractModel
      *
      * @return self
      */
-    public function setRequestedStopover(bool $requestedStopover): self
+    public function setRequestedStopover(?bool $requestedStopover): self
     {
         $this->requestedStopover = $requestedStopover;
 

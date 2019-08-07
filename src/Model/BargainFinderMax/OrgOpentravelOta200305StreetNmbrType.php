@@ -22,7 +22,7 @@ class OrgOpentravelOta200305StreetNmbrType extends AbstractModel
      *
      * @return string
      */
-    public function getPOBox(): string
+    public function getPOBox(): ?string
     {
         return $this->pOBox;
     }
@@ -34,7 +34,7 @@ class OrgOpentravelOta200305StreetNmbrType extends AbstractModel
      *
      * @return self
      */
-    public function setPOBox(string $pOBox): self
+    public function setPOBox(?string $pOBox): self
     {
         $this->pOBox = $pOBox;
 
@@ -44,7 +44,7 @@ class OrgOpentravelOta200305StreetNmbrType extends AbstractModel
     /**
      * @return string
      */
-    public function getContent(): string
+    public function getContent(): ?string
     {
         return $this->content;
     }
@@ -54,7 +54,7 @@ class OrgOpentravelOta200305StreetNmbrType extends AbstractModel
      *
      * @return self
      */
-    public function setContent(string $content): self
+    public function setContent(?string $content): self
     {
         $this->content = $content;
 

@@ -62,7 +62,7 @@ class SoldOutLegType extends AbstractModel
      *
      * @return string
      */
-    public function getBrandCode(): string
+    public function getBrandCode(): ?string
     {
         return $this->brandCode;
     }
@@ -74,7 +74,7 @@ class SoldOutLegType extends AbstractModel
      *
      * @return self
      */
-    public function setBrandCode(string $brandCode): self
+    public function setBrandCode(?string $brandCode): self
     {
         $this->brandCode = $brandCode;
 
@@ -86,7 +86,7 @@ class SoldOutLegType extends AbstractModel
      *
      * @return string
      */
-    public function getBrandDescription(): string
+    public function getBrandDescription(): ?string
     {
         return $this->brandDescription;
     }
@@ -98,7 +98,7 @@ class SoldOutLegType extends AbstractModel
      *
      * @return self
      */
-    public function setBrandDescription(string $brandDescription): self
+    public function setBrandDescription(?string $brandDescription): self
     {
         $this->brandDescription = $brandDescription;
 
@@ -110,7 +110,7 @@ class SoldOutLegType extends AbstractModel
      *
      * @return string
      */
-    public function getProgramCode(): string
+    public function getProgramCode(): ?string
     {
         return $this->programCode;
     }
@@ -122,7 +122,7 @@ class SoldOutLegType extends AbstractModel
      *
      * @return self
      */
-    public function setProgramCode(string $programCode): self
+    public function setProgramCode(?string $programCode): self
     {
         $this->programCode = $programCode;
 
@@ -134,7 +134,7 @@ class SoldOutLegType extends AbstractModel
      *
      * @return string
      */
-    public function getProgramId(): string
+    public function getProgramId(): ?string
     {
         return $this->programId;
     }
@@ -146,7 +146,7 @@ class SoldOutLegType extends AbstractModel
      *
      * @return self
      */
-    public function setProgramId(string $programId): self
+    public function setProgramId(?string $programId): self
     {
         $this->programId = $programId;
 
@@ -158,7 +158,7 @@ class SoldOutLegType extends AbstractModel
      *
      * @return string
      */
-    public function getProgramName(): string
+    public function getProgramName(): ?string
     {
         return $this->programName;
     }
@@ -170,7 +170,7 @@ class SoldOutLegType extends AbstractModel
      *
      * @return self
      */
-    public function setProgramName(string $programName): self
+    public function setProgramName(?string $programName): self
     {
         $this->programName = $programName;
 
@@ -182,7 +182,7 @@ class SoldOutLegType extends AbstractModel
      *
      * @return string
      */
-    public function getProgramSystemCode(): string
+    public function getProgramSystemCode(): ?string
     {
         return $this->programSystemCode;
     }
@@ -194,7 +194,7 @@ class SoldOutLegType extends AbstractModel
      *
      * @return self
      */
-    public function setProgramSystemCode(string $programSystemCode): self
+    public function setProgramSystemCode(?string $programSystemCode): self
     {
         $this->programSystemCode = $programSystemCode;
 
@@ -206,7 +206,7 @@ class SoldOutLegType extends AbstractModel
      *
      * @return int
      */
-    public function getRef(): int
+    public function getRef(): ?int
     {
         return $this->ref;
     }
@@ -218,7 +218,7 @@ class SoldOutLegType extends AbstractModel
      *
      * @return self
      */
-    public function setRef(int $ref): self
+    public function setRef(?int $ref): self
     {
         $this->ref = $ref;
 
@@ -228,7 +228,7 @@ class SoldOutLegType extends AbstractModel
     /**
      * @return SoldOutSchedule[]
      */
-    public function getSoldOutSchedules(): array
+    public function getSoldOutSchedules(): ?array
     {
         return $this->soldOutSchedules;
     }
@@ -238,7 +238,7 @@ class SoldOutLegType extends AbstractModel
      *
      * @return self
      */
-    public function setSoldOutSchedules(array $soldOutSchedules): self
+    public function setSoldOutSchedules(?array $soldOutSchedules): self
     {
         $this->soldOutSchedules = $soldOutSchedules;
 
@@ -248,7 +248,7 @@ class SoldOutLegType extends AbstractModel
     /**
      * @return string
      */
-    public function getStatus(): string
+    public function getStatus(): ?string
     {
         return $this->status;
     }
@@ -258,7 +258,7 @@ class SoldOutLegType extends AbstractModel
      *
      * @return self
      */
-    public function setStatus(string $status): self
+    public function setStatus(?string $status): self
     {
         $this->status = $status;
 

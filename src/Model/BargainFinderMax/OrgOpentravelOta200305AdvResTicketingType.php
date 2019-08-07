@@ -36,7 +36,7 @@ class OrgOpentravelOta200305AdvResTicketingType extends AbstractModel
      *
      * @return bool
      */
-    public function getAdvResInd(): bool
+    public function getAdvResInd(): ?bool
     {
         return $this->advResInd;
     }
@@ -48,7 +48,7 @@ class OrgOpentravelOta200305AdvResTicketingType extends AbstractModel
      *
      * @return self
      */
-    public function setAdvResInd(bool $advResInd): self
+    public function setAdvResInd(?bool $advResInd): self
     {
         $this->advResInd = $advResInd;
 
@@ -60,7 +60,7 @@ class OrgOpentravelOta200305AdvResTicketingType extends AbstractModel
      *
      * @return OrgOpentravelOta200305AdvResTicketingTypeAdvReservation
      */
-    public function getAdvReservation(): OrgOpentravelOta200305AdvResTicketingTypeAdvReservation
+    public function getAdvReservation(): ?OrgOpentravelOta200305AdvResTicketingTypeAdvReservation
     {
         return $this->advReservation;
     }
@@ -72,7 +72,7 @@ class OrgOpentravelOta200305AdvResTicketingType extends AbstractModel
      *
      * @return self
      */
-    public function setAdvReservation(OrgOpentravelOta200305AdvResTicketingTypeAdvReservation $advReservation): self
+    public function setAdvReservation(?OrgOpentravelOta200305AdvResTicketingTypeAdvReservation $advReservation): self
     {
         $this->advReservation = $advReservation;
 
@@ -84,7 +84,7 @@ class OrgOpentravelOta200305AdvResTicketingType extends AbstractModel
      *
      * @return OrgOpentravelOta200305AdvResTicketingTypeAdvTicketing
      */
-    public function getAdvTicketing(): OrgOpentravelOta200305AdvResTicketingTypeAdvTicketing
+    public function getAdvTicketing(): ?OrgOpentravelOta200305AdvResTicketingTypeAdvTicketing
     {
         return $this->advTicketing;
     }
@@ -96,7 +96,7 @@ class OrgOpentravelOta200305AdvResTicketingType extends AbstractModel
      *
      * @return self
      */
-    public function setAdvTicketing(OrgOpentravelOta200305AdvResTicketingTypeAdvTicketing $advTicketing): self
+    public function setAdvTicketing(?OrgOpentravelOta200305AdvResTicketingTypeAdvTicketing $advTicketing): self
     {
         $this->advTicketing = $advTicketing;
 
@@ -108,7 +108,7 @@ class OrgOpentravelOta200305AdvResTicketingType extends AbstractModel
      *
      * @return bool
      */
-    public function getAdvTicketingInd(): bool
+    public function getAdvTicketingInd(): ?bool
     {
         return $this->advTicketingInd;
     }
@@ -120,7 +120,7 @@ class OrgOpentravelOta200305AdvResTicketingType extends AbstractModel
      *
      * @return self
      */
-    public function setAdvTicketingInd(bool $advTicketingInd): self
+    public function setAdvTicketingInd(?bool $advTicketingInd): self
     {
         $this->advTicketingInd = $advTicketingInd;
 

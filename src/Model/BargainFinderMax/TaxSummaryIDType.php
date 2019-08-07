@@ -18,7 +18,7 @@ class TaxSummaryIDType extends AbstractModel
      *
      * @return int
      */
-    public function getRef(): int
+    public function getRef(): ?int
     {
         return $this->ref;
     }
@@ -30,7 +30,7 @@ class TaxSummaryIDType extends AbstractModel
      *
      * @return self
      */
-    public function setRef(int $ref): self
+    public function setRef(?int $ref): self
     {
         $this->ref = $ref;
 

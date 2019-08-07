@@ -24,7 +24,7 @@ class OrgOpentravelOta200305ReservationType extends AbstractModel
      *
      * @return string
      */
-    public function getRealStatus(): string
+    public function getRealStatus(): ?string
     {
         return $this->realStatus;
     }
@@ -36,7 +36,7 @@ class OrgOpentravelOta200305ReservationType extends AbstractModel
      *
      * @return self
      */
-    public function setRealStatus(string $realStatus): self
+    public function setRealStatus(?string $realStatus): self
     {
         $this->realStatus = $realStatus;
 
@@ -48,7 +48,7 @@ class OrgOpentravelOta200305ReservationType extends AbstractModel
      *
      * @return string
      */
-    public function getStatus(): string
+    public function getStatus(): ?string
     {
         return $this->status;
     }
@@ -60,7 +60,7 @@ class OrgOpentravelOta200305ReservationType extends AbstractModel
      *
      * @return self
      */
-    public function setStatus(string $status): self
+    public function setStatus(?string $status): self
     {
         $this->status = $status;
 

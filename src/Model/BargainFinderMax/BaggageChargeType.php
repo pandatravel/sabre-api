@@ -42,7 +42,7 @@ class BaggageChargeType extends AbstractModel
     /**
      * @return string
      */
-    public function getDescription1(): string
+    public function getDescription1(): ?string
     {
         return $this->description1;
     }
@@ -52,7 +52,7 @@ class BaggageChargeType extends AbstractModel
      *
      * @return self
      */
-    public function setDescription1(string $description1): self
+    public function setDescription1(?string $description1): self
     {
         $this->description1 = $description1;
 
@@ -62,7 +62,7 @@ class BaggageChargeType extends AbstractModel
     /**
      * @return string
      */
-    public function getDescription2(): string
+    public function getDescription2(): ?string
     {
         return $this->description2;
     }
@@ -72,7 +72,7 @@ class BaggageChargeType extends AbstractModel
      *
      * @return self
      */
-    public function setDescription2(string $description2): self
+    public function setDescription2(?string $description2): self
     {
         $this->description2 = $description2;
 
@@ -82,7 +82,7 @@ class BaggageChargeType extends AbstractModel
     /**
      * @return float
      */
-    public function getEquivalentAmount(): float
+    public function getEquivalentAmount(): ?float
     {
         return $this->equivalentAmount;
     }
@@ -92,7 +92,7 @@ class BaggageChargeType extends AbstractModel
      *
      * @return self
      */
-    public function setEquivalentAmount(float $equivalentAmount): self
+    public function setEquivalentAmount(?float $equivalentAmount): self
     {
         $this->equivalentAmount = $equivalentAmount;
 
@@ -102,7 +102,7 @@ class BaggageChargeType extends AbstractModel
     /**
      * @return string
      */
-    public function getEquivalentCurrency(): string
+    public function getEquivalentCurrency(): ?string
     {
         return $this->equivalentCurrency;
     }
@@ -112,7 +112,7 @@ class BaggageChargeType extends AbstractModel
      *
      * @return self
      */
-    public function setEquivalentCurrency(string $equivalentCurrency): self
+    public function setEquivalentCurrency(?string $equivalentCurrency): self
     {
         $this->equivalentCurrency = $equivalentCurrency;
 
@@ -122,7 +122,7 @@ class BaggageChargeType extends AbstractModel
     /**
      * @return int
      */
-    public function getFirstPiece(): int
+    public function getFirstPiece(): ?int
     {
         return $this->firstPiece;
     }
@@ -132,7 +132,7 @@ class BaggageChargeType extends AbstractModel
      *
      * @return self
      */
-    public function setFirstPiece(int $firstPiece): self
+    public function setFirstPiece(?int $firstPiece): self
     {
         $this->firstPiece = $firstPiece;
 
@@ -142,7 +142,7 @@ class BaggageChargeType extends AbstractModel
     /**
      * @return int
      */
-    public function getId(): int
+    public function getId(): ?int
     {
         return $this->id;
     }
@@ -152,7 +152,7 @@ class BaggageChargeType extends AbstractModel
      *
      * @return self
      */
-    public function setId(int $id): self
+    public function setId(?int $id): self
     {
         $this->id = $id;
 
@@ -162,7 +162,7 @@ class BaggageChargeType extends AbstractModel
     /**
      * @return int
      */
-    public function getLastPiece(): int
+    public function getLastPiece(): ?int
     {
         return $this->lastPiece;
     }
@@ -172,7 +172,7 @@ class BaggageChargeType extends AbstractModel
      *
      * @return self
      */
-    public function setLastPiece(int $lastPiece): self
+    public function setLastPiece(?int $lastPiece): self
     {
         $this->lastPiece = $lastPiece;
 
@@ -182,7 +182,7 @@ class BaggageChargeType extends AbstractModel
     /**
      * @return string
      */
-    public function getNoChargeNotAvailable(): string
+    public function getNoChargeNotAvailable(): ?string
     {
         return $this->noChargeNotAvailable;
     }
@@ -192,7 +192,7 @@ class BaggageChargeType extends AbstractModel
      *
      * @return self
      */
-    public function setNoChargeNotAvailable(string $noChargeNotAvailable): self
+    public function setNoChargeNotAvailable(?string $noChargeNotAvailable): self
     {
         $this->noChargeNotAvailable = $noChargeNotAvailable;
 

@@ -54,7 +54,7 @@ class BrandFeatureType extends AbstractModel
      *
      * @return string
      */
-    public function getApplication(): string
+    public function getApplication(): ?string
     {
         return $this->application;
     }
@@ -66,7 +66,7 @@ class BrandFeatureType extends AbstractModel
      *
      * @return self
      */
-    public function setApplication(string $application): self
+    public function setApplication(?string $application): self
     {
         $this->application = $application;
 
@@ -78,7 +78,7 @@ class BrandFeatureType extends AbstractModel
      *
      * @return string
      */
-    public function getCommercialName(): string
+    public function getCommercialName(): ?string
     {
         return $this->commercialName;
     }
@@ -90,7 +90,7 @@ class BrandFeatureType extends AbstractModel
      *
      * @return self
      */
-    public function setCommercialName(string $commercialName): self
+    public function setCommercialName(?string $commercialName): self
     {
         $this->commercialName = $commercialName;
 
@@ -102,7 +102,7 @@ class BrandFeatureType extends AbstractModel
      *
      * @return int
      */
-    public function getId(): int
+    public function getId(): ?int
     {
         return $this->id;
     }
@@ -114,7 +114,7 @@ class BrandFeatureType extends AbstractModel
      *
      * @return self
      */
-    public function setId(int $id): self
+    public function setId(?int $id): self
     {
         $this->id = $id;
 
@@ -126,7 +126,7 @@ class BrandFeatureType extends AbstractModel
      *
      * @return string
      */
-    public function getServiceGroup(): string
+    public function getServiceGroup(): ?string
     {
         return $this->serviceGroup;
     }
@@ -138,7 +138,7 @@ class BrandFeatureType extends AbstractModel
      *
      * @return self
      */
-    public function setServiceGroup(string $serviceGroup): self
+    public function setServiceGroup(?string $serviceGroup): self
     {
         $this->serviceGroup = $serviceGroup;
 
@@ -150,7 +150,7 @@ class BrandFeatureType extends AbstractModel
      *
      * @return string
      */
-    public function getServiceType(): string
+    public function getServiceType(): ?string
     {
         return $this->serviceType;
     }
@@ -162,7 +162,7 @@ class BrandFeatureType extends AbstractModel
      *
      * @return self
      */
-    public function setServiceType(string $serviceType): self
+    public function setServiceType(?string $serviceType): self
     {
         $this->serviceType = $serviceType;
 
@@ -174,7 +174,7 @@ class BrandFeatureType extends AbstractModel
      *
      * @return string
      */
-    public function getSubCode(): string
+    public function getSubCode(): ?string
     {
         return $this->subCode;
     }
@@ -186,7 +186,7 @@ class BrandFeatureType extends AbstractModel
      *
      * @return self
      */
-    public function setSubCode(string $subCode): self
+    public function setSubCode(?string $subCode): self
     {
         $this->subCode = $subCode;
 
@@ -198,7 +198,7 @@ class BrandFeatureType extends AbstractModel
      *
      * @return string
      */
-    public function getVendor(): string
+    public function getVendor(): ?string
     {
         return $this->vendor;
     }
@@ -210,7 +210,7 @@ class BrandFeatureType extends AbstractModel
      *
      * @return self
      */
-    public function setVendor(string $vendor): self
+    public function setVendor(?string $vendor): self
     {
         $this->vendor = $vendor;
 

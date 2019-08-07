@@ -14,7 +14,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsNumTripsWithRouting e
     /**
      * @return float
      */
-    public function getNumber(): float
+    public function getNumber(): ?float
     {
         return $this->number;
     }
@@ -24,7 +24,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsNumTripsWithRouting e
      *
      * @return self
      */
-    public function setNumber(float $number): self
+    public function setNumber(?float $number): self
     {
         $this->number = $number;
 

@@ -18,7 +18,7 @@ class OrgOpentravelOta200305SeatStatusSimType extends AbstractModel
     /**
      * @return string
      */
-    public function getCommand(): string
+    public function getCommand(): ?string
     {
         return $this->command;
     }
@@ -28,7 +28,7 @@ class OrgOpentravelOta200305SeatStatusSimType extends AbstractModel
      *
      * @return self
      */
-    public function setCommand(string $command): self
+    public function setCommand(?string $command): self
     {
         $this->command = $command;
 
@@ -38,7 +38,7 @@ class OrgOpentravelOta200305SeatStatusSimType extends AbstractModel
     /**
      * @return string
      */
-    public function getType(): string
+    public function getType(): ?string
     {
         return $this->type;
     }
@@ -48,7 +48,7 @@ class OrgOpentravelOta200305SeatStatusSimType extends AbstractModel
      *
      * @return self
      */
-    public function setType(string $type): self
+    public function setType(?string $type): self
     {
         $this->type = $type;
 

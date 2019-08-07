@@ -2,9 +2,7 @@
 
 namespace Ammonkc\SabreApi\Model\BargainFinderMax;
 
-use Ammonkc\SabreApi\AbstractModel;
-
-class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsBrandedFareIndicatorsReturnCheapestUnbrandedFare extends AbstractModel
+class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsBrandedFareIndicatorsReturnCheapes extends AbstractModeltUnbrandedFare
 {
     /**
      * Indicator to turn on or off return of cheapest unbranded fare referred as "catch all" fare for the branded carriers from the branded fares service.
@@ -18,7 +16,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsBrandedFareI
      *
      * @return bool
      */
-    public function getInd(): bool
+    public function getInd(): ?bool
     {
         return $this->ind;
     }
@@ -30,7 +28,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsBrandedFareI
      *
      * @return self
      */
-    public function setInd(bool $ind): self
+    public function setInd(?bool $ind): self
     {
         $this->ind = $ind;
 

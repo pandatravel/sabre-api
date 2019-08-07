@@ -86,7 +86,7 @@ class ScheduleDescType extends AbstractModel
     /**
      * @return Arrival
      */
-    public function getArrival(): Arrival
+    public function getArrival(): ?Arrival
     {
         return $this->arrival;
     }
@@ -96,7 +96,7 @@ class ScheduleDescType extends AbstractModel
      *
      * @return self
      */
-    public function setArrival(Arrival $arrival): self
+    public function setArrival(?Arrival $arrival): self
     {
         $this->arrival = $arrival;
 
@@ -106,7 +106,7 @@ class ScheduleDescType extends AbstractModel
     /**
      * @return BookingDetails
      */
-    public function getBookingDetails(): BookingDetails
+    public function getBookingDetails(): ?BookingDetails
     {
         return $this->bookingDetails;
     }
@@ -116,7 +116,7 @@ class ScheduleDescType extends AbstractModel
      *
      * @return self
      */
-    public function setBookingDetails(BookingDetails $bookingDetails): self
+    public function setBookingDetails(?BookingDetails $bookingDetails): self
     {
         $this->bookingDetails = $bookingDetails;
 
@@ -126,7 +126,7 @@ class ScheduleDescType extends AbstractModel
     /**
      * @return Carrier
      */
-    public function getCarrier(): Carrier
+    public function getCarrier(): ?Carrier
     {
         return $this->carrier;
     }
@@ -136,7 +136,7 @@ class ScheduleDescType extends AbstractModel
      *
      * @return self
      */
-    public function setCarrier(Carrier $carrier): self
+    public function setCarrier(?Carrier $carrier): self
     {
         $this->carrier = $carrier;
 
@@ -146,7 +146,7 @@ class ScheduleDescType extends AbstractModel
     /**
      * @return Departure
      */
-    public function getDeparture(): Departure
+    public function getDeparture(): ?Departure
     {
         return $this->departure;
     }
@@ -156,7 +156,7 @@ class ScheduleDescType extends AbstractModel
      *
      * @return self
      */
-    public function setDeparture(Departure $departure): self
+    public function setDeparture(?Departure $departure): self
     {
         $this->departure = $departure;
 
@@ -166,7 +166,7 @@ class ScheduleDescType extends AbstractModel
     /**
      * @return string
      */
-    public function getDotRating(): string
+    public function getDotRating(): ?string
     {
         return $this->dotRating;
     }
@@ -176,7 +176,7 @@ class ScheduleDescType extends AbstractModel
      *
      * @return self
      */
-    public function setDotRating(string $dotRating): self
+    public function setDotRating(?string $dotRating): self
     {
         $this->dotRating = $dotRating;
 
@@ -186,7 +186,7 @@ class ScheduleDescType extends AbstractModel
     /**
      * @return bool
      */
-    public function getETicketable(): bool
+    public function getETicketable(): ?bool
     {
         return $this->eTicketable;
     }
@@ -196,7 +196,7 @@ class ScheduleDescType extends AbstractModel
      *
      * @return self
      */
-    public function setETicketable(bool $eTicketable): self
+    public function setETicketable(?bool $eTicketable): self
     {
         $this->eTicketable = $eTicketable;
 
@@ -206,7 +206,7 @@ class ScheduleDescType extends AbstractModel
     /**
      * @return int
      */
-    public function getFlightStatused(): int
+    public function getFlightStatused(): ?int
     {
         return $this->flightStatused;
     }
@@ -216,7 +216,7 @@ class ScheduleDescType extends AbstractModel
      *
      * @return self
      */
-    public function setFlightStatused(int $flightStatused): self
+    public function setFlightStatused(?int $flightStatused): self
     {
         $this->flightStatused = $flightStatused;
 
@@ -226,7 +226,7 @@ class ScheduleDescType extends AbstractModel
     /**
      * @return string
      */
-    public function getFrequency(): string
+    public function getFrequency(): ?string
     {
         return $this->frequency;
     }
@@ -236,7 +236,7 @@ class ScheduleDescType extends AbstractModel
      *
      * @return self
      */
-    public function setFrequency(string $frequency): self
+    public function setFrequency(?string $frequency): self
     {
         $this->frequency = $frequency;
 
@@ -246,7 +246,7 @@ class ScheduleDescType extends AbstractModel
     /**
      * @return bool
      */
-    public function getFunnel(): bool
+    public function getFunnel(): ?bool
     {
         return $this->funnel;
     }
@@ -256,7 +256,7 @@ class ScheduleDescType extends AbstractModel
      *
      * @return self
      */
-    public function setFunnel(bool $funnel): self
+    public function setFunnel(?bool $funnel): self
     {
         $this->funnel = $funnel;
 
@@ -266,7 +266,7 @@ class ScheduleDescType extends AbstractModel
     /**
      * @return bool
      */
-    public function getGovernmentApproval(): bool
+    public function getGovernmentApproval(): ?bool
     {
         return $this->governmentApproval;
     }
@@ -276,7 +276,7 @@ class ScheduleDescType extends AbstractModel
      *
      * @return self
      */
-    public function setGovernmentApproval(bool $governmentApproval): self
+    public function setGovernmentApproval(?bool $governmentApproval): self
     {
         $this->governmentApproval = $governmentApproval;
 
@@ -286,7 +286,7 @@ class ScheduleDescType extends AbstractModel
     /**
      * @return HiddenStopType[]
      */
-    public function getHiddenStops(): array
+    public function getHiddenStops(): ?array
     {
         return $this->hiddenStops;
     }
@@ -296,7 +296,7 @@ class ScheduleDescType extends AbstractModel
      *
      * @return self
      */
-    public function setHiddenStops(array $hiddenStops): self
+    public function setHiddenStops(?array $hiddenStops): self
     {
         $this->hiddenStops = $hiddenStops;
 
@@ -306,7 +306,7 @@ class ScheduleDescType extends AbstractModel
     /**
      * @return int
      */
-    public function getId(): int
+    public function getId(): ?int
     {
         return $this->id;
     }
@@ -316,7 +316,7 @@ class ScheduleDescType extends AbstractModel
      *
      * @return self
      */
-    public function setId(int $id): self
+    public function setId(?int $id): self
     {
         $this->id = $id;
 
@@ -326,7 +326,7 @@ class ScheduleDescType extends AbstractModel
     /**
      * @return string
      */
-    public function getMessage(): string
+    public function getMessage(): ?string
     {
         return $this->message;
     }
@@ -336,7 +336,7 @@ class ScheduleDescType extends AbstractModel
      *
      * @return self
      */
-    public function setMessage(string $message): self
+    public function setMessage(?string $message): self
     {
         $this->message = $message;
 
@@ -346,7 +346,7 @@ class ScheduleDescType extends AbstractModel
     /**
      * @return string
      */
-    public function getMessageType(): string
+    public function getMessageType(): ?string
     {
         return $this->messageType;
     }
@@ -356,7 +356,7 @@ class ScheduleDescType extends AbstractModel
      *
      * @return self
      */
-    public function setMessageType(string $messageType): self
+    public function setMessageType(?string $messageType): self
     {
         $this->messageType = $messageType;
 
@@ -366,7 +366,7 @@ class ScheduleDescType extends AbstractModel
     /**
      * @return int
      */
-    public function getOnTimePerformance(): int
+    public function getOnTimePerformance(): ?int
     {
         return $this->onTimePerformance;
     }
@@ -376,7 +376,7 @@ class ScheduleDescType extends AbstractModel
      *
      * @return self
      */
-    public function setOnTimePerformance(int $onTimePerformance): self
+    public function setOnTimePerformance(?int $onTimePerformance): self
     {
         $this->onTimePerformance = $onTimePerformance;
 
@@ -386,7 +386,7 @@ class ScheduleDescType extends AbstractModel
     /**
      * @return bool
      */
-    public function getSmokingAllowed(): bool
+    public function getSmokingAllowed(): ?bool
     {
         return $this->smokingAllowed;
     }
@@ -396,7 +396,7 @@ class ScheduleDescType extends AbstractModel
      *
      * @return self
      */
-    public function setSmokingAllowed(bool $smokingAllowed): self
+    public function setSmokingAllowed(?bool $smokingAllowed): self
     {
         $this->smokingAllowed = $smokingAllowed;
 
@@ -406,7 +406,7 @@ class ScheduleDescType extends AbstractModel
     /**
      * @return int
      */
-    public function getStopCount(): int
+    public function getStopCount(): ?int
     {
         return $this->stopCount;
     }
@@ -416,7 +416,7 @@ class ScheduleDescType extends AbstractModel
      *
      * @return self
      */
-    public function setStopCount(int $stopCount): self
+    public function setStopCount(?int $stopCount): self
     {
         $this->stopCount = $stopCount;
 
@@ -426,7 +426,7 @@ class ScheduleDescType extends AbstractModel
     /**
      * @return int
      */
-    public function getTotalMilesFlown(): int
+    public function getTotalMilesFlown(): ?int
     {
         return $this->totalMilesFlown;
     }
@@ -436,7 +436,7 @@ class ScheduleDescType extends AbstractModel
      *
      * @return self
      */
-    public function setTotalMilesFlown(int $totalMilesFlown): self
+    public function setTotalMilesFlown(?int $totalMilesFlown): self
     {
         $this->totalMilesFlown = $totalMilesFlown;
 
@@ -446,7 +446,7 @@ class ScheduleDescType extends AbstractModel
     /**
      * @return string
      */
-    public function getTrafficRestriction(): string
+    public function getTrafficRestriction(): ?string
     {
         return $this->trafficRestriction;
     }
@@ -456,7 +456,7 @@ class ScheduleDescType extends AbstractModel
      *
      * @return self
      */
-    public function setTrafficRestriction(string $trafficRestriction): self
+    public function setTrafficRestriction(?string $trafficRestriction): self
     {
         $this->trafficRestriction = $trafficRestriction;
 

@@ -24,7 +24,7 @@ class OrgOpentravelOta200305TravelDateTimeTypeDepartureDatesLengthOfStayRange ex
      *
      * @return int
      */
-    public function getMaxDays(): int
+    public function getMaxDays(): ?int
     {
         return $this->maxDays;
     }
@@ -36,7 +36,7 @@ class OrgOpentravelOta200305TravelDateTimeTypeDepartureDatesLengthOfStayRange ex
      *
      * @return self
      */
-    public function setMaxDays(int $maxDays): self
+    public function setMaxDays(?int $maxDays): self
     {
         $this->maxDays = $maxDays;
 
@@ -48,7 +48,7 @@ class OrgOpentravelOta200305TravelDateTimeTypeDepartureDatesLengthOfStayRange ex
      *
      * @return int
      */
-    public function getMinDays(): int
+    public function getMinDays(): ?int
     {
         return $this->minDays;
     }
@@ -60,7 +60,7 @@ class OrgOpentravelOta200305TravelDateTimeTypeDepartureDatesLengthOfStayRange ex
      *
      * @return self
      */
-    public function setMinDays(int $minDays): self
+    public function setMinDays(?int $minDays): self
     {
         $this->minDays = $minDays;
 

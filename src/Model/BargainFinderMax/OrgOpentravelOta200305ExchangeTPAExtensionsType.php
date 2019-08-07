@@ -14,7 +14,7 @@ class OrgOpentravelOta200305ExchangeTPAExtensionsType extends AbstractModel
     /**
      * @return OrgOpentravelOta200305AwardShoppingType
      */
-    public function getAwardShopping(): OrgOpentravelOta200305AwardShoppingType
+    public function getAwardShopping(): ?OrgOpentravelOta200305AwardShoppingType
     {
         return $this->awardShopping;
     }
@@ -24,7 +24,7 @@ class OrgOpentravelOta200305ExchangeTPAExtensionsType extends AbstractModel
      *
      * @return self
      */
-    public function setAwardShopping(OrgOpentravelOta200305AwardShoppingType $awardShopping): self
+    public function setAwardShopping(?OrgOpentravelOta200305AwardShoppingType $awardShopping): self
     {
         $this->awardShopping = $awardShopping;
 

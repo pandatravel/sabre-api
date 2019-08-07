@@ -14,7 +14,7 @@ class OrgOpentravelOta200305BaggageType extends AbstractModel
     /**
      * @return bool
      */
-    public function getFreePieceRequired(): bool
+    public function getFreePieceRequired(): ?bool
     {
         return $this->freePieceRequired;
     }
@@ -24,7 +24,7 @@ class OrgOpentravelOta200305BaggageType extends AbstractModel
      *
      * @return self
      */
-    public function setFreePieceRequired(bool $freePieceRequired): self
+    public function setFreePieceRequired(?bool $freePieceRequired): self
     {
         $this->freePieceRequired = $freePieceRequired;
 

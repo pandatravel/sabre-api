@@ -18,7 +18,7 @@ class FareComponentSegmentsType extends AbstractModel
     /**
      * @return SegmentType
      */
-    public function getSegment(): SegmentType
+    public function getSegment(): ?SegmentType
     {
         return $this->segment;
     }
@@ -28,7 +28,7 @@ class FareComponentSegmentsType extends AbstractModel
      *
      * @return self
      */
-    public function setSegment(SegmentType $segment): self
+    public function setSegment(?SegmentType $segment): self
     {
         $this->segment = $segment;
 

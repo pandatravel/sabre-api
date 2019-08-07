@@ -18,7 +18,7 @@ class OrgOpentravelOta200305DiversityControlTypeLowFareBucket extends AbstractMo
     /**
      * @return string
      */
-    public function getFareCutOff(): string
+    public function getFareCutOff(): ?string
     {
         return $this->fareCutOff;
     }
@@ -28,7 +28,7 @@ class OrgOpentravelOta200305DiversityControlTypeLowFareBucket extends AbstractMo
      *
      * @return self
      */
-    public function setFareCutOff(string $fareCutOff): self
+    public function setFareCutOff(?string $fareCutOff): self
     {
         $this->fareCutOff = $fareCutOff;
 
@@ -38,7 +38,7 @@ class OrgOpentravelOta200305DiversityControlTypeLowFareBucket extends AbstractMo
     /**
      * @return string
      */
-    public function getOptions(): string
+    public function getOptions(): ?string
     {
         return $this->options;
     }
@@ -48,7 +48,7 @@ class OrgOpentravelOta200305DiversityControlTypeLowFareBucket extends AbstractMo
      *
      * @return self
      */
-    public function setOptions(string $options): self
+    public function setOptions(?string $options): self
     {
         $this->options = $options;
 

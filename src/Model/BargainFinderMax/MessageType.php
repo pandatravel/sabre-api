@@ -30,7 +30,7 @@ class MessageType extends AbstractModel
     /**
      * @return string
      */
-    public function getCode(): string
+    public function getCode(): ?string
     {
         return $this->code;
     }
@@ -40,7 +40,7 @@ class MessageType extends AbstractModel
      *
      * @return self
      */
-    public function setCode(string $code): self
+    public function setCode(?string $code): self
     {
         $this->code = $code;
 
@@ -50,7 +50,7 @@ class MessageType extends AbstractModel
     /**
      * @return string
      */
-    public function getSeverity(): string
+    public function getSeverity(): ?string
     {
         return $this->severity;
     }
@@ -60,7 +60,7 @@ class MessageType extends AbstractModel
      *
      * @return self
      */
-    public function setSeverity(string $severity): self
+    public function setSeverity(?string $severity): self
     {
         $this->severity = $severity;
 
@@ -70,7 +70,7 @@ class MessageType extends AbstractModel
     /**
      * @return string
      */
-    public function getText(): string
+    public function getText(): ?string
     {
         return $this->text;
     }
@@ -80,7 +80,7 @@ class MessageType extends AbstractModel
      *
      * @return self
      */
-    public function setText(string $text): self
+    public function setText(?string $text): self
     {
         $this->text = $text;
 
@@ -90,7 +90,7 @@ class MessageType extends AbstractModel
     /**
      * @return string
      */
-    public function getType(): string
+    public function getType(): ?string
     {
         return $this->type;
     }
@@ -100,7 +100,7 @@ class MessageType extends AbstractModel
      *
      * @return self
      */
-    public function setType(string $type): self
+    public function setType(?string $type): self
     {
         $this->type = $type;
 
@@ -110,7 +110,7 @@ class MessageType extends AbstractModel
     /**
      * @return string
      */
-    public function getValue(): string
+    public function getValue(): ?string
     {
         return $this->value;
     }
@@ -120,7 +120,7 @@ class MessageType extends AbstractModel
      *
      * @return self
      */
-    public function setValue(string $value): self
+    public function setValue(?string $value): self
     {
         $this->value = $value;
 

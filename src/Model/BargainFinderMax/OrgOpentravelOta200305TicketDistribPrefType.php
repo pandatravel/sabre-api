@@ -30,7 +30,7 @@ class OrgOpentravelOta200305TicketDistribPrefType extends AbstractModel
     /**
      * @return string
      */
-    public function getDistribType(): string
+    public function getDistribType(): ?string
     {
         return $this->distribType;
     }
@@ -40,7 +40,7 @@ class OrgOpentravelOta200305TicketDistribPrefType extends AbstractModel
      *
      * @return self
      */
-    public function setDistribType(string $distribType): self
+    public function setDistribType(?string $distribType): self
     {
         $this->distribType = $distribType;
 
@@ -52,7 +52,7 @@ class OrgOpentravelOta200305TicketDistribPrefType extends AbstractModel
      *
      * @return string
      */
-    public function getPreferLevel(): string
+    public function getPreferLevel(): ?string
     {
         return $this->preferLevel;
     }
@@ -64,7 +64,7 @@ class OrgOpentravelOta200305TicketDistribPrefType extends AbstractModel
      *
      * @return self
      */
-    public function setPreferLevel(string $preferLevel): self
+    public function setPreferLevel(?string $preferLevel): self
     {
         $this->preferLevel = $preferLevel;
 
@@ -76,7 +76,7 @@ class OrgOpentravelOta200305TicketDistribPrefType extends AbstractModel
      *
      * @return string
      */
-    public function getTicketTime(): string
+    public function getTicketTime(): ?string
     {
         return $this->ticketTime;
     }
@@ -88,7 +88,7 @@ class OrgOpentravelOta200305TicketDistribPrefType extends AbstractModel
      *
      * @return self
      */
-    public function setTicketTime(string $ticketTime): self
+    public function setTicketTime(?string $ticketTime): self
     {
         $this->ticketTime = $ticketTime;
 
@@ -98,7 +98,7 @@ class OrgOpentravelOta200305TicketDistribPrefType extends AbstractModel
     /**
      * @return string
      */
-    public function getContent(): string
+    public function getContent(): ?string
     {
         return $this->content;
     }
@@ -108,7 +108,7 @@ class OrgOpentravelOta200305TicketDistribPrefType extends AbstractModel
      *
      * @return self
      */
-    public function setContent(string $content): self
+    public function setContent(?string $content): self
     {
         $this->content = $content;
 

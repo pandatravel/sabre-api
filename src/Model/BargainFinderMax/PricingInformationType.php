@@ -66,7 +66,7 @@ class PricingInformationType extends AbstractModel
     /**
      * @return string
      */
-    public function getPoSCountryCode(): string
+    public function getPoSCountryCode(): ?string
     {
         return $this->poSCountryCode;
     }
@@ -76,7 +76,7 @@ class PricingInformationType extends AbstractModel
      *
      * @return self
      */
-    public function setPoSCountryCode(string $poSCountryCode): self
+    public function setPoSCountryCode(?string $poSCountryCode): self
     {
         $this->poSCountryCode = $poSCountryCode;
 
@@ -86,7 +86,7 @@ class PricingInformationType extends AbstractModel
     /**
      * @return string
      */
-    public function getBrand(): string
+    public function getBrand(): ?string
     {
         return $this->brand;
     }
@@ -96,7 +96,7 @@ class PricingInformationType extends AbstractModel
      *
      * @return self
      */
-    public function setBrand(string $brand): self
+    public function setBrand(?string $brand): self
     {
         $this->brand = $brand;
 
@@ -106,7 +106,7 @@ class PricingInformationType extends AbstractModel
     /**
      * @return bool
      */
-    public function getBrandsOnAnyMarket(): bool
+    public function getBrandsOnAnyMarket(): ?bool
     {
         return $this->brandsOnAnyMarket;
     }
@@ -116,7 +116,7 @@ class PricingInformationType extends AbstractModel
      *
      * @return self
      */
-    public function setBrandsOnAnyMarket(bool $brandsOnAnyMarket): self
+    public function setBrandsOnAnyMarket(?bool $brandsOnAnyMarket): self
     {
         $this->brandsOnAnyMarket = $brandsOnAnyMarket;
 
@@ -126,7 +126,7 @@ class PricingInformationType extends AbstractModel
     /**
      * @return Cached
      */
-    public function getCached(): Cached
+    public function getCached(): ?Cached
     {
         return $this->cached;
     }
@@ -136,7 +136,7 @@ class PricingInformationType extends AbstractModel
      *
      * @return self
      */
-    public function setCached(Cached $cached): self
+    public function setCached(?Cached $cached): self
     {
         $this->cached = $cached;
 
@@ -146,7 +146,7 @@ class PricingInformationType extends AbstractModel
     /**
      * @return FareType
      */
-    public function getFare(): FareType
+    public function getFare(): ?FareType
     {
         return $this->fare;
     }
@@ -156,7 +156,7 @@ class PricingInformationType extends AbstractModel
      *
      * @return self
      */
-    public function setFare(FareType $fare): self
+    public function setFare(?FareType $fare): self
     {
         $this->fare = $fare;
 
@@ -166,7 +166,7 @@ class PricingInformationType extends AbstractModel
     /**
      * @return int
      */
-    public function getFlexibleFare(): int
+    public function getFlexibleFare(): ?int
     {
         return $this->flexibleFare;
     }
@@ -176,7 +176,7 @@ class PricingInformationType extends AbstractModel
      *
      * @return self
      */
-    public function setFlexibleFare(int $flexibleFare): self
+    public function setFlexibleFare(?int $flexibleFare): self
     {
         $this->flexibleFare = $flexibleFare;
 
@@ -186,7 +186,7 @@ class PricingInformationType extends AbstractModel
     /**
      * @return Offer
      */
-    public function getOffer(): Offer
+    public function getOffer(): ?Offer
     {
         return $this->offer;
     }
@@ -196,7 +196,7 @@ class PricingInformationType extends AbstractModel
      *
      * @return self
      */
-    public function setOffer(Offer $offer): self
+    public function setOffer(?Offer $offer): self
     {
         $this->offer = $offer;
 
@@ -206,7 +206,7 @@ class PricingInformationType extends AbstractModel
     /**
      * @return int
      */
-    public function getPassengerGroup(): int
+    public function getPassengerGroup(): ?int
     {
         return $this->passengerGroup;
     }
@@ -216,7 +216,7 @@ class PricingInformationType extends AbstractModel
      *
      * @return self
      */
-    public function setPassengerGroup(int $passengerGroup): self
+    public function setPassengerGroup(?int $passengerGroup): self
     {
         $this->passengerGroup = $passengerGroup;
 
@@ -226,7 +226,7 @@ class PricingInformationType extends AbstractModel
     /**
      * @return string
      */
-    public function getPricingSubsource(): string
+    public function getPricingSubsource(): ?string
     {
         return $this->pricingSubsource;
     }
@@ -236,7 +236,7 @@ class PricingInformationType extends AbstractModel
      *
      * @return self
      */
-    public function setPricingSubsource(string $pricingSubsource): self
+    public function setPricingSubsource(?string $pricingSubsource): self
     {
         $this->pricingSubsource = $pricingSubsource;
 
@@ -246,7 +246,7 @@ class PricingInformationType extends AbstractModel
     /**
      * @return string
      */
-    public function getProgram(): string
+    public function getProgram(): ?string
     {
         return $this->program;
     }
@@ -256,7 +256,7 @@ class PricingInformationType extends AbstractModel
      *
      * @return self
      */
-    public function setProgram(string $program): self
+    public function setProgram(?string $program): self
     {
         $this->program = $program;
 
@@ -266,7 +266,7 @@ class PricingInformationType extends AbstractModel
     /**
      * @return string
      */
-    public function getPseudoCityCode(): string
+    public function getPseudoCityCode(): ?string
     {
         return $this->pseudoCityCode;
     }
@@ -276,7 +276,7 @@ class PricingInformationType extends AbstractModel
      *
      * @return self
      */
-    public function setPseudoCityCode(string $pseudoCityCode): self
+    public function setPseudoCityCode(?string $pseudoCityCode): self
     {
         $this->pseudoCityCode = $pseudoCityCode;
 
@@ -286,7 +286,7 @@ class PricingInformationType extends AbstractModel
     /**
      * @return bool
      */
-    public function getRevalidated(): bool
+    public function getRevalidated(): ?bool
     {
         return $this->revalidated;
     }
@@ -296,7 +296,7 @@ class PricingInformationType extends AbstractModel
      *
      * @return self
      */
-    public function setRevalidated(bool $revalidated): self
+    public function setRevalidated(?bool $revalidated): self
     {
         $this->revalidated = $revalidated;
 
@@ -306,7 +306,7 @@ class PricingInformationType extends AbstractModel
     /**
      * @return SoldOutType
      */
-    public function getSoldOut(): SoldOutType
+    public function getSoldOut(): ?SoldOutType
     {
         return $this->soldOut;
     }
@@ -316,7 +316,7 @@ class PricingInformationType extends AbstractModel
      *
      * @return self
      */
-    public function setSoldOut(SoldOutType $soldOut): self
+    public function setSoldOut(?SoldOutType $soldOut): self
     {
         $this->soldOut = $soldOut;
 
@@ -326,7 +326,7 @@ class PricingInformationType extends AbstractModel
     /**
      * @return TicketType[]
      */
-    public function getTickets(): array
+    public function getTickets(): ?array
     {
         return $this->tickets;
     }
@@ -336,7 +336,7 @@ class PricingInformationType extends AbstractModel
      *
      * @return self
      */
-    public function setTickets(array $tickets): self
+    public function setTickets(?array $tickets): self
     {
         $this->tickets = $tickets;
 

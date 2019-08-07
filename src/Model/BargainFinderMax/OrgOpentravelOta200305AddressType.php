@@ -78,7 +78,7 @@ class OrgOpentravelOta200305AddressType extends AbstractModel
     /**
      * @return string[]
      */
-    public function getAddressLine(): array
+    public function getAddressLine(): ?array
     {
         return $this->addressLine;
     }
@@ -88,7 +88,7 @@ class OrgOpentravelOta200305AddressType extends AbstractModel
      *
      * @return self
      */
-    public function setAddressLine(array $addressLine): self
+    public function setAddressLine(?array $addressLine): self
     {
         $this->addressLine = $addressLine;
 
@@ -100,7 +100,7 @@ class OrgOpentravelOta200305AddressType extends AbstractModel
      *
      * @return string
      */
-    public function getBldgRoom(): string
+    public function getBldgRoom(): ?string
     {
         return $this->bldgRoom;
     }
@@ -112,7 +112,7 @@ class OrgOpentravelOta200305AddressType extends AbstractModel
      *
      * @return self
      */
-    public function setBldgRoom(string $bldgRoom): self
+    public function setBldgRoom(?string $bldgRoom): self
     {
         $this->bldgRoom = $bldgRoom;
 
@@ -124,7 +124,7 @@ class OrgOpentravelOta200305AddressType extends AbstractModel
      *
      * @return string
      */
-    public function getCityName(): string
+    public function getCityName(): ?string
     {
         return $this->cityName;
     }
@@ -136,7 +136,7 @@ class OrgOpentravelOta200305AddressType extends AbstractModel
      *
      * @return self
      */
-    public function setCityName(string $cityName): self
+    public function setCityName(?string $cityName): self
     {
         $this->cityName = $cityName;
 
@@ -148,7 +148,7 @@ class OrgOpentravelOta200305AddressType extends AbstractModel
      *
      * @return OrgOpentravelOta200305CountryNameType
      */
-    public function getCountryName(): OrgOpentravelOta200305CountryNameType
+    public function getCountryName(): ?OrgOpentravelOta200305CountryNameType
     {
         return $this->countryName;
     }
@@ -160,7 +160,7 @@ class OrgOpentravelOta200305AddressType extends AbstractModel
      *
      * @return self
      */
-    public function setCountryName(OrgOpentravelOta200305CountryNameType $countryName): self
+    public function setCountryName(?OrgOpentravelOta200305CountryNameType $countryName): self
     {
         $this->countryName = $countryName;
 
@@ -172,7 +172,7 @@ class OrgOpentravelOta200305AddressType extends AbstractModel
      *
      * @return string
      */
-    public function getCounty(): string
+    public function getCounty(): ?string
     {
         return $this->county;
     }
@@ -184,7 +184,7 @@ class OrgOpentravelOta200305AddressType extends AbstractModel
      *
      * @return self
      */
-    public function setCounty(string $county): self
+    public function setCounty(?string $county): self
     {
         $this->county = $county;
 
@@ -196,7 +196,7 @@ class OrgOpentravelOta200305AddressType extends AbstractModel
      *
      * @return bool
      */
-    public function getFormattedInd(): bool
+    public function getFormattedInd(): ?bool
     {
         return $this->formattedInd;
     }
@@ -208,7 +208,7 @@ class OrgOpentravelOta200305AddressType extends AbstractModel
      *
      * @return self
      */
-    public function setFormattedInd(bool $formattedInd): self
+    public function setFormattedInd(?bool $formattedInd): self
     {
         $this->formattedInd = $formattedInd;
 
@@ -220,7 +220,7 @@ class OrgOpentravelOta200305AddressType extends AbstractModel
      *
      * @return string
      */
-    public function getPostalCode(): string
+    public function getPostalCode(): ?string
     {
         return $this->postalCode;
     }
@@ -232,7 +232,7 @@ class OrgOpentravelOta200305AddressType extends AbstractModel
      *
      * @return self
      */
-    public function setPostalCode(string $postalCode): self
+    public function setPostalCode(?string $postalCode): self
     {
         $this->postalCode = $postalCode;
 
@@ -244,7 +244,7 @@ class OrgOpentravelOta200305AddressType extends AbstractModel
      *
      * @return string
      */
-    public function getShareMarketInd(): string
+    public function getShareMarketInd(): ?string
     {
         return $this->shareMarketInd;
     }
@@ -256,7 +256,7 @@ class OrgOpentravelOta200305AddressType extends AbstractModel
      *
      * @return self
      */
-    public function setShareMarketInd(string $shareMarketInd): self
+    public function setShareMarketInd(?string $shareMarketInd): self
     {
         $this->shareMarketInd = $shareMarketInd;
 
@@ -268,7 +268,7 @@ class OrgOpentravelOta200305AddressType extends AbstractModel
      *
      * @return string
      */
-    public function getShareSynchInd(): string
+    public function getShareSynchInd(): ?string
     {
         return $this->shareSynchInd;
     }
@@ -280,7 +280,7 @@ class OrgOpentravelOta200305AddressType extends AbstractModel
      *
      * @return self
      */
-    public function setShareSynchInd(string $shareSynchInd): self
+    public function setShareSynchInd(?string $shareSynchInd): self
     {
         $this->shareSynchInd = $shareSynchInd;
 
@@ -292,7 +292,7 @@ class OrgOpentravelOta200305AddressType extends AbstractModel
      *
      * @return OrgOpentravelOta200305StateProvType
      */
-    public function getStateProv(): OrgOpentravelOta200305StateProvType
+    public function getStateProv(): ?OrgOpentravelOta200305StateProvType
     {
         return $this->stateProv;
     }
@@ -304,7 +304,7 @@ class OrgOpentravelOta200305AddressType extends AbstractModel
      *
      * @return self
      */
-    public function setStateProv(OrgOpentravelOta200305StateProvType $stateProv): self
+    public function setStateProv(?OrgOpentravelOta200305StateProvType $stateProv): self
     {
         $this->stateProv = $stateProv;
 
@@ -316,7 +316,7 @@ class OrgOpentravelOta200305AddressType extends AbstractModel
      *
      * @return OrgOpentravelOta200305StreetNmbrType
      */
-    public function getStreetNmbr(): OrgOpentravelOta200305StreetNmbrType
+    public function getStreetNmbr(): ?OrgOpentravelOta200305StreetNmbrType
     {
         return $this->streetNmbr;
     }
@@ -328,7 +328,7 @@ class OrgOpentravelOta200305AddressType extends AbstractModel
      *
      * @return self
      */
-    public function setStreetNmbr(OrgOpentravelOta200305StreetNmbrType $streetNmbr): self
+    public function setStreetNmbr(?OrgOpentravelOta200305StreetNmbrType $streetNmbr): self
     {
         $this->streetNmbr = $streetNmbr;
 
@@ -338,7 +338,7 @@ class OrgOpentravelOta200305AddressType extends AbstractModel
     /**
      * @return string
      */
-    public function getType(): string
+    public function getType(): ?string
     {
         return $this->type;
     }
@@ -348,7 +348,7 @@ class OrgOpentravelOta200305AddressType extends AbstractModel
      *
      * @return self
      */
-    public function setType(string $type): self
+    public function setType(?string $type): self
     {
         $this->type = $type;
 

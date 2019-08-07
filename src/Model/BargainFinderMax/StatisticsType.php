@@ -48,7 +48,7 @@ class StatisticsType extends AbstractModel
      *
      * @return int
      */
-    public function getBranded(): int
+    public function getBranded(): ?int
     {
         return $this->branded;
     }
@@ -60,7 +60,7 @@ class StatisticsType extends AbstractModel
      *
      * @return self
      */
-    public function setBranded(int $branded): self
+    public function setBranded(?int $branded): self
     {
         $this->branded = $branded;
 
@@ -72,7 +72,7 @@ class StatisticsType extends AbstractModel
      *
      * @return int
      */
-    public function getDeparted(): int
+    public function getDeparted(): ?int
     {
         return $this->departed;
     }
@@ -84,7 +84,7 @@ class StatisticsType extends AbstractModel
      *
      * @return self
      */
-    public function setDeparted(int $departed): self
+    public function setDeparted(?int $departed): self
     {
         $this->departed = $departed;
 
@@ -96,7 +96,7 @@ class StatisticsType extends AbstractModel
      *
      * @return int
      */
-    public function getItineraryCount(): int
+    public function getItineraryCount(): ?int
     {
         return $this->itineraryCount;
     }
@@ -108,7 +108,7 @@ class StatisticsType extends AbstractModel
      *
      * @return self
      */
-    public function setItineraryCount(int $itineraryCount): self
+    public function setItineraryCount(?int $itineraryCount): self
     {
         $this->itineraryCount = $itineraryCount;
 
@@ -120,7 +120,7 @@ class StatisticsType extends AbstractModel
      *
      * @return int
      */
-    public function getLegMissed(): int
+    public function getLegMissed(): ?int
     {
         return $this->legMissed;
     }
@@ -132,7 +132,7 @@ class StatisticsType extends AbstractModel
      *
      * @return self
      */
-    public function setLegMissed(int $legMissed): self
+    public function setLegMissed(?int $legMissed): self
     {
         $this->legMissed = $legMissed;
 
@@ -144,7 +144,7 @@ class StatisticsType extends AbstractModel
      *
      * @return int
      */
-    public function getOneWay(): int
+    public function getOneWay(): ?int
     {
         return $this->oneWay;
     }
@@ -156,7 +156,7 @@ class StatisticsType extends AbstractModel
      *
      * @return self
      */
-    public function setOneWay(int $oneWay): self
+    public function setOneWay(?int $oneWay): self
     {
         $this->oneWay = $oneWay;
 
@@ -168,7 +168,7 @@ class StatisticsType extends AbstractModel
      *
      * @return int
      */
-    public function getSoldOut(): int
+    public function getSoldOut(): ?int
     {
         return $this->soldOut;
     }
@@ -180,7 +180,7 @@ class StatisticsType extends AbstractModel
      *
      * @return self
      */
-    public function setSoldOut(int $soldOut): self
+    public function setSoldOut(?int $soldOut): self
     {
         $this->soldOut = $soldOut;
 

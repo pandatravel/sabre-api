@@ -42,7 +42,7 @@ class HandlingMarkupDetailType extends AbstractModel
     /**
      * @return string
      */
-    public function getAmountCurrency(): string
+    public function getAmountCurrency(): ?string
     {
         return $this->amountCurrency;
     }
@@ -52,7 +52,7 @@ class HandlingMarkupDetailType extends AbstractModel
      *
      * @return self
      */
-    public function setAmountCurrency(string $amountCurrency): self
+    public function setAmountCurrency(?string $amountCurrency): self
     {
         $this->amountCurrency = $amountCurrency;
 
@@ -62,7 +62,7 @@ class HandlingMarkupDetailType extends AbstractModel
     /**
      * @return float
      */
-    public function getFareAmountAfterMarkup(): float
+    public function getFareAmountAfterMarkup(): ?float
     {
         return $this->fareAmountAfterMarkup;
     }
@@ -72,7 +72,7 @@ class HandlingMarkupDetailType extends AbstractModel
      *
      * @return self
      */
-    public function setFareAmountAfterMarkup(float $fareAmountAfterMarkup): self
+    public function setFareAmountAfterMarkup(?float $fareAmountAfterMarkup): self
     {
         $this->fareAmountAfterMarkup = $fareAmountAfterMarkup;
 
@@ -82,7 +82,7 @@ class HandlingMarkupDetailType extends AbstractModel
     /**
      * @return float
      */
-    public function getMarkupAmount(): float
+    public function getMarkupAmount(): ?float
     {
         return $this->markupAmount;
     }
@@ -92,7 +92,7 @@ class HandlingMarkupDetailType extends AbstractModel
      *
      * @return self
      */
-    public function setMarkupAmount(float $markupAmount): self
+    public function setMarkupAmount(?float $markupAmount): self
     {
         $this->markupAmount = $markupAmount;
 
@@ -102,7 +102,7 @@ class HandlingMarkupDetailType extends AbstractModel
     /**
      * @return string
      */
-    public function getMarkupHandlingFeeAppId(): string
+    public function getMarkupHandlingFeeAppId(): ?string
     {
         return $this->markupHandlingFeeAppId;
     }
@@ -112,7 +112,7 @@ class HandlingMarkupDetailType extends AbstractModel
      *
      * @return self
      */
-    public function setMarkupHandlingFeeAppId(string $markupHandlingFeeAppId): self
+    public function setMarkupHandlingFeeAppId(?string $markupHandlingFeeAppId): self
     {
         $this->markupHandlingFeeAppId = $markupHandlingFeeAppId;
 
@@ -122,7 +122,7 @@ class HandlingMarkupDetailType extends AbstractModel
     /**
      * @return int
      */
-    public function getMarkupRuleItemNumber(): int
+    public function getMarkupRuleItemNumber(): ?int
     {
         return $this->markupRuleItemNumber;
     }
@@ -132,7 +132,7 @@ class HandlingMarkupDetailType extends AbstractModel
      *
      * @return self
      */
-    public function setMarkupRuleItemNumber(int $markupRuleItemNumber): self
+    public function setMarkupRuleItemNumber(?int $markupRuleItemNumber): self
     {
         $this->markupRuleItemNumber = $markupRuleItemNumber;
 
@@ -142,7 +142,7 @@ class HandlingMarkupDetailType extends AbstractModel
     /**
      * @return string
      */
-    public function getMarkupRuleSourcePcc(): string
+    public function getMarkupRuleSourcePcc(): ?string
     {
         return $this->markupRuleSourcePcc;
     }
@@ -152,7 +152,7 @@ class HandlingMarkupDetailType extends AbstractModel
      *
      * @return self
      */
-    public function setMarkupRuleSourcePcc(string $markupRuleSourcePcc): self
+    public function setMarkupRuleSourcePcc(?string $markupRuleSourcePcc): self
     {
         $this->markupRuleSourcePcc = $markupRuleSourcePcc;
 
@@ -162,7 +162,7 @@ class HandlingMarkupDetailType extends AbstractModel
     /**
      * @return string
      */
-    public function getMarkupTypeCode(): string
+    public function getMarkupTypeCode(): ?string
     {
         return $this->markupTypeCode;
     }
@@ -172,7 +172,7 @@ class HandlingMarkupDetailType extends AbstractModel
      *
      * @return self
      */
-    public function setMarkupTypeCode(string $markupTypeCode): self
+    public function setMarkupTypeCode(?string $markupTypeCode): self
     {
         $this->markupTypeCode = $markupTypeCode;
 
@@ -182,7 +182,7 @@ class HandlingMarkupDetailType extends AbstractModel
     /**
      * @return string
      */
-    public function getRetailerRuleQualifier(): string
+    public function getRetailerRuleQualifier(): ?string
     {
         return $this->retailerRuleQualifier;
     }
@@ -192,7 +192,7 @@ class HandlingMarkupDetailType extends AbstractModel
      *
      * @return self
      */
-    public function setRetailerRuleQualifier(string $retailerRuleQualifier): self
+    public function setRetailerRuleQualifier(?string $retailerRuleQualifier): self
     {
         $this->retailerRuleQualifier = $retailerRuleQualifier;
 

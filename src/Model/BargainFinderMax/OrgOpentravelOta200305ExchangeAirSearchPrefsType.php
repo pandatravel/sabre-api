@@ -20,7 +20,7 @@ class OrgOpentravelOta200305ExchangeAirSearchPrefsType extends AbstractModel
     /**
      * @return OrgOpentravelOta200305ExchangeTravelPreferencesTPAExtensionsType
      */
-    public function getTPAExtensions(): OrgOpentravelOta200305ExchangeTravelPreferencesTPAExtensionsType
+    public function getTPAExtensions(): ?OrgOpentravelOta200305ExchangeTravelPreferencesTPAExtensionsType
     {
         return $this->tPAExtensions;
     }
@@ -30,7 +30,7 @@ class OrgOpentravelOta200305ExchangeAirSearchPrefsType extends AbstractModel
      *
      * @return self
      */
-    public function setTPAExtensions(OrgOpentravelOta200305ExchangeTravelPreferencesTPAExtensionsType $tPAExtensions): self
+    public function setTPAExtensions(?OrgOpentravelOta200305ExchangeTravelPreferencesTPAExtensionsType $tPAExtensions): self
     {
         $this->tPAExtensions = $tPAExtensions;
 
@@ -42,7 +42,7 @@ class OrgOpentravelOta200305ExchangeAirSearchPrefsType extends AbstractModel
      *
      * @return bool
      */
-    public function getValidInterlineTicket(): bool
+    public function getValidInterlineTicket(): ?bool
     {
         return $this->validInterlineTicket;
     }
@@ -54,7 +54,7 @@ class OrgOpentravelOta200305ExchangeAirSearchPrefsType extends AbstractModel
      *
      * @return self
      */
-    public function setValidInterlineTicket(bool $validInterlineTicket): self
+    public function setValidInterlineTicket(?bool $validInterlineTicket): self
     {
         $this->validInterlineTicket = $validInterlineTicket;
 

@@ -58,7 +58,7 @@ class HigherIntermediatePointType extends AbstractModel
     /**
      * @return float
      */
-    public function getAmount(): float
+    public function getAmount(): ?float
     {
         return $this->amount;
     }
@@ -68,7 +68,7 @@ class HigherIntermediatePointType extends AbstractModel
      *
      * @return self
      */
-    public function setAmount(float $amount): self
+    public function setAmount(?float $amount): self
     {
         $this->amount = $amount;
 
@@ -78,7 +78,7 @@ class HigherIntermediatePointType extends AbstractModel
     /**
      * @return string
      */
-    public function getCabinHigh(): string
+    public function getCabinHigh(): ?string
     {
         return $this->cabinHigh;
     }
@@ -88,7 +88,7 @@ class HigherIntermediatePointType extends AbstractModel
      *
      * @return self
      */
-    public function setCabinHigh(string $cabinHigh): self
+    public function setCabinHigh(?string $cabinHigh): self
     {
         $this->cabinHigh = $cabinHigh;
 
@@ -98,7 +98,7 @@ class HigherIntermediatePointType extends AbstractModel
     /**
      * @return string
      */
-    public function getCabinLow(): string
+    public function getCabinLow(): ?string
     {
         return $this->cabinLow;
     }
@@ -108,7 +108,7 @@ class HigherIntermediatePointType extends AbstractModel
      *
      * @return self
      */
-    public function setCabinLow(string $cabinLow): self
+    public function setCabinLow(?string $cabinLow): self
     {
         $this->cabinLow = $cabinLow;
 
@@ -118,7 +118,7 @@ class HigherIntermediatePointType extends AbstractModel
     /**
      * @return string
      */
-    public function getDestination(): string
+    public function getDestination(): ?string
     {
         return $this->destination;
     }
@@ -128,7 +128,7 @@ class HigherIntermediatePointType extends AbstractModel
      *
      * @return self
      */
-    public function setDestination(string $destination): self
+    public function setDestination(?string $destination): self
     {
         $this->destination = $destination;
 
@@ -138,7 +138,7 @@ class HigherIntermediatePointType extends AbstractModel
     /**
      * @return string
      */
-    public function getFareClassHigh(): string
+    public function getFareClassHigh(): ?string
     {
         return $this->fareClassHigh;
     }
@@ -148,7 +148,7 @@ class HigherIntermediatePointType extends AbstractModel
      *
      * @return self
      */
-    public function setFareClassHigh(string $fareClassHigh): self
+    public function setFareClassHigh(?string $fareClassHigh): self
     {
         $this->fareClassHigh = $fareClassHigh;
 
@@ -158,7 +158,7 @@ class HigherIntermediatePointType extends AbstractModel
     /**
      * @return string
      */
-    public function getFareClassLow(): string
+    public function getFareClassLow(): ?string
     {
         return $this->fareClassLow;
     }
@@ -168,7 +168,7 @@ class HigherIntermediatePointType extends AbstractModel
      *
      * @return self
      */
-    public function setFareClassLow(string $fareClassLow): self
+    public function setFareClassLow(?string $fareClassLow): self
     {
         $this->fareClassLow = $fareClassLow;
 
@@ -178,7 +178,7 @@ class HigherIntermediatePointType extends AbstractModel
     /**
      * @return string
      */
-    public function getHighDestination(): string
+    public function getHighDestination(): ?string
     {
         return $this->highDestination;
     }
@@ -188,7 +188,7 @@ class HigherIntermediatePointType extends AbstractModel
      *
      * @return self
      */
-    public function setHighDestination(string $highDestination): self
+    public function setHighDestination(?string $highDestination): self
     {
         $this->highDestination = $highDestination;
 
@@ -198,7 +198,7 @@ class HigherIntermediatePointType extends AbstractModel
     /**
      * @return string
      */
-    public function getHighOrigin(): string
+    public function getHighOrigin(): ?string
     {
         return $this->highOrigin;
     }
@@ -208,7 +208,7 @@ class HigherIntermediatePointType extends AbstractModel
      *
      * @return self
      */
-    public function setHighOrigin(string $highOrigin): self
+    public function setHighOrigin(?string $highOrigin): self
     {
         $this->highOrigin = $highOrigin;
 
@@ -218,7 +218,7 @@ class HigherIntermediatePointType extends AbstractModel
     /**
      * @return string
      */
-    public function getLowDestination(): string
+    public function getLowDestination(): ?string
     {
         return $this->lowDestination;
     }
@@ -228,7 +228,7 @@ class HigherIntermediatePointType extends AbstractModel
      *
      * @return self
      */
-    public function setLowDestination(string $lowDestination): self
+    public function setLowDestination(?string $lowDestination): self
     {
         $this->lowDestination = $lowDestination;
 
@@ -238,7 +238,7 @@ class HigherIntermediatePointType extends AbstractModel
     /**
      * @return string
      */
-    public function getLowOrigin(): string
+    public function getLowOrigin(): ?string
     {
         return $this->lowOrigin;
     }
@@ -248,7 +248,7 @@ class HigherIntermediatePointType extends AbstractModel
      *
      * @return self
      */
-    public function setLowOrigin(string $lowOrigin): self
+    public function setLowOrigin(?string $lowOrigin): self
     {
         $this->lowOrigin = $lowOrigin;
 
@@ -258,7 +258,7 @@ class HigherIntermediatePointType extends AbstractModel
     /**
      * @return int
      */
-    public function getMileageSurchargePercentage(): int
+    public function getMileageSurchargePercentage(): ?int
     {
         return $this->mileageSurchargePercentage;
     }
@@ -268,7 +268,7 @@ class HigherIntermediatePointType extends AbstractModel
      *
      * @return self
      */
-    public function setMileageSurchargePercentage(int $mileageSurchargePercentage): self
+    public function setMileageSurchargePercentage(?int $mileageSurchargePercentage): self
     {
         $this->mileageSurchargePercentage = $mileageSurchargePercentage;
 
@@ -278,7 +278,7 @@ class HigherIntermediatePointType extends AbstractModel
     /**
      * @return string
      */
-    public function getOrigin(): string
+    public function getOrigin(): ?string
     {
         return $this->origin;
     }
@@ -288,7 +288,7 @@ class HigherIntermediatePointType extends AbstractModel
      *
      * @return self
      */
-    public function setOrigin(string $origin): self
+    public function setOrigin(?string $origin): self
     {
         $this->origin = $origin;
 

@@ -26,7 +26,7 @@ class OrgOpentravelOta200305TravelDateTimeTypeDepartureDates extends AbstractMod
     /**
      * @return OrgOpentravelOta200305TravelDateTimeTypeArrivalDatesDay[]
      */
-    public function getDay(): array
+    public function getDay(): ?array
     {
         return $this->day;
     }
@@ -36,7 +36,7 @@ class OrgOpentravelOta200305TravelDateTimeTypeDepartureDates extends AbstractMod
      *
      * @return self
      */
-    public function setDay(array $day): self
+    public function setDay(?array $day): self
     {
         $this->day = $day;
 
@@ -46,7 +46,7 @@ class OrgOpentravelOta200305TravelDateTimeTypeDepartureDates extends AbstractMod
     /**
      * @return OrgOpentravelOta200305TravelDateTimeTypeArrivalDatesDaysRange[]
      */
-    public function getDaysRange(): array
+    public function getDaysRange(): ?array
     {
         return $this->daysRange;
     }
@@ -56,7 +56,7 @@ class OrgOpentravelOta200305TravelDateTimeTypeDepartureDates extends AbstractMod
      *
      * @return self
      */
-    public function setDaysRange(array $daysRange): self
+    public function setDaysRange(?array $daysRange): self
     {
         $this->daysRange = $daysRange;
 
@@ -66,7 +66,7 @@ class OrgOpentravelOta200305TravelDateTimeTypeDepartureDates extends AbstractMod
     /**
      * @return OrgOpentravelOta200305TravelDateTimeTypeDepartureDatesLengthOfStay[]
      */
-    public function getLengthOfStay(): array
+    public function getLengthOfStay(): ?array
     {
         return $this->lengthOfStay;
     }
@@ -76,7 +76,7 @@ class OrgOpentravelOta200305TravelDateTimeTypeDepartureDates extends AbstractMod
      *
      * @return self
      */
-    public function setLengthOfStay(array $lengthOfStay): self
+    public function setLengthOfStay(?array $lengthOfStay): self
     {
         $this->lengthOfStay = $lengthOfStay;
 
@@ -86,7 +86,7 @@ class OrgOpentravelOta200305TravelDateTimeTypeDepartureDates extends AbstractMod
     /**
      * @return OrgOpentravelOta200305TravelDateTimeTypeDepartureDatesLengthOfStayRange[]
      */
-    public function getLengthOfStayRange(): array
+    public function getLengthOfStayRange(): ?array
     {
         return $this->lengthOfStayRange;
     }
@@ -96,7 +96,7 @@ class OrgOpentravelOta200305TravelDateTimeTypeDepartureDates extends AbstractMod
      *
      * @return self
      */
-    public function setLengthOfStayRange(array $lengthOfStayRange): self
+    public function setLengthOfStayRange(?array $lengthOfStayRange): self
     {
         $this->lengthOfStayRange = $lengthOfStayRange;
 

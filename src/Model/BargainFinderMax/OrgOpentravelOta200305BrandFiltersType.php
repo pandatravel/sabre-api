@@ -18,7 +18,7 @@ class OrgOpentravelOta200305BrandFiltersType extends AbstractModel
     /**
      * @return OrgOpentravelOta200305BrandCodePrefType[]
      */
-    public function getBrand(): array
+    public function getBrand(): ?array
     {
         return $this->brand;
     }
@@ -28,7 +28,7 @@ class OrgOpentravelOta200305BrandFiltersType extends AbstractModel
      *
      * @return self
      */
-    public function setBrand(array $brand): self
+    public function setBrand(?array $brand): self
     {
         $this->brand = $brand;
 
@@ -38,7 +38,7 @@ class OrgOpentravelOta200305BrandFiltersType extends AbstractModel
     /**
      * @return OrgOpentravelOta200305BrandFiltersTypeNonBrandedFares[]
      */
-    public function getNonBrandedFares(): array
+    public function getNonBrandedFares(): ?array
     {
         return $this->nonBrandedFares;
     }
@@ -48,7 +48,7 @@ class OrgOpentravelOta200305BrandFiltersType extends AbstractModel
      *
      * @return self
      */
-    public function setNonBrandedFares(array $nonBrandedFares): self
+    public function setNonBrandedFares(?array $nonBrandedFares): self
     {
         $this->nonBrandedFares = $nonBrandedFares;
 

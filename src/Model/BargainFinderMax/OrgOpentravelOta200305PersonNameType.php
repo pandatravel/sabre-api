@@ -58,7 +58,7 @@ class OrgOpentravelOta200305PersonNameType extends AbstractModel
     /**
      * @return string[]
      */
-    public function getGivenName(): array
+    public function getGivenName(): ?array
     {
         return $this->givenName;
     }
@@ -68,7 +68,7 @@ class OrgOpentravelOta200305PersonNameType extends AbstractModel
      *
      * @return self
      */
-    public function setGivenName(array $givenName): self
+    public function setGivenName(?array $givenName): self
     {
         $this->givenName = $givenName;
 
@@ -78,7 +78,7 @@ class OrgOpentravelOta200305PersonNameType extends AbstractModel
     /**
      * @return string[]
      */
-    public function getMiddleName(): array
+    public function getMiddleName(): ?array
     {
         return $this->middleName;
     }
@@ -88,7 +88,7 @@ class OrgOpentravelOta200305PersonNameType extends AbstractModel
      *
      * @return self
      */
-    public function setMiddleName(array $middleName): self
+    public function setMiddleName(?array $middleName): self
     {
         $this->middleName = $middleName;
 
@@ -98,7 +98,7 @@ class OrgOpentravelOta200305PersonNameType extends AbstractModel
     /**
      * @return string[]
      */
-    public function getNamePrefix(): array
+    public function getNamePrefix(): ?array
     {
         return $this->namePrefix;
     }
@@ -108,7 +108,7 @@ class OrgOpentravelOta200305PersonNameType extends AbstractModel
      *
      * @return self
      */
-    public function setNamePrefix(array $namePrefix): self
+    public function setNamePrefix(?array $namePrefix): self
     {
         $this->namePrefix = $namePrefix;
 
@@ -118,7 +118,7 @@ class OrgOpentravelOta200305PersonNameType extends AbstractModel
     /**
      * @return string[]
      */
-    public function getNameSuffix(): array
+    public function getNameSuffix(): ?array
     {
         return $this->nameSuffix;
     }
@@ -128,7 +128,7 @@ class OrgOpentravelOta200305PersonNameType extends AbstractModel
      *
      * @return self
      */
-    public function setNameSuffix(array $nameSuffix): self
+    public function setNameSuffix(?array $nameSuffix): self
     {
         $this->nameSuffix = $nameSuffix;
 
@@ -138,7 +138,7 @@ class OrgOpentravelOta200305PersonNameType extends AbstractModel
     /**
      * @return string[]
      */
-    public function getNameTitle(): array
+    public function getNameTitle(): ?array
     {
         return $this->nameTitle;
     }
@@ -148,7 +148,7 @@ class OrgOpentravelOta200305PersonNameType extends AbstractModel
      *
      * @return self
      */
-    public function setNameTitle(array $nameTitle): self
+    public function setNameTitle(?array $nameTitle): self
     {
         $this->nameTitle = $nameTitle;
 
@@ -158,7 +158,7 @@ class OrgOpentravelOta200305PersonNameType extends AbstractModel
     /**
      * @return string
      */
-    public function getNameType(): string
+    public function getNameType(): ?string
     {
         return $this->nameType;
     }
@@ -168,7 +168,7 @@ class OrgOpentravelOta200305PersonNameType extends AbstractModel
      *
      * @return self
      */
-    public function setNameType(string $nameType): self
+    public function setNameType(?string $nameType): self
     {
         $this->nameType = $nameType;
 
@@ -180,7 +180,7 @@ class OrgOpentravelOta200305PersonNameType extends AbstractModel
      *
      * @return string
      */
-    public function getShareMarketInd(): string
+    public function getShareMarketInd(): ?string
     {
         return $this->shareMarketInd;
     }
@@ -192,7 +192,7 @@ class OrgOpentravelOta200305PersonNameType extends AbstractModel
      *
      * @return self
      */
-    public function setShareMarketInd(string $shareMarketInd): self
+    public function setShareMarketInd(?string $shareMarketInd): self
     {
         $this->shareMarketInd = $shareMarketInd;
 
@@ -204,7 +204,7 @@ class OrgOpentravelOta200305PersonNameType extends AbstractModel
      *
      * @return string
      */
-    public function getShareSynchInd(): string
+    public function getShareSynchInd(): ?string
     {
         return $this->shareSynchInd;
     }
@@ -216,7 +216,7 @@ class OrgOpentravelOta200305PersonNameType extends AbstractModel
      *
      * @return self
      */
-    public function setShareSynchInd(string $shareSynchInd): self
+    public function setShareSynchInd(?string $shareSynchInd): self
     {
         $this->shareSynchInd = $shareSynchInd;
 
@@ -228,7 +228,7 @@ class OrgOpentravelOta200305PersonNameType extends AbstractModel
      *
      * @return string
      */
-    public function getSurname(): string
+    public function getSurname(): ?string
     {
         return $this->surname;
     }
@@ -240,7 +240,7 @@ class OrgOpentravelOta200305PersonNameType extends AbstractModel
      *
      * @return self
      */
-    public function setSurname(string $surname): self
+    public function setSurname(?string $surname): self
     {
         $this->surname = $surname;
 
@@ -252,7 +252,7 @@ class OrgOpentravelOta200305PersonNameType extends AbstractModel
      *
      * @return string
      */
-    public function getSurnamePrefix(): string
+    public function getSurnamePrefix(): ?string
     {
         return $this->surnamePrefix;
     }
@@ -264,7 +264,7 @@ class OrgOpentravelOta200305PersonNameType extends AbstractModel
      *
      * @return self
      */
-    public function setSurnamePrefix(string $surnamePrefix): self
+    public function setSurnamePrefix(?string $surnamePrefix): self
     {
         $this->surnamePrefix = $surnamePrefix;
 

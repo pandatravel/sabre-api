@@ -34,7 +34,7 @@ class ReissueType extends AbstractModel
     /**
      * @return ChangeFeeType[]
      */
-    public function getChangeFees(): array
+    public function getChangeFees(): ?array
     {
         return $this->changeFees;
     }
@@ -44,7 +44,7 @@ class ReissueType extends AbstractModel
      *
      * @return self
      */
-    public function setChangeFees(array $changeFees): self
+    public function setChangeFees(?array $changeFees): self
     {
         $this->changeFees = $changeFees;
 
@@ -54,7 +54,7 @@ class ReissueType extends AbstractModel
     /**
      * @return bool
      */
-    public function getElectronicTicketNotAllowed(): bool
+    public function getElectronicTicketNotAllowed(): ?bool
     {
         return $this->electronicTicketNotAllowed;
     }
@@ -64,7 +64,7 @@ class ReissueType extends AbstractModel
      *
      * @return self
      */
-    public function setElectronicTicketNotAllowed(bool $electronicTicketNotAllowed): self
+    public function setElectronicTicketNotAllowed(?bool $electronicTicketNotAllowed): self
     {
         $this->electronicTicketNotAllowed = $electronicTicketNotAllowed;
 
@@ -74,7 +74,7 @@ class ReissueType extends AbstractModel
     /**
      * @return bool
      */
-    public function getElectronicTicketRequired(): bool
+    public function getElectronicTicketRequired(): ?bool
     {
         return $this->electronicTicketRequired;
     }
@@ -84,7 +84,7 @@ class ReissueType extends AbstractModel
      *
      * @return self
      */
-    public function setElectronicTicketRequired(bool $electronicTicketRequired): self
+    public function setElectronicTicketRequired(?bool $electronicTicketRequired): self
     {
         $this->electronicTicketRequired = $electronicTicketRequired;
 
@@ -94,7 +94,7 @@ class ReissueType extends AbstractModel
     /**
      * @return string
      */
-    public function getFormOfRefund(): string
+    public function getFormOfRefund(): ?string
     {
         return $this->formOfRefund;
     }
@@ -104,7 +104,7 @@ class ReissueType extends AbstractModel
      *
      * @return self
      */
-    public function setFormOfRefund(string $formOfRefund): self
+    public function setFormOfRefund(?string $formOfRefund): self
     {
         $this->formOfRefund = $formOfRefund;
 
@@ -114,7 +114,7 @@ class ReissueType extends AbstractModel
     /**
      * @return string
      */
-    public function getResidual(): string
+    public function getResidual(): ?string
     {
         return $this->residual;
     }
@@ -124,7 +124,7 @@ class ReissueType extends AbstractModel
      *
      * @return self
      */
-    public function setResidual(string $residual): self
+    public function setResidual(?string $residual): self
     {
         $this->residual = $residual;
 
@@ -134,7 +134,7 @@ class ReissueType extends AbstractModel
     /**
      * @return bool
      */
-    public function getTag7Result(): bool
+    public function getTag7Result(): ?bool
     {
         return $this->tag7Result;
     }
@@ -144,7 +144,7 @@ class ReissueType extends AbstractModel
      *
      * @return self
      */
-    public function setTag7Result(bool $tag7Result): self
+    public function setTag7Result(?bool $tag7Result): self
     {
         $this->tag7Result = $tag7Result;
 

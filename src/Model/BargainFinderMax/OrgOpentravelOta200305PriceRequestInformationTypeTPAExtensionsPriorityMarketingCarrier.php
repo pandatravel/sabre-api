@@ -24,7 +24,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPriorityMark
     /**
      * @return OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPriorityMarketingCarrierCarrier[]
      */
-    public function getCarrier(): array
+    public function getCarrier(): ?array
     {
         return $this->carrier;
     }
@@ -34,7 +34,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPriorityMark
      *
      * @return self
      */
-    public function setCarrier(array $carrier): self
+    public function setCarrier(?array $carrier): self
     {
         $this->carrier = $carrier;
 
@@ -46,7 +46,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPriorityMark
      *
      * @return int
      */
-    public function getLeg(): int
+    public function getLeg(): ?int
     {
         return $this->leg;
     }
@@ -58,7 +58,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPriorityMark
      *
      * @return self
      */
-    public function setLeg(int $leg): self
+    public function setLeg(?int $leg): self
     {
         $this->leg = $leg;
 
@@ -68,7 +68,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPriorityMark
     /**
      * @return int
      */
-    public function getPriority(): int
+    public function getPriority(): ?int
     {
         return $this->priority;
     }
@@ -78,7 +78,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPriorityMark
      *
      * @return self
      */
-    public function setPriority(int $priority): self
+    public function setPriority(?int $priority): self
     {
         $this->priority = $priority;
 

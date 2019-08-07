@@ -30,7 +30,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeAlternateTim
      *
      * @return int
      */
-    public function getMinus(): int
+    public function getMinus(): ?int
     {
         return $this->minus;
     }
@@ -42,7 +42,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeAlternateTim
      *
      * @return self
      */
-    public function setMinus(int $minus): self
+    public function setMinus(?int $minus): self
     {
         $this->minus = $minus;
 
@@ -54,7 +54,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeAlternateTim
      *
      * @return int
      */
-    public function getPlus(): int
+    public function getPlus(): ?int
     {
         return $this->plus;
     }
@@ -66,7 +66,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeAlternateTim
      *
      * @return self
      */
-    public function setPlus(int $plus): self
+    public function setPlus(?int $plus): self
     {
         $this->plus = $plus;
 
@@ -78,7 +78,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeAlternateTim
      *
      * @return int
      */
-    public function getPlusMinus(): int
+    public function getPlusMinus(): ?int
     {
         return $this->plusMinus;
     }
@@ -90,7 +90,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeAlternateTim
      *
      * @return self
      */
-    public function setPlusMinus(int $plusMinus): self
+    public function setPlusMinus(?int $plusMinus): self
     {
         $this->plusMinus = $plusMinus;
 

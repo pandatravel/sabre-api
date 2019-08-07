@@ -30,7 +30,7 @@ class PricingLegType extends AbstractModel
     /**
      * @return int
      */
-    public function getRef(): int
+    public function getRef(): ?int
     {
         return $this->ref;
     }
@@ -40,7 +40,7 @@ class PricingLegType extends AbstractModel
      *
      * @return self
      */
-    public function setRef(int $ref): self
+    public function setRef(?int $ref): self
     {
         $this->ref = $ref;
 
@@ -50,7 +50,7 @@ class PricingLegType extends AbstractModel
     /**
      * @return string
      */
-    public function getStatus(): string
+    public function getStatus(): ?string
     {
         return $this->status;
     }
@@ -60,7 +60,7 @@ class PricingLegType extends AbstractModel
      *
      * @return self
      */
-    public function setStatus(string $status): self
+    public function setStatus(?string $status): self
     {
         $this->status = $status;
 
@@ -70,7 +70,7 @@ class PricingLegType extends AbstractModel
     /**
      * @return TaxSummaryIDType[]
      */
-    public function getTaxSummaries(): array
+    public function getTaxSummaries(): ?array
     {
         return $this->taxSummaries;
     }
@@ -80,7 +80,7 @@ class PricingLegType extends AbstractModel
      *
      * @return self
      */
-    public function setTaxSummaries(array $taxSummaries): self
+    public function setTaxSummaries(?array $taxSummaries): self
     {
         $this->taxSummaries = $taxSummaries;
 
@@ -90,7 +90,7 @@ class PricingLegType extends AbstractModel
     /**
      * @return TaxIDType[]
      */
-    public function getTaxes(): array
+    public function getTaxes(): ?array
     {
         return $this->taxes;
     }
@@ -100,7 +100,7 @@ class PricingLegType extends AbstractModel
      *
      * @return self
      */
-    public function setTaxes(array $taxes): self
+    public function setTaxes(?array $taxes): self
     {
         $this->taxes = $taxes;
 
@@ -110,7 +110,7 @@ class PricingLegType extends AbstractModel
     /**
      * @return TotalFareType
      */
-    public function getTotalFare(): TotalFareType
+    public function getTotalFare(): ?TotalFareType
     {
         return $this->totalFare;
     }
@@ -120,7 +120,7 @@ class PricingLegType extends AbstractModel
      *
      * @return self
      */
-    public function setTotalFare(TotalFareType $totalFare): self
+    public function setTotalFare(?TotalFareType $totalFare): self
     {
         $this->totalFare = $totalFare;
 

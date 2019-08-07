@@ -30,7 +30,7 @@ class ScheduleMessageType extends AbstractModel
     /**
      * @return string
      */
-    public function getDestination(): string
+    public function getDestination(): ?string
     {
         return $this->destination;
     }
@@ -40,7 +40,7 @@ class ScheduleMessageType extends AbstractModel
      *
      * @return self
      */
-    public function setDestination(string $destination): self
+    public function setDestination(?string $destination): self
     {
         $this->destination = $destination;
 
@@ -50,7 +50,7 @@ class ScheduleMessageType extends AbstractModel
     /**
      * @return string
      */
-    public function getOrigin(): string
+    public function getOrigin(): ?string
     {
         return $this->origin;
     }
@@ -60,7 +60,7 @@ class ScheduleMessageType extends AbstractModel
      *
      * @return self
      */
-    public function setOrigin(string $origin): self
+    public function setOrigin(?string $origin): self
     {
         $this->origin = $origin;
 
@@ -70,7 +70,7 @@ class ScheduleMessageType extends AbstractModel
     /**
      * @return string
      */
-    public function getPricingSource(): string
+    public function getPricingSource(): ?string
     {
         return $this->pricingSource;
     }
@@ -80,7 +80,7 @@ class ScheduleMessageType extends AbstractModel
      *
      * @return self
      */
-    public function setPricingSource(string $pricingSource): self
+    public function setPricingSource(?string $pricingSource): self
     {
         $this->pricingSource = $pricingSource;
 
@@ -90,7 +90,7 @@ class ScheduleMessageType extends AbstractModel
     /**
      * @return string
      */
-    public function getText(): string
+    public function getText(): ?string
     {
         return $this->text;
     }
@@ -100,7 +100,7 @@ class ScheduleMessageType extends AbstractModel
      *
      * @return self
      */
-    public function setText(string $text): self
+    public function setText(?string $text): self
     {
         $this->text = $text;
 
@@ -110,7 +110,7 @@ class ScheduleMessageType extends AbstractModel
     /**
      * @return string
      */
-    public function getType(): string
+    public function getType(): ?string
     {
         return $this->type;
     }
@@ -120,7 +120,7 @@ class ScheduleMessageType extends AbstractModel
      *
      * @return self
      */
-    public function setType(string $type): self
+    public function setType(?string $type): self
     {
         $this->type = $type;
 

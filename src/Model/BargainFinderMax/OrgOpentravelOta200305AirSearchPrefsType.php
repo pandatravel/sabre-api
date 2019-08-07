@@ -128,7 +128,7 @@ class OrgOpentravelOta200305AirSearchPrefsType extends AbstractModel
      *
      * @return bool
      */
-    public function getAllFlightsData(): bool
+    public function getAllFlightsData(): ?bool
     {
         return $this->allFlightsData;
     }
@@ -140,7 +140,7 @@ class OrgOpentravelOta200305AirSearchPrefsType extends AbstractModel
      *
      * @return self
      */
-    public function setAllFlightsData(bool $allFlightsData): self
+    public function setAllFlightsData(?bool $allFlightsData): self
     {
         $this->allFlightsData = $allFlightsData;
 
@@ -150,7 +150,7 @@ class OrgOpentravelOta200305AirSearchPrefsType extends AbstractModel
     /**
      * @return OrgOpentravelOta200305AirSearchPrefsTypeAncillaryFees
      */
-    public function getAncillaryFees(): OrgOpentravelOta200305AirSearchPrefsTypeAncillaryFees
+    public function getAncillaryFees(): ?OrgOpentravelOta200305AirSearchPrefsTypeAncillaryFees
     {
         return $this->ancillaryFees;
     }
@@ -160,7 +160,7 @@ class OrgOpentravelOta200305AirSearchPrefsType extends AbstractModel
      *
      * @return self
      */
-    public function setAncillaryFees(OrgOpentravelOta200305AirSearchPrefsTypeAncillaryFees $ancillaryFees): self
+    public function setAncillaryFees(?OrgOpentravelOta200305AirSearchPrefsTypeAncillaryFees $ancillaryFees): self
     {
         $this->ancillaryFees = $ancillaryFees;
 
@@ -172,7 +172,7 @@ class OrgOpentravelOta200305AirSearchPrefsType extends AbstractModel
      *
      * @return OrgOpentravelOta200305AirSearchPrefsTypeBaggage
      */
-    public function getBaggage(): OrgOpentravelOta200305AirSearchPrefsTypeBaggage
+    public function getBaggage(): ?OrgOpentravelOta200305AirSearchPrefsTypeBaggage
     {
         return $this->baggage;
     }
@@ -184,7 +184,7 @@ class OrgOpentravelOta200305AirSearchPrefsType extends AbstractModel
      *
      * @return self
      */
-    public function setBaggage(OrgOpentravelOta200305AirSearchPrefsTypeBaggage $baggage): self
+    public function setBaggage(?OrgOpentravelOta200305AirSearchPrefsTypeBaggage $baggage): self
     {
         $this->baggage = $baggage;
 
@@ -194,7 +194,7 @@ class OrgOpentravelOta200305AirSearchPrefsType extends AbstractModel
     /**
      * @return OrgOpentravelOta200305CabinPrefType[]
      */
-    public function getCabinPref(): array
+    public function getCabinPref(): ?array
     {
         return $this->cabinPref;
     }
@@ -204,7 +204,7 @@ class OrgOpentravelOta200305AirSearchPrefsType extends AbstractModel
      *
      * @return self
      */
-    public function setCabinPref(array $cabinPref): self
+    public function setCabinPref(?array $cabinPref): self
     {
         $this->cabinPref = $cabinPref;
 
@@ -214,7 +214,7 @@ class OrgOpentravelOta200305AirSearchPrefsType extends AbstractModel
     /**
      * @return OrgOpentravelOta200305AirSearchPrefsTypeCommissionCodeQualifiers
      */
-    public function getCommissionCodeQualifiers(): OrgOpentravelOta200305AirSearchPrefsTypeCommissionCodeQualifiers
+    public function getCommissionCodeQualifiers(): ?OrgOpentravelOta200305AirSearchPrefsTypeCommissionCodeQualifiers
     {
         return $this->commissionCodeQualifiers;
     }
@@ -224,7 +224,7 @@ class OrgOpentravelOta200305AirSearchPrefsType extends AbstractModel
      *
      * @return self
      */
-    public function setCommissionCodeQualifiers(OrgOpentravelOta200305AirSearchPrefsTypeCommissionCodeQualifiers $commissionCodeQualifiers): self
+    public function setCommissionCodeQualifiers(?OrgOpentravelOta200305AirSearchPrefsTypeCommissionCodeQualifiers $commissionCodeQualifiers): self
     {
         $this->commissionCodeQualifiers = $commissionCodeQualifiers;
 
@@ -236,7 +236,7 @@ class OrgOpentravelOta200305AirSearchPrefsType extends AbstractModel
      *
      * @return bool
      */
-    public function getETicketDesired(): bool
+    public function getETicketDesired(): ?bool
     {
         return $this->eTicketDesired;
     }
@@ -248,7 +248,7 @@ class OrgOpentravelOta200305AirSearchPrefsType extends AbstractModel
      *
      * @return self
      */
-    public function setETicketDesired(bool $eTicketDesired): self
+    public function setETicketDesired(?bool $eTicketDesired): self
     {
         $this->eTicketDesired = $eTicketDesired;
 
@@ -258,7 +258,7 @@ class OrgOpentravelOta200305AirSearchPrefsType extends AbstractModel
     /**
      * @return OrgOpentravelOta200305EquipmentTypePref[]
      */
-    public function getEquipPref(): array
+    public function getEquipPref(): ?array
     {
         return $this->equipPref;
     }
@@ -268,7 +268,7 @@ class OrgOpentravelOta200305AirSearchPrefsType extends AbstractModel
      *
      * @return self
      */
-    public function setEquipPref(array $equipPref): self
+    public function setEquipPref(?array $equipPref): self
     {
         $this->equipPref = $equipPref;
 
@@ -278,7 +278,7 @@ class OrgOpentravelOta200305AirSearchPrefsType extends AbstractModel
     /**
      * @return OrgOpentravelOta200305AirSearchPrefsTypeFareRestrictPref[]
      */
-    public function getFareRestrictPref(): array
+    public function getFareRestrictPref(): ?array
     {
         return $this->fareRestrictPref;
     }
@@ -288,7 +288,7 @@ class OrgOpentravelOta200305AirSearchPrefsType extends AbstractModel
      *
      * @return self
      */
-    public function setFareRestrictPref(array $fareRestrictPref): self
+    public function setFareRestrictPref(?array $fareRestrictPref): self
     {
         $this->fareRestrictPref = $fareRestrictPref;
 
@@ -298,7 +298,7 @@ class OrgOpentravelOta200305AirSearchPrefsType extends AbstractModel
     /**
      * @return OrgOpentravelOta200305FlightTypePrefType
      */
-    public function getFlightTypePref(): OrgOpentravelOta200305FlightTypePrefType
+    public function getFlightTypePref(): ?OrgOpentravelOta200305FlightTypePrefType
     {
         return $this->flightTypePref;
     }
@@ -308,7 +308,7 @@ class OrgOpentravelOta200305AirSearchPrefsType extends AbstractModel
      *
      * @return self
      */
-    public function setFlightTypePref(OrgOpentravelOta200305FlightTypePrefType $flightTypePref): self
+    public function setFlightTypePref(?OrgOpentravelOta200305FlightTypePrefType $flightTypePref): self
     {
         $this->flightTypePref = $flightTypePref;
 
@@ -318,7 +318,7 @@ class OrgOpentravelOta200305AirSearchPrefsType extends AbstractModel
     /**
      * @return OrgOpentravelOta200305AirSearchPrefsTypeFrequentFlyer[]
      */
-    public function getFrequentFlyer(): array
+    public function getFrequentFlyer(): ?array
     {
         return $this->frequentFlyer;
     }
@@ -328,7 +328,7 @@ class OrgOpentravelOta200305AirSearchPrefsType extends AbstractModel
      *
      * @return self
      */
-    public function setFrequentFlyer(array $frequentFlyer): self
+    public function setFrequentFlyer(?array $frequentFlyer): self
     {
         $this->frequentFlyer = $frequentFlyer;
 
@@ -340,7 +340,7 @@ class OrgOpentravelOta200305AirSearchPrefsType extends AbstractModel
      *
      * @return bool
      */
-    public function getHybrid(): bool
+    public function getHybrid(): ?bool
     {
         return $this->hybrid;
     }
@@ -352,7 +352,7 @@ class OrgOpentravelOta200305AirSearchPrefsType extends AbstractModel
      *
      * @return self
      */
-    public function setHybrid(bool $hybrid): self
+    public function setHybrid(?bool $hybrid): self
     {
         $this->hybrid = $hybrid;
 
@@ -362,7 +362,7 @@ class OrgOpentravelOta200305AirSearchPrefsType extends AbstractModel
     /**
      * @return OrgOpentravelOta200305InterlineBrandsType
      */
-    public function getInterlineBrands(): OrgOpentravelOta200305InterlineBrandsType
+    public function getInterlineBrands(): ?OrgOpentravelOta200305InterlineBrandsType
     {
         return $this->interlineBrands;
     }
@@ -372,7 +372,7 @@ class OrgOpentravelOta200305AirSearchPrefsType extends AbstractModel
      *
      * @return self
      */
-    public function setInterlineBrands(OrgOpentravelOta200305InterlineBrandsType $interlineBrands): self
+    public function setInterlineBrands(?OrgOpentravelOta200305InterlineBrandsType $interlineBrands): self
     {
         $this->interlineBrands = $interlineBrands;
 
@@ -384,7 +384,7 @@ class OrgOpentravelOta200305AirSearchPrefsType extends AbstractModel
      *
      * @return bool
      */
-    public function getLookForAlternatives(): bool
+    public function getLookForAlternatives(): ?bool
     {
         return $this->lookForAlternatives;
     }
@@ -396,7 +396,7 @@ class OrgOpentravelOta200305AirSearchPrefsType extends AbstractModel
      *
      * @return self
      */
-    public function setLookForAlternatives(bool $lookForAlternatives): self
+    public function setLookForAlternatives(?bool $lookForAlternatives): self
     {
         $this->lookForAlternatives = $lookForAlternatives;
 
@@ -408,7 +408,7 @@ class OrgOpentravelOta200305AirSearchPrefsType extends AbstractModel
      *
      * @return int
      */
-    public function getMaxStopsQuantity(): int
+    public function getMaxStopsQuantity(): ?int
     {
         return $this->maxStopsQuantity;
     }
@@ -420,7 +420,7 @@ class OrgOpentravelOta200305AirSearchPrefsType extends AbstractModel
      *
      * @return self
      */
-    public function setMaxStopsQuantity(int $maxStopsQuantity): self
+    public function setMaxStopsQuantity(?int $maxStopsQuantity): self
     {
         $this->maxStopsQuantity = $maxStopsQuantity;
 
@@ -432,7 +432,7 @@ class OrgOpentravelOta200305AirSearchPrefsType extends AbstractModel
      *
      * @return float
      */
-    public function getOnTimeRate(): float
+    public function getOnTimeRate(): ?float
     {
         return $this->onTimeRate;
     }
@@ -444,7 +444,7 @@ class OrgOpentravelOta200305AirSearchPrefsType extends AbstractModel
      *
      * @return self
      */
-    public function setOnTimeRate(float $onTimeRate): self
+    public function setOnTimeRate(?float $onTimeRate): self
     {
         $this->onTimeRate = $onTimeRate;
 
@@ -454,7 +454,7 @@ class OrgOpentravelOta200305AirSearchPrefsType extends AbstractModel
     /**
      * @return bool
      */
-    public function getSmokingAllowed(): bool
+    public function getSmokingAllowed(): ?bool
     {
         return $this->smokingAllowed;
     }
@@ -464,7 +464,7 @@ class OrgOpentravelOta200305AirSearchPrefsType extends AbstractModel
      *
      * @return self
      */
-    public function setSmokingAllowed(bool $smokingAllowed): self
+    public function setSmokingAllowed(?bool $smokingAllowed): self
     {
         $this->smokingAllowed = $smokingAllowed;
 
@@ -474,7 +474,7 @@ class OrgOpentravelOta200305AirSearchPrefsType extends AbstractModel
     /**
      * @return OrgOpentravelOta200305AirSearchPrefsTypeSpanishFamilyDiscount
      */
-    public function getSpanishFamilyDiscount(): OrgOpentravelOta200305AirSearchPrefsTypeSpanishFamilyDiscount
+    public function getSpanishFamilyDiscount(): ?OrgOpentravelOta200305AirSearchPrefsTypeSpanishFamilyDiscount
     {
         return $this->spanishFamilyDiscount;
     }
@@ -484,7 +484,7 @@ class OrgOpentravelOta200305AirSearchPrefsType extends AbstractModel
      *
      * @return self
      */
-    public function setSpanishFamilyDiscount(OrgOpentravelOta200305AirSearchPrefsTypeSpanishFamilyDiscount $spanishFamilyDiscount): self
+    public function setSpanishFamilyDiscount(?OrgOpentravelOta200305AirSearchPrefsTypeSpanishFamilyDiscount $spanishFamilyDiscount): self
     {
         $this->spanishFamilyDiscount = $spanishFamilyDiscount;
 
@@ -496,7 +496,7 @@ class OrgOpentravelOta200305AirSearchPrefsType extends AbstractModel
      *
      * @return OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions
      */
-    public function getTPAExtensions(): OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions
+    public function getTPAExtensions(): ?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions
     {
         return $this->tPAExtensions;
     }
@@ -508,7 +508,7 @@ class OrgOpentravelOta200305AirSearchPrefsType extends AbstractModel
      *
      * @return self
      */
-    public function setTPAExtensions(OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions $tPAExtensions): self
+    public function setTPAExtensions(?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions $tPAExtensions): self
     {
         $this->tPAExtensions = $tPAExtensions;
 
@@ -518,7 +518,7 @@ class OrgOpentravelOta200305AirSearchPrefsType extends AbstractModel
     /**
      * @return OrgOpentravelOta200305TicketDistribPrefType[]
      */
-    public function getTicketDistribPref(): array
+    public function getTicketDistribPref(): ?array
     {
         return $this->ticketDistribPref;
     }
@@ -528,7 +528,7 @@ class OrgOpentravelOta200305AirSearchPrefsType extends AbstractModel
      *
      * @return self
      */
-    public function setTicketDistribPref(array $ticketDistribPref): self
+    public function setTicketDistribPref(?array $ticketDistribPref): self
     {
         $this->ticketDistribPref = $ticketDistribPref;
 
@@ -540,7 +540,7 @@ class OrgOpentravelOta200305AirSearchPrefsType extends AbstractModel
      *
      * @return string
      */
-    public function getUseAllFlights(): string
+    public function getUseAllFlights(): ?string
     {
         return $this->useAllFlights;
     }
@@ -552,7 +552,7 @@ class OrgOpentravelOta200305AirSearchPrefsType extends AbstractModel
      *
      * @return self
      */
-    public function setUseAllFlights(string $useAllFlights): self
+    public function setUseAllFlights(?string $useAllFlights): self
     {
         $this->useAllFlights = $useAllFlights;
 
@@ -564,7 +564,7 @@ class OrgOpentravelOta200305AirSearchPrefsType extends AbstractModel
      *
      * @return bool
      */
-    public function getValidInterlineTicket(): bool
+    public function getValidInterlineTicket(): ?bool
     {
         return $this->validInterlineTicket;
     }
@@ -576,7 +576,7 @@ class OrgOpentravelOta200305AirSearchPrefsType extends AbstractModel
      *
      * @return self
      */
-    public function setValidInterlineTicket(bool $validInterlineTicket): self
+    public function setValidInterlineTicket(?bool $validInterlineTicket): self
     {
         $this->validInterlineTicket = $validInterlineTicket;
 
@@ -586,7 +586,7 @@ class OrgOpentravelOta200305AirSearchPrefsType extends AbstractModel
     /**
      * @return OrgOpentravelOta200305CompanyNamePrefType[]
      */
-    public function getVendorPref(): array
+    public function getVendorPref(): ?array
     {
         return $this->vendorPref;
     }
@@ -596,7 +596,7 @@ class OrgOpentravelOta200305AirSearchPrefsType extends AbstractModel
      *
      * @return self
      */
-    public function setVendorPref(array $vendorPref): self
+    public function setVendorPref(?array $vendorPref): self
     {
         $this->vendorPref = $vendorPref;
 
@@ -606,7 +606,7 @@ class OrgOpentravelOta200305AirSearchPrefsType extends AbstractModel
     /**
      * @return OrgOpentravelOta200305VendorPrefApplicabilityType[]
      */
-    public function getVendorPrefApplicability(): array
+    public function getVendorPrefApplicability(): ?array
     {
         return $this->vendorPrefApplicability;
     }
@@ -616,7 +616,7 @@ class OrgOpentravelOta200305AirSearchPrefsType extends AbstractModel
      *
      * @return self
      */
-    public function setVendorPrefApplicability(array $vendorPrefApplicability): self
+    public function setVendorPrefApplicability(?array $vendorPrefApplicability): self
     {
         $this->vendorPrefApplicability = $vendorPrefApplicability;
 
@@ -626,7 +626,7 @@ class OrgOpentravelOta200305AirSearchPrefsType extends AbstractModel
     /**
      * @return OrgOpentravelOta200305VendorPrefPairingType[]
      */
-    public function getVendorPrefPairing(): array
+    public function getVendorPrefPairing(): ?array
     {
         return $this->vendorPrefPairing;
     }
@@ -636,7 +636,7 @@ class OrgOpentravelOta200305AirSearchPrefsType extends AbstractModel
      *
      * @return self
      */
-    public function setVendorPrefPairing(array $vendorPrefPairing): self
+    public function setVendorPrefPairing(?array $vendorPrefPairing): self
     {
         $this->vendorPrefPairing = $vendorPrefPairing;
 

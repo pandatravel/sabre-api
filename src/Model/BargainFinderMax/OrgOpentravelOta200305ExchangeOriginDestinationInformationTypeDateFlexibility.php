@@ -42,7 +42,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeDateFlexibil
      *
      * @return int
      */
-    public function getMinus(): int
+    public function getMinus(): ?int
     {
         return $this->minus;
     }
@@ -54,7 +54,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeDateFlexibil
      *
      * @return self
      */
-    public function setMinus(int $minus): self
+    public function setMinus(?int $minus): self
     {
         $this->minus = $minus;
 
@@ -66,7 +66,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeDateFlexibil
      *
      * @return int
      */
-    public function getNbrOfDays(): int
+    public function getNbrOfDays(): ?int
     {
         return $this->nbrOfDays;
     }
@@ -78,7 +78,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeDateFlexibil
      *
      * @return self
      */
-    public function setNbrOfDays(int $nbrOfDays): self
+    public function setNbrOfDays(?int $nbrOfDays): self
     {
         $this->nbrOfDays = $nbrOfDays;
 
@@ -90,7 +90,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeDateFlexibil
      *
      * @return int
      */
-    public function getPlus(): int
+    public function getPlus(): ?int
     {
         return $this->plus;
     }
@@ -102,7 +102,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeDateFlexibil
      *
      * @return self
      */
-    public function setPlus(int $plus): self
+    public function setPlus(?int $plus): self
     {
         $this->plus = $plus;
 
@@ -114,7 +114,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeDateFlexibil
      *
      * @return bool
      */
-    public function getTolerance(): bool
+    public function getTolerance(): ?bool
     {
         return $this->tolerance;
     }
@@ -126,7 +126,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeDateFlexibil
      *
      * @return self
      */
-    public function setTolerance(bool $tolerance): self
+    public function setTolerance(?bool $tolerance): self
     {
         $this->tolerance = $tolerance;
 
@@ -138,7 +138,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeDateFlexibil
      *
      * @return bool
      */
-    public function getValidate(): bool
+    public function getValidate(): ?bool
     {
         return $this->validate;
     }
@@ -150,7 +150,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationInformationTypeDateFlexibil
      *
      * @return self
      */
-    public function setValidate(bool $validate): self
+    public function setValidate(?bool $validate): self
     {
         $this->validate = $validate;
 

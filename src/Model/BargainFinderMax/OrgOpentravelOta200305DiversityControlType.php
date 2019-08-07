@@ -18,7 +18,7 @@ class OrgOpentravelOta200305DiversityControlType extends AbstractModel
     /**
      * @return OrgOpentravelOta200305DiversityControlTypeDimensions
      */
-    public function getDimensions(): OrgOpentravelOta200305DiversityControlTypeDimensions
+    public function getDimensions(): ?OrgOpentravelOta200305DiversityControlTypeDimensions
     {
         return $this->dimensions;
     }
@@ -28,7 +28,7 @@ class OrgOpentravelOta200305DiversityControlType extends AbstractModel
      *
      * @return self
      */
-    public function setDimensions(OrgOpentravelOta200305DiversityControlTypeDimensions $dimensions): self
+    public function setDimensions(?OrgOpentravelOta200305DiversityControlTypeDimensions $dimensions): self
     {
         $this->dimensions = $dimensions;
 
@@ -38,7 +38,7 @@ class OrgOpentravelOta200305DiversityControlType extends AbstractModel
     /**
      * @return OrgOpentravelOta200305DiversityControlTypeLowFareBucket
      */
-    public function getLowFareBucket(): OrgOpentravelOta200305DiversityControlTypeLowFareBucket
+    public function getLowFareBucket(): ?OrgOpentravelOta200305DiversityControlTypeLowFareBucket
     {
         return $this->lowFareBucket;
     }
@@ -48,7 +48,7 @@ class OrgOpentravelOta200305DiversityControlType extends AbstractModel
      *
      * @return self
      */
-    public function setLowFareBucket(OrgOpentravelOta200305DiversityControlTypeLowFareBucket $lowFareBucket): self
+    public function setLowFareBucket(?OrgOpentravelOta200305DiversityControlTypeLowFareBucket $lowFareBucket): self
     {
         $this->lowFareBucket = $lowFareBucket;
 

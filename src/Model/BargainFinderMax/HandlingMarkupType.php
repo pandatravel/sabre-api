@@ -38,7 +38,7 @@ class HandlingMarkupType extends AbstractModel
     /**
      * @return float
      */
-    public function getAmount(): float
+    public function getAmount(): ?float
     {
         return $this->amount;
     }
@@ -48,7 +48,7 @@ class HandlingMarkupType extends AbstractModel
      *
      * @return self
      */
-    public function setAmount(float $amount): self
+    public function setAmount(?float $amount): self
     {
         $this->amount = $amount;
 
@@ -58,7 +58,7 @@ class HandlingMarkupType extends AbstractModel
     /**
      * @return string
      */
-    public function getDescription(): string
+    public function getDescription(): ?string
     {
         return $this->description;
     }
@@ -68,7 +68,7 @@ class HandlingMarkupType extends AbstractModel
      *
      * @return self
      */
-    public function setDescription(string $description): self
+    public function setDescription(?string $description): self
     {
         $this->description = $description;
 
@@ -78,7 +78,7 @@ class HandlingMarkupType extends AbstractModel
     /**
      * @return string
      */
-    public function getExtendedDescription(): string
+    public function getExtendedDescription(): ?string
     {
         return $this->extendedDescription;
     }
@@ -88,7 +88,7 @@ class HandlingMarkupType extends AbstractModel
      *
      * @return self
      */
-    public function setExtendedDescription(string $extendedDescription): self
+    public function setExtendedDescription(?string $extendedDescription): self
     {
         $this->extendedDescription = $extendedDescription;
 
@@ -98,7 +98,7 @@ class HandlingMarkupType extends AbstractModel
     /**
      * @return bool
      */
-    public function getFareRetailerRule(): bool
+    public function getFareRetailerRule(): ?bool
     {
         return $this->fareRetailerRule;
     }
@@ -108,7 +108,7 @@ class HandlingMarkupType extends AbstractModel
      *
      * @return self
      */
-    public function setFareRetailerRule(bool $fareRetailerRule): self
+    public function setFareRetailerRule(?bool $fareRetailerRule): self
     {
         $this->fareRetailerRule = $fareRetailerRule;
 
@@ -118,7 +118,7 @@ class HandlingMarkupType extends AbstractModel
     /**
      * @return bool
      */
-    public function getHiddenHandlingFee(): bool
+    public function getHiddenHandlingFee(): ?bool
     {
         return $this->hiddenHandlingFee;
     }
@@ -128,7 +128,7 @@ class HandlingMarkupType extends AbstractModel
      *
      * @return self
      */
-    public function setHiddenHandlingFee(bool $hiddenHandlingFee): self
+    public function setHiddenHandlingFee(?bool $hiddenHandlingFee): self
     {
         $this->hiddenHandlingFee = $hiddenHandlingFee;
 
@@ -138,7 +138,7 @@ class HandlingMarkupType extends AbstractModel
     /**
      * @return bool
      */
-    public function getNonHiddenHandlingFee(): bool
+    public function getNonHiddenHandlingFee(): ?bool
     {
         return $this->nonHiddenHandlingFee;
     }
@@ -148,7 +148,7 @@ class HandlingMarkupType extends AbstractModel
      *
      * @return self
      */
-    public function setNonHiddenHandlingFee(bool $nonHiddenHandlingFee): self
+    public function setNonHiddenHandlingFee(?bool $nonHiddenHandlingFee): self
     {
         $this->nonHiddenHandlingFee = $nonHiddenHandlingFee;
 
@@ -158,7 +158,7 @@ class HandlingMarkupType extends AbstractModel
     /**
      * @return string
      */
-    public function getType(): string
+    public function getType(): ?string
     {
         return $this->type;
     }
@@ -168,7 +168,7 @@ class HandlingMarkupType extends AbstractModel
      *
      * @return self
      */
-    public function setType(string $type): self
+    public function setType(?string $type): self
     {
         $this->type = $type;
 

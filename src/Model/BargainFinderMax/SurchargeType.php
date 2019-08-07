@@ -30,7 +30,7 @@ class SurchargeType extends AbstractModel
      *
      * @return float
      */
-    public function getAmount(): float
+    public function getAmount(): ?float
     {
         return $this->amount;
     }
@@ -42,7 +42,7 @@ class SurchargeType extends AbstractModel
      *
      * @return self
      */
-    public function setAmount(float $amount): self
+    public function setAmount(?float $amount): self
     {
         $this->amount = $amount;
 
@@ -54,7 +54,7 @@ class SurchargeType extends AbstractModel
      *
      * @return string
      */
-    public function getCurrency(): string
+    public function getCurrency(): ?string
     {
         return $this->currency;
     }
@@ -66,7 +66,7 @@ class SurchargeType extends AbstractModel
      *
      * @return self
      */
-    public function setCurrency(string $currency): self
+    public function setCurrency(?string $currency): self
     {
         $this->currency = $currency;
 
@@ -78,7 +78,7 @@ class SurchargeType extends AbstractModel
      *
      * @return string
      */
-    public function getType(): string
+    public function getType(): ?string
     {
         return $this->type;
     }
@@ -90,7 +90,7 @@ class SurchargeType extends AbstractModel
      *
      * @return self
      */
-    public function setType(string $type): self
+    public function setType(?string $type): self
     {
         $this->type = $type;
 

@@ -36,7 +36,7 @@ class Equipment extends AbstractModel
      *
      * @return bool
      */
-    public function getChange(): bool
+    public function getChange(): ?bool
     {
         return $this->change;
     }
@@ -48,7 +48,7 @@ class Equipment extends AbstractModel
      *
      * @return self
      */
-    public function setChange(bool $change): self
+    public function setChange(?bool $change): self
     {
         $this->change = $change;
 
@@ -60,7 +60,7 @@ class Equipment extends AbstractModel
      *
      * @return string
      */
-    public function getCode(): string
+    public function getCode(): ?string
     {
         return $this->code;
     }
@@ -72,7 +72,7 @@ class Equipment extends AbstractModel
      *
      * @return self
      */
-    public function setCode(string $code): self
+    public function setCode(?string $code): self
     {
         $this->code = $code;
 
@@ -84,7 +84,7 @@ class Equipment extends AbstractModel
      *
      * @return string
      */
-    public function getTypeForFirstLeg(): string
+    public function getTypeForFirstLeg(): ?string
     {
         return $this->typeForFirstLeg;
     }
@@ -96,7 +96,7 @@ class Equipment extends AbstractModel
      *
      * @return self
      */
-    public function setTypeForFirstLeg(string $typeForFirstLeg): self
+    public function setTypeForFirstLeg(?string $typeForFirstLeg): self
     {
         $this->typeForFirstLeg = $typeForFirstLeg;
 
@@ -108,7 +108,7 @@ class Equipment extends AbstractModel
      *
      * @return string
      */
-    public function getTypeForLastLeg(): string
+    public function getTypeForLastLeg(): ?string
     {
         return $this->typeForLastLeg;
     }
@@ -120,7 +120,7 @@ class Equipment extends AbstractModel
      *
      * @return self
      */
-    public function setTypeForLastLeg(string $typeForLastLeg): self
+    public function setTypeForLastLeg(?string $typeForLastLeg): self
     {
         $this->typeForLastLeg = $typeForLastLeg;
 

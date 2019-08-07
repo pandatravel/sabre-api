@@ -42,7 +42,7 @@ class OrgOpentravelOta200305OriginDestinationInformationTypeDestinationLocation 
      *
      * @return string
      */
-    public function getAirportsGroup(): string
+    public function getAirportsGroup(): ?string
     {
         return $this->airportsGroup;
     }
@@ -54,7 +54,7 @@ class OrgOpentravelOta200305OriginDestinationInformationTypeDestinationLocation 
      *
      * @return self
      */
-    public function setAirportsGroup(string $airportsGroup): self
+    public function setAirportsGroup(?string $airportsGroup): self
     {
         $this->airportsGroup = $airportsGroup;
 
@@ -66,7 +66,7 @@ class OrgOpentravelOta200305OriginDestinationInformationTypeDestinationLocation 
      *
      * @return bool
      */
-    public function getAllAirports(): bool
+    public function getAllAirports(): ?bool
     {
         return $this->allAirports;
     }
@@ -78,7 +78,7 @@ class OrgOpentravelOta200305OriginDestinationInformationTypeDestinationLocation 
      *
      * @return self
      */
-    public function setAllAirports(bool $allAirports): self
+    public function setAllAirports(?bool $allAirports): self
     {
         $this->allAirports = $allAirports;
 
@@ -90,7 +90,7 @@ class OrgOpentravelOta200305OriginDestinationInformationTypeDestinationLocation 
      *
      * @return string
      */
-    public function getCodeContext(): string
+    public function getCodeContext(): ?string
     {
         return $this->codeContext;
     }
@@ -102,7 +102,7 @@ class OrgOpentravelOta200305OriginDestinationInformationTypeDestinationLocation 
      *
      * @return self
      */
-    public function setCodeContext(string $codeContext): self
+    public function setCodeContext(?string $codeContext): self
     {
         $this->codeContext = $codeContext;
 
@@ -112,7 +112,7 @@ class OrgOpentravelOta200305OriginDestinationInformationTypeDestinationLocation 
     /**
      * @return string
      */
-    public function getLocationCode(): string
+    public function getLocationCode(): ?string
     {
         return $this->locationCode;
     }
@@ -122,7 +122,7 @@ class OrgOpentravelOta200305OriginDestinationInformationTypeDestinationLocation 
      *
      * @return self
      */
-    public function setLocationCode(string $locationCode): self
+    public function setLocationCode(?string $locationCode): self
     {
         $this->locationCode = $locationCode;
 
@@ -132,7 +132,7 @@ class OrgOpentravelOta200305OriginDestinationInformationTypeDestinationLocation 
     /**
      * @return string
      */
-    public function getLocationType(): string
+    public function getLocationType(): ?string
     {
         return $this->locationType;
     }
@@ -142,7 +142,7 @@ class OrgOpentravelOta200305OriginDestinationInformationTypeDestinationLocation 
      *
      * @return self
      */
-    public function setLocationType(string $locationType): self
+    public function setLocationType(?string $locationType): self
     {
         $this->locationType = $locationType;
 
@@ -152,7 +152,7 @@ class OrgOpentravelOta200305OriginDestinationInformationTypeDestinationLocation 
     /**
      * @return string
      */
-    public function getContent(): string
+    public function getContent(): ?string
     {
         return $this->content;
     }
@@ -162,7 +162,7 @@ class OrgOpentravelOta200305OriginDestinationInformationTypeDestinationLocation 
      *
      * @return self
      */
-    public function setContent(string $content): self
+    public function setContent(?string $content): self
     {
         $this->content = $content;
 

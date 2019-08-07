@@ -18,7 +18,7 @@ class OrgOpentravelOta200305TransactionTypeDiagnosticsDiagnosticDiagnosticArgume
     /**
      * @return string
      */
-    public function getName(): string
+    public function getName(): ?string
     {
         return $this->name;
     }
@@ -28,7 +28,7 @@ class OrgOpentravelOta200305TransactionTypeDiagnosticsDiagnosticDiagnosticArgume
      *
      * @return self
      */
-    public function setName(string $name): self
+    public function setName(?string $name): self
     {
         $this->name = $name;
 
@@ -38,7 +38,7 @@ class OrgOpentravelOta200305TransactionTypeDiagnosticsDiagnosticDiagnosticArgume
     /**
      * @return string
      */
-    public function getValue(): string
+    public function getValue(): ?string
     {
         return $this->value;
     }
@@ -48,7 +48,7 @@ class OrgOpentravelOta200305TransactionTypeDiagnosticsDiagnosticDiagnosticArgume
      *
      * @return self
      */
-    public function setValue(string $value): self
+    public function setValue(?string $value): self
     {
         $this->value = $value;
 

@@ -60,7 +60,7 @@ class FareComponentBreakdownType extends AbstractModel
      *
      * @return int
      */
-    public function getContractFamilyId(): int
+    public function getContractFamilyId(): ?int
     {
         return $this->contractFamilyId;
     }
@@ -72,7 +72,7 @@ class FareComponentBreakdownType extends AbstractModel
      *
      * @return self
      */
-    public function setContractFamilyId(int $contractFamilyId): self
+    public function setContractFamilyId(?int $contractFamilyId): self
     {
         $this->contractFamilyId = $contractFamilyId;
 
@@ -84,7 +84,7 @@ class FareComponentBreakdownType extends AbstractModel
      *
      * @return int
      */
-    public function getContractId(): int
+    public function getContractId(): ?int
     {
         return $this->contractId;
     }
@@ -96,7 +96,7 @@ class FareComponentBreakdownType extends AbstractModel
      *
      * @return self
      */
-    public function setContractId(int $contractId): self
+    public function setContractId(?int $contractId): self
     {
         $this->contractId = $contractId;
 
@@ -108,7 +108,7 @@ class FareComponentBreakdownType extends AbstractModel
      *
      * @return float
      */
-    public function getEarnedFareComponentCommission(): float
+    public function getEarnedFareComponentCommission(): ?float
     {
         return $this->earnedFareComponentCommission;
     }
@@ -120,7 +120,7 @@ class FareComponentBreakdownType extends AbstractModel
      *
      * @return self
      */
-    public function setEarnedFareComponentCommission(float $earnedFareComponentCommission): self
+    public function setEarnedFareComponentCommission(?float $earnedFareComponentCommission): self
     {
         $this->earnedFareComponentCommission = $earnedFareComponentCommission;
 
@@ -132,7 +132,7 @@ class FareComponentBreakdownType extends AbstractModel
      *
      * @return float
      */
-    public function getFareComponentCommission(): float
+    public function getFareComponentCommission(): ?float
     {
         return $this->fareComponentCommission;
     }
@@ -144,7 +144,7 @@ class FareComponentBreakdownType extends AbstractModel
      *
      * @return self
      */
-    public function setFareComponentCommission(float $fareComponentCommission): self
+    public function setFareComponentCommission(?float $fareComponentCommission): self
     {
         $this->fareComponentCommission = $fareComponentCommission;
 
@@ -156,7 +156,7 @@ class FareComponentBreakdownType extends AbstractModel
      *
      * @return int
      */
-    public function getFareComponentReferenceId(): int
+    public function getFareComponentReferenceId(): ?int
     {
         return $this->fareComponentReferenceId;
     }
@@ -168,7 +168,7 @@ class FareComponentBreakdownType extends AbstractModel
      *
      * @return self
      */
-    public function setFareComponentReferenceId(int $fareComponentReferenceId): self
+    public function setFareComponentReferenceId(?int $fareComponentReferenceId): self
     {
         $this->fareComponentReferenceId = $fareComponentReferenceId;
 
@@ -180,7 +180,7 @@ class FareComponentBreakdownType extends AbstractModel
      *
      * @return int
      */
-    public function getMethodId(): int
+    public function getMethodId(): ?int
     {
         return $this->methodId;
     }
@@ -192,7 +192,7 @@ class FareComponentBreakdownType extends AbstractModel
      *
      * @return self
      */
-    public function setMethodId(int $methodId): self
+    public function setMethodId(?int $methodId): self
     {
         $this->methodId = $methodId;
 
@@ -204,7 +204,7 @@ class FareComponentBreakdownType extends AbstractModel
      *
      * @return int
      */
-    public function getRuleFamilyId(): int
+    public function getRuleFamilyId(): ?int
     {
         return $this->ruleFamilyId;
     }
@@ -216,7 +216,7 @@ class FareComponentBreakdownType extends AbstractModel
      *
      * @return self
      */
-    public function setRuleFamilyId(int $ruleFamilyId): self
+    public function setRuleFamilyId(?int $ruleFamilyId): self
     {
         $this->ruleFamilyId = $ruleFamilyId;
 
@@ -228,7 +228,7 @@ class FareComponentBreakdownType extends AbstractModel
      *
      * @return int
      */
-    public function getRuleId(): int
+    public function getRuleId(): ?int
     {
         return $this->ruleId;
     }
@@ -240,7 +240,7 @@ class FareComponentBreakdownType extends AbstractModel
      *
      * @return self
      */
-    public function setRuleId(int $ruleId): self
+    public function setRuleId(?int $ruleId): self
     {
         $this->ruleId = $ruleId;
 

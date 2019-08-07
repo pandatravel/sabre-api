@@ -14,7 +14,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsPreferNDCSourceOnTie 
     /**
      * @return bool
      */
-    public function getValue(): bool
+    public function getValue(): ?bool
     {
         return $this->value;
     }
@@ -24,7 +24,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsPreferNDCSourceOnTie 
      *
      * @return self
      */
-    public function setValue(bool $value): self
+    public function setValue(?bool $value): self
     {
         $this->value = $value;
 

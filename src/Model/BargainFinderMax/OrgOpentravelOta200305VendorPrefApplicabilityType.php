@@ -20,7 +20,7 @@ class OrgOpentravelOta200305VendorPrefApplicabilityType extends AbstractModel
     /**
      * @return string
      */
-    public function getType(): string
+    public function getType(): ?string
     {
         return $this->type;
     }
@@ -30,7 +30,7 @@ class OrgOpentravelOta200305VendorPrefApplicabilityType extends AbstractModel
      *
      * @return self
      */
-    public function setType(string $type): self
+    public function setType(?string $type): self
     {
         $this->type = $type;
 
@@ -42,7 +42,7 @@ class OrgOpentravelOta200305VendorPrefApplicabilityType extends AbstractModel
      *
      * @return string
      */
-    public function getValue(): string
+    public function getValue(): ?string
     {
         return $this->value;
     }
@@ -54,7 +54,7 @@ class OrgOpentravelOta200305VendorPrefApplicabilityType extends AbstractModel
      *
      * @return self
      */
-    public function setValue(string $value): self
+    public function setValue(?string $value): self
     {
         $this->value = $value;
 

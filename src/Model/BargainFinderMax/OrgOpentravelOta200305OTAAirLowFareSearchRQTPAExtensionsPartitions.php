@@ -18,7 +18,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsPartitions extends
     /**
      * @return OrgOpentravelOta200305CachePartitionGroupType[]
      */
-    public function getGroup(): array
+    public function getGroup(): ?array
     {
         return $this->group;
     }
@@ -28,7 +28,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsPartitions extends
      *
      * @return self
      */
-    public function setGroup(array $group): self
+    public function setGroup(?array $group): self
     {
         $this->group = $group;
 
@@ -38,7 +38,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsPartitions extends
     /**
      * @return OrgOpentravelOta200305CachePartitionType[]
      */
-    public function getPartition(): array
+    public function getPartition(): ?array
     {
         return $this->partition;
     }
@@ -48,7 +48,7 @@ class OrgOpentravelOta200305OTAAirLowFareSearchRQTPAExtensionsPartitions extends
      *
      * @return self
      */
-    public function setPartition(array $partition): self
+    public function setPartition(?array $partition): self
     {
         $this->partition = $partition;
 

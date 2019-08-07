@@ -106,7 +106,7 @@ class PassengerTotalFareType extends AbstractModel
     /**
      * @return float
      */
-    public function getBaseFareAmount(): float
+    public function getBaseFareAmount(): ?float
     {
         return $this->baseFareAmount;
     }
@@ -116,7 +116,7 @@ class PassengerTotalFareType extends AbstractModel
      *
      * @return self
      */
-    public function setBaseFareAmount(float $baseFareAmount): self
+    public function setBaseFareAmount(?float $baseFareAmount): self
     {
         $this->baseFareAmount = $baseFareAmount;
 
@@ -126,7 +126,7 @@ class PassengerTotalFareType extends AbstractModel
     /**
      * @return string
      */
-    public function getBaseFareCurrency(): string
+    public function getBaseFareCurrency(): ?string
     {
         return $this->baseFareCurrency;
     }
@@ -136,7 +136,7 @@ class PassengerTotalFareType extends AbstractModel
      *
      * @return self
      */
-    public function setBaseFareCurrency(string $baseFareCurrency): self
+    public function setBaseFareCurrency(?string $baseFareCurrency): self
     {
         $this->baseFareCurrency = $baseFareCurrency;
 
@@ -146,7 +146,7 @@ class PassengerTotalFareType extends AbstractModel
     /**
      * @return float
      */
-    public function getBookingFeeAmount(): float
+    public function getBookingFeeAmount(): ?float
     {
         return $this->bookingFeeAmount;
     }
@@ -156,7 +156,7 @@ class PassengerTotalFareType extends AbstractModel
      *
      * @return self
      */
-    public function setBookingFeeAmount(float $bookingFeeAmount): self
+    public function setBookingFeeAmount(?float $bookingFeeAmount): self
     {
         $this->bookingFeeAmount = $bookingFeeAmount;
 
@@ -166,7 +166,7 @@ class PassengerTotalFareType extends AbstractModel
     /**
      * @return float
      */
-    public function getCat35CommissionAmount(): float
+    public function getCat35CommissionAmount(): ?float
     {
         return $this->cat35CommissionAmount;
     }
@@ -176,7 +176,7 @@ class PassengerTotalFareType extends AbstractModel
      *
      * @return self
      */
-    public function setCat35CommissionAmount(float $cat35CommissionAmount): self
+    public function setCat35CommissionAmount(?float $cat35CommissionAmount): self
     {
         $this->cat35CommissionAmount = $cat35CommissionAmount;
 
@@ -186,7 +186,7 @@ class PassengerTotalFareType extends AbstractModel
     /**
      * @return float
      */
-    public function getCat35CommissionPercentage(): float
+    public function getCat35CommissionPercentage(): ?float
     {
         return $this->cat35CommissionPercentage;
     }
@@ -196,7 +196,7 @@ class PassengerTotalFareType extends AbstractModel
      *
      * @return self
      */
-    public function setCat35CommissionPercentage(float $cat35CommissionPercentage): self
+    public function setCat35CommissionPercentage(?float $cat35CommissionPercentage): self
     {
         $this->cat35CommissionPercentage = $cat35CommissionPercentage;
 
@@ -206,7 +206,7 @@ class PassengerTotalFareType extends AbstractModel
     /**
      * @return float
      */
-    public function getCat35MarkupAmount(): float
+    public function getCat35MarkupAmount(): ?float
     {
         return $this->cat35MarkupAmount;
     }
@@ -216,7 +216,7 @@ class PassengerTotalFareType extends AbstractModel
      *
      * @return self
      */
-    public function setCat35MarkupAmount(float $cat35MarkupAmount): self
+    public function setCat35MarkupAmount(?float $cat35MarkupAmount): self
     {
         $this->cat35MarkupAmount = $cat35MarkupAmount;
 
@@ -226,7 +226,7 @@ class PassengerTotalFareType extends AbstractModel
     /**
      * @return float
      */
-    public function getCommissionAmount(): float
+    public function getCommissionAmount(): ?float
     {
         return $this->commissionAmount;
     }
@@ -236,7 +236,7 @@ class PassengerTotalFareType extends AbstractModel
      *
      * @return self
      */
-    public function setCommissionAmount(float $commissionAmount): self
+    public function setCommissionAmount(?float $commissionAmount): self
     {
         $this->commissionAmount = $commissionAmount;
 
@@ -246,7 +246,7 @@ class PassengerTotalFareType extends AbstractModel
     /**
      * @return float
      */
-    public function getCommissionAmountInEquivalent(): float
+    public function getCommissionAmountInEquivalent(): ?float
     {
         return $this->commissionAmountInEquivalent;
     }
@@ -256,7 +256,7 @@ class PassengerTotalFareType extends AbstractModel
      *
      * @return self
      */
-    public function setCommissionAmountInEquivalent(float $commissionAmountInEquivalent): self
+    public function setCommissionAmountInEquivalent(?float $commissionAmountInEquivalent): self
     {
         $this->commissionAmountInEquivalent = $commissionAmountInEquivalent;
 
@@ -266,7 +266,7 @@ class PassengerTotalFareType extends AbstractModel
     /**
      * @return float
      */
-    public function getCommissionPercentage(): float
+    public function getCommissionPercentage(): ?float
     {
         return $this->commissionPercentage;
     }
@@ -276,7 +276,7 @@ class PassengerTotalFareType extends AbstractModel
      *
      * @return self
      */
-    public function setCommissionPercentage(float $commissionPercentage): self
+    public function setCommissionPercentage(?float $commissionPercentage): self
     {
         $this->commissionPercentage = $commissionPercentage;
 
@@ -286,7 +286,7 @@ class PassengerTotalFareType extends AbstractModel
     /**
      * @return string
      */
-    public function getCommissionSource(): string
+    public function getCommissionSource(): ?string
     {
         return $this->commissionSource;
     }
@@ -296,7 +296,7 @@ class PassengerTotalFareType extends AbstractModel
      *
      * @return self
      */
-    public function setCommissionSource(string $commissionSource): self
+    public function setCommissionSource(?string $commissionSource): self
     {
         $this->commissionSource = $commissionSource;
 
@@ -306,7 +306,7 @@ class PassengerTotalFareType extends AbstractModel
     /**
      * @return float
      */
-    public function getConstructionAmount(): float
+    public function getConstructionAmount(): ?float
     {
         return $this->constructionAmount;
     }
@@ -316,7 +316,7 @@ class PassengerTotalFareType extends AbstractModel
      *
      * @return self
      */
-    public function setConstructionAmount(float $constructionAmount): self
+    public function setConstructionAmount(?float $constructionAmount): self
     {
         $this->constructionAmount = $constructionAmount;
 
@@ -326,7 +326,7 @@ class PassengerTotalFareType extends AbstractModel
     /**
      * @return string
      */
-    public function getConstructionCurrency(): string
+    public function getConstructionCurrency(): ?string
     {
         return $this->constructionCurrency;
     }
@@ -336,7 +336,7 @@ class PassengerTotalFareType extends AbstractModel
      *
      * @return self
      */
-    public function setConstructionCurrency(string $constructionCurrency): self
+    public function setConstructionCurrency(?string $constructionCurrency): self
     {
         $this->constructionCurrency = $constructionCurrency;
 
@@ -346,7 +346,7 @@ class PassengerTotalFareType extends AbstractModel
     /**
      * @return float
      */
-    public function getCreditCardFeeAmount(): float
+    public function getCreditCardFeeAmount(): ?float
     {
         return $this->creditCardFeeAmount;
     }
@@ -356,7 +356,7 @@ class PassengerTotalFareType extends AbstractModel
      *
      * @return self
      */
-    public function setCreditCardFeeAmount(float $creditCardFeeAmount): self
+    public function setCreditCardFeeAmount(?float $creditCardFeeAmount): self
     {
         $this->creditCardFeeAmount = $creditCardFeeAmount;
 
@@ -366,7 +366,7 @@ class PassengerTotalFareType extends AbstractModel
     /**
      * @return string
      */
-    public function getCurrency(): string
+    public function getCurrency(): ?string
     {
         return $this->currency;
     }
@@ -376,7 +376,7 @@ class PassengerTotalFareType extends AbstractModel
      *
      * @return self
      */
-    public function setCurrency(string $currency): self
+    public function setCurrency(?string $currency): self
     {
         $this->currency = $currency;
 
@@ -386,7 +386,7 @@ class PassengerTotalFareType extends AbstractModel
     /**
      * @return string
      */
-    public function getEffectiveDeviationType(): string
+    public function getEffectiveDeviationType(): ?string
     {
         return $this->effectiveDeviationType;
     }
@@ -396,7 +396,7 @@ class PassengerTotalFareType extends AbstractModel
      *
      * @return self
      */
-    public function setEffectiveDeviationType(string $effectiveDeviationType): self
+    public function setEffectiveDeviationType(?string $effectiveDeviationType): self
     {
         $this->effectiveDeviationType = $effectiveDeviationType;
 
@@ -406,7 +406,7 @@ class PassengerTotalFareType extends AbstractModel
     /**
      * @return float
      */
-    public function getEffectivePriceDeviation(): float
+    public function getEffectivePriceDeviation(): ?float
     {
         return $this->effectivePriceDeviation;
     }
@@ -416,7 +416,7 @@ class PassengerTotalFareType extends AbstractModel
      *
      * @return self
      */
-    public function setEffectivePriceDeviation(float $effectivePriceDeviation): self
+    public function setEffectivePriceDeviation(?float $effectivePriceDeviation): self
     {
         $this->effectivePriceDeviation = $effectivePriceDeviation;
 
@@ -426,7 +426,7 @@ class PassengerTotalFareType extends AbstractModel
     /**
      * @return float
      */
-    public function getEquivalentAmount(): float
+    public function getEquivalentAmount(): ?float
     {
         return $this->equivalentAmount;
     }
@@ -436,7 +436,7 @@ class PassengerTotalFareType extends AbstractModel
      *
      * @return self
      */
-    public function setEquivalentAmount(float $equivalentAmount): self
+    public function setEquivalentAmount(?float $equivalentAmount): self
     {
         $this->equivalentAmount = $equivalentAmount;
 
@@ -446,7 +446,7 @@ class PassengerTotalFareType extends AbstractModel
     /**
      * @return string
      */
-    public function getEquivalentCurrency(): string
+    public function getEquivalentCurrency(): ?string
     {
         return $this->equivalentCurrency;
     }
@@ -456,7 +456,7 @@ class PassengerTotalFareType extends AbstractModel
      *
      * @return self
      */
-    public function setEquivalentCurrency(string $equivalentCurrency): self
+    public function setEquivalentCurrency(?string $equivalentCurrency): self
     {
         $this->equivalentCurrency = $equivalentCurrency;
 
@@ -466,7 +466,7 @@ class PassengerTotalFareType extends AbstractModel
     /**
      * @return float
      */
-    public function getExchangeRateOne(): float
+    public function getExchangeRateOne(): ?float
     {
         return $this->exchangeRateOne;
     }
@@ -476,7 +476,7 @@ class PassengerTotalFareType extends AbstractModel
      *
      * @return self
      */
-    public function setExchangeRateOne(float $exchangeRateOne): self
+    public function setExchangeRateOne(?float $exchangeRateOne): self
     {
         $this->exchangeRateOne = $exchangeRateOne;
 
@@ -486,7 +486,7 @@ class PassengerTotalFareType extends AbstractModel
     /**
      * @return float
      */
-    public function getNoMarkupBaseFareAmount(): float
+    public function getNoMarkupBaseFareAmount(): ?float
     {
         return $this->noMarkupBaseFareAmount;
     }
@@ -496,7 +496,7 @@ class PassengerTotalFareType extends AbstractModel
      *
      * @return self
      */
-    public function setNoMarkupBaseFareAmount(float $noMarkupBaseFareAmount): self
+    public function setNoMarkupBaseFareAmount(?float $noMarkupBaseFareAmount): self
     {
         $this->noMarkupBaseFareAmount = $noMarkupBaseFareAmount;
 
@@ -506,7 +506,7 @@ class PassengerTotalFareType extends AbstractModel
     /**
      * @return float
      */
-    public function getStopoverChargeAmount(): float
+    public function getStopoverChargeAmount(): ?float
     {
         return $this->stopoverChargeAmount;
     }
@@ -516,7 +516,7 @@ class PassengerTotalFareType extends AbstractModel
      *
      * @return self
      */
-    public function setStopoverChargeAmount(float $stopoverChargeAmount): self
+    public function setStopoverChargeAmount(?float $stopoverChargeAmount): self
     {
         $this->stopoverChargeAmount = $stopoverChargeAmount;
 
@@ -526,7 +526,7 @@ class PassengerTotalFareType extends AbstractModel
     /**
      * @return float
      */
-    public function getTotalFare(): float
+    public function getTotalFare(): ?float
     {
         return $this->totalFare;
     }
@@ -536,7 +536,7 @@ class PassengerTotalFareType extends AbstractModel
      *
      * @return self
      */
-    public function setTotalFare(float $totalFare): self
+    public function setTotalFare(?float $totalFare): self
     {
         $this->totalFare = $totalFare;
 
@@ -546,7 +546,7 @@ class PassengerTotalFareType extends AbstractModel
     /**
      * @return float
      */
-    public function getTotalTaxAmount(): float
+    public function getTotalTaxAmount(): ?float
     {
         return $this->totalTaxAmount;
     }
@@ -556,7 +556,7 @@ class PassengerTotalFareType extends AbstractModel
      *
      * @return self
      */
-    public function setTotalTaxAmount(float $totalTaxAmount): self
+    public function setTotalTaxAmount(?float $totalTaxAmount): self
     {
         $this->totalTaxAmount = $totalTaxAmount;
 
@@ -566,7 +566,7 @@ class PassengerTotalFareType extends AbstractModel
     /**
      * @return float
      */
-    public function getTotalTtypeObFee(): float
+    public function getTotalTtypeObFee(): ?float
     {
         return $this->totalTtypeObFee;
     }
@@ -576,7 +576,7 @@ class PassengerTotalFareType extends AbstractModel
      *
      * @return self
      */
-    public function setTotalTtypeObFee(float $totalTtypeObFee): self
+    public function setTotalTtypeObFee(?float $totalTtypeObFee): self
     {
         $this->totalTtypeObFee = $totalTtypeObFee;
 

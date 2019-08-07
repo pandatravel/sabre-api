@@ -18,7 +18,7 @@ class SegmentsType extends AbstractModel
     /**
      * @return FareSegmentType
      */
-    public function getSegment(): FareSegmentType
+    public function getSegment(): ?FareSegmentType
     {
         return $this->segment;
     }
@@ -28,7 +28,7 @@ class SegmentsType extends AbstractModel
      *
      * @return self
      */
-    public function setSegment(FareSegmentType $segment): self
+    public function setSegment(?FareSegmentType $segment): self
     {
         $this->segment = $segment;
 
@@ -38,7 +38,7 @@ class SegmentsType extends AbstractModel
     /**
      * @return SurfaceType
      */
-    public function getSurface(): SurfaceType
+    public function getSurface(): ?SurfaceType
     {
         return $this->surface;
     }
@@ -48,7 +48,7 @@ class SegmentsType extends AbstractModel
      *
      * @return self
      */
-    public function setSurface(SurfaceType $surface): self
+    public function setSurface(?SurfaceType $surface): self
     {
         $this->surface = $surface;
 

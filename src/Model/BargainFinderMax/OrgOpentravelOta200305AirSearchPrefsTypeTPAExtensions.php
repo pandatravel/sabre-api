@@ -492,7 +492,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
     /**
      * @return OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsAdditionalFareLimit
      */
-    public function getAdditionalFareLimit(): OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsAdditionalFareLimit
+    public function getAdditionalFareLimit(): ?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsAdditionalFareLimit
     {
         return $this->additionalFareLimit;
     }
@@ -502,7 +502,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return self
      */
-    public function setAdditionalFareLimit(OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsAdditionalFareLimit $additionalFareLimit): self
+    public function setAdditionalFareLimit(?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsAdditionalFareLimit $additionalFareLimit): self
     {
         $this->additionalFareLimit = $additionalFareLimit;
 
@@ -514,7 +514,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsAirServiceOnly
      */
-    public function getAirServiceOnly(): OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsAirServiceOnly
+    public function getAirServiceOnly(): ?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsAirServiceOnly
     {
         return $this->airServiceOnly;
     }
@@ -526,7 +526,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return self
      */
-    public function setAirServiceOnly(OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsAirServiceOnly $airServiceOnly): self
+    public function setAirServiceOnly(?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsAirServiceOnly $airServiceOnly): self
     {
         $this->airServiceOnly = $airServiceOnly;
 
@@ -536,7 +536,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
     /**
      * @return OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsAircraftTypePenalty
      */
-    public function getAircraftTypePenalty(): OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsAircraftTypePenalty
+    public function getAircraftTypePenalty(): ?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsAircraftTypePenalty
     {
         return $this->aircraftTypePenalty;
     }
@@ -546,7 +546,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return self
      */
-    public function setAircraftTypePenalty(OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsAircraftTypePenalty $aircraftTypePenalty): self
+    public function setAircraftTypePenalty(?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsAircraftTypePenalty $aircraftTypePenalty): self
     {
         $this->aircraftTypePenalty = $aircraftTypePenalty;
 
@@ -558,7 +558,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return OrgOpentravelOta200305AltCitiesCombinationsType
      */
-    public function getAltCitiesCombinations(): OrgOpentravelOta200305AltCitiesCombinationsType
+    public function getAltCitiesCombinations(): ?OrgOpentravelOta200305AltCitiesCombinationsType
     {
         return $this->altCitiesCombinations;
     }
@@ -570,7 +570,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return self
      */
-    public function setAltCitiesCombinations(OrgOpentravelOta200305AltCitiesCombinationsType $altCitiesCombinations): self
+    public function setAltCitiesCombinations(?OrgOpentravelOta200305AltCitiesCombinationsType $altCitiesCombinations): self
     {
         $this->altCitiesCombinations = $altCitiesCombinations;
 
@@ -582,7 +582,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsAlternateAirportPenalty
      */
-    public function getAlternateAirportPenalty(): OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsAlternateAirportPenalty
+    public function getAlternateAirportPenalty(): ?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsAlternateAirportPenalty
     {
         return $this->alternateAirportPenalty;
     }
@@ -594,7 +594,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return self
      */
-    public function setAlternateAirportPenalty(OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsAlternateAirportPenalty $alternateAirportPenalty): self
+    public function setAlternateAirportPenalty(?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsAlternateAirportPenalty $alternateAirportPenalty): self
     {
         $this->alternateAirportPenalty = $alternateAirportPenalty;
 
@@ -606,7 +606,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return string
      */
-    public function getArrivalWindow(): string
+    public function getArrivalWindow(): ?string
     {
         return $this->arrivalWindow;
     }
@@ -618,7 +618,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return self
      */
-    public function setArrivalWindow(string $arrivalWindow): self
+    public function setArrivalWindow(?string $arrivalWindow): self
     {
         $this->arrivalWindow = $arrivalWindow;
 
@@ -630,7 +630,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsBudget
      */
-    public function getBudget(): OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsBudget
+    public function getBudget(): ?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsBudget
     {
         return $this->budget;
     }
@@ -642,7 +642,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return self
      */
-    public function setBudget(OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsBudget $budget): self
+    public function setBudget(?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsBudget $budget): self
     {
         $this->budget = $budget;
 
@@ -652,7 +652,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
     /**
      * @return OrgOpentravelOta200305ClassOfServiceElemType[]
      */
-    public function getClassOfService(): array
+    public function getClassOfService(): ?array
     {
         return $this->classOfService;
     }
@@ -662,7 +662,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return self
      */
-    public function setClassOfService(array $classOfService): self
+    public function setClassOfService(?array $classOfService): self
     {
         $this->classOfService = $classOfService;
 
@@ -672,7 +672,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
     /**
      * @return OrgOpentravelOta200305CodeShareIndicator
      */
-    public function getCodeShareIndicator(): OrgOpentravelOta200305CodeShareIndicator
+    public function getCodeShareIndicator(): ?OrgOpentravelOta200305CodeShareIndicator
     {
         return $this->codeShareIndicator;
     }
@@ -682,7 +682,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return self
      */
-    public function setCodeShareIndicator(OrgOpentravelOta200305CodeShareIndicator $codeShareIndicator): self
+    public function setCodeShareIndicator(?OrgOpentravelOta200305CodeShareIndicator $codeShareIndicator): self
     {
         $this->codeShareIndicator = $codeShareIndicator;
 
@@ -692,7 +692,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
     /**
      * @return OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsContentType
      */
-    public function getContentType(): OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsContentType
+    public function getContentType(): ?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsContentType
     {
         return $this->contentType;
     }
@@ -702,7 +702,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return self
      */
-    public function setContentType(OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsContentType $contentType): self
+    public function setContentType(?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsContentType $contentType): self
     {
         $this->contentType = $contentType;
 
@@ -712,7 +712,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
     /**
      * @return OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsCountryPref[]
      */
-    public function getCountryPref(): array
+    public function getCountryPref(): ?array
     {
         return $this->countryPref;
     }
@@ -722,7 +722,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return self
      */
-    public function setCountryPref(array $countryPref): self
+    public function setCountryPref(?array $countryPref): self
     {
         $this->countryPref = $countryPref;
 
@@ -732,7 +732,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
     /**
      * @return OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsDataSources
      */
-    public function getDataSources(): OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsDataSources
+    public function getDataSources(): ?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsDataSources
     {
         return $this->dataSources;
     }
@@ -742,7 +742,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return self
      */
-    public function setDataSources(OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsDataSources $dataSources): self
+    public function setDataSources(?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsDataSources $dataSources): self
     {
         $this->dataSources = $dataSources;
 
@@ -754,7 +754,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return string
      */
-    public function getDepartureWindow(): string
+    public function getDepartureWindow(): ?string
     {
         return $this->departureWindow;
     }
@@ -766,7 +766,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return self
      */
-    public function setDepartureWindow(string $departureWindow): self
+    public function setDepartureWindow(?string $departureWindow): self
     {
         $this->departureWindow = $departureWindow;
 
@@ -776,7 +776,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
     /**
      * @return OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsDiversityParameters
      */
-    public function getDiversityParameters(): OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsDiversityParameters
+    public function getDiversityParameters(): ?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsDiversityParameters
     {
         return $this->diversityParameters;
     }
@@ -786,7 +786,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return self
      */
-    public function setDiversityParameters(OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsDiversityParameters $diversityParameters): self
+    public function setDiversityParameters(?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsDiversityParameters $diversityParameters): self
     {
         $this->diversityParameters = $diversityParameters;
 
@@ -798,7 +798,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsDomesticLayoverTime
      */
-    public function getDomesticLayoverTime(): OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsDomesticLayoverTime
+    public function getDomesticLayoverTime(): ?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsDomesticLayoverTime
     {
         return $this->domesticLayoverTime;
     }
@@ -810,7 +810,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return self
      */
-    public function setDomesticLayoverTime(OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsDomesticLayoverTime $domesticLayoverTime): self
+    public function setDomesticLayoverTime(?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsDomesticLayoverTime $domesticLayoverTime): self
     {
         $this->domesticLayoverTime = $domesticLayoverTime;
 
@@ -820,7 +820,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
     /**
      * @return OrgOpentravelOta200305AllianceType[]
      */
-    public function getExcludeAlliancePref(): array
+    public function getExcludeAlliancePref(): ?array
     {
         return $this->excludeAlliancePref;
     }
@@ -830,7 +830,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return self
      */
-    public function setExcludeAlliancePref(array $excludeAlliancePref): self
+    public function setExcludeAlliancePref(?array $excludeAlliancePref): self
     {
         $this->excludeAlliancePref = $excludeAlliancePref;
 
@@ -840,7 +840,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
     /**
      * @return OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsExcludeCallDirectCarriers
      */
-    public function getExcludeCallDirectCarriers(): OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsExcludeCallDirectCarriers
+    public function getExcludeCallDirectCarriers(): ?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsExcludeCallDirectCarriers
     {
         return $this->excludeCallDirectCarriers;
     }
@@ -850,7 +850,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return self
      */
-    public function setExcludeCallDirectCarriers(OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsExcludeCallDirectCarriers $excludeCallDirectCarriers): self
+    public function setExcludeCallDirectCarriers(?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsExcludeCallDirectCarriers $excludeCallDirectCarriers): self
     {
         $this->excludeCallDirectCarriers = $excludeCallDirectCarriers;
 
@@ -860,7 +860,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
     /**
      * @return OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsExcludeVendorPref[]
      */
-    public function getExcludeVendorPref(): array
+    public function getExcludeVendorPref(): ?array
     {
         return $this->excludeVendorPref;
     }
@@ -870,7 +870,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return self
      */
-    public function setExcludeVendorPref(array $excludeVendorPref): self
+    public function setExcludeVendorPref(?array $excludeVendorPref): self
     {
         $this->excludeVendorPref = $excludeVendorPref;
 
@@ -882,7 +882,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return OrgOpentravelOta200305ExchangeTravelPreferencesTPAExtensionsTypeExemptAllTaxes
      */
-    public function getExemptAllTaxes(): OrgOpentravelOta200305ExchangeTravelPreferencesTPAExtensionsTypeExemptAllTaxes
+    public function getExemptAllTaxes(): ?OrgOpentravelOta200305ExchangeTravelPreferencesTPAExtensionsTypeExemptAllTaxes
     {
         return $this->exemptAllTaxes;
     }
@@ -894,7 +894,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return self
      */
-    public function setExemptAllTaxes(OrgOpentravelOta200305ExchangeTravelPreferencesTPAExtensionsTypeExemptAllTaxes $exemptAllTaxes): self
+    public function setExemptAllTaxes(?OrgOpentravelOta200305ExchangeTravelPreferencesTPAExtensionsTypeExemptAllTaxes $exemptAllTaxes): self
     {
         $this->exemptAllTaxes = $exemptAllTaxes;
 
@@ -906,7 +906,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return OrgOpentravelOta200305ExchangeTravelPreferencesTPAExtensionsTypeExemptAllTaxesAndFees
      */
-    public function getExemptAllTaxesAndFees(): OrgOpentravelOta200305ExchangeTravelPreferencesTPAExtensionsTypeExemptAllTaxesAndFees
+    public function getExemptAllTaxesAndFees(): ?OrgOpentravelOta200305ExchangeTravelPreferencesTPAExtensionsTypeExemptAllTaxesAndFees
     {
         return $this->exemptAllTaxesAndFees;
     }
@@ -918,7 +918,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return self
      */
-    public function setExemptAllTaxesAndFees(OrgOpentravelOta200305ExchangeTravelPreferencesTPAExtensionsTypeExemptAllTaxesAndFees $exemptAllTaxesAndFees): self
+    public function setExemptAllTaxesAndFees(?OrgOpentravelOta200305ExchangeTravelPreferencesTPAExtensionsTypeExemptAllTaxesAndFees $exemptAllTaxesAndFees): self
     {
         $this->exemptAllTaxesAndFees = $exemptAllTaxesAndFees;
 
@@ -928,7 +928,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
     /**
      * @return OrgOpentravelOta200305TaxCodeType[]
      */
-    public function getExemptTax(): array
+    public function getExemptTax(): ?array
     {
         return $this->exemptTax;
     }
@@ -938,7 +938,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return self
      */
-    public function setExemptTax(array $exemptTax): self
+    public function setExemptTax(?array $exemptTax): self
     {
         $this->exemptTax = $exemptTax;
 
@@ -950,7 +950,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsFareAmountThreshold
      */
-    public function getFareAmountThreshold(): OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsFareAmountThreshold
+    public function getFareAmountThreshold(): ?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsFareAmountThreshold
     {
         return $this->fareAmountThreshold;
     }
@@ -962,7 +962,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return self
      */
-    public function setFareAmountThreshold(OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsFareAmountThreshold $fareAmountThreshold): self
+    public function setFareAmountThreshold(?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsFareAmountThreshold $fareAmountThreshold): self
     {
         $this->fareAmountThreshold = $fareAmountThreshold;
 
@@ -972,7 +972,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
     /**
      * @return OrgOpentravelOta200305FareBasisType[]
      */
-    public function getFareBasis(): array
+    public function getFareBasis(): ?array
     {
         return $this->fareBasis;
     }
@@ -982,7 +982,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return self
      */
-    public function setFareBasis(array $fareBasis): self
+    public function setFareBasis(?array $fareBasis): self
     {
         $this->fareBasis = $fareBasis;
 
@@ -992,7 +992,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
     /**
      * @return OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsFareFocusRules
      */
-    public function getFareFocusRules(): OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsFareFocusRules
+    public function getFareFocusRules(): ?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsFareFocusRules
     {
         return $this->fareFocusRules;
     }
@@ -1002,7 +1002,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return self
      */
-    public function setFareFocusRules(OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsFareFocusRules $fareFocusRules): self
+    public function setFareFocusRules(?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsFareFocusRules $fareFocusRules): self
     {
         $this->fareFocusRules = $fareFocusRules;
 
@@ -1012,7 +1012,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
     /**
      * @return OrgOpentravelOta200305FareTypePrefType[]
      */
-    public function getFareType(): array
+    public function getFareType(): ?array
     {
         return $this->fareType;
     }
@@ -1022,7 +1022,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return self
      */
-    public function setFareType(array $fareType): self
+    public function setFareType(?array $fareType): self
     {
         $this->fareType = $fareType;
 
@@ -1032,7 +1032,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
     /**
      * @return OrgOpentravelOta200305FlexibleFaresType
      */
-    public function getFlexibleFares(): OrgOpentravelOta200305FlexibleFaresType
+    public function getFlexibleFares(): ?OrgOpentravelOta200305FlexibleFaresType
     {
         return $this->flexibleFares;
     }
@@ -1042,7 +1042,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return self
      */
-    public function setFlexibleFares(OrgOpentravelOta200305FlexibleFaresType $flexibleFares): self
+    public function setFlexibleFares(?OrgOpentravelOta200305FlexibleFaresType $flexibleFares): self
     {
         $this->flexibleFares = $flexibleFares;
 
@@ -1052,7 +1052,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
     /**
      * @return OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsFlightRepeatLimit
      */
-    public function getFlightRepeatLimit(): OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsFlightRepeatLimit
+    public function getFlightRepeatLimit(): ?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsFlightRepeatLimit
     {
         return $this->flightRepeatLimit;
     }
@@ -1062,7 +1062,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return self
      */
-    public function setFlightRepeatLimit(OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsFlightRepeatLimit $flightRepeatLimit): self
+    public function setFlightRepeatLimit(?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsFlightRepeatLimit $flightRepeatLimit): self
     {
         $this->flightRepeatLimit = $flightRepeatLimit;
 
@@ -1072,7 +1072,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
     /**
      * @return OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsFlightRestrictions
      */
-    public function getFlightRestrictions(): OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsFlightRestrictions
+    public function getFlightRestrictions(): ?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsFlightRestrictions
     {
         return $this->flightRestrictions;
     }
@@ -1082,7 +1082,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return self
      */
-    public function setFlightRestrictions(OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsFlightRestrictions $flightRestrictions): self
+    public function setFlightRestrictions(?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsFlightRestrictions $flightRestrictions): self
     {
         $this->flightRestrictions = $flightRestrictions;
 
@@ -1094,7 +1094,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return OrgOpentravelOta200305FlightStopsAsConnectionsType
      */
-    public function getFlightStopsAsConnections(): OrgOpentravelOta200305FlightStopsAsConnectionsType
+    public function getFlightStopsAsConnections(): ?OrgOpentravelOta200305FlightStopsAsConnectionsType
     {
         return $this->flightStopsAsConnections;
     }
@@ -1106,7 +1106,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return self
      */
-    public function setFlightStopsAsConnections(OrgOpentravelOta200305FlightStopsAsConnectionsType $flightStopsAsConnections): self
+    public function setFlightStopsAsConnections(?OrgOpentravelOta200305FlightStopsAsConnectionsType $flightStopsAsConnections): self
     {
         $this->flightStopsAsConnections = $flightStopsAsConnections;
 
@@ -1118,7 +1118,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsForceKeywordRestrictedContent
      */
-    public function getForceKeywordRestrictedContent(): OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsForceKeywordRestrictedContent
+    public function getForceKeywordRestrictedContent(): ?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsForceKeywordRestrictedContent
     {
         return $this->forceKeywordRestrictedContent;
     }
@@ -1130,7 +1130,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return self
      */
-    public function setForceKeywordRestrictedContent(OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsForceKeywordRestrictedContent $forceKeywordRestrictedContent): self
+    public function setForceKeywordRestrictedContent(?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsForceKeywordRestrictedContent $forceKeywordRestrictedContent): self
     {
         $this->forceKeywordRestrictedContent = $forceKeywordRestrictedContent;
 
@@ -1140,7 +1140,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
     /**
      * @return OrgOpentravelOta200305GoverningCarrierOverrideType
      */
-    public function getGoverningCarrierOverride(): OrgOpentravelOta200305GoverningCarrierOverrideType
+    public function getGoverningCarrierOverride(): ?OrgOpentravelOta200305GoverningCarrierOverrideType
     {
         return $this->governingCarrierOverride;
     }
@@ -1150,7 +1150,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return self
      */
-    public function setGoverningCarrierOverride(OrgOpentravelOta200305GoverningCarrierOverrideType $governingCarrierOverride): self
+    public function setGoverningCarrierOverride(?OrgOpentravelOta200305GoverningCarrierOverrideType $governingCarrierOverride): self
     {
         $this->governingCarrierOverride = $governingCarrierOverride;
 
@@ -1160,7 +1160,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
     /**
      * @return OrgOpentravelOta200305AllianceType[]
      */
-    public function getIncludeAlliancePref(): array
+    public function getIncludeAlliancePref(): ?array
     {
         return $this->includeAlliancePref;
     }
@@ -1170,7 +1170,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return self
      */
-    public function setIncludeAlliancePref(array $includeAlliancePref): self
+    public function setIncludeAlliancePref(?array $includeAlliancePref): self
     {
         $this->includeAlliancePref = $includeAlliancePref;
 
@@ -1180,7 +1180,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
     /**
      * @return OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsInterlineIndicator
      */
-    public function getInterlineIndicator(): OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsInterlineIndicator
+    public function getInterlineIndicator(): ?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsInterlineIndicator
     {
         return $this->interlineIndicator;
     }
@@ -1190,7 +1190,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return self
      */
-    public function setInterlineIndicator(OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsInterlineIndicator $interlineIndicator): self
+    public function setInterlineIndicator(?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsInterlineIndicator $interlineIndicator): self
     {
         $this->interlineIndicator = $interlineIndicator;
 
@@ -1202,7 +1202,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsItineraryNumberThreshold
      */
-    public function getItineraryNumberThreshold(): OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsItineraryNumberThreshold
+    public function getItineraryNumberThreshold(): ?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsItineraryNumberThreshold
     {
         return $this->itineraryNumberThreshold;
     }
@@ -1214,7 +1214,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return self
      */
-    public function setItineraryNumberThreshold(OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsItineraryNumberThreshold $itineraryNumberThreshold): self
+    public function setItineraryNumberThreshold(?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsItineraryNumberThreshold $itineraryNumberThreshold): self
     {
         $this->itineraryNumberThreshold = $itineraryNumberThreshold;
 
@@ -1226,7 +1226,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsJetServiceOnly
      */
-    public function getJetServiceOnly(): OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsJetServiceOnly
+    public function getJetServiceOnly(): ?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsJetServiceOnly
     {
         return $this->jetServiceOnly;
     }
@@ -1238,7 +1238,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return self
      */
-    public function setJetServiceOnly(OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsJetServiceOnly $jetServiceOnly): self
+    public function setJetServiceOnly(?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsJetServiceOnly $jetServiceOnly): self
     {
         $this->jetServiceOnly = $jetServiceOnly;
 
@@ -1248,7 +1248,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
     /**
      * @return OrgOpentravelOta200305JumpCabinLogicType
      */
-    public function getJumpCabinLogic(): OrgOpentravelOta200305JumpCabinLogicType
+    public function getJumpCabinLogic(): ?OrgOpentravelOta200305JumpCabinLogicType
     {
         return $this->jumpCabinLogic;
     }
@@ -1258,7 +1258,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return self
      */
-    public function setJumpCabinLogic(OrgOpentravelOta200305JumpCabinLogicType $jumpCabinLogic): self
+    public function setJumpCabinLogic(?OrgOpentravelOta200305JumpCabinLogicType $jumpCabinLogic): self
     {
         $this->jumpCabinLogic = $jumpCabinLogic;
 
@@ -1268,7 +1268,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
     /**
      * @return OrgOpentravelOta200305KeepSameCabinType
      */
-    public function getKeepSameCabin(): OrgOpentravelOta200305KeepSameCabinType
+    public function getKeepSameCabin(): ?OrgOpentravelOta200305KeepSameCabinType
     {
         return $this->keepSameCabin;
     }
@@ -1278,7 +1278,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return self
      */
-    public function setKeepSameCabin(OrgOpentravelOta200305KeepSameCabinType $keepSameCabin): self
+    public function setKeepSameCabin(?OrgOpentravelOta200305KeepSameCabinType $keepSameCabin): self
     {
         $this->keepSameCabin = $keepSameCabin;
 
@@ -1290,7 +1290,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsLongConnectPoints
      */
-    public function getLongConnectPoints(): OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsLongConnectPoints
+    public function getLongConnectPoints(): ?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsLongConnectPoints
     {
         return $this->longConnectPoints;
     }
@@ -1302,7 +1302,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return self
      */
-    public function setLongConnectPoints(OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsLongConnectPoints $longConnectPoints): self
+    public function setLongConnectPoints(?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsLongConnectPoints $longConnectPoints): self
     {
         $this->longConnectPoints = $longConnectPoints;
 
@@ -1314,7 +1314,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsLongConnectTime
      */
-    public function getLongConnectTime(): OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsLongConnectTime
+    public function getLongConnectTime(): ?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsLongConnectTime
     {
         return $this->longConnectTime;
     }
@@ -1326,7 +1326,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return self
      */
-    public function setLongConnectTime(OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsLongConnectTime $longConnectTime): self
+    public function setLongConnectTime(?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsLongConnectTime $longConnectTime): self
     {
         $this->longConnectTime = $longConnectTime;
 
@@ -1336,7 +1336,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
     /**
      * @return OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsLowCostCarriersProcessing
      */
-    public function getLowCostCarriersProcessing(): OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsLowCostCarriersProcessing
+    public function getLowCostCarriersProcessing(): ?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsLowCostCarriersProcessing
     {
         return $this->lowCostCarriersProcessing;
     }
@@ -1346,7 +1346,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return self
      */
-    public function setLowCostCarriersProcessing(OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsLowCostCarriersProcessing $lowCostCarriersProcessing): self
+    public function setLowCostCarriersProcessing(?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsLowCostCarriersProcessing $lowCostCarriersProcessing): self
     {
         $this->lowCostCarriersProcessing = $lowCostCarriersProcessing;
 
@@ -1358,7 +1358,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsMaxPrice
      */
-    public function getMaxPrice(): OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsMaxPrice
+    public function getMaxPrice(): ?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsMaxPrice
     {
         return $this->maxPrice;
     }
@@ -1370,7 +1370,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return self
      */
-    public function setMaxPrice(OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsMaxPrice $maxPrice): self
+    public function setMaxPrice(?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsMaxPrice $maxPrice): self
     {
         $this->maxPrice = $maxPrice;
 
@@ -1382,7 +1382,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsMultiAirportCodes
      */
-    public function getMultiAirportCodes(): OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsMultiAirportCodes
+    public function getMultiAirportCodes(): ?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsMultiAirportCodes
     {
         return $this->multiAirportCodes;
     }
@@ -1394,7 +1394,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return self
      */
-    public function setMultiAirportCodes(OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsMultiAirportCodes $multiAirportCodes): self
+    public function setMultiAirportCodes(?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsMultiAirportCodes $multiAirportCodes): self
     {
         $this->multiAirportCodes = $multiAirportCodes;
 
@@ -1406,7 +1406,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return OrgOpentravelOta200305NumTripsType
      */
-    public function getNumTrips(): OrgOpentravelOta200305NumTripsType
+    public function getNumTrips(): ?OrgOpentravelOta200305NumTripsType
     {
         return $this->numTrips;
     }
@@ -1418,7 +1418,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return self
      */
-    public function setNumTrips(OrgOpentravelOta200305NumTripsType $numTrips): self
+    public function setNumTrips(?OrgOpentravelOta200305NumTripsType $numTrips): self
     {
         $this->numTrips = $numTrips;
 
@@ -1430,7 +1430,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsNumTripsWithRouting
      */
-    public function getNumTripsWithRouting(): OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsNumTripsWithRouting
+    public function getNumTripsWithRouting(): ?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsNumTripsWithRouting
     {
         return $this->numTripsWithRouting;
     }
@@ -1442,7 +1442,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return self
      */
-    public function setNumTripsWithRouting(OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsNumTripsWithRouting $numTripsWithRouting): self
+    public function setNumTripsWithRouting(?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsNumTripsWithRouting $numTripsWithRouting): self
     {
         $this->numTripsWithRouting = $numTripsWithRouting;
 
@@ -1452,7 +1452,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
     /**
      * @return OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsOnlineIndicator
      */
-    public function getOnlineIndicator(): OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsOnlineIndicator
+    public function getOnlineIndicator(): ?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsOnlineIndicator
     {
         return $this->onlineIndicator;
     }
@@ -1462,7 +1462,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return self
      */
-    public function setOnlineIndicator(OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsOnlineIndicator $onlineIndicator): self
+    public function setOnlineIndicator(?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsOnlineIndicator $onlineIndicator): self
     {
         $this->onlineIndicator = $onlineIndicator;
 
@@ -1474,7 +1474,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsOptionsPerDatePairList
      */
-    public function getOptionsPerDatePairList(): OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsOptionsPerDatePairList
+    public function getOptionsPerDatePairList(): ?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsOptionsPerDatePairList
     {
         return $this->optionsPerDatePairList;
     }
@@ -1486,7 +1486,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return self
      */
-    public function setOptionsPerDatePairList(OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsOptionsPerDatePairList $optionsPerDatePairList): self
+    public function setOptionsPerDatePairList(?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsOptionsPerDatePairList $optionsPerDatePairList): self
     {
         $this->optionsPerDatePairList = $optionsPerDatePairList;
 
@@ -1496,7 +1496,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
     /**
      * @return OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsPreferNDCSourceOnTie
      */
-    public function getPreferNDCSourceOnTie(): OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsPreferNDCSourceOnTie
+    public function getPreferNDCSourceOnTie(): ?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsPreferNDCSourceOnTie
     {
         return $this->preferNDCSourceOnTie;
     }
@@ -1506,7 +1506,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return self
      */
-    public function setPreferNDCSourceOnTie(OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsPreferNDCSourceOnTie $preferNDCSourceOnTie): self
+    public function setPreferNDCSourceOnTie(?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsPreferNDCSourceOnTie $preferNDCSourceOnTie): self
     {
         $this->preferNDCSourceOnTie = $preferNDCSourceOnTie;
 
@@ -1516,7 +1516,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
     /**
      * @return OrgOpentravelOta200305RetailerRulesType
      */
-    public function getRetailerRules(): OrgOpentravelOta200305RetailerRulesType
+    public function getRetailerRules(): ?OrgOpentravelOta200305RetailerRulesType
     {
         return $this->retailerRules;
     }
@@ -1526,7 +1526,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return self
      */
-    public function setRetailerRules(OrgOpentravelOta200305RetailerRulesType $retailerRules): self
+    public function setRetailerRules(?OrgOpentravelOta200305RetailerRulesType $retailerRules): self
     {
         $this->retailerRules = $retailerRules;
 
@@ -1538,7 +1538,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsSameConnectionAirportOnly
      */
-    public function getSameConnectionAirportOnly(): OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsSameConnectionAirportOnly
+    public function getSameConnectionAirportOnly(): ?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsSameConnectionAirportOnly
     {
         return $this->sameConnectionAirportOnly;
     }
@@ -1550,7 +1550,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return self
      */
-    public function setSameConnectionAirportOnly(OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsSameConnectionAirportOnly $sameConnectionAirportOnly): self
+    public function setSameConnectionAirportOnly(?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsSameConnectionAirportOnly $sameConnectionAirportOnly): self
     {
         $this->sameConnectionAirportOnly = $sameConnectionAirportOnly;
 
@@ -1562,7 +1562,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsSameOriginAirportOnly
      */
-    public function getSameOriginAirportOnly(): OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsSameOriginAirportOnly
+    public function getSameOriginAirportOnly(): ?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsSameOriginAirportOnly
     {
         return $this->sameOriginAirportOnly;
     }
@@ -1574,7 +1574,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return self
      */
-    public function setSameOriginAirportOnly(OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsSameOriginAirportOnly $sameOriginAirportOnly): self
+    public function setSameOriginAirportOnly(?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsSameOriginAirportOnly $sameOriginAirportOnly): self
     {
         $this->sameOriginAirportOnly = $sameOriginAirportOnly;
 
@@ -1586,7 +1586,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsSameTurnaroundAirportOnly
      */
-    public function getSameTurnaroundAirportOnly(): OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsSameTurnaroundAirportOnly
+    public function getSameTurnaroundAirportOnly(): ?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsSameTurnaroundAirportOnly
     {
         return $this->sameTurnaroundAirportOnly;
     }
@@ -1598,7 +1598,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return self
      */
-    public function setSameTurnaroundAirportOnly(OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsSameTurnaroundAirportOnly $sameTurnaroundAirportOnly): self
+    public function setSameTurnaroundAirportOnly(?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsSameTurnaroundAirportOnly $sameTurnaroundAirportOnly): self
     {
         $this->sameTurnaroundAirportOnly = $sameTurnaroundAirportOnly;
 
@@ -1608,7 +1608,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
     /**
      * @return OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsSellingLevels
      */
-    public function getSellingLevels(): OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsSellingLevels
+    public function getSellingLevels(): ?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsSellingLevels
     {
         return $this->sellingLevels;
     }
@@ -1618,7 +1618,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return self
      */
-    public function setSellingLevels(OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsSellingLevels $sellingLevels): self
+    public function setSellingLevels(?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsSellingLevels $sellingLevels): self
     {
         $this->sellingLevels = $sellingLevels;
 
@@ -1630,7 +1630,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return string
      */
-    public function getSettlementMethod(): string
+    public function getSettlementMethod(): ?string
     {
         return $this->settlementMethod;
     }
@@ -1642,7 +1642,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return self
      */
-    public function setSettlementMethod(string $settlementMethod): self
+    public function setSettlementMethod(?string $settlementMethod): self
     {
         $this->settlementMethod = $settlementMethod;
 
@@ -1654,7 +1654,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return OrgOpentravelOta200305ExchangeTravelPreferencesTPAExtensionsTypeTaxes
      */
-    public function getTaxes(): OrgOpentravelOta200305ExchangeTravelPreferencesTPAExtensionsTypeTaxes
+    public function getTaxes(): ?OrgOpentravelOta200305ExchangeTravelPreferencesTPAExtensionsTypeTaxes
     {
         return $this->taxes;
     }
@@ -1666,7 +1666,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return self
      */
-    public function setTaxes(OrgOpentravelOta200305ExchangeTravelPreferencesTPAExtensionsTypeTaxes $taxes): self
+    public function setTaxes(?OrgOpentravelOta200305ExchangeTravelPreferencesTPAExtensionsTypeTaxes $taxes): self
     {
         $this->taxes = $taxes;
 
@@ -1678,7 +1678,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsTicketingSumOfLocals
      */
-    public function getTicketingSumOfLocals(): OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsTicketingSumOfLocals
+    public function getTicketingSumOfLocals(): ?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsTicketingSumOfLocals
     {
         return $this->ticketingSumOfLocals;
     }
@@ -1690,7 +1690,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return self
      */
-    public function setTicketingSumOfLocals(OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsTicketingSumOfLocals $ticketingSumOfLocals): self
+    public function setTicketingSumOfLocals(?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsTicketingSumOfLocals $ticketingSumOfLocals): self
     {
         $this->ticketingSumOfLocals = $ticketingSumOfLocals;
 
@@ -1700,7 +1700,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
     /**
      * @return OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsTripType
      */
-    public function getTripType(): OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsTripType
+    public function getTripType(): ?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsTripType
     {
         return $this->tripType;
     }
@@ -1710,7 +1710,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return self
      */
-    public function setTripType(OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsTripType $tripType): self
+    public function setTripType(?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsTripType $tripType): self
     {
         $this->tripType = $tripType;
 
@@ -1720,7 +1720,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
     /**
      * @return OrgOpentravelOta200305ValidatingCarrierType
      */
-    public function getValidatingCarrier(): OrgOpentravelOta200305ValidatingCarrierType
+    public function getValidatingCarrier(): ?OrgOpentravelOta200305ValidatingCarrierType
     {
         return $this->validatingCarrier;
     }
@@ -1730,7 +1730,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return self
      */
-    public function setValidatingCarrier(OrgOpentravelOta200305ValidatingCarrierType $validatingCarrier): self
+    public function setValidatingCarrier(?OrgOpentravelOta200305ValidatingCarrierType $validatingCarrier): self
     {
         $this->validatingCarrier = $validatingCarrier;
 
@@ -1740,7 +1740,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
     /**
      * @return OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsValidatingCarrierCheck
      */
-    public function getValidatingCarrierCheck(): OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsValidatingCarrierCheck
+    public function getValidatingCarrierCheck(): ?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsValidatingCarrierCheck
     {
         return $this->validatingCarrierCheck;
     }
@@ -1750,7 +1750,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return self
      */
-    public function setValidatingCarrierCheck(OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsValidatingCarrierCheck $validatingCarrierCheck): self
+    public function setValidatingCarrierCheck(?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsValidatingCarrierCheck $validatingCarrierCheck): self
     {
         $this->validatingCarrierCheck = $validatingCarrierCheck;
 
@@ -1760,7 +1760,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
     /**
      * @return OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsVerificationItinCallLogic
      */
-    public function getVerificationItinCallLogic(): OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsVerificationItinCallLogic
+    public function getVerificationItinCallLogic(): ?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsVerificationItinCallLogic
     {
         return $this->verificationItinCallLogic;
     }
@@ -1770,7 +1770,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return self
      */
-    public function setVerificationItinCallLogic(OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsVerificationItinCallLogic $verificationItinCallLogic): self
+    public function setVerificationItinCallLogic(?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsVerificationItinCallLogic $verificationItinCallLogic): self
     {
         $this->verificationItinCallLogic = $verificationItinCallLogic;
 
@@ -1782,7 +1782,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return OrgOpentravelOta200305XOFaresType
      */
-    public function getXOFares(): OrgOpentravelOta200305XOFaresType
+    public function getXOFares(): ?OrgOpentravelOta200305XOFaresType
     {
         return $this->xOFares;
     }
@@ -1794,7 +1794,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return self
      */
-    public function setXOFares(OrgOpentravelOta200305XOFaresType $xOFares): self
+    public function setXOFares(?OrgOpentravelOta200305XOFaresType $xOFares): self
     {
         $this->xOFares = $xOFares;
 
@@ -1806,7 +1806,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsAvsPenaltyCrrs
      */
-    public function getAvsPenaltyCrrs(): OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsAvsPenaltyCrrs
+    public function getAvsPenaltyCrrs(): ?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsAvsPenaltyCrrs
     {
         return $this->avsPenaltyCrrs;
     }
@@ -1818,7 +1818,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return self
      */
-    public function setAvsPenaltyCrrs(OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsAvsPenaltyCrrs $avsPenaltyCrrs): self
+    public function setAvsPenaltyCrrs(?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsAvsPenaltyCrrs $avsPenaltyCrrs): self
     {
         $this->avsPenaltyCrrs = $avsPenaltyCrrs;
 
@@ -1830,7 +1830,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsDepPenaltyInUSD
      */
-    public function getDepPenaltyInUSD(): OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsDepPenaltyInUSD
+    public function getDepPenaltyInUSD(): ?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsDepPenaltyInUSD
     {
         return $this->depPenaltyInUSD;
     }
@@ -1842,7 +1842,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return self
      */
-    public function setDepPenaltyInUSD(OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsDepPenaltyInUSD $depPenaltyInUSD): self
+    public function setDepPenaltyInUSD(?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsDepPenaltyInUSD $depPenaltyInUSD): self
     {
         $this->depPenaltyInUSD = $depPenaltyInUSD;
 
@@ -1854,7 +1854,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsDurPenaltyInUSD
      */
-    public function getDurPenaltyInUSD(): OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsDurPenaltyInUSD
+    public function getDurPenaltyInUSD(): ?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsDurPenaltyInUSD
     {
         return $this->durPenaltyInUSD;
     }
@@ -1866,7 +1866,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return self
      */
-    public function setDurPenaltyInUSD(OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsDurPenaltyInUSD $durPenaltyInUSD): self
+    public function setDurPenaltyInUSD(?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsDurPenaltyInUSD $durPenaltyInUSD): self
     {
         $this->durPenaltyInUSD = $durPenaltyInUSD;
 
@@ -1878,7 +1878,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsFltOptLFSReuseLimitForAVS
      */
-    public function getFltOptLFSReuseLimitForAVS(): OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsFltOptLFSReuseLimitForAVS
+    public function getFltOptLFSReuseLimitForAVS(): ?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsFltOptLFSReuseLimitForAVS
     {
         return $this->fltOptLFSReuseLimitForAVS;
     }
@@ -1890,7 +1890,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return self
      */
-    public function setFltOptLFSReuseLimitForAVS(OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsFltOptLFSReuseLimitForAVS $fltOptLFSReuseLimitForAVS): self
+    public function setFltOptLFSReuseLimitForAVS(?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsFltOptLFSReuseLimitForAVS $fltOptLFSReuseLimitForAVS): self
     {
         $this->fltOptLFSReuseLimitForAVS = $fltOptLFSReuseLimitForAVS;
 
@@ -1902,7 +1902,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsFltOptLFSReuseLimitForNonAVS
      */
-    public function getFltOptLFSReuseLimitForNonAVS(): OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsFltOptLFSReuseLimitForNonAVS
+    public function getFltOptLFSReuseLimitForNonAVS(): ?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsFltOptLFSReuseLimitForNonAVS
     {
         return $this->fltOptLFSReuseLimitForNonAVS;
     }
@@ -1914,7 +1914,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return self
      */
-    public function setFltOptLFSReuseLimitForNonAVS(OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsFltOptLFSReuseLimitForNonAVS $fltOptLFSReuseLimitForNonAVS): self
+    public function setFltOptLFSReuseLimitForNonAVS(?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsFltOptLFSReuseLimitForNonAVS $fltOptLFSReuseLimitForNonAVS): self
     {
         $this->fltOptLFSReuseLimitForNonAVS = $fltOptLFSReuseLimitForNonAVS;
 
@@ -1926,7 +1926,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsFltOptMustPriceReuseLimit
      */
-    public function getFltOptMustPriceReuseLimit(): OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsFltOptMustPriceReuseLimit
+    public function getFltOptMustPriceReuseLimit(): ?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsFltOptMustPriceReuseLimit
     {
         return $this->fltOptMustPriceReuseLimit;
     }
@@ -1938,7 +1938,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return self
      */
-    public function setFltOptMustPriceReuseLimit(OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsFltOptMustPriceReuseLimit $fltOptMustPriceReuseLimit): self
+    public function setFltOptMustPriceReuseLimit(?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsFltOptMustPriceReuseLimit $fltOptMustPriceReuseLimit): self
     {
         $this->fltOptMustPriceReuseLimit = $fltOptMustPriceReuseLimit;
 
@@ -1950,7 +1950,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsMaxAllowedLFSOveragePerCrrPercent
      */
-    public function getMaxAllowedLFSOveragePerCrrPercent(): OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsMaxAllowedLFSOveragePerCrrPercent
+    public function getMaxAllowedLFSOveragePerCrrPercent(): ?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsMaxAllowedLFSOveragePerCrrPercent
     {
         return $this->maxAllowedLFSOveragePerCrrPercent;
     }
@@ -1962,7 +1962,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return self
      */
-    public function setMaxAllowedLFSOveragePerCrrPercent(OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsMaxAllowedLFSOveragePerCrrPercent $maxAllowedLFSOveragePerCrrPercent): self
+    public function setMaxAllowedLFSOveragePerCrrPercent(?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsMaxAllowedLFSOveragePerCrrPercent $maxAllowedLFSOveragePerCrrPercent): self
     {
         $this->maxAllowedLFSOveragePerCrrPercent = $maxAllowedLFSOveragePerCrrPercent;
 
@@ -1974,7 +1974,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsMaxAllowedMustPriceOveragePerCrr
      */
-    public function getMaxAllowedMustPriceOveragePerCrr(): OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsMaxAllowedMustPriceOveragePerCrr
+    public function getMaxAllowedMustPriceOveragePerCrr(): ?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsMaxAllowedMustPriceOveragePerCrr
     {
         return $this->maxAllowedMustPriceOveragePerCrr;
     }
@@ -1986,7 +1986,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return self
      */
-    public function setMaxAllowedMustPriceOveragePerCrr(OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsMaxAllowedMustPriceOveragePerCrr $maxAllowedMustPriceOveragePerCrr): self
+    public function setMaxAllowedMustPriceOveragePerCrr(?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsMaxAllowedMustPriceOveragePerCrr $maxAllowedMustPriceOveragePerCrr): self
     {
         $this->maxAllowedMustPriceOveragePerCrr = $maxAllowedMustPriceOveragePerCrr;
 
@@ -1998,7 +1998,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsMaxNumOf2PlusStpSol
      */
-    public function getMaxNumOf2PlusStpSol(): OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsMaxNumOf2PlusStpSol
+    public function getMaxNumOf2PlusStpSol(): ?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsMaxNumOf2PlusStpSol
     {
         return $this->maxNumOf2PlusStpSol;
     }
@@ -2010,7 +2010,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return self
      */
-    public function setMaxNumOf2PlusStpSol(OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsMaxNumOf2PlusStpSol $maxNumOf2PlusStpSol): self
+    public function setMaxNumOf2PlusStpSol(?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsMaxNumOf2PlusStpSol $maxNumOf2PlusStpSol): self
     {
         $this->maxNumOf2PlusStpSol = $maxNumOf2PlusStpSol;
 
@@ -2022,7 +2022,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsMaxNumOfNonStpInrlSol
      */
-    public function getMaxNumOfNonStpInrlSol(): OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsMaxNumOfNonStpInrlSol
+    public function getMaxNumOfNonStpInrlSol(): ?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsMaxNumOfNonStpInrlSol
     {
         return $this->maxNumOfNonStpInrlSol;
     }
@@ -2034,7 +2034,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return self
      */
-    public function setMaxNumOfNonStpInrlSol(OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsMaxNumOfNonStpInrlSol $maxNumOfNonStpInrlSol): self
+    public function setMaxNumOfNonStpInrlSol(?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsMaxNumOfNonStpInrlSol $maxNumOfNonStpInrlSol): self
     {
         $this->maxNumOfNonStpInrlSol = $maxNumOfNonStpInrlSol;
 
@@ -2046,7 +2046,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsMaxNumOfNonStpOnlSol
      */
-    public function getMaxNumOfNonStpOnlSol(): OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsMaxNumOfNonStpOnlSol
+    public function getMaxNumOfNonStpOnlSol(): ?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsMaxNumOfNonStpOnlSol
     {
         return $this->maxNumOfNonStpOnlSol;
     }
@@ -2058,7 +2058,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return self
      */
-    public function setMaxNumOfNonStpOnlSol(OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsMaxNumOfNonStpOnlSol $maxNumOfNonStpOnlSol): self
+    public function setMaxNumOfNonStpOnlSol(?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsMaxNumOfNonStpOnlSol $maxNumOfNonStpOnlSol): self
     {
         $this->maxNumOfNonStpOnlSol = $maxNumOfNonStpOnlSol;
 
@@ -2070,7 +2070,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsMaxNumOfSingleStpOnlSol
      */
-    public function getMaxNumOfSingleStpOnlSol(): OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsMaxNumOfSingleStpOnlSol
+    public function getMaxNumOfSingleStpOnlSol(): ?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsMaxNumOfSingleStpOnlSol
     {
         return $this->maxNumOfSingleStpOnlSol;
     }
@@ -2082,7 +2082,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return self
      */
-    public function setMaxNumOfSingleStpOnlSol(OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsMaxNumOfSingleStpOnlSol $maxNumOfSingleStpOnlSol): self
+    public function setMaxNumOfSingleStpOnlSol(?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsMaxNumOfSingleStpOnlSol $maxNumOfSingleStpOnlSol): self
     {
         $this->maxNumOfSingleStpOnlSol = $maxNumOfSingleStpOnlSol;
 
@@ -2094,7 +2094,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsMaxRelFareLvlOfxForCnx
      */
-    public function getMaxRelFareLvlOfxForCnx(): OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsMaxRelFareLvlOfxForCnx
+    public function getMaxRelFareLvlOfxForCnx(): ?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsMaxRelFareLvlOfxForCnx
     {
         return $this->maxRelFareLvlOfxForCnx;
     }
@@ -2106,7 +2106,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return self
      */
-    public function setMaxRelFareLvlOfxForCnx(OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsMaxRelFareLvlOfxForCnx $maxRelFareLvlOfxForCnx): self
+    public function setMaxRelFareLvlOfxForCnx(?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsMaxRelFareLvlOfxForCnx $maxRelFareLvlOfxForCnx): self
     {
         $this->maxRelFareLvlOfxForCnx = $maxRelFareLvlOfxForCnx;
 
@@ -2118,7 +2118,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsMaxRelFareLvlOfxForNonStp
      */
-    public function getMaxRelFareLvlOfxForNonStp(): OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsMaxRelFareLvlOfxForNonStp
+    public function getMaxRelFareLvlOfxForNonStp(): ?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsMaxRelFareLvlOfxForNonStp
     {
         return $this->maxRelFareLvlOfxForNonStp;
     }
@@ -2130,7 +2130,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return self
      */
-    public function setMaxRelFareLvlOfxForNonStp(OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsMaxRelFareLvlOfxForNonStp $maxRelFareLvlOfxForNonStp): self
+    public function setMaxRelFareLvlOfxForNonStp(?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsMaxRelFareLvlOfxForNonStp $maxRelFareLvlOfxForNonStp): self
     {
         $this->maxRelFareLvlOfxForNonStp = $maxRelFareLvlOfxForNonStp;
 
@@ -2142,7 +2142,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsMinAllowedOveragePerCrr
      */
-    public function getMinAllowedOveragePerCrr(): OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsMinAllowedOveragePerCrr
+    public function getMinAllowedOveragePerCrr(): ?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsMinAllowedOveragePerCrr
     {
         return $this->minAllowedOveragePerCrr;
     }
@@ -2154,7 +2154,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return self
      */
-    public function setMinAllowedOveragePerCrr(OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsMinAllowedOveragePerCrr $minAllowedOveragePerCrr): self
+    public function setMinAllowedOveragePerCrr(?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsMinAllowedOveragePerCrr $minAllowedOveragePerCrr): self
     {
         $this->minAllowedOveragePerCrr = $minAllowedOveragePerCrr;
 
@@ -2166,7 +2166,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsMinAllowedOveragePerCrrPercent
      */
-    public function getMinAllowedOveragePerCrrPercent(): OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsMinAllowedOveragePerCrrPercent
+    public function getMinAllowedOveragePerCrrPercent(): ?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsMinAllowedOveragePerCrrPercent
     {
         return $this->minAllowedOveragePerCrrPercent;
     }
@@ -2178,7 +2178,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return self
      */
-    public function setMinAllowedOveragePerCrrPercent(OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsMinAllowedOveragePerCrrPercent $minAllowedOveragePerCrrPercent): self
+    public function setMinAllowedOveragePerCrrPercent(?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsMinAllowedOveragePerCrrPercent $minAllowedOveragePerCrrPercent): self
     {
         $this->minAllowedOveragePerCrrPercent = $minAllowedOveragePerCrrPercent;
 
@@ -2190,7 +2190,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsNumOfLowFareSol
      */
-    public function getNumOfLowFareSol(): OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsNumOfLowFareSol
+    public function getNumOfLowFareSol(): ?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsNumOfLowFareSol
     {
         return $this->numOfLowFareSol;
     }
@@ -2202,7 +2202,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return self
      */
-    public function setNumOfLowFareSol(OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsNumOfLowFareSol $numOfLowFareSol): self
+    public function setNumOfLowFareSol(?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsNumOfLowFareSol $numOfLowFareSol): self
     {
         $this->numOfLowFareSol = $numOfLowFareSol;
 
@@ -2214,7 +2214,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsNumOfMustPrice2PlusStpSol
      */
-    public function getNumOfMustPrice2PlusStpSol(): OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsNumOfMustPrice2PlusStpSol
+    public function getNumOfMustPrice2PlusStpSol(): ?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsNumOfMustPrice2PlusStpSol
     {
         return $this->numOfMustPrice2PlusStpSol;
     }
@@ -2226,7 +2226,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return self
      */
-    public function setNumOfMustPrice2PlusStpSol(OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsNumOfMustPrice2PlusStpSol $numOfMustPrice2PlusStpSol): self
+    public function setNumOfMustPrice2PlusStpSol(?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsNumOfMustPrice2PlusStpSol $numOfMustPrice2PlusStpSol): self
     {
         $this->numOfMustPrice2PlusStpSol = $numOfMustPrice2PlusStpSol;
 
@@ -2238,7 +2238,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsNumOfMustPriceInrlSol
      */
-    public function getNumOfMustPriceInrlSol(): OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsNumOfMustPriceInrlSol
+    public function getNumOfMustPriceInrlSol(): ?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsNumOfMustPriceInrlSol
     {
         return $this->numOfMustPriceInrlSol;
     }
@@ -2250,7 +2250,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return self
      */
-    public function setNumOfMustPriceInrlSol(OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsNumOfMustPriceInrlSol $numOfMustPriceInrlSol): self
+    public function setNumOfMustPriceInrlSol(?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsNumOfMustPriceInrlSol $numOfMustPriceInrlSol): self
     {
         $this->numOfMustPriceInrlSol = $numOfMustPriceInrlSol;
 
@@ -2262,7 +2262,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsNumOfMustPriceNStp1StpInrlSol
      */
-    public function getNumOfMustPriceNStp1StpInrlSol(): OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsNumOfMustPriceNStp1StpInrlSol
+    public function getNumOfMustPriceNStp1StpInrlSol(): ?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsNumOfMustPriceNStp1StpInrlSol
     {
         return $this->numOfMustPriceNStp1StpInrlSol;
     }
@@ -2274,7 +2274,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return self
      */
-    public function setNumOfMustPriceNStp1StpInrlSol(OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsNumOfMustPriceNStp1StpInrlSol $numOfMustPriceNStp1StpInrlSol): self
+    public function setNumOfMustPriceNStp1StpInrlSol(?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsNumOfMustPriceNStp1StpInrlSol $numOfMustPriceNStp1StpInrlSol): self
     {
         $this->numOfMustPriceNStp1StpInrlSol = $numOfMustPriceNStp1StpInrlSol;
 
@@ -2286,7 +2286,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsNumOfMustPriceNStp1StpOnlSol
      */
-    public function getNumOfMustPriceNStp1StpOnlSol(): OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsNumOfMustPriceNStp1StpOnlSol
+    public function getNumOfMustPriceNStp1StpOnlSol(): ?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsNumOfMustPriceNStp1StpOnlSol
     {
         return $this->numOfMustPriceNStp1StpOnlSol;
     }
@@ -2298,7 +2298,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return self
      */
-    public function setNumOfMustPriceNStp1StpOnlSol(OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsNumOfMustPriceNStp1StpOnlSol $numOfMustPriceNStp1StpOnlSol): self
+    public function setNumOfMustPriceNStp1StpOnlSol(?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsNumOfMustPriceNStp1StpOnlSol $numOfMustPriceNStp1StpOnlSol): self
     {
         $this->numOfMustPriceNStp1StpOnlSol = $numOfMustPriceNStp1StpOnlSol;
 
@@ -2310,7 +2310,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsNumOfMustPriceNStpInrlSol
      */
-    public function getNumOfMustPriceNStpInrlSol(): OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsNumOfMustPriceNStpInrlSol
+    public function getNumOfMustPriceNStpInrlSol(): ?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsNumOfMustPriceNStpInrlSol
     {
         return $this->numOfMustPriceNStpInrlSol;
     }
@@ -2322,7 +2322,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return self
      */
-    public function setNumOfMustPriceNStpInrlSol(OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsNumOfMustPriceNStpInrlSol $numOfMustPriceNStpInrlSol): self
+    public function setNumOfMustPriceNStpInrlSol(?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsNumOfMustPriceNStpInrlSol $numOfMustPriceNStpInrlSol): self
     {
         $this->numOfMustPriceNStpInrlSol = $numOfMustPriceNStpInrlSol;
 
@@ -2334,7 +2334,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsNumOfMustPriceNStpOnlSol
      */
-    public function getNumOfMustPriceNStpOnlSol(): OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsNumOfMustPriceNStpOnlSol
+    public function getNumOfMustPriceNStpOnlSol(): ?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsNumOfMustPriceNStpOnlSol
     {
         return $this->numOfMustPriceNStpOnlSol;
     }
@@ -2346,7 +2346,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return self
      */
-    public function setNumOfMustPriceNStpOnlSol(OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsNumOfMustPriceNStpOnlSol $numOfMustPriceNStpOnlSol): self
+    public function setNumOfMustPriceNStpOnlSol(?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsNumOfMustPriceNStpOnlSol $numOfMustPriceNStpOnlSol): self
     {
         $this->numOfMustPriceNStpOnlSol = $numOfMustPriceNStpOnlSol;
 
@@ -2358,7 +2358,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsNumOfMustPriceOnlSol
      */
-    public function getNumOfMustPriceOnlSol(): OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsNumOfMustPriceOnlSol
+    public function getNumOfMustPriceOnlSol(): ?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsNumOfMustPriceOnlSol
     {
         return $this->numOfMustPriceOnlSol;
     }
@@ -2370,7 +2370,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return self
      */
-    public function setNumOfMustPriceOnlSol(OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsNumOfMustPriceOnlSol $numOfMustPriceOnlSol): self
+    public function setNumOfMustPriceOnlSol(?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsNumOfMustPriceOnlSol $numOfMustPriceOnlSol): self
     {
         $this->numOfMustPriceOnlSol = $numOfMustPriceOnlSol;
 
@@ -2382,7 +2382,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsNumOfMustPriceSStopOnlSol
      */
-    public function getNumOfMustPriceSStopOnlSol(): OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsNumOfMustPriceSStopOnlSol
+    public function getNumOfMustPriceSStopOnlSol(): ?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsNumOfMustPriceSStopOnlSol
     {
         return $this->numOfMustPriceSStopOnlSol;
     }
@@ -2394,7 +2394,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return self
      */
-    public function setNumOfMustPriceSStopOnlSol(OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsNumOfMustPriceSStopOnlSol $numOfMustPriceSStopOnlSol): self
+    public function setNumOfMustPriceSStopOnlSol(?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsNumOfMustPriceSStopOnlSol $numOfMustPriceSStopOnlSol): self
     {
         $this->numOfMustPriceSStopOnlSol = $numOfMustPriceSStopOnlSol;
 
@@ -2406,7 +2406,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsStpPenaltyInUSD
      */
-    public function getStpPenaltyInUSD(): OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsStpPenaltyInUSD
+    public function getStpPenaltyInUSD(): ?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsStpPenaltyInUSD
     {
         return $this->stpPenaltyInUSD;
     }
@@ -2418,7 +2418,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return self
      */
-    public function setStpPenaltyInUSD(OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsStpPenaltyInUSD $stpPenaltyInUSD): self
+    public function setStpPenaltyInUSD(?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsStpPenaltyInUSD $stpPenaltyInUSD): self
     {
         $this->stpPenaltyInUSD = $stpPenaltyInUSD;
 
@@ -2430,7 +2430,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsTargetMinNumOfLFSOnlSolPerCrr
      */
-    public function getTargetMinNumOfLFSOnlSolPerCrr(): OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsTargetMinNumOfLFSOnlSolPerCrr
+    public function getTargetMinNumOfLFSOnlSolPerCrr(): ?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsTargetMinNumOfLFSOnlSolPerCrr
     {
         return $this->targetMinNumOfLFSOnlSolPerCrr;
     }
@@ -2442,7 +2442,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return self
      */
-    public function setTargetMinNumOfLFSOnlSolPerCrr(OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsTargetMinNumOfLFSOnlSolPerCrr $targetMinNumOfLFSOnlSolPerCrr): self
+    public function setTargetMinNumOfLFSOnlSolPerCrr(?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsTargetMinNumOfLFSOnlSolPerCrr $targetMinNumOfLFSOnlSolPerCrr): self
     {
         $this->targetMinNumOfLFSOnlSolPerCrr = $targetMinNumOfLFSOnlSolPerCrr;
 
@@ -2454,7 +2454,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsTargetMinNumOfLFSTotOnlSolPercent
      */
-    public function getTargetMinNumOfLFSTotOnlSolPercent(): OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsTargetMinNumOfLFSTotOnlSolPercent
+    public function getTargetMinNumOfLFSTotOnlSolPercent(): ?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsTargetMinNumOfLFSTotOnlSolPercent
     {
         return $this->targetMinNumOfLFSTotOnlSolPercent;
     }
@@ -2466,7 +2466,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return self
      */
-    public function setTargetMinNumOfLFSTotOnlSolPercent(OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsTargetMinNumOfLFSTotOnlSolPercent $targetMinNumOfLFSTotOnlSolPercent): self
+    public function setTargetMinNumOfLFSTotOnlSolPercent(?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsTargetMinNumOfLFSTotOnlSolPercent $targetMinNumOfLFSTotOnlSolPercent): self
     {
         $this->targetMinNumOfLFSTotOnlSolPercent = $targetMinNumOfLFSTotOnlSolPercent;
 
@@ -2478,7 +2478,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsUpperBoundLFSFactor
      */
-    public function getUpperBoundLFSFactor(): OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsUpperBoundLFSFactor
+    public function getUpperBoundLFSFactor(): ?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsUpperBoundLFSFactor
     {
         return $this->upperBoundLFSFactor;
     }
@@ -2490,7 +2490,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return self
      */
-    public function setUpperBoundLFSFactor(OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsUpperBoundLFSFactor $upperBoundLFSFactor): self
+    public function setUpperBoundLFSFactor(?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsUpperBoundLFSFactor $upperBoundLFSFactor): self
     {
         $this->upperBoundLFSFactor = $upperBoundLFSFactor;
 
@@ -2502,7 +2502,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsUpperBoundMustPriceFactorForNonStp
      */
-    public function getUpperBoundMustPriceFactorForNonStp(): OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsUpperBoundMustPriceFactorForNonStp
+    public function getUpperBoundMustPriceFactorForNonStp(): ?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsUpperBoundMustPriceFactorForNonStp
     {
         return $this->upperBoundMustPriceFactorForNonStp;
     }
@@ -2514,7 +2514,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return self
      */
-    public function setUpperBoundMustPriceFactorForNonStp(OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsUpperBoundMustPriceFactorForNonStp $upperBoundMustPriceFactorForNonStp): self
+    public function setUpperBoundMustPriceFactorForNonStp(?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsUpperBoundMustPriceFactorForNonStp $upperBoundMustPriceFactorForNonStp): self
     {
         $this->upperBoundMustPriceFactorForNonStp = $upperBoundMustPriceFactorForNonStp;
 
@@ -2526,7 +2526,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsUpperBoundMustPriceFactorForNotNonStp
      */
-    public function getUpperBoundMustPriceFactorForNotNonStp(): OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsUpperBoundMustPriceFactorForNotNonStp
+    public function getUpperBoundMustPriceFactorForNotNonStp(): ?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsUpperBoundMustPriceFactorForNotNonStp
     {
         return $this->upperBoundMustPriceFactorForNotNonStp;
     }
@@ -2538,7 +2538,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensions extends AbstractMode
      *
      * @return self
      */
-    public function setUpperBoundMustPriceFactorForNotNonStp(OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsUpperBoundMustPriceFactorForNotNonStp $upperBoundMustPriceFactorForNotNonStp): self
+    public function setUpperBoundMustPriceFactorForNotNonStp(?OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsUpperBoundMustPriceFactorForNotNonStp $upperBoundMustPriceFactorForNotNonStp): self
     {
         $this->upperBoundMustPriceFactorForNotNonStp = $upperBoundMustPriceFactorForNotNonStp;
 

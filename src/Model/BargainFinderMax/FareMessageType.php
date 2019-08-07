@@ -30,7 +30,7 @@ class FareMessageType extends AbstractModel
     /**
      * @return string
      */
-    public function getCarrier(): string
+    public function getCarrier(): ?string
     {
         return $this->carrier;
     }
@@ -40,7 +40,7 @@ class FareMessageType extends AbstractModel
      *
      * @return self
      */
-    public function setCarrier(string $carrier): self
+    public function setCarrier(?string $carrier): self
     {
         $this->carrier = $carrier;
 
@@ -50,7 +50,7 @@ class FareMessageType extends AbstractModel
     /**
      * @return string
      */
-    public function getCode(): string
+    public function getCode(): ?string
     {
         return $this->code;
     }
@@ -60,7 +60,7 @@ class FareMessageType extends AbstractModel
      *
      * @return self
      */
-    public function setCode(string $code): self
+    public function setCode(?string $code): self
     {
         $this->code = $code;
 
@@ -70,7 +70,7 @@ class FareMessageType extends AbstractModel
     /**
      * @return string
      */
-    public function getInfo(): string
+    public function getInfo(): ?string
     {
         return $this->info;
     }
@@ -80,7 +80,7 @@ class FareMessageType extends AbstractModel
      *
      * @return self
      */
-    public function setInfo(string $info): self
+    public function setInfo(?string $info): self
     {
         $this->info = $info;
 
@@ -90,7 +90,7 @@ class FareMessageType extends AbstractModel
     /**
      * @return string
      */
-    public function getType(): string
+    public function getType(): ?string
     {
         return $this->type;
     }
@@ -100,7 +100,7 @@ class FareMessageType extends AbstractModel
      *
      * @return self
      */
-    public function setType(string $type): self
+    public function setType(?string $type): self
     {
         $this->type = $type;
 
@@ -110,7 +110,7 @@ class FareMessageType extends AbstractModel
     /**
      * @return string
      */
-    public function getValue(): string
+    public function getValue(): ?string
     {
         return $this->value;
     }
@@ -120,7 +120,7 @@ class FareMessageType extends AbstractModel
      *
      * @return self
      */
-    public function setValue(string $value): self
+    public function setValue(?string $value): self
     {
         $this->value = $value;
 

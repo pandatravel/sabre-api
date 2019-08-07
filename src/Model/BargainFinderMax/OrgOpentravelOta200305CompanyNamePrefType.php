@@ -50,7 +50,7 @@ class OrgOpentravelOta200305CompanyNamePrefType extends AbstractModel
      *
      * @return string
      */
-    public function getCode(): string
+    public function getCode(): ?string
     {
         return $this->code;
     }
@@ -62,7 +62,7 @@ class OrgOpentravelOta200305CompanyNamePrefType extends AbstractModel
      *
      * @return self
      */
-    public function setCode(string $code): self
+    public function setCode(?string $code): self
     {
         $this->code = $code;
 
@@ -74,7 +74,7 @@ class OrgOpentravelOta200305CompanyNamePrefType extends AbstractModel
      *
      * @return string
      */
-    public function getCodeContext(): string
+    public function getCodeContext(): ?string
     {
         return $this->codeContext;
     }
@@ -86,7 +86,7 @@ class OrgOpentravelOta200305CompanyNamePrefType extends AbstractModel
      *
      * @return self
      */
-    public function setCodeContext(string $codeContext): self
+    public function setCodeContext(?string $codeContext): self
     {
         $this->codeContext = $codeContext;
 
@@ -98,7 +98,7 @@ class OrgOpentravelOta200305CompanyNamePrefType extends AbstractModel
      *
      * @return string
      */
-    public function getCompanyShortName(): string
+    public function getCompanyShortName(): ?string
     {
         return $this->companyShortName;
     }
@@ -110,7 +110,7 @@ class OrgOpentravelOta200305CompanyNamePrefType extends AbstractModel
      *
      * @return self
      */
-    public function setCompanyShortName(string $companyShortName): self
+    public function setCompanyShortName(?string $companyShortName): self
     {
         $this->companyShortName = $companyShortName;
 
@@ -122,7 +122,7 @@ class OrgOpentravelOta200305CompanyNamePrefType extends AbstractModel
      *
      * @return string
      */
-    public function getPreferLevel(): string
+    public function getPreferLevel(): ?string
     {
         return $this->preferLevel;
     }
@@ -134,7 +134,7 @@ class OrgOpentravelOta200305CompanyNamePrefType extends AbstractModel
      *
      * @return self
      */
-    public function setPreferLevel(string $preferLevel): self
+    public function setPreferLevel(?string $preferLevel): self
     {
         $this->preferLevel = $preferLevel;
 
@@ -146,7 +146,7 @@ class OrgOpentravelOta200305CompanyNamePrefType extends AbstractModel
      *
      * @return string
      */
-    public function getTravelSector(): string
+    public function getTravelSector(): ?string
     {
         return $this->travelSector;
     }
@@ -158,7 +158,7 @@ class OrgOpentravelOta200305CompanyNamePrefType extends AbstractModel
      *
      * @return self
      */
-    public function setTravelSector(string $travelSector): self
+    public function setTravelSector(?string $travelSector): self
     {
         $this->travelSector = $travelSector;
 
@@ -168,7 +168,7 @@ class OrgOpentravelOta200305CompanyNamePrefType extends AbstractModel
     /**
      * @return string
      */
-    public function getType(): string
+    public function getType(): ?string
     {
         return $this->type;
     }
@@ -178,7 +178,7 @@ class OrgOpentravelOta200305CompanyNamePrefType extends AbstractModel
      *
      * @return self
      */
-    public function setType(string $type): self
+    public function setType(?string $type): self
     {
         $this->type = $type;
 
@@ -188,7 +188,7 @@ class OrgOpentravelOta200305CompanyNamePrefType extends AbstractModel
     /**
      * @return string
      */
-    public function getContent(): string
+    public function getContent(): ?string
     {
         return $this->content;
     }
@@ -198,7 +198,7 @@ class OrgOpentravelOta200305CompanyNamePrefType extends AbstractModel
      *
      * @return self
      */
-    public function setContent(string $content): self
+    public function setContent(?string $content): self
     {
         $this->content = $content;
 

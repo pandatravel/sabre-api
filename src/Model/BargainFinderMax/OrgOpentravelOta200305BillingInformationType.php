@@ -46,7 +46,7 @@ class OrgOpentravelOta200305BillingInformationType extends AbstractModel
      *
      * @return string
      */
-    public function getAAACity(): string
+    public function getAAACity(): ?string
     {
         return $this->aAACity;
     }
@@ -58,7 +58,7 @@ class OrgOpentravelOta200305BillingInformationType extends AbstractModel
      *
      * @return self
      */
-    public function setAAACity(string $aAACity): self
+    public function setAAACity(?string $aAACity): self
     {
         $this->aAACity = $aAACity;
 
@@ -68,7 +68,7 @@ class OrgOpentravelOta200305BillingInformationType extends AbstractModel
     /**
      * @return string
      */
-    public function getActionCode(): string
+    public function getActionCode(): ?string
     {
         return $this->actionCode;
     }
@@ -78,7 +78,7 @@ class OrgOpentravelOta200305BillingInformationType extends AbstractModel
      *
      * @return self
      */
-    public function setActionCode(string $actionCode): self
+    public function setActionCode(?string $actionCode): self
     {
         $this->actionCode = $actionCode;
 
@@ -88,7 +88,7 @@ class OrgOpentravelOta200305BillingInformationType extends AbstractModel
     /**
      * @return string
      */
-    public function getAgentSineIn(): string
+    public function getAgentSineIn(): ?string
     {
         return $this->agentSineIn;
     }
@@ -98,7 +98,7 @@ class OrgOpentravelOta200305BillingInformationType extends AbstractModel
      *
      * @return self
      */
-    public function setAgentSineIn(string $agentSineIn): self
+    public function setAgentSineIn(?string $agentSineIn): self
     {
         $this->agentSineIn = $agentSineIn;
 
@@ -108,7 +108,7 @@ class OrgOpentravelOta200305BillingInformationType extends AbstractModel
     /**
      * @return string
      */
-    public function getPartitionID(): string
+    public function getPartitionID(): ?string
     {
         return $this->partitionID;
     }
@@ -118,7 +118,7 @@ class OrgOpentravelOta200305BillingInformationType extends AbstractModel
      *
      * @return self
      */
-    public function setPartitionID(string $partitionID): self
+    public function setPartitionID(?string $partitionID): self
     {
         $this->partitionID = $partitionID;
 
@@ -128,7 +128,7 @@ class OrgOpentravelOta200305BillingInformationType extends AbstractModel
     /**
      * @return string
      */
-    public function getServiceName(): string
+    public function getServiceName(): ?string
     {
         return $this->serviceName;
     }
@@ -138,7 +138,7 @@ class OrgOpentravelOta200305BillingInformationType extends AbstractModel
      *
      * @return self
      */
-    public function setServiceName(string $serviceName): self
+    public function setServiceName(?string $serviceName): self
     {
         $this->serviceName = $serviceName;
 
@@ -148,7 +148,7 @@ class OrgOpentravelOta200305BillingInformationType extends AbstractModel
     /**
      * @return float
      */
-    public function getUserBranch(): float
+    public function getUserBranch(): ?float
     {
         return $this->userBranch;
     }
@@ -158,7 +158,7 @@ class OrgOpentravelOta200305BillingInformationType extends AbstractModel
      *
      * @return self
      */
-    public function setUserBranch(float $userBranch): self
+    public function setUserBranch(?float $userBranch): self
     {
         $this->userBranch = $userBranch;
 
@@ -168,7 +168,7 @@ class OrgOpentravelOta200305BillingInformationType extends AbstractModel
     /**
      * @return string
      */
-    public function getUserSetAddress(): string
+    public function getUserSetAddress(): ?string
     {
         return $this->userSetAddress;
     }
@@ -178,7 +178,7 @@ class OrgOpentravelOta200305BillingInformationType extends AbstractModel
      *
      * @return self
      */
-    public function setUserSetAddress(string $userSetAddress): self
+    public function setUserSetAddress(?string $userSetAddress): self
     {
         $this->userSetAddress = $userSetAddress;
 
@@ -188,7 +188,7 @@ class OrgOpentravelOta200305BillingInformationType extends AbstractModel
     /**
      * @return float
      */
-    public function getUserStation(): float
+    public function getUserStation(): ?float
     {
         return $this->userStation;
     }
@@ -198,7 +198,7 @@ class OrgOpentravelOta200305BillingInformationType extends AbstractModel
      *
      * @return self
      */
-    public function setUserStation(float $userStation): self
+    public function setUserStation(?float $userStation): self
     {
         $this->userStation = $userStation;
 

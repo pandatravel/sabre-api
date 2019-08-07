@@ -26,7 +26,7 @@ class OrgOpentravelOta200305DiversityControlTypeDimensionsTimeOfDayDistribution 
     /**
      * @return string
      */
-    public function getDirection(): string
+    public function getDirection(): ?string
     {
         return $this->direction;
     }
@@ -36,7 +36,7 @@ class OrgOpentravelOta200305DiversityControlTypeDimensionsTimeOfDayDistribution 
      *
      * @return self
      */
-    public function setDirection(string $direction): self
+    public function setDirection(?string $direction): self
     {
         $this->direction = $direction;
 
@@ -46,7 +46,7 @@ class OrgOpentravelOta200305DiversityControlTypeDimensionsTimeOfDayDistribution 
     /**
      * @return string
      */
-    public function getEndpoint(): string
+    public function getEndpoint(): ?string
     {
         return $this->endpoint;
     }
@@ -56,7 +56,7 @@ class OrgOpentravelOta200305DiversityControlTypeDimensionsTimeOfDayDistribution 
      *
      * @return self
      */
-    public function setEndpoint(string $endpoint): self
+    public function setEndpoint(?string $endpoint): self
     {
         $this->endpoint = $endpoint;
 
@@ -66,7 +66,7 @@ class OrgOpentravelOta200305DiversityControlTypeDimensionsTimeOfDayDistribution 
     /**
      * @return int
      */
-    public function getLeg(): int
+    public function getLeg(): ?int
     {
         return $this->leg;
     }
@@ -76,7 +76,7 @@ class OrgOpentravelOta200305DiversityControlTypeDimensionsTimeOfDayDistribution 
      *
      * @return self
      */
-    public function setLeg(int $leg): self
+    public function setLeg(?int $leg): self
     {
         $this->leg = $leg;
 
@@ -86,7 +86,7 @@ class OrgOpentravelOta200305DiversityControlTypeDimensionsTimeOfDayDistribution 
     /**
      * @return OrgOpentravelOta200305DiversityControlTypeDimensionsTimeOfDayDistributionRange[]
      */
-    public function getRange(): array
+    public function getRange(): ?array
     {
         return $this->range;
     }
@@ -96,7 +96,7 @@ class OrgOpentravelOta200305DiversityControlTypeDimensionsTimeOfDayDistribution 
      *
      * @return self
      */
-    public function setRange(array $range): self
+    public function setRange(?array $range): self
     {
         $this->range = $range;
 

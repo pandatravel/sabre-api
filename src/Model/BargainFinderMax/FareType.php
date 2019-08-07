@@ -74,7 +74,7 @@ class FareType extends AbstractModel
     /**
      * @return AncillaryFeeGroupType
      */
-    public function getAncillaryFeeGroup(): AncillaryFeeGroupType
+    public function getAncillaryFeeGroup(): ?AncillaryFeeGroupType
     {
         return $this->ancillaryFeeGroup;
     }
@@ -84,7 +84,7 @@ class FareType extends AbstractModel
      *
      * @return self
      */
-    public function setAncillaryFeeGroup(AncillaryFeeGroupType $ancillaryFeeGroup): self
+    public function setAncillaryFeeGroup(?AncillaryFeeGroupType $ancillaryFeeGroup): self
     {
         $this->ancillaryFeeGroup = $ancillaryFeeGroup;
 
@@ -94,7 +94,7 @@ class FareType extends AbstractModel
     /**
      * @return bool
      */
-    public function getDivideByParty(): bool
+    public function getDivideByParty(): ?bool
     {
         return $this->divideByParty;
     }
@@ -104,7 +104,7 @@ class FareType extends AbstractModel
      *
      * @return self
      */
-    public function setDivideByParty(bool $divideByParty): self
+    public function setDivideByParty(?bool $divideByParty): self
     {
         $this->divideByParty = $divideByParty;
 
@@ -114,7 +114,7 @@ class FareType extends AbstractModel
     /**
      * @return bool
      */
-    public function getETicketable(): bool
+    public function getETicketable(): ?bool
     {
         return $this->eTicketable;
     }
@@ -124,7 +124,7 @@ class FareType extends AbstractModel
      *
      * @return self
      */
-    public function setETicketable(bool $eTicketable): self
+    public function setETicketable(?bool $eTicketable): self
     {
         $this->eTicketable = $eTicketable;
 
@@ -134,7 +134,7 @@ class FareType extends AbstractModel
     /**
      * @return string
      */
-    public function getGoverningCarriers(): string
+    public function getGoverningCarriers(): ?string
     {
         return $this->governingCarriers;
     }
@@ -144,7 +144,7 @@ class FareType extends AbstractModel
      *
      * @return self
      */
-    public function setGoverningCarriers(string $governingCarriers): self
+    public function setGoverningCarriers(?string $governingCarriers): self
     {
         $this->governingCarriers = $governingCarriers;
 
@@ -154,7 +154,7 @@ class FareType extends AbstractModel
     /**
      * @return string
      */
-    public function getLastTicketDate(): string
+    public function getLastTicketDate(): ?string
     {
         return $this->lastTicketDate;
     }
@@ -164,7 +164,7 @@ class FareType extends AbstractModel
      *
      * @return self
      */
-    public function setLastTicketDate(string $lastTicketDate): self
+    public function setLastTicketDate(?string $lastTicketDate): self
     {
         $this->lastTicketDate = $lastTicketDate;
 
@@ -174,7 +174,7 @@ class FareType extends AbstractModel
     /**
      * @return string
      */
-    public function getOfferItemId(): string
+    public function getOfferItemId(): ?string
     {
         return $this->offerItemId;
     }
@@ -184,7 +184,7 @@ class FareType extends AbstractModel
      *
      * @return self
      */
-    public function setOfferItemId(string $offerItemId): self
+    public function setOfferItemId(?string $offerItemId): self
     {
         $this->offerItemId = $offerItemId;
 
@@ -194,7 +194,7 @@ class FareType extends AbstractModel
     /**
      * @return PassengerInfoListElementType[]
      */
-    public function getPassengerInfoList(): array
+    public function getPassengerInfoList(): ?array
     {
         return $this->passengerInfoList;
     }
@@ -204,7 +204,7 @@ class FareType extends AbstractModel
      *
      * @return self
      */
-    public function setPassengerInfoList(array $passengerInfoList): self
+    public function setPassengerInfoList(?array $passengerInfoList): self
     {
         $this->passengerInfoList = $passengerInfoList;
 
@@ -214,7 +214,7 @@ class FareType extends AbstractModel
     /**
      * @return bool
      */
-    public function getReissue(): bool
+    public function getReissue(): ?bool
     {
         return $this->reissue;
     }
@@ -224,7 +224,7 @@ class FareType extends AbstractModel
      *
      * @return self
      */
-    public function setReissue(bool $reissue): self
+    public function setReissue(?bool $reissue): self
     {
         $this->reissue = $reissue;
 
@@ -234,7 +234,7 @@ class FareType extends AbstractModel
     /**
      * @return string
      */
-    public function getReissueText(): string
+    public function getReissueText(): ?string
     {
         return $this->reissueText;
     }
@@ -244,7 +244,7 @@ class FareType extends AbstractModel
      *
      * @return self
      */
-    public function setReissueText(string $reissueText): self
+    public function setReissueText(?string $reissueText): self
     {
         $this->reissueText = $reissueText;
 
@@ -254,7 +254,7 @@ class FareType extends AbstractModel
     /**
      * @return string
      */
-    public function getServiceId(): string
+    public function getServiceId(): ?string
     {
         return $this->serviceId;
     }
@@ -264,7 +264,7 @@ class FareType extends AbstractModel
      *
      * @return self
      */
-    public function setServiceId(string $serviceId): self
+    public function setServiceId(?string $serviceId): self
     {
         $this->serviceId = $serviceId;
 
@@ -274,7 +274,7 @@ class FareType extends AbstractModel
     /**
      * @return bool
      */
-    public function getSimultaneousReservation(): bool
+    public function getSimultaneousReservation(): ?bool
     {
         return $this->simultaneousReservation;
     }
@@ -284,7 +284,7 @@ class FareType extends AbstractModel
      *
      * @return self
      */
-    public function setSimultaneousReservation(bool $simultaneousReservation): self
+    public function setSimultaneousReservation(?bool $simultaneousReservation): self
     {
         $this->simultaneousReservation = $simultaneousReservation;
 
@@ -294,7 +294,7 @@ class FareType extends AbstractModel
     /**
      * @return string
      */
-    public function getSpanishFamilyDiscount(): string
+    public function getSpanishFamilyDiscount(): ?string
     {
         return $this->spanishFamilyDiscount;
     }
@@ -304,7 +304,7 @@ class FareType extends AbstractModel
      *
      * @return self
      */
-    public function setSpanishFamilyDiscount(string $spanishFamilyDiscount): self
+    public function setSpanishFamilyDiscount(?string $spanishFamilyDiscount): self
     {
         $this->spanishFamilyDiscount = $spanishFamilyDiscount;
 
@@ -314,7 +314,7 @@ class FareType extends AbstractModel
     /**
      * @return TotalFareType
      */
-    public function getTotalFare(): TotalFareType
+    public function getTotalFare(): ?TotalFareType
     {
         return $this->totalFare;
     }
@@ -324,7 +324,7 @@ class FareType extends AbstractModel
      *
      * @return self
      */
-    public function setTotalFare(TotalFareType $totalFare): self
+    public function setTotalFare(?TotalFareType $totalFare): self
     {
         $this->totalFare = $totalFare;
 
@@ -334,7 +334,7 @@ class FareType extends AbstractModel
     /**
      * @return string
      */
-    public function getValidatingCarrierCode(): string
+    public function getValidatingCarrierCode(): ?string
     {
         return $this->validatingCarrierCode;
     }
@@ -344,7 +344,7 @@ class FareType extends AbstractModel
      *
      * @return self
      */
-    public function setValidatingCarrierCode(string $validatingCarrierCode): self
+    public function setValidatingCarrierCode(?string $validatingCarrierCode): self
     {
         $this->validatingCarrierCode = $validatingCarrierCode;
 
@@ -354,7 +354,7 @@ class FareType extends AbstractModel
     /**
      * @return ValidatingCarrierIDType[]
      */
-    public function getValidatingCarriers(): array
+    public function getValidatingCarriers(): ?array
     {
         return $this->validatingCarriers;
     }
@@ -364,7 +364,7 @@ class FareType extends AbstractModel
      *
      * @return self
      */
-    public function setValidatingCarriers(array $validatingCarriers): self
+    public function setValidatingCarriers(?array $validatingCarriers): self
     {
         $this->validatingCarriers = $validatingCarriers;
 
@@ -374,7 +374,7 @@ class FareType extends AbstractModel
     /**
      * @return bool
      */
-    public function getVita(): bool
+    public function getVita(): ?bool
     {
         return $this->vita;
     }
@@ -384,7 +384,7 @@ class FareType extends AbstractModel
      *
      * @return self
      */
-    public function setVita(bool $vita): self
+    public function setVita(?bool $vita): self
     {
         $this->vita = $vita;
 

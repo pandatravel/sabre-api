@@ -18,7 +18,7 @@ class OrgOpentravelOta200305DiversityControlTypeDimensionsInboundOutboundPairing
     /**
      * @return int
      */
-    public function getDuplicates(): int
+    public function getDuplicates(): ?int
     {
         return $this->duplicates;
     }
@@ -28,7 +28,7 @@ class OrgOpentravelOta200305DiversityControlTypeDimensionsInboundOutboundPairing
      *
      * @return self
      */
-    public function setDuplicates(int $duplicates): self
+    public function setDuplicates(?int $duplicates): self
     {
         $this->duplicates = $duplicates;
 
@@ -38,7 +38,7 @@ class OrgOpentravelOta200305DiversityControlTypeDimensionsInboundOutboundPairing
     /**
      * @return float
      */
-    public function getWeight(): float
+    public function getWeight(): ?float
     {
         return $this->weight;
     }
@@ -48,7 +48,7 @@ class OrgOpentravelOta200305DiversityControlTypeDimensionsInboundOutboundPairing
      *
      * @return self
      */
-    public function setWeight(float $weight): self
+    public function setWeight(?float $weight): self
     {
         $this->weight = $weight;
 

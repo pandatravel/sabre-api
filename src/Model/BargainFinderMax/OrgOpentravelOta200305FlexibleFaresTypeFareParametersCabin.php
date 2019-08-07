@@ -14,7 +14,7 @@ class OrgOpentravelOta200305FlexibleFaresTypeFareParametersCabin extends Abstrac
     /**
      * @return string
      */
-    public function getType(): string
+    public function getType(): ?string
     {
         return $this->type;
     }
@@ -24,7 +24,7 @@ class OrgOpentravelOta200305FlexibleFaresTypeFareParametersCabin extends Abstrac
      *
      * @return self
      */
-    public function setType(string $type): self
+    public function setType(?string $type): self
     {
         $this->type = $type;
 

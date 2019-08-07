@@ -18,7 +18,7 @@ class OrgOpentravelOta200305KeepSameCabinType extends AbstractModel
      *
      * @return bool
      */
-    public function getEnabled(): bool
+    public function getEnabled(): ?bool
     {
         return $this->enabled;
     }
@@ -30,7 +30,7 @@ class OrgOpentravelOta200305KeepSameCabinType extends AbstractModel
      *
      * @return self
      */
-    public function setEnabled(bool $enabled): self
+    public function setEnabled(?bool $enabled): self
     {
         $this->enabled = $enabled;
 

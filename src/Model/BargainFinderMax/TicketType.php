@@ -18,7 +18,7 @@ class TicketType extends AbstractModel
     /**
      * @return LegIDType[]
      */
-    public function getLegs(): array
+    public function getLegs(): ?array
     {
         return $this->legs;
     }
@@ -28,7 +28,7 @@ class TicketType extends AbstractModel
      *
      * @return self
      */
-    public function setLegs(array $legs): self
+    public function setLegs(?array $legs): self
     {
         $this->legs = $legs;
 
@@ -38,7 +38,7 @@ class TicketType extends AbstractModel
     /**
      * @return PricingInformationType
      */
-    public function getPricingInformation(): PricingInformationType
+    public function getPricingInformation(): ?PricingInformationType
     {
         return $this->pricingInformation;
     }
@@ -48,7 +48,7 @@ class TicketType extends AbstractModel
      *
      * @return self
      */
-    public function setPricingInformation(PricingInformationType $pricingInformation): self
+    public function setPricingInformation(?PricingInformationType $pricingInformation): self
     {
         $this->pricingInformation = $pricingInformation;
 

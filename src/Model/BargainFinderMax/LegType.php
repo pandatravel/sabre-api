@@ -18,7 +18,7 @@ class LegType extends AbstractModel
     /**
      * @return int
      */
-    public function getId(): int
+    public function getId(): ?int
     {
         return $this->id;
     }
@@ -28,7 +28,7 @@ class LegType extends AbstractModel
      *
      * @return self
      */
-    public function setId(int $id): self
+    public function setId(?int $id): self
     {
         $this->id = $id;
 
@@ -38,7 +38,7 @@ class LegType extends AbstractModel
     /**
      * @return ScheduleType[]
      */
-    public function getSchedules(): array
+    public function getSchedules(): ?array
     {
         return $this->schedules;
     }
@@ -48,7 +48,7 @@ class LegType extends AbstractModel
      *
      * @return self
      */
-    public function setSchedules(array $schedules): self
+    public function setSchedules(?array $schedules): self
     {
         $this->schedules = $schedules;
 

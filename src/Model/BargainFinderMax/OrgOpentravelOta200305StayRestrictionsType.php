@@ -30,7 +30,7 @@ class OrgOpentravelOta200305StayRestrictionsType extends AbstractModel
      *
      * @return OrgOpentravelOta200305StayRestrictionsTypeMaximumStay
      */
-    public function getMaximumStay(): OrgOpentravelOta200305StayRestrictionsTypeMaximumStay
+    public function getMaximumStay(): ?OrgOpentravelOta200305StayRestrictionsTypeMaximumStay
     {
         return $this->maximumStay;
     }
@@ -42,7 +42,7 @@ class OrgOpentravelOta200305StayRestrictionsType extends AbstractModel
      *
      * @return self
      */
-    public function setMaximumStay(OrgOpentravelOta200305StayRestrictionsTypeMaximumStay $maximumStay): self
+    public function setMaximumStay(?OrgOpentravelOta200305StayRestrictionsTypeMaximumStay $maximumStay): self
     {
         $this->maximumStay = $maximumStay;
 
@@ -54,7 +54,7 @@ class OrgOpentravelOta200305StayRestrictionsType extends AbstractModel
      *
      * @return OrgOpentravelOta200305StayRestrictionsTypeMinimumStay
      */
-    public function getMinimumStay(): OrgOpentravelOta200305StayRestrictionsTypeMinimumStay
+    public function getMinimumStay(): ?OrgOpentravelOta200305StayRestrictionsTypeMinimumStay
     {
         return $this->minimumStay;
     }
@@ -66,7 +66,7 @@ class OrgOpentravelOta200305StayRestrictionsType extends AbstractModel
      *
      * @return self
      */
-    public function setMinimumStay(OrgOpentravelOta200305StayRestrictionsTypeMinimumStay $minimumStay): self
+    public function setMinimumStay(?OrgOpentravelOta200305StayRestrictionsTypeMinimumStay $minimumStay): self
     {
         $this->minimumStay = $minimumStay;
 
@@ -78,7 +78,7 @@ class OrgOpentravelOta200305StayRestrictionsType extends AbstractModel
      *
      * @return bool
      */
-    public function getStayRestrictionsInd(): bool
+    public function getStayRestrictionsInd(): ?bool
     {
         return $this->stayRestrictionsInd;
     }
@@ -90,7 +90,7 @@ class OrgOpentravelOta200305StayRestrictionsType extends AbstractModel
      *
      * @return self
      */
-    public function setStayRestrictionsInd(bool $stayRestrictionsInd): self
+    public function setStayRestrictionsInd(?bool $stayRestrictionsInd): self
     {
         $this->stayRestrictionsInd = $stayRestrictionsInd;
 

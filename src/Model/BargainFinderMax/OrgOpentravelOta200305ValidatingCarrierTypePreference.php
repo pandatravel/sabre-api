@@ -24,7 +24,7 @@ class OrgOpentravelOta200305ValidatingCarrierTypePreference extends AbstractMode
      *
      * @return string
      */
-    public function getCode(): string
+    public function getCode(): ?string
     {
         return $this->code;
     }
@@ -36,7 +36,7 @@ class OrgOpentravelOta200305ValidatingCarrierTypePreference extends AbstractMode
      *
      * @return self
      */
-    public function setCode(string $code): self
+    public function setCode(?string $code): self
     {
         $this->code = $code;
 
@@ -48,7 +48,7 @@ class OrgOpentravelOta200305ValidatingCarrierTypePreference extends AbstractMode
      *
      * @return string
      */
-    public function getLevel(): string
+    public function getLevel(): ?string
     {
         return $this->level;
     }
@@ -60,7 +60,7 @@ class OrgOpentravelOta200305ValidatingCarrierTypePreference extends AbstractMode
      *
      * @return self
      */
-    public function setLevel(string $level): self
+    public function setLevel(?string $level): self
     {
         $this->level = $level;
 

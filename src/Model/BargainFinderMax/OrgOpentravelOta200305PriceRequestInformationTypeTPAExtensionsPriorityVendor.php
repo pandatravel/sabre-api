@@ -14,7 +14,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPriorityVend
     /**
      * @return int
      */
-    public function getPriority(): int
+    public function getPriority(): ?int
     {
         return $this->priority;
     }
@@ -24,7 +24,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsPriorityVend
      *
      * @return self
      */
-    public function setPriority(int $priority): self
+    public function setPriority(?int $priority): self
     {
         $this->priority = $priority;
 

@@ -30,7 +30,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationFlightTypeFareAdjustment ex
      *
      * @return string
      */
-    public function getCurrency(): string
+    public function getCurrency(): ?string
     {
         return $this->currency;
     }
@@ -42,7 +42,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationFlightTypeFareAdjustment ex
      *
      * @return self
      */
-    public function setCurrency(string $currency): self
+    public function setCurrency(?string $currency): self
     {
         $this->currency = $currency;
 
@@ -54,7 +54,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationFlightTypeFareAdjustment ex
      *
      * @return float
      */
-    public function getGroup(): float
+    public function getGroup(): ?float
     {
         return $this->group;
     }
@@ -66,7 +66,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationFlightTypeFareAdjustment ex
      *
      * @return self
      */
-    public function setGroup(float $group): self
+    public function setGroup(?float $group): self
     {
         $this->group = $group;
 
@@ -78,7 +78,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationFlightTypeFareAdjustment ex
      *
      * @return string
      */
-    public function getValue(): string
+    public function getValue(): ?string
     {
         return $this->value;
     }
@@ -90,7 +90,7 @@ class OrgOpentravelOta200305ExchangeOriginDestinationFlightTypeFareAdjustment ex
      *
      * @return self
      */
-    public function setValue(string $value): self
+    public function setValue(?string $value): self
     {
         $this->value = $value;
 

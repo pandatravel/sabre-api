@@ -182,7 +182,7 @@ class OrgOpentravelOta200305SourceType extends AbstractModel
      *
      * @return bool
      */
-    public function getAbacusUser(): bool
+    public function getAbacusUser(): ?bool
     {
         return $this->abacusUser;
     }
@@ -194,7 +194,7 @@ class OrgOpentravelOta200305SourceType extends AbstractModel
      *
      * @return self
      */
-    public function setAbacusUser(bool $abacusUser): self
+    public function setAbacusUser(?bool $abacusUser): self
     {
         $this->abacusUser = $abacusUser;
 
@@ -206,7 +206,7 @@ class OrgOpentravelOta200305SourceType extends AbstractModel
      *
      * @return string
      */
-    public function getAccountingCode(): string
+    public function getAccountingCode(): ?string
     {
         return $this->accountingCode;
     }
@@ -218,7 +218,7 @@ class OrgOpentravelOta200305SourceType extends AbstractModel
      *
      * @return self
      */
-    public function setAccountingCode(string $accountingCode): self
+    public function setAccountingCode(?string $accountingCode): self
     {
         $this->accountingCode = $accountingCode;
 
@@ -230,7 +230,7 @@ class OrgOpentravelOta200305SourceType extends AbstractModel
      *
      * @return string
      */
-    public function getAgentCity(): string
+    public function getAgentCity(): ?string
     {
         return $this->agentCity;
     }
@@ -242,7 +242,7 @@ class OrgOpentravelOta200305SourceType extends AbstractModel
      *
      * @return self
      */
-    public function setAgentCity(string $agentCity): self
+    public function setAgentCity(?string $agentCity): self
     {
         $this->agentCity = $agentCity;
 
@@ -254,7 +254,7 @@ class OrgOpentravelOta200305SourceType extends AbstractModel
      *
      * @return string
      */
-    public function getAgentDepartmentCode(): string
+    public function getAgentDepartmentCode(): ?string
     {
         return $this->agentDepartmentCode;
     }
@@ -266,7 +266,7 @@ class OrgOpentravelOta200305SourceType extends AbstractModel
      *
      * @return self
      */
-    public function setAgentDepartmentCode(string $agentDepartmentCode): self
+    public function setAgentDepartmentCode(?string $agentDepartmentCode): self
     {
         $this->agentDepartmentCode = $agentDepartmentCode;
 
@@ -278,7 +278,7 @@ class OrgOpentravelOta200305SourceType extends AbstractModel
      *
      * @return string
      */
-    public function getAgentDuty(): string
+    public function getAgentDuty(): ?string
     {
         return $this->agentDuty;
     }
@@ -290,7 +290,7 @@ class OrgOpentravelOta200305SourceType extends AbstractModel
      *
      * @return self
      */
-    public function setAgentDuty(string $agentDuty): self
+    public function setAgentDuty(?string $agentDuty): self
     {
         $this->agentDuty = $agentDuty;
 
@@ -302,7 +302,7 @@ class OrgOpentravelOta200305SourceType extends AbstractModel
      *
      * @return string
      */
-    public function getAgentDutyCode(): string
+    public function getAgentDutyCode(): ?string
     {
         return $this->agentDutyCode;
     }
@@ -314,7 +314,7 @@ class OrgOpentravelOta200305SourceType extends AbstractModel
      *
      * @return self
      */
-    public function setAgentDutyCode(string $agentDutyCode): self
+    public function setAgentDutyCode(?string $agentDutyCode): self
     {
         $this->agentDutyCode = $agentDutyCode;
 
@@ -326,7 +326,7 @@ class OrgOpentravelOta200305SourceType extends AbstractModel
      *
      * @return string
      */
-    public function getAgentFunction(): string
+    public function getAgentFunction(): ?string
     {
         return $this->agentFunction;
     }
@@ -338,7 +338,7 @@ class OrgOpentravelOta200305SourceType extends AbstractModel
      *
      * @return self
      */
-    public function setAgentFunction(string $agentFunction): self
+    public function setAgentFunction(?string $agentFunction): self
     {
         $this->agentFunction = $agentFunction;
 
@@ -350,7 +350,7 @@ class OrgOpentravelOta200305SourceType extends AbstractModel
      *
      * @return string
      */
-    public function getAgentIATA(): string
+    public function getAgentIATA(): ?string
     {
         return $this->agentIATA;
     }
@@ -362,7 +362,7 @@ class OrgOpentravelOta200305SourceType extends AbstractModel
      *
      * @return self
      */
-    public function setAgentIATA(string $agentIATA): self
+    public function setAgentIATA(?string $agentIATA): self
     {
         $this->agentIATA = $agentIATA;
 
@@ -374,7 +374,7 @@ class OrgOpentravelOta200305SourceType extends AbstractModel
      *
      * @return string
      */
-    public function getAgentSine(): string
+    public function getAgentSine(): ?string
     {
         return $this->agentSine;
     }
@@ -386,7 +386,7 @@ class OrgOpentravelOta200305SourceType extends AbstractModel
      *
      * @return self
      */
-    public function setAgentSine(string $agentSine): self
+    public function setAgentSine(?string $agentSine): self
     {
         $this->agentSine = $agentSine;
 
@@ -398,7 +398,7 @@ class OrgOpentravelOta200305SourceType extends AbstractModel
      *
      * @return string
      */
-    public function getAirlineChannelCode(): string
+    public function getAirlineChannelCode(): ?string
     {
         return $this->airlineChannelCode;
     }
@@ -410,7 +410,7 @@ class OrgOpentravelOta200305SourceType extends AbstractModel
      *
      * @return self
      */
-    public function setAirlineChannelCode(string $airlineChannelCode): self
+    public function setAirlineChannelCode(?string $airlineChannelCode): self
     {
         $this->airlineChannelCode = $airlineChannelCode;
 
@@ -422,7 +422,7 @@ class OrgOpentravelOta200305SourceType extends AbstractModel
      *
      * @return string
      */
-    public function getAirlineVendorID(): string
+    public function getAirlineVendorID(): ?string
     {
         return $this->airlineVendorID;
     }
@@ -434,7 +434,7 @@ class OrgOpentravelOta200305SourceType extends AbstractModel
      *
      * @return self
      */
-    public function setAirlineVendorID(string $airlineVendorID): self
+    public function setAirlineVendorID(?string $airlineVendorID): self
     {
         $this->airlineVendorID = $airlineVendorID;
 
@@ -446,7 +446,7 @@ class OrgOpentravelOta200305SourceType extends AbstractModel
      *
      * @return string
      */
-    public function getAirportCode(): string
+    public function getAirportCode(): ?string
     {
         return $this->airportCode;
     }
@@ -458,7 +458,7 @@ class OrgOpentravelOta200305SourceType extends AbstractModel
      *
      * @return self
      */
-    public function setAirportCode(string $airportCode): self
+    public function setAirportCode(?string $airportCode): self
     {
         $this->airportCode = $airportCode;
 
@@ -470,7 +470,7 @@ class OrgOpentravelOta200305SourceType extends AbstractModel
      *
      * @return OrgOpentravelOta200305SourceBookingChannelType
      */
-    public function getBookingChannel(): OrgOpentravelOta200305SourceBookingChannelType
+    public function getBookingChannel(): ?OrgOpentravelOta200305SourceBookingChannelType
     {
         return $this->bookingChannel;
     }
@@ -482,7 +482,7 @@ class OrgOpentravelOta200305SourceType extends AbstractModel
      *
      * @return self
      */
-    public function setBookingChannel(OrgOpentravelOta200305SourceBookingChannelType $bookingChannel): self
+    public function setBookingChannel(?OrgOpentravelOta200305SourceBookingChannelType $bookingChannel): self
     {
         $this->bookingChannel = $bookingChannel;
 
@@ -494,7 +494,7 @@ class OrgOpentravelOta200305SourceType extends AbstractModel
      *
      * @return string
      */
-    public function getCarrier(): string
+    public function getCarrier(): ?string
     {
         return $this->carrier;
     }
@@ -506,7 +506,7 @@ class OrgOpentravelOta200305SourceType extends AbstractModel
      *
      * @return self
      */
-    public function setCarrier(string $carrier): self
+    public function setCarrier(?string $carrier): self
     {
         $this->carrier = $carrier;
 
@@ -516,7 +516,7 @@ class OrgOpentravelOta200305SourceType extends AbstractModel
     /**
      * @return string
      */
-    public function getDefaultTicketingCarrier(): string
+    public function getDefaultTicketingCarrier(): ?string
     {
         return $this->defaultTicketingCarrier;
     }
@@ -526,7 +526,7 @@ class OrgOpentravelOta200305SourceType extends AbstractModel
      *
      * @return self
      */
-    public function setDefaultTicketingCarrier(string $defaultTicketingCarrier): self
+    public function setDefaultTicketingCarrier(?string $defaultTicketingCarrier): self
     {
         $this->defaultTicketingCarrier = $defaultTicketingCarrier;
 
@@ -538,7 +538,7 @@ class OrgOpentravelOta200305SourceType extends AbstractModel
      *
      * @return string
      */
-    public function getERSPUserID(): string
+    public function getERSPUserID(): ?string
     {
         return $this->eRSPUserID;
     }
@@ -550,7 +550,7 @@ class OrgOpentravelOta200305SourceType extends AbstractModel
      *
      * @return self
      */
-    public function setERSPUserID(string $eRSPUserID): self
+    public function setERSPUserID(?string $eRSPUserID): self
     {
         $this->eRSPUserID = $eRSPUserID;
 
@@ -562,7 +562,7 @@ class OrgOpentravelOta200305SourceType extends AbstractModel
      *
      * @return string
      */
-    public function getFirstDepartPoint(): string
+    public function getFirstDepartPoint(): ?string
     {
         return $this->firstDepartPoint;
     }
@@ -574,7 +574,7 @@ class OrgOpentravelOta200305SourceType extends AbstractModel
      *
      * @return self
      */
-    public function setFirstDepartPoint(string $firstDepartPoint): self
+    public function setFirstDepartPoint(?string $firstDepartPoint): self
     {
         $this->firstDepartPoint = $firstDepartPoint;
 
@@ -586,7 +586,7 @@ class OrgOpentravelOta200305SourceType extends AbstractModel
      *
      * @return string
      */
-    public function getHomeAgencyIATA(): string
+    public function getHomeAgencyIATA(): ?string
     {
         return $this->homeAgencyIATA;
     }
@@ -598,7 +598,7 @@ class OrgOpentravelOta200305SourceType extends AbstractModel
      *
      * @return self
      */
-    public function setHomeAgencyIATA(string $homeAgencyIATA): self
+    public function setHomeAgencyIATA(?string $homeAgencyIATA): self
     {
         $this->homeAgencyIATA = $homeAgencyIATA;
 
@@ -610,7 +610,7 @@ class OrgOpentravelOta200305SourceType extends AbstractModel
      *
      * @return string
      */
-    public function getHomePCC(): string
+    public function getHomePCC(): ?string
     {
         return $this->homePCC;
     }
@@ -622,7 +622,7 @@ class OrgOpentravelOta200305SourceType extends AbstractModel
      *
      * @return self
      */
-    public function setHomePCC(string $homePCC): self
+    public function setHomePCC(?string $homePCC): self
     {
         $this->homePCC = $homePCC;
 
@@ -634,7 +634,7 @@ class OrgOpentravelOta200305SourceType extends AbstractModel
      *
      * @return string
      */
-    public function getISOCountry(): string
+    public function getISOCountry(): ?string
     {
         return $this->iSOCountry;
     }
@@ -646,7 +646,7 @@ class OrgOpentravelOta200305SourceType extends AbstractModel
      *
      * @return self
      */
-    public function setISOCountry(string $iSOCountry): self
+    public function setISOCountry(?string $iSOCountry): self
     {
         $this->iSOCountry = $iSOCountry;
 
@@ -658,7 +658,7 @@ class OrgOpentravelOta200305SourceType extends AbstractModel
      *
      * @return string
      */
-    public function getISOCurrency(): string
+    public function getISOCurrency(): ?string
     {
         return $this->iSOCurrency;
     }
@@ -670,7 +670,7 @@ class OrgOpentravelOta200305SourceType extends AbstractModel
      *
      * @return self
      */
-    public function setISOCurrency(string $iSOCurrency): self
+    public function setISOCurrency(?string $iSOCurrency): self
     {
         $this->iSOCurrency = $iSOCurrency;
 
@@ -682,7 +682,7 @@ class OrgOpentravelOta200305SourceType extends AbstractModel
      *
      * @return string
      */
-    public function getMainTravelAgencyPCC(): string
+    public function getMainTravelAgencyPCC(): ?string
     {
         return $this->mainTravelAgencyPCC;
     }
@@ -694,7 +694,7 @@ class OrgOpentravelOta200305SourceType extends AbstractModel
      *
      * @return self
      */
-    public function setMainTravelAgencyPCC(string $mainTravelAgencyPCC): self
+    public function setMainTravelAgencyPCC(?string $mainTravelAgencyPCC): self
     {
         $this->mainTravelAgencyPCC = $mainTravelAgencyPCC;
 
@@ -706,7 +706,7 @@ class OrgOpentravelOta200305SourceType extends AbstractModel
      *
      * @return string
      */
-    public function getOfficeCode(): string
+    public function getOfficeCode(): ?string
     {
         return $this->officeCode;
     }
@@ -718,7 +718,7 @@ class OrgOpentravelOta200305SourceType extends AbstractModel
      *
      * @return self
      */
-    public function setOfficeCode(string $officeCode): self
+    public function setOfficeCode(?string $officeCode): self
     {
         $this->officeCode = $officeCode;
 
@@ -730,7 +730,7 @@ class OrgOpentravelOta200305SourceType extends AbstractModel
      *
      * @return string
      */
-    public function getPersonalCityCode(): string
+    public function getPersonalCityCode(): ?string
     {
         return $this->personalCityCode;
     }
@@ -742,7 +742,7 @@ class OrgOpentravelOta200305SourceType extends AbstractModel
      *
      * @return self
      */
-    public function setPersonalCityCode(string $personalCityCode): self
+    public function setPersonalCityCode(?string $personalCityCode): self
     {
         $this->personalCityCode = $personalCityCode;
 
@@ -754,7 +754,7 @@ class OrgOpentravelOta200305SourceType extends AbstractModel
      *
      * @return OrgOpentravelOta200305PositionType
      */
-    public function getPosition(): OrgOpentravelOta200305PositionType
+    public function getPosition(): ?OrgOpentravelOta200305PositionType
     {
         return $this->position;
     }
@@ -766,7 +766,7 @@ class OrgOpentravelOta200305SourceType extends AbstractModel
      *
      * @return self
      */
-    public function setPosition(OrgOpentravelOta200305PositionType $position): self
+    public function setPosition(?OrgOpentravelOta200305PositionType $position): self
     {
         $this->position = $position;
 
@@ -776,7 +776,7 @@ class OrgOpentravelOta200305SourceType extends AbstractModel
     /**
      * @return string
      */
-    public function getPseudoCityCode(): string
+    public function getPseudoCityCode(): ?string
     {
         return $this->pseudoCityCode;
     }
@@ -786,7 +786,7 @@ class OrgOpentravelOta200305SourceType extends AbstractModel
      *
      * @return self
      */
-    public function setPseudoCityCode(string $pseudoCityCode): self
+    public function setPseudoCityCode(?string $pseudoCityCode): self
     {
         $this->pseudoCityCode = $pseudoCityCode;
 
@@ -798,7 +798,7 @@ class OrgOpentravelOta200305SourceType extends AbstractModel
      *
      * @return OrgOpentravelOta200305UniqueIDType
      */
-    public function getRequestorID(): OrgOpentravelOta200305UniqueIDType
+    public function getRequestorID(): ?OrgOpentravelOta200305UniqueIDType
     {
         return $this->requestorID;
     }
@@ -810,7 +810,7 @@ class OrgOpentravelOta200305SourceType extends AbstractModel
      *
      * @return self
      */
-    public function setRequestorID(OrgOpentravelOta200305UniqueIDType $requestorID): self
+    public function setRequestorID(?OrgOpentravelOta200305UniqueIDType $requestorID): self
     {
         $this->requestorID = $requestorID;
 
@@ -822,7 +822,7 @@ class OrgOpentravelOta200305SourceType extends AbstractModel
      *
      * @return string
      */
-    public function getTravelAgencyIATA(): string
+    public function getTravelAgencyIATA(): ?string
     {
         return $this->travelAgencyIATA;
     }
@@ -834,7 +834,7 @@ class OrgOpentravelOta200305SourceType extends AbstractModel
      *
      * @return self
      */
-    public function setTravelAgencyIATA(string $travelAgencyIATA): self
+    public function setTravelAgencyIATA(?string $travelAgencyIATA): self
     {
         $this->travelAgencyIATA = $travelAgencyIATA;
 
@@ -846,7 +846,7 @@ class OrgOpentravelOta200305SourceType extends AbstractModel
      *
      * @return string
      */
-    public function getVendorCRSCode(): string
+    public function getVendorCRSCode(): ?string
     {
         return $this->vendorCRSCode;
     }
@@ -858,7 +858,7 @@ class OrgOpentravelOta200305SourceType extends AbstractModel
      *
      * @return self
      */
-    public function setVendorCRSCode(string $vendorCRSCode): self
+    public function setVendorCRSCode(?string $vendorCRSCode): self
     {
         $this->vendorCRSCode = $vendorCRSCode;
 

@@ -22,7 +22,7 @@ class OrgOpentravelOta200305AlternatePCCType extends AbstractModel
      *
      * @return string
      */
-    public function getPseudoCityCode(): string
+    public function getPseudoCityCode(): ?string
     {
         return $this->pseudoCityCode;
     }
@@ -34,7 +34,7 @@ class OrgOpentravelOta200305AlternatePCCType extends AbstractModel
      *
      * @return self
      */
-    public function setPseudoCityCode(string $pseudoCityCode): self
+    public function setPseudoCityCode(?string $pseudoCityCode): self
     {
         $this->pseudoCityCode = $pseudoCityCode;
 
@@ -44,7 +44,7 @@ class OrgOpentravelOta200305AlternatePCCType extends AbstractModel
     /**
      * @return OrgOpentravelOta200305AlternatePCCTypeTravelPreferences
      */
-    public function getTravelPreferences(): OrgOpentravelOta200305AlternatePCCTypeTravelPreferences
+    public function getTravelPreferences(): ?OrgOpentravelOta200305AlternatePCCTypeTravelPreferences
     {
         return $this->travelPreferences;
     }
@@ -54,7 +54,7 @@ class OrgOpentravelOta200305AlternatePCCType extends AbstractModel
      *
      * @return self
      */
-    public function setTravelPreferences(OrgOpentravelOta200305AlternatePCCTypeTravelPreferences $travelPreferences): self
+    public function setTravelPreferences(?OrgOpentravelOta200305AlternatePCCTypeTravelPreferences $travelPreferences): self
     {
         $this->travelPreferences = $travelPreferences;
 

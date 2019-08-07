@@ -25,11 +25,9 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsBrandedFareI
      */
     protected $itinParityFallbackMode;
     /**
-     * If set, given parity mode will be forced on the cheapest branded fare solution. If not specified, no parity (None) is forced on the cheapest branded fare solution. It's designed to work with MultipleBrandedFares feature only.
-     *
-     * @var string
+     * @var bool
      */
-    protected $parityModeForLowest;
+    protected $keepLegParityForLowestSingle;
     /**
      * Return multiple brand options per itin.
      *
@@ -70,7 +68,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsBrandedFareI
      *
      * @return OrgOpentravelOta200305BrandFiltersType
      */
-    public function getBrandFilters(): OrgOpentravelOta200305BrandFiltersType
+    public function getBrandFilters(): ?OrgOpentravelOta200305BrandFiltersType
     {
         return $this->brandFilters;
     }
@@ -82,7 +80,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsBrandedFareI
      *
      * @return self
      */
-    public function setBrandFilters(OrgOpentravelOta200305BrandFiltersType $brandFilters): self
+    public function setBrandFilters(?OrgOpentravelOta200305BrandFiltersType $brandFilters): self
     {
         $this->brandFilters = $brandFilters;
 
@@ -94,7 +92,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsBrandedFareI
      *
      * @return bool
      */
-    public function getItinParityBrandlessLeg(): bool
+    public function getItinParityBrandlessLeg(): ?bool
     {
         return $this->itinParityBrandlessLeg;
     }
@@ -106,7 +104,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsBrandedFareI
      *
      * @return self
      */
-    public function setItinParityBrandlessLeg(bool $itinParityBrandlessLeg): self
+    public function setItinParityBrandlessLeg(?bool $itinParityBrandlessLeg): self
     {
         $this->itinParityBrandlessLeg = $itinParityBrandlessLeg;
 
@@ -118,7 +116,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsBrandedFareI
      *
      * @return string
      */
-    public function getItinParityFallbackMode(): string
+    public function getItinParityFallbackMode(): ?string
     {
         return $this->itinParityFallbackMode;
     }
@@ -130,7 +128,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsBrandedFareI
      *
      * @return self
      */
-    public function setItinParityFallbackMode(string $itinParityFallbackMode): self
+    public function setItinParityFallbackMode(?string $itinParityFallbackMode): self
     {
         $this->itinParityFallbackMode = $itinParityFallbackMode;
 
@@ -138,25 +136,21 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsBrandedFareI
     }
 
     /**
-     * If set, given parity mode will be forced on the cheapest branded fare solution. If not specified, no parity (None) is forced on the cheapest branded fare solution. It's designed to work with MultipleBrandedFares feature only.
-     *
-     * @return string
+     * @return bool
      */
-    public function getParityModeForLowest(): string
+    public function getKeepLegParityForLowestSingle(): ?bool
     {
-        return $this->parityModeForLowest;
+        return $this->keepLegParityForLowestSingle;
     }
 
     /**
-     * If set, given parity mode will be forced on the cheapest branded fare solution. If not specified, no parity (None) is forced on the cheapest branded fare solution. It's designed to work with MultipleBrandedFares feature only.
-     *
-     * @param string $parityModeForLowest
+     * @param bool $keepLegParityForLowestSingle
      *
      * @return self
      */
-    public function setParityModeForLowest(string $parityModeForLowest): self
+    public function setKeepLegParityForLowestSingle(?bool $keepLegParityForLowestSingle): self
     {
-        $this->parityModeForLowest = $parityModeForLowest;
+        $this->keepLegParityForLowestSingle = $keepLegParityForLowestSingle;
 
         return $this;
     }
@@ -166,7 +160,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsBrandedFareI
      *
      * @return bool
      */
-    public function getMultipleBrandedFares(): bool
+    public function getMultipleBrandedFares(): ?bool
     {
         return $this->multipleBrandedFares;
     }
@@ -178,7 +172,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsBrandedFareI
      *
      * @return self
      */
-    public function setMultipleBrandedFares(bool $multipleBrandedFares): self
+    public function setMultipleBrandedFares(?bool $multipleBrandedFares): self
     {
         $this->multipleBrandedFares = $multipleBrandedFares;
 
@@ -190,7 +184,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsBrandedFareI
      *
      * @return string
      */
-    public function getParityMode(): string
+    public function getParityMode(): ?string
     {
         return $this->parityMode;
     }
@@ -202,7 +196,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsBrandedFareI
      *
      * @return self
      */
-    public function setParityMode(string $parityMode): self
+    public function setParityMode(?string $parityMode): self
     {
         $this->parityMode = $parityMode;
 
@@ -214,7 +208,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsBrandedFareI
      *
      * @return bool
      */
-    public function getReturnBrandAncillaries(): bool
+    public function getReturnBrandAncillaries(): ?bool
     {
         return $this->returnBrandAncillaries;
     }
@@ -226,7 +220,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsBrandedFareI
      *
      * @return self
      */
-    public function setReturnBrandAncillaries(bool $returnBrandAncillaries): self
+    public function setReturnBrandAncillaries(?bool $returnBrandAncillaries): self
     {
         $this->returnBrandAncillaries = $returnBrandAncillaries;
 
@@ -236,7 +230,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsBrandedFareI
     /**
      * @return OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsBrandedFareIndicatorsReturnCheapestUnbrandedFare
      */
-    public function getReturnCheapestUnbrandedFare(): OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsBrandedFareIndicatorsReturnCheapestUnbrandedFare
+    public function getReturnCheapestUnbrandedFare(): ?OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsBrandedFareIndicatorsReturnCheapestUnbrandedFare
     {
         return $this->returnCheapestUnbrandedFare;
     }
@@ -246,7 +240,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsBrandedFareI
      *
      * @return self
      */
-    public function setReturnCheapestUnbrandedFare(OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsBrandedFareIndicatorsReturnCheapestUnbrandedFare $returnCheapestUnbrandedFare): self
+    public function setReturnCheapestUnbrandedFare(?OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsBrandedFareIndicatorsReturnCheapestUnbrandedFare $returnCheapestUnbrandedFare): self
     {
         $this->returnCheapestUnbrandedFare = $returnCheapestUnbrandedFare;
 
@@ -258,7 +252,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsBrandedFareI
      *
      * @return bool
      */
-    public function getSingleBrandedFare(): bool
+    public function getSingleBrandedFare(): ?bool
     {
         return $this->singleBrandedFare;
     }
@@ -270,7 +264,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsBrandedFareI
      *
      * @return self
      */
-    public function setSingleBrandedFare(bool $singleBrandedFare): self
+    public function setSingleBrandedFare(?bool $singleBrandedFare): self
     {
         $this->singleBrandedFare = $singleBrandedFare;
 
@@ -282,7 +276,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsBrandedFareI
      *
      * @return int
      */
-    public function getUpsellLimit(): int
+    public function getUpsellLimit(): ?int
     {
         return $this->upsellLimit;
     }
@@ -294,7 +288,7 @@ class OrgOpentravelOta200305PriceRequestInformationTypeTPAExtensionsBrandedFareI
      *
      * @return self
      */
-    public function setUpsellLimit(int $upsellLimit): self
+    public function setUpsellLimit(?int $upsellLimit): self
     {
         $this->upsellLimit = $upsellLimit;
 

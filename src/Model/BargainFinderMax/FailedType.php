@@ -18,7 +18,7 @@ class FailedType extends AbstractModel
      *
      * @return bool
      */
-    public function getMinimumConnectTime(): bool
+    public function getMinimumConnectTime(): ?bool
     {
         return $this->minimumConnectTime;
     }
@@ -30,7 +30,7 @@ class FailedType extends AbstractModel
      *
      * @return self
      */
-    public function setMinimumConnectTime(bool $minimumConnectTime): self
+    public function setMinimumConnectTime(?bool $minimumConnectTime): self
     {
         $this->minimumConnectTime = $minimumConnectTime;
 

@@ -136,7 +136,7 @@ class OrgOpentravelOta200305TransactionType extends AbstractModel
      *
      * @return OrgOpentravelOta200305TransactionTypeATSETest
      */
-    public function getATSETest(): OrgOpentravelOta200305TransactionTypeATSETest
+    public function getATSETest(): ?OrgOpentravelOta200305TransactionTypeATSETest
     {
         return $this->aTSETest;
     }
@@ -148,7 +148,7 @@ class OrgOpentravelOta200305TransactionType extends AbstractModel
      *
      * @return self
      */
-    public function setATSETest(OrgOpentravelOta200305TransactionTypeATSETest $aTSETest): self
+    public function setATSETest(?OrgOpentravelOta200305TransactionTypeATSETest $aTSETest): self
     {
         $this->aTSETest = $aTSETest;
 
@@ -158,7 +158,7 @@ class OrgOpentravelOta200305TransactionType extends AbstractModel
     /**
      * @return OrgOpentravelOta200305TransactionTypeAirStreaming
      */
-    public function getAirStreaming(): OrgOpentravelOta200305TransactionTypeAirStreaming
+    public function getAirStreaming(): ?OrgOpentravelOta200305TransactionTypeAirStreaming
     {
         return $this->airStreaming;
     }
@@ -168,7 +168,7 @@ class OrgOpentravelOta200305TransactionType extends AbstractModel
      *
      * @return self
      */
-    public function setAirStreaming(OrgOpentravelOta200305TransactionTypeAirStreaming $airStreaming): self
+    public function setAirStreaming(?OrgOpentravelOta200305TransactionTypeAirStreaming $airStreaming): self
     {
         $this->airStreaming = $airStreaming;
 
@@ -178,7 +178,7 @@ class OrgOpentravelOta200305TransactionType extends AbstractModel
     /**
      * @return OrgOpentravelOta200305TransactionTypeAvailableLevel
      */
-    public function getAvailableLevel(): OrgOpentravelOta200305TransactionTypeAvailableLevel
+    public function getAvailableLevel(): ?OrgOpentravelOta200305TransactionTypeAvailableLevel
     {
         return $this->availableLevel;
     }
@@ -188,7 +188,7 @@ class OrgOpentravelOta200305TransactionType extends AbstractModel
      *
      * @return self
      */
-    public function setAvailableLevel(OrgOpentravelOta200305TransactionTypeAvailableLevel $availableLevel): self
+    public function setAvailableLevel(?OrgOpentravelOta200305TransactionTypeAvailableLevel $availableLevel): self
     {
         $this->availableLevel = $availableLevel;
 
@@ -200,7 +200,7 @@ class OrgOpentravelOta200305TransactionType extends AbstractModel
      *
      * @return OrgOpentravelOta200305TransactionTypeBranch
      */
-    public function getBranch(): OrgOpentravelOta200305TransactionTypeBranch
+    public function getBranch(): ?OrgOpentravelOta200305TransactionTypeBranch
     {
         return $this->branch;
     }
@@ -212,7 +212,7 @@ class OrgOpentravelOta200305TransactionType extends AbstractModel
      *
      * @return self
      */
-    public function setBranch(OrgOpentravelOta200305TransactionTypeBranch $branch): self
+    public function setBranch(?OrgOpentravelOta200305TransactionTypeBranch $branch): self
     {
         $this->branch = $branch;
 
@@ -224,7 +224,7 @@ class OrgOpentravelOta200305TransactionType extends AbstractModel
      *
      * @return string
      */
-    public function getChunkNumber(): string
+    public function getChunkNumber(): ?string
     {
         return $this->chunkNumber;
     }
@@ -236,7 +236,7 @@ class OrgOpentravelOta200305TransactionType extends AbstractModel
      *
      * @return self
      */
-    public function setChunkNumber(string $chunkNumber): self
+    public function setChunkNumber(?string $chunkNumber): self
     {
         $this->chunkNumber = $chunkNumber;
 
@@ -248,7 +248,7 @@ class OrgOpentravelOta200305TransactionType extends AbstractModel
      *
      * @return OrgOpentravelOta200305TransactionTypeClientSessionID
      */
-    public function getClientSessionID(): OrgOpentravelOta200305TransactionTypeClientSessionID
+    public function getClientSessionID(): ?OrgOpentravelOta200305TransactionTypeClientSessionID
     {
         return $this->clientSessionID;
     }
@@ -260,7 +260,7 @@ class OrgOpentravelOta200305TransactionType extends AbstractModel
      *
      * @return self
      */
-    public function setClientSessionID(OrgOpentravelOta200305TransactionTypeClientSessionID $clientSessionID): self
+    public function setClientSessionID(?OrgOpentravelOta200305TransactionTypeClientSessionID $clientSessionID): self
     {
         $this->clientSessionID = $clientSessionID;
 
@@ -270,7 +270,7 @@ class OrgOpentravelOta200305TransactionType extends AbstractModel
     /**
      * @return OrgOpentravelOta200305TransactionTypeCompressResponse
      */
-    public function getCompressResponse(): OrgOpentravelOta200305TransactionTypeCompressResponse
+    public function getCompressResponse(): ?OrgOpentravelOta200305TransactionTypeCompressResponse
     {
         return $this->compressResponse;
     }
@@ -280,7 +280,7 @@ class OrgOpentravelOta200305TransactionType extends AbstractModel
      *
      * @return self
      */
-    public function setCompressResponse(OrgOpentravelOta200305TransactionTypeCompressResponse $compressResponse): self
+    public function setCompressResponse(?OrgOpentravelOta200305TransactionTypeCompressResponse $compressResponse): self
     {
         $this->compressResponse = $compressResponse;
 
@@ -292,7 +292,7 @@ class OrgOpentravelOta200305TransactionType extends AbstractModel
      *
      * @return string
      */
-    public function getConfigSet(): string
+    public function getConfigSet(): ?string
     {
         return $this->configSet;
     }
@@ -304,7 +304,7 @@ class OrgOpentravelOta200305TransactionType extends AbstractModel
      *
      * @return self
      */
-    public function setConfigSet(string $configSet): self
+    public function setConfigSet(?string $configSet): self
     {
         $this->configSet = $configSet;
 
@@ -316,7 +316,7 @@ class OrgOpentravelOta200305TransactionType extends AbstractModel
      *
      * @return bool
      */
-    public function getDebug(): bool
+    public function getDebug(): ?bool
     {
         return $this->debug;
     }
@@ -328,7 +328,7 @@ class OrgOpentravelOta200305TransactionType extends AbstractModel
      *
      * @return self
      */
-    public function setDebug(bool $debug): self
+    public function setDebug(?bool $debug): self
     {
         $this->debug = $debug;
 
@@ -340,7 +340,7 @@ class OrgOpentravelOta200305TransactionType extends AbstractModel
      *
      * @return string
      */
-    public function getDebugKey(): string
+    public function getDebugKey(): ?string
     {
         return $this->debugKey;
     }
@@ -352,7 +352,7 @@ class OrgOpentravelOta200305TransactionType extends AbstractModel
      *
      * @return self
      */
-    public function setDebugKey(string $debugKey): self
+    public function setDebugKey(?string $debugKey): self
     {
         $this->debugKey = $debugKey;
 
@@ -364,7 +364,7 @@ class OrgOpentravelOta200305TransactionType extends AbstractModel
      *
      * @return OrgOpentravelOta200305TransactionTypeDiagnostics
      */
-    public function getDiagnostics(): OrgOpentravelOta200305TransactionTypeDiagnostics
+    public function getDiagnostics(): ?OrgOpentravelOta200305TransactionTypeDiagnostics
     {
         return $this->diagnostics;
     }
@@ -376,7 +376,7 @@ class OrgOpentravelOta200305TransactionType extends AbstractModel
      *
      * @return self
      */
-    public function setDiagnostics(OrgOpentravelOta200305TransactionTypeDiagnostics $diagnostics): self
+    public function setDiagnostics(?OrgOpentravelOta200305TransactionTypeDiagnostics $diagnostics): self
     {
         $this->diagnostics = $diagnostics;
 
@@ -388,7 +388,7 @@ class OrgOpentravelOta200305TransactionType extends AbstractModel
      *
      * @return bool
      */
-    public function getDisableCache(): bool
+    public function getDisableCache(): ?bool
     {
         return $this->disableCache;
     }
@@ -400,7 +400,7 @@ class OrgOpentravelOta200305TransactionType extends AbstractModel
      *
      * @return self
      */
-    public function setDisableCache(bool $disableCache): self
+    public function setDisableCache(?bool $disableCache): self
     {
         $this->disableCache = $disableCache;
 
@@ -412,7 +412,7 @@ class OrgOpentravelOta200305TransactionType extends AbstractModel
      *
      * @return OrgOpentravelOta200305TransactionTypeFareOverrides
      */
-    public function getFareOverrides(): OrgOpentravelOta200305TransactionTypeFareOverrides
+    public function getFareOverrides(): ?OrgOpentravelOta200305TransactionTypeFareOverrides
     {
         return $this->fareOverrides;
     }
@@ -424,7 +424,7 @@ class OrgOpentravelOta200305TransactionType extends AbstractModel
      *
      * @return self
      */
-    public function setFareOverrides(OrgOpentravelOta200305TransactionTypeFareOverrides $fareOverrides): self
+    public function setFareOverrides(?OrgOpentravelOta200305TransactionTypeFareOverrides $fareOverrides): self
     {
         $this->fareOverrides = $fareOverrides;
 
@@ -434,7 +434,7 @@ class OrgOpentravelOta200305TransactionType extends AbstractModel
     /**
      * @return OrgOpentravelOta200305TransactionTypePurchaseType
      */
-    public function getPurchaseType(): OrgOpentravelOta200305TransactionTypePurchaseType
+    public function getPurchaseType(): ?OrgOpentravelOta200305TransactionTypePurchaseType
     {
         return $this->purchaseType;
     }
@@ -444,7 +444,7 @@ class OrgOpentravelOta200305TransactionType extends AbstractModel
      *
      * @return self
      */
-    public function setPurchaseType(OrgOpentravelOta200305TransactionTypePurchaseType $purchaseType): self
+    public function setPurchaseType(?OrgOpentravelOta200305TransactionTypePurchaseType $purchaseType): self
     {
         $this->purchaseType = $purchaseType;
 
@@ -454,7 +454,7 @@ class OrgOpentravelOta200305TransactionType extends AbstractModel
     /**
      * @return OrgOpentravelOta200305TransactionTypeRequestType
      */
-    public function getRequestType(): OrgOpentravelOta200305TransactionTypeRequestType
+    public function getRequestType(): ?OrgOpentravelOta200305TransactionTypeRequestType
     {
         return $this->requestType;
     }
@@ -464,7 +464,7 @@ class OrgOpentravelOta200305TransactionType extends AbstractModel
      *
      * @return self
      */
-    public function setRequestType(OrgOpentravelOta200305TransactionTypeRequestType $requestType): self
+    public function setRequestType(?OrgOpentravelOta200305TransactionTypeRequestType $requestType): self
     {
         $this->requestType = $requestType;
 
@@ -476,7 +476,7 @@ class OrgOpentravelOta200305TransactionType extends AbstractModel
      *
      * @return OrgOpentravelOta200305TransactionTypeResponseSorting
      */
-    public function getResponseSorting(): OrgOpentravelOta200305TransactionTypeResponseSorting
+    public function getResponseSorting(): ?OrgOpentravelOta200305TransactionTypeResponseSorting
     {
         return $this->responseSorting;
     }
@@ -488,7 +488,7 @@ class OrgOpentravelOta200305TransactionType extends AbstractModel
      *
      * @return self
      */
-    public function setResponseSorting(OrgOpentravelOta200305TransactionTypeResponseSorting $responseSorting): self
+    public function setResponseSorting(?OrgOpentravelOta200305TransactionTypeResponseSorting $responseSorting): self
     {
         $this->responseSorting = $responseSorting;
 
@@ -500,7 +500,7 @@ class OrgOpentravelOta200305TransactionType extends AbstractModel
      *
      * @return OrgOpentravelOta200305TransactionTypeSabreAth
      */
-    public function getSabreAth(): OrgOpentravelOta200305TransactionTypeSabreAth
+    public function getSabreAth(): ?OrgOpentravelOta200305TransactionTypeSabreAth
     {
         return $this->sabreAth;
     }
@@ -512,7 +512,7 @@ class OrgOpentravelOta200305TransactionType extends AbstractModel
      *
      * @return self
      */
-    public function setSabreAth(OrgOpentravelOta200305TransactionTypeSabreAth $sabreAth): self
+    public function setSabreAth(?OrgOpentravelOta200305TransactionTypeSabreAth $sabreAth): self
     {
         $this->sabreAth = $sabreAth;
 
@@ -522,7 +522,7 @@ class OrgOpentravelOta200305TransactionType extends AbstractModel
     /**
      * @return OrgOpentravelOta200305SeatStatusSimType
      */
-    public function getSeatStatusSim(): OrgOpentravelOta200305SeatStatusSimType
+    public function getSeatStatusSim(): ?OrgOpentravelOta200305SeatStatusSimType
     {
         return $this->seatStatusSim;
     }
@@ -532,7 +532,7 @@ class OrgOpentravelOta200305TransactionType extends AbstractModel
      *
      * @return self
      */
-    public function setSeatStatusSim(OrgOpentravelOta200305SeatStatusSimType $seatStatusSim): self
+    public function setSeatStatusSim(?OrgOpentravelOta200305SeatStatusSimType $seatStatusSim): self
     {
         $this->seatStatusSim = $seatStatusSim;
 
@@ -544,7 +544,7 @@ class OrgOpentravelOta200305TransactionType extends AbstractModel
      *
      * @return OrgOpentravelOta200305TransactionTypeServiceTag
      */
-    public function getServiceTag(): OrgOpentravelOta200305TransactionTypeServiceTag
+    public function getServiceTag(): ?OrgOpentravelOta200305TransactionTypeServiceTag
     {
         return $this->serviceTag;
     }
@@ -556,7 +556,7 @@ class OrgOpentravelOta200305TransactionType extends AbstractModel
      *
      * @return self
      */
-    public function setServiceTag(OrgOpentravelOta200305TransactionTypeServiceTag $serviceTag): self
+    public function setServiceTag(?OrgOpentravelOta200305TransactionTypeServiceTag $serviceTag): self
     {
         $this->serviceTag = $serviceTag;
 
@@ -568,7 +568,7 @@ class OrgOpentravelOta200305TransactionType extends AbstractModel
      *
      * @return bool
      */
-    public function getShowItinSource(): bool
+    public function getShowItinSource(): ?bool
     {
         return $this->showItinSource;
     }
@@ -580,7 +580,7 @@ class OrgOpentravelOta200305TransactionType extends AbstractModel
      *
      * @return self
      */
-    public function setShowItinSource(bool $showItinSource): self
+    public function setShowItinSource(?bool $showItinSource): self
     {
         $this->showItinSource = $showItinSource;
 
@@ -592,7 +592,7 @@ class OrgOpentravelOta200305TransactionType extends AbstractModel
      *
      * @return OrgOpentravelOta200305TransactionTypeSubagentData
      */
-    public function getSubagentData(): OrgOpentravelOta200305TransactionTypeSubagentData
+    public function getSubagentData(): ?OrgOpentravelOta200305TransactionTypeSubagentData
     {
         return $this->subagentData;
     }
@@ -604,7 +604,7 @@ class OrgOpentravelOta200305TransactionType extends AbstractModel
      *
      * @return self
      */
-    public function setSubagentData(OrgOpentravelOta200305TransactionTypeSubagentData $subagentData): self
+    public function setSubagentData(?OrgOpentravelOta200305TransactionTypeSubagentData $subagentData): self
     {
         $this->subagentData = $subagentData;
 
@@ -616,7 +616,7 @@ class OrgOpentravelOta200305TransactionType extends AbstractModel
      *
      * @return OrgOpentravelOta200305TransactionTypeTranID
      */
-    public function getTranID(): OrgOpentravelOta200305TransactionTypeTranID
+    public function getTranID(): ?OrgOpentravelOta200305TransactionTypeTranID
     {
         return $this->tranID;
     }
@@ -628,7 +628,7 @@ class OrgOpentravelOta200305TransactionType extends AbstractModel
      *
      * @return self
      */
-    public function setTranID(OrgOpentravelOta200305TransactionTypeTranID $tranID): self
+    public function setTranID(?OrgOpentravelOta200305TransactionTypeTranID $tranID): self
     {
         $this->tranID = $tranID;
 
@@ -638,7 +638,7 @@ class OrgOpentravelOta200305TransactionType extends AbstractModel
     /**
      * @return OrgOpentravelOta200305TransactionTypeTravelerPersona
      */
-    public function getTravelerPersona(): OrgOpentravelOta200305TransactionTypeTravelerPersona
+    public function getTravelerPersona(): ?OrgOpentravelOta200305TransactionTypeTravelerPersona
     {
         return $this->travelerPersona;
     }
@@ -648,7 +648,7 @@ class OrgOpentravelOta200305TransactionType extends AbstractModel
      *
      * @return self
      */
-    public function setTravelerPersona(OrgOpentravelOta200305TransactionTypeTravelerPersona $travelerPersona): self
+    public function setTravelerPersona(?OrgOpentravelOta200305TransactionTypeTravelerPersona $travelerPersona): self
     {
         $this->travelerPersona = $travelerPersona;
 

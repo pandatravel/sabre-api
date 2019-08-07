@@ -18,7 +18,7 @@ class OrgOpentravelOta200305TransactionTypeATSETest extends AbstractModel
      *
      * @return string
      */
-    public function getFeature(): string
+    public function getFeature(): ?string
     {
         return $this->feature;
     }
@@ -30,7 +30,7 @@ class OrgOpentravelOta200305TransactionTypeATSETest extends AbstractModel
      *
      * @return self
      */
-    public function setFeature(string $feature): self
+    public function setFeature(?string $feature): self
     {
         $this->feature = $feature;
 

@@ -18,7 +18,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsMultiAirportCodes ext
      *
      * @return bool
      */
-    public function getEnableOpenJaw(): bool
+    public function getEnableOpenJaw(): ?bool
     {
         return $this->enableOpenJaw;
     }
@@ -30,7 +30,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsMultiAirportCodes ext
      *
      * @return self
      */
-    public function setEnableOpenJaw(bool $enableOpenJaw): self
+    public function setEnableOpenJaw(?bool $enableOpenJaw): self
     {
         $this->enableOpenJaw = $enableOpenJaw;
 

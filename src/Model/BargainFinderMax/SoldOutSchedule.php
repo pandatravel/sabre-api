@@ -56,7 +56,7 @@ class SoldOutSchedule extends AbstractModel
      *
      * @return string
      */
-    public function getBrandName(): string
+    public function getBrandName(): ?string
     {
         return $this->brandName;
     }
@@ -68,7 +68,7 @@ class SoldOutSchedule extends AbstractModel
      *
      * @return self
      */
-    public function setBrandName(string $brandName): self
+    public function setBrandName(?string $brandName): self
     {
         $this->brandName = $brandName;
 
@@ -80,7 +80,7 @@ class SoldOutSchedule extends AbstractModel
      *
      * @return string
      */
-    public function getCode(): string
+    public function getCode(): ?string
     {
         return $this->code;
     }
@@ -92,7 +92,7 @@ class SoldOutSchedule extends AbstractModel
      *
      * @return self
      */
-    public function setCode(string $code): self
+    public function setCode(?string $code): self
     {
         $this->code = $code;
 
@@ -104,7 +104,7 @@ class SoldOutSchedule extends AbstractModel
      *
      * @return string
      */
-    public function getProgramCode(): string
+    public function getProgramCode(): ?string
     {
         return $this->programCode;
     }
@@ -116,7 +116,7 @@ class SoldOutSchedule extends AbstractModel
      *
      * @return self
      */
-    public function setProgramCode(string $programCode): self
+    public function setProgramCode(?string $programCode): self
     {
         $this->programCode = $programCode;
 
@@ -128,7 +128,7 @@ class SoldOutSchedule extends AbstractModel
      *
      * @return string
      */
-    public function getProgramDescription(): string
+    public function getProgramDescription(): ?string
     {
         return $this->programDescription;
     }
@@ -140,7 +140,7 @@ class SoldOutSchedule extends AbstractModel
      *
      * @return self
      */
-    public function setProgramDescription(string $programDescription): self
+    public function setProgramDescription(?string $programDescription): self
     {
         $this->programDescription = $programDescription;
 
@@ -150,7 +150,7 @@ class SoldOutSchedule extends AbstractModel
     /**
      * @return string
      */
-    public function getProgramId(): string
+    public function getProgramId(): ?string
     {
         return $this->programId;
     }
@@ -160,7 +160,7 @@ class SoldOutSchedule extends AbstractModel
      *
      * @return self
      */
-    public function setProgramId(string $programId): self
+    public function setProgramId(?string $programId): self
     {
         $this->programId = $programId;
 
@@ -172,7 +172,7 @@ class SoldOutSchedule extends AbstractModel
      *
      * @return string
      */
-    public function getProgramSystemCode(): string
+    public function getProgramSystemCode(): ?string
     {
         return $this->programSystemCode;
     }
@@ -184,7 +184,7 @@ class SoldOutSchedule extends AbstractModel
      *
      * @return self
      */
-    public function setProgramSystemCode(string $programSystemCode): self
+    public function setProgramSystemCode(?string $programSystemCode): self
     {
         $this->programSystemCode = $programSystemCode;
 
@@ -196,7 +196,7 @@ class SoldOutSchedule extends AbstractModel
      *
      * @return int
      */
-    public function getRef(): int
+    public function getRef(): ?int
     {
         return $this->ref;
     }
@@ -208,7 +208,7 @@ class SoldOutSchedule extends AbstractModel
      *
      * @return self
      */
-    public function setRef(int $ref): self
+    public function setRef(?int $ref): self
     {
         $this->ref = $ref;
 
@@ -218,7 +218,7 @@ class SoldOutSchedule extends AbstractModel
     /**
      * @return string
      */
-    public function getStatus(): string
+    public function getStatus(): ?string
     {
         return $this->status;
     }
@@ -228,7 +228,7 @@ class SoldOutSchedule extends AbstractModel
      *
      * @return self
      */
-    public function setStatus(string $status): self
+    public function setStatus(?string $status): self
     {
         $this->status = $status;
 

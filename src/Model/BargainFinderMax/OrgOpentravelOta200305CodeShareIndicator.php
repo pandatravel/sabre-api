@@ -24,7 +24,7 @@ class OrgOpentravelOta200305CodeShareIndicator extends AbstractModel
      *
      * @return bool
      */
-    public function getExcludeCodeshare(): bool
+    public function getExcludeCodeshare(): ?bool
     {
         return $this->excludeCodeshare;
     }
@@ -36,7 +36,7 @@ class OrgOpentravelOta200305CodeShareIndicator extends AbstractModel
      *
      * @return self
      */
-    public function setExcludeCodeshare(bool $excludeCodeshare): self
+    public function setExcludeCodeshare(?bool $excludeCodeshare): self
     {
         $this->excludeCodeshare = $excludeCodeshare;
 
@@ -48,7 +48,7 @@ class OrgOpentravelOta200305CodeShareIndicator extends AbstractModel
      *
      * @return bool
      */
-    public function getKeepOnlines(): bool
+    public function getKeepOnlines(): ?bool
     {
         return $this->keepOnlines;
     }
@@ -60,7 +60,7 @@ class OrgOpentravelOta200305CodeShareIndicator extends AbstractModel
      *
      * @return self
      */
-    public function setKeepOnlines(bool $keepOnlines): self
+    public function setKeepOnlines(?bool $keepOnlines): self
     {
         $this->keepOnlines = $keepOnlines;
 

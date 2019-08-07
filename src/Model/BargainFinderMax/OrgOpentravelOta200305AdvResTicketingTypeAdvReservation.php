@@ -30,7 +30,7 @@ class OrgOpentravelOta200305AdvResTicketingTypeAdvReservation extends AbstractMo
      *
      * @return string
      */
-    public function getLatestPeriod(): string
+    public function getLatestPeriod(): ?string
     {
         return $this->latestPeriod;
     }
@@ -42,7 +42,7 @@ class OrgOpentravelOta200305AdvResTicketingTypeAdvReservation extends AbstractMo
      *
      * @return self
      */
-    public function setLatestPeriod(string $latestPeriod): self
+    public function setLatestPeriod(?string $latestPeriod): self
     {
         $this->latestPeriod = $latestPeriod;
 
@@ -54,7 +54,7 @@ class OrgOpentravelOta200305AdvResTicketingTypeAdvReservation extends AbstractMo
      *
      * @return string
      */
-    public function getLatestTimeOfDay(): string
+    public function getLatestTimeOfDay(): ?string
     {
         return $this->latestTimeOfDay;
     }
@@ -66,7 +66,7 @@ class OrgOpentravelOta200305AdvResTicketingTypeAdvReservation extends AbstractMo
      *
      * @return self
      */
-    public function setLatestTimeOfDay(string $latestTimeOfDay): self
+    public function setLatestTimeOfDay(?string $latestTimeOfDay): self
     {
         $this->latestTimeOfDay = $latestTimeOfDay;
 
@@ -78,7 +78,7 @@ class OrgOpentravelOta200305AdvResTicketingTypeAdvReservation extends AbstractMo
      *
      * @return string
      */
-    public function getLatestUnit(): string
+    public function getLatestUnit(): ?string
     {
         return $this->latestUnit;
     }
@@ -90,7 +90,7 @@ class OrgOpentravelOta200305AdvResTicketingTypeAdvReservation extends AbstractMo
      *
      * @return self
      */
-    public function setLatestUnit(string $latestUnit): self
+    public function setLatestUnit(?string $latestUnit): self
     {
         $this->latestUnit = $latestUnit;
 

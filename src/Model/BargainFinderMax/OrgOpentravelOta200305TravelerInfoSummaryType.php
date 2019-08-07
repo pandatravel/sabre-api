@@ -36,7 +36,7 @@ class OrgOpentravelOta200305TravelerInfoSummaryType extends AbstractModel
     /**
      * @return OrgOpentravelOta200305TravelerInformationType[]
      */
-    public function getAirTravelerAvail(): array
+    public function getAirTravelerAvail(): ?array
     {
         return $this->airTravelerAvail;
     }
@@ -46,7 +46,7 @@ class OrgOpentravelOta200305TravelerInfoSummaryType extends AbstractModel
      *
      * @return self
      */
-    public function setAirTravelerAvail(array $airTravelerAvail): self
+    public function setAirTravelerAvail(?array $airTravelerAvail): self
     {
         $this->airTravelerAvail = $airTravelerAvail;
 
@@ -58,7 +58,7 @@ class OrgOpentravelOta200305TravelerInfoSummaryType extends AbstractModel
      *
      * @return OrgOpentravelOta200305PriceRequestInformationType
      */
-    public function getPriceRequestInformation(): OrgOpentravelOta200305PriceRequestInformationType
+    public function getPriceRequestInformation(): ?OrgOpentravelOta200305PriceRequestInformationType
     {
         return $this->priceRequestInformation;
     }
@@ -70,7 +70,7 @@ class OrgOpentravelOta200305TravelerInfoSummaryType extends AbstractModel
      *
      * @return self
      */
-    public function setPriceRequestInformation(OrgOpentravelOta200305PriceRequestInformationType $priceRequestInformation): self
+    public function setPriceRequestInformation(?OrgOpentravelOta200305PriceRequestInformationType $priceRequestInformation): self
     {
         $this->priceRequestInformation = $priceRequestInformation;
 
@@ -80,7 +80,7 @@ class OrgOpentravelOta200305TravelerInfoSummaryType extends AbstractModel
     /**
      * @return int[]
      */
-    public function getSeatsRequested(): array
+    public function getSeatsRequested(): ?array
     {
         return $this->seatsRequested;
     }
@@ -90,7 +90,7 @@ class OrgOpentravelOta200305TravelerInfoSummaryType extends AbstractModel
      *
      * @return self
      */
-    public function setSeatsRequested(array $seatsRequested): self
+    public function setSeatsRequested(?array $seatsRequested): self
     {
         $this->seatsRequested = $seatsRequested;
 
@@ -102,7 +102,7 @@ class OrgOpentravelOta200305TravelerInfoSummaryType extends AbstractModel
      *
      * @return bool
      */
-    public function getSpecificPTCIndicator(): bool
+    public function getSpecificPTCIndicator(): ?bool
     {
         return $this->specificPTCIndicator;
     }
@@ -114,7 +114,7 @@ class OrgOpentravelOta200305TravelerInfoSummaryType extends AbstractModel
      *
      * @return self
      */
-    public function setSpecificPTCIndicator(bool $specificPTCIndicator): self
+    public function setSpecificPTCIndicator(?bool $specificPTCIndicator): self
     {
         $this->specificPTCIndicator = $specificPTCIndicator;
 
@@ -126,7 +126,7 @@ class OrgOpentravelOta200305TravelerInfoSummaryType extends AbstractModel
      *
      * @return OrgOpentravelOta200305TravelerInfoSummaryTPAExtensionsType
      */
-    public function getTPAExtensions(): OrgOpentravelOta200305TravelerInfoSummaryTPAExtensionsType
+    public function getTPAExtensions(): ?OrgOpentravelOta200305TravelerInfoSummaryTPAExtensionsType
     {
         return $this->tPAExtensions;
     }
@@ -138,7 +138,7 @@ class OrgOpentravelOta200305TravelerInfoSummaryType extends AbstractModel
      *
      * @return self
      */
-    public function setTPAExtensions(OrgOpentravelOta200305TravelerInfoSummaryTPAExtensionsType $tPAExtensions): self
+    public function setTPAExtensions(?OrgOpentravelOta200305TravelerInfoSummaryTPAExtensionsType $tPAExtensions): self
     {
         $this->tPAExtensions = $tPAExtensions;
 

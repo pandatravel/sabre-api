@@ -66,7 +66,7 @@ class TaxSummaryType extends AbstractModel
      *
      * @return float
      */
-    public function getAmount(): float
+    public function getAmount(): ?float
     {
         return $this->amount;
     }
@@ -78,7 +78,7 @@ class TaxSummaryType extends AbstractModel
      *
      * @return self
      */
-    public function setAmount(float $amount): self
+    public function setAmount(?float $amount): self
     {
         $this->amount = $amount;
 
@@ -90,7 +90,7 @@ class TaxSummaryType extends AbstractModel
      *
      * @return string
      */
-    public function getCode(): string
+    public function getCode(): ?string
     {
         return $this->code;
     }
@@ -102,7 +102,7 @@ class TaxSummaryType extends AbstractModel
      *
      * @return self
      */
-    public function setCode(string $code): self
+    public function setCode(?string $code): self
     {
         $this->code = $code;
 
@@ -114,7 +114,7 @@ class TaxSummaryType extends AbstractModel
      *
      * @return string
      */
-    public function getCountry(): string
+    public function getCountry(): ?string
     {
         return $this->country;
     }
@@ -126,7 +126,7 @@ class TaxSummaryType extends AbstractModel
      *
      * @return self
      */
-    public function setCountry(string $country): self
+    public function setCountry(?string $country): self
     {
         $this->country = $country;
 
@@ -138,7 +138,7 @@ class TaxSummaryType extends AbstractModel
      *
      * @return string
      */
-    public function getCurrency(): string
+    public function getCurrency(): ?string
     {
         return $this->currency;
     }
@@ -150,7 +150,7 @@ class TaxSummaryType extends AbstractModel
      *
      * @return self
      */
-    public function setCurrency(string $currency): self
+    public function setCurrency(?string $currency): self
     {
         $this->currency = $currency;
 
@@ -162,7 +162,7 @@ class TaxSummaryType extends AbstractModel
      *
      * @return string
      */
-    public function getDescription(): string
+    public function getDescription(): ?string
     {
         return $this->description;
     }
@@ -174,7 +174,7 @@ class TaxSummaryType extends AbstractModel
      *
      * @return self
      */
-    public function setDescription(string $description): self
+    public function setDescription(?string $description): self
     {
         $this->description = $description;
 
@@ -186,7 +186,7 @@ class TaxSummaryType extends AbstractModel
      *
      * @return int
      */
-    public function getId(): int
+    public function getId(): ?int
     {
         return $this->id;
     }
@@ -198,7 +198,7 @@ class TaxSummaryType extends AbstractModel
      *
      * @return self
      */
-    public function setId(int $id): self
+    public function setId(?int $id): self
     {
         $this->id = $id;
 
@@ -210,7 +210,7 @@ class TaxSummaryType extends AbstractModel
      *
      * @return float
      */
-    public function getPublishedAmount(): float
+    public function getPublishedAmount(): ?float
     {
         return $this->publishedAmount;
     }
@@ -222,7 +222,7 @@ class TaxSummaryType extends AbstractModel
      *
      * @return self
      */
-    public function setPublishedAmount(float $publishedAmount): self
+    public function setPublishedAmount(?float $publishedAmount): self
     {
         $this->publishedAmount = $publishedAmount;
 
@@ -234,7 +234,7 @@ class TaxSummaryType extends AbstractModel
      *
      * @return string
      */
-    public function getPublishedCurrency(): string
+    public function getPublishedCurrency(): ?string
     {
         return $this->publishedCurrency;
     }
@@ -246,7 +246,7 @@ class TaxSummaryType extends AbstractModel
      *
      * @return self
      */
-    public function setPublishedCurrency(string $publishedCurrency): self
+    public function setPublishedCurrency(?string $publishedCurrency): self
     {
         $this->publishedCurrency = $publishedCurrency;
 
@@ -258,7 +258,7 @@ class TaxSummaryType extends AbstractModel
      *
      * @return string
      */
-    public function getStation(): string
+    public function getStation(): ?string
     {
         return $this->station;
     }
@@ -270,7 +270,7 @@ class TaxSummaryType extends AbstractModel
      *
      * @return self
      */
-    public function setStation(string $station): self
+    public function setStation(?string $station): self
     {
         $this->station = $station;
 

@@ -22,7 +22,7 @@ class OrgOpentravelOta200305RetailerRulesType extends AbstractModel
      *
      * @return bool
      */
-    public function getForce(): bool
+    public function getForce(): ?bool
     {
         return $this->force;
     }
@@ -34,7 +34,7 @@ class OrgOpentravelOta200305RetailerRulesType extends AbstractModel
      *
      * @return self
      */
-    public function setForce(bool $force): self
+    public function setForce(?bool $force): self
     {
         $this->force = $force;
 
@@ -44,7 +44,7 @@ class OrgOpentravelOta200305RetailerRulesType extends AbstractModel
     /**
      * @return OrgOpentravelOta200305RetailerRulesTypeRetailerRule[]
      */
-    public function getRetailerRule(): array
+    public function getRetailerRule(): ?array
     {
         return $this->retailerRule;
     }
@@ -54,7 +54,7 @@ class OrgOpentravelOta200305RetailerRulesType extends AbstractModel
      *
      * @return self
      */
-    public function setRetailerRule(array $retailerRule): self
+    public function setRetailerRule(?array $retailerRule): self
     {
         $this->retailerRule = $retailerRule;
 

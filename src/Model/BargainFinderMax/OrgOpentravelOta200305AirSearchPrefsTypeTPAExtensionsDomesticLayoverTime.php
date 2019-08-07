@@ -14,7 +14,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsDomesticLayoverTime e
     /**
      * @return float
      */
-    public function getHours(): float
+    public function getHours(): ?float
     {
         return $this->hours;
     }
@@ -24,7 +24,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeTPAExtensionsDomesticLayoverTime e
      *
      * @return self
      */
-    public function setHours(float $hours): self
+    public function setHours(?float $hours): self
     {
         $this->hours = $hours;
 

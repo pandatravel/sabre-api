@@ -28,7 +28,7 @@ class OrgOpentravelOta200305SourceBookingChannelType extends AbstractModel
      *
      * @return OrgOpentravelOta200305CompanyNameType
      */
-    public function getCompanyName(): OrgOpentravelOta200305CompanyNameType
+    public function getCompanyName(): ?OrgOpentravelOta200305CompanyNameType
     {
         return $this->companyName;
     }
@@ -40,7 +40,7 @@ class OrgOpentravelOta200305SourceBookingChannelType extends AbstractModel
      *
      * @return self
      */
-    public function setCompanyName(OrgOpentravelOta200305CompanyNameType $companyName): self
+    public function setCompanyName(?OrgOpentravelOta200305CompanyNameType $companyName): self
     {
         $this->companyName = $companyName;
 
@@ -52,7 +52,7 @@ class OrgOpentravelOta200305SourceBookingChannelType extends AbstractModel
      *
      * @return bool
      */
-    public function getPrimary(): bool
+    public function getPrimary(): ?bool
     {
         return $this->primary;
     }
@@ -64,7 +64,7 @@ class OrgOpentravelOta200305SourceBookingChannelType extends AbstractModel
      *
      * @return self
      */
-    public function setPrimary(bool $primary): self
+    public function setPrimary(?bool $primary): self
     {
         $this->primary = $primary;
 
@@ -74,7 +74,7 @@ class OrgOpentravelOta200305SourceBookingChannelType extends AbstractModel
     /**
      * @return string
      */
-    public function getType(): string
+    public function getType(): ?string
     {
         return $this->type;
     }
@@ -84,7 +84,7 @@ class OrgOpentravelOta200305SourceBookingChannelType extends AbstractModel
      *
      * @return self
      */
-    public function setType(string $type): self
+    public function setType(?string $type): self
     {
         $this->type = $type;
 

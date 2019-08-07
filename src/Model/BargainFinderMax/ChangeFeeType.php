@@ -42,7 +42,7 @@ class ChangeFeeType extends AbstractModel
      *
      * @return float
      */
-    public function getAmount(): float
+    public function getAmount(): ?float
     {
         return $this->amount;
     }
@@ -54,7 +54,7 @@ class ChangeFeeType extends AbstractModel
      *
      * @return self
      */
-    public function setAmount(float $amount): self
+    public function setAmount(?float $amount): self
     {
         $this->amount = $amount;
 
@@ -66,7 +66,7 @@ class ChangeFeeType extends AbstractModel
      *
      * @return string
      */
-    public function getCurrency(): string
+    public function getCurrency(): ?string
     {
         return $this->currency;
     }
@@ -78,7 +78,7 @@ class ChangeFeeType extends AbstractModel
      *
      * @return self
      */
-    public function setCurrency(string $currency): self
+    public function setCurrency(?string $currency): self
     {
         $this->currency = $currency;
 
@@ -90,7 +90,7 @@ class ChangeFeeType extends AbstractModel
      *
      * @return bool
      */
-    public function getHighest(): bool
+    public function getHighest(): ?bool
     {
         return $this->highest;
     }
@@ -102,7 +102,7 @@ class ChangeFeeType extends AbstractModel
      *
      * @return self
      */
-    public function setHighest(bool $highest): self
+    public function setHighest(?bool $highest): self
     {
         $this->highest = $highest;
 
@@ -114,7 +114,7 @@ class ChangeFeeType extends AbstractModel
      *
      * @return bool
      */
-    public function getNotApplicable(): bool
+    public function getNotApplicable(): ?bool
     {
         return $this->notApplicable;
     }
@@ -126,7 +126,7 @@ class ChangeFeeType extends AbstractModel
      *
      * @return self
      */
-    public function setNotApplicable(bool $notApplicable): self
+    public function setNotApplicable(?bool $notApplicable): self
     {
         $this->notApplicable = $notApplicable;
 
@@ -138,7 +138,7 @@ class ChangeFeeType extends AbstractModel
      *
      * @return bool
      */
-    public function getWaived(): bool
+    public function getWaived(): ?bool
     {
         return $this->waived;
     }
@@ -150,7 +150,7 @@ class ChangeFeeType extends AbstractModel
      *
      * @return self
      */
-    public function setWaived(bool $waived): self
+    public function setWaived(?bool $waived): self
     {
         $this->waived = $waived;
 

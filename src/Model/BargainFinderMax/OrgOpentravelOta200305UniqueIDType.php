@@ -46,7 +46,7 @@ class OrgOpentravelOta200305UniqueIDType extends AbstractModel
      *
      * @return OrgOpentravelOta200305CompanyNameType
      */
-    public function getCompanyName(): OrgOpentravelOta200305CompanyNameType
+    public function getCompanyName(): ?OrgOpentravelOta200305CompanyNameType
     {
         return $this->companyName;
     }
@@ -58,7 +58,7 @@ class OrgOpentravelOta200305UniqueIDType extends AbstractModel
      *
      * @return self
      */
-    public function setCompanyName(OrgOpentravelOta200305CompanyNameType $companyName): self
+    public function setCompanyName(?OrgOpentravelOta200305CompanyNameType $companyName): self
     {
         $this->companyName = $companyName;
 
@@ -70,7 +70,7 @@ class OrgOpentravelOta200305UniqueIDType extends AbstractModel
      *
      * @return string
      */
-    public function getID(): string
+    public function getID(): ?string
     {
         return $this->iD;
     }
@@ -82,7 +82,7 @@ class OrgOpentravelOta200305UniqueIDType extends AbstractModel
      *
      * @return self
      */
-    public function setID(string $iD): self
+    public function setID(?string $iD): self
     {
         $this->iD = $iD;
 
@@ -94,7 +94,7 @@ class OrgOpentravelOta200305UniqueIDType extends AbstractModel
      *
      * @return string
      */
-    public function getIDContext(): string
+    public function getIDContext(): ?string
     {
         return $this->iDContext;
     }
@@ -106,7 +106,7 @@ class OrgOpentravelOta200305UniqueIDType extends AbstractModel
      *
      * @return self
      */
-    public function setIDContext(string $iDContext): self
+    public function setIDContext(?string $iDContext): self
     {
         $this->iDContext = $iDContext;
 
@@ -118,7 +118,7 @@ class OrgOpentravelOta200305UniqueIDType extends AbstractModel
      *
      * @return string
      */
-    public function getInstance(): string
+    public function getInstance(): ?string
     {
         return $this->instance;
     }
@@ -130,7 +130,7 @@ class OrgOpentravelOta200305UniqueIDType extends AbstractModel
      *
      * @return self
      */
-    public function setInstance(string $instance): self
+    public function setInstance(?string $instance): self
     {
         $this->instance = $instance;
 
@@ -140,7 +140,7 @@ class OrgOpentravelOta200305UniqueIDType extends AbstractModel
     /**
      * @return string
      */
-    public function getType(): string
+    public function getType(): ?string
     {
         return $this->type;
     }
@@ -150,7 +150,7 @@ class OrgOpentravelOta200305UniqueIDType extends AbstractModel
      *
      * @return self
      */
-    public function setType(string $type): self
+    public function setType(?string $type): self
     {
         $this->type = $type;
 
@@ -162,7 +162,7 @@ class OrgOpentravelOta200305UniqueIDType extends AbstractModel
      *
      * @return string
      */
-    public function getURL(): string
+    public function getURL(): ?string
     {
         return $this->uRL;
     }
@@ -174,7 +174,7 @@ class OrgOpentravelOta200305UniqueIDType extends AbstractModel
      *
      * @return self
      */
-    public function setURL(string $uRL): self
+    public function setURL(?string $uRL): self
     {
         $this->uRL = $uRL;
 

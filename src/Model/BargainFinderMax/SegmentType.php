@@ -40,7 +40,7 @@ class SegmentType extends AbstractModel
     /**
      * @return bool
      */
-    public function getAvailabilityBreak(): bool
+    public function getAvailabilityBreak(): ?bool
     {
         return $this->availabilityBreak;
     }
@@ -50,7 +50,7 @@ class SegmentType extends AbstractModel
      *
      * @return self
      */
-    public function setAvailabilityBreak(bool $availabilityBreak): self
+    public function setAvailabilityBreak(?bool $availabilityBreak): self
     {
         $this->availabilityBreak = $availabilityBreak;
 
@@ -62,7 +62,7 @@ class SegmentType extends AbstractModel
      *
      * @return string
      */
-    public function getBookingCode(): string
+    public function getBookingCode(): ?string
     {
         return $this->bookingCode;
     }
@@ -74,7 +74,7 @@ class SegmentType extends AbstractModel
      *
      * @return self
      */
-    public function setBookingCode(string $bookingCode): self
+    public function setBookingCode(?string $bookingCode): self
     {
         $this->bookingCode = $bookingCode;
 
@@ -86,7 +86,7 @@ class SegmentType extends AbstractModel
      *
      * @return string
      */
-    public function getCabinCode(): string
+    public function getCabinCode(): ?string
     {
         return $this->cabinCode;
     }
@@ -98,7 +98,7 @@ class SegmentType extends AbstractModel
      *
      * @return self
      */
-    public function setCabinCode(string $cabinCode): self
+    public function setCabinCode(?string $cabinCode): self
     {
         $this->cabinCode = $cabinCode;
 
@@ -110,7 +110,7 @@ class SegmentType extends AbstractModel
      *
      * @return string
      */
-    public function getDualInventoryCode(): string
+    public function getDualInventoryCode(): ?string
     {
         return $this->dualInventoryCode;
     }
@@ -122,7 +122,7 @@ class SegmentType extends AbstractModel
      *
      * @return self
      */
-    public function setDualInventoryCode(string $dualInventoryCode): self
+    public function setDualInventoryCode(?string $dualInventoryCode): self
     {
         $this->dualInventoryCode = $dualInventoryCode;
 
@@ -132,7 +132,7 @@ class SegmentType extends AbstractModel
     /**
      * @return string
      */
-    public function getMealCode(): string
+    public function getMealCode(): ?string
     {
         return $this->mealCode;
     }
@@ -142,7 +142,7 @@ class SegmentType extends AbstractModel
      *
      * @return self
      */
-    public function setMealCode(string $mealCode): self
+    public function setMealCode(?string $mealCode): self
     {
         $this->mealCode = $mealCode;
 
@@ -152,7 +152,7 @@ class SegmentType extends AbstractModel
     /**
      * @return int
      */
-    public function getSeatsAvailable(): int
+    public function getSeatsAvailable(): ?int
     {
         return $this->seatsAvailable;
     }
@@ -162,7 +162,7 @@ class SegmentType extends AbstractModel
      *
      * @return self
      */
-    public function setSeatsAvailable(int $seatsAvailable): self
+    public function setSeatsAvailable(?int $seatsAvailable): self
     {
         $this->seatsAvailable = $seatsAvailable;
 

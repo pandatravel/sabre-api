@@ -28,7 +28,7 @@ class OrgOpentravelOta200305VendorPrefPairingType extends AbstractModel
      *
      * @return string
      */
-    public function getApplicability(): string
+    public function getApplicability(): ?string
     {
         return $this->applicability;
     }
@@ -40,7 +40,7 @@ class OrgOpentravelOta200305VendorPrefPairingType extends AbstractModel
      *
      * @return self
      */
-    public function setApplicability(string $applicability): self
+    public function setApplicability(?string $applicability): self
     {
         $this->applicability = $applicability;
 
@@ -52,7 +52,7 @@ class OrgOpentravelOta200305VendorPrefPairingType extends AbstractModel
      *
      * @return string
      */
-    public function getPreferLevel(): string
+    public function getPreferLevel(): ?string
     {
         return $this->preferLevel;
     }
@@ -64,7 +64,7 @@ class OrgOpentravelOta200305VendorPrefPairingType extends AbstractModel
      *
      * @return self
      */
-    public function setPreferLevel(string $preferLevel): self
+    public function setPreferLevel(?string $preferLevel): self
     {
         $this->preferLevel = $preferLevel;
 
@@ -74,7 +74,7 @@ class OrgOpentravelOta200305VendorPrefPairingType extends AbstractModel
     /**
      * @return OrgOpentravelOta200305VendorPrefPairingTypeVendorPref[]
      */
-    public function getVendorPref(): array
+    public function getVendorPref(): ?array
     {
         return $this->vendorPref;
     }
@@ -84,7 +84,7 @@ class OrgOpentravelOta200305VendorPrefPairingType extends AbstractModel
      *
      * @return self
      */
-    public function setVendorPref(array $vendorPref): self
+    public function setVendorPref(?array $vendorPref): self
     {
         $this->vendorPref = $vendorPref;
 

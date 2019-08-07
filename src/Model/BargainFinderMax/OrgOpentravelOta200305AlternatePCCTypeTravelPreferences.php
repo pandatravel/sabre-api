@@ -18,7 +18,7 @@ class OrgOpentravelOta200305AlternatePCCTypeTravelPreferences extends AbstractMo
     /**
      * @return OrgOpentravelOta200305AlternatePCCTypeTravelPreferencesTPAExtensions
      */
-    public function getTPAExtensions(): OrgOpentravelOta200305AlternatePCCTypeTravelPreferencesTPAExtensions
+    public function getTPAExtensions(): ?OrgOpentravelOta200305AlternatePCCTypeTravelPreferencesTPAExtensions
     {
         return $this->tPAExtensions;
     }
@@ -28,7 +28,7 @@ class OrgOpentravelOta200305AlternatePCCTypeTravelPreferences extends AbstractMo
      *
      * @return self
      */
-    public function setTPAExtensions(OrgOpentravelOta200305AlternatePCCTypeTravelPreferencesTPAExtensions $tPAExtensions): self
+    public function setTPAExtensions(?OrgOpentravelOta200305AlternatePCCTypeTravelPreferencesTPAExtensions $tPAExtensions): self
     {
         $this->tPAExtensions = $tPAExtensions;
 
@@ -38,7 +38,7 @@ class OrgOpentravelOta200305AlternatePCCTypeTravelPreferences extends AbstractMo
     /**
      * @return OrgOpentravelOta200305AlternatePCCTypeTravelPreferencesVendorPref[]
      */
-    public function getVendorPref(): array
+    public function getVendorPref(): ?array
     {
         return $this->vendorPref;
     }
@@ -48,7 +48,7 @@ class OrgOpentravelOta200305AlternatePCCTypeTravelPreferences extends AbstractMo
      *
      * @return self
      */
-    public function setVendorPref(array $vendorPref): self
+    public function setVendorPref(?array $vendorPref): self
     {
         $this->vendorPref = $vendorPref;
 

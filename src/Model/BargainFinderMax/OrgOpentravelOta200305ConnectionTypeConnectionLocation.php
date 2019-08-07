@@ -28,7 +28,7 @@ class OrgOpentravelOta200305ConnectionTypeConnectionLocation extends AbstractMod
      *
      * @return string
      */
-    public function getLocationCode(): string
+    public function getLocationCode(): ?string
     {
         return $this->locationCode;
     }
@@ -40,7 +40,7 @@ class OrgOpentravelOta200305ConnectionTypeConnectionLocation extends AbstractMod
      *
      * @return self
      */
-    public function setLocationCode(string $locationCode): self
+    public function setLocationCode(?string $locationCode): self
     {
         $this->locationCode = $locationCode;
 
@@ -52,7 +52,7 @@ class OrgOpentravelOta200305ConnectionTypeConnectionLocation extends AbstractMod
      *
      * @return string
      */
-    public function getPreferLevel(): string
+    public function getPreferLevel(): ?string
     {
         return $this->preferLevel;
     }
@@ -64,7 +64,7 @@ class OrgOpentravelOta200305ConnectionTypeConnectionLocation extends AbstractMod
      *
      * @return self
      */
-    public function setPreferLevel(string $preferLevel): self
+    public function setPreferLevel(?string $preferLevel): self
     {
         $this->preferLevel = $preferLevel;
 
@@ -74,7 +74,7 @@ class OrgOpentravelOta200305ConnectionTypeConnectionLocation extends AbstractMod
     /**
      * @return string
      */
-    public function getContent(): string
+    public function getContent(): ?string
     {
         return $this->content;
     }
@@ -84,7 +84,7 @@ class OrgOpentravelOta200305ConnectionTypeConnectionLocation extends AbstractMod
      *
      * @return self
      */
-    public function setContent(string $content): self
+    public function setContent(?string $content): self
     {
         $this->content = $content;
 

@@ -42,7 +42,7 @@ class PlusUpInformationType extends AbstractModel
     /**
      * @return float
      */
-    public function getAmount(): float
+    public function getAmount(): ?float
     {
         return $this->amount;
     }
@@ -52,7 +52,7 @@ class PlusUpInformationType extends AbstractModel
      *
      * @return self
      */
-    public function setAmount(float $amount): self
+    public function setAmount(?float $amount): self
     {
         $this->amount = $amount;
 
@@ -62,7 +62,7 @@ class PlusUpInformationType extends AbstractModel
     /**
      * @return string
      */
-    public function getCountryOfPayment(): string
+    public function getCountryOfPayment(): ?string
     {
         return $this->countryOfPayment;
     }
@@ -72,7 +72,7 @@ class PlusUpInformationType extends AbstractModel
      *
      * @return self
      */
-    public function setCountryOfPayment(string $countryOfPayment): self
+    public function setCountryOfPayment(?string $countryOfPayment): self
     {
         $this->countryOfPayment = $countryOfPayment;
 
@@ -82,7 +82,7 @@ class PlusUpInformationType extends AbstractModel
     /**
      * @return string
      */
-    public function getDestination(): string
+    public function getDestination(): ?string
     {
         return $this->destination;
     }
@@ -92,7 +92,7 @@ class PlusUpInformationType extends AbstractModel
      *
      * @return self
      */
-    public function setDestination(string $destination): self
+    public function setDestination(?string $destination): self
     {
         $this->destination = $destination;
 
@@ -102,7 +102,7 @@ class PlusUpInformationType extends AbstractModel
     /**
      * @return string
      */
-    public function getFareDestination(): string
+    public function getFareDestination(): ?string
     {
         return $this->fareDestination;
     }
@@ -112,7 +112,7 @@ class PlusUpInformationType extends AbstractModel
      *
      * @return self
      */
-    public function setFareDestination(string $fareDestination): self
+    public function setFareDestination(?string $fareDestination): self
     {
         $this->fareDestination = $fareDestination;
 
@@ -122,7 +122,7 @@ class PlusUpInformationType extends AbstractModel
     /**
      * @return string
      */
-    public function getFareOrigin(): string
+    public function getFareOrigin(): ?string
     {
         return $this->fareOrigin;
     }
@@ -132,7 +132,7 @@ class PlusUpInformationType extends AbstractModel
      *
      * @return self
      */
-    public function setFareOrigin(string $fareOrigin): self
+    public function setFareOrigin(?string $fareOrigin): self
     {
         $this->fareOrigin = $fareOrigin;
 
@@ -142,7 +142,7 @@ class PlusUpInformationType extends AbstractModel
     /**
      * @return string
      */
-    public function getMessage(): string
+    public function getMessage(): ?string
     {
         return $this->message;
     }
@@ -152,7 +152,7 @@ class PlusUpInformationType extends AbstractModel
      *
      * @return self
      */
-    public function setMessage(string $message): self
+    public function setMessage(?string $message): self
     {
         $this->message = $message;
 
@@ -162,7 +162,7 @@ class PlusUpInformationType extends AbstractModel
     /**
      * @return string
      */
-    public function getOrigin(): string
+    public function getOrigin(): ?string
     {
         return $this->origin;
     }
@@ -172,7 +172,7 @@ class PlusUpInformationType extends AbstractModel
      *
      * @return self
      */
-    public function setOrigin(string $origin): self
+    public function setOrigin(?string $origin): self
     {
         $this->origin = $origin;
 
@@ -182,7 +182,7 @@ class PlusUpInformationType extends AbstractModel
     /**
      * @return string
      */
-    public function getViaCity(): string
+    public function getViaCity(): ?string
     {
         return $this->viaCity;
     }
@@ -192,7 +192,7 @@ class PlusUpInformationType extends AbstractModel
      *
      * @return self
      */
-    public function setViaCity(string $viaCity): self
+    public function setViaCity(?string $viaCity): self
     {
         $this->viaCity = $viaCity;
 

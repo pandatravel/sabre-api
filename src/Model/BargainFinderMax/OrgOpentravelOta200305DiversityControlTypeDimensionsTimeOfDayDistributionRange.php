@@ -22,7 +22,7 @@ class OrgOpentravelOta200305DiversityControlTypeDimensionsTimeOfDayDistributionR
     /**
      * @return string
      */
-    public function getBegin(): string
+    public function getBegin(): ?string
     {
         return $this->begin;
     }
@@ -32,7 +32,7 @@ class OrgOpentravelOta200305DiversityControlTypeDimensionsTimeOfDayDistributionR
      *
      * @return self
      */
-    public function setBegin(string $begin): self
+    public function setBegin(?string $begin): self
     {
         $this->begin = $begin;
 
@@ -42,7 +42,7 @@ class OrgOpentravelOta200305DiversityControlTypeDimensionsTimeOfDayDistributionR
     /**
      * @return string
      */
-    public function getEnd(): string
+    public function getEnd(): ?string
     {
         return $this->end;
     }
@@ -52,7 +52,7 @@ class OrgOpentravelOta200305DiversityControlTypeDimensionsTimeOfDayDistributionR
      *
      * @return self
      */
-    public function setEnd(string $end): self
+    public function setEnd(?string $end): self
     {
         $this->end = $end;
 
@@ -62,7 +62,7 @@ class OrgOpentravelOta200305DiversityControlTypeDimensionsTimeOfDayDistributionR
     /**
      * @return string
      */
-    public function getOptions(): string
+    public function getOptions(): ?string
     {
         return $this->options;
     }
@@ -72,7 +72,7 @@ class OrgOpentravelOta200305DiversityControlTypeDimensionsTimeOfDayDistributionR
      *
      * @return self
      */
-    public function setOptions(string $options): self
+    public function setOptions(?string $options): self
     {
         $this->options = $options;
 

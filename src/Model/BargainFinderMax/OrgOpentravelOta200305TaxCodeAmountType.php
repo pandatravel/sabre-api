@@ -24,7 +24,7 @@ class OrgOpentravelOta200305TaxCodeAmountType extends AbstractModel
      *
      * @return float
      */
-    public function getAmount(): float
+    public function getAmount(): ?float
     {
         return $this->amount;
     }
@@ -36,7 +36,7 @@ class OrgOpentravelOta200305TaxCodeAmountType extends AbstractModel
      *
      * @return self
      */
-    public function setAmount(float $amount): self
+    public function setAmount(?float $amount): self
     {
         $this->amount = $amount;
 
@@ -48,7 +48,7 @@ class OrgOpentravelOta200305TaxCodeAmountType extends AbstractModel
      *
      * @return string
      */
-    public function getTaxCode(): string
+    public function getTaxCode(): ?string
     {
         return $this->taxCode;
     }
@@ -60,7 +60,7 @@ class OrgOpentravelOta200305TaxCodeAmountType extends AbstractModel
      *
      * @return self
      */
-    public function setTaxCode(string $taxCode): self
+    public function setTaxCode(?string $taxCode): self
     {
         $this->taxCode = $taxCode;
 

@@ -38,7 +38,7 @@ class OrgOpentravelOta200305DiversityControlTypeDimensions extends AbstractModel
     /**
      * @return OrgOpentravelOta200305DiversityControlTypeDimensionsCarrier
      */
-    public function getCarrier(): OrgOpentravelOta200305DiversityControlTypeDimensionsCarrier
+    public function getCarrier(): ?OrgOpentravelOta200305DiversityControlTypeDimensionsCarrier
     {
         return $this->carrier;
     }
@@ -48,7 +48,7 @@ class OrgOpentravelOta200305DiversityControlTypeDimensions extends AbstractModel
      *
      * @return self
      */
-    public function setCarrier(OrgOpentravelOta200305DiversityControlTypeDimensionsCarrier $carrier): self
+    public function setCarrier(?OrgOpentravelOta200305DiversityControlTypeDimensionsCarrier $carrier): self
     {
         $this->carrier = $carrier;
 
@@ -58,7 +58,7 @@ class OrgOpentravelOta200305DiversityControlTypeDimensions extends AbstractModel
     /**
      * @return OrgOpentravelOta200305DiversityControlTypeDimensionsInboundOutboundPairing
      */
-    public function getInboundOutboundPairing(): OrgOpentravelOta200305DiversityControlTypeDimensionsInboundOutboundPairing
+    public function getInboundOutboundPairing(): ?OrgOpentravelOta200305DiversityControlTypeDimensionsInboundOutboundPairing
     {
         return $this->inboundOutboundPairing;
     }
@@ -68,7 +68,7 @@ class OrgOpentravelOta200305DiversityControlTypeDimensions extends AbstractModel
      *
      * @return self
      */
-    public function setInboundOutboundPairing(OrgOpentravelOta200305DiversityControlTypeDimensionsInboundOutboundPairing $inboundOutboundPairing): self
+    public function setInboundOutboundPairing(?OrgOpentravelOta200305DiversityControlTypeDimensionsInboundOutboundPairing $inboundOutboundPairing): self
     {
         $this->inboundOutboundPairing = $inboundOutboundPairing;
 
@@ -78,7 +78,7 @@ class OrgOpentravelOta200305DiversityControlTypeDimensions extends AbstractModel
     /**
      * @return OrgOpentravelOta200305DiversityControlTypeDimensionsOperatingDuplicate
      */
-    public function getOperatingDuplicate(): OrgOpentravelOta200305DiversityControlTypeDimensionsOperatingDuplicate
+    public function getOperatingDuplicate(): ?OrgOpentravelOta200305DiversityControlTypeDimensionsOperatingDuplicate
     {
         return $this->operatingDuplicate;
     }
@@ -88,7 +88,7 @@ class OrgOpentravelOta200305DiversityControlTypeDimensions extends AbstractModel
      *
      * @return self
      */
-    public function setOperatingDuplicate(OrgOpentravelOta200305DiversityControlTypeDimensionsOperatingDuplicate $operatingDuplicate): self
+    public function setOperatingDuplicate(?OrgOpentravelOta200305DiversityControlTypeDimensionsOperatingDuplicate $operatingDuplicate): self
     {
         $this->operatingDuplicate = $operatingDuplicate;
 
@@ -98,7 +98,7 @@ class OrgOpentravelOta200305DiversityControlTypeDimensions extends AbstractModel
     /**
      * @return float
      */
-    public function getPriceWeight(): float
+    public function getPriceWeight(): ?float
     {
         return $this->priceWeight;
     }
@@ -108,7 +108,7 @@ class OrgOpentravelOta200305DiversityControlTypeDimensions extends AbstractModel
      *
      * @return self
      */
-    public function setPriceWeight(float $priceWeight): self
+    public function setPriceWeight(?float $priceWeight): self
     {
         $this->priceWeight = $priceWeight;
 
@@ -118,7 +118,7 @@ class OrgOpentravelOta200305DiversityControlTypeDimensions extends AbstractModel
     /**
      * @return OrgOpentravelOta200305DiversityControlTypeDimensionsStopsNumber
      */
-    public function getStopsNumber(): OrgOpentravelOta200305DiversityControlTypeDimensionsStopsNumber
+    public function getStopsNumber(): ?OrgOpentravelOta200305DiversityControlTypeDimensionsStopsNumber
     {
         return $this->stopsNumber;
     }
@@ -128,7 +128,7 @@ class OrgOpentravelOta200305DiversityControlTypeDimensions extends AbstractModel
      *
      * @return self
      */
-    public function setStopsNumber(OrgOpentravelOta200305DiversityControlTypeDimensionsStopsNumber $stopsNumber): self
+    public function setStopsNumber(?OrgOpentravelOta200305DiversityControlTypeDimensionsStopsNumber $stopsNumber): self
     {
         $this->stopsNumber = $stopsNumber;
 
@@ -138,7 +138,7 @@ class OrgOpentravelOta200305DiversityControlTypeDimensions extends AbstractModel
     /**
      * @return OrgOpentravelOta200305DiversityControlTypeDimensionsTimeOfDay
      */
-    public function getTimeOfDay(): OrgOpentravelOta200305DiversityControlTypeDimensionsTimeOfDay
+    public function getTimeOfDay(): ?OrgOpentravelOta200305DiversityControlTypeDimensionsTimeOfDay
     {
         return $this->timeOfDay;
     }
@@ -148,7 +148,7 @@ class OrgOpentravelOta200305DiversityControlTypeDimensions extends AbstractModel
      *
      * @return self
      */
-    public function setTimeOfDay(OrgOpentravelOta200305DiversityControlTypeDimensionsTimeOfDay $timeOfDay): self
+    public function setTimeOfDay(?OrgOpentravelOta200305DiversityControlTypeDimensionsTimeOfDay $timeOfDay): self
     {
         $this->timeOfDay = $timeOfDay;
 
@@ -158,7 +158,7 @@ class OrgOpentravelOta200305DiversityControlTypeDimensions extends AbstractModel
     /**
      * @return OrgOpentravelOta200305DiversityControlTypeDimensionsTravelTime
      */
-    public function getTravelTime(): OrgOpentravelOta200305DiversityControlTypeDimensionsTravelTime
+    public function getTravelTime(): ?OrgOpentravelOta200305DiversityControlTypeDimensionsTravelTime
     {
         return $this->travelTime;
     }
@@ -168,7 +168,7 @@ class OrgOpentravelOta200305DiversityControlTypeDimensions extends AbstractModel
      *
      * @return self
      */
-    public function setTravelTime(OrgOpentravelOta200305DiversityControlTypeDimensionsTravelTime $travelTime): self
+    public function setTravelTime(?OrgOpentravelOta200305DiversityControlTypeDimensionsTravelTime $travelTime): self
     {
         $this->travelTime = $travelTime;
 

@@ -18,7 +18,7 @@ class DiversitySwapperType extends AbstractModel
      *
      * @return float
      */
-    public function getWeighedPrice(): float
+    public function getWeighedPrice(): ?float
     {
         return $this->weighedPrice;
     }
@@ -30,7 +30,7 @@ class DiversitySwapperType extends AbstractModel
      *
      * @return self
      */
-    public function setWeighedPrice(float $weighedPrice): self
+    public function setWeighedPrice(?float $weighedPrice): self
     {
         $this->weighedPrice = $weighedPrice;
 

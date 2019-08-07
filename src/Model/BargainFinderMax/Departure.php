@@ -48,7 +48,7 @@ class Departure extends AbstractModel
      *
      * @return string
      */
-    public function getAirport(): string
+    public function getAirport(): ?string
     {
         return $this->airport;
     }
@@ -60,7 +60,7 @@ class Departure extends AbstractModel
      *
      * @return self
      */
-    public function setAirport(string $airport): self
+    public function setAirport(?string $airport): self
     {
         $this->airport = $airport;
 
@@ -72,7 +72,7 @@ class Departure extends AbstractModel
      *
      * @return string
      */
-    public function getCity(): string
+    public function getCity(): ?string
     {
         return $this->city;
     }
@@ -84,7 +84,7 @@ class Departure extends AbstractModel
      *
      * @return self
      */
-    public function setCity(string $city): self
+    public function setCity(?string $city): self
     {
         $this->city = $city;
 
@@ -96,7 +96,7 @@ class Departure extends AbstractModel
      *
      * @return string
      */
-    public function getCountry(): string
+    public function getCountry(): ?string
     {
         return $this->country;
     }
@@ -108,7 +108,7 @@ class Departure extends AbstractModel
      *
      * @return self
      */
-    public function setCountry(string $country): self
+    public function setCountry(?string $country): self
     {
         $this->country = $country;
 
@@ -120,7 +120,7 @@ class Departure extends AbstractModel
      *
      * @return string
      */
-    public function getState(): string
+    public function getState(): ?string
     {
         return $this->state;
     }
@@ -132,7 +132,7 @@ class Departure extends AbstractModel
      *
      * @return self
      */
-    public function setState(string $state): self
+    public function setState(?string $state): self
     {
         $this->state = $state;
 
@@ -144,7 +144,7 @@ class Departure extends AbstractModel
      *
      * @return string
      */
-    public function getTerminal(): string
+    public function getTerminal(): ?string
     {
         return $this->terminal;
     }
@@ -156,7 +156,7 @@ class Departure extends AbstractModel
      *
      * @return self
      */
-    public function setTerminal(string $terminal): self
+    public function setTerminal(?string $terminal): self
     {
         $this->terminal = $terminal;
 
@@ -168,7 +168,7 @@ class Departure extends AbstractModel
      *
      * @return string
      */
-    public function getTime(): string
+    public function getTime(): ?string
     {
         return $this->time;
     }
@@ -180,7 +180,7 @@ class Departure extends AbstractModel
      *
      * @return self
      */
-    public function setTime(string $time): self
+    public function setTime(?string $time): self
     {
         $this->time = $time;
 

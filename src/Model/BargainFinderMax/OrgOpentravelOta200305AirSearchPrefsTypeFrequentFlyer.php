@@ -24,7 +24,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeFrequentFlyer extends AbstractMode
      *
      * @return string
      */
-    public function getAirlineCode(): string
+    public function getAirlineCode(): ?string
     {
         return $this->airlineCode;
     }
@@ -36,7 +36,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeFrequentFlyer extends AbstractMode
      *
      * @return self
      */
-    public function setAirlineCode(string $airlineCode): self
+    public function setAirlineCode(?string $airlineCode): self
     {
         $this->airlineCode = $airlineCode;
 
@@ -48,7 +48,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeFrequentFlyer extends AbstractMode
      *
      * @return float
      */
-    public function getStatus(): float
+    public function getStatus(): ?float
     {
         return $this->status;
     }
@@ -60,7 +60,7 @@ class OrgOpentravelOta200305AirSearchPrefsTypeFrequentFlyer extends AbstractMode
      *
      * @return self
      */
-    public function setStatus(float $status): self
+    public function setStatus(?float $status): self
     {
         $this->status = $status;
 
